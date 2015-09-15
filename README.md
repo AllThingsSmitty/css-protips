@@ -2,31 +2,41 @@
 
 A collection of tips to help take your CSS skills pro.
 
-![Ty and Al from Caddyshack](img/ty-al.png)
 
 ### Use `:not()` to Apply/Unapply Borders on Navigation
 
 ```css
 /* instead of putting on the border... */
-.nav-tab {
-  border-right: 1px solid #424242;
+.nav li {
+  border-right: 1px solid #666;
 }
 
 /* ...and then taking it off... */
-.nav-tab:last-child {
+.nav li:last-child {
   border-right: 0;
 }
 
 /* ...use :not() to only apply to the elements you want */
-.nav-tab:not(:last-child) {
-  border-right: 1px solid #424242;
+.nav li:not(:last-child) {
+  border-right: 1px solid #666;
 }
 ```
 
 It's clean, readable, and easy to understand without the need for hack-y code.
 
 
-### Vertically Center
+### Add Line-Height to `body`
+
+```css
+body {
+  line-height: 1;
+}
+```
+
+You don't need to add `line-height` to each `<p>`, `<h*>`, _et al_. separately. This way textual elements can inherit from `body` easily.
+
+
+### Vertically/Horizontally Center Anything
 
 ```css
 html, body {
@@ -35,12 +45,11 @@ html, body {
 }
 
 body {
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-align-items: center;  
   -ms-flex-align: center;  
   align-items: center;
+  display: -webkit-flex;
+  display: flex;
 }
 ```
 
@@ -62,7 +71,7 @@ li:nth-child(-n+3) {
 Use negative `nth-child` in CSS to select items 1 through n. Well that was pretty easy.
 
 
-### Use SVG...for Everything!
+### Use SVG for Icons
 
 ```css
 .logo {
@@ -70,7 +79,7 @@ Use negative `nth-child` in CSS to select items 1 through n. Well that was prett
 }
 ```
 
-There's no reason not to use SVG for icons. SVG been supported in all browsers since IE9, so start ditching your .png, .jpg, and .gif-jif-whatev files. Icon fonts, too, but that's a different protip.
+There's no reason not to use SVG for icons. SVG is supported in all browsers back to IE9. So start ditching your .png, .jpg, or .gif-jif-whatev files.
 
 
 ### Get Rid of Margin Hacks With Flexbox
@@ -79,19 +88,15 @@ There's no reason not to use SVG for icons. SVG been supported in all browsers s
 .list-of-people {
   display: flex;
   justify-content: space-between;
-  .person {
-    flex-basis: 23%;
-  }
 }
-
+.list-of-people .person {
+  flex-basis: 23%;
+}
 ```
 
-You can get rid of `nth-`, `first-`, and `last-child` hacks when work with column gutters by using the `space-between` property in flexbox. Another flexbox win!
+When working with column gutters you can get rid of `nth-`, `first-`, and `last-child` hacks by using flexbox's `space-between` property.
 
 
 ### Support
 
 These protips work in current versions of Chrome, Firefox, Safari, and Edge, and in IE11.
-
-![Carl from Caddyshack](img/carl.png)
-Carl became the Cinderalla story by using CSS protips.
