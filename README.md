@@ -2,6 +2,14 @@
 
 A collection of tips to help take your CSS skills pro.
 
+1. [Use `:not()` to Apply/Unapply Borders on Navigation](#use-not-to-applyunapply-borders-on-navigation)
+1. [Add Line-Height to `body`](#add-line-height-to-body)
+1. [Vertically Center Anything](#vertically-center-anything)
+1. [Select Items Using Negative `nth-child`](#select-items-using-negative-nth-child)
+1. [Use SVG for Icons](#use-svg-for-icons)
+1. [Inherit `box-sizing`](#inherit-box-sizing)
+1. [Get Rid of Margin Hacks With Flexbox](#get-rid-of-margin-hacks-with-flexbox)
+
 
 ### Use `:not()` to Apply/Unapply Borders on Navigation
 
@@ -36,12 +44,12 @@ body {
 You don't need to add `line-height` to each `<p>`, `<h*>`, _et al_. separately. This way textual elements can inherit from `body` easily.
 
 
-### Vertically/Horizontally Center Anything
+### Vertically Center Anything
 
 ```css
 html, body {
-  margin: 0;
   height: 100%;
+  margin: 0;
 }
 
 body {
@@ -80,6 +88,21 @@ Use negative `nth-child` in CSS to select items 1 through n. Well that was prett
 ```
 
 There's no reason not to use SVG for icons. SVG is supported in all browsers back to IE9. So start ditching your .png, .jpg, or .gif-jif-whatev files.
+
+
+### Inherit `box-sizing`
+
+```css
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+```
+
+Letting `box-sizing` be inheritted from `html` makes it easier to change `box-sizing` in plugins or other components that leverage other behavior.
 
 
 ### Get Rid of Margin Hacks With Flexbox
