@@ -63,6 +63,8 @@ body {
 
 No, it's not dark magic, you really can center elements vertically. Look how simple this is.
 
+**Note:** Watch for some [buggy behavior](https://github.com/philipwalton/flexbugs#3-min-height-on-a-flex-container-wont-apply-to-its-flex-items) with flexbox in IE11.
+
 
 ### Select Items Using Negative `nth-child`
 
@@ -70,7 +72,8 @@ No, it's not dark magic, you really can center elements vertically. Look how sim
 li {
   display: none;
 }
-/* select items 1 through 3 and show them */
+
+/* select items 1 through 3 and display them */
 li:nth-child(-n+3) {
   display: block;
 }
@@ -87,7 +90,7 @@ Use negative `nth-child` in CSS to select items 1 through n. Well that was prett
 }
 ```
 
-There's no reason not to use SVG for icons. SVG is supported in all browsers back to IE9. So start ditching your .png, .jpg, or .gif-jif-whatev files.
+There's no reason not to use SVG for icons. SVG is supported in all browsers back to IE9. So ditch your .png, .jpg, or .gif-jif-whatev files.
 
 
 ### Inherit `box-sizing`
@@ -96,6 +99,7 @@ There's no reason not to use SVG for icons. SVG is supported in all browsers bac
 html {
   box-sizing: border-box;
 }
+
 *, *:before, *:after {
   box-sizing: inherit;
 }
@@ -112,6 +116,7 @@ Letting `box-sizing` be inheritted from `html` makes it easier to change `box-si
   display: flex;
   justify-content: space-between;
 }
+
 .list-of-people .person {
   flex-basis: 23%;
 }
