@@ -24,9 +24,11 @@ Instead of putting on the border...
 .nav li {
   border-right: 1px solid #666;
 }
+```
 
 ...and then taking it off the last element...
 
+```css
 /* remove border */
 .nav li:last-child {
   border-right: none;
