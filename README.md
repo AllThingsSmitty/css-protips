@@ -93,7 +93,7 @@ ul > li:not(:last-child)::after {
 }
 ```
 
-Use use the `:not()` pseudo-class for the last list item.
+Use the `:not()` pseudo-class for the last list item.
 
 
 ### Select Items Using Negative `nth-child`
