@@ -44,6 +44,14 @@ Instead of putting on the border...
 }
 ```
 
+... or, since your menu elements might be siblings, use the tild operator and turn the problem on it's head
+
+```css
+.nav li:first-child ~ li {
+  border-left: 1px solid #666;
+}
+```
+
 It's clean, readable, and easy to understand without the need for hack-y code.
 
 Or, alternatively, since your new elements might be siblings, use the general sibling selector (`~`) and turn the problem on its head:
