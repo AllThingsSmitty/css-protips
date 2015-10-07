@@ -13,6 +13,7 @@ A collection of tips to help take your CSS skills pro.
 1. [Inherit `box-sizing`](#inherit-box-sizing)
 1. [Equal Width Table Cells](#equal-width-table-cells)
 1. [Get Rid of Margin Hacks With Flexbox](#get-rid-of-margin-hacks-with-flexbox)
+1. [Use Attribute Selectors with Empty Links](#use-attribute-selectors-with-empty-links)
 
 
 ### Use `:not()` to Apply/Unapply Borders on Navigation
@@ -44,6 +45,14 @@ Instead of putting on the border...
 ```
 
 It's clean, readable, and easy to understand without the need for hack-y code.
+
+Or, alternatively, since your new elements might be siblings, use the general sibling selector (`~`) and turn the problem on its head:
+
+```css
+.nav li:first-child ~ li {
+  border-left: 1px solid #666;
+}
+```
 
 
 ### Add Line-Height to `body`
@@ -139,7 +148,7 @@ html {
 }
 ```
 
-**Note:** There is no `text-rendering` support for IE/Edge.
+**Note:** [Please play with `optimizeLegibility` responsibly](https://bocoup.com/weblog/text-rendering/). Also, there's no `text-rendering` support for IE/Edge.
 
 
 ### Use `max-height` for Pure CSS Sliders
@@ -149,6 +158,7 @@ Implement CSS-only sliders using `max-height` with overflow hidden:
 ```css
 .slider ul {
   max-height: 0;
+  overlow: hidden;
 }
 
 .slider:hover ul {
@@ -156,8 +166,6 @@ Implement CSS-only sliders using `max-height` with overflow hidden:
   transition: .3s ease;
 }
 ```
-
-You can animate to "auto" height!
 
 
 ### Inherit `box-sizing`
@@ -193,6 +201,8 @@ Pain-free table layouts.
 
 ### Get Rid of Margin Hacks With Flexbox
 
+When working with column gutters you can get rid of `nth-`, `first-`, and `last-child` hacks by using flexbox's `space-between` property:
+
 ```css
 .list {
   display: flex;
@@ -204,7 +214,21 @@ Pain-free table layouts.
 }
 ```
 
-When working with column gutters you can get rid of `nth-`, `first-`, and `last-child` hacks by using flexbox's `space-between` property.
+Now column gutters always appear evenly-spaced.
+
+
+### Use Attribute Selectors with Empty Links
+
+Display links when the `<a>` element has no text value but the `href` attribute has a link: 
+
+```css
+a[href^="http"]:empty::before {
+  content: attr(href);
+}
+
+```
+
+That's pretty convenient.
 
 
 ### Support
