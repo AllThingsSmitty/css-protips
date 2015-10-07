@@ -93,7 +93,7 @@ ul > li:not(:last-child)::after {
 }
 ```
 
-Use use the `:not()` pseudo-class for the last list item.
+Use the `:not()` pseudo-class for the last list item.
 
 
 ### Select Items Using Negative `nth-child`
@@ -144,6 +144,8 @@ html {
 
 ### Use `max-height` for Pure CSS Sliders
 
+Implement CSS-only sliders using `max-height` with overflow hidden:
+
 ```css
 .slider ul {
   max-height: 0;
@@ -155,7 +157,7 @@ html {
 }
 ```
 
-Use max-height to implement CSS-only sliders with overflow hidden and you can animate to "auto" height!
+You can animate to "auto" height!
 
 
 ### Inherit `box-sizing`
