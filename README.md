@@ -236,28 +236,39 @@ That's pretty convenient.
 This is usefull where ever you encounter fluid responsive container boxes (product catalog grid etc). Use a parent container having fluid `width`:
 
 ```css
+/*some value based on responsive need.*/
+
 .container {
-width:20%; /*some value based on responsive need.*/
+    width: 20%;
 }
-
 /*a content wrapper.*/
-.container > div {
-width:100%;
-display:inline-block;
-}
 
+.container > div {
+    width: 100%;
+    height: 0;
+    position: relative;
+}
 /*padding-top is relative to width of the parent container that is the trick 
 * here the aspect ratio is 1:1 a square box.
 */
-.container > div > .content {
-    padding-top: 120%;
+
+.container > div:before {
+    padding-top: 100%;
     width: 100%;
-    height: 0;
-    position:absolute;
-    top:0;
-    left:0;
+    background: #009530;
+    border-radius: 8px;
+    content: ' ';
+    position: absolute;
+    top: 0;
+}
+.container .content {
+    position: absolute;
+    font-size: 2em;
+    color: blue;
 }
 ```
+
+CodePen - [Demo](http://codepen.io/shanksrepo/pen/OygmNB) Change the width of browser to see the effect. 
 
 ### Support
 
