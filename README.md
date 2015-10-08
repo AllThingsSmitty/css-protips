@@ -14,6 +14,7 @@ A collection of tips to help take your CSS skills pro.
 1. [Equal Width Table Cells](#equal-width-table-cells)
 1. [Get Rid of Margin Hacks With Flexbox](#get-rid-of-margin-hacks-with-flexbox)
 1. [Use Attribute Selectors with Empty Links](#use-attribute-selectors-with-empty-links)
+1. [Maintain a container aspect ratio as per fluid width](#use-padding-top-trick) 
 
 
 ### Use `:not()` to Apply/Unapply Borders on Navigation
@@ -230,6 +231,44 @@ a[href^="http"]:empty::before {
 
 That's pretty convenient.
 
+### Use `padding-top` Trick
+
+This is usefull where ever you encounter fluid responsive container boxes (product catalog grid etc). Use a parent container having fluid `width`:
+
+```css
+/*some value based on responsive need.*/
+
+.container {
+    width: 20%;
+}
+/*a content wrapper.*/
+
+.container > div {
+    width: 100%;
+    height: 0;
+    position: relative;
+}
+/*padding-top is relative to width of the parent container that is the trick 
+* here the aspect ratio is 1:1 a square box.
+*/
+
+.container > div:before {
+    padding-top: 100%;
+    width: 100%;
+    background: #009530;
+    border-radius: 8px;
+    content: ' ';
+    position: absolute;
+    top: 0;
+}
+.container .content {
+    position: absolute;
+    font-size: 2em;
+    color: blue;
+}
+```
+
+CodePen - [Demo](http://codepen.io/shanksrepo/pen/OygmNB) Change the width of browser to see the effect. 
 
 ### Support
 
