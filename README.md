@@ -245,6 +245,7 @@ width:20%; /*some value based on responsive need.*/
 width:100%;
 display:inline-block;
 }
+
 /*padding-top is relative to width of the parent container that is the trick 
 * here the aspect ratio is 1:1 a square box.
 */
@@ -256,6 +257,7 @@ display:inline-block;
     top:0;
     left:0;
 }
+```
 
 ### Support
 
