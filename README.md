@@ -44,15 +44,7 @@ Instead of putting on the border...
 }
 ```
 
-It's clean, readable, and easy to understand without the need for hack-y code.
-
-Or, alternatively, since your new elements might be siblings, use the general sibling selector (`~`) and turn the problem on its head:
-
-```css
-.nav li:first-child ~ li {
-  border-left: 1px solid #666;
-}
-```
+**Note:** Sure, you can use `.nav li + li` or even `.nav li:first-child ~ li`, but with `:not()` the intent is very clear and the CSS selector defines the border the way a human would describe it.
 
 
 ### Add Line-Height to `body`
@@ -94,7 +86,7 @@ Look how simple this is.
 
 ### Comma-Separated Lists
 
-Make HTML list items look like a real, comma-separated list:
+Make list items look like a real, comma-separated list:
 
 ```css
 ul > li:not(:last-child)::after {
@@ -102,7 +94,7 @@ ul > li:not(:last-child)::after {
 }
 ```
 
-Use the `:not()` pseudo-class for the last list item.
+Use the `:not()` pseudo-class so no comma is added to the last item.
 
 
 ### Select Items Using Negative `nth-child`
@@ -163,7 +155,7 @@ Implement CSS-only sliders using `max-height` with overflow hidden:
 
 .slider:hover ul {
   max-height: 1000px;
-  transition: .3s ease;
+  transition: .3s ease; /* animate to max-height */
 }
 ```
 
