@@ -14,6 +14,7 @@ A collection of tips to help take your CSS skills pro.
 1. [Equal Width Table Cells](#equal-width-table-cells)
 1. [Get Rid of Margin Hacks With Flexbox](#get-rid-of-margin-hacks-with-flexbox)
 1. [Use Attribute Selectors with Empty Links](#use-attribute-selectors-with-empty-links)
+1. [Using shorthand properties](#using-shorthand-properties)
 
 
 ### Use `:not()` to Apply/Unapply Borders on Navigation
@@ -107,7 +108,7 @@ Use the `:not()` pseudo-class for the last list item.
 
 ### Select Items Using Negative `nth-child`
 
-Use negative `nth-child` in CSS to select items 1 through n. 
+Use negative `nth-child` in CSS to select items 1 through n.
 
 ```css
 li {
@@ -219,7 +220,7 @@ Now column gutters always appear evenly-spaced.
 
 ### Use Attribute Selectors with Empty Links
 
-Display links when the `<a>` element has no text value but the `href` attribute has a link: 
+Display links when the `<a>` element has no text value but the `href` attribute has a link:
 
 ```css
 a[href^="http"]:empty::before {
@@ -229,6 +230,35 @@ a[href^="http"]:empty::before {
 ```
 
 That's pretty convenient.
+
+### Using shorthand properties
+
+An easy way to reduce file size and saving overall time and effort is by using shorthand properties.
+
+Instead of doing this:
+
+```css
+.class {
+  margin-top: 20px;
+  margin-right: 15px;
+  margin-bottom: 25px;
+  margin-left: 5px;
+}
+
+```
+
+Do this:
+
+```css
+.class {
+  margin: 20px 15px 25px 5px;
+}
+
+```
+
+How neat is that?
+
+**Note:** Go to [Mozilla Developer Docs](https://developer.mozilla.org/en-US/docs/Web/CSS/Shorthand_properties) to learn more. 
 
 
 ### Support
