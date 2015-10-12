@@ -14,6 +14,7 @@ A collection of tips to help take your CSS skills pro.
 1. [Equal Width Table Cells](#equal-width-table-cells)
 1. [Get Rid of Margin Hacks With Flexbox](#get-rid-of-margin-hacks-with-flexbox)
 1. [Use Attribute Selectors with Empty Links](#use-attribute-selectors-with-empty-links)
+1. [Center a position absolute div within a position relative div](#center-a-position-absolute-div-within-a-position-relative-div)
 
 
 ### Use `:not()` to Apply/Unapply Borders on Navigation
@@ -221,6 +222,22 @@ a[href^="http"]:empty::before {
 ```
 
 That's pretty convenient.
+
+
+### Center a position absolute div within a position relative div
+
+For a div which is position absolute withing a relative div, give a width to the absolute div and give a margin left with a small calculation i.e. `negative( width of position absolute div / 2 )`. You will also need to give left as `50%` now that the absolute div is enclosed within a relative div.
+
+[Demo here](http://codepen.io/ktkaushik/pen/epRMBG)
+
+```css
+.absolute-block {
+  left: 50%; /* this is also important */
+  width: 150px; /* you can set this width to any number but make sure that the margin-left is the negative( width / 2 ) */
+  margin-left: -75px;
+}
+
+```
 
 
 ### Support
