@@ -14,6 +14,7 @@ A collection of tips to help take your CSS skills pro.
 1. [Equal Width Table Cells](#equal-width-table-cells)
 1. [Get Rid of Margin Hacks With Flexbox](#get-rid-of-margin-hacks-with-flexbox)
 1. [Use Attribute Selectors with Empty Links](#use-attribute-selectors-with-empty-links)
+1. [Style "Default" Links](#style-default-links)
 
 
 ### Use `:not()` to Apply/Unapply Borders on Navigation
@@ -238,6 +239,20 @@ a[href^="http"]:empty::before {
 ```
 
 That's pretty convenient.
+
+
+### Style "Default" Links
+
+Add a style for "default" links:
+
+```css
+a[href]:not([class]) {
+  color: #008000;
+  text-decoration: underline;
+}
+```
+
+Now links that are inserted via a CMS, which don't usually have a `class` attribute, will have a distinction without generically affecting the cascade.
 
 
 ### Support
