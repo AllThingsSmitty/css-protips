@@ -180,7 +180,7 @@ Implement CSS-only sliders using `max-height` with overflow hidden:
 
 ### Inherit `box-sizing`
 
-Let `box-sizing` be inheritted from `html`:
+Let `box-sizing` be inherited from `html`:
 
 ```css
 html {
