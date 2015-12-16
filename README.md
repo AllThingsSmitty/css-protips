@@ -156,7 +156,7 @@ It may have a strange name but using the universal selector (`*`) with the adjac
 }
 ```
 
-In this example, all elements in the flow of the document that proceed other elements will receive `margin-top: 1.5em`.
+In this example, all elements in the flow of the document that precede other elements will receive `margin-top: 1.5em`.
 
 For more on the "lobotomized owl" selector, read [Heydon Pickering's post](http://alistapart.com/article/axiomatic-css-and-lobotomized-owls) on *A List Apart*.
 
