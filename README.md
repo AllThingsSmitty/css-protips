@@ -8,7 +8,7 @@ A collection of tips to help take your CSS skills pro.
 1. [Comma-Separated Lists](#comma-separated-lists)
 1. [Select Items Using Negative `nth-child`](#select-items-using-negative-nth-child)
 1. [Use SVG for Icons](#use-svg-for-icons)
-1. [Text Display Optimization](#text-display-optimization)
+1. [Use the "Lobotomized Owl" Selector](#use-the-lobotomized-owl-selector)
 1. [Use `max-height` for Pure CSS Sliders](#use-max-height-for-pure-css-sliders)
 1. [Inherit `box-sizing`](#inherit-box-sizing)
 1. [Equal Width Table Cells](#equal-width-table-cells)
@@ -146,19 +146,19 @@ SVG scales well for all resolution types and is supported in all browsers back t
 ```
 
 
-### Text Display Optimization
+### Use the "Lobotomized Owl" Selector
 
-Sometimes fonts don't display optimally on all devices, so let the device browser help:
+It may have a strange name but using the universal selector (`*`) with the adjacent sibling selector (`+`) can provide a powerful CSS capability:
 
 ```css
-html {
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
-  text-rendering: optimizeLegibility;
+* + * {
+  margin-top: 1.5em;
 }
 ```
 
-**Note:** [Please play with `optimizeLegibility` responsibly](https://bocoup.com/weblog/text-rendering/). Also, there's no `text-rendering` support for IE/Edge.
+In this example, all elements in the flow of the document that proceed other elements will receive `margin-top: 1.5em`.
+
+For more on the "lobotomized owl" selector, read [Heydon Pickering's post](http://alistapart.com/article/axiomatic-css-and-lobotomized-owls) on *A List Apart*.
 
 
 ### Use `max-height` for Pure CSS Sliders
@@ -180,7 +180,7 @@ Implement CSS-only sliders using `max-height` with overflow hidden:
 
 ### Inherit `box-sizing`
 
-Let `box-sizing` be inheritted from `html`:
+Let `box-sizing` be inherited from `html`:
 
 ```css
 html {
