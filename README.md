@@ -168,7 +168,7 @@ Implement CSS-only sliders using `max-height` with overflow hidden:
 ```css
 .slider ul {
   max-height: 0;
-  overlow: hidden;
+  overflow: hidden;
 }
 
 .slider:hover ul {
