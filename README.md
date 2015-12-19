@@ -257,7 +257,7 @@ Now links that are inserted via a CMS, which don't usually have a `class` attrib
 
 ### Percent Height
 
-For apply a flexible height (in percent) to a element in HTML, you need that a parent element element have a **fixed** height, something like:
+For apply a flexible height (in percent) to a element in HTML, you need that a parent element have a **fixed** height, something like:
 
 ```css
 .my-outer-element {
