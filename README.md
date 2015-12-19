@@ -14,7 +14,8 @@ A collection of tips to help take your CSS skills pro.
 1. [Equal Width Table Cells](#equal-width-table-cells)
 1. [Get Rid of Margin Hacks With Flexbox](#get-rid-of-margin-hacks-with-flexbox)
 1. [Use Attribute Selectors with Empty Links](#use-attribute-selectors-with-empty-links)
-1. [Style "Default" Links](#style-default-links)
+1. [Style "Default" Links](#style-default-links)  
+1. [Use % height on elements](#percent-height) 
 
 
 ### Use `:not()` to Apply/Unapply Borders on Navigation
@@ -254,6 +255,21 @@ a[href]:not([class]) {
 
 Now links that are inserted via a CMS, which don't usually have a `class` attribute, will have a distinction without generically affecting the cascade.
 
+### Percent Height
+
+For apply a flexible height (in percent) to a element in HTML, you need that a previous level element have a **fix** height, something like:
+
+```css
+.my-outer-element {
+  height : 100px
+}
+
+.my-outer-element > .my-inner-element {
+  height : 50%
+}
+```
+
+Now we have `.my-outer-element` with **100px** of height, and a `.my-inner-element` that will have **50%** of the previous element height, so **50px**. 
 
 ### Support
 
