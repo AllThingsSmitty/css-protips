@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="https://rawgit.com/AllThingsSmitty/css-protips/master/media/logo.svg" alt="light bulb icon">
+</p>
+
 # CSS Protips
 
 A collection of tips to help take your CSS skills pro.
