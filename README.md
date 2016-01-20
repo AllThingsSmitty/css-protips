@@ -170,16 +170,18 @@ For more on the "lobotomized owl" selector, read [Heydon Pickering's post](http:
 Implement CSS-only sliders using `max-height` with overflow hidden:
 
 ```css
-.slider ul {
-  max-height: 0;
-  overflow: hidden;
+.slider {
+  max-height: 200px;
+  overflow-y: hidden;
+  width: 300px;
 }
-
-.slider:hover ul {
-  max-height: 1000px;
-  transition: .3s ease; /* animate to max-height */
+.slider:hover {
+  max-height: 600px;
+  overflow-y: scroll;
 }
 ```
+
+The element expands to the `max-height` value on hover and the slider displays as a result of the overflow. 
 
 
 ### Inherit `box-sizing`
