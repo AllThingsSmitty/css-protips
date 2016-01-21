@@ -19,6 +19,7 @@ A collection of tips to help take your CSS skills pro.
 1. [Get Rid of Margin Hacks With Flexbox](#get-rid-of-margin-hacks-with-flexbox)
 1. [Use Attribute Selectors with Empty Links](#use-attribute-selectors-with-empty-links)
 1. [Style "Default" Links](#style-default-links)
+1. [Prevent events from css](#prevent-events-from-css)
 
 
 ### Use `:not()` to Apply/Unapply Borders on Navigation
@@ -76,8 +77,8 @@ html, body {
 }
 
 body {
-  -webkit-align-items: center;  
-  -ms-flex-align: center;  
+  -webkit-align-items: center;
+  -ms-flex-align: center;
   align-items: center;
   display: -webkit-flex;
   display: flex;
@@ -104,7 +105,7 @@ Use the `:not()` pseudo-class so no comma is added to the last item.
 
 ### Select Items Using Negative `nth-child`
 
-Use negative `nth-child` in CSS to select items 1 through n. 
+Use negative `nth-child` in CSS to select items 1 through n.
 
 ```css
 li {
@@ -235,7 +236,7 @@ Now column gutters always appear evenly-spaced.
 
 ### Use Attribute Selectors with Empty Links
 
-Display links when the `<a>` element has no text value but the `href` attribute has a link: 
+Display links when the `<a>` element has no text value but the `href` attribute has a link:
 
 ```css
 a[href^="http"]:empty::before {
@@ -259,6 +260,21 @@ a[href]:not([class]) {
 ```
 
 Now links that are inserted via a CMS, which don't usually have a `class` attribute, will have a distinction without generically affecting the cascade.
+
+### Prevent events from css
+
+This attribute allows for control over how HTML elements respond to mouse and touch events (including CSS hover/active states, click/tap events in Javascript), and whether or not the cursor is visible.
+
+```css
+.prevent-clicks {
+  pointer-events: none; /* prevents all events */
+}
+```
+
+The three valid values for all HTML elements are:
+- `none` prevents all click, state and cursor options on the specified HTML element
+- `auto` restores the default functionality (useful for use on child elements of an element with pointer-events: none; specified)
+- `inherit` uses the pointer-events value of the element's parent
 
 
 ### Support
