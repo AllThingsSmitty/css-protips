@@ -163,7 +163,7 @@ It may have a strange name but using the universal selector (`*`) with the adjac
 }
 ```
 
-In this example, all elements in the flow of the document that precede other elements will receive `margin-top: 1.5em`.
+In this example, all elements in the flow of the document that follow other elements will receive `margin-top: 1.5em`.
 
 For more on the "lobotomized owl" selector, read [Heydon Pickering's post](http://alistapart.com/article/axiomatic-css-and-lobotomized-owls) on *A List Apart*.
 
@@ -178,6 +178,7 @@ Implement CSS-only sliders using `max-height` with overflow hidden:
   overflow-y: hidden;
   width: 300px;
 }
+
 .slider:hover {
   max-height: 600px;
   overflow-y: scroll;
@@ -244,7 +245,6 @@ Display links when the `<a>` element has no text value but the `href` attribute 
 a[href^="http"]:empty::before {
   content: attr(href);
 }
-
 ```
 
 That's pretty convenient.
