@@ -21,7 +21,7 @@
 1. [给“默认”链接定义样式](#style-default-links)
 1. [垂直节奏一致性](#consistent-vertical-rhythm)
 
-
+<div id="use-not-to-applyunapply-borders-on-navigation"></div>
 ### 使用 `:not()` 选择器决定导航菜单是否显示边框
 
 与其加上边框...
@@ -53,6 +53,7 @@
 当然，也可以使用 `.nav li + li` 或者 `.nav li:first-child ~ li` 实现，但是 `:not()` 选择器的实现更清晰明了，一目了然。
 
 
+<div id="add-line-height-to-body"></div>
 ### 给 `body` 元素加行高
 
 不必给每一个 `<p>`，`<h*>`，_等元素_逐一添加 `line-height`，给 `body` 元素添加就好了：
@@ -66,6 +67,7 @@ body {
 文本元素可以很自然地继承 `body` 的样式。
 
 
+<div id="vertically-center-anything"></div>
 ### 垂直居中任何元素
 
 这不是黑魔法，就是可以垂直居中任何元素：
@@ -90,6 +92,7 @@ body {
 **注意：** IE11 对 flexbox 的支持[有点 bug](https://github.com/philipwalton/flexbugs#3-min-height-on-a-flex-container-wont-apply-to-its-flex-items)。
 
 
+<div id="comma-separated-lists"></div>
 ### 逗号分隔的列表
 
 列表的每项都由逗号分隔：
@@ -105,6 +108,7 @@ ul > li:not(:last-child)::after {
 **注意：**这一实现对于无障碍，屏幕阅读器而言并不理想，需要注意。
 
 
+<div id="select-items-using-negative-nth-child"></div>
 ### 使用负的 `nth-child` 选择元素
 
 使用负的 `nth-child` 可以选择 1 至 n 个元素。
@@ -132,7 +136,7 @@ li:not(:nth-child(-n+3)) {
 
 就是这么简单。
 
-
+<div id="use-svg-for-icons"></div>
 ### 使用 SVG 图标
 
 没有理由不使用 SVG 图标：
@@ -153,7 +157,7 @@ SVG 在所有分辨率下都可以良好缩放，IE9+ 及其它所有浏览器�
 }
 ```
 
-
+<div id="use-the-lobotomized-owl-selector"></div>
 ### 使用 “形似猫头鹰” 的选择器
 
 这个名字可能比较陌生，不过全局选择器 (`*`) 和 相邻兄弟选择器 (`+`) 一起使用，效果非凡：
@@ -168,7 +172,7 @@ SVG 在所有分辨率下都可以良好缩放，IE9+ 及其它所有浏览器�
 
 更多 “形似猫头鹰” 的选择器，可参考 *A List Apart* 上面 [Heydon Pickering 的文章](http://alistapart.com/article/axiomatic-css-and-lobotomized-owls)
 
-
+<div id="use-max-height-for-pure-css-sliders"></div>
 ### 使用 `max-height` 实现纯 CSS 滑块
 
 `max-height` 与 overflow hidden 一起实现纯 CSS 的滑块：
@@ -188,7 +192,7 @@ SVG 在所有分辨率下都可以良好缩放，IE9+ 及其它所有浏览器�
 
 移入滑块元素时增大它的 `max-height` 的值，便可以显示溢出部分。
 
-
+<div id="inherit-box-sizing"></div>
 ### 继承 `box-sizing`
 
 从 `html` 元素继承 `box-sizing` 就好：
@@ -204,14 +208,13 @@ html {
 
 ```
 
-This makes it easier to change `box-sizing` in plugins or other components that leverage other behavior.
-如此在模块里改变 `box-sizing` 变得简单，
+如此在插件或其它组件里改变 `box-sizing` 变得简单。
 
 
+<div id="equal-width-table-cells"></div>
+### 格子等宽的表格
 
-### Equal Width Table Cells
-
-Tables can be a pain to work with so try using `table-layout: fixed` to keep cells at equal width:
+`table-layout: fixed` 可以让每个格子保持等宽：
 
 ```css
 .calendar {
@@ -219,12 +222,13 @@ Tables can be a pain to work with so try using `table-layout: fixed` to keep cel
 }
 ```
 
-Pain-free table layouts.
+无痛的 table 布局。
 
 
-### Get Rid of Margin Hacks With Flexbox
+<div id="get-rid-of-margin-hacks-with-flexbox"></div>
+### 利用 Flexbox 去除多余的 Margin
 
-When working with column gutters you can get rid of `nth-`, `first-`, and `last-child` hacks by using flexbox's `space-between` property:
+与其使用 `nth-`， `first-`， 和 `last-child` 去除列之间多余的间隙，不如使用 flexbox 的 `space-between` 属性：
 
 ```css
 .list {
@@ -237,12 +241,13 @@ When working with column gutters you can get rid of `nth-`, `first-`, and `last-
 }
 ```
 
-Now column gutters always appear evenly-spaced.
+列之间的间隙相等，并且首尾没有多余的间隙。
 
 
-### Use Attribute Selectors with Empty Links
+<div id="use-attribute-selectors-with-empty-links"></div>
+### 利用属性选择器选择空链接
 
-Display links when the `<a>` element has no text value but the `href` attribute has a link: 
+当 `<a>` 元素没有文本内容，但是有 `href` 属性的时候，可以显示它的 `href` 链接：
 
 ```css
 a[href^="http"]:empty::before {
@@ -250,12 +255,13 @@ a[href^="http"]:empty::before {
 }
 ```
 
-That's pretty convenient.
+相当简便。
 
 
-### Style "Default" Links
+<div id="style-default-links"></div>
+### 给“默认”链接定义样式
 
-Add a style for "default" links:
+给“默认”链接定义样式：
 
 ```css
 a[href]:not([class]) {
@@ -264,12 +270,13 @@ a[href]:not([class]) {
 }
 ```
 
-Now links that are inserted via a CMS, which don't usually have a `class` attribute, will have a distinction without generically affecting the cascade.
+通过 CMS 系统插入的链接，通常没有 `class` 属性，以上样式可以甄别它们，而且不会影响其它样式。
 
 
-### Consistent Vertical Rhythm
+<div id="consistent-vertical-rhythm"></div>
+### 垂直节奏一致性
 
-Use a universal selector (`*`) within an element to create a consistent vertical rhythm:
+通用选择器 (`*`) 跟元素一起使用，可以保持一致的垂直节奏：
 
 ```css
 .intro > * {
@@ -277,9 +284,9 @@ Use a universal selector (`*`) within an element to create a consistent vertical
 }
 ```
 
-Consistent vertical rhythm provides a visual aesthetic that makes content far more readable.
+一致的垂直节奏可以提供视觉美感，增强内容的可读性。
 
 
-### Support
+### 支持情况
 
-These protips work in current versions of Chrome, Firefox, Safari, and Edge, and in IE11.
+这些技巧适用于最新版的 Chrome， Firefox， Safari， 和 Edge，以及 IE11。
