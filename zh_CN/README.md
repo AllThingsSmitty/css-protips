@@ -286,7 +286,6 @@ a[href]:not([class]) {
 
 一致的垂直节奏可以提供视觉美感，增强内容的可读性。
 
-
 ### 支持情况
 
 这些技巧适用于最新版的 Chrome， Firefox， Safari， 和 Edge，以及 IE11。
