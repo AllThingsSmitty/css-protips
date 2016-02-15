@@ -7,7 +7,7 @@
 A collection of tips to help take your CSS skills pro.
 
 1. [Use `:not()` to Apply/Unapply Borders on Navigation](#use-not-to-applyunapply-borders-on-navigation)
-1. [Add Line-Height to `body`](#add-line-height-to-body)
+1. [Add `line-height` to `body`](#add-line-height-to-body)
 1. [Vertically-Center Anything](#vertically-center-anything)
 1. [Comma-Separated Lists](#comma-separated-lists)
 1. [Select Items Using Negative `nth-child`](#select-items-using-negative-nth-child)
@@ -20,6 +20,7 @@ A collection of tips to help take your CSS skills pro.
 1. [Use Attribute Selectors with Empty Links](#use-attribute-selectors-with-empty-links)
 1. [Style "Default" Links](#style-default-links)
 1. [Consistent Vertical Rhythm](#consistent-vertical-rhythm)
+1. [Intrinsic Ratio Boxes](#intrinsic-ratio-boxes)
 
 
 ### Use `:not()` to Apply/Unapply Borders on Navigation
@@ -53,7 +54,7 @@ Instead of putting on the border...
 Sure, you can use `.nav li + li` or even `.nav li:first-child ~ li`, but with `:not()` the intent is very clear and the CSS selector defines the border the way a human would describe it.
 
 
-### Add Line-Height to `body`
+### Add `line-height` to `body`
 
 You don't need to add `line-height` to each `<p>`, `<h*>`, _et al_. separately. Instead, add it to `body`:
 
@@ -142,7 +143,7 @@ There's no reason not to use SVG for icons:
 }
 ```
 
-SVG scales well for all resolution types and is supported in all browsers back to IE9. So ditch your .png, .jpg, or .gif-jif-whatev files.
+SVG scales well for all resolution types and is supported in all browsers [back to IE9](http://caniuse.com/#search=svg). So ditch your .png, .jpg, or .gif-jif-whatev files.
 
 **Note:** If you have SVG icon-only buttons for sighted users and the SVG fails to load, this will help maintain accessibility:
 
@@ -277,6 +278,23 @@ Use a universal selector (`*`) within an element to create a consistent vertical
 Consistent vertical rhythm provides a visual aesthetic that makes content far more readable.
 
 
+
+### Intrinsic Ratio Boxes
+
+https://twitter.com/gnarf/status/697779444757479424?refsrc=email&s=11
+
+Okay. @wilto blew my CSS mind. padding-bottom % is % of container
+
+```css
+*width*, {
+  height: auto;
+  padding-bottom: 75%;
+  width: 100%;
+} = 4:3 scaling box
+
+
+
+
 ### Support
 
-These protips work in current versions of Chrome, Firefox, Safari, and Edge, and in IE11.
+Current versions of Chrome, Firefox, Safari, Opera, Edge, and IE11.
