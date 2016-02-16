@@ -20,7 +20,6 @@ A collection of tips to help take your CSS skills pro.
 1. [Use Attribute Selectors with Empty Links](#use-attribute-selectors-with-empty-links)
 1. [Style "Default" Links](#style-default-links)
 1. [Consistent Vertical Rhythm](#consistent-vertical-rhythm)
-1. [Intrinsic Ratio Boxes](#intrinsic-ratio-boxes)
 
 
 ### Use `:not()` to Apply/Unapply Borders on Navigation
@@ -276,23 +275,6 @@ Use a universal selector (`*`) within an element to create a consistent vertical
 ```
 
 Consistent vertical rhythm provides a visual aesthetic that makes content far more readable.
-
-
-
-### Intrinsic Ratio Boxes
-
-https://twitter.com/gnarf/status/697779444757479424?refsrc=email&s=11
-
-Okay. @wilto blew my CSS mind. padding-bottom % is % of container
-
-```css
-*width*, {
-  height: auto;
-  padding-bottom: 75%;
-  width: 100%;
-} = 4:3 scaling box
-
-
 
 
 ### Support
