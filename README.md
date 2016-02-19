@@ -2,7 +2,7 @@
   <img src="https://rawgit.com/AllThingsSmitty/css-protips/master/media/logo.svg" alt="light bulb icon">
 </p>
 
-# CSS Protips
+# CSS Protips [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome)
 
 A collection of tips to help take your CSS skills pro.
 
@@ -288,6 +288,7 @@ To create a box with an intrinsic ratio, all you need to do is apply top or bott
   padding-bottom: 20%;
   position: relative;
 }
+
 .container div {
   border: 2px dashed #ddd;	
   height: 100%;
