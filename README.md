@@ -285,7 +285,7 @@ To create a box with an intrinsic ratio, all you need to do is apply top or bott
 ```css
 .container {
   height: 0;
-  padding-bottom: 20%; /* aspect ratio */
+  padding-bottom: 20%;
   position: relative;
 }
 .container div {
