@@ -20,6 +20,7 @@ A collection of tips to help take your CSS skills pro.
 1. [Use Attribute Selectors with Empty Links](#use-attribute-selectors-with-empty-links)
 1. [Style "Default" Links](#style-default-links)
 1. [Consistent Vertical Rhythm](#consistent-vertical-rhythm)
+1. [Intrinsic Ratio Boxes](#intrinsic-ratio-boxes)
 
 
 ### Use `:not()` to Apply/Unapply Borders on Navigation
@@ -275,6 +276,29 @@ Use a universal selector (`*`) within an element to create a consistent vertical
 ```
 
 Consistent vertical rhythm provides a visual aesthetic that makes content far more readable.
+
+
+### Intrinsic Ratio Boxes
+
+To create a box with an intrinsic ratio, all you need to do is apply top or bottom padding to a div:
+
+```css
+.container {
+  height: 0;
+  padding-bottom: 20%; /* aspect ratio */
+  position: relative;
+}
+.container div {
+  border: 2px dashed #ddd;	
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+```
+
+Using 20% for padding makes the height of the box equal to 20% of its width. No matter the width of the viewport, the child div will keep its aspect ratio (100% / 20% = 5:1).
 
 
 ### Support
