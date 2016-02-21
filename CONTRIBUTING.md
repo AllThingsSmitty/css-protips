@@ -1,6 +1,17 @@
 # Contribution Guidelines
 
-Please ensure your pull requests adhere to the following guidelines:
+Please note that this project is released with a [Contributor Code of Conduct](code-of-conduct.md). By participating in this project you agree to abide by its terms.
+
+
+## Table of Contents
+
+- [Adding to This List](#adding-to-this-list)
+- [Updating Your Pull Request](#updating-your-pull-request)
+
+
+## Adding to This List
+
+Please ensure your pull request adheres to the following guidelines:
 
 * Search open and closed PR's to avoid duplicate suggestions.
 * Only submit CSS tips that you think would be useful to others. This implies each tip has enough succinct content to describe why it's useful.
@@ -16,3 +27,8 @@ Please ensure your pull requests adhere to the following guidelines:
 * The PR should have a useful title.
 
 Thank you for your suggestions!
+
+
+## Updating Your Pull Request
+
+Sometimes a maintainer will ask you to edit your pull request before it's included. This is normally due to spelling errors or because your PR didn't match the above guidlines guidelines. [This write-up](https://github.com/RichardLitt/docs/blob/master/amending-a-commit-guide.md) covers the different ways you can change a pull request.
