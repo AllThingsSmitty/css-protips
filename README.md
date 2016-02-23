@@ -8,10 +8,15 @@ A collection of tips to help take your CSS skills pro.
 
 > For other great lists check out [@sindresorhus](https://github.com/sindresorhus/)'s curated list of [awesome lists](https://github.com/sindresorhus/awesome/).
 
+
+## Table of Contents
+
+* [Protips](#protips)
+* [Support](#support)
 * [Contribution Guidelines](CONTRIBUTING.md)
 
--
 
+## Protips
 
 1. [Use `:not()` to Apply/Unapply Borders on Navigation](#use-not-to-applyunapply-borders-on-navigation)
 1. [Add `line-height` to `body`](#add-line-height-to-body)
@@ -309,6 +314,6 @@ To create a box with an intrinsic ratio, all you need to do is apply top or bott
 Using 20% for padding makes the height of the box equal to 20% of its width. No matter the width of the viewport, the child div will keep its aspect ratio (100% / 20% = 5:1).
 
 
-### Support
+## Support
 
 Current versions of Chrome, Firefox, Safari, Opera, Edge, and IE11.
