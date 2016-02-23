@@ -6,6 +6,11 @@
 
 A collection of tips to help take your CSS skills pro.
 
+> For other great lists check out [@sindresorhus](https://github.com/sindresorhus/)'s curated list of [awesome lists](https://github.com/sindresorhus/awesome/).
+
+* [Contribution Guidelines](CONTRIBUTING.md)
+
+-----
 
 1. [Use `:not()` to Apply/Unapply Borders on Navigation](#use-not-to-applyunapply-borders-on-navigation)
 1. [Add `line-height` to `body`](#add-line-height-to-body)
