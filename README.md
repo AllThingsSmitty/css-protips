@@ -115,7 +115,7 @@ ul > li:not(:last-child)::after {
 
 Use the `:not()` pseudo-class so no comma is added to the last item.
 
-**Note:** This tip may not be ideal for accessibility, specifically screen readers. Proceed with caution.
+**Note:** This tip may not be ideal for accessibility, specifically screen readers. And copy/paste from the browser doesn't work with CSS-generated content. Proceed with caution.
 
 
 ### Select Items Using Negative `nth-child`
