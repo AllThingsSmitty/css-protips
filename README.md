@@ -33,7 +33,7 @@ A collection of tips to help take your CSS skills pro.
 1. [Style "Default" Links](#style-default-links)
 1. [Consistent Vertical Rhythm](#consistent-vertical-rhythm)
 1. [Intrinsic Ratio Boxes](#intrinsic-ratio-boxes)
-
+1. [Easily Fit an Image Inside Its Container](#easily-fit-an-image-inside-its-container)
 
 ### Use `:not()` to Apply/Unapply Borders on Navigation
 
@@ -120,7 +120,7 @@ Use the `:not()` pseudo-class so no comma is added to the last item.
 
 ### Select Items Using Negative `nth-child`
 
-Use negative `nth-child` in CSS to select items 1 through n. 
+Use negative `nth-child` in CSS to select items 1 through n.
 
 ```css
 li {
@@ -198,7 +198,7 @@ Implement CSS-only sliders using `max-height` with overflow hidden:
 }
 ```
 
-The element expands to the `max-height` value on hover and the slider displays as a result of the overflow. 
+The element expands to the `max-height` value on hover and the slider displays as a result of the overflow.
 
 
 ### Inherit `box-sizing`
@@ -252,7 +252,7 @@ Now column gutters always appear evenly-spaced.
 
 ### Use Attribute Selectors with Empty Links
 
-Display links when the `<a>` element has no text value but the `href` attribute has a link: 
+Display links when the `<a>` element has no text value but the `href` attribute has a link:
 
 ```css
 a[href^="http"]:empty::before {
@@ -302,7 +302,7 @@ To create a box with an intrinsic ratio, all you need to do is apply top or bott
 }
 
 .container div {
-  border: 2px dashed #ddd;	
+  border: 2px dashed #ddd;
   height: 100%;
   left: 0;
   position: absolute;
@@ -313,6 +313,24 @@ To create a box with an intrinsic ratio, all you need to do is apply top or bott
 
 Using 20% for padding makes the height of the box equal to 20% of its width. No matter the width of the viewport, the child div will keep its aspect ratio (100% / 20% = 5:1).
 
+
+### Easily Fit an Image Inside Its Container
+
+You can easily specify how an image (or video) is fitted inside its container by assigning the `object-fit` property to the element itself:
+
+```css
+.img {
+  object-fit: cover;
+}
+```
+and the even reposition it thanks to the `object-position` property!
+
+Supported values are :
+* `cover` fills image into the parent element so it's fully covered and contains aspect-ratio.
+* `contain` fills image into the parent element so the object is fully shown.
+* `fill` fills image into the parent element so it's fully covered and shrinks image, not respecting aspect-ratio.
+
+Beware of [browser compatibility](http://caniuse.com/#search=object-position), this one is tricky: only Firefox and Chrome have native support!
 
 ## Support
 
