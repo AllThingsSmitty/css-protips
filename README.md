@@ -33,6 +33,7 @@ A collection of tips to help take your CSS skills pro.
 1. [Style "Default" Links](#style-default-links)
 1. [Consistent Vertical Rhythm](#consistent-vertical-rhythm)
 1. [Intrinsic Ratio Boxes](#intrinsic-ratio-boxes)
+1. [Style Broken Images](#style-broken-images)
 
 
 ### Use `:not()` to Apply/Unapply Borders on Navigation
@@ -312,6 +313,42 @@ To create a box with an intrinsic ratio, all you need to do is apply top or bott
 ```
 
 Using 20% for padding makes the height of the box equal to 20% of its width. No matter the width of the viewport, the child div will keep its aspect ratio (100% / 20% = 5:1).
+
+
+### Style Broken Images
+
+Make broken images more aesthetically-pleasing with a little bit of CSS:
+
+```css
+img {  
+  display: block;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  height: auto;
+  line-height: 2;
+  position: relative;
+  text-align: center;
+  width: 100%;
+}
+```
+
+Now add pseudo-elements rules to display a user message and URL reference of the broken image:
+
+```css
+img:before {  
+  content: "We're sorry, the image below is broken :(";
+  display: block;
+  margin-bottom: 10px;
+}
+
+img:after {  
+  content: "(url: " attr(src) ")";
+  display: block;
+  font-size: 12px;
+}
+```
+
+Learn more about styling for this pattern in Ire Aderinokum's [original post](http://bitsofco.de/styling-broken-images/).
 
 
 ## Support
