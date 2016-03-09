@@ -348,7 +348,7 @@ img:after {
 }
 ```
 
-Learn more about styling for this pattern in Ire Aderinokum's [original post](http://bitsofco.de/styling-broken-images/).
+Learn more about styling for this pattern in Ire Aderinokun's [original post](http://bitsofco.de/styling-broken-images/).
 
 
 ## Support
