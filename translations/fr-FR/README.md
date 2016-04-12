@@ -6,7 +6,7 @@
 
 Une collection de conseils pour aider à prendre vos compétences CSS pro.
 
-> Pour les autres grandes listes vérifier [@sindresorhus](https://github.com/sindresorhus/) de la liste curated des [listes impressionnantes] (https://github.com/sindresorhus/awesome/).
+> Pour les autres grandes listes vérifier [@sindresorhus](https://github.com/sindresorhus/) de la liste curated des [listes impressionnantes](https://github.com/sindresorhus/awesome/).
 
 
 ## Table des matières
