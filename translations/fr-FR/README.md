@@ -37,7 +37,7 @@ Une collection de conseils pour aider à prendre vos compétences CSS pro.
 1. [Utilisez `rem` for Global Dimensionnement; Utilisez `em` pour Sizing locale](#use-rem-for-global-sizing-use-em-for-local-sizing)
 
 
-<div id="#use-not-to-applyunapply-borders-on-navigation"></div>
+<div id="use-not-to-applyunapply-borders-on-navigation"></div>
 ### Utiliser `:not()` postuler / unapply frontières sur la navigation
 
 Au lieu de mettre à la frontière ...
@@ -69,7 +69,7 @@ Au lieu de mettre à la frontière ...
 Bien sûr, vous pouvez utiliser `.nav li + li` ou même `.nav li:first-child ~ li`, mais avec `:not()` l'intention est très claire et le sélecteur CSS définit la frontière comme un être humain serait le décrire.
 
 
-<div id="#add-line-height-to-body"></div>
+<div id="add-line-height-to-body"></div>
 ### Ajouter `line-height` à `body`
 
 Vous ne devez pas ajouter `line-height` à chaque `<p>`, `<h*>`, _et al_. séparément. Au lieu de cela, ajoutez-le à `body`:
@@ -83,7 +83,7 @@ body {
 De cette façon, les éléments textuels peuvent hériter de `body` facilement.
 
 
-<div id="#vertically-center-anything"></div>
+<div id="vertically-center-anything"></div>
 ### Verticalement-Center Tout
 
 Non, ce n'est pas de la magie noire, vous ne pouvez vraiment centrer des éléments verticalement:
@@ -108,7 +108,7 @@ Vous voulez centrer autre chose? Verticalement, horizontalement...quoi que ce so
 **Note:** Surveillez certains [poussette behavior](https://github.com/philipwalton/flexbugs#3-min-height-on-a-flex-container-wont-apply-to-its-flex-items) avec flexBox dans IE11.
 
 
-<div id="#comma-separated-lists"></div>
+<div id="comma-separated-lists"></div>
 ### Listes séparées par des virgules
 
 Faire la liste des articles ressemblent à une vraie liste, séparées par des virgules:
@@ -124,7 +124,7 @@ Utilisez le `:not()` pseudo-classe donc pas une virgule est ajoutée au dernier 
 ** Note: ** Cette astuce peut ne pas être idéal pour l'accessibilité, l'écran spécifiquement lecteurs. Et copier / coller à partir du navigateur ne fonctionne pas avec le contenu généré par CSS. Procéder avec prudence.
 
 
-<div id="#select-items-using-negative-nth-child"></div>
+<div id="select-items-using-negative-nth-child"></div>
 ### Sélectionnez éléments à l'aide négative `nth-child`
 
 Utilisez négative `nth-child` en CSS pour sélectionner des éléments de 1 à n.
@@ -152,7 +152,7 @@ li:not(:nth-child(-n+3)) {
 Eh bien, ce fut assez facile.
 
 
-<div id="#use-svg-for-icons"></div>
+<div id="use-svg-for-icons"></div>
 ### Utiliser SVG pour Icons
 
 Il n'y a aucune raison de ne pas utiliser SVG pour les icônes:
@@ -174,7 +174,7 @@ SVG échelles bien pour tous les types de résolution et est pris en charge dans
 ```
 
 
-<div id="#use-the-lobotomized-owl-selector"></div>
+<div id="use-the-lobotomized-owl-selector"></div>
 ### Utilisez le sélecteur "lobotomisé Owl"
 
 Il peut avoir un nom étrange, mais en utilisant le sélecteur universel (`*`) avec le sélecteur de frère adjacent (`+`) peut fournir une capacité de CSS puissante:
@@ -190,7 +190,7 @@ Dans cet exemple, tous les éléments dans le flux du document qui suivent d'aut
 Pour en savoir plus sur la "chouette lobotomisé" sélecteur, lire [le poste de Heydon Pickering](http://alistapart.com/article/axiomatic-css-and-lobotomized-owls) sur *A List Apart*.
 
 
-<div id="#use-max-height-for-pure-css-sliders"></div>
+<div id="use-max-height-for-pure-css-sliders"></div>
 ### Utilisez `max-height` pour Sliders CSS pur
 
 Mettre en œuvre des curseurs CSS uniquement en utilisant `max-height` avec trop-plein caché:
@@ -211,7 +211,7 @@ Mettre en œuvre des curseurs CSS uniquement en utilisant `max-height` avec trop
 L'élément se dilate à la valeur `max-height` sur le vol stationnaire et le curseur se affiche à la suite du débordement.
 
 
-<div id="#inherit-box-sizing"></div>
+<div id="inherit-box-sizing"></div>
 ### Hériter `box-sizing`
 
 Soit `box-sizing` être héritée de `html`:
@@ -230,7 +230,7 @@ html {
 Cela rend plus facile de changer `box-sizing` dans les plugins ou autres composants qui exploitent d'autres comportements.
 
 
-<div id="#equal-width-table-cells"></div>
+<div id="equal-width-table-cells"></div>
 ### Cellules Equal Largeur de table
 
 Les tableaux peuvent être une douleur à travailler avec donc essayer d'utiliser `table-layout: fixed` pour maintenir les cellules à largeur égale:
@@ -244,7 +244,7 @@ Les tableaux peuvent être une douleur à travailler avec donc essayer d'utilise
 dispositions de table sans douleur.
 
 
-<div id="#get-rid-of-margin-hacks-with-flexbox"></div>
+<div id="get-rid-of-margin-hacks-with-flexbox"></div>
 ### Se débarrasser de la marge Hacks Avec Flexbox
 
 Lorsque vous travaillez avec des gouttières de colonne, vous pouvez vous débarrasser de `nth`, `first-` et `last-child` en utilisant la propriété `space-between` flexBox:
@@ -264,7 +264,7 @@ Lorsque vous travaillez avec des gouttières de colonne, vous pouvez vous débar
 Maintenant gouttières colonnes apparaissent toujours uniformément espacés.
 
 
-<div id="#use-attribute-selectors-with-empty-links"></div>
+<div id="use-attribute-selectors-with-empty-links"></div>
 ### Utilisation des attributs sélecteurs avec des liens vides
 
 liens d'affichage lorsque le `<a>` élément n'a pas de valeur de texte, mais l'attribut `href` a un lien:
@@ -278,7 +278,7 @@ a[href^="http"]:empty::before {
 C'est assez pratique.
 
 
-<div id="#style-default-links"></div>
+<div id="style-default-links"></div>
 ### Style "par défaut" Liens
 
 Ajouter un style pour "défaut" liens:
@@ -293,7 +293,7 @@ a[href]:not([class]) {
 Maintenant, les liens qui sont insérés via un CMS, qui ne disposent généralement pas un attribut `class`, auront une distinction sans affecter de manière générique la cascade.
 
 
-<div id="#consistent-vertical-rhythm"></div>
+<div id="consistent-vertical-rhythm"></div>
 ### Conformément Vertical Rhythm
 
 Utilisez un sélecteur universel (de `*`) dans un élément pour créer un rythme vertical cohérente:
@@ -307,7 +307,7 @@ Utilisez un sélecteur universel (de `*`) dans un élément pour créer un rythm
 rythme vertical Conformément offre une esthétique visuelle qui rend le contenu beaucoup plus lisible.
 
 
-<div id="#intrinsic-ratio-boxes"></div>
+<div id="intrinsic-ratio-boxes"></div>
 ### Boîtes Ratio Intrinsic
 
 Pour créer une boîte avec un rapport intrinsèque, tout ce que vous devez faire est d'appliquer en haut ou en bas de rembourrage à un div:
@@ -332,7 +332,7 @@ Pour créer une boîte avec un rapport intrinsèque, tout ce que vous devez fair
 En utilisant 20% pour le rembourrage rend la hauteur de la caisse égale à 20% de sa largeur. Peu importe la largeur de la fenêtre, la div enfant gardera son ratio d'aspect (100% / 20% = 5: 1).
 
 
-<div id="#style-broken-images"></div>
+<div id="style-broken-images"></div>
 ### Style de Broken Images
 
 Faire des images brouillées esthétiquement plus agréables avec un peu de CSS:
@@ -369,7 +369,7 @@ img:after {
 En savoir plus sur le style de ce modèle dans [Ire Aderinokun](https://github.com/ireade/)' [message original](http://bitsofco.de/styling-broken-images/).
 
 
-<div id="#use-rem-for-global-sizing-use-em-for-local-sizing"></div>
+<div id="use-rem-for-global-sizing-use-em-for-local-sizing"></div>
 ### Utilisez `rem` for Global Dimensionnement; Utilisez `em` pour Local Sizing
 
 Après avoir défini la taille de la police de base à la racine (`html { font-size: 16px; }`), définir la taille de la police pour les éléments textuels à `em`:
