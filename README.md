@@ -34,6 +34,7 @@ A collection of tips to help take your CSS skills pro.
 1. [Consistent Vertical Rhythm](#consistent-vertical-rhythm)
 1. [Intrinsic Ratio Boxes](#intrinsic-ratio-boxes)
 1. [Style Broken Images](#style-broken-images)
+1. [Use `rem` for Global Sizing; Use `em` for Local Sizing](#use-rem-for-global-sizing-use-em-for-local-sizing)
 
 
 ### Use `:not()` to Apply/Unapply Borders on Navigation
@@ -348,7 +349,37 @@ img:after {
 }
 ```
 
-Learn more about styling for this pattern in Ire Aderinokun's [original post](http://bitsofco.de/styling-broken-images/).
+Learn more about styling for this pattern in [Ire Aderinokun](https://github.com/ireade/)'s [original post](http://bitsofco.de/styling-broken-images/).
+
+
+### Use `rem` for Global Sizing; Use `em` for Local Sizing
+
+After setting the base font size at the root (`html { font-size: 16px; }`), set the font size for textual elements to `em`:
+
+```css
+h2 { 
+  font-size: 2em;
+}
+
+p {
+  font-size: 1em;
+}
+```
+
+Then set the font-size for modules to `rem`:
+
+```css
+article {
+  font-size: 1.25rem;
+}
+
+aside .module {
+  font-size: .9rem;
+}
+
+```
+
+Now each module becomes compartmentalized and easier to style, more maintainable, and flexible.
 
 
 ## Support
