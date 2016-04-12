@@ -13,7 +13,7 @@ Une collection de conseils pour aider à prendre vos compétences CSS pro.
 
 * [Protips](#protips)
 * [Soutien](#soutien)
-* [Lignes directrices des contributions](../..CONTRIBUTING.md)
+* [Lignes directrices des contributions](../../CONTRIBUTING.md)
 
 
 ## Protips
