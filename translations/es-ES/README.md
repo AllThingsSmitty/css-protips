@@ -12,7 +12,7 @@ Una colección de consejos para ayudar a llevar su pro habilidades CSS.
 ## Tabla de contenido
 
 * [Protips](#protips)
-* [Soporte](#soporte)
+* [Apoyo](#apoyo)
 * [Pautas de contribución](CONTRIBUTING.md)
 
 
@@ -22,18 +22,18 @@ Una colección de consejos para ayudar a llevar su pro habilidades CSS.
 1. [Añadir `line-height` característica de `body`](#add-line-height-to-body)
 1. [verticalmente-Center Cualquier cosa](#vertically-center-anything)
 1. [Listas separados por comas](#comma-separated-links)
-1. [Seleccionar elementos Usando negativo `nth-child`](#comma-separated-links)
+1. [Seleccionar elementos Usando negativo `nth-child`](#select-items-using-negative-nth-child)
 1. [El uso de iconos SVG](#use-svg-for-icons)
 1. [Use la "lobotomía búho" Selector](#use-the-lobotomized-owl-selector)
-1. [Usar `max-altura característica de Sliders puro CSS](#use-max-height-for-pure-css-sliders)
+1. [Usar `max-height` característica de Sliders puro CSS](#use-max-height-for-pure-css-sliders)
 1. [Heredar `box-sizing`](#inherit-box-sizing)
-1. [Las células Igualdad Ancho de la mesa](equal-width-table-cells)
+1. [Las células Igualdad Ancho de la mesa](#equal-width-table-cells)
 1. [Deshacerse del margen Hacks Con Flexbox](#get-rid-of-margin-hacks-with-flexbox)
 1. [Usar selectores de atributos con enlaces vacíos](#use-attribute-selectors-with-empty-links)
 1. [enlaces al estilo "default"](#style-default-links)
 1. [De conformidad Vertical Ritmo](#consistent-vertical-rhythm)
 1. [Cajas de relación intrínseca](#intrinsic-ratio-boxes)
-1. [Style Broken Images](#style-broken-images)
+1. [Estilo Broken Imagess](#style-broken-images)
 1. [Use `rem` para Global Dimensionamiento; Use `em` para el dimensionamiento local](#use-rem-for-global-sizing-use-em-for-local-sizing)
 
 
@@ -230,7 +230,7 @@ Esto hace que sea más fácil cambiar `box-sizing` en plugins u otros componente
 
 
 <div id="equal-width-table-cells"></div>
-### LAS Células Igualdad Ancho de la mesa
+### Las Células Igualdad Ancho de la mesa
 
 Las tablas pueden ser un dolor de trabajar con lo que trate de usar `table-layout: fixed` para mantener las células en el mismo ancho:
 
@@ -330,7 +330,7 @@ El uso de 20% para el relleno hace que la altura de la caja igual a 20% de su an
 
 
 <div id="style-broken-images"></div>
-### Style Broken Images
+### Estilo Broken Images
 
 Hacer imágenes rotas más estéticamente agradable con un poco de CSS:
 
