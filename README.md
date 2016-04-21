@@ -35,7 +35,7 @@ A collection of tips to help take your CSS skills pro.
 1. [Intrinsic Ratio Boxes](#intrinsic-ratio-boxes)
 1. [Style Broken Images](#style-broken-images)
 1. [Use `rem` for Global Sizing; Use `em` for Local Sizing](#use-rem-for-global-sizing-use-em-for-local-sizing)
-1. [Don't Show Videos That Autoplay That Aren't Muted](#dont-show-videos-that-autoplay-that-arent-muted)
+1. [Hide Autoplay Videos That Aren't Muted](#hide-autoplay-videos-that-arent-muted)
 
 
 ### Use `:not()` to Apply/Unapply Borders on Navigation
@@ -216,7 +216,6 @@ html {
 *, *:before, *:after {
   box-sizing: inherit;
 }
-
 ```
 
 This makes it easier to change `box-sizing` in plugins or other components that leverage other behavior.
@@ -377,13 +376,12 @@ article {
 aside .module {
   font-size: .9rem;
 }
-
 ```
 
 Now each module becomes compartmentalized and easier to style, more maintainable, and flexible.
 
 
-### Don't Show Videos That Autoplay That Aren't Muted
+### Hide Autoplay Videos That Aren't Muted
 
 This is a great trick for a custom user stylesheet. Avoid overloading a user with sound from a video that autoplays when the page is loaded. If the sound isn't muted, don't show the video:
 
