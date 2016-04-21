@@ -35,6 +35,8 @@
 1. [内在比例盒](#intrinsic-ratio-boxes)
 1. [风格破碎的形象](#style-broken-images)
 1. [使用 `rem` 全球上浆; 使用 `em` 本地浆纱](#use-rem-for-global-sizing-use-em-for-local-sizing)
+1. [隱藏自動播放的影片，沒有靜音](#hide-autoplay-videos-that-arent-muted)
+
 
 <div id="use-not-to-applyunapply-borders-on-navigation"></div>
 ### 使用 `:not()` 选择器决定导航菜单是否显示边框
@@ -220,7 +222,6 @@ html {
 *, *:before, *:after {
   box-sizing: inherit;
 }
-
 ```
 
 如此在插件或其它组件里改变 `box-sizing` 变得简单。
@@ -389,10 +390,23 @@ article {
 aside .module {
   font-size: .9rem;
 }
-
 ```
 
 現在，每個模塊變得條塊分割，更容易的風格，更易於維護和靈活。
+
+
+<div id="hide-autoplay-videos-that-arent-muted"></div>
+### 隱藏自動播放的影片，沒有靜音
+
+這是一個自定義的用戶樣式表一個偉大的把戲。避免在加載頁面時自動播放視頻超載有聲的用戶。如果沒有靜音，不顯示視頻：
+
+```css
+video[autoplay]:not([muted]) {
+  display: none;
+}
+```
+
+再次，我們趁著使用的 [`:not()`](#use-not-to-applyunapply-borders-on-navigation) 偽類。
 
 
 ### 支持情况
