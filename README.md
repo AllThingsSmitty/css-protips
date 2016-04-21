@@ -35,6 +35,7 @@ A collection of tips to help take your CSS skills pro.
 1. [Intrinsic Ratio Boxes](#intrinsic-ratio-boxes)
 1. [Style Broken Images](#style-broken-images)
 1. [Use `rem` for Global Sizing; Use `em` for Local Sizing](#use-rem-for-global-sizing-use-em-for-local-sizing)
+1. [Don't Show Videos That Autoplay That Aren't Muted](#dont-show-videos-that-autoplay-that-arent-muted)
 
 
 ### Use `:not()` to Apply/Unapply Borders on Navigation
@@ -380,6 +381,19 @@ aside .module {
 ```
 
 Now each module becomes compartmentalized and easier to style, more maintainable, and flexible.
+
+
+### Don't Show Videos That Autoplay That Aren't Muted
+
+This is a great trick for a custom user stylesheet. Avoid overloading a user with sound from a video that autoplays when the page is loaded. If the sound isn't muted, don't show the video:
+
+```css
+video[autoplay]:not([muted]) {
+  display: none;
+}
+```
+
+Once again, we're taking advantage of using the [`:not()`](#use-not-to-applyunapply-borders-on-navigation) pseudo-class.
 
 
 ## Support
