@@ -35,6 +35,7 @@ Una colección de consejos para ayudar a llevar su pro habilidades CSS.
 1. [Cajas de relación intrínseca](#intrinsic-ratio-boxes)
 1. [Estilo Broken Imagess](#style-broken-images)
 1. [Use `rem` para Global Dimensionamiento; Use `em` para el dimensionamiento local](#use-rem-for-global-sizing-use-em-for-local-sizing)
+1. [Ocultar Reproducción automática los vídeos que no estén anulados](#hide-autoplay-videos-that-arent-muted)
 
 
 <div id="use-not-to-applyunapply-borders-on-navigation"></div>
@@ -394,6 +395,20 @@ aside .module {
 ```
 
 Ahora cada módulo se divide en compartimientos y más fácil de peinar, más fácil de mantener, y flexible.
+
+
+<div id="hide-autoplay-videos-that-arent-muted"></div>
+### Ocultar Reproducción automática los vídeos que no estén anulados
+
+Este es un gran truco para una hoja de estilo de usuario personalizada. Evitar la sobrecarga de un usuario con el sonido de un vídeo que se reproduce automáticamente cuando se carga la página. Si el sonido no está silenciado, no muestran el video:
+
+```css
+video[autoplay]:not([muted]) {
+  display: none;
+}
+```
+
+Una vez más, nos estamos tomando ventaja de usar el [`:not()`](#use-not-to-applyunapply-borders-on-navigation) pseudo-clase.
 
 
 ## Apoyo
