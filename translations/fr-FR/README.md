@@ -35,6 +35,7 @@ Une collection de conseils pour aider à prendre vos compétences CSS pro.
 1. [Ratio Intrinsic Boxes](#intrinsic-ratio-boxes)
 1. [Style de Broken Images] (#style-broken-images)
 1. [Utilisez `rem` for Global Dimensionnement; Utilisez `em` pour Sizing locale](#use-rem-for-global-sizing-use-em-for-local-sizing)
+1. [Masquer les vidéos Autoplay qui ne sont pas Muted](#hide-autoplay-videos-that-arent-muted)
 
 
 <div id="use-not-to-applyunapply-borders-on-navigation"></div>
@@ -397,6 +398,20 @@ aside .module {
 ```
 
 Maintenant, chaque module devient compartimentée et plus faciles à coiffer, plus maintenable, et flexible.
+
+
+<div id="hide-autoplay-videos-that-arent-muted"></div>
+### Masquer les vidéos Autoplay qui ne sont pas Muted
+
+Ceci est un grand tour pour une feuille de style utilisateur personnalisé. Évitez de surcharger un utilisateur avec le son d'une vidéo lorsque la page lectures automatiques est chargé. Si le son est pas coupé, ne pas montrer la vidéo:
+
+```css
+video[autoplay]:not([muted]) {
+  display: none;
+}
+```
+
+Encore une fois, nous prenons avantage d'utiliser le [`:not()`](#use-not-to-applyunapply-borders-on-navigation) pseudo-classe.
 
 
 ## Soutien
