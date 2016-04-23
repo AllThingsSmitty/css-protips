@@ -18,28 +18,28 @@ Una colección de consejos para ayudar a llevar su pro habilidades CSS.
 
 ## Protips
 
-1. [Usar `:not()` Aplicar / Cancelar la aplicación de las fronteras para la Navegación](#use-not-to-applyunapply-borders-on-navigation)
-1. [Añadir `line-height` característica de `body`](#add-line-height-to-body)
-1. [verticalmente-Center Cualquier cosa](#vertically-center-anything)
-1. [Listas separados por comas](#comma-separated-links)
+1. [Use `:not()` para Aplicar / Cancelar la aplicación de las fronteras para la Navegación](#use-not-to-applyunapply-borders-on-navigation)
+1. [Añadir `line-height` a `body`](#add-line-height-to-body)
+1. [Cualquier cosa verticalmente-Centro](#vertically-center-anything)
+1. [Listas separadas por comas](#comma-separated-links)
 1. [Seleccionar elementos Usando negativo `nth-child`](#select-items-using-negative-nth-child)
-1. [El uso de iconos SVG](#use-svg-for-icons)
-1. [Use la "lobotomía búho" Selector](#use-the-lobotomized-owl-selector)
-1. [Usar `max-height` característica de Sliders puro CSS](#use-max-height-for-pure-css-sliders)
+1. [Utilizar SVG para iconos](#use-svg-for-icons)
+1. [Utilice la herramienta de selección "lobotomizó búho"](#use-the-lobotomized-owl-selector)
+1. [Use `max-height` característica de Sliders puro CSS](#use-max-height-for-pure-css-sliders)
 1. [Heredar `box-sizing`](#inherit-box-sizing)
-1. [Las células Igualdad Ancho de la mesa](#equal-width-table-cells)
+1. [Celdas de la tabla de igual ancho](#equal-width-table-cells)
 1. [Deshacerse del margen Hacks Con Flexbox](#get-rid-of-margin-hacks-with-flexbox)
-1. [Usar selectores de atributos con enlaces vacíos](#use-attribute-selectors-with-empty-links)
-1. [enlaces al estilo "default"](#style-default-links)
-1. [De conformidad Vertical Ritmo](#consistent-vertical-rhythm)
-1. [Cajas de relación intrínseca](#intrinsic-ratio-boxes)
-1. [Estilo Broken Imagess](#style-broken-images)
+1. [Selectores de atributo con el uso Enlaces vacíos](#use-attribute-selectors-with-empty-links)
+1. [Enlaces de estilo "por defecto"](#style-default-links)
+1. [Consistente ritmo vertical](#consistent-vertical-rhythm)
+1. [Cajas Relación intrínsecas](#intrinsic-ratio-boxes)
+1. [Estilo Broken Images](#style-broken-images)
 1. [Use `rem` para Global Dimensionamiento; Use `em` para el dimensionamiento local](#use-rem-for-global-sizing-use-em-for-local-sizing)
-1. [Ocultar Reproducción automática los vídeos que no estén anulados](#hide-autoplay-videos-that-arent-muted)
+1. [Esconder Reproducción automática los vídeos que no estén anulados](#hide-autoplay-videos-that-arent-muted)
 
 
 <div id="use-not-to-applyunapply-borders-on-navigation"></div>
-### Uso `:not()` para Aplicar / Cancelar la aplicación de las fronteras para la Navegación
+### Use `:not()` para Aplicar / Cancelar la aplicación de las fronteras para la Navegación
 
 En lugar de poner en la frontera ...
 
@@ -71,7 +71,7 @@ Claro, se puede usar `li.nav + li` o incluso `li.nav: li` primer hijo ~, pero co
 
 
 <div id="add-line-height-to-body"></ div>
-### Añadir `line-height` característica de `body`
+### Añadir `line-height` a `body`
 
 No es necesario añadir `line-height` característica a cada` <p> `,` <h *> `, _et al_. separadamente. En su lugar, añadirlo a `body`:
 
@@ -85,7 +85,7 @@ De esta manera los elementos textuales pueden heredar de `body` fácilmente.
 
 
 <div id="vertically-center-anything"></div>
-### Verticalmente-Center Cualquier cosa
+### Cualquier cosa verticalmente-Centro
 
 No, no es magia negro, que realmente puede centrar verticalmente elementos:
 
@@ -110,7 +110,7 @@ body {
 
 
 <div id="comma-separated-links"></div>
-### Listas separados por comas
+### Listas separadas por comas
 
 Hacen elementos de la lista se ven como una lista de bienes, separados por comas:
 
@@ -126,7 +126,7 @@ Utilice el `:not()` pseudo-clase por lo que no se añade una coma al último ele
 
 
 <div id="select-items-using-negative-nth-child"></div>
-### Seleccionar elementos mediante Negativo `nth-child`
+### Seleccionar elementos Usando negativo `nth-child`
 
 Utilice negativo `nth-child` en CSS para seleccionar los numerales 1 a n.
 
@@ -154,7 +154,7 @@ Así que era bastante fácil.
 
 
 <div id="use-svg-for-icons"></div>
-### Uso de iconos SVG
+### Utilizar SVG para iconos
 
 No hay ninguna razón para no usar SVG para los iconos:
 
@@ -176,7 +176,7 @@ SVG funciona bien para todos los tipos de resolución y es compatible con todos 
 
 
 <div id="use-the-lobotomized-owl-selector"></div>
-### Utilice el selector de "lobotomizó búho"
+### Utilice la herramienta de selección "lobotomizó búho"
 
 Se puede tener un nombre extraño, pero con el mando universales (`*`) con el selector de hermanos adyacentes (`+`) puede proporcionar una potente capacidad de CSS:
 
@@ -231,7 +231,7 @@ Esto hace que sea más fácil cambiar `box-sizing` en plugins u otros componente
 
 
 <div id="equal-width-table-cells"></div>
-### Las Células Igualdad Ancho de la mesa
+### Celdas de la tabla de igual ancho
 
 Las tablas pueden ser un dolor de trabajar con lo que trate de usar `table-layout: fixed` para mantener las células en el mismo ancho:
 
@@ -264,7 +264,7 @@ Ahora canaletas de columna siempre aparecen uniformemente espaciadas.
 
 
 <div id="use-attribute-selectors-with-empty-links"></div>
-### Uso selectores de atributos con enlaces vacíos
+### Selectores de atributo con el uso Enlaces vacíos
 
 Mostrar vínculos cuando el elemento `<a>` no tiene un valor de texto, pero el atributo `href` tiene un enlace:
 
@@ -278,7 +278,7 @@ Eso es bastante conveniente.
 
 
 <div id="style-default-links"></div>
-### enlaces al estilo "default"
+### Enlaces de estilo "por defecto"
 
 Añadir un estilo de enlaces "por defecto":
 
@@ -292,7 +292,7 @@ Ahora enlaces que se insertan a través de un CMS, que por lo general no tienen 
 
 
 <div id="consistent-vertical-rhythm"></div>
-### En consonancia ritmo vertical
+### Consistente ritmo vertical
 
 Utilice un selector universales (`*`) dentro de un elemento para crear un ritmo vertical consistente:
 
@@ -306,7 +306,7 @@ ritmo vertical consistente proporciona una estética visual que hace que el cont
 
 
 <div id="intrinsic-ratio-boxes"></div>
-### Cajas Relación intrínsecos
+### Cajas Relación intrínsecas
 
 Para crear un cuadro con una relación intrínseca, todo lo que tiene que hacer es aplicar el acolchado superior o inferior a un div:
 
@@ -398,7 +398,7 @@ Ahora cada módulo se divide en compartimientos y más fácil de peinar, más f�
 
 
 <div id="hide-autoplay-videos-that-arent-muted"></div>
-### Ocultar Reproducción automática los vídeos que no estén anulados
+### Esconder Reproducción automática los vídeos que no estén anulados
 
 Este es un gran truco para una hoja de estilo de usuario personalizada. Evitar la sobrecarga de un usuario con el sonido de un vídeo que se reproduce automáticamente cuando se carga la página. Si el sonido no está silenciado, no muestran el video:
 
