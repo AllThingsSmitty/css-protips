@@ -1,6 +1,6 @@
 # Contribution Guidelines
 
-Please note that this project is released with a [Contributor Code of Conduct](code-of-conduct.md). By participating in this project you agree to abide by its terms.
+Please note that this project is released with a [Contributor Code of Conduct](CODE-OF-CONDUCT.md). By participating in this project you agree to abide by its terms.
 
 
 ## Table of Contents
@@ -27,6 +27,16 @@ Please ensure your pull request adheres to the following guidelines:
 * The PR should have a useful title.
 
 Thank you for your suggestions!
+
+
+### Language Translations
+
+If you fluently speak another language and want to contribute by translating this list into that language, please submit a PR using the following guidelines:
+
+* Add a new folder to the `translations` folder
+* The new folder should be labeled the language culture name, e.g, `es-ES`, `ru-RU`, `zh-CN`, etc.
+
+Additionally, feel free to review already translated content for accuracy.
 
 
 ## Updating Your Pull Request
