@@ -13,7 +13,7 @@ Una colección de consejos para ayudar a llevar su pro habilidades CSS.
 
 * [Protips](#protips)
 * [Apoyo](#apoyo)
-* [Pautas de contribución](CONTRIBUTING.md)
+* [Pautas de contribución](../../CONTRIBUTING.md)
 
 
 ## Protips

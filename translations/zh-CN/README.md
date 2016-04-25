@@ -13,7 +13,7 @@
 
 * [Protips](#protips)
 * [支持情况](#support)
-* [贡献准则](CONTRIBUTING.md)
+* [贡献准则](../../CONTRIBUTING.md)
 
 
 ## Protips
