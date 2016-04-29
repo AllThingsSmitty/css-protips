@@ -123,7 +123,7 @@ ul > li:not(:last-child)::after {
 
 Utilisez le `:not()` pseudo-classe donc pas une virgule est ajoutée au dernier point.
 
-** Note: ** Cette astuce peut ne pas être idéal pour l'accessibilité, l'écran spécifiquement lecteurs. Et copier / coller à partir du navigateur ne fonctionne pas avec le contenu généré par CSS. Procéder avec prudence.
+**Note:** Cette astuce peut ne pas être idéal pour l'accessibilité, l'écran spécifiquement lecteurs. Et copier / coller à partir du navigateur ne fonctionne pas avec le contenu généré par CSS. Procéder avec prudence.
 
 
 <div id="select-items-using-negative-nth-child"></div>
@@ -159,19 +159,19 @@ Eh bien, ce fut assez facile.
 
 Il n'y a aucune raison de ne pas utiliser SVG pour les icônes:
 
-`` `Css
+```css
 .logo {
-  background: url ( "logo.svg");
+  background: url("logo.svg");
 }
-`` `
+```
 
 SVG échelles bien pour tous les types de résolution et est pris en charge dans tous les navigateurs [retour au IE9](http://caniuse.com/#search=svg). Donc fossé vos fichiers .png, .jpg ou .gif-JIF-whatev.
 
 **Note:** Si vous avez SVG icon-seulement des boutons pour les utilisateurs voyants et le SVG ne parvient pas à charger, cela vous aidera à maintenir l'accessibilité:
 
 ```css
-.logo {
-  background: url("logo.svg");
+.no-svg .icon-only:after {
+  content: attr(aria-label);
 }
 ```
 
