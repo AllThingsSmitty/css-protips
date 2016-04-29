@@ -16,7 +16,7 @@ Una colección de consejos para ayudar a llevar su pro habilidades CSS.
 * [Pautas de contribución](../../CONTRIBUTING.md)
 
 
-<div id="#protips"></div>
+<div id="protips"></div>
 ## Consejos Profesionales
 
 1. [Use `:not()` para Aplicar / Cancelar la aplicación de las fronteras para la Navegación](#use-not-to-applyunapply-borders-on-navigation)
