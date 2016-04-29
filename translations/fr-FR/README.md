@@ -2,7 +2,7 @@
   <img src="https://rawgit.com/AllThingsSmitty/css-protips/master/media/logo.svg" alt="light bulb icon">
 </p>
 
-# CSS Protips [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome)
+# CSS Conseils Professionnels [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome)
 
 Une collection de conseils pour aider à prendre vos compétences CSS pro.
 
@@ -11,12 +11,13 @@ Une collection de conseils pour aider à prendre vos compétences CSS pro.
 
 ## Table des matières
 
-* [Protips](#protips)
+* [Conseils Professionnels](#protips)
 * [Soutien](#soutien)
 * [Lignes directrices des contributions](../../CONTRIBUTING.md)
 
 
-## Protips
+<div id="protips"></div>
+##  Conseils Professionnels
 
 1. [Utiliser `:not()` postuler / unapply Borders Navigation](#use-not-to-applyunapply-borders-on-navigation)
 1. [Ajouter `line-height` à `body`](#add-line-height-to-body)

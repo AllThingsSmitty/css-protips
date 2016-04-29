@@ -2,7 +2,7 @@
   <img src="https://rawgit.com/AllThingsSmitty/css-protips/master/media/logo.svg" alt="light bulb icon">
 </p>
 
-# CSS Protips [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome)
+# CSS 专业的技巧 [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome)
 
 提示的集合，以帮助把你的CSS技巧亲。
 
@@ -11,12 +11,13 @@
 
 ## 目录
 
-* [Protips](#protips)
+* [专业的技巧](#protips)
 * [支持情况](#support)
 * [贡献准则](../../CONTRIBUTING.md)
 
 
-## Protips
+<div id="protips"></div>
+## 专业的技巧
 
 1. [使用 `:not()` 选择器决定导航菜单是否显示边框](#use-not-to-applyunapply-borders-on-navigation)
 1. [给 `body` 元素加行高](#add-line-height-to-body)
