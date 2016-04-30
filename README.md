@@ -13,6 +13,7 @@ A collection of tips to help take your CSS skills pro.
 
 * [Protips](#protips)
 * [Support](#support)
+* [Translations](#translations)
 * [Contribution Guidelines](CONTRIBUTING.md)
 
 
@@ -397,3 +398,11 @@ Once again, we're taking advantage of using the [`:not()`](#use-not-to-applyunap
 ## Support
 
 Current versions of Chrome, Firefox, Safari, Opera, Edge, and IE11.
+
+
+## Translations
+
+* [Español](https://github.com/AllThingsSmitty/css-protips/tree/master/translations/es-ES)
+* [Français](https://github.com/AllThingsSmitty/css-protips/tree/master/translations/fr-FR)
+* [русский](https://github.com/AllThingsSmitty/css-protips/tree/master/translations/ru-RU)
+* [简体中文](https://github.com/AllThingsSmitty/css-protips/tree/master/translations/zh-CN)
