@@ -34,7 +34,7 @@ Una colección de consejos para ayudar a llevar su pro habilidades CSS.
 1. [Enlaces de estilo "por defecto"](#style-default-links)
 1. [Consistente ritmo vertical](#consistent-vertical-rhythm)
 1. [Cajas Relación intrínsecas](#intrinsic-ratio-boxes)
-1. [Estilo Broken Images](#style-broken-images)
+1. [Imágenes rotas Estilo](#style-broken-images)
 1. [Use `rem` para Global Dimensionamiento; Use `em` para el dimensionamiento local](#use-rem-for-global-sizing-use-em-for-local-sizing)
 1. [Esconder Reproducción automática los vídeos que no estén anulados](#hide-autoplay-videos-that-arent-muted)
 
@@ -242,7 +242,7 @@ Las tablas pueden ser un dolor de trabajar con lo que trate de usar `table-layou
 }
 ```
 
-disposiciones de la tabla sin dolor.
+Disposiciones de la tabla sin dolor.
 
 
 <div id="get-rid-of-margin-hacks-with-flexbox"></div>
@@ -303,7 +303,7 @@ Utilice un selector universales (`*`) dentro de un elemento para crear un ritmo 
 }
 ```
 
-ritmo vertical consistente proporciona una estética visual que hace que el contenido mucho más legible.
+Ritmo vertical consistente proporciona una estética visual que hace que el contenido mucho más legible.
 
 
 <div id="intrinsic-ratio-boxes"></div>
@@ -332,7 +332,7 @@ El uso de 20% para el relleno hace que la altura de la caja igual a 20% de su an
 
 
 <div id="style-broken-images"></div>
-### Estilo Broken Images
+### Imágenes rotas Estilo
 
 Hacer imágenes rotas más estéticamente agradable con un poco de CSS:
 
