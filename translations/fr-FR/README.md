@@ -35,14 +35,14 @@ Une collection de conseils pour aider à prendre vos compétences CSS pro.
 1. [Conformément Vertical Rhythm](#consistent-vertical-rhythm)
 1. [Boîtes Ratio Intrinsic](#intrinsic-ratio-boxes)
 1. [Style de Broken Images] (#style-broken-images)
-1. [UUtilisez `rem` for Global Dimensionnement; Utilisez `em` pour Local Sizing](#use-rem-for-global-sizing-use-em-for-local-sizing)
+1. [Utilisez `rem` for Global Dimensionnement; Utilisez `em` pour Local Sizing](#use-rem-for-global-sizing-use-em-for-local-sizing)
 1. [Masquer les vidéos Autoplay qui ne sont pas Muted](#hide-autoplay-videos-that-arent-muted)
 
 
 <div id="use-not-to-applyunapply-borders-on-navigation"></div>
 ### Utiliser `:not()` postuler / unapply frontières sur la navigation
 
-Au lieu de mettre à la frontière ...
+Au lieu de mettre à la frontière...
 
 ```css
 /* add border */
@@ -60,7 +60,7 @@ Au lieu de mettre à la frontière ...
 }
 ```
 
-... Utiliser la `:not()` pseudo-classe à appliquer uniquement aux éléments que vous voulez:
+...Utiliser la `:not()` pseudo-classe à appliquer uniquement aux éléments que vous voulez:
 
 ```css
 .nav li:not(:last-child) {
@@ -107,7 +107,7 @@ body {
 
 Vous voulez centrer autre chose? Verticalement, horizontalement...quoi que ce soit, à tout moment, en tout lieu? CSS-Tricks a [une belle écriture-up](https://css-tricks.com/centering-css-complete-guide/) à faire tout cela.
 
-**Note:** Surveillez certains [poussette behavior](https://github.com/philipwalton/flexbugs#3-min-height-on-a-flex-container-wont-apply-to-its-flex-items) avec flexBox dans IE11.
+**Remarque:** Surveillez certains [poussette behavior](https://github.com/philipwalton/flexbugs#3-min-height-on-a-flex-container-wont-apply-to-its-flex-items) avec flexBox dans IE11.
 
 
 <div id="comma-separated-lists"></div>
@@ -123,7 +123,7 @@ ul > li:not(:last-child)::after {
 
 Utilisez le `:not()` pseudo-classe donc pas une virgule est ajoutée au dernier point.
 
-**Note:** Cette astuce peut ne pas être idéal pour l'accessibilité, l'écran spécifiquement lecteurs. Et copier / coller à partir du navigateur ne fonctionne pas avec le contenu généré par CSS. Procéder avec prudence.
+**Remarque:** Cette astuce peut ne pas être idéal pour l'accessibilité, l'écran spécifiquement lecteurs. Et copier / coller à partir du navigateur ne fonctionne pas avec le contenu généré par CSS. Procéder avec prudence.
 
 
 <div id="select-items-using-negative-nth-child"></div>
@@ -167,7 +167,7 @@ Il n'y a aucune raison de ne pas utiliser SVG pour les icônes:
 
 SVG échelles bien pour tous les types de résolution et est pris en charge dans tous les navigateurs [retour au IE9](http://caniuse.com/#search=svg). Donc fossé vos fichiers .png, .jpg ou .gif-JIF-whatev.
 
-**Note:** Si vous avez SVG icon-seulement des boutons pour les utilisateurs voyants et le SVG ne parvient pas à charger, cela vous aidera à maintenir l'accessibilité:
+**Remarque:** Si vous avez SVG icon-seulement des boutons pour les utilisateurs voyants et le SVG ne parvient pas à charger, cela vous aidera à maintenir l'accessibilité:
 
 ```css
 .no-svg .icon-only:after {
@@ -237,11 +237,11 @@ Cela rend plus facile de changer `box-sizing` dans les plugins ou autres composa
 
 Les tableaux peuvent être une douleur à travailler avec donc essayer d'utiliser `table-layout: fixed` pour maintenir les cellules à largeur égale:
 
-`` `Css
+```css
 .calendar {
   table-layout: fixed;
 }
-`` `
+```
 
 dispositions de table sans douleur.
 
@@ -269,7 +269,7 @@ Maintenant gouttières colonnes apparaissent toujours uniformément espacés.
 <div id="use-attribute-selectors-with-empty-links"></div>
 ### Utilisation des attributs sélecteurs avec des liens vides
 
-liens d'affichage lorsque le `<a>` élément n'a pas de valeur de texte, mais l'attribut `href` a un lien:
+Liens d'affichage lorsque le `<a>` élément n'a pas de valeur de texte, mais l'attribut `href` a un lien:
 
 ```css
 a[href^="http"]:empty::before {
@@ -306,7 +306,7 @@ Utilisez un sélecteur universel (de `*`) dans un élément pour créer un rythm
 }
 ```
 
-rythme vertical Conformément offre une esthétique visuelle qui rend le contenu beaucoup plus lisible.
+Rythme vertical conformément offre une esthétique visuelle qui rend le contenu beaucoup plus lisible.
 
 
 <div id="intrinsic-ratio-boxes"></div>
