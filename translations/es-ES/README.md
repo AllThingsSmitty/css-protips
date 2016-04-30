@@ -42,7 +42,7 @@ Una colección de consejos para ayudar a llevar su pro habilidades CSS.
 <div id="use-not-to-applyunapply-borders-on-navigation"></div>
 ### Use `:not()` para Aplicar / Cancelar la aplicación de las fronteras para la Navegación
 
-En lugar de poner en la frontera ...
+En lugar de poner en la frontera...
 
 ```css
 /* add border */
@@ -51,7 +51,7 @@ En lugar de poner en la frontera ...
 }
 ```
 
-... Y luego sacarlo del último elemento ...
+...Y luego sacarlo del último elemento...
 
 ```css
 /* remove border */
@@ -60,7 +60,7 @@ En lugar de poner en la frontera ...
 }
 ```
 
-... Utilizar el `:not()` pseudo-clase que sólo se aplican a los elementos que desea:
+...Utilizar el `:not()` pseudo-clase que sólo se aplican a los elementos que desea:
 
 ```css
 .nav li:not(:last-child) {
@@ -105,7 +105,7 @@ body {
 }
 ```
 
-¿Quieres centrar algo más? Vertical, horizontal ... cualquier cosa, en cualquier momento y en cualquier lugar? CSS-Tricks tiene [un bonito reportaje](https://css-tricks.com/centering-css-complete-guide/) en hacer todo eso.
+¿Quieres centrar algo más? Vertical, horizontal...cualquier cosa, en cualquier momento y en cualquier lugar? CSS-Tricks tiene [un bonito reportaje](https://css-tricks.com/centering-css-complete-guide/) en hacer todo eso.
 
 **Nota:** ve por alguna [con errores behavior](https://github.com/philipwalton/flexbugs#3-min-height-on-a-flex-container-wont-apply-to-its-flex-items) con Flexbox en IE11.
 
