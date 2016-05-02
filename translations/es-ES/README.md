@@ -9,6 +9,7 @@ Una colección de consejos para ayudar a llevar su pro habilidades CSS.
 > Para otros grandes listas echa un vistazo a [@sindresorhus](https://github.com/sindresorhus/)'s lista curada de [listas impresionantes](https://github.com/sindresorhus/awesome/).
 
 
+<div id="table-of-contents"></div>
 ## Tabla de contenido
 
 * [Consejos Profesionales](#protips)
@@ -71,6 +72,8 @@ En lugar de poner en la frontera...
 
 Claro, se puede usar `li.nav + li` o incluso `li.nav: li` primer hijo ~, pero con `:not()` la intención es muy clara y el selector CSS define la frontera entre la forma en que un ser humano lo describiría.
 
+<sup>[volver al índice de contenidos](#table-of-contents)</sup>
+
 
 <div id="add-line-height-to-body"></ div>
 ### Añadir `line-height` a `body`
@@ -84,6 +87,8 @@ body {
 ```
 
 De esta manera los elementos textuales pueden heredar de `body` fácilmente.
+
+<sup>[volver al índice de contenidos](#table-of-contents)</sup>
 
 
 <div id="vertically-center-anything"></div>
@@ -110,6 +115,8 @@ body {
 
 **Nota:** ve por alguna [con errores behavior](https://github.com/philipwalton/flexbugs#3-min-height-on-a-flex-container-wont-apply-to-its-flex-items) con Flexbox en IE11.
 
+<sup>[volver al índice de contenidos](#table-of-contents)</sup>
+
 
 <div id="comma-separated-links"></div>
 ### Listas separadas por comas
@@ -125,6 +132,8 @@ ul > li:not(:last-child)::after {
 Utilice el `:not()` pseudo-clase por lo que no se añade una coma al último elemento.
 
 **Nota:** Esta punta puede no ser ideal para la accesibilidad, la pantalla específicamente lectores. Y copiar / pegar desde el navegador no funciona con el contenido generado por CSS. Proceda con precaución.
+
+<sup>[volver al índice de contenidos](#table-of-contents)</sup>
 
 
 <div id="select-items-using-negative-nth-child"></div>
@@ -154,6 +163,8 @@ li:not(:nth-child(-n+3)) {
 
 Así que era bastante fácil.
 
+<sup>[volver al índice de contenidos](#table-of-contents)</sup>
+
 
 <div id="use-svg-for-icons"></div>
 ### Utilizar SVG para iconos
@@ -176,6 +187,8 @@ SVG funciona bien para todos los tipos de resolución y es compatible con todos 
 }}
 ```
 
+<sup>[volver al índice de contenidos](#table-of-contents)</sup>
+
 
 <div id="use-the-lobotomized-owl-selector"></div>
 ### Utilice la herramienta de selección "lobotomizó búho"
@@ -191,6 +204,8 @@ Se puede tener un nombre extraño, pero con el mando universales (`*`) con el se
 En este ejemplo, todos los elementos del flujo del documento que siguen otros elementos recibirán `margin-top: 1.5em`.
 
 Para más información sobre el selector "buho lobotomized", lee [post de Heydon Pickering](http://alistapart.com/article/axiomatic-css-and-lobotomized-owls) en *A List Apart*.
+
+<sup>[volver al índice de contenidos](#table-of-contents)</sup>
 
 
 <div id="use-max-height-for-pure-css-sliders"></div>
@@ -213,6 +228,8 @@ Implementar controles deslizantes CSS sólo para el uso de `max-height` caracter
 
 El elemento se expande para el valor `max-height` característica en vuelo estacionario y la corredera se muestra como resultado de la abundancia.
 
+<sup>[volver al índice de contenidos](#table-of-contents)</sup>
+
 
 <div id="inherit-box-sizing"></div>
 ### Heredar `box-sizing`
@@ -231,6 +248,8 @@ html {
 
 Esto hace que sea más fácil cambiar `box-sizing` en plugins u otros componentes que aprovechan otros comportamientos.
 
+<sup>[volver al índice de contenidos](#table-of-contents)</sup>
+
 
 <div id="equal-width-table-cells"></div>
 ### Celdas de la tabla de igual ancho
@@ -244,6 +263,8 @@ Las tablas pueden ser un dolor de trabajar con lo que trate de usar `table-layou
 ```
 
 Disposiciones de la tabla sin dolor.
+
+<sup>[volver al índice de contenidos](#table-of-contents)</sup>
 
 
 <div id="get-rid-of-margin-hacks-with-flexbox"></div>
@@ -264,6 +285,8 @@ Cuando se trabaja con las canaletas de columna que puede deshacerse de `enésimo
 
 Ahora canaletas de columna siempre aparecen uniformemente espaciadas.
 
+<sup>[volver al índice de contenidos](#table-of-contents)</sup>
+
 
 <div id="use-attribute-selectors-with-empty-links"></div>
 ### Selectores de atributo con el uso Enlaces vacíos
@@ -277,6 +300,8 @@ a[href^="http"]:empty::before {
 ```
 
 Eso es bastante conveniente.
+
+<sup>[volver al índice de contenidos](#table-of-contents)</sup>
 
 
 <div id="style-default-links"></div>
@@ -292,6 +317,8 @@ a[href^="http"]:empty::before {
 
 Ahora enlaces que se insertan a través de un CMS, que por lo general no tienen un atributo `class`, tendrán una distinción sin afectar de forma genérica la cascada.
 
+<sup>[volver al índice de contenidos](#table-of-contents)</sup>
+
 
 <div id="consistent-vertical-rhythm"></div>
 ### Consistente ritmo vertical
@@ -305,6 +332,8 @@ Utilice un selector universales (`*`) dentro de un elemento para crear un ritmo 
 ```
 
 Ritmo vertical consistente proporciona una estética visual que hace que el contenido mucho más legible.
+
+<sup>[volver al índice de contenidos](#table-of-contents)</sup>
 
 
 <div id="intrinsic-ratio-boxes"></div>
@@ -330,6 +359,8 @@ Para crear un cuadro con una relación intrínseca, todo lo que tiene que hacer 
 ```
 
 El uso de 20% para el relleno hace que la altura de la caja igual a 20% de su anchura. No importa el ancho de la ventana, el div niño va a mantener su relación de aspecto (100% / 20% = 5: 1).
+
+<sup>[volver al índice de contenidos](#table-of-contents)</sup>
 
 
 <div id="style-broken-images"></div>
@@ -368,6 +399,8 @@ img:after {
 
 Aprender más sobre el estilo de este patrón en [Iré Aderinokun](https://github.com/ireade/)'s [post original](http://bitsofco.de/styling-broken-images/).
 
+<sup>[volver al índice de contenidos](#table-of-contents)</sup>
+
 
 <div id="use-rem-for-global-sizing-use-em-for-local-sizing"></div>
 ### Use `rem` para Global Dimensionamiento; Use `em` para el dimensionamiento local
@@ -398,6 +431,8 @@ aside .module {
 
 Ahora cada módulo se divide en compartimientos y más fácil de peinar, más fácil de mantener, y flexible.
 
+<sup>[volver al índice de contenidos](#table-of-contents)</sup>
+
 
 <div id="hide-autoplay-videos-that-arent-muted"></div>
 ### Esconder Reproducción automática los vídeos que no estén anulados
@@ -411,6 +446,8 @@ video[autoplay]:not([muted]) {
 ```
 
 Una vez más, nos estamos tomando ventaja de usar el [`:not()`](#use-not-to-applyunapply-borders-on-navigation) pseudo-clase.
+
+<sup>[volver al índice de contenidos](#table-of-contents)</sup>
 
 
 <div id="use-root-for-flexible-type"></div>
@@ -431,6 +468,8 @@ body {
   font: 1em/1.6rem sans-serif;
 }
 ```
+
+<sup>[volver al índice de contenidos](#table-of-contents)</sup>
 
 
 ## Apoyo

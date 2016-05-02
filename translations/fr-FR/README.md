@@ -9,6 +9,7 @@ Une collection de conseils pour aider à prendre vos compétences CSS pro.
 > Pour les autres grandes listes vérifier [@sindresorhus](https://github.com/sindresorhus/) de la liste curated des [listes impressionnantes](https://github.com/sindresorhus/awesome/).
 
 
+<div id="table-of-contents"></div>
 ## Table des matières
 
 * [Conseils Professionnels](#protips)
@@ -71,6 +72,8 @@ Au lieu de mettre à la frontière...
 
 Bien sûr, vous pouvez utiliser `.nav li + li` ou même `.nav li:first-child ~ li`, mais avec `:not()` l'intention est très claire et le sélecteur CSS définit la frontière comme un être humain serait le décrire.
 
+<sup>[retour à la table des matières](#table-of-contents)</sup>
+
 
 <div id="add-line-height-to-body"></div>
 ### Ajouter `line-height` à `body`
@@ -84,6 +87,8 @@ body {
 ```
 
 De cette façon, les éléments textuels peuvent hériter de `body` facilement.
+
+<sup>[retour à la table des matières](#table-of-contents)</sup>
 
 
 <div id="vertically-center-anything"></div>
@@ -110,6 +115,8 @@ Vous voulez centrer autre chose? Verticalement, horizontalement...quoi que ce so
 
 **Remarque:** Surveillez certains [poussette behavior](https://github.com/philipwalton/flexbugs#3-min-height-on-a-flex-container-wont-apply-to-its-flex-items) avec flexBox dans IE11.
 
+<sup>[retour à la table des matières](#table-of-contents)</sup>
+
 
 <div id="comma-separated-lists"></div>
 ### Listes séparées par des virgules
@@ -125,6 +132,8 @@ ul > li:not(:last-child)::after {
 Utilisez le `:not()` pseudo-classe donc pas une virgule est ajoutée au dernier point.
 
 **Remarque:** Cette astuce peut ne pas être idéal pour l'accessibilité, l'écran spécifiquement lecteurs. Et copier / coller à partir du navigateur ne fonctionne pas avec le contenu généré par CSS. Procéder avec prudence.
+
+<sup>[retour à la table des matières](#table-of-contents)</sup>
 
 
 <div id="select-items-using-negative-nth-child"></div>
@@ -154,6 +163,8 @@ li:not(:nth-child(-n+3)) {
 
 Eh bien, ce fut assez facile.
 
+<sup>[retour à la table des matières](#table-of-contents)</sup>
+
 
 <div id="use-svg-for-icons"></div>
 ### Utiliser SVG pour Icons
@@ -176,6 +187,8 @@ SVG échelles bien pour tous les types de résolution et est pris en charge dans
 }
 ```
 
+<sup>[retour à la table des matières](#table-of-contents)</sup>
+
 
 <div id="use-the-lobotomized-owl-selector"></div>
 ### Utilisez le sélecteur "lobotomisé Owl"
@@ -191,6 +204,8 @@ Il peut avoir un nom étrange, mais en utilisant le sélecteur universel (`*`) a
 Dans cet exemple, tous les éléments dans le flux du document qui suivent d'autres éléments recevront `margin-top: 1.5em`.
 
 Pour en savoir plus sur la "chouette lobotomisé" sélecteur, lire [le poste de Heydon Pickering](http://alistapart.com/article/axiomatic-css-and-lobotomized-owls) sur *A List Apart*.
+
+<sup>[retour à la table des matières](#table-of-contents)</sup>
 
 
 <div id="use-max-height-for-pure-css-sliders"></div>
@@ -213,6 +228,8 @@ Mettre en œuvre des curseurs CSS uniquement en utilisant `max-height` avec trop
 
 L'élément se dilate à la valeur `max-height` sur le vol stationnaire et le curseur se affiche à la suite du débordement.
 
+<sup>[retour à la table des matières](#table-of-contents)</sup>
+
 
 <div id="inherit-box-sizing"></div>
 ### Hériter `box-sizing`
@@ -232,6 +249,8 @@ html {
 
 Cela rend plus facile de changer `box-sizing` dans les plugins ou autres composants qui exploitent d'autres comportements.
 
+<sup>[retour à la table des matières](#table-of-contents)</sup>
+
 
 <div id="equal-width-table-cells"></div>
 ### Cellules Equal Largeur de table
@@ -245,6 +264,8 @@ Les tableaux peuvent être une douleur à travailler avec donc essayer d'utilise
 ```
 
 dispositions de table sans douleur.
+
+<sup>[retour à la table des matières](#table-of-contents)</sup>
 
 
 <div id="get-rid-of-margin-hacks-with-flexbox"></div>
@@ -266,6 +287,8 @@ Lorsque vous travaillez avec des gouttières de colonne, vous pouvez vous débar
 
 Maintenant gouttières colonnes apparaissent toujours uniformément espacés.
 
+<sup>[retour à la table des matières](#table-of-contents)</sup>
+
 
 <div id="use-attribute-selectors-with-empty-links"></div>
 ### Utilisation des attributs sélecteurs avec des liens vides
@@ -279,6 +302,8 @@ a[href^="http"]:empty::before {
 ```
 
 C'est assez pratique.
+
+<sup>[retour à la table des matières](#table-of-contents)</sup>
 
 
 <div id="style-default-links"></div>
@@ -295,6 +320,8 @@ a[href]:not([class]) {
 
 Maintenant, les liens qui sont insérés via un CMS, qui ne disposent généralement pas un attribut `class`, auront une distinction sans affecter de manière générique la cascade.
 
+<sup>[retour à la table des matières](#table-of-contents)</sup>
+
 
 <div id="consistent-vertical-rhythm"></div>
 ### Conformément Vertical Rhythm
@@ -308,6 +335,8 @@ Utilisez un sélecteur universel (de `*`) dans un élément pour créer un rythm
 ```
 
 Rythme vertical conformément offre une esthétique visuelle qui rend le contenu beaucoup plus lisible.
+
+<sup>[retour à la table des matières](#table-of-contents)</sup>
 
 
 <div id="intrinsic-ratio-boxes"></div>
@@ -333,6 +362,8 @@ Pour créer une boîte avec un rapport intrinsèque, tout ce que vous devez fair
 ```
 
 En utilisant 20% pour le rembourrage rend la hauteur de la caisse égale à 20% de sa largeur. Peu importe la largeur de la fenêtre, la div enfant gardera son ratio d'aspect (100% / 20% = 5: 1).
+
+<sup>[retour à la table des matières](#table-of-contents)</sup>
 
 
 <div id="style-broken-images"></div>
@@ -371,6 +402,8 @@ img:after {
 
 En savoir plus sur le style de ce modèle dans [Ire Aderinokun](https://github.com/ireade/)' [message original](http://bitsofco.de/styling-broken-images/).
 
+<sup>[retour à la table des matières](#table-of-contents)</sup>
+
 
 <div id="use-rem-for-global-sizing-use-em-for-local-sizing"></div>
 ### Utilisez `rem` for Global Dimensionnement; Utilisez `em` pour Local Sizing
@@ -401,6 +434,8 @@ aside .module {
 
 Maintenant, chaque module devient compartimentée et plus faciles à coiffer, plus maintenable, et flexible.
 
+<sup>[retour à la table des matières](#table-of-contents)</sup>
+
 
 <div id="hide-autoplay-videos-that-arent-muted"></div>
 ### Masquer les vidéos Autoplay qui ne sont pas Muted
@@ -414,6 +449,8 @@ video[autoplay]:not([muted]) {
 ```
 
 Encore une fois, nous prenons avantage d'utiliser le [`:not()`](#use-not-to-applyunapply-borders-on-navigation) pseudo-classe.
+
+<sup>[retour à la table des matières](#table-of-contents)</sup>
 
 
 <div id="use-root-for-flexible-type"></div>
@@ -434,6 +471,8 @@ body {
   font: 1em/1.6rem sans-serif;
 }
 ```
+
+<sup>[retour à la table des matières](#table-of-contents)</sup>
 
 
 ## Soutien
