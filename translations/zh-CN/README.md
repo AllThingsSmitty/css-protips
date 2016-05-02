@@ -420,9 +420,11 @@ video[autoplay]:not([muted]) {
 :root {
   font-size: calc(1vw + 1vh + .5vmin);
 }
+```
 
 现在，您可以利用基于'计算的值`root em`单位：root`:
 
+```css
 body {
   font: 1em/1.6rem sans-serif;
 }
