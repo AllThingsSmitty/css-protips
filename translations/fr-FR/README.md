@@ -425,9 +425,11 @@ La taille type de police dans une disposition sensible devrait être en mesure d
 :root {
   font-size: calc(1vw + 1vh + .5vmin);
 }
+```
 
 Maintenant, vous pouvez utiliser l'appareil de `root em` sur la base de la valeur calculée par`: root`:
 
+```css
 body {
   font: 1em/1.6rem sans-serif;
 }
