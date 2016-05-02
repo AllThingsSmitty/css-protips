@@ -424,9 +424,11 @@ video[autoplay]:not([muted]) {
 :root {
   font-size: calc(1vw + 1vh + .5vmin);
 }
+```
 
 Теперь вы можете использовать `root em` блок на основе значения, рассчитанного с помощью `:root`:
 
+```css
 body {
   font: 1em/1.6rem sans-serif;
 }
