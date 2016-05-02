@@ -37,6 +37,7 @@
 1. [风格破碎的形象](#style-broken-images)
 1. [使用 `rem` 全球上浆; 使用 `em` 本地浆纱](#use-rem-for-global-sizing-use-em-for-local-sizing)
 1. [隱藏自動播放的影片，沒有靜音](#hide-autoplay-videos-that-arent-muted)
+1. [使用`:root`柔性型](#use-root-for-flexible-type)
 
 
 <div id="use-not-to-applyunapply-borders-on-navigation"></div>
@@ -408,6 +409,24 @@ video[autoplay]:not([muted]) {
 ```
 
 再次，我們趁著使用的 [`:not()`](#use-not-to-applyunapply-borders-on-navigation) 偽類。
+
+
+<div id="use-root-for-flexible-type"></div>
+### 使用`:root`柔性型
+
+在响应式布局的类型字体大小应能与每个视口进行调整。你可以计算的基础上视口高度的字体大小和宽度，使用`:root`:
+
+```css
+:root {
+  font-size: calc(1vw + 1vh + .5vmin);
+}
+
+现在，您可以利用基于'计算的值`root em`单位：root`:
+
+body {
+  font: 1em/1.6rem sans-serif;
+}
+```
 
 
 ### 支持情况

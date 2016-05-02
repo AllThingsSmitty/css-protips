@@ -37,6 +37,7 @@
 1. [Стиль изображения разорванные](#style-broken-images)
 1. [Используйте `rem` для глобального Калибровке; Используйте `em` для локального Калибровке](#use-rem-for-global-sizing-use-em-for-local-sizing)
 1. [Скрыть автозапуск видео, которые не Приглушенный](#hide-autoplay-videos-that-arent-muted)
+1. [Использование `:root` для гибкого типа](#use-root-for-flexible-type)
 
 
 <div id="use-not-to-applyunapply-borders-on-navigation"></div>
@@ -412,6 +413,26 @@ video[autoplay]:not([muted]) {
 ```
 
 Еще раз, мы пользуясь помощью [`:not()`](#use-not-to-applyunapply-borders-on-navigation) псевдо-класс.
+
+
+<div id="use-root-for-flexible-type"></div>
+### Использование `: root` для гибкого типа
+
+Размер тип шрифта в реагирующей макет должен иметь возможность регулировать с каждого видового экрана. Вы можете рассчитать размер шрифта, основанный на высоте видового экрана и ширины с помощью `:root`:
+
+```css
+:root {
+  font-size: calc(1vw + 1vh + .5vmin);
+}
+
+Теперь вы можете использовать `root em` блок на основе значения, рассчитанного с помощью `:root`:
+
+body {
+  font: 1em/1.6rem sans-serif;
+}
+```
+
+
 
 
 ## Поддержка

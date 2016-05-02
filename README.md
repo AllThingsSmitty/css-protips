@@ -37,6 +37,7 @@ A collection of tips to help take your CSS skills pro.
 1. [Style Broken Images](#style-broken-images)
 1. [Use `rem` for Global Sizing; Use `em` for Local Sizing](#use-rem-for-global-sizing-use-em-for-local-sizing)
 1. [Hide Autoplay Videos That Aren't Muted](#hide-autoplay-videos-that-arent-muted)
+1. [Use `:root` for Flexible Type](#use-root-for-flexible-type)
 
 
 ### Use `:not()` to Apply/Unapply Borders on Navigation
@@ -393,6 +394,23 @@ video[autoplay]:not([muted]) {
 ```
 
 Once again, we're taking advantage of using the [`:not()`](#use-not-to-applyunapply-borders-on-navigation) pseudo-class.
+
+
+### Use `:root` for Flexible Type
+
+The type font size in a responsive layout should be able to adjust with each viewport. You can calculate the font size based on the viewport height and width using `:root`:
+
+```css
+:root {
+  font-size: calc(1vw + 1vh + .5vmin);
+}
+
+Now you can utilize the `root em` unit based on the value calculated by `:root`:
+
+body {
+  font: 1em/1.6rem sans-serif;
+}
+```
 
 
 ## Support

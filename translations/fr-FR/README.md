@@ -37,6 +37,7 @@ Une collection de conseils pour aider à prendre vos compétences CSS pro.
 1. [Style de Broken Images] (#style-broken-images)
 1. [Utilisez `rem` for Global Dimensionnement; Utilisez `em` pour Local Sizing](#use-rem-for-global-sizing-use-em-for-local-sizing)
 1. [Masquer les vidéos Autoplay qui ne sont pas Muted](#hide-autoplay-videos-that-arent-muted)
+1. [Utiliser `:root` de type flexible](#use-root-for-flexible-type)
 
 
 <div id="use-not-to-applyunapply-borders-on-navigation"></div>
@@ -413,6 +414,24 @@ video[autoplay]:not([muted]) {
 ```
 
 Encore une fois, nous prenons avantage d'utiliser le [`:not()`](#use-not-to-applyunapply-borders-on-navigation) pseudo-classe.
+
+
+<div id="use-root-for-flexible-type"></div>
+### Utiliser `:root` de type flexible
+
+La taille type de police dans une disposition sensible devrait être en mesure d'ajuster à chaque fenêtre. Vous pouvez calculer la taille de la police basée sur la hauteur de la fenêtre et la largeur en utilisant `: root`:
+
+```css
+:root {
+  font-size: calc(1vw + 1vh + .5vmin);
+}
+
+Maintenant, vous pouvez utiliser l'appareil de `root em` sur la base de la valeur calculée par`: root`:
+
+body {
+  font: 1em/1.6rem sans-serif;
+}
+```
 
 
 ## Soutien

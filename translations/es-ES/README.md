@@ -37,6 +37,7 @@ Una colección de consejos para ayudar a llevar su pro habilidades CSS.
 1. [Imágenes rotas Estilo](#style-broken-images)
 1. [Use `rem` para Global Dimensionamiento; Use `em` para el dimensionamiento local](#use-rem-for-global-sizing-use-em-for-local-sizing)
 1. [Esconder Reproducción automática los vídeos que no estén anulados](#hide-autoplay-videos-that-arent-muted)
+1. [Utilizar `:root` para el tipo flexible](#use-root-for-flexible-type)
 
 
 <div id="use-not-to-applyunapply-borders-on-navigation"></div>
@@ -410,6 +411,24 @@ video[autoplay]:not([muted]) {
 ```
 
 Una vez más, nos estamos tomando ventaja de usar el [`:not()`](#use-not-to-applyunapply-borders-on-navigation) pseudo-clase.
+
+
+<div id="use-root-for-flexible-type"></div>
+### Utilizar `:root` para el tipo flexible
+
+El tamaño de tipo de letra en un diseño que responde debe ser capaz de ajustar con cada ventana. Se puede calcular el tamaño de la fuente basada en la altura y la anchura de la ventana gráfica usando `: root`:
+
+```css
+:root {
+  font-size: calc(1vw + 1vh + .5vmin);
+}
+
+Ahora se puede utilizar la unidad de `root em` basado en el valor calculado por `:root`:
+
+body {
+  font: 1em/1.6rem sans-serif;
+}
+```
 
 
 ## Apoyo
