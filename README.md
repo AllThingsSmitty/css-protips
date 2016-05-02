@@ -70,6 +70,8 @@ Instead of putting on the border...
 
 Sure, you can use `.nav li + li` or even `.nav li:first-child ~ li`, but with `:not()` the intent is very clear and the CSS selector defines the border the way a human would describe it.
 
+<sup>[back to table of contents](#table-of-contents)</sup>
+
 
 ### Add `line-height` to `body`
 
@@ -82,6 +84,8 @@ body {
 ```
 
 This way textual elements can inherit from `body` easily.
+
+<sup>[back to table of contents](#table-of-contents)</sup>
 
 
 ### Vertically-Center Anything
@@ -107,6 +111,8 @@ Want to center something else? Vertically, horizontally...anything, anytime, any
 
 **Note:** Watch for some [buggy behavior](https://github.com/philipwalton/flexbugs#3-min-height-on-a-flex-container-wont-apply-to-its-flex-items) with flexbox in IE11.
 
+<sup>[back to table of contents](#table-of-contents)</sup>
+
 
 ### Comma-Separated Lists
 
@@ -121,6 +127,8 @@ ul > li:not(:last-child)::after {
 Use the `:not()` pseudo-class so no comma is added to the last item.
 
 **Note:** This tip may not be ideal for accessibility, specifically screen readers. And copy/paste from the browser doesn't work with CSS-generated content. Proceed with caution.
+
+<sup>[back to table of contents](#table-of-contents)</sup>
 
 
 ### Select Items Using Negative `nth-child`
@@ -149,6 +157,8 @@ li:not(:nth-child(-n+3)) {
 
 Well that was pretty easy.
 
+<sup>[back to table of contents](#table-of-contents)</sup>
+
 
 ### Use SVG for Icons
 
@@ -170,6 +180,8 @@ SVG scales well for all resolution types and is supported in all browsers [back 
 }
 ```
 
+<sup>[back to table of contents](#table-of-contents)</sup>
+
 
 ### Use the "Lobotomized Owl" Selector
 
@@ -184,6 +196,8 @@ It may have a strange name but using the universal selector (`*`) with the adjac
 In this example, all elements in the flow of the document that follow other elements will receive `margin-top: 1.5em`.
 
 For more on the "lobotomized owl" selector, read [Heydon Pickering's post](http://alistapart.com/article/axiomatic-css-and-lobotomized-owls) on *A List Apart*.
+
+<sup>[back to table of contents](#table-of-contents)</sup>
 
 
 ### Use `max-height` for Pure CSS Sliders
@@ -205,6 +219,8 @@ Implement CSS-only sliders using `max-height` with overflow hidden:
 
 The element expands to the `max-height` value on hover and the slider displays as a result of the overflow. 
 
+<sup>[back to table of contents](#table-of-contents)</sup>
+
 
 ### Inherit `box-sizing`
 
@@ -222,6 +238,8 @@ html {
 
 This makes it easier to change `box-sizing` in plugins or other components that leverage other behavior.
 
+<sup>[back to table of contents](#table-of-contents)</sup>
+
 
 ### Equal Width Table Cells
 
@@ -234,6 +252,8 @@ Tables can be a pain to work with so try using `table-layout: fixed` to keep cel
 ```
 
 Pain-free table layouts.
+
+<sup>[back to table of contents](#table-of-contents)</sup>
 
 
 ### Get Rid of Margin Hacks With Flexbox
@@ -253,6 +273,8 @@ When working with column gutters you can get rid of `nth-`, `first-`, and `last-
 
 Now column gutters always appear evenly-spaced.
 
+<sup>[back to table of contents](#table-of-contents)</sup>
+
 
 ### Use Attribute Selectors with Empty Links
 
@@ -265,6 +287,8 @@ a[href^="http"]:empty::before {
 ```
 
 That's pretty convenient.
+
+<sup>[back to table of contents](#table-of-contents)</sup>
 
 
 ### Style "Default" Links
@@ -280,6 +304,8 @@ a[href]:not([class]) {
 
 Now links that are inserted via a CMS, which don't usually have a `class` attribute, will have a distinction without generically affecting the cascade.
 
+<sup>[back to table of contents](#table-of-contents)</sup>
+
 
 ### Consistent Vertical Rhythm
 
@@ -292,6 +318,8 @@ Use a universal selector (`*`) within an element to create a consistent vertical
 ```
 
 Consistent vertical rhythm provides a visual aesthetic that makes content far more readable.
+
+<sup>[back to table of contents](#table-of-contents)</sup>
 
 
 ### Intrinsic Ratio Boxes
@@ -316,6 +344,8 @@ To create a box with an intrinsic ratio, all you need to do is apply top or bott
 ```
 
 Using 20% for padding makes the height of the box equal to 20% of its width. No matter the width of the viewport, the child div will keep its aspect ratio (100% / 20% = 5:1).
+
+<sup>[back to table of contents](#table-of-contents)</sup>
 
 
 ### Style Broken Images
@@ -353,6 +383,8 @@ img:after {
 
 Learn more about styling for this pattern in [Ire Aderinokun](https://github.com/ireade/)'s [original post](http://bitsofco.de/styling-broken-images/).
 
+<sup>[back to table of contents](#table-of-contents)</sup>
+
 
 ### Use `rem` for Global Sizing; Use `em` for Local Sizing
 
@@ -382,6 +414,8 @@ aside .module {
 
 Now each module becomes compartmentalized and easier to style, more maintainable, and flexible.
 
+<sup>[back to table of contents](#table-of-contents)</sup>
+
 
 ### Hide Autoplay Videos That Aren't Muted
 
@@ -394,6 +428,8 @@ video[autoplay]:not([muted]) {
 ```
 
 Once again, we're taking advantage of using the [`:not()`](#use-not-to-applyunapply-borders-on-navigation) pseudo-class.
+
+<sup>[back to table of contents](#table-of-contents)</sup>
 
 
 ### Use `:root` for Flexible Type
@@ -413,6 +449,8 @@ body {
   font: 1em/1.6rem sans-serif;
 }
 ```
+
+<sup>[back to table of contents](#table-of-contents)</sup>
 
 
 ## Support
