@@ -404,9 +404,11 @@ The type font size in a responsive layout should be able to adjust with each vie
 :root {
   font-size: calc(1vw + 1vh + .5vmin);
 }
+```
 
 Now you can utilize the `root em` unit based on the value calculated by `:root`:
 
+```css
 body {
   font: 1em/1.6rem sans-serif;
 }
