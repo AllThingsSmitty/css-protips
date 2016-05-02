@@ -422,9 +422,11 @@ El tamaño de tipo de letra en un diseño que responde debe ser capaz de ajustar
 :root {
   font-size: calc(1vw + 1vh + .5vmin);
 }
+```
 
 Ahora se puede utilizar la unidad de `root em` basado en el valor calculado por `:root`:
 
+```css
 body {
   font: 1em/1.6rem sans-serif;
 }
