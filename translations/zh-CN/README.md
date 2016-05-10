@@ -137,7 +137,7 @@ ul > li:not(:last-child)::after {
 
 
 <div id="select-items-using-negative-nth-child"></div>
-### 使用负的 `nth-child` 选择元素
+### 使用负的 `nth-child` 来选择元素
 
 使用负的 `nth-child` 可以选择 1 至 n 个元素。
 
@@ -253,7 +253,7 @@ html {
 
 
 <div id="equal-width-table-cells"></div>
-### 格子等宽的表格
+### 创造格子等宽的表格
 
 `table-layout: fixed` 可以让每个格子保持等宽：
 
@@ -405,7 +405,7 @@ img:after {
 
 
 <div id="use-rem-for-global-sizing-use-em-for-local-sizing"></div>
-### 用 `rem` 来调整全局大小; 用 `em` 来调整局部大小
+### 用 `rem` 来调整全局大小；用 `em` 来调整局部大小
 
 在根设置基本字体大小后 (`html { font-size: 16px; }`), 请设置为文本元素的字体大小 `em`:
 
