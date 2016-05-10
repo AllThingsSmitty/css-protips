@@ -26,13 +26,13 @@
 1. [逗号分隔的列表](#comma-separated-lists)
 1. [使用负的 `nth-child` 来选择元素](#select-items-using-negative-nth-child)
 1. [使用 SVG 图标](#use-svg-for-icons)
-1. [使用 「形似猫头鹰」的选择器](#use-the-lobotomized-owl-selector)
+1. [使用 “形似猫头鹰” 的选择器](#use-the-lobotomized-owl-selector)
 1. [使用 `max-height` 来建立纯 CSS 的滑块](#use-max-height-for-pure-css-sliders)
 1. [继承 `box-sizing`](#inherit-box-sizing)
 1. [创造格子等宽的表格](#equal-width-table-cells)
 1. [利用 Flexbox 去除多余的外边距](#get-rid-of-margin-hacks-with-flexbox)
 1. [利用属性选择器来选择空链接](#use-attribute-selectors-with-empty-links)
-1. [给「预设」链接定义样式](#style-default-links)
+1. [给 “预设” 链接定义样式](#style-default-links)
 1. [一致的垂直节奏](#consistent-vertical-rhythm)
 1. [内在比例盒](#intrinsic-ratio-boxes)
 1. [为破碎图象定义样式](#style-broken-images)
@@ -62,7 +62,7 @@
 }
 ```
 
-...不如使用 `:not()` 伪类来达成同样的效果：
+……不如使用 `:not()` 伪类来达成同样的效果：
 
 ```css
 .nav li:not(:last-child) {
@@ -192,7 +192,7 @@ SVG 在所有分辨率下都可以良好缩放，IE9+ 及其它所有浏览器�
 
 
 <div id="use-the-lobotomized-owl-selector"></div>
-### 使用「形似猫头鹰」的选择器
+### 使用 “形似猫头鹰” 的选择器
 
 这个名字可能比较陌生，不过全局选择器 (`*`) 和 相邻兄弟选择器 (`+`) 一起使用，效果非凡：
 
@@ -204,7 +204,7 @@ SVG 在所有分辨率下都可以良好缩放，IE9+ 及其它所有浏览器�
 
 在此示例中，遵循其他元素的文档流中的所有元素将都接收上边距 `margin-top: 1.5em` 的样式。
 
-更多 "形似猫头鹰" 的选择器，可参考 *A List Apart* 上面 [Heydon Pickering 的文章](http://alistapart.com/article/axiomatic-css-and-lobotomized-owls)
+更多 “形似猫头鹰”  的选择器，可参考 *A List Apart* 上面 [Heydon Pickering 的文章](http://alistapart.com/article/axiomatic-css-and-lobotomized-owls)
 
 <sup>[回目录](#table-of-contents)</sup>
 
@@ -306,9 +306,9 @@ a[href^="http"]:empty::before {
 
 
 <div id="style-default-links"></div>
-### 给「预设」链接定义样式
+### 给 “预设” 链接定义样式
 
-给「预设」链接定义样式：
+给 “预设” 链接定义样式：
 
 ```css
 a[href]:not([class]) {
