@@ -20,15 +20,15 @@
 <div id="protips"></div>
 ## 专业的技巧
 
-1. [使用 :not() 选择器来决定表单是否显示边框](#use-not-to-applyunapply-borders-on-navigation)
+1. [使用 `:not()` 选择器来决定表单是否显示边框](#use-not-to-applyunapply-borders-on-navigation)
 1. [为 body 元素添加行高](#add-line-height-to-body)
 1. [垂直居中任何元素](#vertically-center-anything)
 1. [逗号分隔的列表](#comma-separated-lists)
-1. [使用负的 'nth-child' 来选择元素](#select-items-using-negative-nth-child)
+1. [使用负的 `nth-child` 来选择元素](#select-items-using-negative-nth-child)
 1. [使用 SVG 图标](#use-svg-for-icons)
 1. [使用 「形似猫头鹰」的选择器](#use-the-lobotomized-owl-selector)
-1. [使用 'max-height' 来建立纯 CSS 的滑块](#use-max-height-for-pure-css-sliders)
-1. [继承 'box-sizing'](#inherit-box-sizing)
+1. [使用 `max-height` 来建立纯 CSS 的滑块](#use-max-height-for-pure-css-sliders)
+1. [继承 `box-sizing`](#inherit-box-sizing)
 1. [创造格子等宽的表格](#equal-width-table-cells)
 1. [利用 Flexbox 去除多余的外边距](#get-rid-of-margin-hacks-with-flexbox)
 1. [利用属性选择器来选择空链接](#use-attribute-selectors-with-empty-links)
@@ -38,7 +38,7 @@
 1. [为破碎图象定义样式](#style-broken-images)
 1. [用 rem 来调整全局大小；用 em 来调整局部大小](#use-rem-for-global-sizing-use-em-for-local-sizing)
 1. [隐藏没有静音、自动播放的影片](#hide-autoplay-videos-that-arent-muted)
-1. [使用选择器 ':root' 来控制字体弹性](#use-root-for-flexible-type)
+1. [使用选择器 `:root` 来控制字体弹性](#use-root-for-flexible-type)
 
 
 <div id="use-not-to-applyunapply-borders-on-navigation"></div>
@@ -437,7 +437,7 @@ aside .module {
 
 
 <div id="hide-autoplay-videos-that-arent-muted"></div>
-### 隐藏没有静音，自动播放的影片
+### 隐藏没有静音、自动播放的影片
 
 这是一个自定义的使用者样式表一个伟大的把戏。避免在加载页面时自动播放。如果没有静音，则不显示视频：
 
