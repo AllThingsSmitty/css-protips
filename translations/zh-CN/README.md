@@ -78,7 +78,7 @@
 <div id="add-line-height-to-body"></div>
 ### 为 `body` 元素添加行高
 
-不必为每一个 `<p>`，`<h*>`，_等元素_逐一添加 `line-height`，为 `body` 元素添加就好了：
+不必为每一个 `<p>`，`<h*>`，等元素逐一添加 `line-height`，为 `body` 元素添加就好了：
 
 ```css
 body {
