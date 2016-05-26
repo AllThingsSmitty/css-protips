@@ -82,7 +82,7 @@ Vous ne devez pas ajouter `line-height` à chaque `<p>`, `<h*>`, _et al_. sépar
 
 ```css
 body {
-  line-height: 1;
+  line-height: 1.5;
 }
 ```
 
@@ -468,7 +468,7 @@ Maintenant, vous pouvez utiliser l'appareil de `root em` sur la base de la valeu
 
 ```css
 body {
-  font: 1em/1.6rem sans-serif;
+  font: 1em/1.6 sans-serif;
 }
 ```
 

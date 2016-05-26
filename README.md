@@ -79,7 +79,7 @@ You don't need to add `line-height` to each `<p>`, `<h*>`, _et al_. separately. 
 
 ```css
 body {
-  line-height: 1;
+  line-height: 1.5;
 }
 ```
 
@@ -446,7 +446,7 @@ Now you can utilize the `root em` unit based on the value calculated by `:root`:
 
 ```css
 body {
-  font: 1em/1.6rem sans-serif;
+  font: 1em/1.6 sans-serif;
 }
 ```
 

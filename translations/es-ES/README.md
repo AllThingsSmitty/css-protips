@@ -82,7 +82,7 @@ No es necesario añadir `line-height` característica a cada` <p> `,` <h *> `, _
 
 ```css
 body {
-  line-height: 1;
+  line-height: 1.5;
 }
 ```
 
@@ -465,7 +465,7 @@ Ahora se puede utilizar la unidad de `root em` basado en el valor calculado por 
 
 ```css
 body {
-  font: 1em/1.6rem sans-serif;
+  font: 1em/1.6 sans-serif;
 }
 ```
 

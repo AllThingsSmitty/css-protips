@@ -82,7 +82,7 @@
 
 ```css
 body {
-  line-height: 1;
+  line-height: 1.5;
 }
 ```
 
@@ -467,7 +467,7 @@ video[autoplay]:not([muted]) {
 
 ```css
 body {
-  font: 1em/1.6rem sans-serif;
+  font: 1em/1.6 sans-serif;
 }
 ```
 
