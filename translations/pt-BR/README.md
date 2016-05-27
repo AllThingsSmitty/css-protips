@@ -14,7 +14,7 @@ Uma coleção de dicas para elevar suas habilidades de CSS.
 * [Protips](#protips)
 * [Suporte](#support)
 * [Traduções](#translations)
-* [Contribuição](CONTRIBUTING.md)
+* [Contribuição](../../CONTRIBUTING.md)
 
 
 ## Protips
