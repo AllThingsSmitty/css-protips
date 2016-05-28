@@ -12,32 +12,32 @@ Uma coleção de dicas para elevar suas habilidades de CSS.
 ## Índice
 
 * [Protips](#protips)
-* [Suporte](#support)
-* [Traduções](#translations)
-* [Contribuição](../../CONTRIBUTING.md)
+* [Suporte](#suporte)
+* [Traduções](#traduções)
+* [Contribuições](../../CONTRIBUTING.md)
 
 
 ## Protips
 
-1. [Use `:not()` para Aplicar/Remover Bordas](#use-not-to-applyunapply-borders-on-navigation)
-1. [Defina o `line-height` no `body`](#add-line-height-to-body)
-1. [Alinhe Elementos Verticalmente](#vertically-center-anything)
-1. [Listas Separadas por Vírgula](#comma-separated-lists)
-1. [Selecione Itens Usando `nth-child` Negativo](#select-items-using-negative-nth-child)
-1. [Ícones SVG](#use-svg-for-icons)
-1. [Use o Seletor "Lobotomized Owl"](#use-the-lobotomized-owl-selector)
-1. [Sliders em CSS com `max-height`](#use-max-height-for-pure-css-sliders)
-1. [Herde o `box-sizing`](#inherit-box-sizing)
-1. [Tabelas com Células de Tamanho Igual](#equal-width-table-cells)
-1. [Esqueça as "Margin Hacks", use Flexbox](#get-rid-of-margin-hacks-with-flexbox)
-1. [Use Seletores de Atributo em Links Vazios](#use-attribute-selectors-with-empty-links)
-1. [Estilize Links "Default"](#style-default-links)
-1. [Espaçamento Vertical Consistente](#consistent-vertical-rhythm)
-1. [Div com Proporção de Tela Fixa](#intrinsic-ratio-boxes)
-1. [Estilize Imagens Quebradas](#style-broken-images)
-1. [Use `rem` para Definir Tamanhos Globais; Use `em` para Definir Tamanhos Locais](#use-rem-for-global-sizing-use-em-for-local-sizing)
-1. [Esconda Vídeos em Autoplay Que Não Estejam no Mudo](#hide-autoplay-videos-that-arent-muted)
-1. [Use `:root` para uma Typografia Flexível](#use-root-for-flexible-type)
+1. [Use `:not()` para Aplicar/Remover Bordas](#use-not-para-aplicarremover-bordas)
+1. [Defina o `line-height` no `body`](#defina-o-line-height-no-body)
+1. [Alinhe Elementos Verticalmente](#alinhe-elementos-verticalmente)
+1. [Listas Separadas por Vírgula](#listas-separadas-por-vírgula)
+1. [Selecione Itens Usando `nth-child` Negativo](#selecione-itens-usando-nth-child-negativo)
+1. [Ícones SVG](#Ícones-svg)
+1. [Use o Seletor "Lobotomized Owl"](#use-o-seletor-lobotomized-owl)
+1. [Sliders em CSS com `max-height`](#sliders-em-css-com-max-height)
+1. [Herde o `box-sizing`](#herde-o-box-sizing)
+1. [Tabelas com Células de Tamanho Igual](#tabelas-com-células-de-tamanho-igual)
+1. [Esqueça as "Margin Hacks", use Flexbox](#esqueça-as-margin-hacks-use-flexbox)
+1. [Use Seletores de Atributo em Links Vazios](#use-seletores-de-atributo-em-links-vazios)
+1. [Estilize Links "Default"](#estilize-links-default)
+1. [Espaçamento Vertical Consistente](#espaçamento-vertical-consistente)
+1. [Div com Proporção de Tela Fixa](#div-com-proporção-de-tela-fixa)
+1. [Estilize Imagens Quebradas](#estilize-imagens-quebradas)
+1. [Use `rem` para Definir Tamanhos Globais; Use `em` para Definir Tamanhos Locais](#use-rem-para-definir-tamanhos-globais-use-em-para-definir-tamanhos-locais)
+1. [Esconda Vídeos em Autoplay Que Não Estejam no Mudo](#esconda-vídeos-em-autoplay-que-não-estejam-no-mudo)
+1. [Use `:root` para uma Typografia Flexível](#use-root-para-uma-typografia-flexível)
 
 
 ### Use `:not()` para Aplicar/Remover Bordas
@@ -386,7 +386,7 @@ Leia mais sobre como estilizar imagens quebradas no [artigo original](http://bit
 <sup>[voltar ao índice](#table-of-contents)</sup>
 
 
-### UUse `rem` para Definir Tamanhos Globais; Use `em` para Definir Tamanhos Locais
+### Use `rem` para Definir Tamanhos Globais; Use `em` para Definir Tamanhos Locais
 
 Depois de definir o tamanho de fonte base na raíz (`html { font-size: 16px; }`), defina o tamanho de fonte para elementos de texto utilizando `em`:
 
