@@ -99,8 +99,8 @@ html, body {
 }
 
 body {
-  -webkit-align-items: center;  
-  -ms-flex-align: center;  
+  -webkit-align-items: center;
+  -ms-flex-align: center;
   align-items: center;
   display: -webkit-flex;
   display: flex;
@@ -133,7 +133,7 @@ Use the `:not()` pseudo-class so no comma is added to the last item.
 
 ### Select Items Using Negative `nth-child`
 
-Use negative `nth-child` in CSS to select items 1 through n. 
+Use negative `nth-child` in CSS to select items 1 through n.
 
 ```css
 li {
@@ -217,7 +217,7 @@ Implement CSS-only sliders using `max-height` with overflow hidden:
 }
 ```
 
-The element expands to the `max-height` value on hover and the slider displays as a result of the overflow. 
+The element expands to the `max-height` value on hover and the slider displays as a result of the overflow.
 
 <sup>[back to table of contents](#table-of-contents)</sup>
 
@@ -278,7 +278,7 @@ Now column gutters always appear evenly-spaced.
 
 ### Use Attribute Selectors with Empty Links
 
-Display links when the `<a>` element has no text value but the `href` attribute has a link: 
+Display links when the `<a>` element has no text value but the `href` attribute has a link:
 
 ```css
 a[href^="http"]:empty::before {
@@ -334,7 +334,7 @@ To create a box with an intrinsic ratio, all you need to do is apply top or bott
 }
 
 .container div {
-  border: 2px dashed #ddd;	
+  border: 2px dashed #ddd;
   height: 100%;
   left: 0;
   position: absolute;
@@ -353,7 +353,7 @@ Using 20% for padding makes the height of the box equal to 20% of its width. No 
 Make broken images more aesthetically-pleasing with a little bit of CSS:
 
 ```css
-img {  
+img {
   display: block;
   font-family: Helvetica, Arial, sans-serif;
   font-weight: 300;
@@ -368,13 +368,13 @@ img {
 Now add pseudo-elements rules to display a user message and URL reference of the broken image:
 
 ```css
-img:before {  
+img:before {
   content: "We're sorry, the image below is broken :(";
   display: block;
   margin-bottom: 10px;
 }
 
-img:after {  
+img:after {
   content: "(url: " attr(src) ")";
   display: block;
   font-size: 12px;
@@ -391,7 +391,7 @@ Learn more about styling for this pattern in [Ire Aderinokun](https://github.com
 After setting the base font size at the root (`html { font-size: 16px; }`), set the font size for textual elements to `em`:
 
 ```css
-h2 { 
+h2 {
   font-size: 2em;
 }
 
@@ -462,5 +462,6 @@ Current versions of Chrome, Firefox, Safari, Opera, Edge, and IE11.
 
 * [Español](https://github.com/AllThingsSmitty/css-protips/tree/master/translations/es-ES)
 * [Français](https://github.com/AllThingsSmitty/css-protips/tree/master/translations/fr-FR)
+* [Português do Brasil](https://github.com/AllThingsSmitty/css-protips/tree/master/translations/pt-BR)
 * [русский](https://github.com/AllThingsSmitty/css-protips/tree/master/translations/ru-RU)
 * [简体中文](https://github.com/AllThingsSmitty/css-protips/tree/master/translations/zh-CN)

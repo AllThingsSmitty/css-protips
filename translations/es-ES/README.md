@@ -98,7 +98,7 @@ No, no es magia negro, que realmente puede centrar verticalmente elementos:
 
 ```css
 html, body {
-  altura: 100%;
+  height: 100%;
   margin: 0;
 }
 
