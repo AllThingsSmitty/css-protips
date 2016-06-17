@@ -38,6 +38,7 @@ A collection of tips to help take your CSS skills pro.
 1. [Use `rem` for Global Sizing; Use `em` for Local Sizing](#use-rem-for-global-sizing-use-em-for-local-sizing)
 1. [Hide Autoplay Videos That Aren't Muted](#hide-autoplay-videos-that-arent-muted)
 1. [Use `:root` for Flexible Type](#use-root-for-flexible-type)
+1. [Set `font-size` on Form Elements for a Better Mobile Experience](#set-font-size-on-form-elements-for-a-better-mobile-experience)
 
 
 ### Use `:not()` to Apply/Unapply Borders on Navigation
@@ -449,6 +450,24 @@ body {
   font: 1em/1.6 sans-serif;
 }
 ```
+
+<sup>[back to table of contents](#table-of-contents)</sup>
+
+
+### Set `font-size` on Form Elements for a Better Mobile Experience
+
+To avoid mobile browsers (iOS Safari, _et al_.) from zooming in on HTML form elements when a `<select>` drop-down is tapped, add `font-size` to the selector rule:
+
+```css
+input[type="text"],
+input[type="number"],
+select,
+textarea {
+  font-size: 16px;
+}
+```
+
+:dancer:
 
 <sup>[back to table of contents](#table-of-contents)</sup>
 

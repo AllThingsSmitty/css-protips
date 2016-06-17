@@ -39,6 +39,7 @@ Una colección de consejos para ayudar a llevar su pro habilidades CSS.
 1. [Use `rem` para Global Dimensionamiento; Use `em` para el dimensionamiento local](#use-rem-for-global-sizing-use-em-for-local-sizing)
 1. [Esconder Reproducción automática los vídeos que no estén anulados](#hide-autoplay-videos-that-arent-muted)
 1. [Utilizar `:root` para el tipo flexible](#use-root-for-flexible-type)
+1. [Ajuste `font-size` en el Formulario Elementos para una mejor experiencia móvil](#set-font-size-on-form-elements-for-a-better-mobile-experience)
 
 
 <div id="use-not-to-applyunapply-borders-on-navigation"></div>
@@ -270,7 +271,7 @@ Disposiciones de la tabla sin dolor.
 <div id="get-rid-of-margin-hacks-with-flexbox"></div>
 ### Deshacerse del margen Hacks Con Flexbox
 
-Cuando se trabaja con las canaletas de columna que puede deshacerse de `enésimo-`, `` primera y última `hacks-child` mediante el uso de la propiedad` espacio between` de Flexbox:
+Cuando se trabaja con las canaletas de columna que puede deshacerse de `nth-`, `first-` y `last-child` mediante el uso de la propiedad `space-between` de Flexbox:
 
 ```css
 .list {
@@ -453,7 +454,7 @@ Una vez más, nos estamos tomando ventaja de usar el [`:not()`](#use-not-to-appl
 <div id="use-root-for-flexible-type"></div>
 ### Utilizar `:root` para el tipo flexible
 
-El tamaño de tipo de letra en un diseño que responde debe ser capaz de ajustar con cada ventana. Se puede calcular el tamaño de la fuente basada en la altura y la anchura de la ventana gráfica usando `: root`:
+El tamaño de tipo de letra en un diseño que responde debe ser capaz de ajustar con cada ventana. Se puede calcular el tamaño de la fuente basada en la altura y la anchura de la ventana gráfica usando `:root`:
 
 ```css
 :root {
@@ -468,6 +469,25 @@ body {
   font: 1em/1.6 sans-serif;
 }
 ```
+
+<sup>[volver al índice de contenidos](#table-of-contents)</sup>
+
+
+<div id="set-font-size-on-form-elements-for-a-better-mobile-experience"></div>
+### Ajuste `font-size` en el Formulario Elementos para una mejor experiencia móvil
+
+Para evitar los navegadores móviles (iOS Safari, _et al_.) De hacer zoom sobre los elementos de formulario HTML cuando un `<select>` desplegable se toca, agrega `font-size` a la regla de selección:
+
+```css
+input[type="text"],
+input[type="number"],
+select,
+textarea {
+  font-size: 16px;
+}
+```
+
+:dancer:
 
 <sup>[volver al índice de contenidos](#table-of-contents)</sup>
 
