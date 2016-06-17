@@ -39,6 +39,7 @@
 1. [Используйте `rem` для глобальных размеров; Используйте `em` для локальных размеров](#use-rem-for-global-sizing-use-em-for-local-sizing)
 1. [Отключите автовоспроизведение видео с включенным звуком](#hide-autoplay-videos-that-arent-muted)
 1. [Используйте `:root` для шрифтов](#use-root-for-flexible-type)
+1. [Установите `font-size` на элементы формы для лучшего мобильного опыта](#set-font-size-on-form-elements-for-a-better-mobile-experience)
 
 
 <div id="use-not-to-applyunapply-borders-on-navigation"></div>
@@ -469,6 +470,25 @@ body {
   font: 1em/1.6 sans-serif;
 }
 ```
+
+<sup>[вернуться к оглавлению](#table-of-contents)</sup>
+
+
+<div id="#set-font-size-on-form-elements-for-a-better-mobile-experience"></div>
+### Установите `font-size` на элементы формы для лучшего мобильного опыта
+
+Чтобы избежать мобильных браузеров (IOS Safari, _et al_.) От увеличения в форме элементов HTML, когда `<select>` раскрывающийся сливают, добавьте `font-size` правилу селектора:
+
+```css
+input[type="text"],
+input[type="number"],
+select,
+textarea {
+  font-size: 16px;
+}
+```
+
+:dancer:
 
 <sup>[вернуться к оглавлению](#table-of-contents)</sup>
 
