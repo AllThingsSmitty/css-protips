@@ -20,7 +20,7 @@ Una colección de consejos para ayudar a llevar su pro habilidades CSS.
 <div id="protips"></div>
 ## Consejos Profesionales
 
-1. [Use `:not()` para Aplicar / Cancelar la aplicación de las fronteras para la Navegación](#use-not-to-applyunapply-borders-on-navigation)
+1. [Use `:not()` para Aplicar / Cancelar la aplicación de las bordes para la Navegación](#use-not-to-applyunapply-borders-on-navigation)
 1. [Añadir `line-height` a `body`](#add-line-height-to-body)
 1. [Cualquier cosa verticalmente-Centro](#vertically-center-anything)
 1. [Listas separadas por comas](#comma-separated-links)
@@ -43,27 +43,27 @@ Una colección de consejos para ayudar a llevar su pro habilidades CSS.
 
 
 <div id="use-not-to-applyunapply-borders-on-navigation"></div>
-### Use `:not()` para Aplicar / Cancelar la aplicación de las fronteras para la Navegación
+### Use `:not()` para Aplicar / Cancelar los bordes de la navegación
 
-En lugar de poner en la frontera...
+En lugar de poner en el borde...
 
 ```css
-/* add border */
+/* Agregar el borde */
 .nav li {
   border-right: 1px solid #666;
 }
 ```
 
-...Y luego sacarlo del último elemento...
+...Y luego quitarlo del último elemento...
 
 ```css
-/* remove border */
+/* quitar el borde */
 .nav li:last-child {
   border-right: none;
 }
 ```
 
-...Utilizar el `:not()` pseudo-clase que sólo se aplican a los elementos que desea:
+...Utiliza la pseudo-clase `:not()` que sólo se aplican a los elementos que desea:
 
 ```css
 .nav li:not(:last-child) {
@@ -71,15 +71,15 @@ En lugar de poner en la frontera...
 }
 
 ```
-Claro, se puede usar `li.nav + li` o incluso `li.nav: li` primer hijo ~, pero con `:not()` la intención es muy clara y el selector CSS define la frontera entre la forma en que un ser humano lo describiría.
+Claro, se puede usar `li.nav + li` o incluso `li.nav: li` primer hijo ~, pero con `:not()` la intención es muy clara y el selector CSS define los bordes de la forma en que un ser humano lo describiría.
 
 <sup>[volver al índice de contenidos](#table-of-contents)</sup>
 
 
 <div id="add-line-height-to-body"></div>
-### Añadir `line-height` a `body`  
+### Añadir `line-height` a el `body`  
 
-No es necesario añadir `line-height` característica a cada` <p> `,` <h *> `, _et al_. separadamente. En su lugar, añadirlo a `body`:
+No es necesario añadir `line-height` a cada` <p> `,` <h *> `, _et al_. por separado. En su lugar, agregalo a el `body`:
 
 ```css
 body {
@@ -93,9 +93,9 @@ De esta manera los elementos textuales pueden heredar de `body` fácilmente.
 
 
 <div id="vertically-center-anything"></div>
-### Cualquier cosa verticalmente-Centro
+### Centrar cualquier verticalmente
 
-No, no es magia negro, que realmente puede centrar verticalmente elementos:
+No, no es magia negra, realmente puedes centrar verticalmente elementos:
 
 ```css
 html, body {
@@ -112,9 +112,9 @@ body {
 }
 ```
 
-¿Quieres centrar algo más? Vertical, horizontal...cualquier cosa, en cualquier momento y en cualquier lugar? CSS-Tricks tiene [un bonito reportaje](https://css-tricks.com/centering-css-complete-guide/) en hacer todo eso.
+¿Quieres centrar algo más? Vertical, horizontal...cualquier cosa, en cualquier momento y en cualquier lugar? CSS-Tricks tiene [un bonito reportaje](https://css-tricks.com/centering-css-complete-guide/) para hacer todo eso.
 
-**Nota:** ve por alguna [con errores behavior](https://github.com/philipwalton/flexbugs#3-min-height-on-a-flex-container-wont-apply-to-its-flex-items) con Flexbox en IE11.
+**Nota:** ve por algunos [comportamientos erroneos](https://github.com/philipwalton/flexbugs#3-min-height-on-a-flex-container-wont-apply-to-its-flex-items) con Flexbox en IE11.
 
 <sup>[volver al índice de contenidos](#table-of-contents)</sup>
 
@@ -122,7 +122,7 @@ body {
 <div id="comma-separated-links"></div>
 ### Listas separadas por comas
 
-Hacen elementos de la lista se ven como una lista de bienes, separados por comas:
+Hacer que los elementos de la lista se vean de forma real, separados por comas:
 
 ```css
 ul > li:not(:last-child)::after {
@@ -130,7 +130,7 @@ ul > li:not(:last-child)::after {
 }
 ```
 
-Utilice el `:not()` pseudo-clase por lo que no se añade una coma al último elemento.
+Utilice la pseudo-clase `:not()` para agregar una coma al último elemento.
 
 **Nota:** Esta punta puede no ser ideal para la accesibilidad, la pantalla específicamente lectores. Y copiar / pegar desde el navegador no funciona con el contenido generado por CSS. Proceda con precaución.
 
@@ -492,6 +492,6 @@ textarea {
 <sup>[volver al índice de contenidos](#table-of-contents)</sup>
 
 
-## Apoyo
+## Soporte
 
 Las versiones actuales de Chrome, Firefox, Safari, Opera, Edge y IE11.
