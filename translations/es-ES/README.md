@@ -13,8 +13,8 @@ Una colección de consejos para ayudar a llevar su pro habilidades CSS.
 ## Tabla de contenido
 
 * [Consejos Profesionales](#protips)
-* [Apoyo](#apoyo)
-* [Pautas de contribución](../../CONTRIBUTING.md)
+* [Soporte](#soporte)
+* [Pautas para contribuir](../../CONTRIBUTING.md)
 
 
 <div id="protips"></div>
@@ -23,23 +23,23 @@ Una colección de consejos para ayudar a llevar su pro habilidades CSS.
 1. [Use `:not()` para Aplicar / Cancelar la aplicación de las bordes para la Navegación](#use-not-to-applyunapply-borders-on-navigation)
 1. [Añadir `line-height` a `body`](#add-line-height-to-body)
 1. [Cualquier cosa verticalmente-Centro](#vertically-center-anything)
-1. [Listas separadas por comas](#comma-separated-links)
+1. [Listas separadas por comas](#listas-separadas-por-comas)
 1. [Seleccionar elementos Usando negativo `nth-child`](#select-items-using-negative-nth-child)
-1. [Utilizar SVG para iconos](#use-svg-for-icons)
-1. [Utilice la herramienta de selección "lobotomizó búho"](#use-the-lobotomized-owl-selector)
-1. [Use `max-height` característica de Sliders puro CSS](#use-max-height-for-pure-css-sliders)
-1. [Heredar `box-sizing`](#inherit-box-sizing)
-1. [Celdas de la tabla de igual ancho](#equal-width-table-cells)
-1. [Deshacerse del margen Hacks Con Flexbox](#get-rid-of-margin-hacks-with-flexbox)
-1. [Selectores de atributo con el uso Enlaces vacíos](#use-attribute-selectors-with-empty-links)
-1. [Enlaces de estilo "por defecto"](#style-default-links)
-1. [Consistente ritmo vertical](#consistent-vertical-rhythm)
-1. [Cajas Relación intrínsecas](#intrinsic-ratio-boxes)
-1. [Imágenes rotas Estilo](#style-broken-images)
-1. [Use `rem` para Global Dimensionamiento; Use `em` para el dimensionamiento local](#use-rem-for-global-sizing-use-em-for-local-sizing)
-1. [Esconder Reproducción automática los vídeos que no estén anulados](#hide-autoplay-videos-that-arent-muted)
-1. [Utilizar `:root` para el tipo flexible](#use-root-for-flexible-type)
-1. [Ajuste `font-size` en el Formulario Elementos para una mejor experiencia móvil](#set-font-size-on-form-elements-for-a-better-mobile-experience)
+1. [Utilizar SVG para iconos](#utilizar-svg-para-iconos)
+1. [Utilice la herramienta de selección "lobotomizó búho"](#utilice-la-herramienta-de-selección-lobotomizó-búho)
+1. [Use `max-height` característica de Sliders puro CSS](#use-max-height-para-un-sliders-de-puro-css)
+1. [Heredar `box-sizing`](#heredar-box-sizing)
+1. [Celdas de la tabla de igual ancho](#celdas-de-la-tabla-con-igual-ancho)
+1. [Deshacerse del margen Hacks Con Flexbox](#deshacerse-de-los-hacks-de-margen-con-flexbox)
+1. [Selectores de atributo con el uso Enlaces vacíos](#utilizar-selectores-de-atributo-con-enlaces-vacíos)
+1. [Enlaces de estilo "por defecto"](#estilos-por-defcto-para-los-enlaces)
+1. [Consistente ritmo vertical](#consistente-ritmo-vertical)
+1. [Cajas Relación intrínsecas](#cajas-relación-intrínsecas)
+1. [Imágenes rotas Estilo](#imágenes-rotas-estilo)
+1. [Use `rem` para Global Dimensionamiento; Use `em` para el dimensionamiento local](#use-rem-para-global-dimensionamiento-use-em-para-el-dimensionamiento-local)
+1. [Esconder Reproducción automática los vídeos que no estén anulados](#esconder-reproducción-automática-los-vídeos-que-no-estén-anulados)
+1. [Utilizar `:root` para el tipo flexible](#utilizar-root-para-el-tipo-flexible)
+1. [Ajuste `font-size` en el Formulario Elementos para una mejor experiencia móvil](#ajuste-font-size-en-el-formulario-elementos-para-una-mejor-experiencia-móvil)
 
 
 <div id="use-not-to-applyunapply-borders-on-navigation"></div>
