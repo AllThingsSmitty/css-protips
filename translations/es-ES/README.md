@@ -132,7 +132,7 @@ ul > li:not(:last-child)::after {
 
 Utilice la pseudo-clase `:not()` para agregar una coma al último elemento.
 
-**Nota:** Esta punta puede no ser ideal para la accesibilidad, la pantalla específicamente lectores. Y copiar / pegar desde el navegador no funciona con el contenido generado por CSS. Proceda con precaución.
+**Nota:** Esta consejo puede no ser ideal para la accesibilidad, específicamente para lectores de pantalla. Y copiar / pegar desde el navegador no funciona con el contenido generado por CSS. Proceda con precaución.
 
 <sup>[volver al índice de contenidos](#table-of-contents)</sup>
 
@@ -147,7 +147,7 @@ li {
   display: none;
 }
 
-/* select items 1 through 3 and display them */
+/* seleccionar los elementos de 1 hasta 3 y muestralos */
 li:nth-child(-n+3) {
   display: block;
 }
@@ -156,7 +156,7 @@ li:nth-child(-n+3) {
 O bien, como ya se ha aprendido un poco sobre [el uso de `:not()`](# uso no-a-applyunapply-fronteras-on-navegación), trate de:
 
 ```css
-/* select items 1 through 3 and display them */
+/* seleccionar los elementos de 1 hasta 3 y muestralos */
 li:not(:nth-child(-n+3)) {
   display: none;
 }
@@ -180,7 +180,7 @@ No hay ninguna razón para no usar SVG para los iconos:
 
 SVG funciona bien para todos los tipos de resolución y es compatible con todos los navegadores [volver a IE9](http://caniuse.com/#search=svg). Así que olvide sus archivos .png, .jpg o .gif-jif-whatev.
 
-**Nota:** Si usted tiene SVG icono de sólo botones para los usuarios con visión y el SVG no se puede cargar, esto ayudará a mantener la accesibilidad:
+**Nota:** Si usted tiene un icono SVG de sólo botones para los usuarios con visión y el SVG no se puede cargar, esto ayudará a mantener la accesibilidad:
 
 ```css
 .no-svg .icon-only:after {
@@ -194,7 +194,7 @@ SVG funciona bien para todos los tipos de resolución y es compatible con todos 
 <div id="use-the-lobotomized-owl-selector"></div>
 ### Utilice la herramienta de selección "lobotomizó búho"
 
-Se puede tener un nombre extraño, pero con el mando universales (`*`) con el selector de hermanos adyacentes (`+`) puede proporcionar una potente capacidad de CSS:
+Puede que tenga un nombre extraño, pero utilizando el selector unversal (`*`) con el selector de hermanos adyacentes (`+`) puede proporcionar una potente capacidad de CSS:
 
 ```css
 * + * {
@@ -210,9 +210,9 @@ Para más información sobre el selector "buho lobotomized", lee [post de Heydon
 
 
 <div id="use-max-height-for-pure-css-sliders"></div>
-### Use `max-height` característica de Sliders puro CSS
+### Use `max-height` para un Sliders de puro CSS
 
-Implementar controles deslizantes CSS sólo para el uso de `max-height` característica con rebosadero oculto:
+Implementar un slider solo de CSS utilizando solo `max-height` con el overflow oculto.
 
 ```css
 .slider {
@@ -227,7 +227,7 @@ Implementar controles deslizantes CSS sólo para el uso de `max-height` caracter
 }
 ```
 
-El elemento se expande para el valor `max-height` característica en vuelo estacionario y la corredera se muestra como resultado de la abundancia.
+El elemento se expande hasta el valor de `max-height` en hover y el slider muestra el contenido del overflow.
 
 <sup>[volver al índice de contenidos](#table-of-contents)</sup>
 
@@ -235,7 +235,7 @@ El elemento se expande para el valor `max-height` característica en vuelo estac
 <div id="inherit-box-sizing"></div>
 ### Heredar `box-sizing`
 
-Let `box-sizing` ser heredada de `html`:
+Herdar `box-sizing` de `html`:
 
 ```css
 html {
@@ -253,9 +253,9 @@ Esto hace que sea más fácil cambiar `box-sizing` en plugins u otros componente
 
 
 <div id="equal-width-table-cells"></div>
-### Celdas de la tabla de igual ancho
+### Celdas de la tabla con igual ancho
 
-Las tablas pueden ser un dolor de trabajar con lo que trate de usar `table-layout: fixed` para mantener las células en el mismo ancho:
+Las tablas pueden ser un dolor de trabajar con lo que se trate de usar `table-layout: fixed` para mantener las celdas con el mismo ancho:
 
 ```css
 .calendar {
@@ -263,13 +263,13 @@ Las tablas pueden ser un dolor de trabajar con lo que trate de usar `table-layou
 }
 ```
 
-Disposiciones de la tabla sin dolor.
+Diseño de tablas sin dolor.
 
 <sup>[volver al índice de contenidos](#table-of-contents)</sup>
 
 
 <div id="get-rid-of-margin-hacks-with-flexbox"></div>
-### Deshacerse del margen Hacks Con Flexbox
+### Deshacerse de los hacks de margen con Flexbox
 
 Cuando se trabaja con las canaletas de columna que puede deshacerse de `nth-`, `first-` y `last-child` mediante el uso de la propiedad `space-between` de Flexbox:
 
@@ -290,7 +290,7 @@ Ahora canaletas de columna siempre aparecen uniformemente espaciadas.
 
 
 <div id="use-attribute-selectors-with-empty-links"></div>
-### Selectores de atributo con el uso Enlaces vacíos
+### Utilizar selectores de atributo con enlaces vacíos
 
 Mostrar vínculos cuando el elemento `<a>` no tiene un valor de texto, pero el atributo `href` tiene un enlace:
 
@@ -306,9 +306,9 @@ Eso es bastante conveniente.
 
 
 <div id="style-default-links"></div>
-### Enlaces de estilo "por defecto"
+### Estilos "por defcto" para los enlaces.
 
-Añadir un estilo de enlaces "por defecto":
+Añadir un estilo a los enlaces "por defecto":
 
 ```css
 a[href^="http"]:empty::before {
@@ -316,7 +316,7 @@ a[href^="http"]:empty::before {
 }
 ```
 
-Ahora enlaces que se insertan a través de un CMS, que por lo general no tienen un atributo `class`, tendrán una distinción sin afectar de forma genérica la cascada.
+Ahora los enlaces que se insertan a través de un CMS, que por lo general no tienen un atributo `class`, tendrán una distinción sin afectar de forma genérica la cascada.
 
 <sup>[volver al índice de contenidos](#table-of-contents)</sup>
 
@@ -350,7 +350,7 @@ Para crear un cuadro con una relación intrínseca, todo lo que tiene que hacer 
 }
 
 .container div {
-  border: 2px dashed #ddd;	
+  border: 2px dashed #ddd;
   height: 100%;
   left: 0;
   position: absolute;
