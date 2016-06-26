@@ -69,15 +69,15 @@ En lugar de poner en la frontera...
 .nav li:not(:last-child) {
   border-right: 1px solid #666;
 }
-```
 
+```
 Claro, se puede usar `li.nav + li` o incluso `li.nav: li` primer hijo ~, pero con `:not()` la intención es muy clara y el selector CSS define la frontera entre la forma en que un ser humano lo describiría.
 
 <sup>[volver al índice de contenidos](#table-of-contents)</sup>
 
 
-<div id="add-line-height-to-body"></ div>
-### Añadir `line-height` a `body`
+<div id="add-line-height-to-body"></div>
+### Añadir `line-height` a `body`  
 
 No es necesario añadir `line-height` característica a cada` <p> `,` <h *> `, _et al_. separadamente. En su lugar, añadirlo a `body`:
 
