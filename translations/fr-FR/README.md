@@ -39,6 +39,7 @@ Une collection de conseils pour aider à prendre vos compétences CSS pro.
 1. [Utilisez `rem` for Global Dimensionnement; Utilisez `em` pour Local Sizing](#use-rem-for-global-sizing-use-em-for-local-sizing)
 1. [Masquer les vidéos Autoplay qui ne sont pas Muted](#hide-autoplay-videos-that-arent-muted)
 1. [Utiliser `:root` de type flexible](#use-root-for-flexible-type)
+1. [Réglez `font-size` sur le formulaire éléments pour une expérience mobile mieux](#set-font-size-on-form-elements-for-a-better-mobile-experience)
 
 
 <div id="use-not-to-applyunapply-borders-on-navigation"></div>
@@ -195,7 +196,7 @@ SVG échelles bien pour tous les types de résolution et est pris en charge dans
 
 Il peut avoir un nom étrange, mais en utilisant le sélecteur universel (`*`) avec le sélecteur de frère adjacent (`+`) peut fournir une capacité de CSS puissante:
 
-``css
+```css
 * + * {
   margin-top: 1.5em;
 }
@@ -471,6 +472,25 @@ body {
   font: 1em/1.6 sans-serif;
 }
 ```
+
+<sup>[retour à la table des matières](#table-of-contents)</sup>
+
+
+<div id="set-font-size-on-form-elements-for-a-better-mobile-experience"></div>
+### Réglez `font-size` sur le formulaire éléments pour une expérience mobile mieux
+
+Pour éviter les navigateurs mobiles (iOS Safari, _et al_.) De zoom sur des éléments de formulaire HTML quand un `<select>` déroulante est taraudé, ajoutez `font-size` à la règle de sélection:
+
+```css
+input[type="text"],
+input[type="number"],
+select,
+textarea {
+  font-size: 16px;
+}
+```
+
+:dancer:
 
 <sup>[retour à la table des matières](#table-of-contents)</sup>
 

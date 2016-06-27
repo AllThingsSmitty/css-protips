@@ -13,72 +13,73 @@ Una colección de consejos para ayudar a llevar su pro habilidades CSS.
 ## Tabla de contenido
 
 * [Consejos Profesionales](#protips)
-* [Apoyo](#apoyo)
-* [Pautas de contribución](../../CONTRIBUTING.md)
+* [Soporte](#soporte)
+* [Pautas para contribuir](../../CONTRIBUTING.md)
 
 
 <div id="protips"></div>
 ## Consejos Profesionales
 
-1. [Use `:not()` para Aplicar / Cancelar la aplicación de las fronteras para la Navegación](#use-not-to-applyunapply-borders-on-navigation)
+1. [Use `:not()` para Aplicar / Cancelar la aplicación de las bordes para la Navegación](#use-not-to-applyunapply-borders-on-navigation)
 1. [Añadir `line-height` a `body`](#add-line-height-to-body)
 1. [Cualquier cosa verticalmente-Centro](#vertically-center-anything)
-1. [Listas separadas por comas](#comma-separated-links)
+1. [Listas separadas por comas](#listas-separadas-por-comas)
 1. [Seleccionar elementos Usando negativo `nth-child`](#select-items-using-negative-nth-child)
-1. [Utilizar SVG para iconos](#use-svg-for-icons)
-1. [Utilice la herramienta de selección "lobotomizó búho"](#use-the-lobotomized-owl-selector)
-1. [Use `max-height` característica de Sliders puro CSS](#use-max-height-for-pure-css-sliders)
-1. [Heredar `box-sizing`](#inherit-box-sizing)
-1. [Celdas de la tabla de igual ancho](#equal-width-table-cells)
-1. [Deshacerse del margen Hacks Con Flexbox](#get-rid-of-margin-hacks-with-flexbox)
-1. [Selectores de atributo con el uso Enlaces vacíos](#use-attribute-selectors-with-empty-links)
-1. [Enlaces de estilo "por defecto"](#style-default-links)
-1. [Consistente ritmo vertical](#consistent-vertical-rhythm)
-1. [Cajas Relación intrínsecas](#intrinsic-ratio-boxes)
-1. [Imágenes rotas Estilo](#style-broken-images)
-1. [Use `rem` para Global Dimensionamiento; Use `em` para el dimensionamiento local](#use-rem-for-global-sizing-use-em-for-local-sizing)
-1. [Esconder Reproducción automática los vídeos que no estén anulados](#hide-autoplay-videos-that-arent-muted)
-1. [Utilizar `:root` para el tipo flexible](#use-root-for-flexible-type)
+1. [Utilizar SVG para iconos](#utilizar-svg-para-iconos)
+1. [Utilice la herramienta de selección "lobotomizó búho"](#utilice-la-herramienta-de-selección-lobotomizó-búho)
+1. [Use `max-height` característica de Sliders puro CSS](#use-max-height-para-un-sliders-de-puro-css)
+1. [Heredar `box-sizing`](#heredar-box-sizing)
+1. [Celdas de la tabla de igual ancho](#celdas-de-la-tabla-con-igual-ancho)
+1. [Deshacerse del margen Hacks Con Flexbox](#deshacerse-de-los-hacks-de-margen-con-flexbox)
+1. [Selectores de atributo con el uso Enlaces vacíos](#utilizar-selectores-de-atributo-con-enlaces-vacíos)
+1. [Enlaces de estilo "por defecto"](#estilos-por-defcto-para-los-enlaces)
+1. [Consistente ritmo vertical](#consistente-ritmo-vertical)
+1. [Cajas Relación intrínsecas](#cajas-relación-intrínsecas)
+1. [Imágenes rotas Estilo](#imágenes-rotas-estilo)
+1. [Use `rem` para Global Dimensionamiento; Use `em` para el dimensionamiento local](#use-rem-para-global-dimensionamiento-use-em-para-el-dimensionamiento-local)
+1. [Esconder Reproducción automática los vídeos que no estén anulados](#esconder-reproducción-automática-los-vídeos-que-no-estén-anulados)
+1. [Utilizar `:root` para el tipo flexible](#utilizar-root-para-el-tipo-flexible)
+1. [Ajuste `font-size` en el Formulario Elementos para una mejor experiencia móvil](#ajuste-font-size-en-el-formulario-elementos-para-una-mejor-experiencia-móvil)
 
 
 <div id="use-not-to-applyunapply-borders-on-navigation"></div>
-### Use `:not()` para Aplicar / Cancelar la aplicación de las fronteras para la Navegación
+### Use `:not()` para Aplicar / Cancelar los bordes de la navegación
 
-En lugar de poner en la frontera...
+En lugar de poner en el borde...
 
 ```css
-/* add border */
+/* Agregar el borde */
 .nav li {
   border-right: 1px solid #666;
 }
 ```
 
-...Y luego sacarlo del último elemento...
+...Y luego quitarlo del último elemento...
 
 ```css
-/* remove border */
+/* quitar el borde */
 .nav li:last-child {
   border-right: none;
 }
 ```
 
-...Utilizar el `:not()` pseudo-clase que sólo se aplican a los elementos que desea:
+...Utiliza la pseudo-clase `:not()` que sólo se aplican a los elementos que desea:
 
 ```css
 .nav li:not(:last-child) {
   border-right: 1px solid #666;
 }
-```
 
-Claro, se puede usar `li.nav + li` o incluso `li.nav: li` primer hijo ~, pero con `:not()` la intención es muy clara y el selector CSS define la frontera entre la forma en que un ser humano lo describiría.
+```
+Claro, se puede usar `li.nav + li` o incluso `li.nav: li` primer hijo ~, pero con `:not()` la intención es muy clara y el selector CSS define los bordes de la forma en que un ser humano lo describiría.
 
 <sup>[volver al índice de contenidos](#table-of-contents)</sup>
 
 
-<div id="add-line-height-to-body"></ div>
-### Añadir `line-height` a `body`
+<div id="add-line-height-to-body"></div>
+### Añadir `line-height` a el `body`  
 
-No es necesario añadir `line-height` característica a cada` <p> `,` <h *> `, _et al_. separadamente. En su lugar, añadirlo a `body`:
+No es necesario añadir `line-height` a cada` <p> `,` <h *> `, _et al_. por separado. En su lugar, agregalo a el `body`:
 
 ```css
 body {
@@ -92,9 +93,9 @@ De esta manera los elementos textuales pueden heredar de `body` fácilmente.
 
 
 <div id="vertically-center-anything"></div>
-### Cualquier cosa verticalmente-Centro
+### Centrar cualquier verticalmente
 
-No, no es magia negro, que realmente puede centrar verticalmente elementos:
+No, no es magia negra, realmente puedes centrar verticalmente elementos:
 
 ```css
 html, body {
@@ -111,9 +112,9 @@ body {
 }
 ```
 
-¿Quieres centrar algo más? Vertical, horizontal...cualquier cosa, en cualquier momento y en cualquier lugar? CSS-Tricks tiene [un bonito reportaje](https://css-tricks.com/centering-css-complete-guide/) en hacer todo eso.
+¿Quieres centrar algo más? Vertical, horizontal...cualquier cosa, en cualquier momento y en cualquier lugar? CSS-Tricks tiene [un bonito reportaje](https://css-tricks.com/centering-css-complete-guide/) para hacer todo eso.
 
-**Nota:** ve por alguna [con errores behavior](https://github.com/philipwalton/flexbugs#3-min-height-on-a-flex-container-wont-apply-to-its-flex-items) con Flexbox en IE11.
+**Nota:** ve por algunos [comportamientos erroneos](https://github.com/philipwalton/flexbugs#3-min-height-on-a-flex-container-wont-apply-to-its-flex-items) con Flexbox en IE11.
 
 <sup>[volver al índice de contenidos](#table-of-contents)</sup>
 
@@ -121,7 +122,7 @@ body {
 <div id="comma-separated-links"></div>
 ### Listas separadas por comas
 
-Hacen elementos de la lista se ven como una lista de bienes, separados por comas:
+Hacer que los elementos de la lista se vean de forma real, separados por comas:
 
 ```css
 ul > li:not(:last-child)::after {
@@ -129,9 +130,9 @@ ul > li:not(:last-child)::after {
 }
 ```
 
-Utilice el `:not()` pseudo-clase por lo que no se añade una coma al último elemento.
+Utilice la pseudo-clase `:not()` para agregar una coma al último elemento.
 
-**Nota:** Esta punta puede no ser ideal para la accesibilidad, la pantalla específicamente lectores. Y copiar / pegar desde el navegador no funciona con el contenido generado por CSS. Proceda con precaución.
+**Nota:** Esta consejo puede no ser ideal para la accesibilidad, específicamente para lectores de pantalla. Y copiar / pegar desde el navegador no funciona con el contenido generado por CSS. Proceda con precaución.
 
 <sup>[volver al índice de contenidos](#table-of-contents)</sup>
 
@@ -146,7 +147,7 @@ li {
   display: none;
 }
 
-/* select items 1 through 3 and display them */
+/* seleccionar los elementos de 1 hasta 3 y muestralos */
 li:nth-child(-n+3) {
   display: block;
 }
@@ -155,7 +156,7 @@ li:nth-child(-n+3) {
 O bien, como ya se ha aprendido un poco sobre [el uso de `:not()`](# uso no-a-applyunapply-fronteras-on-navegación), trate de:
 
 ```css
-/* select items 1 through 3 and display them */
+/* seleccionar los elementos de 1 hasta 3 y muestralos */
 li:not(:nth-child(-n+3)) {
   display: none;
 }
@@ -179,7 +180,7 @@ No hay ninguna razón para no usar SVG para los iconos:
 
 SVG funciona bien para todos los tipos de resolución y es compatible con todos los navegadores [volver a IE9](http://caniuse.com/#search=svg). Así que olvide sus archivos .png, .jpg o .gif-jif-whatev.
 
-**Nota:** Si usted tiene SVG icono de sólo botones para los usuarios con visión y el SVG no se puede cargar, esto ayudará a mantener la accesibilidad:
+**Nota:** Si usted tiene un icono SVG de sólo botones para los usuarios con visión y el SVG no se puede cargar, esto ayudará a mantener la accesibilidad:
 
 ```css
 .no-svg .icon-only:after {
@@ -193,7 +194,7 @@ SVG funciona bien para todos los tipos de resolución y es compatible con todos 
 <div id="use-the-lobotomized-owl-selector"></div>
 ### Utilice la herramienta de selección "lobotomizó búho"
 
-Se puede tener un nombre extraño, pero con el mando universales (`*`) con el selector de hermanos adyacentes (`+`) puede proporcionar una potente capacidad de CSS:
+Puede que tenga un nombre extraño, pero utilizando el selector unversal (`*`) con el selector de hermanos adyacentes (`+`) puede proporcionar una potente capacidad de CSS:
 
 ```css
 * + * {
@@ -209,9 +210,9 @@ Para más información sobre el selector "buho lobotomized", lee [post de Heydon
 
 
 <div id="use-max-height-for-pure-css-sliders"></div>
-### Use `max-height` característica de Sliders puro CSS
+### Use `max-height` para un Sliders de puro CSS
 
-Implementar controles deslizantes CSS sólo para el uso de `max-height` característica con rebosadero oculto:
+Implementar un slider solo de CSS utilizando solo `max-height` con el overflow oculto.
 
 ```css
 .slider {
@@ -226,7 +227,7 @@ Implementar controles deslizantes CSS sólo para el uso de `max-height` caracter
 }
 ```
 
-El elemento se expande para el valor `max-height` característica en vuelo estacionario y la corredera se muestra como resultado de la abundancia.
+El elemento se expande hasta el valor de `max-height` en hover y el slider muestra el contenido del overflow.
 
 <sup>[volver al índice de contenidos](#table-of-contents)</sup>
 
@@ -234,7 +235,7 @@ El elemento se expande para el valor `max-height` característica en vuelo estac
 <div id="inherit-box-sizing"></div>
 ### Heredar `box-sizing`
 
-Let `box-sizing` ser heredada de `html`:
+Herdar `box-sizing` de `html`:
 
 ```css
 html {
@@ -252,9 +253,9 @@ Esto hace que sea más fácil cambiar `box-sizing` en plugins u otros componente
 
 
 <div id="equal-width-table-cells"></div>
-### Celdas de la tabla de igual ancho
+### Celdas de la tabla con igual ancho
 
-Las tablas pueden ser un dolor de trabajar con lo que trate de usar `table-layout: fixed` para mantener las células en el mismo ancho:
+Las tablas pueden ser un dolor de trabajar con lo que se trate de usar `table-layout: fixed` para mantener las celdas con el mismo ancho:
 
 ```css
 .calendar {
@@ -262,15 +263,15 @@ Las tablas pueden ser un dolor de trabajar con lo que trate de usar `table-layou
 }
 ```
 
-Disposiciones de la tabla sin dolor.
+Diseño de tablas sin dolor.
 
 <sup>[volver al índice de contenidos](#table-of-contents)</sup>
 
 
 <div id="get-rid-of-margin-hacks-with-flexbox"></div>
-### Deshacerse del margen Hacks Con Flexbox
+### Deshacerse de los hacks de margen con Flexbox
 
-Cuando se trabaja con las canaletas de columna que puede deshacerse de `enésimo-`, `` primera y última `hacks-child` mediante el uso de la propiedad` espacio between` de Flexbox:
+Cuando se trabaja con las canaletas de columna que puede deshacerse de `nth-`, `first-` y `last-child` mediante el uso de la propiedad `space-between` de Flexbox:
 
 ```css
 .list {
@@ -289,7 +290,7 @@ Ahora canaletas de columna siempre aparecen uniformemente espaciadas.
 
 
 <div id="use-attribute-selectors-with-empty-links"></div>
-### Selectores de atributo con el uso Enlaces vacíos
+### Utilizar selectores de atributo con enlaces vacíos
 
 Mostrar vínculos cuando el elemento `<a>` no tiene un valor de texto, pero el atributo `href` tiene un enlace:
 
@@ -305,9 +306,9 @@ Eso es bastante conveniente.
 
 
 <div id="style-default-links"></div>
-### Enlaces de estilo "por defecto"
+### Estilos "por defcto" para los enlaces.
 
-Añadir un estilo de enlaces "por defecto":
+Añadir un estilo a los enlaces "por defecto":
 
 ```css
 a[href^="http"]:empty::before {
@@ -315,7 +316,7 @@ a[href^="http"]:empty::before {
 }
 ```
 
-Ahora enlaces que se insertan a través de un CMS, que por lo general no tienen un atributo `class`, tendrán una distinción sin afectar de forma genérica la cascada.
+Ahora los enlaces que se insertan a través de un CMS, que por lo general no tienen un atributo `class`, tendrán una distinción sin afectar de forma genérica la cascada.
 
 <sup>[volver al índice de contenidos](#table-of-contents)</sup>
 
@@ -349,7 +350,7 @@ Para crear un cuadro con una relación intrínseca, todo lo que tiene que hacer 
 }
 
 .container div {
-  border: 2px dashed #ddd;	
+  border: 2px dashed #ddd;
   height: 100%;
   left: 0;
   position: absolute;
@@ -453,7 +454,7 @@ Una vez más, nos estamos tomando ventaja de usar el [`:not()`](#use-not-to-appl
 <div id="use-root-for-flexible-type"></div>
 ### Utilizar `:root` para el tipo flexible
 
-El tamaño de tipo de letra en un diseño que responde debe ser capaz de ajustar con cada ventana. Se puede calcular el tamaño de la fuente basada en la altura y la anchura de la ventana gráfica usando `: root`:
+El tamaño de tipo de letra en un diseño que responde debe ser capaz de ajustar con cada ventana. Se puede calcular el tamaño de la fuente basada en la altura y la anchura de la ventana gráfica usando `:root`:
 
 ```css
 :root {
@@ -472,6 +473,25 @@ body {
 <sup>[volver al índice de contenidos](#table-of-contents)</sup>
 
 
-## Apoyo
+<div id="set-font-size-on-form-elements-for-a-better-mobile-experience"></div>
+### Ajuste `font-size` en el Formulario Elementos para una mejor experiencia móvil
+
+Para evitar los navegadores móviles (iOS Safari, _et al_.) De hacer zoom sobre los elementos de formulario HTML cuando un `<select>` desplegable se toca, agrega `font-size` a la regla de selección:
+
+```css
+input[type="text"],
+input[type="number"],
+select,
+textarea {
+  font-size: 16px;
+}
+```
+
+:dancer:
+
+<sup>[volver al índice de contenidos](#table-of-contents)</sup>
+
+
+## Soporte
 
 Las versiones actuales de Chrome, Firefox, Safari, Opera, Edge y IE11.

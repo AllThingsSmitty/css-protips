@@ -39,6 +39,7 @@
 1. [用 rem 来调整全局大小；用 em 来调整局部大小](#use-rem-for-global-sizing-use-em-for-local-sizing)
 1. [隐藏没有静音、自动播放的影片](#hide-autoplay-videos-that-arent-muted)
 1. [使用选择器 `:root` 来控制字体弹性](#use-root-for-flexible-type)
+1. [将`font-size`关于表单元素为更好的移动体验](#set-font-size-on-form-elements-for-a-better-mobile-experience)
 
 
 <div id="use-not-to-applyunapply-borders-on-navigation"></div>
@@ -463,13 +464,32 @@ video[autoplay]:not([muted]) {
 }
 ```
 
-现在，您可以利用基于计算的值`root em`单位：root`:
+现在，您可以利用基于计算的值`root em`单位：`root`:
 
 ```css
 body {
   font: 1em/1.6 sans-serif;
 }
 ```
+
+<sup>[回目录](#table-of-contents)</sup>
+
+
+<div id="set-font-size-on-form-elements-for-a-better-mobile-experience"></div>
+### 将`font-size`关于表单元素为更好的移动体验
+
+为了避免在HTML表单元素缩放移动浏览器（Safari浏览器的iOS，_et AL_。）当一个`<选择>`下拉被窃听，加上`字体size`的选择规则：
+
+```css
+input[type="text"],
+input[type="number"],
+select,
+textarea {
+  font-size: 16px;
+}
+```
+
+:dancer:
 
 <sup>[回目录](#table-of-contents)</sup>
 
