@@ -39,8 +39,7 @@
 1. [Используйте `rem` для глобальных размеров; Используйте `em` для локальных размеров](#use-rem-for-global-sizing-use-em-for-local-sizing)
 1. [Отключите автовоспроизведение видео с включенным звуком](#hide-autoplay-videos-that-arent-muted)
 1. [Используйте `:root` для шрифтов](#use-root-for-flexible-type)
-1. [Установите `font-size` на элементы формы для лучшего мобильного опыта](#set-font-size-on-form-elements-for-a-better-mobile-experience)
-
+1. [Установите `font-size` для элементов формы, чтобы оптимизировать просмотр на мобильных устройствах](#set-font-size-on-form-elements-for-a-better-mobile-experience)
 
 <div id="use-not-to-applyunapply-borders-on-navigation"></div>
 ### Используйте `:not()` для добавления / удаления границ в меню навигации
@@ -475,9 +474,9 @@ body {
 
 
 <div id="#set-font-size-on-form-elements-for-a-better-mobile-experience"></div>
-### Установите `font-size` на элементы формы для лучшего мобильного опыта
+### Установите `font-size` для элементов формы, чтобы оптимизировать просмотр на мобильных устройствах
 
-Чтобы избежать мобильных браузеров (IOS Safari, _et al_.) От увеличения в форме элементов HTML, когда `<select>` раскрывающийся сливают, добавьте `font-size` правилу селектора:
+Чтобы избежать масштабирования мобильными браузерами (IOS Safari, _и др_.) элементов HTML формы, когда раскрывающийся список `<select>` нажат, добавьте  `font-size` правило селектору:
 
 ```css
 input[type="text"],
