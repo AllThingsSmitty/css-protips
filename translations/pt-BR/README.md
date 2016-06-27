@@ -37,7 +37,7 @@ Uma coleção de dicas para elevar suas habilidades de CSS.
 1. [Use `rem` para Definir Tamanhos Globais; Use `em` para Definir Tamanhos Locais](#use-rem-para-definir-tamanhos-globais-use-em-para-definir-tamanhos-locais)
 1. [Esconda Vídeos em Autoplay Que Não Estejam no Mudo](#esconda-vídeos-em-autoplay-que-não-estejam-no-mudo)
 1. [Use `:root` para uma Typografia Flexível](#use-root-para-uma-typografia-flexível)
-1. [Defina `font-size` no Formulário Elementos para uma melhor experiência móvel](#set-font-size-on-form-elements-for-a-better-mobile-experience)
+1. [Defina `font-size` em Elementos de Formulário para uma Melhor Experiência Mobile](#set-font-size-on-form-elements-for-a-better-mobile-experience)
 
 
 ### Use `:not()` para Aplicar/Remover Bordas
@@ -454,9 +454,9 @@ body {
 
 
 <div id="set-font-size-on-form-elements-for-a-better-mobile-experience"></div>
-### Defina `font-size` no Formulário Elementos para uma melhor experiência móvel
+### Defina `font-size` em Elementos de Formulário para uma Melhor Experiência Mobile
 
-Para evitar navegadores móveis (iOS Safari, _et al_.) A partir de zoom em elementos de formulário HTML quando um `<select>` suspensa é aproveitado, adicione `font-size` à regra seletor:
+Para evitar zoom indesejado em elementos de formulários de navegadores mobile (iOS Safari, _et al_) quando um `<select>` é selecionado, adicione `font-size` no seletor:
 
 ```css
 input[type="text"],
