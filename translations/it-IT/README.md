@@ -6,15 +6,14 @@
 
 Una collezione di dritte per aiutarti a migliorare le tue capacità con CSS.
 
-> Per altre fantastiche liste di questo tipo guarda la [lista di fantastiche liste](https://github.com/sindresorhus/awesome/) curata da[@sindresorhus](https://github.com/sindresorhus/).
+> Per altre fantastiche liste di questo tipo guarda la [lista di fantastiche liste](https://github.com/sindresorhus/awesome/) curata da [@sindresorhus](https://github.com/sindresorhus/).
 
 
 ## Sommario
 
-* [Suggerimenti per esperti](#protips)
+* [Suggerimenti per esperti](#suggerimenti-per-esperti)
 * [Supporto](#support)
-* [Traduzioni](#translations)
-* [Linee guida per contribuire](CONTRIBUTING.md)
+* [Linee guida per contribuire](../../CONTRIBUTING.md)
 
 
 ## Suggerimenti per esperti
@@ -453,6 +452,7 @@ body {
 
 <sup>[torna al sommario](#table-of-contents)</sup>
 
+
 ### Imposta il `font-size` sugli elementi dei form per una migliore esperienza da mobile
 
 Per evitare lo zoom sugli elementi dei form dai browser mobile (iOS Safari, _et al_.) quando si tocca una `<select>`, aggiungi `font-size` alle regole del selettore:
@@ -469,6 +469,7 @@ textarea {
 :dancer:
 
 <sup>[back to table of contents](#table-of-contents)</sup>
+
 
 ## Supporto
 
