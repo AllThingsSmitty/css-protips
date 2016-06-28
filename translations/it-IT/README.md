@@ -70,7 +70,7 @@ Invece di impostare il bordo...
 
 Certo, puoi usare `.nav li + li` o anche `.nav li:first-child ~ li`, ma con `:not()` l'intento è molto chiaro e il selettore CSS definisce il bordo nel modo in cui un essere umano lo descriverebbe.
 
-<sup>[torna al sommario](#table-of-contents)</sup>
+<sup>[torna al sommario](#sommario)</sup>
 
 
 ### Aggiungi `line-height` al `body`
@@ -85,7 +85,7 @@ body {
 
 In questo modo gli elementi di testo possono ereditare facilmente da `body`.
 
-<sup>[torna al sommario](#table-of-contents)</sup>
+<sup>[torna al sommario](#sommario)</sup>
 
 
 ### Centra verticalmente qualsiasi cosa
@@ -111,7 +111,7 @@ Vuoi centrare qualcos'altro? In verticale, in orizzontale... qualsiasi cosa, in 
 
 **Nota bene:** si verificano dei [comportamenti anomali](https://github.com/philipwalton/flexbugs#3-min-height-on-a-flex-container-wont-apply-to-its-flex-items) con flexbox e IE11.
 
-<sup>[torna al sommario](#table-of-contents)</sup>
+<sup>[torna al sommario](#sommario)</sup>
 
 
 ### Liste separate da virgola
@@ -128,7 +128,7 @@ Usa la pseudo classe `:not()` in modo da non aggiungere la virgola all'ultimo el
 
 **Nota bene:** può non essere l'ideale per garantire l'accessibilità, nello specifico per gli screen reader. Inoltre il copia/incolla dal browser non funziona con il contenuto generato mediante CSS. Procedi con attenzione.
 
-<sup>[torna al sommario](#table-of-contents)</sup>
+<sup>[torna al sommario](#sommario)</sup>
 
 
 ### Seleziona un elemento usando gli `nth-child` negativi
@@ -157,7 +157,7 @@ li:not(:nth-child(-n+3)) {
 
 Beh... era abbastanza facile.
 
-<sup>[torna al sommario](#table-of-contents)</sup>
+<sup>[torna al sommario](#sommario)</sup>
 
 
 ### Usa SVG per le icone
@@ -180,7 +180,7 @@ SVG scala molto bene a tutti i tipi di risoluzione ed è supportata in tutti i b
 }
 ```
 
-<sup>[torna al sommario](#table-of-contents)</sup>
+<sup>[torna al sommario](#sommario)</sup>
 
 
 ### Usa il selettore detto "Lobotomized Owl"
@@ -197,7 +197,7 @@ In questo esempio, tutti gli elementi nel flusso del documento che seguono altri
 
 Per saperne di più sul selettore detto "lobotomized owl", leggi [l'articolo di Heydon Pickering](http://alistapart.com/article/axiomatic-css-and-lobotomized-owls) su *A List Apart*.
 
-<sup>[torna al sommario](#table-of-contents)</sup>
+<sup>[torna al sommario](#sommario)</sup>
 
 
 ### Usa `max-height` per slider fatti solo con CSS
@@ -219,7 +219,7 @@ Realizza slider fatti solo con CSS usando `max-height` con overflow hidden:
 
 L'elemento si espande al valore `max-height` all'hover e lo slider diventa visibile come risultato dell'overflow.
 
-<sup>[torna al sommario](#table-of-contents)</sup>
+<sup>[torna al sommario](#sommario)</sup>
 
 
 ### Eredita il `box-sizing`
@@ -238,7 +238,7 @@ html {
 
 In questo modo diventa più facile cambiare `box-sizing` in plugin o altri componenti che ne sfruttano un altro.
 
-<sup>[torna al sommario](#table-of-contents)</sup>
+<sup>[torna al sommario](#sommario)</sup>
 
 
 ### Celle di tabella con larghezza uguale
@@ -253,7 +253,7 @@ Lavorare con le tabelle può dare il tormento, perciò prova a usare `table-layo
 
 Layout con le tabelle e senza tormento.
 
-<sup>[torna al sommario](#table-of-contents)</sup>
+<sup>[torna al sommario](#sommario)</sup>
 
 
 ### Sbarazzati degli hack sui margini grazie a Flexbox
@@ -273,7 +273,7 @@ Quando lavori con gli spazi tra colonne puoi sbarazzarti di `nth-`, `first-` e `
 
 Ora le colonne avranno sempre una spaziatura uniforme.
 
-<sup>[torna al sommario](#table-of-contents)</sup>
+<sup>[torna al sommario](#sommario)</sup>
 
 
 ### Usa il selettore d'attributo con i link senza testo
@@ -288,7 +288,7 @@ a[href^="http"]:empty::before {
 
 Decisamente comodo.
 
-<sup>[torna al sommario](#table-of-contents)</sup>
+<sup>[torna al sommario](#sommario)</sup>
 
 
 ### Styling dei link di "Default"
@@ -304,7 +304,7 @@ a[href]:not([class]) {
 
 Ora i link inseriti mediante un CMS, che solitamente non hanno un attributo `class`, saranno distinti senza intaccare tutti gli altri in cascata.
 
-<sup>[torna al sommario](#table-of-contents)</sup>
+<sup>[torna al sommario](#sommario)</sup>
 
 
 ### Mantieni un ritmo verticale coerente
@@ -319,7 +319,7 @@ Fai uso di un selettore universale (`*`) all'interno di un elemento per creare u
 
 Un ritmo verticale coerente procura un'estetica visuale che favorisce la leggibilità del conenuto.
 
-<sup>[torna al sommario](#table-of-contents)</sup>
+<sup>[torna al sommario](#sommario)</sup>
 
 
 ### Box con proporzioni intrinseche
@@ -345,7 +345,7 @@ Per creare un contenitore con proporzioni intrinseche tutto ciò che devi fare �
 
 Uare un `padding` del 20% rende l'altezza del contenitore pari al 20% della sua larghezza. Non importa quale sia la larghezza della finestra, il div figlio manterrà le proporzioni stabilite (100% / 20% = 5:1).
 
-<sup>[torna al sommario](#table-of-contents)</sup>
+<sup>[torna al sommario](#sommario)</sup>
 
 
 ### Styling delle immagini non scaricate
@@ -383,7 +383,7 @@ img:after {
 
 Ulteriori informazioni sullo styling secondo questo pattern nell'[articolo](http://bitsofco.de/styling-broken-images/) di [Ire Aderinokun](https://github.com/ireade/).
 
-<sup>[torna al sommario](#table-of-contents)</sup>
+<sup>[torna al sommario](#sommario)</sup>
 
 
 ### Usa `rem` per le grandezze globali; usa `em` per le dimensioni locali
@@ -414,7 +414,7 @@ aside .module {
 
 A questo punto ogni modulo diventa compartimentalizzato, più facile da modellare, più manutenibile e più flessibile.
 
-<sup>[torna al sommario](#table-of-contents)</sup>
+<sup>[torna al sommario](#sommario)</sup>
 
 
 ### Nascondi i video in riproduzione automatica che non sono silenziati
@@ -429,7 +429,7 @@ video[autoplay]:not([muted]) {
 
 Ancora una volta stiamo sfruttando la pseudo classe [`:not()`](#use-not-to-applyunapply-borders-on-navigation).
 
-<sup>[torna al sommario](#table-of-contents)</sup>
+<sup>[torna al sommario](#sommario)</sup>
 
 
 ### Usa `:root` per caratteri flessibili
@@ -450,7 +450,7 @@ body {
 }
 ```
 
-<sup>[torna al sommario](#table-of-contents)</sup>
+<sup>[torna al sommario](#sommario)</sup>
 
 
 ### Imposta il `font-size` sugli elementi dei form per una migliore esperienza da mobile
@@ -468,7 +468,7 @@ textarea {
 
 :dancer:
 
-<sup>[back to table of contents](#table-of-contents)</sup>
+<sup>[torna al sommario](#sommario)</sup>
 
 
 ## Supporto
