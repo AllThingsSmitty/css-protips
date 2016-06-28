@@ -12,7 +12,7 @@ Una collezione di dritte per aiutarti a migliorare le tue capacità con CSS.
 ## Sommario
 
 * [Suggerimenti per esperti](#suggerimenti-per-esperti)
-* [Supporto](#support)
+* [Supporto](#supporto)
 * [Linee guida per contribuire](../../CONTRIBUTING.md)
 
 
