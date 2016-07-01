@@ -73,6 +73,8 @@ En lugar de poner en el borde...
 ```
 Claro, se puede usar `li.nav + li` o incluso `li.nav: li` primer hijo ~, pero con `:not()` la intención es muy clara y el selector CSS define los bordes de la forma en que un ser humano lo describiría.
 
+[**Demo**](http://codepen.io/AllThingsSmitty/pen/LkymvO)
+
 <sup>[volver al índice de contenidos](#table-of-contents)</sup>
 
 
@@ -88,6 +90,8 @@ body {
 ```
 
 De esta manera los elementos textuales pueden heredar de `body` fácilmente.
+
+[**Demo**](http://codepen.io/AllThingsSmitty/pen/VjbdYd)
 
 <sup>[volver al índice de contenidos](#table-of-contents)</sup>
 
@@ -115,6 +119,8 @@ body {
 ¿Quieres centrar algo más? Vertical, horizontal...cualquier cosa, en cualquier momento y en cualquier lugar? CSS-Tricks tiene [un bonito reportaje](https://css-tricks.com/centering-css-complete-guide/) para hacer todo eso.
 
 **Nota:** ve por algunos [comportamientos erroneos](https://github.com/philipwalton/flexbugs#3-min-height-on-a-flex-container-wont-apply-to-its-flex-items) con Flexbox en IE11.
+
+[**Demo**](http://codepen.io/AllThingsSmitty/pen/GqmGqZ)
 
 <sup>[volver al índice de contenidos](#table-of-contents)</sup>
 
@@ -163,6 +169,8 @@ li:not(:nth-child(-n+3)) {
 ```
 
 Así que era bastante fácil.
+
+[**Demo**](http://codepen.io/AllThingsSmitty/pen/WxjKZp)
 
 <sup>[volver al índice de contenidos](#table-of-contents)</sup>
 

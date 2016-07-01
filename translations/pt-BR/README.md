@@ -68,7 +68,9 @@ Ao invés de colocar a borda…
 }
 ```
 
-Claro, você poderia usar `.nav li + li` ou ainda `.nav li:first-child ~ li`, mas usando `:not()` a intenção fica mais clara e o seletor CSS passa a definir a borda de uma maneira que nós humanos entendemos mais claramente.
+Claro, você poderia usar `.nav li + li` ou ainda `.nav li:first-child ~ li`, mas usando `:not()` a intenção fica mais clara e o seletor CSS passa a definir a borda de uma maneira que nós humanos entenPasseatas mais claramente.
+
+[**Passeata**](http://codepen.io/AllThingsSmitty/pen/LkymvO)
 
 <sup>[voltar ao índice](#table-of-contents)</sup>
 
@@ -84,6 +86,8 @@ body {
 ```
 
 Dessa maneira elementos de texto vão herdar o `line-height` do `body`.
+
+[**Passeata**](http://codepen.io/AllThingsSmitty/pen/VjbdYd)
 
 <sup>[voltar ao índice](#table-of-contents)</sup>
 
@@ -110,6 +114,8 @@ body {
 Isso não resolveu seu problema? O site CSS-Tricks tem [um guia completo](https://css-tricks.com/centering-css-complete-guide/) de como centralizar elementos com CSS.
 
 **Aviso:** Fique atento com os [bugs](https://github.com/philipwalton/flexbugs#3-min-height-on-a-flex-container-wont-apply-to-its-flex-items) quando utilizar flexbox no IE11.
+
+[**Passeata**](http://codepen.io/AllThingsSmitty/pen/GqmGqZ)
 
 <sup>[voltar ao índice](#table-of-contents)</sup>
 
@@ -156,6 +162,8 @@ li:not(:nth-child(-n+3)) {
 ```
 
 Mais fácil que isso só dois disso.
+
+[**Passeata**](http://codepen.io/AllThingsSmitty/pen/WxjKZp)
 
 <sup>[voltar ao índice](#table-of-contents)</sup>
 

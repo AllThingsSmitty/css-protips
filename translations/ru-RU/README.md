@@ -72,6 +72,8 @@
 
 Конечно, вы можете использовать `.nav li + li` или даже `.nav li:first-child ~ li`, но с `:not()` намерение понятнее, а селектор CSS определяет границу на человеческом языке.
 
+[**Демо**](http://codepen.io/AllThingsSmitty/pen/LkymvO)
+
 <sup>[вернуться к оглавлению](#table-of-contents)</sup>
 
 
@@ -87,6 +89,8 @@ body {
 ```
 
 Таким образом текстовые элементы легко могут наследовать свойство от `body`.
+
+[**Демо**](http://codepen.io/AllThingsSmitty/pen/VjbdYd)
 
 <sup>[вернуться к оглавлению](#table-of-contents)</sup>
 
@@ -114,6 +118,8 @@ body {
 Хотите разместить по центру что-то еще? Вертикально, горизонтально...что угодно, в любое время и в любом месте? У нас есть [хорошая статья](https://css-tricks.com/centering-css-complete-guide/) которая научит всему этому.
 
 **Примечание:** Будьте осторожны с некоторыми [багами](https://github.com/philipwalton/flexbugs#3-min-height-on-a-flex-container-wont-apply-to-its-flex-items) flexbox в IE11.
+
+[**Демо**](http://codepen.io/AllThingsSmitty/pen/GqmGqZ)
 
 <sup>[вернуться к оглавлению](#table-of-contents)</sup>
 
@@ -162,6 +168,8 @@ li:not(:nth-child(-n+3)) {
 ```
 
 Что же, это было довольно легко.
+
+[**Демо**](http://codepen.io/AllThingsSmitty/pen/WxjKZp)
 
 <sup>[вернуться к оглавлению](#table-of-contents)</sup>
 

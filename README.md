@@ -71,6 +71,8 @@ Instead of putting on the border...
 
 Sure, you can use `.nav li + li` or even `.nav li:first-child ~ li`, but with `:not()` the intent is very clear and the CSS selector defines the border the way a human would describe it.
 
+[**Demo**](http://codepen.io/AllThingsSmitty/pen/LkymvO)
+
 <sup>[back to table of contents](#table-of-contents)</sup>
 
 
@@ -85,6 +87,8 @@ body {
 ```
 
 This way textual elements can inherit from `body` easily.
+
+[**Demo**](http://codepen.io/AllThingsSmitty/pen/VjbdYd)
 
 <sup>[back to table of contents](#table-of-contents)</sup>
 
@@ -111,6 +115,8 @@ body {
 Want to center something else? Vertically, horizontally...anything, anytime, anywhere? CSS-Tricks has [a nice write-up](https://css-tricks.com/centering-css-complete-guide/) on doing all of that.
 
 **Note:** Watch for some [buggy behavior](https://github.com/philipwalton/flexbugs#3-min-height-on-a-flex-container-wont-apply-to-its-flex-items) with flexbox in IE11.
+
+[**Demo**](http://codepen.io/AllThingsSmitty/pen/GqmGqZ)
 
 <sup>[back to table of contents](#table-of-contents)</sup>
 
@@ -157,6 +163,8 @@ li:not(:nth-child(-n+3)) {
 ```
 
 Well that was pretty easy.
+
+[**Demo**](http://codepen.io/AllThingsSmitty/pen/WxjKZp)
 
 <sup>[back to table of contents](#table-of-contents)</sup>
 

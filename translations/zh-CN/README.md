@@ -73,6 +73,8 @@
 
 当然，也可以使用 `.nav li + li` 或者 `.nav li:first-child ~ li` 来达成，但是 `:not()` 选择器的方式更清晰明了，一目了然。
 
+[**演示**](http://codepen.io/AllThingsSmitty/pen/LkymvO)
+
 <sup>[回目录](#table-of-contents)</sup>
 
 
@@ -88,6 +90,8 @@ body {
 ```
 
 文本元素可以很自然地继承 `body` 的样式。
+
+[**演示**](http://codepen.io/AllThingsSmitty/pen/VjbdYd)
 
 <sup>[回目录](#table-of-contents)</sup>
 
@@ -115,6 +119,8 @@ body {
 这还不够？垂直方向，水平方向……任何元素，任何时间，任何地方？CSS-Tricks [有篇好文](https://css-tricks.com/centering-css-complete-guide/) 讲到了各种居中的技巧。
 
 **注意：** IE11 对 flexbox 的支持[有点 bug](https://github.com/philipwalton/flexbugs#3-min-height-on-a-flex-container-wont-apply-to-its-flex-items)。
+
+[**演示**](http://codepen.io/AllThingsSmitty/pen/GqmGqZ)
 
 <sup>[回目录](#table-of-contents)</sup>
 
@@ -164,6 +170,8 @@ li:not(:nth-child(-n+3)) {
 ```
 
 就是这么简单。
+
+[**演示**](http://codepen.io/AllThingsSmitty/pen/WxjKZp)
 
 <sup>[回目录](#table-of-contents)</sup>
 

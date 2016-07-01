@@ -73,6 +73,8 @@ Au lieu de mettre à la frontière...
 
 Bien sûr, vous pouvez utiliser `.nav li + li` ou même `.nav li:first-child ~ li`, mais avec `:not()` l'intention est très claire et le sélecteur CSS définit la frontière comme un être humain serait le décrire.
 
+[**Démo**](http://codepen.io/AllThingsSmitty/pen/LkymvO)
+
 <sup>[retour à la table des matières](#table-of-contents)</sup>
 
 
@@ -88,6 +90,8 @@ body {
 ```
 
 De cette façon, les éléments textuels peuvent hériter de `body` facilement.
+
+[**Démo**](http://codepen.io/AllThingsSmitty/pen/VjbdYd)
 
 <sup>[retour à la table des matières](#table-of-contents)</sup>
 
@@ -115,6 +119,8 @@ body {
 Vous voulez centrer autre chose? Verticalement, horizontalement...quoi que ce soit, à tout moment, en tout lieu? CSS-Tricks a [une belle écriture-up](https://css-tricks.com/centering-css-complete-guide/) à faire tout cela.
 
 **Remarque:** Surveillez certains [poussette behavior](https://github.com/philipwalton/flexbugs#3-min-height-on-a-flex-container-wont-apply-to-its-flex-items) avec flexBox dans IE11.
+
+[**Démo**](http://codepen.io/AllThingsSmitty/pen/GqmGqZ)
 
 <sup>[retour à la table des matières](#table-of-contents)</sup>
 
@@ -163,6 +169,8 @@ li:not(:nth-child(-n+3)) {
 ```
 
 Eh bien, ce fut assez facile.
+
+[**Démo**](http://codepen.io/AllThingsSmitty/pen/WxjKZp)
 
 <sup>[retour à la table des matières](#table-of-contents)</sup>
 
