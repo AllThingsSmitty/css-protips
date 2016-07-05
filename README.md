@@ -206,6 +206,8 @@ In this example, all elements in the flow of the document that follow other elem
 
 For more on the "lobotomized owl" selector, read [Heydon Pickering's post](http://alistapart.com/article/axiomatic-css-and-lobotomized-owls) on *A List Apart*.
 
+[**Demo**](http://codepen.io/AllThingsSmitty/pen/grRvWq)
+
 <sup>[back to table of contents](#table-of-contents)</sup>
 
 
