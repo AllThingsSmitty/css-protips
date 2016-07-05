@@ -461,6 +461,8 @@ body {
 }
 ```
 
+[**Demo**](http://codepen.io/AllThingsSmitty/pen/XKgOkR)
+
 <sup>[back to table of contents](#table-of-contents)</sup>
 
 
