@@ -213,6 +213,8 @@ SVG хорошо масштабируется для всех разрешени
 
 Более подробную информацию о селекторе "Лоботомированная сова", можно найти в [статье Heydon Pickering](http://alistapart.com/article/axiomatic-css-and-lobotomized-owls) на *A List Apart*.
 
+[**Демо**](http://codepen.io/AllThingsSmitty/pen/XKgOkR)
+
 <sup>[вернуться к оглавлению](#table-of-contents)</sup>
 
 

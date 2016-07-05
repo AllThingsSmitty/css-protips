@@ -214,6 +214,8 @@ Dans cet exemple, tous les éléments dans le flux du document qui suivent d'aut
 
 Pour en savoir plus sur la "chouette lobotomisé" sélecteur, lire [le poste de Heydon Pickering](http://alistapart.com/article/axiomatic-css-and-lobotomized-owls) sur *A List Apart*.
 
+[**Démo**](http://codepen.io/AllThingsSmitty/pen/XKgOkR)
+
 <sup>[retour à la table des matières](#table-of-contents)</sup>
 
 

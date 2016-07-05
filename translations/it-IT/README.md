@@ -73,6 +73,8 @@ Invece di impostare il bordo...
 
 Certo, puoi usare `.nav li + li` o anche `.nav li:first-child ~ li`, ma con `:not()` l'intento è molto chiaro e il selettore CSS definisce il bordo nel modo in cui un essere umano lo descriverebbe.
 
+[**Dimostrazione**](http://codepen.io/AllThingsSmitty/pen/LkymvO)
+
 <sup>[torna al sommario](#sommario)</sup>
 
 
@@ -88,6 +90,8 @@ body {
 ```
 
 In questo modo gli elementi di testo possono ereditare facilmente da `body`.
+
+[**Dimostrazione**](http://codepen.io/AllThingsSmitty/pen/VjbdYd)
 
 <sup>[torna al sommario](#sommario)</sup>
 
@@ -115,6 +119,8 @@ body {
 Vuoi centrare qualcos'altro? In verticale, in orizzontale... qualsiasi cosa, in qualsiasi momento ovunque? Su CSS-Tricks trovi [un ottimo articolo](https://css-tricks.com/centering-css-complete-guide/) a riguardo.
 
 **Nota bene:** si verificano dei [comportamenti anomali](https://github.com/philipwalton/flexbugs#3-min-height-on-a-flex-container-wont-apply-to-its-flex-items) con flexbox e IE11.
+
+[**Dimostrazione**](http://codepen.io/AllThingsSmitty/pen/GqmGqZ)
 
 <sup>[torna al sommario](#sommario)</sup>
 
@@ -164,6 +170,8 @@ li:not(:nth-child(-n+3)) {
 
 Beh... era abbastanza facile.
 
+[**Dimostrazione**](http://codepen.io/AllThingsSmitty/pen/WxjKZp)
+
 <sup>[torna al sommario](#sommario)</sup>
 
 
@@ -205,6 +213,8 @@ Sebbene il suo nome sia un po' strano, l'uso del selettore universale (`*`) insi
 In questo esempio, tutti gli elementi nel flusso del documento che seguono altri elementi riceveranno la proprietà `margin-top: 1.5em`.
 
 Per saperne di più sul selettore detto "lobotomized owl", leggi [l'articolo di Heydon Pickering](http://alistapart.com/article/axiomatic-css-and-lobotomized-owls) su *A List Apart*.
+
+[**Dimostrazione**](http://codepen.io/AllThingsSmitty/pen/XKgOkR)
 
 <sup>[torna al sommario](#sommario)</sup>
 
