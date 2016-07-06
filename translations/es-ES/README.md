@@ -275,6 +275,8 @@ Las tablas pueden ser un dolor de trabajar con lo que se trate de usar `table-la
 
 Diseño de tablas sin dolor.
 
+[**Demo**](http://codepen.io/AllThingsSmitty/pen/jALALm)
+
 <sup>[volver al índice de contenidos](#table-of-contents)</sup>
 
 

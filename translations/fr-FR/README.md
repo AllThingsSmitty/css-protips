@@ -276,6 +276,8 @@ Les tableaux peuvent être une douleur à travailler avec donc essayer d'utilise
 
 dispositions de table sans douleur.
 
+[**Démo**](http://codepen.io/AllThingsSmitty/pen/jALALm)
+
 <sup>[retour à la table des matières](#table-of-contents)</sup>
 
 

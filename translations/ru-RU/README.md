@@ -274,6 +274,8 @@ html {
 
 Даешь макеты таблиц без боли!
 
+[**Демо**](http://codepen.io/AllThingsSmitty/pen/jALALm)
+
 <sup>[вернуться к оглавлению](#table-of-contents)</sup>
 
 

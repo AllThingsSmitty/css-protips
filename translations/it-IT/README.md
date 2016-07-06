@@ -275,6 +275,8 @@ Lavorare con le tabelle può dare il tormento, perciò prova a usare `table-layo
 
 Layout con le tabelle e senza tormento.
 
+[**Dimostrazione**](http://codepen.io/AllThingsSmitty/pen/jALALm)
+
 <sup>[torna al sommario](#sommario)</sup>
 
 
