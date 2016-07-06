@@ -264,6 +264,8 @@ Tables can be a pain to work with so try using `table-layout: fixed` to keep cel
 
 Pain-free table layouts.
 
+[**Demo**](http://codepen.io/AllThingsSmitty/pen/jALALm)
+
 <sup>[back to table of contents](#table-of-contents)</sup>
 
 
