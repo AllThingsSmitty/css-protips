@@ -299,6 +299,8 @@ a[href^="http"]:empty::before {
 
 That's pretty convenient.
 
+[**Demo**](http://codepen.io/AllThingsSmitty/pen/zBzXRx)
+
 <sup>[back to table of contents](#table-of-contents)</sup>
 
 

@@ -314,6 +314,8 @@ a[href^="http"]:empty::before {
 
 C'est assez pratique.
 
+[**Démo**](http://codepen.io/AllThingsSmitty/pen/zBzXRx)
+
 <sup>[retour à la table des matières](#table-of-contents)</sup>
 
 
@@ -474,6 +476,8 @@ La taille type de police dans une disposition sensible devrait être en mesure d
   font-size: calc(1vw + 1vh + .5vmin);
 }
 ```
+
+[**Démo**](http://codepen.io/AllThingsSmitty/pen/XKgOkR)
 
 Maintenant, vous pouvez utiliser l'appareil de `root em` sur la base de la valeur calculée par`: root`:
 

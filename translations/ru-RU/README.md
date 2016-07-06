@@ -311,6 +311,8 @@ a[href^="http"]:empty::before {
 
 Это очень удобно.
 
+[**Демо**](http://codepen.io/AllThingsSmitty/pen/zBzXRx)
+
 <sup>[вернуться к оглавлению](#table-of-contents)</sup>
 
 
@@ -479,6 +481,8 @@ body {
   font: 1em/1.6 sans-serif;
 }
 ```
+
+[**Демо**](http://codepen.io/AllThingsSmitty/pen/XKgOkR)
 
 <sup>[вернуться к оглавлению](#table-of-contents)</sup>
 

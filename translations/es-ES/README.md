@@ -312,6 +312,8 @@ a[href^="http"]:empty::before {
 
 Eso es bastante conveniente.
 
+[**Demo**](http://codepen.io/AllThingsSmitty/pen/zBzXRx)
+
 <sup>[volver al índice de contenidos](#table-of-contents)</sup>
 
 
@@ -321,8 +323,9 @@ Eso es bastante conveniente.
 Añadir un estilo a los enlaces "por defecto":
 
 ```css
-a[href^="http"]:empty::before {
-  content: attr(href);
+a[href]:not([class]) {
+  color: #008000;
+  text-decoration: underline;
 }
 ```
 

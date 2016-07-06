@@ -313,6 +313,8 @@ a[href^="http"]:empty::before {
 
 相当简便。
 
+[**演示**](http://codepen.io/AllThingsSmitty/pen/zBzXRx)
+
 <sup>[回目录](#table-of-contents)</sup>
 
 
@@ -481,6 +483,8 @@ body {
   font: 1em/1.6 sans-serif;
 }
 ```
+
+[**演示**](http://codepen.io/AllThingsSmitty/pen/XKgOkR)
 
 <sup>[回目录](#table-of-contents)</sup>
 

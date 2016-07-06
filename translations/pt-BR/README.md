@@ -298,6 +298,8 @@ a[href^="http"]:empty::before {
 
 Mão na roda.
 
+[**Passeata**](http://codepen.io/AllThingsSmitty/pen/zBzXRx)
+
 <sup>[voltar ao índice](#table-of-contents)</sup>
 
 
@@ -459,6 +461,8 @@ body {
   font: 1em/1.6 sans-serif;
 }
 ```
+
+[**Passeata**](http://codepen.io/AllThingsSmitty/pen/XKgOkR)
 
 <sup>[voltar ao índice](#table-of-contents)</sup>
 

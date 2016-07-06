@@ -312,6 +312,8 @@ a[href^="http"]:empty::before {
 
 Decisamente comodo.
 
+[**Dimostrazione**](http://codepen.io/AllThingsSmitty/pen/zBzXRx)
+
 <sup>[torna al sommario](#sommario)</sup>
 
 
@@ -480,6 +482,8 @@ body {
   font: 1em/1.6 sans-serif;
 }
 ```
+
+[**Dimostrazione**](http://codepen.io/AllThingsSmitty/pen/XKgOkR)
 
 <sup>[torna al sommario](#sommario)</sup>
 
