@@ -28,7 +28,7 @@ A collection of tips to help take your CSS skills pro.
 1. [Use the "Lobotomized Owl" Selector](#use-the-lobotomized-owl-selector)
 1. [Use `max-height` for Pure CSS Sliders](#use-max-height-for-pure-css-sliders)
 1. [Inherit `box-sizing`](#inherit-box-sizing)
-1. [Equal Width Table Cells](#equal-width-table-cells)
+1. [Equal-Width Table Cells](#equal-width-table-cells)
 1. [Get Rid of Margin Hacks With Flexbox](#get-rid-of-margin-hacks-with-flexbox)
 1. [Use Attribute Selectors with Empty Links](#use-attribute-selectors-with-empty-links)
 1. [Style "Default" Links](#style-default-links)
@@ -252,7 +252,7 @@ This makes it easier to change `box-sizing` in plugins or other components that 
 <sup>[back to table of contents](#table-of-contents)</sup>
 
 
-### Equal Width Table Cells
+### Equal-Width Table Cells
 
 Tables can be a pain to work with so try using `table-layout: fixed` to keep cells at equal width:
 
