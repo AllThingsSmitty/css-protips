@@ -376,6 +376,8 @@ Para crear un cuadro con una relación intrínseca, todo lo que tiene que hacer 
 
 El uso de 20% para el relleno hace que la altura de la caja igual a 20% de su anchura. No importa el ancho de la ventana, el div niño va a mantener su relación de aspecto (100% / 20% = 5: 1).
 
+[**Demo**](http://codepen.io/AllThingsSmitty/pen/jALZvE)
+
 <sup>[volver al índice de contenidos](#table-of-contents)</sup>
 
 

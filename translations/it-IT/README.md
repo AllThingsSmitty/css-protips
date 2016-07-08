@@ -376,6 +376,8 @@ Per creare un contenitore con proporzioni intrinseche tutto ciò che devi fare �
 
 Uare un `padding` del 20% rende l'altezza del contenitore pari al 20% della sua larghezza. Non importa quale sia la larghezza della finestra, il div figlio manterrà le proporzioni stabilite (100% / 20% = 5:1).
 
+[**Dimostrazione**](http://codepen.io/AllThingsSmitty/pen/jALZvE)
+
 <sup>[torna al sommario](#sommario)</sup>
 
 

@@ -377,6 +377,8 @@ a[href]:not([class]) {
 
 使用20％的填充使得框等于其宽度的20％的高度。不管视口的宽度，子元素的div将保持其宽高比（100％/ 20％= 5:1）。
 
+[**演示**](http://codepen.io/AllThingsSmitty/pen/jALZvE)
+
 <sup>[回目录](#table-of-contents)</sup>
 
 

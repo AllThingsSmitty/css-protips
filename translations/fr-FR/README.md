@@ -378,6 +378,8 @@ Pour créer une boîte avec un rapport intrinsèque, tout ce que vous devez fair
 
 En utilisant 20% pour le rembourrage rend la hauteur de la caisse égale à 20% de sa largeur. Peu importe la largeur de la fenêtre, la div enfant gardera son ratio d'aspect (100% / 20% = 5: 1).
 
+[**Démo**](http://codepen.io/AllThingsSmitty/pen/jALZvE)
+
 <sup>[retour à la table des matières](#table-of-contents)</sup>
 
 

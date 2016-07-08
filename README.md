@@ -360,6 +360,8 @@ To create a box with an intrinsic ratio, all you need to do is apply top or bott
 
 Using 20% for padding makes the height of the box equal to 20% of its width. No matter the width of the viewport, the child div will keep its aspect ratio (100% / 20% = 5:1).
 
+[**Demo**](http://codepen.io/AllThingsSmitty/pen/jALZvE)
+
 <sup>[back to table of contents](#table-of-contents)</sup>
 
 
