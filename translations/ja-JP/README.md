@@ -21,6 +21,8 @@ CSSのプロのスキルになるようにアドバイスのリストを紹介�
 <div id="protips"></div>
 ##  プロチップス
 
+1. [CSSのリセットを使用します](#use-a-css-reset)
+1. [box-sizingをコンポーネントごとに変更](#inherit-box-sizing)
 1. [`:not()` を使用 / ボーダーを削除](#use-not-to-applyunapply-borders-on-navigation)
 1. [`body`に`line-height`を加える](#add-line-height-to-body)
 1. [天地の中央に配置](#vertically-center-anything)
@@ -29,7 +31,6 @@ CSSのプロのスキルになるようにアドバイスのリストを紹介�
 1. [SVGのアイコン](#use-svg-for-icons)
 1. [Owlを使用](#use-the-lobotomized-owl-selector)
 1. [CSSで実装されたスライダーにはmax-heightを使う](#use-max-height-for-pure-css-sliders)
-1. [box-sizingをコンポーネントごとに変更](#inherit-box-sizing)
 1. [テーブルのセルの幅を均等にする](#equal-width-table-cells)
 1. [Flexboxのマージンハックを取り除く](#get-rid-of-margin-hacks-with-flexbox)
 1. [リンクにテキストが無い時はURLを表示](#use-attribute-selectors-with-empty-links)
@@ -41,6 +42,49 @@ CSSのプロのスキルになるようにアドバイスのリストを紹介�
 1. [動画の自動再生を隠す](#hide-autoplay-videos-that-arent-muted)
 1. [フレクシブルタイプの`:root`を使用](#use-root-for-flexible-type)
 1. [スマホ向け、フォーム要素のフォントサイズの設定](#set-font-size-on-form-elements-for-a-better-mobile-experience)
+
+
+
+<div id="use-a-css-reset"></div>
+### CSSのリセットを使用します
+
+CSSのリセットはスタイリング要素のための白紙の状態で異なるブラウザ間でスタイルの一貫性を強化するのに役立ちます。あなたは[Normalize](http://necolas.github.io/normalize.css/)、_et al._のようにCSSのリセットライブラリを使用するか、より簡略化リセットアプローチを使用することができます。
+
+```css
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+```
+
+今の要素は、マージンやパディングを剥奪し、`box-sizing`は、CSSボックスモデルとレイアウトを管理することができますされます。
+
+**注意：**あなたがあなたのCSSのリセットで[Inherit `box-sizing`](#inherit-box-sizing) プロパティが含まれていないことを選択する可能性があります下に`box-sizing`ヒントに従っている場合。
+
+
+<sup>[目次へ戻る](#table-of-contents)</sup>
+
+
+<div id="inherit-box-sizing"></div>
+### `box-sizing`をコンポーネントごとに変更
+
+`box-sizing`はhtml要素で指定し、継承して利用すると、コンポーネントで変える時に簡単です。
+
+```css
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+```
+
+これでプラグインかその他のコンポーネントに `box-sizing` を変更しやすくなります。
+
+<sup>[目次へ戻る](#table-of-contents)</sup>
 
 
 <div id="use-not-to-applyunapply-borders-on-navigation"></div>
@@ -237,27 +281,6 @@ CSSで実装されたスライダーは、`max-height`を`overflow: hidden;`と�
 ```
 
 ホバーの時`max-height`の要素を拡張オバーフローの結果でスライダーが表示されます。
-
-<sup>[目次へ戻る](#table-of-contents)</sup>
-
-
-<div id="inherit-box-sizing"></div>
-### `box-sizing`をコンポーネントごとに変更
-
-`box-sizing`はhtml要素で指定し、継承して利用すると、コンポーネントで変える時に簡単です。
-
-```css
-html {
-  box-sizing: border-box;
-}
-
-*, *:before, *:after {
-  box-sizing: inherit;
-}
-
-```
-
-これでプラグインかその他のコンポーネントに `box-sizing` を変更しやすくなります。
 
 <sup>[目次へ戻る](#table-of-contents)</sup>
 

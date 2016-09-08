@@ -20,6 +20,8 @@ Une collection de conseils pour aider à prendre vos compétences CSS pro.
 <div id="protips"></div>
 ##  Conseils Professionnels
 
+1. [Utilisez un Reset CSS](#use-a-css-reset)
+1. [Hériter `box-sizing`](#inherit-box-sizing)
 1. [Utiliser `:not()` postuler / unapply Borders Navigation](#use-not-to-applyunapply-borders-on-navigation)
 1. [Ajouter `line-height` à `body`](#add-line-height-to-body)
 1. [Verticalement-Center Tout](#vertically-center-anything)
@@ -28,7 +30,6 @@ Une collection de conseils pour aider à prendre vos compétences CSS pro.
 1. [Utiliser SVG pour Icons](#use-svg-for-icons)
 1. [Utilisez le sélecteur "lobotomisé Owl"](#use-the-lobotomized-owl-selector)
 1. [Utilisez `max-height` pour Sliders CSS pur](#use-max-height-for-pure-css-sliders)
-1. [Hériter `box-sizing`](#inherit-box-sizing)
 1. [Cellules Equal Largeur de table](#equal-width-table-cells)
 1. [Se débarrasser de la marge Hacks Avec Flexbox](#get-rid-of-margin-hacks-with-flexbox)
 1. [Utilisation des attributs sélecteurs avec des liens vides](#use-attribute-selectors-with-empty-links)
@@ -40,6 +41,48 @@ Une collection de conseils pour aider à prendre vos compétences CSS pro.
 1. [Masquer les vidéos Autoplay qui ne sont pas Muted](#hide-autoplay-videos-that-arent-muted)
 1. [Utiliser `:root` de type flexible](#use-root-for-flexible-type)
 1. [Réglez `font-size` sur le formulaire éléments pour une expérience mobile mieux](#set-font-size-on-form-elements-for-a-better-mobile-experience)
+
+
+<div id="use-a-css-reset"></div>
+### Utilisez un Reset CSS
+
+Réinitialise CSS aider à faire respecter la cohérence de style entre les différents navigateurs avec une ardoise propre pour les éléments de style. Vous pouvez utiliser la bibliothèque de réinitialisation CSS comme [Normalize](http://necolas.github.io/normalize.css/), et al, ou vous pouvez utiliser une approche de réinitialisation plus simplifiée:
+
+```css
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+```
+
+Maintenant, les éléments seront dépouillés des marges et le rembourrage, et `box-sizing` vous permet de gérer les présentations avec le modèle de boîte CSS.
+
+**Remarque:** Si vous suivez la pointe [Hériter `box-sizing`](#inherit-box-sizing) ci-dessous vous pouvez choisir de ne pas inclure la propriété box-sizing dans votre reset CSS.
+
+<sup>[retour à la table des matières](#table-of-contents)</sup>
+
+
+<div id="inherit-box-sizing"></div>
+### Hériter `box-sizing`
+
+Soit `box-sizing` être héritée de `html`:
+
+```css
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+```
+
+Cela rend plus facile de changer `box-sizing` dans les plugins ou autres composants qui exploitent d'autres comportements.
+
+<sup>[retour à la table des matières](#table-of-contents)</sup>
+
 
 
 <div id="use-not-to-applyunapply-borders-on-navigation"></div>
@@ -238,27 +281,6 @@ Mettre en œuvre des curseurs CSS uniquement en utilisant `max-height` avec trop
 ```
 
 L'élément se dilate à la valeur `max-height` sur le vol stationnaire et le curseur se affiche à la suite du débordement.
-
-<sup>[retour à la table des matières](#table-of-contents)</sup>
-
-
-<div id="inherit-box-sizing"></div>
-### Hériter `box-sizing`
-
-Soit `box-sizing` être héritée de `html`:
-
-```css
-html {
-  box-sizing: border-box;
-}
-
-*, *:before, *:after {
-  box-sizing: inherit;
-}
-
-```
-
-Cela rend plus facile de changer `box-sizing` dans les plugins ou autres composants qui exploitent d'autres comportements.
 
 <sup>[retour à la table des matières](#table-of-contents)</sup>
 

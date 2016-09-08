@@ -20,6 +20,8 @@ Una collezione di dritte per aiutarti a migliorare le tue capacità con CSS.
 <div id="css-protips"></div>
 ## Suggerimenti per esperti
 
+1. [Utilizzare un reset CSS](#use-a-css-reset)
+1. [Eredita il `box-sizing`](#inherit-box-sizing)
 1. [Usa `:not()` per applicare/rimuovere i bordi su elementi di navigazione](#use-not-to-applyunapply-borders-on-navigation)
 1. [Aggiungi `line-height` al `body`](#add-line-height-to-body)
 1. [Centra verticalmente qualsiasi cosa](#vertically-center-anything)
@@ -28,7 +30,6 @@ Una collezione di dritte per aiutarti a migliorare le tue capacità con CSS.
 1. [Usa SVG per le icone](#use-svg-for-icons)
 1. [Usa il selettore detto "Lobotomized Owl"](#use-the-lobotomized-owl-selector)
 1. [Usa `max-height` per slider fatti solo con CSS](#use-max-height-for-pure-css-sliders)
-1. [Eredita il `box-sizing`](#inherit-box-sizing)
 1. [Celle di tabella con larghezza uguale](#equal-width-table-cells)
 1. [Sbarazzati degli hack sui margini grazie a Flexbox](#get-rid-of-margin-hacks-with-flexbox)
 1. [Usa il selettore d'attributo con i link senza testo](#use-attribute-selectors-with-empty-links)
@@ -40,6 +41,46 @@ Una collezione di dritte per aiutarti a migliorare le tue capacità con CSS.
 1. [Nascondi i video in riproduzione automatica che non sono silenziati](#hide-autoplay-videos-that-arent-muted)
 1. [Usa `:root` per caratteri flessibili](#use-root-for-flexible-type)
 1. [Imposta il `font-size` sugli elementi dei form per una migliore esperienza da mobile](#set-font-size-on-form-elements-for-a-better-mobile-experience)
+
+
+<div id="use-a-css-reset"></div>
+### Utilizzare un reset CSS
+
+reset CSS aiutare a far rispettare lo stile coerenza tra diversi browser da zero per gli elementi stilistici. È possibile utilizzare libreria di reset CSS come [Normalize](http://necolas.github.io/normalize.css/), et al, oppure è possibile utilizzare un approccio più semplificato di ripristino.:
+
+```css
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+```
+
+Ora elementi saranno spogliati di margini e padding, e `box-sizing` consente di gestire i layout con il box model CSS.
+
+**Nota:** Se si segue la punta [Eredita il `box-sizing`](#inherit-box-sizing) in basso si potrebbe optare di non includere la proprietà box-sizing nel ripristino CSS.
+
+<sup>[torna al sommario](#sommario)</sup>
+
+
+<div id="inherit-box-sizing"></div>
+### Eredita il `box-sizing`
+
+Eredita il `box-sizing` dall'elemento `html`:
+
+```css
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+```
+
+In questo modo diventa più facile cambiare `box-sizing` in plugin o altri componenti che ne sfruttano un altro.
+
+<sup>[torna al sommario](#sommario)</sup>
 
 
 <div id="use-not-to-applyunapply-borders-on-navigation"></div>
@@ -238,26 +279,6 @@ Realizza slider fatti solo con CSS usando `max-height` con overflow hidden:
 ```
 
 L'elemento si espande al valore `max-height` all'hover e lo slider diventa visibile come risultato dell'overflow.
-
-<sup>[torna al sommario](#sommario)</sup>
-
-
-<div id="inherit-box-sizing"></div>
-### Eredita il `box-sizing`
-
-Eredita il `box-sizing` dall'elemento `html`:
-
-```css
-html {
-  box-sizing: border-box;
-}
-
-*, *:before, *:after {
-  box-sizing: inherit;
-}
-```
-
-In questo modo diventa più facile cambiare `box-sizing` in plugin o altri componenti che ne sfruttano un altro.
 
 <sup>[torna al sommario](#sommario)</sup>
 
