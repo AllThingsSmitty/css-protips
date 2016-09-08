@@ -19,6 +19,8 @@ A collection of tips to help take your CSS skills pro.
 
 ## Protips
 
+1. [Use a CSS Reset](#use-a-css-reset)
+1. [Inherit `box-sizing`](#inherit-box-sizing)
 1. [Use `:not()` to Apply/Unapply Borders on Navigation](#use-not-to-applyunapply-borders-on-navigation)
 1. [Add `line-height` to `body`](#add-line-height-to-body)
 1. [Vertically-Center Anything](#vertically-center-anything)
@@ -27,7 +29,6 @@ A collection of tips to help take your CSS skills pro.
 1. [Use SVG for Icons](#use-svg-for-icons)
 1. [Use the "Lobotomized Owl" Selector](#use-the-lobotomized-owl-selector)
 1. [Use `max-height` for Pure CSS Sliders](#use-max-height-for-pure-css-sliders)
-1. [Inherit `box-sizing`](#inherit-box-sizing)
 1. [Equal-Width Table Cells](#equal-width-table-cells)
 1. [Get Rid of Margin Hacks With Flexbox](#get-rid-of-margin-hacks-with-flexbox)
 1. [Use Attribute Selectors with Empty Links](#use-attribute-selectors-with-empty-links)
@@ -39,6 +40,44 @@ A collection of tips to help take your CSS skills pro.
 1. [Hide Autoplay Videos That Aren't Muted](#hide-autoplay-videos-that-arent-muted)
 1. [Use `:root` for Flexible Type](#use-root-for-flexible-type)
 1. [Set `font-size` on Form Elements for a Better Mobile Experience](#set-font-size-on-form-elements-for-a-better-mobile-experience)
+
+
+### Use a CSS Reset
+
+CSS resets help enforce style consistency across different browsers with a clean slate for styling elements. You can use CSS reset library like [Normalize](http://necolas.github.io/normalize.css/), _et al._, or you can use a more simplified reset approach:
+
+```css
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+```
+
+Now elements will be stripped of margins and padding, and `box-sizing` lets you manage layouts with the CSS box model.
+
+**Note:** If you follow the [Inherit `box-sizing`](#inherit-box-sizing) tip below you might opt to not include the `box-sizing` property in  your CSS reset.
+
+<sup>[back to table of contents](#table-of-contents)</sup>
+
+
+### Inherit `box-sizing`
+
+Let `box-sizing` be inherited from `html`:
+
+```css
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+```
+
+This makes it easier to change `box-sizing` in plugins or other components that leverage other behavior.
+
+<sup>[back to table of contents](#table-of-contents)</sup>
 
 
 ### Use `:not()` to Apply/Unapply Borders on Navigation
@@ -229,25 +268,6 @@ Implement CSS-only sliders using `max-height` with overflow hidden:
 ```
 
 The element expands to the `max-height` value on hover and the slider displays as a result of the overflow.
-
-<sup>[back to table of contents](#table-of-contents)</sup>
-
-
-### Inherit `box-sizing`
-
-Let `box-sizing` be inherited from `html`:
-
-```css
-html {
-  box-sizing: border-box;
-}
-
-*, *:before, *:after {
-  box-sizing: inherit;
-}
-```
-
-This makes it easier to change `box-sizing` in plugins or other components that leverage other behavior.
 
 <sup>[back to table of contents](#table-of-contents)</sup>
 
