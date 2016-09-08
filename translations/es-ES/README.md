@@ -20,6 +20,8 @@ Una colección de consejos para ayudar a llevar su pro habilidades CSS.
 <div id="protips"></div>
 ## Consejos Profesionales
 
+1. [Utilizar de CSS restablecer](#use-a-css-reset)
+1. [Heredar `box-sizing`](#inherit-box-sizing)
 1. [Use `:not()` para Aplicar / Cancelar la aplicación de las bordes para la Navegación](#use-not-to-applyunapply-borders-on-navigation)
 1. [Añadir `line-height` a `body`](#add-line-height-to-body)
 1. [Cualquier cosa verticalmente-Centro](#vertically-center-anything)
@@ -28,7 +30,6 @@ Una colección de consejos para ayudar a llevar su pro habilidades CSS.
 1. [Utilizar SVG para iconos](#utilizar-svg-para-iconos)
 1. [Utilice la herramienta de selección "lobotomizó búho"](#utilice-la-herramienta-de-selección-lobotomizó-búho)
 1. [Use `max-height` característica de Sliders puro CSS](#use-max-height-para-un-sliders-de-puro-css)
-1. [Heredar `box-sizing`](#heredar-box-sizing)
 1. [Celdas de la tabla de igual ancho](#celdas-de-la-tabla-con-igual-ancho)
 1. [Deshacerse del margen Hacks Con Flexbox](#deshacerse-de-los-hacks-de-margen-con-flexbox)
 1. [Selectores de atributo con el uso Enlaces vacíos](#utilizar-selectores-de-atributo-con-enlaces-vacíos)
@@ -40,6 +41,46 @@ Una colección de consejos para ayudar a llevar su pro habilidades CSS.
 1. [Esconder Reproducción automática los vídeos que no estén anulados](#esconder-reproducción-automática-los-vídeos-que-no-estén-anulados)
 1. [Utilizar `:root` para el tipo flexible](#utilizar-root-para-el-tipo-flexible)
 1. [Ajuste `font-size` en el Formulario Elementos para una mejor experiencia móvil](#ajuste-font-size-en-el-formulario-elementos-para-una-mejor-experiencia-móvil)
+
+
+<div id="use-a-css-reset"></div>
+### Utilizar de CSS restablecer
+
+Restablece CSS ayudan a hacer cumplir la coherencia de estilo en diferentes navegadores con una pizarra limpia para los elementos de diseño. Puede utilizar la biblioteca CSS reset como [Normalize](http://necolas.github.io/normalize.css/), y otros, o puede utilizar un enfoque de reposición más simplificada:
+
+```css
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+```
+
+Ahora elementos serán despojados de márgenes y el relleno, y `box-sizing` le permite administrar diseños con el modelo de caja CSS.
+
+**Nota:** Si usted sigue la punta [Heredar `box-sizing`](#inherit-box-sizing) por debajo de usted puede optar por no incluir la propiedad `box-sizing` en su CSS reset.
+
+<sup>[volver al índice de contenidos](#table-of-contents)</sup>
+
+
+<div id="inherit-box-sizing"></div>
+### Heredar `box-sizing`
+
+Herdar `box-sizing` de `html`:
+
+```css
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+```
+
+Esto hace que sea más fácil cambiar `box-sizing` en plugins u otros componentes que aprovechan otros comportamientos.
+
+<sup>[volver al índice de contenidos](#table-of-contents)</sup>
 
 
 <div id="use-not-to-applyunapply-borders-on-navigation"></div>
@@ -238,26 +279,6 @@ Implementar un slider solo de CSS utilizando solo `max-height` con el overflow o
 ```
 
 El elemento se expande hasta el valor de `max-height` en hover y el slider muestra el contenido del overflow.
-
-<sup>[volver al índice de contenidos](#table-of-contents)</sup>
-
-
-<div id="inherit-box-sizing"></div>
-### Heredar `box-sizing`
-
-Herdar `box-sizing` de `html`:
-
-```css
-html {
-  box-sizing: border-box;
-}
-
-*, *:before, *:after {
-  box-sizing: inherit;
-}
-```
-
-Esto hace que sea más fácil cambiar `box-sizing` en plugins u otros componentes que aprovechan otros comportamientos.
 
 <sup>[volver al índice de contenidos](#table-of-contents)</sup>
 
