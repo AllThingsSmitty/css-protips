@@ -18,6 +18,8 @@ Uma coleção de dicas para elevar suas habilidades de CSS.
 
 ## Protips
 
+1. [Use um Reset CSS](#use-um-reset-css)
+1. [Herde o `box-sizing`](#herde-o-box-sizing)
 1. [Use `:not()` para Aplicar/Remover Bordas](#use-not-para-aplicarremover-bordas)
 1. [Defina o `line-height` no `body`](#defina-o-line-height-no-body)
 1. [Alinhe Elementos Verticalmente](#alinhe-elementos-verticalmente)
@@ -26,7 +28,6 @@ Uma coleção de dicas para elevar suas habilidades de CSS.
 1. [Ícones SVG](#Ícones-svg)
 1. [Use o Seletor "Lobotomized Owl"](#use-o-seletor-lobotomized-owl)
 1. [Sliders em CSS com `max-height`](#sliders-em-css-com-max-height)
-1. [Herde o `box-sizing`](#herde-o-box-sizing)
 1. [Tabelas com Células de Tamanho Igual](#tabelas-com-células-de-tamanho-igual)
 1. [Esqueça as "Margin Hacks", use Flexbox](#esqueça-as-margin-hacks-use-flexbox)
 1. [Use Seletores de Atributo em Links Vazios](#use-seletores-de-atributo-em-links-vazios)
@@ -38,6 +39,44 @@ Uma coleção de dicas para elevar suas habilidades de CSS.
 1. [Esconda Vídeos em Autoplay Que Não Estejam no Mudo](#esconda-vídeos-em-autoplay-que-não-estejam-no-mudo)
 1. [Use `:root` para uma Typografia Flexível](#use-root-para-uma-typografia-flexível)
 1. [Defina `font-size` em Elementos de Formulário para uma Melhor Experiência Mobile](#set-font-size-on-form-elements-for-a-better-mobile-experience)
+
+
+### Use um Reset CSS
+
+Redefine CSS ajudar a impor a consistência de estilo em diferentes navegadores com uma ardósia limpa para elementos de estilo. Você pode usar a biblioteca de reset CSS como [Normalize](http://necolas.github.io/normalize.css/), et al, ou você pode usar uma abordagem de redefinição mais simplificada.:
+
+```css
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+```
+
+Agora elementos serão despojados de margens e preenchimento, e `box-sizing` permite gerenciar layouts com o modelo de caixa CSS.
+
+**Nota:** Se você seguir a ponta [Herde o box-sizing](#herde-o-box-sizing) abaixo você pode optar por não incluir o `box-sizing` propriedade em sua redefinição de CSS.
+
+<sup>[voltar ao índice](#table-of-contents)</sup>
+
+
+### Herde o `box-sizing`
+
+Faça que o `box-sizing` seja herdado do `html`:
+
+```css
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+```
+
+Assim fica fácil de alterar o `box-sizing` em plugins ou outros componentes que tenham um comportamento diferente.
+
+<sup>[voltar ao índice](#table-of-contents)</sup>
 
 
 ### Use `:not()` para Aplicar/Remover Bordas
@@ -228,25 +267,6 @@ Crie _sliders_ usando apenas CSS com `max-height` e `overflow-y: hidden`:
 ```
 
 O elemento se expandirá ao valor definido no `max-height` no _hover_ e você terá um _slider_ devido ao uso do overflow.
-
-<sup>[voltar ao índice](#table-of-contents)</sup>
-
-
-### Herde o `box-sizing`
-
-Faça que o `box-sizing` seja herdado do `html`:
-
-```css
-html {
-  box-sizing: border-box;
-}
-
-*, *:before, *:after {
-  box-sizing: inherit;
-}
-```
-
-Assim fica fácil de alterar o `box-sizing` em plugins ou outros componentes que tenham um comportamento diferente.
 
 <sup>[voltar ao índice](#table-of-contents)</sup>
 

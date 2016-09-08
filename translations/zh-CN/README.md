@@ -20,6 +20,8 @@
 <div id="protips"></div>
 ## 专业的技巧
 
+1. [使用CSS复位](#use-a-css-reset)
+1. [继承 `box-sizing`](#inherit-box-sizing)
 1. [使用 `:not()` 选择器来决定表单是否显示边框](#use-not-to-applyunapply-borders-on-navigation)
 1. [为 body 元素添加行高](#add-line-height-to-body)
 1. [垂直居中任何元素](#vertically-center-anything)
@@ -28,7 +30,6 @@
 1. [使用 SVG 图标](#use-svg-for-icons)
 1. [使用 “形似猫头鹰” 的选择器](#use-the-lobotomized-owl-selector)
 1. [使用 `max-height` 来建立纯 CSS 的滑块](#use-max-height-for-pure-css-sliders)
-1. [继承 `box-sizing`](#inherit-box-sizing)
 1. [创造格子等宽的表格](#equal-width-table-cells)
 1. [利用 Flexbox 去除多余的外边距](#get-rid-of-margin-hacks-with-flexbox)
 1. [利用属性选择器来选择空链接](#use-attribute-selectors-with-empty-links)
@@ -40,6 +41,46 @@
 1. [隐藏没有静音、自动播放的影片](#hide-autoplay-videos-that-arent-muted)
 1. [使用选择器 `:root` 来控制字体弹性](#use-root-for-flexible-type)
 1. [将`font-size`关于表单元素为更好的移动体验](#set-font-size-on-form-elements-for-a-better-mobile-experience)
+
+
+<div id="use-a-css-reset"></div>
+### 使用CSS复位
+
+CSS重置帮助实施用干净的石板为造型元素在不同的浏览器风格的一致性。您可以使用CSS复位库像[Normalize](http://necolas.github.io/normalize.css/)等，也可以使用一个更简化的复位方法：
+
+```css
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+```
+
+现在的元素将被剥离利润率和填充和`box-sizing`，您可以管理与CSS盒模型布局。
+
+注意：如果按照[继承 `box-sizing`](#inherit-box-sizing)尖下面你可能会选择不包含在你的CSS复位`box-sizing`财产。
+
+<sup>[回目录](#table-of-contents)</sup>
+
+
+<div id="inherit-box-sizing"></div>
+### 继承 `box-sizing`
+
+从 `html` 元素继承 `box-sizing` 就好：
+
+```css
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+```
+
+如此在插件或其它组件里改变 `box-sizing` 变得简单。
+
+<sup>[回目录](#table-of-contents)</sup>
 
 
 <div id="use-not-to-applyunapply-borders-on-navigation"></div>
@@ -239,26 +280,6 @@ SVG 在所有分辨率下都可以良好缩放，IE9+ 及其它所有浏览器�
 ```
 
 移入滑块元素时增大它的 `max-height` 的值，便可以显示溢出部分。
-
-<sup>[回目录](#table-of-contents)</sup>
-
-
-<div id="inherit-box-sizing"></div>
-### 继承 `box-sizing`
-
-从 `html` 元素继承 `box-sizing` 就好：
-
-```css
-html {
-  box-sizing: border-box;
-}
-
-*, *:before, *:after {
-  box-sizing: inherit;
-}
-```
-
-如此在插件或其它组件里改变 `box-sizing` 变得简单。
 
 <sup>[回目录](#table-of-contents)</sup>
 

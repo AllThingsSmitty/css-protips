@@ -20,6 +20,8 @@
 <div id="protips"></div>
 ## Профессиональные советы
 
+1. [С помощью CSS Reset](#use-a-css-reset)
+1. [Наследуйте `box-sizing`](#inherit-box-sizing)
 1. [Используйте `:not()` для добавления / удаления границ в меню навигации](#use-not-to-applyunapply-borders-on-navigation)
 1. [Добавьте `line-height` в `body`](#add-line-height-to-body)
 1. [Выровнять все по вертикали](#vertically-center-anything)
@@ -28,7 +30,6 @@
 1. [Используйте SVG для значков](#use-svg-for-icons)
 1. [Используйте селектор "Лоботомированная сова"](#use-the-lobotomized-owl-selector)
 1. [Используйте `max-height` для ползунков на чистом CSS](#use-max-height-for-pure-css-sliders)
-1. [Наследуйте `box-sizing`](#inherit-box-sizing)
 1. [Ячейки таблицы равной ширины](#equal-width-table-cells)
 1. [Используйте Flexbox вместо margin](#get-rid-of-margin-hacks-with-flexbox)
 1. [Используйте селектор атрибутов для пустых ссылок](#use-attribute-selectors-with-empty-links)
@@ -40,6 +41,47 @@
 1. [Отключите автовоспроизведение видео с включенным звуком](#hide-autoplay-videos-that-arent-muted)
 1. [Используйте `:root` для шрифтов](#use-root-for-flexible-type)
 1. [Установите `font-size` для элементов формы, чтобы оптимизировать просмотр на мобильных устройствах](#set-font-size-on-form-elements-for-a-better-mobile-experience)
+
+
+<div id="use-a-css-reset"></div>
+### С помощью CSS Reset
+
+CSS перезагружается помочь в обеспечении согласованности стиля между различными обозревателями с чистого листа для укладки элементов. Вы можете использовать CSS библиотеки сброса как [Normalize](http://necolas.github.io/normalize.css/) и др, или вы можете использовать более простой подход сброса.:
+
+```css
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+```
+
+Теперь элементы будут удалены из краев и дополнения, и `box-sizing` позволяет управлять макеты с моделью CSS коробки.
+
+**Примечание:** Если вы будете следовать [Наследуйте box-sizing](#inherit-box-sizing) наконечник ниже вы можете выбрать, чтобы не включать `box-sizing` свойство в вашем CSS сброса.
+
+<sup>[вернуться к оглавлению](#table-of-contents)</sup>
+
+
+<div id="inherit-box-sizing"></div>
+### Наследуйте `box-sizing`
+
+Пусть `box-sizing` будет унаследован от `html`:
+
+```css
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+```
+
+Так значительно проще изменять `box-sizing` в плагинах или других компонентах, которые задают иное поведение.
+
+<sup>[вернуться к оглавлению](#table-of-contents)</sup>
+
 
 <div id="use-not-to-applyunapply-borders-on-navigation"></div>
 ### Используйте `:not()` для добавления / удаления границ в меню навигации
@@ -237,26 +279,6 @@ SVG хорошо масштабируется для всех разрешени
 ```
 
 При наведении элемент расширяется до значения `max-height`, а всё что не влезло, можно прокрутить.
-
-<sup>[вернуться к оглавлению](#table-of-contents)</sup>
-
-
-<div id="inherit-box-sizing"></div>
-### Наследуйте `box-sizing`
-
-Пусть `box-sizing` будет унаследован от `html`:
-
-```css
-html {
-  box-sizing: border-box;
-}
-
-*, *:before, *:after {
-  box-sizing: inherit;
-}
-```
-
-Так значительно проще изменять `box-sizing` в плагинах или других компонентах, которые задают иное поведение.
 
 <sup>[вернуться к оглавлению](#table-of-contents)</sup>
 
