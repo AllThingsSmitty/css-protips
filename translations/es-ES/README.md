@@ -58,6 +58,8 @@ Restablece CSS ayudan a hacer cumplir la coherencia de estilo en diferentes nave
 
 Ahora elementos serán despojados de márgenes y el relleno, y `box-sizing` le permite administrar diseños con el modelo de caja CSS.
 
+#### [Demo](http://codepen.io/AllThingsSmitty/pen/kkrkLL)
+
 **Nota:** Si usted sigue la punta [Heredar `box-sizing`](#inherit-box-sizing) por debajo de usted puede optar por no incluir la propiedad `box-sizing` en su CSS reset.
 
 <sup>[volver al índice de contenidos](#table-of-contents)</sup>
@@ -114,7 +116,7 @@ En lugar de poner en el borde...
 ```
 Claro, se puede usar `li.nav + li` o incluso `li.nav: li` primer hijo ~, pero con `:not()` la intención es muy clara y el selector CSS define los bordes de la forma en que un ser humano lo describiría.
 
-[**Demo**](http://codepen.io/AllThingsSmitty/pen/LkymvO)
+#### [Demo](http://codepen.io/AllThingsSmitty/pen/LkymvO)
 
 <sup>[volver al índice de contenidos](#table-of-contents)</sup>
 
@@ -132,7 +134,7 @@ body {
 
 De esta manera los elementos textuales pueden heredar de `body` fácilmente.
 
-[**Demo**](http://codepen.io/AllThingsSmitty/pen/VjbdYd)
+#### [Demo](http://codepen.io/AllThingsSmitty/pen/VjbdYd)
 
 <sup>[volver al índice de contenidos](#table-of-contents)</sup>
 
@@ -161,7 +163,7 @@ body {
 
 **Nota:** ve por algunos [comportamientos erroneos](https://github.com/philipwalton/flexbugs#3-min-height-on-a-flex-container-wont-apply-to-its-flex-items) con Flexbox en IE11.
 
-[**Demo**](http://codepen.io/AllThingsSmitty/pen/GqmGqZ)
+#### [Demo](http://codepen.io/AllThingsSmitty/pen/GqmGqZ)
 
 <sup>[volver al índice de contenidos](#table-of-contents)</sup>
 
@@ -211,7 +213,7 @@ li:not(:nth-child(-n+3)) {
 
 Así que era bastante fácil.
 
-[**Demo**](http://codepen.io/AllThingsSmitty/pen/WxjKZp)
+#### [Demo](http://codepen.io/AllThingsSmitty/pen/WxjKZp)
 
 <sup>[volver al índice de contenidos](#table-of-contents)</sup>
 
@@ -255,7 +257,7 @@ En este ejemplo, todos los elementos del flujo del documento que siguen otros el
 
 Para más información sobre el selector "buho lobotomized", lee [post de Heydon Pickering](http://alistapart.com/article/axiomatic-css-and-lobotomized-owls) en *A List Apart*.
 
-[**Demo**](http://codepen.io/AllThingsSmitty/pen/XKgOkR)
+#### [Demo](http://codepen.io/AllThingsSmitty/pen/XKgOkR)
 
 <sup>[volver al índice de contenidos](#table-of-contents)</sup>
 
@@ -296,7 +298,7 @@ Las tablas pueden ser un dolor de trabajar con lo que se trate de usar `table-la
 
 Diseño de tablas sin dolor.
 
-[**Demo**](http://codepen.io/AllThingsSmitty/pen/jALALm)
+#### [Demo](http://codepen.io/AllThingsSmitty/pen/jALALm)
 
 <sup>[volver al índice de contenidos](#table-of-contents)</sup>
 
@@ -335,7 +337,7 @@ a[href^="http"]:empty::before {
 
 Eso es bastante conveniente.
 
-[**Demo**](http://codepen.io/AllThingsSmitty/pen/zBzXRx)
+#### [Demo](http://codepen.io/AllThingsSmitty/pen/zBzXRx)
 
 <sup>[volver al índice de contenidos](#table-of-contents)</sup>
 
@@ -397,7 +399,7 @@ Para crear un cuadro con una relación intrínseca, todo lo que tiene que hacer 
 
 El uso de 20% para el relleno hace que la altura de la caja igual a 20% de su anchura. No importa el ancho de la ventana, el div niño va a mantener su relación de aspecto (100% / 20% = 5: 1).
 
-[**Demo**](http://codepen.io/AllThingsSmitty/pen/jALZvE)
+#### [Demo](http://codepen.io/AllThingsSmitty/pen/jALZvE)
 
 <sup>[volver al índice de contenidos](#table-of-contents)</sup>
 

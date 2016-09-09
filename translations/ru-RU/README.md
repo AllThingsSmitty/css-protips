@@ -58,6 +58,8 @@ CSS перезагружается помочь в обеспечении сог
 
 Теперь элементы будут удалены из краев и дополнения, и `box-sizing` позволяет управлять макеты с моделью CSS коробки.
 
+#### [Демо](http://codepen.io/AllThingsSmitty/pen/kkrkLL)
+
 **Примечание:** Если вы будете следовать [Наследуйте box-sizing](#inherit-box-sizing) наконечник ниже вы можете выбрать, чтобы не включать `box-sizing` свойство в вашем CSS сброса.
 
 <sup>[вернуться к оглавлению](#table-of-contents)</sup>
@@ -114,7 +116,7 @@ html {
 
 Конечно, вы можете использовать `.nav li + li` или даже `.nav li:first-child ~ li`, но с `:not()` намерение понятнее, а селектор CSS определяет границу на человеческом языке.
 
-[**Демо**](http://codepen.io/AllThingsSmitty/pen/LkymvO)
+#### [Демо](http://codepen.io/AllThingsSmitty/pen/LkymvO)
 
 <sup>[вернуться к оглавлению](#table-of-contents)</sup>
 
@@ -132,7 +134,7 @@ body {
 
 Таким образом текстовые элементы легко могут наследовать свойство от `body`.
 
-[**Демо**](http://codepen.io/AllThingsSmitty/pen/VjbdYd)
+#### [Демо](http://codepen.io/AllThingsSmitty/pen/VjbdYd)
 
 <sup>[вернуться к оглавлению](#table-of-contents)</sup>
 
@@ -161,7 +163,7 @@ body {
 
 **Примечание:** Будьте осторожны с некоторыми [багами](https://github.com/philipwalton/flexbugs#3-min-height-on-a-flex-container-wont-apply-to-its-flex-items) flexbox в IE11.
 
-[**Демо**](http://codepen.io/AllThingsSmitty/pen/GqmGqZ)
+#### [Демо](http://codepen.io/AllThingsSmitty/pen/GqmGqZ)
 
 <sup>[вернуться к оглавлению](#table-of-contents)</sup>
 
@@ -211,7 +213,7 @@ li:not(:nth-child(-n+3)) {
 
 Что же, это было довольно легко.
 
-[**Демо**](http://codepen.io/AllThingsSmitty/pen/WxjKZp)
+#### [Демо](http://codepen.io/AllThingsSmitty/pen/WxjKZp)
 
 <sup>[вернуться к оглавлению](#table-of-contents)</sup>
 
@@ -255,7 +257,7 @@ SVG хорошо масштабируется для всех разрешени
 
 Более подробную информацию о селекторе "Лоботомированная сова", можно найти в [статье Heydon Pickering](http://alistapart.com/article/axiomatic-css-and-lobotomized-owls) на *A List Apart*.
 
-[**Демо**](http://codepen.io/AllThingsSmitty/pen/XKgOkR)
+#### [Демо](http://codepen.io/AllThingsSmitty/pen/XKgOkR)
 
 <sup>[вернуться к оглавлению](#table-of-contents)</sup>
 
@@ -296,7 +298,7 @@ SVG хорошо масштабируется для всех разрешени
 
 Даешь макеты таблиц без боли!
 
-[**Демо**](http://codepen.io/AllThingsSmitty/pen/jALALm)
+#### [Демо](http://codepen.io/AllThingsSmitty/pen/jALALm)
 
 <sup>[вернуться к оглавлению](#table-of-contents)</sup>
 
@@ -335,7 +337,7 @@ a[href^="http"]:empty::before {
 
 Это очень удобно.
 
-[**Демо**](http://codepen.io/AllThingsSmitty/pen/zBzXRx)
+#### [Демо](http://codepen.io/AllThingsSmitty/pen/zBzXRx)
 
 <sup>[вернуться к оглавлению](#table-of-contents)</sup>
 
@@ -397,7 +399,7 @@ a[href]:not([class]) {
 
 Использование padding 20% делает высоту параллелепипеда равной 20% от его ширины. Независимо от ширины окна, дочерний DIV будет сохранять соотношение сторон (100% / 20% = 5:1).
 
-[**Демо**](http://codepen.io/AllThingsSmitty/pen/jALZvE)
+#### [Демо](http://codepen.io/AllThingsSmitty/pen/jALZvE)
 
 <sup>[вернуться к оглавлению](#table-of-contents)</sup>
 
@@ -508,7 +510,7 @@ body {
 }
 ```
 
-[**Демо**](http://codepen.io/AllThingsSmitty/pen/XKgOkR)
+#### [Демо](http://codepen.io/AllThingsSmitty/pen/XKgOkR)
 
 <sup>[вернуться к оглавлению](#table-of-contents)</sup>
 

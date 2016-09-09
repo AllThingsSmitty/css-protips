@@ -58,6 +58,8 @@ CSS重置帮助实施用干净的石板为造型元素在不同的浏览器风�
 
 现在的元素将被剥离利润率和填充和`box-sizing`，您可以管理与CSS盒模型布局。
 
+#### [演示](http://codepen.io/AllThingsSmitty/pen/kkrkLL)
+
 注意：如果按照[继承 `box-sizing`](#inherit-box-sizing)尖下面你可能会选择不包含在你的CSS复位`box-sizing`财产。
 
 <sup>[回目录](#table-of-contents)</sup>
@@ -114,7 +116,7 @@ html {
 
 当然，也可以使用 `.nav li + li` 或者 `.nav li:first-child ~ li` 来达成，但是 `:not()` 选择器的方式更清晰明了，一目了然。
 
-[**演示**](http://codepen.io/AllThingsSmitty/pen/LkymvO)
+#### [演示](http://codepen.io/AllThingsSmitty/pen/LkymvO)
 
 <sup>[回目录](#table-of-contents)</sup>
 
@@ -132,7 +134,7 @@ body {
 
 文本元素可以很自然地继承 `body` 的样式。
 
-[**演示**](http://codepen.io/AllThingsSmitty/pen/VjbdYd)
+#### [演示](http://codepen.io/AllThingsSmitty/pen/VjbdYd)
 
 <sup>[回目录](#table-of-contents)</sup>
 
@@ -161,7 +163,7 @@ body {
 
 **注意：** IE11 对 flexbox 的支持[有点 bug](https://github.com/philipwalton/flexbugs#3-min-height-on-a-flex-container-wont-apply-to-its-flex-items)。
 
-[**演示**](http://codepen.io/AllThingsSmitty/pen/GqmGqZ)
+#### [演示](http://codepen.io/AllThingsSmitty/pen/GqmGqZ)
 
 <sup>[回目录](#table-of-contents)</sup>
 
@@ -212,7 +214,7 @@ li:not(:nth-child(-n+3)) {
 
 就是这么简单。
 
-[**演示**](http://codepen.io/AllThingsSmitty/pen/WxjKZp)
+#### [演示](http://codepen.io/AllThingsSmitty/pen/WxjKZp)
 
 <sup>[回目录](#table-of-contents)</sup>
 
@@ -256,7 +258,7 @@ SVG 在所有分辨率下都可以良好缩放，IE9+ 及其它所有浏览器�
 
 更多 “形似猫头鹰”  的选择器，可参考 *A List Apart* 上面 [Heydon Pickering 的文章](http://alistapart.com/article/axiomatic-css-and-lobotomized-owls)
 
-[**演示**](http://codepen.io/AllThingsSmitty/pen/XKgOkR)
+#### [演示](http://codepen.io/AllThingsSmitty/pen/XKgOkR)
 
 <sup>[回目录](#table-of-contents)</sup>
 
@@ -297,7 +299,7 @@ SVG 在所有分辨率下都可以良好缩放，IE9+ 及其它所有浏览器�
 
 无痛的 table 布局。
 
-[**演示**](http://codepen.io/AllThingsSmitty/pen/jALALm)
+#### [演示](http://codepen.io/AllThingsSmitty/pen/jALALm)
 
 <sup>[回目录](#table-of-contents)</sup>
 
@@ -336,7 +338,7 @@ a[href^="http"]:empty::before {
 
 相当简便。
 
-[**演示**](http://codepen.io/AllThingsSmitty/pen/zBzXRx)
+#### [演示](http://codepen.io/AllThingsSmitty/pen/zBzXRx)
 
 <sup>[回目录](#table-of-contents)</sup>
 
@@ -398,7 +400,7 @@ a[href]:not([class]) {
 
 使用20％的填充使得框等于其宽度的20％的高度。不管视口的宽度，子元素的div将保持其宽高比（100％/ 20％= 5:1）。
 
-[**演示**](http://codepen.io/AllThingsSmitty/pen/jALZvE)
+#### [演示](http://codepen.io/AllThingsSmitty/pen/jALZvE)
 
 <sup>[回目录](#table-of-contents)</sup>
 
@@ -509,7 +511,7 @@ body {
 }
 ```
 
-[**演示**](http://codepen.io/AllThingsSmitty/pen/XKgOkR)
+#### [演示](http://codepen.io/AllThingsSmitty/pen/XKgOkR)
 
 <sup>[回目录](#table-of-contents)</sup>
 

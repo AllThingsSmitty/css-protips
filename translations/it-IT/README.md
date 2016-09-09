@@ -58,6 +58,8 @@ reset CSS aiutare a far rispettare lo stile coerenza tra diversi browser da zero
 
 Ora elementi saranno spogliati di margini e padding, e `box-sizing` consente di gestire i layout con il box model CSS.
 
+#### [Dimostrazione](http://codepen.io/AllThingsSmitty/pen/kkrkLL)
+
 **Nota:** Se si segue la punta [Eredita il `box-sizing`](#inherit-box-sizing) in basso si potrebbe optare di non includere la proprietà box-sizing nel ripristino CSS.
 
 <sup>[torna al sommario](#sommario)</sup>
@@ -114,7 +116,7 @@ Invece di impostare il bordo...
 
 Certo, puoi usare `.nav li + li` o anche `.nav li:first-child ~ li`, ma con `:not()` l'intento è molto chiaro e il selettore CSS definisce il bordo nel modo in cui un essere umano lo descriverebbe.
 
-[**Dimostrazione**](http://codepen.io/AllThingsSmitty/pen/LkymvO)
+#### [Dimostrazione](http://codepen.io/AllThingsSmitty/pen/LkymvO)
 
 <sup>[torna al sommario](#sommario)</sup>
 
@@ -132,7 +134,7 @@ body {
 
 In questo modo gli elementi di testo possono ereditare facilmente da `body`.
 
-[**Dimostrazione**](http://codepen.io/AllThingsSmitty/pen/VjbdYd)
+#### [Dimostrazione](http://codepen.io/AllThingsSmitty/pen/VjbdYd)
 
 <sup>[torna al sommario](#sommario)</sup>
 
@@ -161,7 +163,7 @@ Vuoi centrare qualcos'altro? In verticale, in orizzontale... qualsiasi cosa, in 
 
 **Nota bene:** si verificano dei [comportamenti anomali](https://github.com/philipwalton/flexbugs#3-min-height-on-a-flex-container-wont-apply-to-its-flex-items) con flexbox e IE11.
 
-[**Dimostrazione**](http://codepen.io/AllThingsSmitty/pen/GqmGqZ)
+#### [Dimostrazione](http://codepen.io/AllThingsSmitty/pen/GqmGqZ)
 
 <sup>[torna al sommario](#sommario)</sup>
 
@@ -211,7 +213,7 @@ li:not(:nth-child(-n+3)) {
 
 Beh... era abbastanza facile.
 
-[**Dimostrazione**](http://codepen.io/AllThingsSmitty/pen/WxjKZp)
+#### [Dimostrazione](http://codepen.io/AllThingsSmitty/pen/WxjKZp)
 
 <sup>[torna al sommario](#sommario)</sup>
 
@@ -255,7 +257,7 @@ In questo esempio, tutti gli elementi nel flusso del documento che seguono altri
 
 Per saperne di più sul selettore detto "lobotomized owl", leggi [l'articolo di Heydon Pickering](http://alistapart.com/article/axiomatic-css-and-lobotomized-owls) su *A List Apart*.
 
-[**Dimostrazione**](http://codepen.io/AllThingsSmitty/pen/XKgOkR)
+#### [Dimostrazione](http://codepen.io/AllThingsSmitty/pen/XKgOkR)
 
 <sup>[torna al sommario](#sommario)</sup>
 
@@ -296,7 +298,7 @@ Lavorare con le tabelle può dare il tormento, perciò prova a usare `table-layo
 
 Layout con le tabelle e senza tormento.
 
-[**Dimostrazione**](http://codepen.io/AllThingsSmitty/pen/jALALm)
+#### [Dimostrazione](http://codepen.io/AllThingsSmitty/pen/jALALm)
 
 <sup>[torna al sommario](#sommario)</sup>
 
@@ -335,7 +337,7 @@ a[href^="http"]:empty::before {
 
 Decisamente comodo.
 
-[**Dimostrazione**](http://codepen.io/AllThingsSmitty/pen/zBzXRx)
+#### [Dimostrazione](http://codepen.io/AllThingsSmitty/pen/zBzXRx)
 
 <sup>[torna al sommario](#sommario)</sup>
 
@@ -397,7 +399,7 @@ Per creare un contenitore con proporzioni intrinseche tutto ciò che devi fare �
 
 Uare un `padding` del 20% rende l'altezza del contenitore pari al 20% della sua larghezza. Non importa quale sia la larghezza della finestra, il div figlio manterrà le proporzioni stabilite (100% / 20% = 5:1).
 
-[**Dimostrazione**](http://codepen.io/AllThingsSmitty/pen/jALZvE)
+#### [Dimostrazione](http://codepen.io/AllThingsSmitty/pen/jALZvE)
 
 <sup>[torna al sommario](#sommario)</sup>
 
@@ -508,7 +510,7 @@ body {
 }
 ```
 
-[**Dimostrazione**](http://codepen.io/AllThingsSmitty/pen/XKgOkR)
+#### [Dimostrazione](http://codepen.io/AllThingsSmitty/pen/XKgOkR)
 
 <sup>[torna al sommario](#sommario)</sup>
 

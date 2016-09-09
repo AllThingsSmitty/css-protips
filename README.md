@@ -56,6 +56,8 @@ CSS resets help enforce style consistency across different browsers with a clean
 
 Now elements will be stripped of margins and padding, and `box-sizing` lets you manage layouts with the CSS box model.
 
+#### [Demo](http://codepen.io/AllThingsSmitty/pen/kkrkLL)
+
 **Note:** If you follow the [Inherit `box-sizing`](#inherit-box-sizing) tip below you might opt to not include the `box-sizing` property in  your CSS reset.
 
 <sup>[back to table of contents](#table-of-contents)</sup>
@@ -110,7 +112,7 @@ Instead of putting on the border...
 
 Sure, you can use `.nav li + li` or even `.nav li:first-child ~ li`, but with `:not()` the intent is very clear and the CSS selector defines the border the way a human would describe it.
 
-[**Demo**](http://codepen.io/AllThingsSmitty/pen/LkymvO)
+#### [Demo](http://codepen.io/AllThingsSmitty/pen/LkymvO)
 
 <sup>[back to table of contents](#table-of-contents)</sup>
 
@@ -127,7 +129,7 @@ body {
 
 This way textual elements can inherit from `body` easily.
 
-[**Demo**](http://codepen.io/AllThingsSmitty/pen/VjbdYd)
+#### [Demo](http://codepen.io/AllThingsSmitty/pen/VjbdYd)
 
 <sup>[back to table of contents](#table-of-contents)</sup>
 
@@ -155,7 +157,7 @@ Want to center something else? Vertically, horizontally...anything, anytime, any
 
 **Note:** Watch for some [buggy behavior](https://github.com/philipwalton/flexbugs#3-min-height-on-a-flex-container-wont-apply-to-its-flex-items) with flexbox in IE11.
 
-[**Demo**](http://codepen.io/AllThingsSmitty/pen/GqmGqZ)
+#### [Demo](http://codepen.io/AllThingsSmitty/pen/GqmGqZ)
 
 <sup>[back to table of contents](#table-of-contents)</sup>
 
@@ -203,7 +205,7 @@ li:not(:nth-child(-n+3)) {
 
 Well that was pretty easy.
 
-[**Demo**](http://codepen.io/AllThingsSmitty/pen/WxjKZp)
+#### [Demo](http://codepen.io/AllThingsSmitty/pen/WxjKZp)
 
 <sup>[back to table of contents](#table-of-contents)</sup>
 
@@ -245,7 +247,7 @@ In this example, all elements in the flow of the document that follow other elem
 
 For more on the "lobotomized owl" selector, read [Heydon Pickering's post](http://alistapart.com/article/axiomatic-css-and-lobotomized-owls) on *A List Apart*.
 
-[**Demo**](http://codepen.io/AllThingsSmitty/pen/grRvWq)
+#### [Demo](http://codepen.io/AllThingsSmitty/pen/grRvWq)
 
 <sup>[back to table of contents](#table-of-contents)</sup>
 
@@ -284,7 +286,7 @@ Tables can be a pain to work with so try using `table-layout: fixed` to keep cel
 
 Pain-free table layouts.
 
-[**Demo**](http://codepen.io/AllThingsSmitty/pen/jALALm)
+#### [Demo](http://codepen.io/AllThingsSmitty/pen/jALALm)
 
 <sup>[back to table of contents](#table-of-contents)</sup>
 
@@ -321,7 +323,7 @@ a[href^="http"]:empty::before {
 
 That's pretty convenient.
 
-[**Demo**](http://codepen.io/AllThingsSmitty/pen/zBzXRx)
+#### [Demo](http://codepen.io/AllThingsSmitty/pen/zBzXRx)
 
 <sup>[back to table of contents](#table-of-contents)</sup>
 
@@ -380,7 +382,7 @@ To create a box with an intrinsic ratio, all you need to do is apply top or bott
 
 Using 20% for padding makes the height of the box equal to 20% of its width. No matter the width of the viewport, the child div will keep its aspect ratio (100% / 20% = 5:1).
 
-[**Demo**](http://codepen.io/AllThingsSmitty/pen/jALZvE)
+#### [Demo](http://codepen.io/AllThingsSmitty/pen/jALZvE)
 
 <sup>[back to table of contents](#table-of-contents)</sup>
 
@@ -487,7 +489,7 @@ body {
 }
 ```
 
-[**Demo**](http://codepen.io/AllThingsSmitty/pen/XKgOkR)
+#### [Demo](http://codepen.io/AllThingsSmitty/pen/XKgOkR)
 
 <sup>[back to table of contents](#table-of-contents)</sup>
 

@@ -55,6 +55,8 @@ Redefine CSS ajudar a impor a consistência de estilo em diferentes navegadores 
 
 Agora elementos serão despojados de margens e preenchimento, e `box-sizing` permite gerenciar layouts com o modelo de caixa CSS.
 
+#### [Passeata](http://codepen.io/AllThingsSmitty/pen/kkrkLL)
+
 **Nota:** Se você seguir a ponta [Herde o box-sizing](#herde-o-box-sizing) abaixo você pode optar por não incluir o `box-sizing` propriedade em sua redefinição de CSS.
 
 <sup>[voltar ao índice](#table-of-contents)</sup>
@@ -109,7 +111,7 @@ Ao invés de colocar a borda…
 
 Claro, você poderia usar `.nav li + li` ou ainda `.nav li:first-child ~ li`, mas usando `:not()` a intenção fica mais clara e o seletor CSS passa a definir a borda de uma maneira que nós humanos entenPasseatas mais claramente.
 
-[**Passeata**](http://codepen.io/AllThingsSmitty/pen/LkymvO)
+#### [Passeata](http://codepen.io/AllThingsSmitty/pen/LkymvO)
 
 <sup>[voltar ao índice](#table-of-contents)</sup>
 
@@ -126,7 +128,7 @@ body {
 
 Dessa maneira elementos de texto vão herdar o `line-height` do `body`.
 
-[**Passeata**](http://codepen.io/AllThingsSmitty/pen/VjbdYd)
+#### [Passeata](http://codepen.io/AllThingsSmitty/pen/VjbdYd)
 
 <sup>[voltar ao índice](#table-of-contents)</sup>
 
@@ -154,7 +156,7 @@ Isso não resolveu seu problema? O site CSS-Tricks tem [um guia completo](https:
 
 **Aviso:** Fique atento com os [bugs](https://github.com/philipwalton/flexbugs#3-min-height-on-a-flex-container-wont-apply-to-its-flex-items) quando utilizar flexbox no IE11.
 
-[**Passeata**](http://codepen.io/AllThingsSmitty/pen/GqmGqZ)
+#### [Passeata](http://codepen.io/AllThingsSmitty/pen/GqmGqZ)
 
 <sup>[voltar ao índice](#table-of-contents)</sup>
 
@@ -202,7 +204,7 @@ li:not(:nth-child(-n+3)) {
 
 Mais fácil que isso só dois disso.
 
-[**Passeata**](http://codepen.io/AllThingsSmitty/pen/WxjKZp)
+#### [Passeata](http://codepen.io/AllThingsSmitty/pen/WxjKZp)
 
 <sup>[voltar ao índice](#table-of-contents)</sup>
 
@@ -244,7 +246,7 @@ Nesse exemplo, todos os elementos acompanhados de outros elementos recebem `marg
 
 Para mais exemplos utilizando o seletor "lobotomized owl", leia [o artigo escrito por Heydon Pickering](http://alistapart.com/article/axiomatic-css-and-lobotomized-owls) no site *A List Apart*.
 
-[**Passeata**](http://codepen.io/AllThingsSmitty/pen/XKgOkR)
+#### [Passeata](http://codepen.io/AllThingsSmitty/pen/XKgOkR)
 
 <sup>[voltar ao índice](#table-of-contents)</sup>
 
@@ -283,7 +285,7 @@ Não tem nada mais chato do que trabalhar com tabelas, mas você pode usar `tabl
 
 Tabelas sem dor de cabeça.
 
-[**Passeata**](http://codepen.io/AllThingsSmitty/pen/jALALm)
+#### [Passeata](http://codepen.io/AllThingsSmitty/pen/jALALm)
 
 <sup>[voltar ao índice](#table-of-contents)</sup>
 
@@ -320,7 +322,7 @@ a[href^="http"]:empty::before {
 
 Mão na roda.
 
-[**Passeata**](http://codepen.io/AllThingsSmitty/pen/zBzXRx)
+#### [Passeata](http://codepen.io/AllThingsSmitty/pen/zBzXRx)
 
 <sup>[voltar ao índice](#table-of-contents)</sup>
 
@@ -379,7 +381,7 @@ Para criar uma div com proporção de tela fixa, tudo que você precisa fazer é
 
 Se você usar 20% no `padding` a altura da div vai ser igual a 20% de sua largura. Independente da largura do _viewport_, a div filho vai sempre manter a proporção de tela (100% / 20% = 5:1).
 
-[**Passeata**](http://codepen.io/AllThingsSmitty/pen/jALZvE)
+#### [Passeata](http://codepen.io/AllThingsSmitty/pen/jALZvE)
 
 <sup>[voltar ao índice](#table-of-contents)</sup>
 
@@ -486,7 +488,7 @@ body {
 }
 ```
 
-[**Passeata**](http://codepen.io/AllThingsSmitty/pen/XKgOkR)
+#### [Passeata](http://codepen.io/AllThingsSmitty/pen/XKgOkR)
 
 <sup>[voltar ao índice](#table-of-contents)</sup>
 

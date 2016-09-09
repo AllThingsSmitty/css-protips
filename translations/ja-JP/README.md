@@ -60,6 +60,8 @@ CSSのリセットはスタイリング要素のための白紙の状態で異�
 
 今の要素は、マージンやパディングを剥奪し、`box-sizing`は、CSSボックスモデルとレイアウトを管理することができますされます。
 
+#### [デモ](http://codepen.io/AllThingsSmitty/pen/kkrkLL)
+
 **注意：**あなたがあなたのCSSのリセットで[Inherit `box-sizing`](#inherit-box-sizing) プロパティが含まれていないことを選択する可能性があります下に`box-sizing`ヒントに従っている場合。
 
 
@@ -118,7 +120,7 @@ html {
 
 もちろん `.nav li + li` また `.nav li:first-child ~ li`,を使用できますが `:not()` が一番わかりやすいコードになります。
 
-[**デモ**](http://codepen.io/AllThingsSmitty/pen/LkymvO)
+#### [デモ](http://codepen.io/AllThingsSmitty/pen/LkymvO)
 
 <sup>[目次へ戻る](#table-of-contents)</sup>
 
@@ -134,7 +136,7 @@ body {
 }
 ```
 
-[**デモ**](http://codepen.io/AllThingsSmitty/pen/VjbdYd)
+#### [デモ](http://codepen.io/AllThingsSmitty/pen/VjbdYd)
 
 <sup>[目次へ戻る](#table-of-contents)</sup>
 
@@ -163,7 +165,7 @@ body {
 
 **備考:** IE11のFlexboxの [バグを気をつけてください](https://github.com/philipwalton/flexbugs#3-min-height-on-a-flex-container-wont-apply-to-its-flex-items)
 
-[**デモ**](http://codepen.io/AllThingsSmitty/pen/GqmGqZ)
+#### [デモ](http://codepen.io/AllThingsSmitty/pen/GqmGqZ)
 
 <sup>[目次へ戻る](#table-of-contents)</sup>
 
@@ -213,7 +215,7 @@ li:not(:nth-child(-n+3)) {
 
 簡単でしょう〜！
 
-[**デモ**](http://codepen.io/AllThingsSmitty/pen/WxjKZp)
+#### [デモ](http://codepen.io/AllThingsSmitty/pen/WxjKZp)
 
 <sup>[目次へ戻る](#table-of-contents)</sup>
 
@@ -257,7 +259,7 @@ SVGは [IE9](http://caniuse.com/#search=svg)以降のすべてのブラウザで
 
 Owlについて詳しくはこちら：*List Apart* の[ヘイドンピケリングの記事](http://alistapart.com/article/axiomatic-css-and-lobotomized-owls)
 
-[**デモ**](http://codepen.io/AllThingsSmitty/pen/XKgOkR)
+#### [デモ](http://codepen.io/AllThingsSmitty/pen/XKgOkR)
 
 <sup>[目次へ戻る](#table-of-contents)</sup>
 
@@ -298,7 +300,7 @@ CSSで実装されたスライダーは、`max-height`を`overflow: hidden;`と�
 
 簡単にテーブルレイアウトを作れます。
 
-[**デモ**](http://codepen.io/AllThingsSmitty/pen/jALALm)
+#### [デモ](http://codepen.io/AllThingsSmitty/pen/jALALm)
 
 <sup>[目次へ戻る](#table-of-contents)</sup>
 
@@ -338,7 +340,7 @@ a[href^="http"]:empty::before {
 
 便利ですよー！
 
-[**デモ**](http://codepen.io/AllThingsSmitty/pen/zBzXRx)
+#### [デモ](http://codepen.io/AllThingsSmitty/pen/zBzXRx)
 
 <sup>[目次へ戻る](#table-of-contents)</sup>
 
@@ -400,7 +402,7 @@ CMSで挿入される通常class属性を持たないリンクに`:not`を使っ
 
 paddingに20%を使っているのは、そのボックスの高さを幅の20%と等しくします。ビューポートの幅に関わらず、子のdiv要素のアスペクト比は「100%:20%(5:1)」を保持します。
 
-[**デモ**](http://codepen.io/AllThingsSmitty/pen/jALZvE)
+#### [デモ](http://codepen.io/AllThingsSmitty/pen/jALZvE)
 
 <sup>[目次へ戻る](#table-of-contents)</sup>
 
@@ -503,7 +505,7 @@ video[autoplay]:not([muted]) {
 }
 ```
 
-[**デモ**](http://codepen.io/AllThingsSmitty/pen/XKgOkR)
+#### [デモ](http://codepen.io/AllThingsSmitty/pen/XKgOkR)
 
 `:root`で定義した値に基づいて、それぞれのタグや要素に`em`を使って利用します。
 

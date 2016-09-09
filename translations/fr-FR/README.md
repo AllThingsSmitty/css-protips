@@ -58,6 +58,8 @@ Réinitialise CSS aider à faire respecter la cohérence de style entre les diff
 
 Maintenant, les éléments seront dépouillés des marges et le rembourrage, et `box-sizing` vous permet de gérer les présentations avec le modèle de boîte CSS.
 
+#### [Démo](http://codepen.io/AllThingsSmitty/pen/kkrkLL)
+
 **Remarque:** Si vous suivez la pointe [Hériter `box-sizing`](#inherit-box-sizing) ci-dessous vous pouvez choisir de ne pas inclure la propriété box-sizing dans votre reset CSS.
 
 <sup>[retour à la table des matières](#table-of-contents)</sup>
@@ -116,7 +118,7 @@ Au lieu de mettre à la frontière...
 
 Bien sûr, vous pouvez utiliser `.nav li + li` ou même `.nav li:first-child ~ li`, mais avec `:not()` l'intention est très claire et le sélecteur CSS définit la frontière comme un être humain serait le décrire.
 
-[**Démo**](http://codepen.io/AllThingsSmitty/pen/LkymvO)
+#### [Demo](http://codepen.io/AllThingsSmitty/pen/LkymvO)
 
 <sup>[retour à la table des matières](#table-of-contents)</sup>
 
@@ -134,7 +136,7 @@ body {
 
 De cette façon, les éléments textuels peuvent hériter de `body` facilement.
 
-[**Démo**](http://codepen.io/AllThingsSmitty/pen/VjbdYd)
+#### [Demo](http://codepen.io/AllThingsSmitty/pen/VjbdYd)
 
 <sup>[retour à la table des matières](#table-of-contents)</sup>
 
@@ -163,7 +165,7 @@ Vous voulez centrer autre chose? Verticalement, horizontalement...quoi que ce so
 
 **Remarque:** Surveillez certains [poussette behavior](https://github.com/philipwalton/flexbugs#3-min-height-on-a-flex-container-wont-apply-to-its-flex-items) avec flexBox dans IE11.
 
-[**Démo**](http://codepen.io/AllThingsSmitty/pen/GqmGqZ)
+#### [Demo](http://codepen.io/AllThingsSmitty/pen/GqmGqZ)
 
 <sup>[retour à la table des matières](#table-of-contents)</sup>
 
@@ -213,7 +215,7 @@ li:not(:nth-child(-n+3)) {
 
 Eh bien, ce fut assez facile.
 
-[**Démo**](http://codepen.io/AllThingsSmitty/pen/WxjKZp)
+#### [Demo](http://codepen.io/AllThingsSmitty/pen/WxjKZp)
 
 <sup>[retour à la table des matières](#table-of-contents)</sup>
 
@@ -257,7 +259,7 @@ Dans cet exemple, tous les éléments dans le flux du document qui suivent d'aut
 
 Pour en savoir plus sur la "chouette lobotomisé" sélecteur, lire [le poste de Heydon Pickering](http://alistapart.com/article/axiomatic-css-and-lobotomized-owls) sur *A List Apart*.
 
-[**Démo**](http://codepen.io/AllThingsSmitty/pen/XKgOkR)
+#### [Demo](http://codepen.io/AllThingsSmitty/pen/XKgOkR)
 
 <sup>[retour à la table des matières](#table-of-contents)</sup>
 
@@ -298,7 +300,7 @@ Les tableaux peuvent être une douleur à travailler avec donc essayer d'utilise
 
 dispositions de table sans douleur.
 
-[**Démo**](http://codepen.io/AllThingsSmitty/pen/jALALm)
+#### [Demo](http://codepen.io/AllThingsSmitty/pen/jALALm)
 
 <sup>[retour à la table des matières](#table-of-contents)</sup>
 
@@ -338,7 +340,7 @@ a[href^="http"]:empty::before {
 
 C'est assez pratique.
 
-[**Démo**](http://codepen.io/AllThingsSmitty/pen/zBzXRx)
+#### [Demo](http://codepen.io/AllThingsSmitty/pen/zBzXRx)
 
 <sup>[retour à la table des matières](#table-of-contents)</sup>
 
@@ -400,7 +402,7 @@ Pour créer une boîte avec un rapport intrinsèque, tout ce que vous devez fair
 
 En utilisant 20% pour le rembourrage rend la hauteur de la caisse égale à 20% de sa largeur. Peu importe la largeur de la fenêtre, la div enfant gardera son ratio d'aspect (100% / 20% = 5: 1).
 
-[**Démo**](http://codepen.io/AllThingsSmitty/pen/jALZvE)
+#### [Demo](http://codepen.io/AllThingsSmitty/pen/jALZvE)
 
 <sup>[retour à la table des matières](#table-of-contents)</sup>
 
@@ -503,7 +505,7 @@ La taille type de police dans une disposition sensible devrait être en mesure d
 }
 ```
 
-[**Démo**](http://codepen.io/AllThingsSmitty/pen/XKgOkR)
+#### [Demo](http://codepen.io/AllThingsSmitty/pen/XKgOkR)
 
 Maintenant, vous pouvez utiliser l'appareil de `root em` sur la base de la valeur calculée par`: root`:
 
