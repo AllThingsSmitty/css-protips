@@ -33,7 +33,7 @@ Thank you for your suggestions!
 
 If you fluently speak another language and want to contribute by translating this list into that language, please submit a PR using the following guidelines:
 
-* Add a new folder to the `translations` folder
+* Add a new folder to the [`translations`](https://github.com/AllThingsSmitty/css-protips/tree/master/translations) folder
 * The new folder should be labeled the language culture name, e.g, `es-ES`, `ru-RU`, `zh-CN`, etc.
 
 Additionally, feel free to review already translated content for accuracy.
