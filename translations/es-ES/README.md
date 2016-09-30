@@ -446,7 +446,7 @@ Aprender más sobre el estilo de este patrón en [Iré Aderinokun](https://githu
 <div id="use-rem-for-global-sizing-use-em-for-local-sizing"></div>
 ### Use `rem` para Global Dimensionamiento; Use `em` para el dimensionamiento local
 
-Después de ajustar el tamaño de la fuente base en la raíz (`html {font-size: 16px;}`), ajustar el tamaño de fuente para los elementos textuales de `em`:
+Después de ajustar el tamaño de la fuente base en la raíz (`html { font-size: 100%; }`), ajustar el tamaño de fuente para los elementos textuales de `em`:
 
 ```css
 h2 {

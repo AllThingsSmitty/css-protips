@@ -427,7 +427,7 @@ Learn more about styling for this pattern in [Ire Aderinokun](https://github.com
 
 ### Use `rem` for Global Sizing; Use `em` for Local Sizing
 
-After setting the base font size at the root (`html { font-size: 16px; }`), set the font size for textual elements to `em`:
+After setting the base font size at the root (`html { font-size: 100%; }`), set the font size for textual elements to `em`:
 
 ```css
 h2 {

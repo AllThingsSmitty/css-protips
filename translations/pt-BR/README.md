@@ -426,7 +426,7 @@ Leia mais sobre como estilizar imagens quebradas no [artigo original](http://bit
 
 ### Use `rem` para Definir Tamanhos Globais; Use `em` para Definir Tamanhos Locais
 
-Depois de definir o tamanho de fonte base na raíz (`html { font-size: 16px; }`), defina o tamanho de fonte para elementos de texto utilizando `em`:
+Depois de definir o tamanho de fonte base na raíz (`html { font-size: 100%; }`), defina o tamanho de fonte para elementos de texto utilizando `em`:
 
 ```css
 h2 {

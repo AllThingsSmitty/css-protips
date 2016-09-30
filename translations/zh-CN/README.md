@@ -447,7 +447,7 @@ img:after {
 <div id="use-rem-for-global-sizing-use-em-for-local-sizing"></div>
 ### 用 `rem` 来调整全局大小；用 `em` 来调整局部大小
 
-在根设置基本字体大小后 (`html { font-size: 16px; }`), 请设置为文本元素的字体大小 `em`:
+在根设置基本字体大小后 (`html { font-size: 100%; }`), 请设置为文本元素的字体大小 `em`:
 
 ```css
 h2 { 

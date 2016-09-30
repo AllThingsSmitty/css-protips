@@ -446,7 +446,7 @@ Ulteriori informazioni sullo styling secondo questo pattern nell'[articolo](http
 <div id="use-rem-for-global-sizing-use-em-for-local-sizing"></div>
 ### Usa `rem` per le grandezze globali; usa `em` per le dimensioni locali
 
-Dopo avere impostato la dimensione di base del font sull'elemento root (`html { font-size: 16px; }`), imposta la dimensione del font per gli elementi testuali con `em`:
+Dopo avere impostato la dimensione di base del font sull'elemento root (`html { font-size: 100%; }`), imposta la dimensione del font per gli elementi testuali con `em`:
 
 ```css
 h2 {

@@ -449,7 +449,7 @@ En savoir plus sur le style de ce modèle dans [Ire Aderinokun](https://github.c
 <div id="use-rem-for-global-sizing-use-em-for-local-sizing"></div>
 ### Utilisez `rem` for Global Dimensionnement; Utilisez `em` pour Local Sizing
 
-Après avoir défini la taille de la police de base à la racine (`html { font-size: 16px; }`), définir la taille de la police pour les éléments textuels à `em`:
+Après avoir défini la taille de la police de base à la racine (`html { font-size: 100%; }`), définir la taille de la police pour les éléments textuels à `em`:
 
 ```css
 h2 {
