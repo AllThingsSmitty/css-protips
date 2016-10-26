@@ -506,7 +506,7 @@ Ahora se puede utilizar la unidad de `root em` basado en el valor calculado por 
 
 ```css
 body {
-  font: 1em/1.6 sans-serif;
+  font: 1rem/1.6 sans-serif;
 }
 ```
 

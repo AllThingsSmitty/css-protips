@@ -484,7 +484,7 @@ Assim você pode utilizar a unidade de medida `root em` baseada no valor calcula
 
 ```css
 body {
-  font: 1em/1.6 sans-serif;
+  font: 1rem/1.6 sans-serif;
 }
 ```
 

@@ -511,7 +511,7 @@ video[autoplay]:not([muted]) {
 
 ```css
 body {
-  font: 1em/1.6 sans-serif;
+  font: 1rem/1.6 sans-serif;
 }
 ```
 
