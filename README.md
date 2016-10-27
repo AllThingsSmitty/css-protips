@@ -485,7 +485,7 @@ Now you can utilize the `root em` unit based on the value calculated by `:root`:
 
 ```css
 body {
-  font: 1em/1.6 sans-serif;
+  font: 1rem/1.6 sans-serif;
 }
 ```
 
