@@ -2,23 +2,23 @@
   <img src="https://rawgit.com/AllThingsSmitty/css-protips/master/media/logo.svg" alt="light bulb icon">
 </p>
 
-# CSS 专业的技巧 [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome)
+# CSS 专业技巧 [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome)
 
-提示的收集，以帮助提升你的CSS技巧。
+一个帮你提升 CSS 技巧的收藏集。
 
-> 对于其他大名单退房 [@sindresorhus](https://github.com/sindresorhus/)的策展的名单 [真棒名单](https://github.com/sindresorhus/awesome/).
+> 对于其他收藏集合可以查看 [@sindresorhus](https://github.com/sindresorhus/) 创建的收藏集合 [Awesome Lists](https://github.com/sindresorhus/awesome/).
 
 
 <div id="table-of-contents"></div>
 ## 目录
 
-* [专业的技巧](#protips)
+* [专业技巧](#protips)
 * [支持情况](#support)
 * [贡献准则](../../CONTRIBUTING.md)
 
 
 <div id="protips"></div>
-## 专业的技巧
+## 专业技巧
 
 1. [使用CSS复位](#use-a-css-reset)
 1. [继承 `box-sizing`](#inherit-box-sizing)
@@ -33,20 +33,20 @@
 1. [创造格子等宽的表格](#equal-width-table-cells)
 1. [利用 Flexbox 去除多余的外边距](#get-rid-of-margin-hacks-with-flexbox)
 1. [利用属性选择器来选择空链接](#use-attribute-selectors-with-empty-links)
-1. [给 “预设” 链接定义样式](#style-default-links)
+1. [给 “默认” 链接定义样式](#style-default-links)
 1. [一致的垂直节奏](#consistent-vertical-rhythm)
 1. [内在比例盒](#intrinsic-ratio-boxes)
 1. [为破碎图象定义样式](#style-broken-images)
 1. [用 rem 来调整全局大小；用 em 来调整局部大小](#use-rem-for-global-sizing-use-em-for-local-sizing)
 1. [隐藏没有静音、自动播放的影片](#hide-autoplay-videos-that-arent-muted)
 1. [使用选择器 `:root` 来控制字体弹性](#use-root-for-flexible-type)
-1. [将`font-size`关于表单元素为更好的移动体验](#set-font-size-on-form-elements-for-a-better-mobile-experience)
+1. [为更好的移动体验，为表单元素设置字体大小](#set-font-size-on-form-elements-for-a-better-mobile-experience)
 
 
 <div id="use-a-css-reset"></div>
 ### 使用CSS复位
 
-CSS重置帮助实施用干净的石板为造型元素在不同的浏览器风格的一致性。您可以使用CSS复位库像[Normalize](http://necolas.github.io/normalize.css/)等，也可以使用一个更简化的复位方法：
+CSS复位可以在不同的浏览器上保持一致的样式风格。您可以使用CSS reset 库[Normalize](http://necolas.github.io/normalize.css/)等，也可以使用一个更简化的复位方法：
 
 ```css
 * {
@@ -56,11 +56,11 @@ CSS重置帮助实施用干净的石板为造型元素在不同的浏览器风�
 }
 ```
 
-现在的元素将被剥离利润率和填充和`box-sizing`，您可以管理与CSS盒模型布局。
+现在元素的 margin 和 padding 已为0，`box-sizing`可以管理您的CSS盒模型布局。
 
 #### [演示](http://codepen.io/AllThingsSmitty/pen/kkrkLL)
 
-注意：如果按照[继承 `box-sizing`](#inherit-box-sizing)尖下面你可能会选择不包含在你的CSS复位`box-sizing`财产。
+注意：如果你遵循接下来[继承 `box-sizing`](#inherit-box-sizing)讲解的这个技巧, 你不需要在以上代码中添加 `box-sizing` 属性。
 
 <sup>[回目录](#table-of-contents)</sup>
 
@@ -68,7 +68,7 @@ CSS重置帮助实施用干净的石板为造型元素在不同的浏览器风�
 <div id="inherit-box-sizing"></div>
 ### 继承 `box-sizing`
 
-从 `html` 元素继承 `box-sizing` 就好：
+从 `html` 元素继承 `box-sizing` ：
 
 ```css
 html {
@@ -88,7 +88,7 @@ html {
 <div id="use-not-to-applyunapply-borders-on-navigation"></div>
 ### 使用 `:not()` 选择器来决定表单是否显示边框
 
-与其加上边框……
+先为元素添加边框
 
 ```css
 /* 添加边框 */
@@ -97,7 +97,7 @@ html {
 }
 ```
 
-……然后去掉最后一个元素的边框……
+为最后一个元素去除边框
 
 ```css
 /* 去掉边框 */
@@ -106,7 +106,7 @@ html {
 }
 ```
 
-……不如使用 `:not()` 伪类来达成同样的效果：
+不过不要这么做，使用 `:not()` 伪类来达到同样的效果：
 
 ```css
 .nav li:not(:last-child) {
@@ -114,7 +114,7 @@ html {
 }
 ```
 
-当然，也可以使用 `.nav li + li` 或者 `.nav li:first-child ~ li` 来达成，但是 `:not()` 选择器的方式更清晰明了，一目了然。
+当然，你也可以使用 `.nav li + li` 或者 `.nav li:first-child ~ li` ，但是 `:not()` 更加清晰，具有可读性。
 
 #### [演示](http://codepen.io/AllThingsSmitty/pen/LkymvO)
 
@@ -124,7 +124,7 @@ html {
 <div id="add-line-height-to-body"></div>
 ### 为 `body` 元素添加行高
 
-不必为每一个 `<p>`，`<h*>`，等元素逐一添加 `line-height`，为 `body` 元素添加就好了：
+不必为每一个 `<p>`，`<h*>` 元素逐一添加 `line-height`，直接添加到 `body` 元素：
 
 ```css
 body {
@@ -132,7 +132,7 @@ body {
 }
 ```
 
-文本元素可以很自然地继承 `body` 的样式。
+文本元素可以很容易地继承 `body` 的样式。
 
 #### [演示](http://codepen.io/AllThingsSmitty/pen/VjbdYd)
 
@@ -142,7 +142,7 @@ body {
 <div id="vertically-center-anything"></div>
 ### 垂直居中任何元素
 
-这不是黑魔法，真的可以垂直居中任何元素：
+不！这绝不是黑魔法，真的可以垂直居中任何元素：
 
 ```css
 html, body {
@@ -159,7 +159,7 @@ body {
 }
 ```
 
-这还不够？垂直方向，水平方向……任何元素，任何时间，任何地方？CSS-Tricks [有篇好文](https://css-tricks.com/centering-css-complete-guide/) 讲到了各种居中的技巧。
+这还不够？垂直方向，水平方向？任何元素，任何时间，任何地点？CSS-Tricks [有篇好文](https://css-tricks.com/centering-css-complete-guide/) 讲到了各种居中的技巧。
 
 **注意：** IE11 对 flexbox 的支持[有点 bug](https://github.com/philipwalton/flexbugs#3-min-height-on-a-flex-container-wont-apply-to-its-flex-items)。
 
@@ -169,9 +169,9 @@ body {
 
 
 <div id="comma-separated-lists"></div>
-### 逗号分隔的列表
+### 逗号分隔列表
 
-列表的每项都由逗号分隔：
+使列表的每项都由逗号分隔：
 
 ```css
 ul > li:not(:last-child)::after {
@@ -179,9 +179,9 @@ ul > li:not(:last-child)::after {
 }
 ```
 
-使用了 `:not()` 伪类，因此最后一项没加逗号。
+因最后一项不加逗号，可以使用 `:not()` 伪类。
 
-**注意：**这一技巧对于无障碍，屏幕阅读器而言并不理想，需要注意。
+**注意：**这一技巧对于无障碍，特别是屏幕阅读器而言并不理想。而且复制粘贴并不会带走CSS生成的内容,需要注意。
 
 <sup>[回目录](#table-of-contents)</sup>
 
@@ -203,7 +203,7 @@ li:nth-child(-n+3) {
 }
 ```
 
-或许你已经掌握了[如何使用 `:not()`](#use-not-to-applyunapply-borders-on-navigation)，试下这个：
+或许你已经掌握了[如何使用 `:not()`](#use-not-to-applyunapply-borders-on-navigation)这个技巧，试下这个：
 
 ```css
 /* 选择第 1 至第 3 个元素并显示出来 */
@@ -212,7 +212,7 @@ li:not(:nth-child(-n+3)) {
 }
 ```
 
-就是这么简单。
+如此简单！
 
 #### [演示](http://codepen.io/AllThingsSmitty/pen/WxjKZp)
 
@@ -230,7 +230,7 @@ li:not(:nth-child(-n+3)) {
 }
 ```
 
-SVG 在所有分辨率下都可以良好缩放，IE9+ 及其它所有浏览器都支持，丢掉你的 .png, .jpg, 或 .gif-jif-whatev 文件吧。
+SVG 在所有分辨率下都可以良好缩放，并且支持所有 IE9 以后的浏览器，丢掉你的 .png, .jpg, 或 .gif-jif-whatev 文件吧。
 
 **注意：** 针对仅有图标的按钮，如果 SVG 没有加载成功的话，以下样式对无障碍有所帮助：
 
@@ -246,7 +246,7 @@ SVG 在所有分辨率下都可以良好缩放，IE9+ 及其它所有浏览器�
 <div id="use-the-lobotomized-owl-selector"></div>
 ### 使用 “形似猫头鹰” 的选择器
 
-这个名字可能比较陌生，不过全局选择器 (`*`) 和 相邻兄弟选择器 (`+`) 一起使用，效果非凡：
+这个名字可能比较陌生，不过通用选择器 (`*`) 和 相邻兄弟选择器 (`+`) 一起使用，效果非凡：
 
 ```css
 * + * {
@@ -254,7 +254,7 @@ SVG 在所有分辨率下都可以良好缩放，IE9+ 及其它所有浏览器�
 }
 ```
 
-在此示例中，遵循其他元素的文档流中的所有元素将都接收上边距 `margin-top: 1.5em` 的样式。
+在此示例中，文档流中的所有的相邻兄弟元素将都将设置 `margin-top: 1.5em` 的样式。
 
 更多 “形似猫头鹰”  的选择器，可参考 *A List Apart* 上面 [Heydon Pickering 的文章](http://alistapart.com/article/axiomatic-css-and-lobotomized-owls)
 
@@ -281,7 +281,7 @@ SVG 在所有分辨率下都可以良好缩放，IE9+ 及其它所有浏览器�
 }
 ```
 
-移入滑块元素时增大它的 `max-height` 的值，便可以显示溢出部分。
+鼠标移入滑块元素时增大它的 `max-height` 值，便可以显示溢出部分。
 
 <sup>[回目录](#table-of-contents)</sup>
 
@@ -320,7 +320,7 @@ SVG 在所有分辨率下都可以良好缩放，IE9+ 及其它所有浏览器�
 }
 ```
 
-列之间的间隙相等，并且首尾没有多余的间隙。
+列之间的间隙总是均匀相等。
 
 <sup>[回目录](#table-of-contents)</sup>
 
@@ -328,7 +328,7 @@ SVG 在所有分辨率下都可以良好缩放，IE9+ 及其它所有浏览器�
 <div id="use-attribute-selectors-with-empty-links"></div>
 ### 利用属性选择器来选择空链接
 
-当 `<a>` 元素没有文本内容，但是有 `href` 属性的时候，可以显示它的 `href` 链接：
+当 `<a>` 元素没有文本内容，但有 `href` 属性的时候，显示它的 `href` 属性：
 
 ```css
 a[href^="http"]:empty::before {
@@ -344,9 +344,9 @@ a[href^="http"]:empty::before {
 
 
 <div id="style-default-links"></div>
-### 给 “预设” 链接定义样式
+### 给 “默认” 链接定义样式
 
-给 “预设” 链接定义样式：
+给 “默认” 链接定义样式：
 
 ```css
 a[href]:not([class]) {
@@ -361,7 +361,7 @@ a[href]:not([class]) {
 
 
 <div id="consistent-vertical-rhythm"></div>
-### 一致的垂直节奏
+### 一致垂直节奏
 
 通用选择器 (`*`) 跟元素一起使用，可以保持一致的垂直节奏：
 
@@ -377,9 +377,9 @@ a[href]:not([class]) {
 
 
 <div id="intrinsic-ratio-boxes"></div>
-### 内在比例盒
+### 固定比例盒子
 
-要创建具有内在比一个盒子，所有你需要做的就是应用顶部或底部填充，从一个div：
+要创建具有固定比例的一个盒子，所有你需要做的就是给 div 设置一个 padding：
 
 ```css
 .container {
@@ -398,7 +398,7 @@ a[href]:not([class]) {
 }
 ```
 
-使用20％的填充使得框等于其宽度的20％的高度。不管视口的宽度，子元素的div将保持其宽高比（100％/ 20％= 5:1）。
+使用20％的padding-bottom使得框等于其宽度的20％的高度。与视口宽度无关，子元素的div将保持其宽高比（100％/ 20％= 5:1）。
 
 #### [演示](http://codepen.io/AllThingsSmitty/pen/jALZvE)
 
@@ -423,7 +423,7 @@ img {
 }
 ```
 
-以添加伪元素的法则来显示使用者信息和虚线图像URL的引用：
+以添加伪元素的法则来显示用户信息和URL的引用：
 
 ```css
 img:before {  
@@ -447,7 +447,7 @@ img:after {
 <div id="use-rem-for-global-sizing-use-em-for-local-sizing"></div>
 ### 用 `rem` 来调整全局大小；用 `em` 来调整局部大小
 
-在根设置基本字体大小后 (`html { font-size: 100%; }`), 请设置为文本元素的字体大小 `em`:
+在根元素设置基本字体大小后 (`html { font-size: 100%; }`), 使用 `em` 设置文本元素的字体大小:
 
 ```css
 h2 { 
@@ -459,7 +459,7 @@ p {
 }
 ```
 
-然后设置字体大小的模块 `rem`:
+然后设置模块的字体大小为 `rem`:
 
 ```css
 article {
@@ -471,7 +471,7 @@ aside .module {
 }
 ```
 
-现在，每个模块变得条块分割，更容易、灵活的样式，以便于维护。
+现在，每个模块变得独立，更容易、灵活的样式便于维护。
 
 <sup>[回目录](#table-of-contents)</sup>
 
@@ -479,7 +479,7 @@ aside .module {
 <div id="hide-autoplay-videos-that-arent-muted"></div>
 ### 隐藏没有静音、自动播放的影片
 
-这是一个自定义的使用者样式表一个伟大的把戏。避免在加载页面时自动播放。如果没有静音，则不显示视频：
+这是一个自定义用户样式表的不错的技巧。避免在加载页面时自动播放。如果没有静音，则不显示视频：
 
 ```css
 video[autoplay]:not([muted]) {
@@ -487,7 +487,7 @@ video[autoplay]:not([muted]) {
 }
 ```
 
-再次，我們趁著使用的 [`:not()`](#use-not-to-applyunapply-borders-on-navigation) 偽類。
+再次，我们利用了 [`:not()`](#use-not-to-applyunapply-borders-on-navigation) 的优点。
 
 <sup>[回目录](#table-of-contents)</sup>
 
@@ -495,7 +495,7 @@ video[autoplay]:not([muted]) {
 <div id="use-root-for-flexible-type"></div>
 ### 使用选择器`:root`来控制字体弹性
 
-在响应式布局的类型字体大小应能与每个视区进行调整。你可以计算的基础上视区高度的字体大小和宽度，使用`:root`:
+在响应式布局中，字体大小应需要根据不同的视口进行调整。你可以计算字体大小根据视口高度的字体大小和宽度，这时需要用到`:root`:
 
 ```css
 :root {
@@ -503,7 +503,7 @@ video[autoplay]:not([muted]) {
 }
 ```
 
-现在，您可以利用基于计算的值`root em`单位：`root`:
+现在，您可以使用 `root em` 
 
 ```css
 body {
@@ -517,9 +517,9 @@ body {
 
 
 <div id="set-font-size-on-form-elements-for-a-better-mobile-experience"></div>
-### 将`font-size`关于表单元素为更好的移动体验
+### 为更好的移动体验，为表单元素设置字体大小
 
-为了避免在HTML表单元素缩放移动浏览器（Safari浏览器的iOS，_et AL_。）当一个`<选择>`下拉被窃听，加上`字体size`的选择规则：
+当触发`<select>`的下拉列表时，为了避免表单元素在移动浏览器（IOS Safari 等等）上的缩放，加上`font-size`：
 
 ```css
 input[type="text"],
