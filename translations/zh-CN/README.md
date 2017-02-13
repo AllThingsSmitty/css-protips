@@ -258,7 +258,7 @@ SVG 在所有分辨率下都可以良好缩放，并且支持所有 IE9 以后�
 
 更多 “形似猫头鹰”  的选择器，可参考 *A List Apart* 上面 [Heydon Pickering 的文章](http://alistapart.com/article/axiomatic-css-and-lobotomized-owls)
 
-#### [演示](http://codepen.io/AllThingsSmitty/pen/XKgOkR)
+#### [演示](http://codepen.io/AllThingsSmitty/pen/grRvWq)
 
 <sup>[回目录](#table-of-contents)</sup>
 

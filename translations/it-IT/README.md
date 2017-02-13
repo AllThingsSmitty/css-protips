@@ -257,7 +257,7 @@ In questo esempio, tutti gli elementi nel flusso del documento che seguono altri
 
 Per saperne di più sul selettore detto "lobotomized owl", leggi [l'articolo di Heydon Pickering](http://alistapart.com/article/axiomatic-css-and-lobotomized-owls) su *A List Apart*.
 
-#### [Dimostrazione](http://codepen.io/AllThingsSmitty/pen/XKgOkR)
+#### [Dimostrazione](http://codepen.io/AllThingsSmitty/pen/grRvWq)
 
 <sup>[torna al sommario](#sommario)</sup>
 

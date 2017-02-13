@@ -246,7 +246,7 @@ Nesse exemplo, todos os elementos acompanhados de outros elementos recebem `marg
 
 Para mais exemplos utilizando o seletor "lobotomized owl", leia [o artigo escrito por Heydon Pickering](http://alistapart.com/article/axiomatic-css-and-lobotomized-owls) no site *A List Apart*.
 
-#### [Passeata](http://codepen.io/AllThingsSmitty/pen/XKgOkR)
+#### [Passeata](http://codepen.io/AllThingsSmitty/pen/grRvWq)
 
 <sup>[voltar ao índice](#table-of-contents)</sup>
 

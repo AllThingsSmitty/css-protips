@@ -257,7 +257,7 @@ En este ejemplo, todos los elementos del flujo del documento que siguen otros el
 
 Para más información sobre el selector "buho lobotomized", lee [post de Heydon Pickering](http://alistapart.com/article/axiomatic-css-and-lobotomized-owls) en *A List Apart*.
 
-#### [Demo](http://codepen.io/AllThingsSmitty/pen/XKgOkR)
+#### [Demo](http://codepen.io/AllThingsSmitty/pen/grRvWq)
 
 <sup>[volver al índice de contenidos](#table-of-contents)</sup>
 
