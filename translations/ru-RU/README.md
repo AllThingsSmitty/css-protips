@@ -26,7 +26,7 @@
 1. [Добавьте `line-height` в `body`](#add-line-height-to-body)
 1. [Выровнять все по вертикали](#vertically-center-anything)
 1. [Списки, разделенные запятыми](#comma-separated-lists)
-1. [Выбирайте элементы с использованием отрицательных значений в `пth-child`](#select-items-using-negative-nth-child)
+1. [Выбирайте элементы с использованием отрицательных значений в `nth-child`](#select-items-using-negative-nth-child)
 1. [Используйте SVG для значков](#use-svg-for-icons)
 1. [Используйте селектор "Лоботомированная сова"](#use-the-lobotomized-owl-selector)
 1. [Используйте `max-height` для ползунков на чистом CSS](#use-max-height-for-pure-css-sliders)
@@ -187,7 +187,7 @@ ul > li:not(:last-child)::after {
 
 
 <div id="select-items-using-negative-nth-child"></div>
-### Выбирайте элементы с использованием отрицательных значений в `пth-child`
+### Выбирайте элементы с использованием отрицательных значений в `nth-child`
 
 Используйте отрицательные значения в `nth-child` в CSS для выбора элементов с 1 по n.
 
@@ -306,7 +306,7 @@ SVG хорошо масштабируется для всех разрешени
 <div id="get-rid-of-margin-hacks-with-flexbox"></div>
 ### Используйте Flexbox вместо margin
 
-При работе с пробелами между колонок вы можете избавиться от псевдоклассов `пth,` `first-` и `last-child` воспользовавшись свойством flexbox `space-between`:
+При работе с пробелами между колонок вы можете избавиться от псевдоклассов `nth,` `first-` и `last-child` воспользовавшись свойством flexbox `space-between`:
 
 ```css
 .list {
