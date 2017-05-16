@@ -9,19 +9,17 @@ Una colección de consejos para ayudar a llevar su pro habilidades CSS.
 > Para otros grandes listas echa un vistazo a [@sindresorhus](https://github.com/sindresorhus/)'s lista curada de [listas impresionantes](https://github.com/sindresorhus/awesome/).
 
 
-<div id="table-of-contents"></div>
 ## Tabla de contenido
 
-* [Consejos Profesionales](#protips)
+* [Consejos Profesionales](#consejos-profesionales)
 * [Soporte](#soporte)
 * [Pautas para contribuir](../../CONTRIBUTING.md)
 
 
-<div id="protips"></div>
 ## Consejos Profesionales
 
-1. [Utilizar de CSS restablecer](#use-a-css-reset)
-1. [Heredar `box-sizing`](#inherit-box-sizing)
+1. [Utilizar de CSS restablecer](#utilizar-de-css-restablecer)
+1. [Heredar `box-sizing`](#heredar--box-sixing-)
 1. [Use `:not()` para Aplicar / Cancelar la aplicación de las bordes para la Navegación](#use-not-to-applyunapply-borders-on-navigation)
 1. [Añadir `line-height` a `body`](#add-line-height-to-body)
 1. [Cualquier cosa verticalmente-Centro](#vertically-center-anything)
@@ -43,7 +41,6 @@ Una colección de consejos para ayudar a llevar su pro habilidades CSS.
 1. [Ajuste `font-size` en el Formulario Elementos para una mejor experiencia móvil](#ajuste-font-size-en-el-formulario-elementos-para-una-mejor-experiencia-móvil)
 
 
-<div id="use-a-css-reset"></div>
 ### Utilizar de CSS restablecer
 
 Restablece CSS ayudan a hacer cumplir la coherencia de estilo en diferentes navegadores con una pizarra limpia para los elementos de diseño. Puede utilizar la biblioteca CSS reset como [Normalize](http://necolas.github.io/normalize.css/), y otros, o puede utilizar un enfoque de reposición más simplificada:
@@ -62,10 +59,9 @@ Ahora elementos serán despojados de márgenes y el relleno, y `box-sizing` le p
 
 **Nota:** Si usted sigue la punta [Heredar `box-sizing`](#inherit-box-sizing) por debajo de usted puede optar por no incluir la propiedad `box-sizing` en su CSS reset.
 
-<sup>[volver al índice de contenidos](#table-of-contents)</sup>
+<sup>[volver al índice de contenidos](#tabla-de-contenido)</sup>
 
 
-<div id="inherit-box-sizing"></div>
 ### Heredar `box-sizing`
 
 Herdar `box-sizing` de `html`:
@@ -82,10 +78,9 @@ html {
 
 Esto hace que sea más fácil cambiar `box-sizing` en plugins u otros componentes que aprovechan otros comportamientos.
 
-<sup>[volver al índice de contenidos](#table-of-contents)</sup>
+<sup>[volver al índice de contenidos](#tabla-de-contenido)</sup>
 
 
-<div id="use-not-to-applyunapply-borders-on-navigation"></div>
 ### Use `:not()` para Aplicar / Cancelar los bordes de la navegación
 
 En lugar de poner en el borde...
@@ -118,10 +113,9 @@ Claro, se puede usar `li.nav + li` o incluso `li.nav: li` primer hijo ~, pero co
 
 #### [Demo](http://codepen.io/AllThingsSmitty/pen/LkymvO)
 
-<sup>[volver al índice de contenidos](#table-of-contents)</sup>
+<sup>[volver al índice de contenidos](#tabla-de-contenido)</sup>
 
 
-<div id="add-line-height-to-body"></div>
 ### Añadir `line-height` a el `body`  
 
 No es necesario añadir `line-height` a cada` <p> `,` <h *> `, _et al_. por separado. En su lugar, agregalo a el `body`:
@@ -136,10 +130,9 @@ De esta manera los elementos textuales pueden heredar de `body` fácilmente.
 
 #### [Demo](http://codepen.io/AllThingsSmitty/pen/VjbdYd)
 
-<sup>[volver al índice de contenidos](#table-of-contents)</sup>
+<sup>[volver al índice de contenidos](#tabla-de-contenido)</sup>
 
 
-<div id="vertically-center-anything"></div>
 ### Centrar cualquier verticalmente
 
 No, no es magia negra, realmente puedes centrar verticalmente elementos:
@@ -165,10 +158,9 @@ body {
 
 #### [Demo](http://codepen.io/AllThingsSmitty/pen/GqmGqZ)
 
-<sup>[volver al índice de contenidos](#table-of-contents)</sup>
+<sup>[volver al índice de contenidos](#tabla-de-contenido)</sup>
 
 
-<div id="comma-separated-links"></div>
 ### Listas separadas por comas
 
 Hacer que los elementos de la lista se vean de forma real, separados por comas:
@@ -183,10 +175,9 @@ Utilice la pseudo-clase `:not()` para agregar una coma al último elemento.
 
 **Nota:** Esta consejo puede no ser ideal para la accesibilidad, específicamente para lectores de pantalla. Y copiar / pegar desde el navegador no funciona con el contenido generado por CSS. Proceda con precaución.
 
-<sup>[volver al índice de contenidos](#table-of-contents)</sup>
+<sup>[volver al índice de contenidos](#tabla-de-contenido)</sup>
 
 
-<div id="select-items-using-negative-nth-child"></div>
 ### Seleccionar elementos Usando negativo `nth-child`
 
 Utilice negativo `nth-child` en CSS para seleccionar los numerales 1 a n.
@@ -215,10 +206,9 @@ Así que era bastante fácil.
 
 #### [Demo](http://codepen.io/AllThingsSmitty/pen/WxjKZp)
 
-<sup>[volver al índice de contenidos](#table-of-contents)</sup>
+<sup>[volver al índice de contenidos](#tabla-de-contenido)</sup>
 
 
-<div id="use-svg-for-icons"></div>
 ### Utilizar SVG para iconos
 
 No hay ninguna razón para no usar SVG para los iconos:
@@ -239,10 +229,9 @@ SVG funciona bien para todos los tipos de resolución y es compatible con todos 
 }}
 ```
 
-<sup>[volver al índice de contenidos](#table-of-contents)</sup>
+<sup>[volver al índice de contenidos](#tabla-de-contenido)</sup>
 
 
-<div id="use-the-lobotomized-owl-selector"></div>
 ### Utilice la herramienta de selección "lobotomizó búho"
 
 Puede que tenga un nombre extraño, pero utilizando el selector unversal (`*`) con el selector de hermanos adyacentes (`+`) puede proporcionar una potente capacidad de CSS:
@@ -259,10 +248,9 @@ Para más información sobre el selector "buho lobotomized", lee [post de Heydon
 
 #### [Demo](http://codepen.io/AllThingsSmitty/pen/grRvWq)
 
-<sup>[volver al índice de contenidos](#table-of-contents)</sup>
+<sup>[volver al índice de contenidos](#tabla-de-contenido)</sup>
 
 
-<div id="use-max-height-for-pure-css-sliders"></div>
 ### Use `max-height` para un Sliders de puro CSS
 
 Implementar un slider solo de CSS utilizando solo `max-height` con el overflow oculto.
@@ -282,10 +270,9 @@ Implementar un slider solo de CSS utilizando solo `max-height` con el overflow o
 
 El elemento se expande hasta el valor de `max-height` en hover y el slider muestra el contenido del overflow.
 
-<sup>[volver al índice de contenidos](#table-of-contents)</sup>
+<sup>[volver al índice de contenidos](#tabla-de-contenido)</sup>
 
 
-<div id="equal-width-table-cells"></div>
 ### Celdas de la tabla con igual ancho
 
 Las tablas pueden ser un dolor de trabajar con lo que se trate de usar `table-layout: fixed` para mantener las celdas con el mismo ancho:
@@ -300,10 +287,9 @@ Diseño de tablas sin dolor.
 
 #### [Demo](http://codepen.io/AllThingsSmitty/pen/jALALm)
 
-<sup>[volver al índice de contenidos](#table-of-contents)</sup>
+<sup>[volver al índice de contenidos](#tabla-de-contenido)</sup>
 
 
-<div id="get-rid-of-margin-hacks-with-flexbox"></div>
 ### Deshacerse de los hacks de margen con Flexbox
 
 Cuando se trabaja con las canaletas de columna que puede deshacerse de `nth-`, `first-` y `last-child` mediante el uso de la propiedad `space-between` de Flexbox:
@@ -321,10 +307,9 @@ Cuando se trabaja con las canaletas de columna que puede deshacerse de `nth-`, `
 
 Ahora canaletas de columna siempre aparecen uniformemente espaciadas.
 
-<sup>[volver al índice de contenidos](#table-of-contents)</sup>
+<sup>[volver al índice de contenidos](#tabla-de-contenido)</sup>
 
 
-<div id="use-attribute-selectors-with-empty-links"></div>
 ### Utilizar selectores de atributo con enlaces vacíos
 
 Mostrar vínculos cuando el elemento `<a>` no tiene un valor de texto, pero el atributo `href` tiene un enlace:
@@ -339,10 +324,9 @@ Eso es bastante conveniente.
 
 #### [Demo](http://codepen.io/AllThingsSmitty/pen/zBzXRx)
 
-<sup>[volver al índice de contenidos](#table-of-contents)</sup>
+<sup>[volver al índice de contenidos](#tabla-de-contenido)</sup>
 
 
-<div id="style-default-links"></div>
 ### Estilos "por defcto" para los enlaces.
 
 Añadir un estilo a los enlaces "por defecto":
@@ -356,10 +340,9 @@ a[href]:not([class]) {
 
 Ahora los enlaces que se insertan a través de un CMS, que por lo general no tienen un atributo `class`, tendrán una distinción sin afectar de forma genérica la cascada.
 
-<sup>[volver al índice de contenidos](#table-of-contents)</sup>
+<sup>[volver al índice de contenidos](#tabla-de-contenido)</sup>
 
 
-<div id="consistent-vertical-rhythm"></div>
 ### Consistente ritmo vertical
 
 Utilice un selector universales (`*`) dentro de un elemento para crear un ritmo vertical consistente:
@@ -372,10 +355,9 @@ Utilice un selector universales (`*`) dentro de un elemento para crear un ritmo 
 
 Ritmo vertical consistente proporciona una estética visual que hace que el contenido mucho más legible.
 
-<sup>[volver al índice de contenidos](#table-of-contents)</sup>
+<sup>[volver al índice de contenidos](#tabla-de-contenido)</sup>
 
 
-<div id="intrinsic-ratio-boxes"></div>
 ### Cajas Relación intrínsecas
 
 Para crear un cuadro con una relación intrínseca, todo lo que tiene que hacer es aplicar el acolchado superior o inferior a un div:
@@ -401,10 +383,9 @@ El uso de 20% para el relleno hace que la altura de la caja igual a 20% de su an
 
 #### [Demo](http://codepen.io/AllThingsSmitty/pen/jALZvE)
 
-<sup>[volver al índice de contenidos](#table-of-contents)</sup>
+<sup>[volver al índice de contenidos](#tabla-de-contenido)</sup>
 
 
-<div id="style-broken-images"></div>
 ### Imágenes rotas Estilo
 
 Hacer imágenes rotas más estéticamente agradable con un poco de CSS:
@@ -440,10 +421,9 @@ img:after {
 
 Aprender más sobre el estilo de este patrón en [Iré Aderinokun](https://github.com/ireade/)'s [post original](http://bitsofco.de/styling-broken-images/).
 
-<sup>[volver al índice de contenidos](#table-of-contents)</sup>
+<sup>[volver al índice de contenidos](#tabla-de-contenido)</sup>
 
 
-<div id="use-rem-for-global-sizing-use-em-for-local-sizing"></div>
 ### Use `rem` para Global Dimensionamiento; Use `em` para el dimensionamiento local
 
 Después de ajustar el tamaño de la fuente base en la raíz (`html { font-size: 100%; }`), ajustar el tamaño de fuente para los elementos textuales de `em`:
@@ -472,10 +452,9 @@ aside .module {
 
 Ahora cada módulo se divide en compartimientos y más fácil de peinar, más fácil de mantener, y flexible.
 
-<sup>[volver al índice de contenidos](#table-of-contents)</sup>
+<sup>[volver al índice de contenidos](#tabla-de-contenido)</sup>
 
 
-<div id="hide-autoplay-videos-that-arent-muted"></div>
 ### Esconder Reproducción automática los vídeos que no estén anulados
 
 Este es un gran truco para una hoja de estilo de usuario personalizada. Evitar la sobrecarga de un usuario con el sonido de un vídeo que se reproduce automáticamente cuando se carga la página. Si el sonido no está silenciado, no muestran el video:
@@ -488,10 +467,9 @@ video[autoplay]:not([muted]) {
 
 Una vez más, nos estamos tomando ventaja de usar el [`:not()`](#use-not-to-applyunapply-borders-on-navigation) pseudo-clase.
 
-<sup>[volver al índice de contenidos](#table-of-contents)</sup>
+<sup>[volver al índice de contenidos](#tabla-de-contenido)</sup>
 
 
-<div id="use-root-for-flexible-type"></div>
 ### Utilizar `:root` para el tipo flexible
 
 El tamaño de tipo de letra en un diseño que responde debe ser capaz de ajustar con cada ventana. Se puede calcular el tamaño de la fuente basada en la altura y la anchura de la ventana gráfica usando `:root`:
@@ -510,10 +488,9 @@ body {
 }
 ```
 
-<sup>[volver al índice de contenidos](#table-of-contents)</sup>
+<sup>[volver al índice de contenidos](#tabla-de-contenido)</sup>
 
 
-<div id="set-font-size-on-form-elements-for-a-better-mobile-experience"></div>
 ### Ajuste `font-size` en el Formulario Elementos para una mejor experiencia móvil
 
 Para evitar los navegadores móviles (iOS Safari, _et al_.) De hacer zoom sobre los elementos de formulario HTML cuando un `<select>` desplegable se toca, agrega `font-size` a la regla de selección:
@@ -529,7 +506,7 @@ textarea {
 
 :dancer:
 
-<sup>[volver al índice de contenidos](#table-of-contents)</sup>
+<sup>[volver al índice de contenidos](#tabla-de-contenido)</sup>
 
 
 ## Soporte
