@@ -22,30 +22,28 @@ Une collection de conseils pour aider à prendre vos compétences CSS pro.
 
 ##  Conseils Professionnels
 
-1. [Utilisez un Reset CSS](#use-a-css-reset)
-1. [Hériter `box-sizing`](#inherit-box-sizing)
-1. [Utiliser `:not()` postuler / unapply Borders Navigation](#use-not-to-applyunapply-borders-on-navigation)
-1. [Ajouter `line-height` à `body`](#add-line-height-to-body)
-1. [Verticalement-Center Tout](#vertically-center-anything)
-1. [Listes Comma-Separated Values](#comma-separated-lists)
-1. [Sélectionner éléments à l'aide négative `nth-child`](#select-items-using-negative-nth-child)
-1. [Utiliser SVG pour Icons](#use-svg-for-icons)
-1. [Utilisez le sélecteur "lobotomisé Owl"](#use-the-lobotomized-owl-selector)
-1. [Utilisez `max-height` pour Sliders CSS pur](#use-max-height-for-pure-css-sliders)
-1. [Cellules Equal Largeur de table](#equal-width-table-cells)
-1. [Se débarrasser de la marge Hacks Avec Flexbox](#get-rid-of-margin-hacks-with-flexbox)
-1. [Utilisation des attributs sélecteurs avec des liens vides](#use-attribute-selectors-with-empty-links)
-1. [Style "par défaut" Liens](#style-default-links)
-1. [Conformément Vertical Rhythm](#consistent-vertical-rhythm)
-1. [Boîtes Ratio Intrinsic](#intrinsic-ratio-boxes)
-1. [Style de Broken Images] (#style-broken-images)
-1. [Utilisez `rem` for Global Dimensionnement; Utilisez `em` pour Local Sizing](#use-rem-for-global-sizing-use-em-for-local-sizing)
-1. [Masquer les vidéos Autoplay qui ne sont pas Muted](#hide-autoplay-videos-that-arent-muted)
-1. [Utiliser `:root` de type flexible](#use-root-for-flexible-type)
-1. [Réglez `font-size` sur le formulaire éléments pour une expérience mobile mieux](#set-font-size-on-form-elements-for-a-better-mobile-experience)
+1. [Utilisez un Reset CSS](#utilisez-un-reset-css)
+1. [Hériter `box-sizing`](#hériter-box-sizing)
+1. [Utiliser `:not()` postuler / unapply Borders Navigation](#utiliser-not-postuler--unapply-frontières-sur-la-navigation)
+1. [Ajouter `line-height` à `body`](#ajouter-line-height-à-body)
+1. [Verticalement-Center Tout](#verticalement-center-tout)
+1. [Listes Comma-Separated Values](#listes-séparées-par-des-virgules)
+1. [Sélectionner éléments à l'aide négative `nth-child`](#sélectionnez-éléments-à-laide-négative-nth-child)
+1. [Utiliser SVG pour Icons](#utiliser-svg-pour-icons)
+1. [Utilisez le sélecteur "lobotomisé Owl"](#utilisez-le-sélecteur-lobotomisé-owl)
+1. [Utilisez `max-height` pour Sliders CSS pur](#utilisez-max-height-pour-sliders-css-pur)
+1. [Cellules Equal Largeur de table](#cellules-equal-largeur-de-table)
+1. [Se débarrasser de la marge Hacks Avec Flexbox](#se-débarrasser-de-la-marge-hacks-avec-flexbox)
+1. [Utilisation des attributs sélecteurs avec des liens vides](#utilisation-des-attributs-sélecteurs-avec-des-liens-vides)
+1. [Style "par défaut" Liens](#style-par-défaut-liens)
+1. [Conformément Vertical Rhythm](#conformément-vertical-rhythm)
+1. [Boîtes Ratio Intrinsic](#boîtes-ratio-intrinsic)
+1. [Style de Broken Images](#style-de-broken-images)
+1. [Utilisez `rem` for Global Dimensionnement; Utilisez `em` pour Local Sizing](#utilisez-rem-for-global-dimensionnement-utilisez-em-pour-local-sizing)
+1. [Masquer les vidéos Autoplay qui ne sont pas Muted](#masquer-les-vidéos-autoplay-qui-ne-sont-pas-muted)
+1. [Utiliser `:root` de type flexible](#utiliser-root-de-type-flexible)
+1. [Réglez `font-size` sur le formulaire éléments pour une expérience mobile mieux](#réglez-font-size-sur-le-formulaire-éléments-pour-une-expérience-mobile-mieux)
 
-
-<div id="use-a-css-reset"></div>
 
 ### Utilisez un Reset CSS
 
@@ -65,10 +63,8 @@ Maintenant, les éléments seront dépouillés des marges et le rembourrage, et 
 
 **Remarque:** Si vous suivez la pointe [Hériter `box-sizing`](#inherit-box-sizing) ci-dessous vous pouvez choisir de ne pas inclure la propriété box-sizing dans votre reset CSS.
 
-<sup>[retour à la table des matières](#table-of-contents)</sup>
+<sup>[retour à la table des matières](#table-des-matières)</sup>
 
-
-<div id="inherit-box-sizing"></div>
 
 ### Hériter `box-sizing`
 
@@ -87,10 +83,8 @@ html {
 
 Cela rend plus facile de changer `box-sizing` dans les plugins ou autres composants qui exploitent d'autres comportements.
 
-<sup>[retour à la table des matières](#table-of-contents)</sup>
+<sup>[retour à la table des matières](#table-des-matières)</sup>
 
-
-<div id="use-not-to-applyunapply-borders-on-navigation"></div>
 
 ### Utiliser `:not()` postuler / unapply frontières sur la navigation
 
@@ -124,10 +118,8 @@ Bien sûr, vous pouvez utiliser `.nav li + li` ou même `.nav li:first-child ~ l
 
 #### [Demo](http://codepen.io/AllThingsSmitty/pen/LkymvO)
 
-<sup>[retour à la table des matières](#table-of-contents)</sup>
+<sup>[retour à la table des matières](#table-des-matières)</sup>
 
-
-<div id="add-line-height-to-body"></div>
 
 ### Ajouter `line-height` à `body`
 
@@ -143,10 +135,8 @@ De cette façon, les éléments textuels peuvent hériter de `body` facilement.
 
 #### [Demo](http://codepen.io/AllThingsSmitty/pen/VjbdYd)
 
-<sup>[retour à la table des matières](#table-of-contents)</sup>
+<sup>[retour à la table des matières](#table-des-matières)</sup>
 
-
-<div id="vertically-center-anything"></div>
 
 ### Verticalement-Center Tout
 
@@ -173,10 +163,8 @@ Vous voulez centrer autre chose? Verticalement, horizontalement...quoi que ce so
 
 #### [Demo](http://codepen.io/AllThingsSmitty/pen/GqmGqZ)
 
-<sup>[retour à la table des matières](#table-of-contents)</sup>
+<sup>[retour à la table des matières](#table-des-matières)</sup>
 
-
-<div id="comma-separated-lists"></div>
 
 ### Listes séparées par des virgules
 
@@ -192,10 +180,8 @@ Utilisez le `:not()` pseudo-classe donc pas une virgule est ajoutée au dernier 
 
 **Remarque:** Cette astuce peut ne pas être idéal pour l'accessibilité, l'écran spécifiquement lecteurs. Et copier / coller à partir du navigateur ne fonctionne pas avec le contenu généré par CSS. Procéder avec prudence.
 
-<sup>[retour à la table des matières](#table-of-contents)</sup>
+<sup>[retour à la table des matières](#table-des-matières)</sup>
 
-
-<div id="select-items-using-negative-nth-child"></div>
 
 ### Sélectionnez éléments à l'aide négative `nth-child`
 
@@ -225,10 +211,8 @@ Eh bien, ce fut assez facile.
 
 #### [Demo](http://codepen.io/AllThingsSmitty/pen/WxjKZp)
 
-<sup>[retour à la table des matières](#table-of-contents)</sup>
+<sup>[retour à la table des matières](#table-des-matières)</sup>
 
-
-<div id="use-svg-for-icons"></div>
 
 ### Utiliser SVG pour Icons
 
@@ -250,10 +234,8 @@ SVG échelles bien pour tous les types de résolution et est pris en charge dans
 }
 ```
 
-<sup>[retour à la table des matières](#table-of-contents)</sup>
+<sup>[retour à la table des matières](#table-des-matières)</sup>
 
-
-<div id="use-the-lobotomized-owl-selector"></div>
 
 ### Utilisez le sélecteur "lobotomisé Owl"
 
@@ -271,10 +253,8 @@ Pour en savoir plus sur la "chouette lobotomisé" sélecteur, lire [le poste de 
 
 #### [Demo](http://codepen.io/AllThingsSmitty/pen/XKgOkR)
 
-<sup>[retour à la table des matières](#table-of-contents)</sup>
+<sup>[retour à la table des matières](#table-des-matières)</sup>
 
-
-<div id="use-max-height-for-pure-css-sliders"></div>
 
 ### Utilisez `max-height` pour Sliders CSS pur
 
@@ -295,10 +275,9 @@ Mettre en œuvre des curseurs CSS uniquement en utilisant `max-height` avec trop
 
 L'élément se dilate à la valeur `max-height` sur le vol stationnaire et le curseur se affiche à la suite du débordement.
 
-<sup>[retour à la table des matières](#table-of-contents)</sup>
+<sup>[retour à la table des matières](#table-des-matières)</sup>
 
 
-<div id="equal-width-table-cells"></div>
 ### Cellules Equal Largeur de table
 
 Les tableaux peuvent être une douleur à travailler avec donc essayer d'utiliser `table-layout: fixed` pour maintenir les cellules à largeur égale:
@@ -313,10 +292,8 @@ dispositions de table sans douleur.
 
 #### [Demo](http://codepen.io/AllThingsSmitty/pen/jALALm)
 
-<sup>[retour à la table des matières](#table-of-contents)</sup>
+<sup>[retour à la table des matières](#table-des-matières)</sup>
 
-
-<div id="get-rid-of-margin-hacks-with-flexbox"></div>
 
 ### Se débarrasser de la marge Hacks Avec Flexbox
 
@@ -336,10 +313,8 @@ Lorsque vous travaillez avec des gouttières de colonne, vous pouvez vous débar
 
 Maintenant gouttières colonnes apparaissent toujours uniformément espacés.
 
-<sup>[retour à la table des matières](#table-of-contents)</sup>
+<sup>[retour à la table des matières](#table-des-matières)</sup>
 
-
-<div id="use-attribute-selectors-with-empty-links"></div>
 
 ### Utilisation des attributs sélecteurs avec des liens vides
 
@@ -355,10 +330,8 @@ C'est assez pratique.
 
 #### [Demo](http://codepen.io/AllThingsSmitty/pen/zBzXRx)
 
-<sup>[retour à la table des matières](#table-of-contents)</sup>
+<sup>[retour à la table des matières](#table-des-matières)</sup>
 
-
-<div id="style-default-links"></div>
 
 ### Style "par défaut" Liens
 
@@ -373,10 +346,8 @@ a[href]:not([class]) {
 
 Maintenant, les liens qui sont insérés via un CMS, qui ne disposent généralement pas un attribut `class`, auront une distinction sans affecter de manière générique la cascade.
 
-<sup>[retour à la table des matières](#table-of-contents)</sup>
+<sup>[retour à la table des matières](#table-des-matières)</sup>
 
-
-<div id="consistent-vertical-rhythm"></div>
 
 ### Conformément Vertical Rhythm
 
@@ -390,10 +361,8 @@ Utilisez un sélecteur universel (de `*`) dans un élément pour créer un rythm
 
 Rythme vertical conformément offre une esthétique visuelle qui rend le contenu beaucoup plus lisible.
 
-<sup>[retour à la table des matières](#table-of-contents)</sup>
+<sup>[retour à la table des matières](#table-des-matières)</sup>
 
-
-<div id="intrinsic-ratio-boxes"></div>
 
 ### Boîtes Ratio Intrinsic
 
@@ -420,10 +389,8 @@ En utilisant 20% pour le rembourrage rend la hauteur de la caisse égale à 20% 
 
 #### [Demo](http://codepen.io/AllThingsSmitty/pen/jALZvE)
 
-<sup>[retour à la table des matières](#table-of-contents)</sup>
+<sup>[retour à la table des matières](#table-des-matières)</sup>
 
-
-<div id="style-broken-images"></div>
 
 ### Style de Broken Images
 
@@ -460,10 +427,8 @@ img:after {
 
 En savoir plus sur le style de ce modèle dans [Ire Aderinokun](https://github.com/ireade/)' [message original](http://bitsofco.de/styling-broken-images/).
 
-<sup>[retour à la table des matières](#table-of-contents)</sup>
+<sup>[retour à la table des matières](#table-des-matières)</sup>
 
-
-<div id="use-rem-for-global-sizing-use-em-for-local-sizing"></div>
 
 ### Utilisez `rem` for Global Dimensionnement; Utilisez `em` pour Local Sizing
 
@@ -493,10 +458,8 @@ aside .module {
 
 Maintenant, chaque module devient compartimentée et plus faciles à coiffer, plus maintenable, et flexible.
 
-<sup>[retour à la table des matières](#table-of-contents)</sup>
+<sup>[retour à la table des matières](#table-des-matières)</sup>
 
-
-<div id="hide-autoplay-videos-that-arent-muted"></div>
 
 ### Masquer les vidéos Autoplay qui ne sont pas Muted
 
@@ -512,8 +475,6 @@ Encore une fois, nous prenons avantage d'utiliser le [`:not()`](#use-not-to-appl
 
 <sup>[retour à la table des matières](#table-of-contents)</sup>
 
-
-<div id="use-root-for-flexible-type"></div>
 
 ### Utiliser `:root` de type flexible
 
@@ -535,10 +496,8 @@ body {
 }
 ```
 
-<sup>[retour à la table des matières](#table-of-contents)</sup>
+<sup>[retour à la table des matières](#table-des-matières)</sup>
 
-
-<div id="set-font-size-on-form-elements-for-a-better-mobile-experience"></div>
 
 ### Réglez `font-size` sur le formulaire éléments pour une expérience mobile mieux
 
@@ -555,7 +514,7 @@ textarea {
 
 :dancer:
 
-<sup>[retour à la table des matières](#table-of-contents)</sup>
+<sup>[retour à la table des matières](#table-des-matières)</sup>
 
 
 ## Soutien
