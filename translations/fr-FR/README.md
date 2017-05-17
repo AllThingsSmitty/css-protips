@@ -10,6 +10,7 @@ Une collection de conseils pour aider à prendre vos compétences CSS pro.
 
 
 <div id="table-of-contents"></div>
+
 ## Table des matières
 
 * [Conseils Professionnels](#protips)
@@ -18,6 +19,7 @@ Une collection de conseils pour aider à prendre vos compétences CSS pro.
 
 
 <div id="protips"></div>
+
 ##  Conseils Professionnels
 
 1. [Utilisez un Reset CSS](#use-a-css-reset)
@@ -44,6 +46,7 @@ Une collection de conseils pour aider à prendre vos compétences CSS pro.
 
 
 <div id="use-a-css-reset"></div>
+
 ### Utilisez un Reset CSS
 
 Réinitialise CSS aider à faire respecter la cohérence de style entre les différents navigateurs avec une ardoise propre pour les éléments de style. Vous pouvez utiliser la bibliothèque de réinitialisation CSS comme [Normalize](http://necolas.github.io/normalize.css/), et al, ou vous pouvez utiliser une approche de réinitialisation plus simplifiée:
@@ -66,6 +69,7 @@ Maintenant, les éléments seront dépouillés des marges et le rembourrage, et 
 
 
 <div id="inherit-box-sizing"></div>
+
 ### Hériter `box-sizing`
 
 Soit `box-sizing` être héritée de `html`:
@@ -86,8 +90,8 @@ Cela rend plus facile de changer `box-sizing` dans les plugins ou autres composa
 <sup>[retour à la table des matières](#table-of-contents)</sup>
 
 
-
 <div id="use-not-to-applyunapply-borders-on-navigation"></div>
+
 ### Utiliser `:not()` postuler / unapply frontières sur la navigation
 
 Au lieu de mettre à la frontière...
@@ -124,6 +128,7 @@ Bien sûr, vous pouvez utiliser `.nav li + li` ou même `.nav li:first-child ~ l
 
 
 <div id="add-line-height-to-body"></div>
+
 ### Ajouter `line-height` à `body`
 
 Vous ne devez pas ajouter `line-height` à chaque `<p>`, `<h*>`, _et al_. séparément. Au lieu de cela, ajoutez-le à `body`:
@@ -142,6 +147,7 @@ De cette façon, les éléments textuels peuvent hériter de `body` facilement.
 
 
 <div id="vertically-center-anything"></div>
+
 ### Verticalement-Center Tout
 
 Non, ce n'est pas de la magie noire, vous ne pouvez vraiment centrer des éléments verticalement:
@@ -171,6 +177,7 @@ Vous voulez centrer autre chose? Verticalement, horizontalement...quoi que ce so
 
 
 <div id="comma-separated-lists"></div>
+
 ### Listes séparées par des virgules
 
 Faire la liste des articles ressemblent à une vraie liste, séparées par des virgules:
@@ -189,6 +196,7 @@ Utilisez le `:not()` pseudo-classe donc pas une virgule est ajoutée au dernier 
 
 
 <div id="select-items-using-negative-nth-child"></div>
+
 ### Sélectionnez éléments à l'aide négative `nth-child`
 
 Utilisez négative `nth-child` en CSS pour sélectionner des éléments de 1 à n.
@@ -221,6 +229,7 @@ Eh bien, ce fut assez facile.
 
 
 <div id="use-svg-for-icons"></div>
+
 ### Utiliser SVG pour Icons
 
 Il n'y a aucune raison de ne pas utiliser SVG pour les icônes:
@@ -245,6 +254,7 @@ SVG échelles bien pour tous les types de résolution et est pris en charge dans
 
 
 <div id="use-the-lobotomized-owl-selector"></div>
+
 ### Utilisez le sélecteur "lobotomisé Owl"
 
 Il peut avoir un nom étrange, mais en utilisant le sélecteur universel (`*`) avec le sélecteur de frère adjacent (`+`) peut fournir une capacité de CSS puissante:
@@ -265,6 +275,7 @@ Pour en savoir plus sur la "chouette lobotomisé" sélecteur, lire [le poste de 
 
 
 <div id="use-max-height-for-pure-css-sliders"></div>
+
 ### Utilisez `max-height` pour Sliders CSS pur
 
 Mettre en œuvre des curseurs CSS uniquement en utilisant `max-height` avec trop-plein caché:
@@ -306,6 +317,7 @@ dispositions de table sans douleur.
 
 
 <div id="get-rid-of-margin-hacks-with-flexbox"></div>
+
 ### Se débarrasser de la marge Hacks Avec Flexbox
 
 Lorsque vous travaillez avec des gouttières de colonne, vous pouvez vous débarrasser de `nth`, `first-` et `last-child` en utilisant la propriété `space-between` flexBox:
@@ -328,6 +340,7 @@ Maintenant gouttières colonnes apparaissent toujours uniformément espacés.
 
 
 <div id="use-attribute-selectors-with-empty-links"></div>
+
 ### Utilisation des attributs sélecteurs avec des liens vides
 
 Liens d'affichage lorsque le `<a>` élément n'a pas de valeur de texte, mais l'attribut `href` a un lien:
@@ -346,6 +359,7 @@ C'est assez pratique.
 
 
 <div id="style-default-links"></div>
+
 ### Style "par défaut" Liens
 
 Ajouter un style pour "défaut" liens:
@@ -363,6 +377,7 @@ Maintenant, les liens qui sont insérés via un CMS, qui ne disposent générale
 
 
 <div id="consistent-vertical-rhythm"></div>
+
 ### Conformément Vertical Rhythm
 
 Utilisez un sélecteur universel (de `*`) dans un élément pour créer un rythme vertical cohérente:
@@ -379,6 +394,7 @@ Rythme vertical conformément offre une esthétique visuelle qui rend le contenu
 
 
 <div id="intrinsic-ratio-boxes"></div>
+
 ### Boîtes Ratio Intrinsic
 
 Pour créer une boîte avec un rapport intrinsèque, tout ce que vous devez faire est d'appliquer en haut ou en bas de rembourrage à un div:
@@ -408,6 +424,7 @@ En utilisant 20% pour le rembourrage rend la hauteur de la caisse égale à 20% 
 
 
 <div id="style-broken-images"></div>
+
 ### Style de Broken Images
 
 Faire des images brouillées esthétiquement plus agréables avec un peu de CSS:
@@ -447,6 +464,7 @@ En savoir plus sur le style de ce modèle dans [Ire Aderinokun](https://github.c
 
 
 <div id="use-rem-for-global-sizing-use-em-for-local-sizing"></div>
+
 ### Utilisez `rem` for Global Dimensionnement; Utilisez `em` pour Local Sizing
 
 Après avoir défini la taille de la police de base à la racine (`html { font-size: 100%; }`), définir la taille de la police pour les éléments textuels à `em`:
@@ -479,6 +497,7 @@ Maintenant, chaque module devient compartimentée et plus faciles à coiffer, pl
 
 
 <div id="hide-autoplay-videos-that-arent-muted"></div>
+
 ### Masquer les vidéos Autoplay qui ne sont pas Muted
 
 Ceci est un grand tour pour une feuille de style utilisateur personnalisé. Évitez de surcharger un utilisateur avec le son d'une vidéo lorsque la page lectures automatiques est chargé. Si le son est pas coupé, ne pas montrer la vidéo:
@@ -495,6 +514,7 @@ Encore une fois, nous prenons avantage d'utiliser le [`:not()`](#use-not-to-appl
 
 
 <div id="use-root-for-flexible-type"></div>
+
 ### Utiliser `:root` de type flexible
 
 La taille type de police dans une disposition sensible devrait être en mesure d'ajuster à chaque fenêtre. Vous pouvez calculer la taille de la police basée sur la hauteur de la fenêtre et la largeur en utilisant `: root`:
@@ -519,6 +539,7 @@ body {
 
 
 <div id="set-font-size-on-form-elements-for-a-better-mobile-experience"></div>
+
 ### Réglez `font-size` sur le formulaire éléments pour une expérience mobile mieux
 
 Pour éviter les navigateurs mobiles (iOS Safari, _et al_.) De zoom sur des éléments de formulaire HTML quand un `<select>` déroulante est taraudé, ajoutez `font-size` à la règle de sélection:
