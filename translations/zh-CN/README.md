@@ -13,39 +13,35 @@
 
 ## 目录
 
-* [专业技巧](#protips)
-* [支持情况](#support)
+* [专业技巧](#专业技巧)
+* [支持情况](#支持情况)
 * [贡献准则](../../CONTRIBUTING.md)
 
 
-<div id="protips"></div>
-
 ## 专业技巧
 
-1. [使用CSS复位](#use-a-css-reset)
-1. [继承 `box-sizing`](#inherit-box-sizing)
-1. [使用 `:not()` 选择器来决定表单是否显示边框](#use-not-to-applyunapply-borders-on-navigation)
-1. [为 body 元素添加行高](#add-line-height-to-body)
-1. [垂直居中任何元素](#vertically-center-anything)
-1. [逗号分隔的列表](#comma-separated-lists)
-1. [使用负的 `nth-child` 来选择元素](#select-items-using-negative-nth-child)
-1. [使用 SVG 图标](#use-svg-for-icons)
-1. [使用 “形似猫头鹰” 的选择器](#use-the-lobotomized-owl-selector)
-1. [使用 `max-height` 来建立纯 CSS 的滑块](#use-max-height-for-pure-css-sliders)
-1. [创造格子等宽的表格](#equal-width-table-cells)
-1. [利用 Flexbox 去除多余的外边距](#get-rid-of-margin-hacks-with-flexbox)
-1. [利用属性选择器来选择空链接](#use-attribute-selectors-with-empty-links)
-1. [给 “默认” 链接定义样式](#style-default-links)
-1. [一致的垂直节奏](#consistent-vertical-rhythm)
-1. [内在比例盒](#intrinsic-ratio-boxes)
-1. [为破碎图象定义样式](#style-broken-images)
-1. [用 rem 来调整全局大小；用 em 来调整局部大小](#use-rem-for-global-sizing-use-em-for-local-sizing)
-1. [隐藏没有静音、自动播放的影片](#hide-autoplay-videos-that-arent-muted)
-1. [使用选择器 `:root` 来控制字体弹性](#use-root-for-flexible-type)
-1. [为更好的移动体验，为表单元素设置字体大小](#set-font-size-on-form-elements-for-a-better-mobile-experience)
+1. [使用CSS复位](#使用css复位)
+1. [继承 `box-sizing`](#继承-box-sizing)
+1. [使用 `:not()` 选择器来决定表单是否显示边框](#使用-not-选择器来决定表单是否显示边框)
+1. [为 body 元素添加行高](#为-body-元素添加行高)
+1. [垂直居中任何元素](#垂直居中任何元素)
+1. [逗号分隔的列表](#逗号分隔列表)
+1. [使用负的 `nth-child` 来选择元素](#使用负的-nth-child-来选择元素)
+1. [使用 SVG 图标](#使用-svg-图标)
+1. [使用 “形似猫头鹰” 的选择器](#使用-形似猫头鹰-的选择器)
+1. [使用 `max-height` 来建立纯 CSS 的滑块](#使用-max-height-来建立纯-css-的滑块)
+1. [创造格子等宽的表格](#创造格子等宽的表格)
+1. [利用 Flexbox 去除多余的外边距](#利用-flexbox-去除多余的外边距)
+1. [利用属性选择器来选择空链接](#利用属性选择器来选择空链接)
+1. [给 “默认” 链接定义样式](#给-默认-链接定义样式)
+1. [一致的垂直节奏](#一致垂直节奏)
+1. [内在比例盒](#固定比例盒子)
+1. [为破碎图象定义样式](#为破碎图象定义样式)
+1. [用 rem 来调整全局大小；用 em 来调整局部大小](#用-rem-来调整全局大小用-em-来调整局部大小)
+1. [隐藏没有静音、自动播放的影片](#隐藏没有静音自动播放的影片)
+1. [使用选择器 `:root` 来控制字体弹性](#使用选择器root来控制字体弹性)
+1. [为更好的移动体验，为表单元素设置字体大小](#为更好的移动体验为表单元素设置字体大小)
 
-
-<div id="use-a-css-reset"></div>
 
 ### 使用CSS复位
 
@@ -65,10 +61,8 @@ CSS复位可以在不同的浏览器上保持一致的样式风格。您可以�
 
 注意：如果你遵循接下来[继承 `box-sizing`](#inherit-box-sizing)讲解的这个技巧, 你不需要在以上代码中添加 `box-sizing` 属性。
 
-<sup>[回目录](#table-of-contents)</sup>
+<sup>[回目录](#目录)</sup>
 
-
-<div id="inherit-box-sizing"></div>
 
 ### 继承 `box-sizing`
 
@@ -86,10 +80,8 @@ html {
 
 如此在插件或其它组件里改变 `box-sizing` 变得简单。
 
-<sup>[回目录](#table-of-contents)</sup>
+<sup>[回目录](#目录)</sup>
 
-
-<div id="use-not-to-applyunapply-borders-on-navigation"></div>
 
 ### 使用 `:not()` 选择器来决定表单是否显示边框
 
@@ -123,10 +115,8 @@ html {
 
 #### [演示](http://codepen.io/AllThingsSmitty/pen/LkymvO)
 
-<sup>[回目录](#table-of-contents)</sup>
+<sup>[回目录](#目录)</sup>
 
-
-<div id="add-line-height-to-body"></div>
 
 ### 为 `body` 元素添加行高
 
@@ -142,10 +132,8 @@ body {
 
 #### [演示](http://codepen.io/AllThingsSmitty/pen/VjbdYd)
 
-<sup>[回目录](#table-of-contents)</sup>
+<sup>[回目录](#目录)</sup>
 
-
-<div id="vertically-center-anything"></div>
 
 ### 垂直居中任何元素
 
@@ -172,10 +160,8 @@ body {
 
 #### [演示](http://codepen.io/AllThingsSmitty/pen/GqmGqZ)
 
-<sup>[回目录](#table-of-contents)</sup>
+<sup>[回目录](#目录)</sup>
 
-
-<div id="comma-separated-lists"></div>
 
 ### 逗号分隔列表
 
@@ -191,10 +177,8 @@ ul > li:not(:last-child)::after {
 
 **注意：**这一技巧对于无障碍，特别是屏幕阅读器而言并不理想。而且复制粘贴并不会带走CSS生成的内容,需要注意。
 
-<sup>[回目录](#table-of-contents)</sup>
+<sup>[回目录](#目录)</sup>
 
-
-<div id="select-items-using-negative-nth-child"></div>
 
 ### 使用负的 `nth-child` 来选择元素
 
@@ -225,10 +209,8 @@ li:not(:nth-child(-n+3)) {
 
 #### [演示](http://codepen.io/AllThingsSmitty/pen/WxjKZp)
 
-<sup>[回目录](#table-of-contents)</sup>
+<sup>[回目录](#目录)</sup>
 
-
-<div id="use-svg-for-icons"></div>
 
 ### 使用 SVG 图标
 
@@ -250,10 +232,8 @@ SVG 在所有分辨率下都可以良好缩放，并且支持所有 IE9 以后�
 }
 ```
 
-<sup>[回目录](#table-of-contents)</sup>
+<sup>[回目录](#目录)</sup>
 
-
-<div id="use-the-lobotomized-owl-selector"></div>
 
 ### 使用 “形似猫头鹰” 的选择器
 
@@ -271,10 +251,8 @@ SVG 在所有分辨率下都可以良好缩放，并且支持所有 IE9 以后�
 
 #### [演示](http://codepen.io/AllThingsSmitty/pen/grRvWq)
 
-<sup>[回目录](#table-of-contents)</sup>
+<sup>[回目录](#目录)</sup>
 
-
-<div id="use-max-height-for-pure-css-sliders"></div>
 
 ### 使用 `max-height` 来建立纯 CSS 的滑块
 
@@ -295,10 +273,8 @@ SVG 在所有分辨率下都可以良好缩放，并且支持所有 IE9 以后�
 
 鼠标移入滑块元素时增大它的 `max-height` 值，便可以显示溢出部分。
 
-<sup>[回目录](#table-of-contents)</sup>
+<sup>[回目录](#目录)</sup>
 
-
-<div id="equal-width-table-cells"></div>
 
 ### 创造格子等宽的表格
 
@@ -314,10 +290,8 @@ SVG 在所有分辨率下都可以良好缩放，并且支持所有 IE9 以后�
 
 #### [演示](http://codepen.io/AllThingsSmitty/pen/jALALm)
 
-<sup>[回目录](#table-of-contents)</sup>
+<sup>[回目录](#目录)</sup>
 
-
-<div id="get-rid-of-margin-hacks-with-flexbox"></div>
 
 ### 利用 Flexbox 去除多余的外边距
 
@@ -336,10 +310,8 @@ SVG 在所有分辨率下都可以良好缩放，并且支持所有 IE9 以后�
 
 列之间的间隙总是均匀相等。
 
-<sup>[回目录](#table-of-contents)</sup>
+<sup>[回目录](#目录)</sup>
 
-
-<div id="use-attribute-selectors-with-empty-links"></div>
 
 ### 利用属性选择器来选择空链接
 
@@ -355,10 +327,8 @@ a[href^="http"]:empty::before {
 
 #### [演示](http://codepen.io/AllThingsSmitty/pen/zBzXRx)
 
-<sup>[回目录](#table-of-contents)</sup>
+<sup>[回目录](#目录)</sup>
 
-
-<div id="style-default-links"></div>
 
 ### 给 “默认” 链接定义样式
 
@@ -373,10 +343,8 @@ a[href]:not([class]) {
 
 通过 CMS 系统插入的链接，通常没有 `class` 属性，以上样式可以甄别它们，而且不会影响其它样式。
 
-<sup>[回目录](#table-of-contents)</sup>
+<sup>[回目录](#目录)</sup>
 
-
-<div id="consistent-vertical-rhythm"></div>
 
 ### 一致垂直节奏
 
@@ -390,10 +358,8 @@ a[href]:not([class]) {
 
 一致的垂直节奏可以提供视觉美感，增强内容的可读性。
 
-<sup>[回目录](#table-of-contents)</sup>
+<sup>[回目录](#目录)</sup>
 
-
-<div id="intrinsic-ratio-boxes"></div>
 
 ### 固定比例盒子
 
@@ -420,10 +386,8 @@ a[href]:not([class]) {
 
 #### [演示](http://codepen.io/AllThingsSmitty/pen/jALZvE)
 
-<sup>[回目录](#table-of-contents)</sup>
+<sup>[回目录](#目录)</sup>
 
-
-<div id="style-broken-images"></div>
 
 ### 为破碎图象定义样式
 
@@ -460,10 +424,8 @@ img:after {
 
 了解更多关于这类样式的技巧 [Ire Aderinokun](https://github.com/ireade/)的 [原帖](http://bitsofco.de/styling-broken-images/).
 
-<sup>[回目录](#table-of-contents)</sup>
+<sup>[回目录](#目录)</sup>
 
-
-<div id="use-rem-for-global-sizing-use-em-for-local-sizing"></div>
 
 ### 用 `rem` 来调整全局大小；用 `em` 来调整局部大小
 
@@ -493,10 +455,8 @@ aside .module {
 
 现在，每个模块变得独立，更容易、灵活的样式便于维护。
 
-<sup>[回目录](#table-of-contents)</sup>
+<sup>[回目录](#目录)</sup>
 
-
-<div id="hide-autoplay-videos-that-arent-muted"></div>
 
 ### 隐藏没有静音、自动播放的影片
 
@@ -510,10 +470,8 @@ video[autoplay]:not([muted]) {
 
 再次，我们利用了 [`:not()`](#use-not-to-applyunapply-borders-on-navigation) 的优点。
 
-<sup>[回目录](#table-of-contents)</sup>
+<sup>[回目录](#目录)</sup>
 
-
-<div id="use-root-for-flexible-type"></div>
 
 ### 使用选择器`:root`来控制字体弹性
 
@@ -535,10 +493,8 @@ body {
 
 #### [演示](http://codepen.io/AllThingsSmitty/pen/XKgOkR)
 
-<sup>[回目录](#table-of-contents)</sup>
+<sup>[回目录](#目录)</sup>
 
-
-<div id="set-font-size-on-form-elements-for-a-better-mobile-experience"></div>
 
 ### 为更好的移动体验，为表单元素设置字体大小
 
@@ -555,7 +511,7 @@ textarea {
 
 :dancer:
 
-<sup>[回目录](#table-of-contents)</sup>
+<sup>[回目录](#目录)</sup>
 
 
 ### 支持情况
