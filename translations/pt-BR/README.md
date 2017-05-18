@@ -59,7 +59,7 @@ Agora elementos serão despojados de margens e preenchimento, e `box-sizing` per
 
 **Nota:** Se você seguir a ponta [Herde o box-sizing](#herde-o-box-sizing) abaixo você pode optar por não incluir o `box-sizing` propriedade em sua redefinição de CSS.
 
-<sup>[voltar ao índice](#table-of-contents)</sup>
+<sup>[voltar ao índice](#índice)</sup>
 
 
 ### Herde o `box-sizing`
@@ -78,7 +78,7 @@ html {
 
 Assim fica fácil de alterar o `box-sizing` em plugins ou outros componentes que tenham um comportamento diferente.
 
-<sup>[voltar ao índice](#table-of-contents)</sup>
+<sup>[voltar ao índice](#índice)</sup>
 
 
 ### Use `:not()` para Aplicar/Remover Bordas
@@ -113,7 +113,7 @@ Claro, você poderia usar `.nav li + li` ou ainda `.nav li:first-child ~ li`, ma
 
 #### [Passeata](http://codepen.io/AllThingsSmitty/pen/LkymvO)
 
-<sup>[voltar ao índice](#table-of-contents)</sup>
+<sup>[voltar ao índice](#índice)</sup>
 
 
 ### Defina o `line-height` no `body`
@@ -130,7 +130,7 @@ Dessa maneira elementos de texto vão herdar o `line-height` do `body`.
 
 #### [Passeata](http://codepen.io/AllThingsSmitty/pen/VjbdYd)
 
-<sup>[voltar ao índice](#table-of-contents)</sup>
+<sup>[voltar ao índice](#índice)</sup>
 
 
 ### Alinhe Elementos Verticalmente
@@ -158,7 +158,7 @@ Isso não resolveu seu problema? O site CSS-Tricks tem [um guia completo](https:
 
 #### [Passeata](http://codepen.io/AllThingsSmitty/pen/GqmGqZ)
 
-<sup>[voltar ao índice](#table-of-contents)</sup>
+<sup>[voltar ao índice](#índice)</sup>
 
 
 ### Listas Separadas por Vírgula
@@ -175,7 +175,7 @@ Utilize a _pseudo-class_ `:not()` para evitar que a vírgula seja adicionada dep
 
 **Aviso:** Se considerarmos acessibilidade essa dica pode não ser ideal, especialmente para usuários de leitores de tela. Além disso, copiar e/ou colar não funcionam em conteúdo criado com CSS. Proceda com cautela.
 
-<sup>[voltar ao índice](#table-of-contents)</sup>
+<sup>[voltar ao índice](#índice)</sup>
 
 
 ### Selecione Itens Usando `nth-child` Negativo
@@ -206,7 +206,7 @@ Mais fácil que isso só dois disso.
 
 #### [Passeata](http://codepen.io/AllThingsSmitty/pen/WxjKZp)
 
-<sup>[voltar ao índice](#table-of-contents)</sup>
+<sup>[voltar ao índice](#índice)</sup>
 
 
 ### Ícones SVG
@@ -229,7 +229,7 @@ A vantagem do SVG é que o ícone fica bom em qualquer resolução, além de ter
 }
 ```
 
-<sup>[voltar ao índice](#table-of-contents)</sup>
+<sup>[voltar ao índice](#índice)</sup>
 
 
 ### Use o Seletor "Lobotomized Owl"
@@ -248,7 +248,7 @@ Para mais exemplos utilizando o seletor "lobotomized owl", leia [o artigo escrit
 
 #### [Passeata](http://codepen.io/AllThingsSmitty/pen/grRvWq)
 
-<sup>[voltar ao índice](#table-of-contents)</sup>
+<sup>[voltar ao índice](#índice)</sup>
 
 
 ### Sliders em CSS com `max-height`
@@ -270,7 +270,7 @@ Crie _sliders_ usando apenas CSS com `max-height` e `overflow-y: hidden`:
 
 O elemento se expandirá ao valor definido no `max-height` no _hover_ e você terá um _slider_ devido ao uso do overflow.
 
-<sup>[voltar ao índice](#table-of-contents)</sup>
+<sup>[voltar ao índice](#índice)</sup>
 
 
 ### Tabelas com Células de Tamanho Igual
@@ -287,7 +287,7 @@ Tabelas sem dor de cabeça.
 
 #### [Passeata](http://codepen.io/AllThingsSmitty/pen/jALALm)
 
-<sup>[voltar ao índice](#table-of-contents)</sup>
+<sup>[voltar ao índice](#índice)</sup>
 
 
 ### Esqueça as "Margin Hacks", use Flexbox
@@ -307,7 +307,7 @@ Quando definir o espaçamento entre as colunas, você pode deixar os seletores `
 
 Assim as colunas ficam espaçadas uniformemente.
 
-<sup>[voltar ao índice](#table-of-contents)</sup>
+<sup>[voltar ao índice](#índice)</sup>
 
 
 ### Use Seletores de Atributo em Links Vazios
@@ -324,7 +324,7 @@ Mão na roda.
 
 #### [Passeata](http://codepen.io/AllThingsSmitty/pen/zBzXRx)
 
-<sup>[voltar ao índice](#table-of-contents)</sup>
+<sup>[voltar ao índice](#índice)</sup>
 
 
 ### Estilize Links "Default"
@@ -340,7 +340,7 @@ a[href]:not([class]) {
 
 Dessa forma, links que são inseridos por CMS – que normalmente não possuem o atributo `class` – vão ser estilizados sem comprometer outros links.
 
-<sup>[voltar ao índice](#table-of-contents)</sup>
+<sup>[voltar ao índice](#índice)</sup>
 
 
 ### Espaçamento Vertical Consistente
@@ -355,7 +355,7 @@ Use o seletor universal dentro de um elemento para criar um espaçamento vertica
 
 Com um espaçamento vertical consistente o seu conteúdo fica visualmente mais agradável de ler.
 
-<sup>[voltar ao índice](#table-of-contents)</sup>
+<sup>[voltar ao índice](#índice)</sup>
 
 
 ### Div com Proporção de Tela Fixa
@@ -383,7 +383,7 @@ Se você usar 20% no `padding` a altura da div vai ser igual a 20% de sua largur
 
 #### [Passeata](http://codepen.io/AllThingsSmitty/pen/jALZvE)
 
-<sup>[voltar ao índice](#table-of-contents)</sup>
+<sup>[voltar ao índice](#índice)</sup>
 
 
 ### Estilize Imagens Quebradas
@@ -421,7 +421,7 @@ img:after {
 
 Leia mais sobre como estilizar imagens quebradas no [artigo original](http://bitsofco.de/styling-broken-images/) por [Ire Aderinokun](https://github.com/ireade/).
 
-<sup>[voltar ao índice](#table-of-contents)</sup>
+<sup>[voltar ao índice](#índice)</sup>
 
 
 ### Use `rem` para Definir Tamanhos Globais; Use `em` para Definir Tamanhos Locais
@@ -452,7 +452,7 @@ aside .module {
 
 Assim fica mais fácil de estilizar e manter cada módulo, além de ser flexível.
 
-<sup>[voltar ao índice](#table-of-contents)</sup>
+<sup>[voltar ao índice](#índice)</sup>
 
 
 ### Esconda Vídeos em Autoplay Que Não Estejam no Mudo
@@ -467,7 +467,7 @@ video[autoplay]:not([muted]) {
 
 E aqui mais uma entre as muitas vantagens de usar a _pseudo-class_ [`:not()`](#use-not-to-applyunapply-borders-on-navigation).
 
-<sup>[voltar ao índice](#table-of-contents)</sup>
+<sup>[voltar ao índice](#índice)</sup>
 
 
 ### Use `:root` para uma Typografia Flexível
@@ -490,7 +490,7 @@ body {
 
 #### [Passeata](http://codepen.io/AllThingsSmitty/pen/XKgOkR)
 
-<sup>[voltar ao índice](#table-of-contents)</sup>
+<sup>[voltar ao índice](#índice)</sup>
 
 
 <div id="set-font-size-on-form-elements-for-a-better-mobile-experience"></div>
@@ -509,7 +509,7 @@ textarea {
 
 :dancer:
 
-<sup>[voltar ao índice](#table-of-contents)</sup>
+<sup>[voltar ao índice](#índice)</sup>
 
 
 ## Suporte
