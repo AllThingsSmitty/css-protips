@@ -9,7 +9,6 @@ Una collezione di dritte per aiutarti a migliorare le tue capacità con CSS.
 > Per altre fantastiche liste di questo tipo guarda la [lista di fantastiche liste](https://github.com/sindresorhus/awesome/) curata da [@sindresorhus](https://github.com/sindresorhus/).
 
 
-<div id="sommario"></div>
 ## Sommario
 
 * [Suggerimenti per esperti](#suggerimenti-per-esperti)
@@ -17,7 +16,6 @@ Una collezione di dritte per aiutarti a migliorare le tue capacità con CSS.
 * [Linee guida per contribuire](../../CONTRIBUTING.md)
 
 
-<div id="css-protips"></div>
 ## Suggerimenti per esperti
 
 1. [Utilizzare un reset CSS](#use-a-css-reset)
@@ -44,6 +42,7 @@ Una collezione di dritte per aiutarti a migliorare le tue capacità con CSS.
 
 
 <div id="use-a-css-reset"></div>
+
 ### Utilizzare un reset CSS
 
 reset CSS aiutare a far rispettare lo stile coerenza tra diversi browser da zero per gli elementi stilistici. È possibile utilizzare libreria di reset CSS come [Normalize](http://necolas.github.io/normalize.css/), et al, oppure è possibile utilizzare un approccio più semplificato di ripristino.:
@@ -66,6 +65,7 @@ Ora elementi saranno spogliati di margini e padding, e `box-sizing` consente di 
 
 
 <div id="inherit-box-sizing"></div>
+
 ### Eredita il `box-sizing`
 
 Eredita il `box-sizing` dall'elemento `html`:
@@ -86,6 +86,7 @@ In questo modo diventa più facile cambiare `box-sizing` in plugin o altri compo
 
 
 <div id="use-not-to-applyunapply-borders-on-navigation"></div>
+
 ### Usa `:not()` per applicare/rimuovere i bordi su elementi di navigazione
 
 Invece di impostare il bordo...
@@ -122,6 +123,7 @@ Certo, puoi usare `.nav li + li` o anche `.nav li:first-child ~ li`, ma con `:no
 
 
 <div id="add-line-height-to-body"></div>
+
 ### Aggiungi `line-height` al `body`
 
 You don't need to add `line-height` to each `<p>`, `<h*>`, _et al_. separately. Instead, add it to `body`:
@@ -140,6 +142,7 @@ In questo modo gli elementi di testo possono ereditare facilmente da `body`.
 
 
 <div id="vertically-center-anything"></div>
+
 ### Centra verticalmente qualsiasi cosa
 
 No, non è magia nera. Puoi veramente centrare gli elementi verticalmente:
@@ -169,6 +172,7 @@ Vuoi centrare qualcos'altro? In verticale, in orizzontale... qualsiasi cosa, in 
 
 
 <div id="comma-separated-lists"></div>
+
 ### Liste separate da virgola
 
 Visualizza gli elementi di una lista come fossero una vera lista con le virgole:
@@ -187,6 +191,7 @@ Usa la pseudo classe `:not()` in modo da non aggiungere la virgola all'ultimo el
 
 
 <div id="select-items-using-negative-nth-child"></div>
+
 ### Seleziona un elemento usando gli `nth-child` negativi
 
 Usa gli `nth-child` negativi di CSS per selezionare gli elementi da 1 a n.
@@ -219,6 +224,7 @@ Beh... era abbastanza facile.
 
 
 <div id="use-svg-for-icons"></div>
+
 ### Usa SVG per le icone
 
 Non c'è ragione per non usare SVG per le icone:
@@ -243,6 +249,7 @@ SVG scala molto bene a tutti i tipi di risoluzione ed è supportata in tutti i b
 
 
 <div id="use-the-lobotomized-owl-selector"></div>
+
 ### Usa il selettore detto "Lobotomized Owl"
 
 Sebbene il suo nome sia un po' strano, l'uso del selettore universale (`*`) insieme al selettore del fratello adiacente (`+`) può fornire una potenzialità CSS molto potente:
@@ -263,6 +270,7 @@ Per saperne di più sul selettore detto "lobotomized owl", leggi [l'articolo di 
 
 
 <div id="use-max-height-for-pure-css-sliders"></div>
+
 ### Usa `max-height` per slider fatti solo con CSS
 
 Realizza slider fatti solo con CSS usando `max-height` con overflow hidden:
@@ -286,6 +294,7 @@ L'elemento si espande al valore `max-height` all'hover e lo slider diventa visib
 
 
 <div id="equal-width-table-cells"></div>
+
 ### Celle di tabella con larghezza uguale
 
 Lavorare con le tabelle può dare il tormento, perciò prova a usare `table-layout: fixed` per avere celle di larghezza uguale:
@@ -304,6 +313,7 @@ Layout con le tabelle e senza tormento.
 
 
 <div id="get-rid-of-margin-hacks-with-flexbox"></div>
+
 ### Sbarazzati degli hack sui margini grazie a Flexbox
 
 Quando lavori con gli spazi tra colonne puoi sbarazzarti di `nth-`, `first-` e `last-child` usando la proprietà `space-between` di flexbox:
@@ -325,6 +335,7 @@ Ora le colonne avranno sempre una spaziatura uniforme.
 
 
 <div id="use-attribute-selectors-with-empty-links"></div>
+
 ### Usa il selettore d'attributo con i link senza testo
 
 Quando l'elemento `<a>` non ha testo al suo interno ma l'attributo `href` ha un link, lo mostra:
@@ -343,6 +354,7 @@ Decisamente comodo.
 
 
 <div id="style-default-links"></div>
+
 ### Styling dei link di "Default"
 
 Aggiunge uno stile per i link "default":
@@ -360,6 +372,7 @@ Ora i link inseriti mediante un CMS, che solitamente non hanno un attributo `cla
 
 
 <div id="consistent-vertical-rhythm"></div>
+
 ### Mantieni un ritmo verticale coerente
 
 Fai uso di un selettore universale (`*`) all'interno di un elemento per creare un ritmo verticale coerente:
@@ -376,6 +389,7 @@ Un ritmo verticale coerente procura un'estetica visuale che favorisce la leggibi
 
 
 <div id="intrinsic-ratio-boxes"></div>
+
 ### Box con proporzioni intrinseche
 
 Per creare un contenitore con proporzioni intrinseche tutto ciò che devi fare è applicare  a un div del `padding` superiore o inferiore:
@@ -405,6 +419,7 @@ Uare un `padding` del 20% rende l'altezza del contenitore pari al 20% della sua 
 
 
 <div id="style-broken-images"></div>
+
 ### Styling delle immagini non scaricate
 
 Rendi le immagini non scaricate più piacevoli esteticamente con un po' di CSS:
@@ -444,6 +459,7 @@ Ulteriori informazioni sullo styling secondo questo pattern nell'[articolo](http
 
 
 <div id="use-rem-for-global-sizing-use-em-for-local-sizing"></div>
+
 ### Usa `rem` per le grandezze globali; usa `em` per le dimensioni locali
 
 Dopo avere impostato la dimensione di base del font sull'elemento root (`html { font-size: 100%; }`), imposta la dimensione del font per gli elementi testuali con `em`:
@@ -476,6 +492,7 @@ A questo punto ogni modulo diventa compartimentalizzato, più facile da modellar
 
 
 <div id="hide-autoplay-videos-that-arent-muted"></div>
+
 ### Nascondi i video in riproduzione automatica che non sono silenziati
 
 Questo è un fantastico trucchetto per un foglio di stile personalizzato per un utente. Evita di sovraccaricare un utente col suono di un video che parte in riproduzione automatica quando la pagina viene caricata. Se il suono non è disabilitato non mostrare il video:
@@ -492,6 +509,7 @@ Ancora una volta stiamo sfruttando la pseudo classe [`:not()`](#use-not-to-apply
 
 
 <div id="use-root-for-flexible-type"></div>
+
 ### Usa `:root` per caratteri flessibili
 
 In un layout responsive la grandezza del carattere dovrebbe essere in grado di adattarsi a ogni risoluzione. Puoi calcolare la dimensione del font basandoti sull'altezza e sulla larghezza della finestra usando `:root`:
@@ -516,6 +534,7 @@ body {
 
 
 <div id="set-font-size-on-form-elements-for-a-better-mobile-experience"></div>
+
 ### Imposta il `font-size` sugli elementi dei form per una migliore esperienza da mobile
 
 Per evitare lo zoom sugli elementi dei form dai browser mobile (iOS Safari, _et al_.) quando si tocca una `<select>`, aggiungi `font-size` alle regole del selettore:

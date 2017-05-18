@@ -9,16 +9,12 @@ Une collection de conseils pour aider à prendre vos compétences CSS pro.
 > Pour les autres grandes listes vérifier [@sindresorhus](https://github.com/sindresorhus/) de la liste curated des [listes impressionnantes](https://github.com/sindresorhus/awesome/).
 
 
-<div id="table-of-contents"></div>
-
 ## Table des matières
 
-* [Conseils Professionnels](#protips)
+* [Conseils Professionnels](#conseils-professionnels)
 * [Soutien](#soutien)
 * [Lignes directrices des contributions](../../CONTRIBUTING.md)
 
-
-<div id="protips"></div>
 
 ##  Conseils Professionnels
 
@@ -473,7 +469,7 @@ video[autoplay]:not([muted]) {
 
 Encore une fois, nous prenons avantage d'utiliser le [`:not()`](#use-not-to-applyunapply-borders-on-navigation) pseudo-classe.
 
-<sup>[retour à la table des matières](#table-of-contents)</sup>
+<sup>[retour à la table des matières](#table-des-matières)</sup>
 
 
 ### Utiliser `:root` de type flexible

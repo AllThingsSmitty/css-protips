@@ -10,6 +10,7 @@ CSSのプロのスキルになるようにアドバイスのリストを紹介�
 
 
 <div id="table-of-contents"></div>
+
 ## 目次
 
 * [プロチップス](#protips)
@@ -19,6 +20,7 @@ CSSのプロのスキルになるようにアドバイスのリストを紹介�
 
 
 <div id="protips"></div>
+
 ##  プロチップス
 
 1. [CSSのリセットを使用します](#use-a-css-reset)
@@ -46,6 +48,7 @@ CSSのプロのスキルになるようにアドバイスのリストを紹介�
 
 
 <div id="use-a-css-reset"></div>
+
 ### CSSのリセットを使用します
 
 CSSのリセットはスタイリング要素のための白紙の状態で異なるブラウザ間でスタイルの一貫性を強化するのに役立ちます。あなたは[Normalize](http://necolas.github.io/normalize.css/)、_et al._のようにCSSのリセットライブラリを使用するか、より簡略化リセットアプローチを使用することができます。
@@ -69,6 +72,7 @@ CSSのリセットはスタイリング要素のための白紙の状態で異�
 
 
 <div id="inherit-box-sizing"></div>
+
 ### `box-sizing`をコンポーネントごとに変更
 
 `box-sizing`はhtml要素で指定し、継承して利用すると、コンポーネントで変える時に簡単です。
@@ -90,6 +94,7 @@ html {
 
 
 <div id="use-not-to-applyunapply-borders-on-navigation"></div>
+
 ### `:not()`を使用して、リスト要素で実装したナビゲーションの最後のアイテムだけに区切り線を削除します。
 
 ボーダーを書いて。。。
@@ -126,6 +131,7 @@ html {
 
 
 <div id="add-line-height-to-body"></div>
+
 ### `body` に`line-height`を加える
 
 `body`要素で`line-height`を指定することで`p`, `h*`などにその値が継承されるため、それぞれに`line-height`を指定する必要がなくなります。
@@ -142,6 +148,7 @@ body {
 
 
 <div id="vertically-center-anything"></div>
+
 ### 天地の中央に配置
 
 なんでも天地の中央に配置できます！！
@@ -171,6 +178,7 @@ body {
 
 
 <div id="comma-separated-lists"></div>
+
 ### リストをカンマ区切りにする
 
 リストの各アイテムをカンマ区切りにします。
@@ -189,6 +197,7 @@ ul > li:not(:last-child)::after {
 
 
 <div id="select-items-using-negative-nth-child"></div>
+
 ### ネガティブな `:nth-child` を使用してアイテムを選択
 
 `nth-child`にはネガティブな値も指定できます。
@@ -221,6 +230,7 @@ li:not(:nth-child(-n+3)) {
 
 
 <div id="use-svg-for-icons"></div>
+
 ### SVGのアイコン
 
 アイコンとしてSVGを使えない理由がないです！
@@ -245,6 +255,7 @@ SVGは [IE9](http://caniuse.com/#search=svg)以降のすべてのブラウザで
 
 
 <div id="use-the-lobotomized-owl-selector"></div>
+
 ### Owlを使用
 
 変な名前ですが(`*`) と (`+`) を使用するとパワフルCSSセレクターになります！
@@ -265,6 +276,7 @@ Owlについて詳しくはこちら：*List Apart* の[ヘイドンピケリン
 
 
 <div id="use-max-height-for-pure-css-sliders"></div>
+
 ### CSSで実装されたスライダーには`max-height`を使う
 
 CSSで実装されたスライダーは、`max-height`を`overflow: hidden;`と一緒に使ってください。
@@ -288,6 +300,7 @@ CSSで実装されたスライダーは、`max-height`を`overflow: hidden;`と�
 
 
 <div id="equal-width-table-cells"></div>
+
 ### テーブルのセルの幅を均等にする
 
 テーブルの各セルの幅を均等にするには、`table-layout: fixed;`を使うと簡単にできます。
@@ -306,6 +319,7 @@ CSSで実装されたスライダーは、`max-height`を`overflow: hidden;`と�
 
 
 <div id="get-rid-of-margin-hacks-with-flexbox"></div>
+
 ### Flexboxのマージンハックを取り除く
 
 `flexbox`でカラムの溝をつくる時、`nth-`, `first-`, `last-child`などのハックで最後の溝を取り除くことができますが、それは`flexbox`の`space-between`プロパティを使うだけで解決します。
@@ -328,6 +342,7 @@ columnのスペースが揃えている。
 
 
 <div id="use-attribute-selectors-with-empty-links"></div>
+
 ### リンクにテキストが無い時はURLを表示
 
 リンクの`href`属性にはURLがあり、リンクのテキストがない場合に、下記のCSSを使用すると、リンク先のURLを表示します。
@@ -346,6 +361,7 @@ a[href^="http"]:empty::before {
 
 
 <div id="style-default-links"></div>
+
 ### `:not`を使ってデフォルトのリンクをスタイル
 
 デフォルトのリンクのスタイルを追加：
@@ -363,6 +379,7 @@ CMSで挿入される通常class属性を持たないリンクに`:not`を使っ
 
 
 <div id="consistent-vertical-rhythm"></div>
+
 ### 一貫した縦のリズムを定義
 
 指定した要素内の全てに一貫した縦のリズムを定義します。
@@ -379,6 +396,7 @@ CMSで挿入される通常class属性を持たないリンクに`:not`を使っ
 
 
 <div id="intrinsic-ratio-boxes"></div>
+
 ### 内在比率のボックス
 
 ボックスを内在比率で作成するには、ボックスの上部か下部に`div`の詰め物を適用します。
@@ -408,6 +426,7 @@ paddingに20%を使っているのは、そのボックスの高さを幅の20%�
 
 
 <div id="style-broken-images"></div>
+
 ### リンク切れの画像要素をスタイル
 
 よりよいユーザエクスペリエンスを提供するために、リンク切れの画像要素にスタイルを定義します。もちろんリンク切れがないのがベストですが、絶対に存在しない訳ではありません。
@@ -447,6 +466,7 @@ img:after {
 
 
 <div id="use-rem-for-global-sizing-use-em-for-local-sizing"></div>
+
 ### グローバルのサイズ指定に`rem`、ローカルに`em`を使用
 
 ベースのフォントサイズを`html{font-size: 16px;}`にルート指定し、テキスト要素を`em`で指定します。
@@ -479,6 +499,7 @@ aside .module {
 
 
 <div id="hide-autoplay-videos-that-arent-muted"></div>
+
 ### 動画の自動再生を隠す
 
 これはカスタマイズされたユーザースタイルシートのための素晴らしいテクニックです。ページがロードされた時、動画が自動再生されて音がでてしまうユーザーの負担を軽減します。もし無音にできないなら、動画を使わないでください。
@@ -495,6 +516,7 @@ video[autoplay]:not([muted]) {
 
 
 <div id="use-root-for-flexible-type"></div>
+
 ### フレクシブルタイプの`:root`を使用
 
 レスポンシブ対応時に、フォントのサイズをビューポートごとに適応することができます。`:root`を使い、ビューポートの高さと幅に基づいてフォントのサイズを定義することができます。
@@ -519,6 +541,7 @@ body {
 
 
 <div id="set-font-size-on-form-elements-for-a-better-mobile-experience"></div>
+
 ### スマホ向け、フォーム要素のフォントサイズの設定
 
 スマホでセレクト要素のドロップダウンをタップした時に、iOS Safariでフォーム要素にズームインするのを回避するために、フォントサイズを加えます。
@@ -536,12 +559,15 @@ textarea {
 
 <sup>[目次へ戻る](#table-of-contents)</sup>
 
+
 <div id="support"></div>
+
 ## サポート
 
 現在のChrome, Firefox, Safari, Opera と EdgeのバージョンとIE11.
 
 <div id="references"></div>
+
 ## 参考：
 
 [Coliss CSSの便利な小技・テクニックのまとめ -CSS Protips](http://coliss.com/articles/build-websites/operation/css/css-protips-v3.html)
