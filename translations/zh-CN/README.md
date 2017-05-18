@@ -22,7 +22,7 @@
 
 ## 专业技巧
 
-1. [使用CSS复位](#use-a-css-reset)
+1. [使用CSS复位](#使用CSS复位)
 1. [继承 `box-sizing`](#inherit-box-sizing)
 1. [使用 `:not()` 选择器来决定表单是否显示边框](#use-not-to-applyunapply-borders-on-navigation)
 1. [为 body 元素添加行高](#add-line-height-to-body)
@@ -44,8 +44,6 @@
 1. [使用选择器 `:root` 来控制字体弹性](#use-root-for-flexible-type)
 1. [为更好的移动体验，为表单元素设置字体大小](#set-font-size-on-form-elements-for-a-better-mobile-experience)
 
-
-<div id="use-a-css-reset"></div>
 
 ### 使用CSS复位
 
