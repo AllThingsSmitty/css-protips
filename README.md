@@ -516,6 +516,8 @@ textarea {
 
 Current versions of Chrome, Firefox, Safari, Opera, Edge, and IE11.
 
+<sup>[back to table of contents](#table-of-contents)</sup>
+
 
 ## Translations
 
@@ -526,3 +528,5 @@ Current versions of Chrome, Firefox, Safari, Opera, Edge, and IE11.
 * [Português do Brasil](https://github.com/AllThingsSmitty/css-protips/tree/master/translations/pt-BR)
 * [Русский](https://github.com/AllThingsSmitty/css-protips/tree/master/translations/ru-RU)
 * [简体中文](https://github.com/AllThingsSmitty/css-protips/tree/master/translations/zh-CN)
+
+<sup>[back to table of contents](#table-of-contents)</sup>
