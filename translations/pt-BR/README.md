@@ -4,7 +4,7 @@
 
 # CSS Protips [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome)
 
-Uma coleção de dicas para elevar suas habilidades de CSS.
+Uma coleção de dicas para aumentar suas habilidades no CSS.
 
 > Dê uma olhada em mais algumas [listas fantásticas](https://github.com/sindresorhus/awesome/) mantidas por [@sindresorhus](https://github.com/sindresorhus/).
 
@@ -43,7 +43,7 @@ Uma coleção de dicas para elevar suas habilidades de CSS.
 
 ### Use um Reset CSS
 
-Redefine CSS ajudar a impor a consistência de estilo em diferentes navegadores com uma ardósia limpa para elementos de estilo. Você pode usar a biblioteca de reset CSS como [Normalize](http://necolas.github.io/normalize.css/), et al, ou você pode usar uma abordagem de redefinição mais simplificada.:
+Resetar o CSS vai te ajudar a manter a consistência de estilo em diferentes navegadores com um ponto de partida limpo para elementos de estilo. Você pode usar a biblioteca de reset CSS como [Normalize](http://necolas.github.io/normalize.css/), ou se preferir, usar uma abordagem mais simplificada.:
 
 ```css
 * {
@@ -53,7 +53,7 @@ Redefine CSS ajudar a impor a consistência de estilo em diferentes navegadores 
 }
 ```
 
-Agora elementos serão despojados de margens e preenchimento, e `box-sizing` permite gerenciar layouts com o modelo de caixa CSS.
+Agora os elementos estarão sem margens, preenchimento e `box-sizing`. Te permitindo gerenciar o layout com o seu CSS.
 
 #### [Passeata](http://codepen.io/AllThingsSmitty/pen/kkrkLL)
 
@@ -64,7 +64,7 @@ Agora elementos serão despojados de margens e preenchimento, e `box-sizing` per
 
 ### Herde o `box-sizing`
 
-Faça que o `box-sizing` seja herdado do `html`:
+Faça com que o `box-sizing` seja herdado do `html`:
 
 ```css
 html {
