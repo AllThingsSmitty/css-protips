@@ -196,7 +196,7 @@ li:nth-child(-n+3) {
 Já que você aprendeu um pouquinho sobre como usar a _pseudo-class_ [using `:not()`](#use-not-to-applyunapply-borders-on-navigation), você pode tentar:
 
 ```css
-/* mostrar itens de 1 a 3 */
+/* selecione todos os itens, exceto o primeiro 3 e exiba-os */
 li:not(:nth-child(-n+3)) {
   display: none;
 }

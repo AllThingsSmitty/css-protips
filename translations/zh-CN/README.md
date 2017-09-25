@@ -199,7 +199,7 @@ li:nth-child(-n+3) {
 或许你已经掌握了[如何使用 `:not()`](#use-not-to-applyunapply-borders-on-navigation)这个技巧，试下这个：
 
 ```css
-/* 选择第 1 至第 3 个元素并显示出来 */
+/* 选择除前3个之外的所有项目，并显示它们 */
 li:not(:nth-child(-n+3)) {
   display: none;
 }

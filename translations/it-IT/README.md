@@ -210,7 +210,7 @@ li:nth-child(-n+3) {
 Oppure, dato che hai già imparato un po' di cose circa l'[uso di `:not()`](#use-not-to-applyunapply-borders-on-navigation), prova:
 
 ```css
-/* seleziona gli elementi da 1 a 3 e li mostra */
+/* selezionare tutti gli elementi tranne i primi 3 e visualizzarli */
 li:not(:nth-child(-n+3)) {
   display: none;
 }

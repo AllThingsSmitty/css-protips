@@ -197,7 +197,7 @@ li:nth-child(-n+3) {
 Ou, puisque vous avez déjà appris un peu [en utilisant `:not()`](#use-not-to-applyunapply-borders-on-navigation), essayez:
 
 ```css
-/* select items 1 through 3 and display them */
+/* select all items except the first 3 and display them */
 li:not(:nth-child(-n+3)) {
   display: none;
 }
