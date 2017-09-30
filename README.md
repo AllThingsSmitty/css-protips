@@ -44,7 +44,7 @@ A collection of tips to help take your CSS skills pro.
 
 ### Use a CSS Reset
 
-CSS resets help enforce style consistency across different browsers with a clean slate for styling elements. You can use CSS reset library like [Normalize](http://necolas.github.io/normalize.css/), _et al._, or you can use a more simplified reset approach:
+CSS resets help enforce style consistency across different browsers with a clean slate for styling elements. You can use a CSS reset library like [Normalize](http://necolas.github.io/normalize.css/), _et al._, or you can use a more simplified reset approach:
 
 ```css
 * {
