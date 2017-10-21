@@ -516,3 +516,18 @@ textarea {
 ## Soutien
 
 Les versions actuelles de Chrome, Firefox, Safari, Opera, Edge, et IE11.
+
+<sup>[retour à la table des matières](#table-des-matières)</sup>
+
+
+## Traductions
+
+* [Español](https://github.com/AllThingsSmitty/css-protips/tree/master/translations/es-ES)
+* [Français](https://github.com/AllThingsSmitty/css-protips/tree/master/translations/fr-FR)
+* [Italiano](https://github.com/AllThingsSmitty/css-protips/tree/master/translations/it-IT)
+* [日本語](https://github.com/AllThingsSmitty/css-protips/tree/master/translations/ja-JP)
+* [Português do Brasil](https://github.com/AllThingsSmitty/css-protips/tree/master/translations/pt-BR)
+* [Русский](https://github.com/AllThingsSmitty/css-protips/tree/master/translations/ru-RU)
+* [简体中文](https://github.com/AllThingsSmitty/css-protips/tree/master/translations/zh-CN)
+
+<sup>[retour à la table des matières](#table-des-matières)</sup>

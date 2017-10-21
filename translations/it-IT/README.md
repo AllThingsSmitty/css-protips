@@ -556,3 +556,18 @@ textarea {
 ## Supporto
 
 Le attuali versioni di Chrome, Firefox, Safari, Opera, Edge ed IE11.
+
+<sup>[torna al sommario](#sommario)</sup>
+
+
+## Traduzioni
+
+* [Español](https://github.com/AllThingsSmitty/css-protips/tree/master/translations/es-ES)
+* [Français](https://github.com/AllThingsSmitty/css-protips/tree/master/translations/fr-FR)
+* [Italiano](https://github.com/AllThingsSmitty/css-protips/tree/master/translations/it-IT)
+* [日本語](https://github.com/AllThingsSmitty/css-protips/tree/master/translations/ja-JP)
+* [Português do Brasil](https://github.com/AllThingsSmitty/css-protips/tree/master/translations/pt-BR)
+* [Русский](https://github.com/AllThingsSmitty/css-protips/tree/master/translations/ru-RU)
+* [简体中文](https://github.com/AllThingsSmitty/css-protips/tree/master/translations/zh-CN)
+
+<sup>[torna al sommario](#sommario)</sup>
