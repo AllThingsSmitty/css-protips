@@ -2,11 +2,11 @@
   <img src="https://rawgit.com/AllThingsSmitty/css-protips/master/media/logo.svg" alt="light bulb icon">
 </p>
 
-# CSS Consejos Profesionales [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome)
+# Consejos Profesionales para CSS[![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome)
 
-Una colección de consejos para ayudar a llevar su pro habilidades CSS.
+Una colección de consejos para ayudarte a mejorar tus conocimientos profesionales de CSS.
 
-> Para otros grandes listas echa un vistazo a [@sindresorhus](https://github.com/sindresorhus/)'s lista curada de [listas impresionantes](https://github.com/sindresorhus/awesome/).
+> Para otras grandes listas echa un vistazo a [@sindresorhus](https://github.com/sindresorhus/)'s lista curada de [listas impresionantes](https://github.com/sindresorhus/awesome/).
 
 
 ## Tabla de contenido
@@ -18,32 +18,32 @@ Una colección de consejos para ayudar a llevar su pro habilidades CSS.
 
 ## Consejos Profesionales
 
-1. [Utilizar de CSS restablecer](#utilizar-de-css-restablecer)
-1. [Heredar `box-sizing`](#heredar-box-sizing)
-1. [Use `:not()` para Aplicar / Cancelar la aplicación de las bordes para la Navegación](#use-not-para-aplicar--cancelar-los-bordes-de-la-navegación)
-1. [Añadir `line-height` a `body`](#añadir-line-height-a-el-body)
-1. [Centrar cualquier verticalmente](#centrar-cualquier-verticalmente)
-1. [Listas separadas por comas](#listas-separadas-por-comas)
-1. [Seleccionar elementos Usando negativo `nth-child`](#seleccionar-elementos-usando-negativo-nth-child)
-1. [Utilizar SVG para iconos](#utilizar-svg-para-iconos)
-1. [Utilice la herramienta de selección "lobotomizó búho"](#utilice-la-herramienta-de-selección-lobotomizó-búho)
-1. [Use `max-height` característica de Sliders puro CSS](#use-max-height-para-un-sliders-de-puro-css)
-1. [Celdas de la tabla de igual ancho](#celdas-de-la-tabla-con-igual-ancho)
-1. [Deshacerse del margen Hacks Con Flexbox](#deshacerse-de-los-hacks-de-margen-con-flexbox)
-1. [Utilizar selectores de atributo con enlaces vacíos](#utilizar-selectores-de-atributo-con-enlaces-vacíos)
-1. [Enlaces de estilo "por defecto"](#estilos-por-defcto-para-los-enlaces)
-1. [Consistente ritmo vertical](#consistente-ritmo-vertical)
-1. [Cajas Relación intrínsecas](#cajas-relación-intrínsecas)
-1. [Imágenes rotas Estilo](#imágenes-rotas-estilo)
-1. [Use `rem` para Global Dimensionamiento; Use `em` para el dimensionamiento local](#use-rem-para-global-dimensionamiento-use-em-para-el-dimensionamiento-local)
-1. [Esconder Reproducción automática los vídeos que no estén anulados](#esconder-reproducción-automática-los-vídeos-que-no-estén-anulados)
-1. [Utilizar `:root` para el tipo flexible](#utilizar-root-para-el-tipo-flexible)
-1. [Ajuste `font-size` en el Formulario Elementos para una mejor experiencia móvil](#ajuste-font-size-en-el-formulario-elementos-para-una-mejor-experiencia-móvil)
+1. [Utilizar un CSS Reset](#utilizar-un-css-reset)
+2. [Heredar `box-sizing`](#heredar-box-sizing)
+3. [Usar `:not()` para Aplicar / Cancelar la aplicación de bordes en la navegación](#usar-not-para-aplicar-cancelar-la-aplicacion-de-bordes-en-la-navegación)
+4. [Añadir `line-height` al `body`](#añadir-line-height-al-body)
+5. [Centrar cualquier cosa verticalmente](#centrar-cualquier-cosa-verticalmente)
+6. [Listas separadas por comas](#listas-separadas-por-comas)
+7. [Seleccionar elementos usando `nth-child` negativo](#seleccionar-elementos-usando-nth-child-negativo)
+8. [Utilizar SVG para los íconos](#utilizar-svg-para-los-iconos)
+9. [Utilizar la herramienta de selección "Búho lobotomizado"](#utilizar-la-herramienta-de-selección-buho-lobotomizado)
+10. [Usar `max-height` para Sliders con CSS puro](#usar-max-height-para-sliders-con-css-puro)
+11. [Celdas de tabla de igual ancho](#celdas-de-tabla-de-igual-ancho)
+12. [Deshacerse de hacks para los márgenes en Flexbox](#deshacerse-de-hacks-para-los-margenes-en-flexbox)
+13. [Utilizar atributos como selectores en enlaces vacíos](#utilizar-atributos-como-selectores-en-enlaces-vacios)
+14. [Estilizar enlaces "por defecto"](#estilos-enlaces-por-defecto)
+15. [Ritmo vertical consistente](#ritmo-vertical-consistente)
+16. [Cajas con proporciones intrínsecas](#cajas-con-proporciones-intrinsecas)
+17. [Estilizar enlaces rotos a imágenes](#estilizar-enlaces-rotos-a-imagenes)
+18. [Usar `rem` para tamaños globales; Usar `em` para tamaños locales](#usar-rem-para-tamaños-globales-usar-em-para-tamaños-locales)
+19. [Esconder videos con reproducción automática que no estén silenciados](#esconder-videos-con-reproducción-automática-que-no-estén-silenciados)
+20. [Utilizar `:root` para una tipografía flexible](#utilizar-root-para-una-tipografía-flexible)
+21. [Definir `font-size` en los elementos de formulario para una mejor experiencia móvil](#definir-font-size-en-los-elementos-de-formulario-para-una-mejor-experiencia-móvil)
 
 
-### Utilizar de CSS restablecer
+### Utilizar un CSS Reset
 
-Restablece CSS ayudan a hacer cumplir la coherencia de estilo en diferentes navegadores con una pizarra limpia para los elementos de diseño. Puede utilizar la biblioteca CSS reset como [Normalize](http://necolas.github.io/normalize.css/), y otros, o puede utilizar un enfoque de reposición más simplificada:
+Los CSS Resets ayudan a hacer cumplir la coherencia de estilo en los diferentes navegadores, como una hoja en blanco para los elementos de estilo. Puedes utilizar una biblioteca CSS Reset como [Normalize](http://necolas.github.io/normalize.css/), y otros, o puedes utilizar un enfoque más simplificado para el reset:
 
 ```css
 * {
@@ -53,18 +53,18 @@ Restablece CSS ayudan a hacer cumplir la coherencia de estilo en diferentes nave
 }
 ```
 
-Ahora elementos serán despojados de márgenes y el relleno, y `box-sizing` le permite administrar diseños con el modelo de caja CSS.
+Ahora los elementos están despojados de márgenes y paddings, y `box-sizing` te permite administrar el diseño con el modelo de caja de CSS.
 
 #### [Demo](http://codepen.io/AllThingsSmitty/pen/kkrkLL)
 
-**Nota:** Si usted sigue la punta [Heredar `box-sizing`](#inherit-box-sizing) por debajo de usted puede optar por no incluir la propiedad `box-sizing` en su CSS reset.
+**Nota:** Si sigues el consejo de más abajo [Heredar `box-sizing`](#inherit-box-sizing) puedes optar por no incluir la propiedad `box-sizing` en tu CSS reset.
 
 <sup>[volver al índice de contenidos](#tabla-de-contenido)</sup>
 
 
 ### Heredar `box-sizing`
 
-Herdar `box-sizing` de `html`:
+Heredar `box-sizing` de `html`:
 
 ```css
 html {
@@ -81,27 +81,27 @@ Esto hace que sea más fácil cambiar `box-sizing` en plugins u otros componente
 <sup>[volver al índice de contenidos](#tabla-de-contenido)</sup>
 
 
-### Use `:not()` para Aplicar / Cancelar los bordes de la navegación
+### Usar `:not()` para Aplicar / Cancelar la aplicación de bordes en la navegación
 
 En lugar de poner en el borde...
 
 ```css
-/* Agregar el borde */
+/* Agrega estilo al borde */
 .nav li {
   border-right: 1px solid #666;
 }
 ```
 
-...Y luego quitarlo del último elemento...
+... para luego quitarlo del último elemento...
 
 ```css
-/* quitar el borde */
+/* quitar estilo al borde */
 .nav li:last-child {
   border-right: none;
 }
 ```
 
-...Utiliza la pseudo-clase `:not()` que sólo se aplican a los elementos que desea:
+... utiliza la pseudo-clase `:not()` para sólo aplicar el estilo a los elementos que deseas:
 
 ```css
 .nav li:not(:last-child) {
@@ -109,16 +109,16 @@ En lugar de poner en el borde...
 }
 
 ```
-Claro, se puede usar `li.nav + li` o incluso `li.nav: li` primer hijo ~, pero con `:not()` la intención es muy clara y el selector CSS define los bordes de la forma en que un ser humano lo describiría.
+Claro, se puede usar `li.nav + li` o incluso `.nav li:first-child ~ li`, pero con `:not()` la intención es muy clara y el selector CSS define los bordes de la forma en que un ser humano lo describiría.
 
 #### [Demo](http://codepen.io/AllThingsSmitty/pen/LkymvO)
 
 <sup>[volver al índice de contenidos](#tabla-de-contenido)</sup>
 
 
-### Añadir `line-height` a el `body`  
+### Añadir `line-height` al `body`
 
-No es necesario añadir `line-height` a cada` <p> `,` <h *> `, _et al_. por separado. En su lugar, agregalo a el `body`:
+No es necesario añadir `line-height` a cada` <p> `,` <h *> `, _et al_. por separado. En su lugar, agregalo al `body`:
 
 ```css
 body {
@@ -126,16 +126,16 @@ body {
 }
 ```
 
-De esta manera los elementos textuales pueden heredar de `body` fácilmente.
+De esta manera los elementos de texto pueden heredarlo fácilmente de `body`.
 
 #### [Demo](http://codepen.io/AllThingsSmitty/pen/VjbdYd)
 
 <sup>[volver al índice de contenidos](#tabla-de-contenido)</sup>
 
 
-### Centrar cualquier verticalmente
+### Centrar cualquier cosa verticalmente
 
-No, no es magia negra, realmente puedes centrar verticalmente elementos:
+No, no es magia negra, realmente puedes centrar elementos verticalmente:
 
 ```css
 html, body {
@@ -152,9 +152,9 @@ body {
 }
 ```
 
-¿Quieres centrar algo más? Vertical, horizontal...cualquier cosa, en cualquier momento y en cualquier lugar? CSS-Tricks tiene [un bonito reportaje](https://css-tricks.com/centering-css-complete-guide/) para hacer todo eso.
+¿Quieres centrar algo más? Vertical, horizontal… cualquier cosa, en cualquier momento y en cualquier lugar? CSS-Tricks tiene [un bonito artículo](https://css-tricks.com/centering-css-complete-guide/) para hacer todo eso.
 
-**Nota:** ve por algunos [comportamientos erroneos](https://github.com/philipwalton/flexbugs#3-min-height-on-a-flex-container-wont-apply-to-its-flex-items) con Flexbox en IE11.
+**Nota:** mira algunos [comportamientos erróneos](https://github.com/philipwalton/flexbugs#3-min-height-on-a-flex-container-wont-apply-to-its-flex-items) de Flexbox en IE11.
 
 #### [Demo](http://codepen.io/AllThingsSmitty/pen/GqmGqZ)
 
@@ -173,14 +173,14 @@ ul > li:not(:last-child)::after {
 
 Utilice la pseudo-clase `:not()` para agregar una coma al último elemento.
 
-**Nota:** Esta consejo puede no ser ideal para la accesibilidad, específicamente para lectores de pantalla. Y copiar / pegar desde el navegador no funciona con el contenido generado por CSS. Proceda con precaución.
+**Nota:** Este consejo puede no ser ideal para la accesibilidad, específicamente para lectores de pantalla. Y copiar / pegar desde el navegador no funciona con el contenido generado por CSS. Procede con precaución.
 
 <sup>[volver al índice de contenidos](#tabla-de-contenido)</sup>
 
 
-### Seleccionar elementos Usando negativo `nth-child`
+### Seleccionar elementos usando `nth-child` negativo
 
-Utilice negativo `nth-child` en CSS para seleccionar los numerales 1 a n.
+Utiliza  `nth-child` negativo en CSS para seleccionar los numerales de 1 a n.
 
 ```css
 li {
@@ -193,7 +193,7 @@ li:nth-child(-n+3) {
 }
 ```
 
-O bien, como ya se ha aprendido un poco sobre [el uso de `:not()`](# uso no-a-applyunapply-fronteras-on-navegación), trate de:
+O bien, como ya has aprendido un poco sobre [el uso de `:not()`](# uso no-a-applyunapply-fronteras-on-navegación), trata de:
 
 ```css
 /* seleccionar todos los elementos excepto los 3 primeros y mostrarlos */
@@ -202,16 +202,16 @@ li:not(:nth-child(-n+3)) {
 }
 ```
 
-Así que era bastante fácil.
+Bueno, éso ha sido bastante fácil.
 
 #### [Demo](http://codepen.io/AllThingsSmitty/pen/WxjKZp)
 
 <sup>[volver al índice de contenidos](#tabla-de-contenido)</sup>
 
 
-### Utilizar SVG para iconos
+### Utilizar SVG para los iconos
 
-No hay ninguna razón para no usar SVG para los iconos:
+No hay ninguna razón para no usar SVG para los íconos:
 
 ```css
 .logo {
@@ -219,9 +219,9 @@ No hay ninguna razón para no usar SVG para los iconos:
 }
 ```
 
-SVG funciona bien para todos los tipos de resolución y es compatible con todos los navegadores [volver a IE9](http://caniuse.com/#search=svg). Así que olvide sus archivos .png, .jpg o .gif-jif-whatev.
+SVG funciona bien para todos los tipos de resoluciones y es compatible con todos los navegadores [hasta IE9](http://caniuse.com/#search=svg). Así que olvidate de tus archivos .png, .jpg o .gif-jif-loquesea.
 
-**Nota:** Si usted tiene un icono SVG de sólo botones para los usuarios con visión y el SVG no se puede cargar, esto ayudará a mantener la accesibilidad:
+**Nota:** Si tienes botones de íconos con SVG para usuarios no videntes y el SVG falla al cargar, esto te ayudará a mantener la accesibilidad:
 
 ```css
 .no-svg .icon-only:after {
@@ -232,9 +232,9 @@ SVG funciona bien para todos los tipos de resolución y es compatible con todos 
 <sup>[volver al índice de contenidos](#tabla-de-contenido)</sup>
 
 
-### Utilice la herramienta de selección "lobotomizó búho"
+### Utilizar la herramienta de selección "Búho lobotomizado"
 
-Puede que tenga un nombre extraño, pero utilizando el selector unversal (`*`) con el selector de hermanos adyacentes (`+`) puede proporcionar una potente capacidad de CSS:
+Puede que tenga un nombre extraño, pero utilizando el selector universal (`*`) con el selector de hermanos adyacentes (`+`) puedes proporcionar una potente capacidad de CSS:
 
 ```css
 * + * {
@@ -244,16 +244,16 @@ Puede que tenga un nombre extraño, pero utilizando el selector unversal (`*`) c
 
 En este ejemplo, todos los elementos del flujo del documento que siguen otros elementos recibirán `margin-top: 1.5em`.
 
-Para más información sobre el selector "buho lobotomized", lee [post de Heydon Pickering](http://alistapart.com/article/axiomatic-css-and-lobotomized-owls) en *A List Apart*.
+Para más información sobre el selector "búho lobotomizado", lee el [post de Heydon Pickering](http://alistapart.com/article/axiomatic-css-and-lobotomized-owls) en *A List Apart*.
 
 #### [Demo](http://codepen.io/AllThingsSmitty/pen/grRvWq)
 
 <sup>[volver al índice de contenidos](#tabla-de-contenido)</sup>
 
 
-### Use `max-height` para un Sliders de puro CSS
+### Usar `max-height` para Sliders con CSS puro
 
-Implementar un slider solo de CSS utilizando solo `max-height` con el overflow oculto.
+Implementar un slider con CSS puro utilizando `max-height` con overflow hidden.
 
 ```css
 .slider {
@@ -268,14 +268,14 @@ Implementar un slider solo de CSS utilizando solo `max-height` con el overflow o
 }
 ```
 
-El elemento se expande hasta el valor de `max-height` en hover y el slider muestra el contenido del overflow.
+El elemento se expande hasta el valor de `max-height` en hover y el slider se muestra como resultado del desbordamiento (overflow).
 
 <sup>[volver al índice de contenidos](#tabla-de-contenido)</sup>
 
 
-### Celdas de la tabla con igual ancho
+### Celdas de tabla de igual ancho
 
-Las tablas pueden ser un dolor de trabajar con lo que se trate de usar `table-layout: fixed` para mantener las celdas con el mismo ancho:
+Las tablas pueden ser dolorosas para trabajar, por lo que se trate de usar `table-layout: fixed` para mantener las celdas con el mismo ancho:
 
 ```css
 .calendar {
@@ -290,9 +290,9 @@ Diseño de tablas sin dolor.
 <sup>[volver al índice de contenidos](#tabla-de-contenido)</sup>
 
 
-### Deshacerse de los hacks de margen con Flexbox
+### Deshacerse de hacks para los márgenes en Flexbox
 
-Cuando se trabaja con las canaletas de columna que puede deshacerse de `nth-`, `first-` y `last-child` mediante el uso de la propiedad `space-between` de Flexbox:
+Cuando trabajas con el espaciado entre columnas puedes deshacerte de los hacks con `nth-`, `first-` y `last-child` mediante el uso de la propiedad `space-between` de Flexbox:
 
 ```css
 .list {
@@ -305,12 +305,12 @@ Cuando se trabaja con las canaletas de columna que puede deshacerse de `nth-`, `
 }
 ```
 
-Ahora canaletas de columna siempre aparecen uniformemente espaciadas.
+Ahora las columnas aparecen siempre espaciadas uniformemente.
 
 <sup>[volver al índice de contenidos](#tabla-de-contenido)</sup>
 
 
-### Utilizar selectores de atributo con enlaces vacíos
+### Utilizar atributos como selectores en enlaces vacíos
 
 Mostrar vínculos cuando el elemento `<a>` no tiene un valor de texto, pero el atributo `href` tiene un enlace:
 
@@ -327,7 +327,7 @@ Eso es bastante conveniente.
 <sup>[volver al índice de contenidos](#tabla-de-contenido)</sup>
 
 
-### Estilos "por defcto" para los enlaces.
+### Estilizar enlaces "por defecto"
 
 Añadir un estilo a los enlaces "por defecto":
 
@@ -343,9 +343,9 @@ Ahora los enlaces que se insertan a través de un CMS, que por lo general no tie
 <sup>[volver al índice de contenidos](#tabla-de-contenido)</sup>
 
 
-### Consistente ritmo vertical
+### Ritmo vertical consistente
 
-Utilice un selector universales (`*`) dentro de un elemento para crear un ritmo vertical consistente:
+Utilice un selector universal (`*`) dentro de un elemento para crear un ritmo vertical consistente:
 
 ```ss
 .intro> * {
@@ -353,14 +353,14 @@ Utilice un selector universales (`*`) dentro de un elemento para crear un ritmo 
 }
 ```
 
-Ritmo vertical consistente proporciona una estética visual que hace que el contenido mucho más legible.
+Un ritmo vertical consistente proporciona una estética visual que hace que el contenido sea mucho más legible.
 
 <sup>[volver al índice de contenidos](#tabla-de-contenido)</sup>
 
 
-### Cajas Relación intrínsecas
+### Cajas con proporciones intrínsecas
 
-Para crear un cuadro con una relación intrínseca, todo lo que tiene que hacer es aplicar el acolchado superior o inferior a un div:
+Para crear un cuadro con una proporción intrínseca, todo lo que tiene que hacer es aplicar un padding superior o inferior a un div:
 
 ```css
 .container {
@@ -379,16 +379,16 @@ Para crear un cuadro con una relación intrínseca, todo lo que tiene que hacer 
 }
 ```
 
-El uso de 20% para el relleno hace que la altura de la caja igual a 20% de su anchura. No importa el ancho de la ventana, el div niño va a mantener su relación de aspecto (100% / 20% = 5: 1).
+Usando un 20% de padding hace que la altura de la caja sea igual al 20% de su anchura. No importa el ancho de la ventana, el div hijo va a mantener su relación de aspecto (100% / 20% = 5: 1).
 
 #### [Demo](http://codepen.io/AllThingsSmitty/pen/jALZvE)
 
 <sup>[volver al índice de contenidos](#tabla-de-contenido)</sup>
 
 
-### Imágenes rotas Estilo
+### Estilizar enlaces rotos a imágenes
 
-Hacer imágenes rotas más estéticamente agradable con un poco de CSS:
+Haz que las imágenes rotas sean estéticamente más agradables con un poco de CSS:
 
 ```css
 img {  
@@ -403,7 +403,7 @@ img {
 }
 ```
 
-Ahora añadir reglas pseudo-elementos para mostrar un mensaje de usuario y una referencia de dirección URL de la imagen rota:
+Ahora añade propiedades desde los pseudo-elementos para mostrar un mensaje al usuario y una referencia de dirección URL de la imagen rota:
 
 ```css
 img:before {  
@@ -419,14 +419,14 @@ img:after {
 }
 ```
 
-Aprender más sobre el estilo de este patrón en [Iré Aderinokun](https://github.com/ireade/)'s [post original](http://bitsofco.de/styling-broken-images/).
+Aprende más sobre el estilo de este patrón en [post original](http://bitsofco.de/styling-broken-images/) de [Iré Aderinokun](https://github.com/ireade/).
 
 <sup>[volver al índice de contenidos](#tabla-de-contenido)</sup>
 
 
-### Use `rem` para Global Dimensionamiento; Use `em` para el dimensionamiento local
+### Usar `rem` para tamaños globales; Usar `em` para tamaños locales
 
-Después de ajustar el tamaño de la fuente base en la raíz (`html { font-size: 100%; }`), ajustar el tamaño de fuente para los elementos textuales de `em`:
+Después de definir el tamaño de la fuente base en la raíz (`html { font-size: 100%; }`), ajusta el tamaño de fuente para los elementos textuales con `em`:
 
 ```css
 h2 {
@@ -438,7 +438,7 @@ p {
 }
 ```
 
-A continuación, establezca el tamaño de fuente para los módulos a `rem`:
+A continuación, establezca el tamaño de fuente para los módulos con `rem`:
 
 ```css
 article {
@@ -450,14 +450,14 @@ aside .module {
 }
 ```
 
-Ahora cada módulo se divide en compartimientos y más fácil de peinar, más fácil de mantener, y flexible.
+Ahora cada módulo se vuelve compartimentado y más fácil de estilizar, más fácil de mantener, y más flexible.
 
 <sup>[volver al índice de contenidos](#tabla-de-contenido)</sup>
 
 
-### Esconder Reproducción automática los vídeos que no estén anulados
+### Esconder videos con reproducción automática que no estén silenciados
 
-Este es un gran truco para una hoja de estilo de usuario personalizada. Evitar la sobrecarga de un usuario con el sonido de un vídeo que se reproduce automáticamente cuando se carga la página. Si el sonido no está silenciado, no muestran el video:
+Este es un gran truco para una hoja de estilo de usuario personalizada. Evita la sobrecarga de un usuario con el sonido de un vídeo que se reproduce automáticamente cuando se carga la página. Si el sonido no está silenciado, no se muestra el video:
 
 ```css
 video[autoplay]:not([muted]) {
@@ -465,12 +465,12 @@ video[autoplay]:not([muted]) {
 }
 ```
 
-Una vez más, nos estamos tomando ventaja de usar el [`:not()`](#use-not-to-applyunapply-borders-on-navigation) pseudo-clase.
+Una vez más, estamos tomando ventaja de usar la pseudo-clase [`:not()`](#use-not-to-applyunapply-borders-on-navigation).
 
 <sup>[volver al índice de contenidos](#tabla-de-contenido)</sup>
 
 
-### Utilizar `:root` para el tipo flexible
+### Utilizar `:root` para una tipografía flexible
 
 El tamaño de tipo de letra en un diseño que responde debe ser capaz de ajustar con cada ventana. Se puede calcular el tamaño de la fuente basada en la altura y la anchura de la ventana gráfica usando `:root`:
 
@@ -491,9 +491,9 @@ body {
 <sup>[volver al índice de contenidos](#tabla-de-contenido)</sup>
 
 
-### Ajuste `font-size` en el Formulario Elementos para una mejor experiencia móvil
+### Definir `font-size` en los elementos de formulario para una mejor experiencia móvil
 
-Para evitar los navegadores móviles (iOS Safari, _et al_.) De hacer zoom sobre los elementos de formulario HTML cuando un `<select>` desplegable se toca, agrega `font-size` a la regla de selección:
+Para evitar que los navegadores móviles (iOS Safari, _et al_.) hagan zoom sobre los elementos de un formulario HTML cuando un `<select>` desplegable es pulsado, agrega `font-size` a la regla del selector:
 
 ```css
 input[type="text"],
