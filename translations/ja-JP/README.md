@@ -566,8 +566,24 @@ textarea {
 
 現在のChrome, Firefox, Safari, Opera と EdgeのバージョンとIE11.
 
+<sup>[目次へ戻る](#table-of-contents)</sup>
+
+## 翻訳
+
+* [Español](https://github.com/AllThingsSmitty/css-protips/tree/master/translations/es-ES)
+* [Français](https://github.com/AllThingsSmitty/css-protips/tree/master/translations/fr-FR)
+* [Italiano](https://github.com/AllThingsSmitty/css-protips/tree/master/translations/it-IT)
+* [日本語](https://github.com/AllThingsSmitty/css-protips/tree/master/translations/ja-JP)
+* [Português do Brasil](https://github.com/AllThingsSmitty/css-protips/tree/master/translations/pt-BR)
+* [Русский](https://github.com/AllThingsSmitty/css-protips/tree/master/translations/ru-RU)
+* [简体中文](https://github.com/AllThingsSmitty/css-protips/tree/master/translations/zh-CN)
+
+<sup>[目次へ戻る](#table-of-contents)</sup>
+
 <div id="references"></div>
 
 ## 参考：
 
 [Coliss CSSの便利な小技・テクニックのまとめ -CSS Protips](http://coliss.com/articles/build-websites/operation/css/css-protips-v3.html)
+
+

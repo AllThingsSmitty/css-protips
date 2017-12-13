@@ -517,3 +517,18 @@ textarea {
 ### 支持情况
 
 这些技巧适用于最新版的 Chrome, Firefox, Safari, Opera, Edge, 以及 IE11。
+
+<sup>[回目录](#目录)</sup>
+
+
+## 翻译
+
+* [Español](https://github.com/AllThingsSmitty/css-protips/tree/master/translations/es-ES)
+* [Français](https://github.com/AllThingsSmitty/css-protips/tree/master/translations/fr-FR)
+* [Italiano](https://github.com/AllThingsSmitty/css-protips/tree/master/translations/it-IT)
+* [日本語](https://github.com/AllThingsSmitty/css-protips/tree/master/translations/ja-JP)
+* [Português do Brasil](https://github.com/AllThingsSmitty/css-protips/tree/master/translations/pt-BR)
+* [Русский](https://github.com/AllThingsSmitty/css-protips/tree/master/translations/ru-RU)
+* [简体中文](https://github.com/AllThingsSmitty/css-protips/tree/master/translations/zh-CN)
+
+<sup>[回目录](#目录)</sup>
