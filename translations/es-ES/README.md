@@ -20,18 +20,18 @@ Una colección de consejos para ayudarte a mejorar tus conocimientos profesional
 
 1. [Utilizar un CSS Reset](#utilizar-un-css-reset)
 2. [Heredar `box-sizing`](#heredar-box-sizing)
-3. [Usar `:not()` para Aplicar o Cancelar la aplicación de bordes en la navegación](#usar-not-para-aplicar-o-cancelar-la-aplicacion-de-bordes-en-la-navegación)
+3. [Usar `:not()` para Aplicar o Cancelar la aplicación de bordes en la navegación](#usar-not-para-aplicar-o-cancelar-la-aplicación-de-bordes-en-la-navegación)
 4. [Añadir `line-height` al `body`](#añadir-line-height-al-body)
 5. [Centrar cualquier cosa verticalmente](#centrar-cualquier-cosa-verticalmente)
 6. [Listas separadas por comas](#listas-separadas-por-comas)
 7. [Seleccionar elementos usando `nth-child` negativo](#seleccionar-elementos-usando-nth-child-negativo)
-8. [Utilizar SVG para los íconos](#utilizar-svg-para-los-iconos)
+8. [Utilizar SVG para los íconos](#utilizar-svg-para-los-íconos)
 9. [Utilizar la herramienta de selección "Búho lobotomizado"](#utilizar-la-herramienta-de-selección-búho-lobotomizado)
 10. [Usar `max-height` para Sliders con CSS puro](#usar-max-height-para-sliders-con-css-puro)
 11. [Celdas de tabla de igual ancho](#celdas-de-tabla-de-igual-ancho)
 12. [Deshacerse de hacks para los márgenes en Flexbox](#deshacerse-de-hacks-para-los-márgenes-en-flexbox)
 13. [Utilizar atributos como selectores en enlaces vacíos](#utilizar-atributos-como-selectores-en-enlaces-vacíos)
-14. [Estilizar enlaces por defecto](#estilos-enlaces-por-defecto)
+14. [Estilizar enlaces por defecto](#estilizar-enlaces-por-defecto)
 15. [Ritmo vertical consistente](#ritmo-vertical-consistente)
 16. [Cajas con proporciones intrínsecas](#cajas-con-proporciones-intrínsecas)
 17. [Estilizar enlaces rotos a imágenes](#estilizar-enlaces-rotos-a-imágenes)
@@ -145,10 +145,10 @@ html, body {
 
 body {
   -webkit-align-items: center;
-  -ms-Flex-align: center;
-  alinear-elementos: center;
+  -ms-flex-align: center;
+  align-items: center;
   display: -webkit-flex;
-  display: flexionar;
+  display: flex;
 }
 ```
 
@@ -209,7 +209,7 @@ Bueno, éso ha sido bastante fácil.
 <sup>[volver al índice de contenidos](#tabla-de-contenido)</sup>
 
 
-### Utilizar SVG para los iconos
+### Utilizar SVG para los íconos
 
 No hay ninguna razón para no usar SVG para los íconos:
 
