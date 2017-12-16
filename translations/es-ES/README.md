@@ -2,11 +2,11 @@
   <img src="https://rawgit.com/AllThingsSmitty/css-protips/master/media/logo.svg" alt="light bulb icon">
 </p>
 
-# Consejos Profesionales para CSS[![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome)
+# Consejos Profesionales para CSS [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome)
 
 Una colección de consejos para ayudarte a mejorar tus conocimientos profesionales de CSS.
 
-> Para otras grandes listas echa un vistazo a [@sindresorhus](https://github.com/sindresorhus/)'s lista curada de [listas impresionantes](https://github.com/sindresorhus/awesome/).
+> Para ver otras listas geniales, echa un vistazo a la lista curada por [@sindresorhus](https://github.com/sindresorhus/) de [listas Awesome](https://github.com/sindresorhus/awesome/).
 
 
 ## Tabla de contenido
