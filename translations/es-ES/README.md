@@ -2,11 +2,11 @@
   <img src="https://rawgit.com/AllThingsSmitty/css-protips/master/media/logo.svg" alt="light bulb icon">
 </p>
 
-# Consejos Profesionales para CSS[![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome)
+# Consejos Profesionales para CSS [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome)
 
 Una colección de consejos para ayudarte a mejorar tus conocimientos profesionales de CSS.
 
-> Para otras grandes listas echa un vistazo a [@sindresorhus](https://github.com/sindresorhus/)'s lista curada de [listas impresionantes](https://github.com/sindresorhus/awesome/).
+> Para ver otras listas geniales, echa un vistazo a la lista curada por [@sindresorhus](https://github.com/sindresorhus/) de [listas Awesome](https://github.com/sindresorhus/awesome/).
 
 
 ## Tabla de contenido
@@ -20,21 +20,21 @@ Una colección de consejos para ayudarte a mejorar tus conocimientos profesional
 
 1. [Utilizar un CSS Reset](#utilizar-un-css-reset)
 2. [Heredar `box-sizing`](#heredar-box-sizing)
-3. [Usar `:not()` para Aplicar / Cancelar la aplicación de bordes en la navegación](#usar-not-para-aplicar-cancelar-la-aplicacion-de-bordes-en-la-navegación)
+3. [Usar `:not()` para Aplicar o Cancelar la aplicación de bordes en la navegación](#usar-not-para-aplicar-o-cancelar-la-aplicación-de-bordes-en-la-navegación)
 4. [Añadir `line-height` al `body`](#añadir-line-height-al-body)
 5. [Centrar cualquier cosa verticalmente](#centrar-cualquier-cosa-verticalmente)
 6. [Listas separadas por comas](#listas-separadas-por-comas)
 7. [Seleccionar elementos usando `nth-child` negativo](#seleccionar-elementos-usando-nth-child-negativo)
-8. [Utilizar SVG para los íconos](#utilizar-svg-para-los-iconos)
-9. [Utilizar la herramienta de selección "Búho lobotomizado"](#utilizar-la-herramienta-de-selección-buho-lobotomizado)
+8. [Utilizar SVG para los íconos](#utilizar-svg-para-los-íconos)
+9. [Utilizar la herramienta de selección "Búho lobotomizado"](#utilizar-la-herramienta-de-selección-búho-lobotomizado)
 10. [Usar `max-height` para Sliders con CSS puro](#usar-max-height-para-sliders-con-css-puro)
 11. [Celdas de tabla de igual ancho](#celdas-de-tabla-de-igual-ancho)
-12. [Deshacerse de hacks para los márgenes en Flexbox](#deshacerse-de-hacks-para-los-margenes-en-flexbox)
-13. [Utilizar atributos como selectores en enlaces vacíos](#utilizar-atributos-como-selectores-en-enlaces-vacios)
-14. [Estilizar enlaces "por defecto"](#estilos-enlaces-por-defecto)
+12. [Deshacerse de hacks para los márgenes en Flexbox](#deshacerse-de-hacks-para-los-márgenes-en-flexbox)
+13. [Utilizar atributos como selectores en enlaces vacíos](#utilizar-atributos-como-selectores-en-enlaces-vacíos)
+14. [Estilizar enlaces por defecto](#estilizar-enlaces-por-defecto)
 15. [Ritmo vertical consistente](#ritmo-vertical-consistente)
-16. [Cajas con proporciones intrínsecas](#cajas-con-proporciones-intrinsecas)
-17. [Estilizar enlaces rotos a imágenes](#estilizar-enlaces-rotos-a-imagenes)
+16. [Cajas con proporciones intrínsecas](#cajas-con-proporciones-intrínsecas)
+17. [Estilizar enlaces rotos a imágenes](#estilizar-enlaces-rotos-a-imágenes)
 18. [Usar `rem` para tamaños globales; Usar `em` para tamaños locales](#usar-rem-para-tamaños-globales-usar-em-para-tamaños-locales)
 19. [Esconder videos con reproducción automática que no estén silenciados](#esconder-videos-con-reproducción-automática-que-no-estén-silenciados)
 20. [Utilizar `:root` para una tipografía flexible](#utilizar-root-para-una-tipografía-flexible)
@@ -81,7 +81,7 @@ Esto hace que sea más fácil cambiar `box-sizing` en plugins u otros componente
 <sup>[volver al índice de contenidos](#tabla-de-contenido)</sup>
 
 
-### Usar `:not()` para Aplicar / Cancelar la aplicación de bordes en la navegación
+### Usar `:not()` para Aplicar o Cancelar la aplicación de bordes en la navegación
 
 En lugar de poner en el borde...
 
@@ -145,10 +145,10 @@ html, body {
 
 body {
   -webkit-align-items: center;
-  -ms-Flex-align: center;
-  alinear-elementos: center;
+  -ms-flex-align: center;
+  align-items: center;
   display: -webkit-flex;
-  display: flexionar;
+  display: flex;
 }
 ```
 
@@ -209,7 +209,7 @@ Bueno, éso ha sido bastante fácil.
 <sup>[volver al índice de contenidos](#tabla-de-contenido)</sup>
 
 
-### Utilizar SVG para los iconos
+### Utilizar SVG para los íconos
 
 No hay ninguna razón para no usar SVG para los íconos:
 
@@ -327,7 +327,7 @@ Eso es bastante conveniente.
 <sup>[volver al índice de contenidos](#tabla-de-contenido)</sup>
 
 
-### Estilizar enlaces "por defecto"
+### Estilizar enlaces por defecto
 
 Añadir un estilo a los enlaces "por defecto":
 
