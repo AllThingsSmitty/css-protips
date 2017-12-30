@@ -225,7 +225,7 @@ SVG échelles bien pour tous les types de résolution et est pris en charge dans
 **Remarque:** Si vous avez SVG icon-seulement des boutons pour les utilisateurs voyants et le SVG ne parvient pas à charger, cela vous aidera à maintenir l'accessibilité:
 
 ```css
-.no-svg .icon-only:after {
+.no-svg .icon-only::after {
   content: attr(aria-label);
 }
 ```
@@ -408,13 +408,13 @@ img {
 Maintenant, ajoutez les règles pseudo-éléments pour afficher un message d'utilisateur et référence URL de l'image brisée:
 
 ```css
-img:before {  
+img::before {  
   content: "We're sorry, the image below is broken :(";
   display: block;
   margin-bottom: 10px;
 }
 
-img:after {  
+img::after {  
   content: "(url: " attr(src) ")";
   display: block;
   font-size: 12px;

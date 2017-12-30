@@ -224,7 +224,7 @@ A vantagem do SVG é que o ícone fica bom em qualquer resolução, além de ter
 **Aviso:** Se você tem botões feitos apenas com ícones SVG, a dica a seguir o ajudará a manter a acessibilidade:
 
 ```css
-.no-svg .icon-only:after {
+.no-svg .icon-only::after {
   content: attr(aria-label);
 }
 ```
@@ -406,13 +406,13 @@ img {
 Agora adicione regras com _pseudo-elements_ para mostrar uma mensagem e a URL da imagem quebrada:
 
 ```css
-img:before {
+img::before {
   content: "Desculpe, a imagem abaixo não pode ser carregada :(";
   display: block;
   margin-bottom: 10px;
 }
 
-img:after {
+img::after {
   content: "(url: " attr(src) ")";
   display: block;
   font-size: 12px;

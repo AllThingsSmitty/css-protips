@@ -225,7 +225,7 @@ SVG scales well for all resolution types and is supported in all browsers [back 
 **Note:** If you have SVG icon-only buttons for sighted users and the SVG fails to load, this will help maintain accessibility:
 
 ```css
-.no-svg .icon-only:after {
+.no-svg .icon-only::after {
   content: attr(aria-label);
 }
 ```
@@ -407,13 +407,13 @@ img {
 Now add pseudo-elements rules to display a user message and URL reference of the broken image:
 
 ```css
-img:before {
+img::before {
   content: "We're sorry, the image below is broken :(";
   display: block;
   margin-bottom: 10px;
 }
 
-img:after {
+img::after {
   content: "(url: " attr(src) ")";
   display: block;
   font-size: 12px;

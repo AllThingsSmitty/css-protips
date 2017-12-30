@@ -224,7 +224,7 @@ SVG funciona bien para todos los tipos de resoluciones y es compatible con todos
 **Nota:** Si tienes botones de íconos con SVG para usuarios no videntes y el SVG falla al cargar, esto te ayudará a mantener la accesibilidad:
 
 ```css
-.no-svg .icon-only:after {
+.no-svg .icon-only::after {
   content: attr(aria-label);
 }}
 ```
@@ -406,13 +406,13 @@ img {
 Ahora añade propiedades desde los pseudo-elementos para mostrar un mensaje al usuario y una referencia de dirección URL de la imagen rota:
 
 ```css
-img:before {  
+img::before {  
   content: "We're sorry, the image below is broken :(";
   display: block;
   margin-bottom: 10px;
 }
 
-img:after {  
+img::after {  
   content: "(url: " attr(src) ")";
   display: block;
   font-size: 12px;

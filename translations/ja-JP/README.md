@@ -246,7 +246,7 @@ SVGは [IE9](http://caniuse.com/#search=svg)以降のすべてのブラウザで
 **備考:** ボタンがSVGだけで作られている場合、SVGがローディングされなかったらアクセシビリティのためこちらのコードを書いて見てください:
 
 ```css
-.no-svg .icon-only:after {
+.no-svg .icon-only::after {
   content: attr(aria-label);
 }
 ```
@@ -447,13 +447,13 @@ img {
 疑似要素を使い、ユーザーの役に立つ情報を加えることもできます。
 
 ```css
-img:before {  
+img::before {  
   content: "We're sorry, the image below is broken :(";
   display: block;
   margin-bottom: 10px;
 }
 
-img:after {  
+img::after {  
   content: "(url: " attr(src) ")";
   display: block;
   font-size: 12px;
