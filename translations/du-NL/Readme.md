@@ -509,7 +509,7 @@ textarea {
 
 <sup>[Inhoudsopgave](#inhoudsopgave)</sup>
 
-## Support
+## Ondersteuning
 
 Huidige versies van Chrome, Firefox, Safari, Opera, Edge, and IE11.
 
