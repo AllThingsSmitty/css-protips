@@ -23,22 +23,22 @@ Een verzameling tips om uw CSS skills pro.
 1. [Gebruik `:not()` to Apply/Unapply grenst aan Navigation](#gebruik-not-to-applyunapply-grenst-aan-navigatie-in)
 1. [Voeg `line-height` op `body`](#voeg-line-height-op-body)
 1. [Niets Vertically-Center](#niets-vertically-center)
-1. [Kommagescheiden lijst](#kommagescheiden-lijst)
-1. [Items selecteren met negatieve `nth-child`](#Items-selecteren-met-negatieve-nth-kind)
-1. [Gebruik SVG voor pictogrammen](#gebruik-SVG-voor-pictogrammen)
+1. [Kommagescheiden lijst](#kommagescheiden-lijsten)
+1. [Items selecteren met negatieve `nth-child`](#items-selecteren-met-negatieve-nth-child)
+1. [Gebruik SVG voor pictogrammen](#gebruik-svg-voor-pictogrammen)
 1. [Gebruiken de "Lobotomized Owl" Selector](#gebruiken-de-"Lobotomized-Owl"-Selector)
-1. [Gebruik `max-height` voor pure CSS Sliders](#Gebruik-max-hoogte-voor-pure-CSS- Sliders)
-1. [Equal-Width Tabelcellen](#Equal-Width-Tabelcellen)
-1. [Ontdoen van marge Hacks met Flexbox](#ontdoen-van-marge-Hacks-met-Flexbox)
-1. [Gebruik Attribute Selectors met lege banden](#Gebruik-Attribute-Selectors-met-lege -banden)
+1. [Gebruik `max-height` voor pure CSS Sliders](#gebruik-max-height-voor-pure-css-sliders)
+1. [Equal-Width Tabelcellen](#equal-width-tabelcellen)
+1. [Ontdoen van marge Hacks met Flexbox](#ontdoen-van-marge-hacks-met-flexbox)
+1. [Gebruik Attribute Selectors met lege banden](#gebruik-max-height-voor-pure-css-sliders)
 1. [Stijl "Default" Links](#stijl-"Default"-inks)
 1. [Consistente verticaal ritme](#consistente-verticaal-ritme)
 1. [Intrinsieke verhouding dozen](#intrinsieke-verhouding-dozen)
 1. [Stijl gebroken beelden](#stijl-gebroken-beelden)
-1. [Gebruik `rem` voor wereldwijde omvang; Gebruik `em` voor lokale Sizing](#Gebruik-rem- voor-wereldwijde-omvang;-Gebruik-em voor-lokale-Sizing)
-1. [Verberg Autoplay filmpjes die niet gedempt](#Verberg-Autoplay-filmpjes-die-niet-gedempt)
-1. [Gebruik `:root` voor een flexibele](#gebruik-wortel-voor-een-flexibele)
-1. [Set `font-size` op formulier elementen voor een betere mobiele ervaring](#set-font-size-op-formulier-elementen-voor-een betere-mobiele-ervaring)
+1. [Gebruik `rem` voor wereldwijde omvang; Gebruik `em` voor lokale Sizing](#gebruik-rem-voor-wereldwijde-omvang-gebruik-em-voor-lokale-sizing)
+1. [Verberg Autoplay filmpjes die niet gedempt](#verberg-autoplay-filmpjes-die-niet-gedempt)
+1. [Gebruik `:root` voor een flexibele](#gebruik-root-voor-flexibele-type)
+1. [Set `font-size` op formulier elementen voor een betere mobiele ervaring](#set-font-size-op-formulier-elementen-voor-een-betere-mobiele-ervaring)
 
 
 ### Gebruik een CSS Reset
@@ -231,7 +231,7 @@ SVG weegschaal is goed voor alle soorten resolutie en wordt hierbij ondersteund 
 <sup>[Inhoudsopgave](#inhoudsopgave)</sup>
 v
 
-###Gebruik de "Lobotomized Owl" Selector
+### Gebruik de "Lobotomized Owl" Selector
 
 Misschien een vreemde naam maar met behulp van de universele selector (*) met het aangrenzende broertje selector ( ) een krachtige CSS-functionaliteit:
 
