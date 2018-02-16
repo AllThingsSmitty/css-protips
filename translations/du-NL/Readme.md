@@ -13,7 +13,8 @@ Een verzameling tips om uw CSS skills pro.
 
 * [Protips](#protips)
 * [Ondersteuning](#Ondersteuning)
-* [bijdrage richtsnoeren](CONTRIBUTING.md)
+* [Bijdrage Richtsnoeren](../../CONTRIBUTING.md)
+
 
 ## Protips
 
@@ -21,23 +22,23 @@ Een verzameling tips om uw CSS skills pro.
 1. [Erven `box-sizing`](#erven-box-sizing)
 1. [Gebruik `:not()` to Apply/Unapply grenst aan Navigation](#gebruik-not-to-applyunapply-grenst-aan-navigatie-in)
 1. [Voeg `line-height` op `body`](#voeg-line-height-op-body)
-1. [Vertically-Center iets](#Vertically-Center-iets)
-1. [kommagescheiden lijst](#kommagescheiden-lijst)
-1. [Items selecteren met negatieve nth-kind](#Items-selecteren-met-negatieve-nth-kind)
-1. [gebruik SVG voor pictogrammen](#gebruik-SVG-voor-pictogrammen)
-1. [gebruiken de "Lobotomized Owl" Selector](#gebruiken-de-"Lobotomized-Owl"-Selector)
-1. [Gebruik max hoogte voor pure CSS Sliders](#Gebruik-max-hoogte-voor-pure-CSS- Sliders)
+1. [Niets Vertically-Center](#niets-vertically-center)
+1. [Kommagescheiden lijst](#kommagescheiden-lijst)
+1. [Items selecteren met negatieve `nth-child`](#Items-selecteren-met-negatieve-nth-kind)
+1. [Gebruik SVG voor pictogrammen](#gebruik-SVG-voor-pictogrammen)
+1. [Gebruiken de "Lobotomized Owl" Selector](#gebruiken-de-"Lobotomized-Owl"-Selector)
+1. [Gebruik `max-height` voor pure CSS Sliders](#Gebruik-max-hoogte-voor-pure-CSS- Sliders)
 1. [Equal-Width Tabelcellen](#Equal-Width-Tabelcellen)
-1. [ontdoen van marge Hacks met Flexbox](#ontdoen-van-marge-Hacks-met-Flexbox)
+1. [Ontdoen van marge Hacks met Flexbox](#ontdoen-van-marge-Hacks-met-Flexbox)
 1. [Gebruik Attribute Selectors met lege banden](#Gebruik-Attribute-Selectors-met-lege -banden)
-1. [stijl "Default" Links](#stijl-"Default"-inks)
-1. [consistente verticaal ritme](#consistente-verticaal-ritme)
-1. [intrinsieke verhouding dozen](#intrinsieke-verhouding-dozen)
-1. [stijl gebroken beelden](#stijl-gebroken-beelden)
-1. [Gebruik rem voor wereldwijde omvang; Gebruik em voor lokale Sizing](#Gebruik-rem- voor-wereldwijde-omvang;-Gebruik-em voor-lokale-Sizing)
+1. [Stijl "Default" Links](#stijl-"Default"-inks)
+1. [Consistente verticaal ritme](#consistente-verticaal-ritme)
+1. [Intrinsieke verhouding dozen](#intrinsieke-verhouding-dozen)
+1. [Stijl gebroken beelden](#stijl-gebroken-beelden)
+1. [Gebruik `rem` voor wereldwijde omvang; Gebruik `em` voor lokale Sizing](#Gebruik-rem- voor-wereldwijde-omvang;-Gebruik-em voor-lokale-Sizing)
 1. [Verberg Autoplay filmpjes die niet gedempt](#Verberg-Autoplay-filmpjes-die-niet-gedempt)
-1. [gebruik :wortel voor een flexibele](#gebruik-:wortel-voor-een-flexibele)
-1 [set font-size op formulier elementen voor een betere mobiele ervaring](#set-font-size-op-formulier-elementen-voor-een betere-mobiele-ervaring)
+1. [Gebruik `:root` voor een flexibele](#gebruik-wortel-voor-een-flexibele)
+1. [Set `font-size` op formulier elementen voor een betere mobiele ervaring](#set-font-size-op-formulier-elementen-voor-een betere-mobiele-ervaring)
 
 
 ### Gebruik een CSS Reset
@@ -160,7 +161,7 @@ Wilt centrum iets anders? Verticaal, horizontaal...alles, altijd en overal? CSS-
 
 ### Kommagescheiden lijsten
 
-maken lijstitems die eruit ziet als een echte, door komma's gescheiden lijst:
+Maken lijstitems die eruit ziet als een echte, door komma's gescheiden lijst:
 
 ```css
 ul > li:not(:last-child)::after {
@@ -175,7 +176,7 @@ Gebruik de `:not()` pseudo-class dus geen komma wordt toegevoegd aan het laatste
 <sup>[terug naar inhoudsopgave](#tafel-van-inhoud)</sup>
 
 
-### Items selecteren met negatieve `nth-kind`
+### Items selecteren met negatieve `nth-child`
 
 Gebruik negatieve `nth-kind` in CSS om items te kunnen selecteren van 1 tot n.
 
@@ -246,9 +247,9 @@ Voor meer informatie over de "lobotomized owl" selector, lees Heydon Pickering's
 <sup>[terug naar inhoudsopgave](#tafel-van-inhoud)</sup>
 
 
-###  Gebruik max hoogte voor pure CSS Sliders
+###  Gebruik `max-height` voor pure CSS Sliders
 
-werktuig CSS-only sliders met max hoogte met overloop verborgen:
+Werktuig CSS-only sliders met max hoogte met overloop verborgen:
 
 ```css
 .slider {
@@ -286,7 +287,7 @@ Pijn-vrij table layouts.
 
 ### Ontdoen van marge Hacks met Flexbox
 
-bij het werken met kolom dakgoten kunt ontdoen van ne-, eerste- en laatste kind hacks via flexbox's space-tussen eigendom:
+Bij het werken met kolom dakgoten kunt ontdoen van ne-, eerste- en laatste kind hacks via flexbox's space-tussen eigendom:
 
 ```css
 .list {
@@ -306,7 +307,7 @@ Nu kolom dakgoten verschijnen altijd gelijkmatig verdeelde.
 
 ###  Gebruik attribuut Selectors met lege Links
 
-links tonen wanneer de `<a>` element heeft geen tekst, maar het `href` attribuut heeft een link:
+Links tonen wanneer de `<a>` element heeft geen tekst, maar het `href` attribuut heeft een link:
 
 ```css
 a[href^="http"]:empty::before {
@@ -382,7 +383,7 @@ Met 20% voor vulling maakt de hoogte van het vak gelijk aan 20% van de breedte. 
 
 ### Stijl gebroken beelden
 
-gebroken beelden meer esthetisch aangenaam met een beetje CSS:
+Gebroken beelden meer esthetisch aangenaam met een beetje CSS:
 
 ```css
 img {
@@ -466,7 +467,7 @@ Nogmaals, we profiteren van de :niet() [`:not()`](#use-not-to-applyunapply-borde
 
 ### Gebruik `root` voor flexibele Type
 
-het type font size in een responsieve lay-out moet kunnen aanpassen met elk deelvenster. U berekent de tekengrootte op basis van het deelvenster hoogte en breedte met `root`:
+Het type font size in een responsieve lay-out moet kunnen aanpassen met elk deelvenster. U berekent de tekengrootte op basis van het deelvenster hoogte en breedte met `root`:
 
 ```css
 :root {
@@ -489,7 +490,7 @@ body {
 ### Set `font-size` op formulier elementen voor een betere mobiele ervaring
 
 
-te vermijden mobiele browsers (iOS Safari, et al.) vanaf het inzoomen op een HTML formulier elementen als een <select> vervolgkeuzelijst wordt aangetikt, `font-size` op de selectieschakelaar regel:
+Te vermijden mobiele browsers (iOS Safari, et al.) vanaf het inzoomen op een HTML formulier elementen als een <select> vervolgkeuzelijst wordt aangetikt, `font-size` op de selectieschakelaar regel:
 
 ```css
 input[type="text"],
@@ -506,6 +507,6 @@ textarea {
 
 ## Support
 
-Current versions of Chrome, Firefox, Safari, Opera, Edge, and IE11.
+Huidige versies van Chrome, Firefox, Safari, Opera, Edge, and IE11.
 
 <sup>[terug naar inhoudsopgave](#tafel-van-inhoud)</sup>
