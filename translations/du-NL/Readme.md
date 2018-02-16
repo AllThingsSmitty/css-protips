@@ -59,6 +59,8 @@ Nu elementen worden ontdaan van marges en paddings en `box-sizing` helpt u bij h
 
 ""Opmerking:"" Als u de [erven `box-sizing`](#erven-box-sizing)tip hieronder ziet u soms niet de `box-sizing` eigendom in uw CSS gereset.
 
+<sup>[Inhoudsopgave](#inhoudsopgave)</sup>
+
 
 ### Erven `box-sizing`
 
@@ -76,7 +78,7 @@ html {
 
 Dit maakt het gemakkelijker om `box-sizing` in plugins of andere onderdelen die hefboomwerking ander gedrag.
 
-<sup>[terug naar inhoudsopgave](#tafel-van-inhoud)</sup>
+<sup>[Inhoudsopgave](#inhoudsopgave)</sup>
 
 
 ### Gebruik `:not()` to Apply/Unapply grenst aan navigatie in
@@ -111,7 +113,8 @@ Zeker, kunt u `.nav li + li` of zelfs `.nav li:first-child ~ li,` maar met `:not
 
 #### [Demo](http://codepen.io/AllThingsSmitty/pen/LkymvO)
 
-<sup>[terug naar inhoudsopgave](#tafel-van-inhoud)</sup>
+<sup>[Inhoudsopgave](#inhoudsopgave)</sup>
+
 
 ### Voeg `line-height` op `body`
 
@@ -127,7 +130,7 @@ Deze manier tekstgedeelten kan overnemen van `body` lichaam.
 
 #### [Demo](http://codepen.io/AllThingsSmitty/pen/VjbdYd)
 
-<sup>[terug naar inhoudsopgave](#tafel-van-inhoud)</sup>
+<sup>[Inhoudsopgave](#inhoudsopgave)</sup>
 
 
 ### Niets Vertically-Center
@@ -156,7 +159,7 @@ Wilt centrum iets anders? Verticaal, horizontaal...alles, altijd en overal? CSS-
 
 #### [Demo](http://codepen.io/AllThingsSmitty/pen/GqmGqZ)
 
-<sup>[terug naar inhoudsopgave](#tafel-van-inhoud)</sup>
+<sup>[Inhoudsopgave](#inhoudsopgave)</sup>
 
 
 ### Kommagescheiden lijsten
@@ -173,7 +176,7 @@ Gebruik de `:not()` pseudo-class dus geen komma wordt toegevoegd aan het laatste
 
 **Opmerking**: Deze tip is misschien niet ideaal voor toegankelijkheid, specifiek screenreaders. En kopiëren/plakken vanuit de browser werkt niet met CSS gegenereerd content. Ga voorzichtig te werk.
 
-<sup>[terug naar inhoudsopgave](#tafel-van-inhoud)</sup>
+<sup>[Inhoudsopgave](#inhoudsopgave)</sup>
 
 
 ### Items selecteren met negatieve `nth-child`
@@ -203,7 +206,7 @@ Nou dat was vrij eenvoudig.
 
 #### [Demo](http://codepen.io/AllThingsSmitty/pen/WxjKZp)
 
-<sup>[terug naar inhoudsopgave](#tafel-van-inhoud)</sup>
+<sup>[Inhoudsopgave](#inhoudsopgave)</sup>
 
 
 ### Gebruik SVG voor pictogrammen
@@ -225,8 +228,8 @@ SVG weegschaal is goed voor alle soorten resolutie en wordt hierbij ondersteund 
 }
 ```
 
-<sup>[terug naar inhoudsopgave](#tafel-van-inhoud)</sup>
-
+<sup>[Inhoudsopgave](#inhoudsopgave)</sup>
+v
 
 ###Gebruik de "Lobotomized Owl" Selector
 
@@ -244,7 +247,7 @@ Voor meer informatie over de "lobotomized owl" selector, lees Heydon Pickering's
 
 #### [Demo](http://codepen.io/AllThingsSmitty/pen/grRvWq)
 
-<sup>[terug naar inhoudsopgave](#tafel-van-inhoud)</sup>
+<sup>[Inhoudsopgave](#inhoudsopgave)</sup>
 
 
 ###  Gebruik `max-height` voor pure CSS Sliders
@@ -266,7 +269,8 @@ Werktuig CSS-only sliders met max hoogte met overloop verborgen:
 
 Het element vormt de `max-height` max-hoogtewaarde op hangen en de schuifbalk geeft als gevolg van de overloop.
 
-<sup>[terug naar inhoudsopgave](#tafel-van-inhoud)</sup>
+<sup>[Inhoudsopgave](#inhoudsopgave)</sup>
+
 
 ### Equal-Width Tabelcellen
 
@@ -282,7 +286,7 @@ Pijn-vrij table layouts.
 
 #### [Demo](http://codepen.io/AllThingsSmitty/pen/jALALm)
 
-<sup>[terug naar inhoudsopgave](#tafel-van-inhoud)</sup>
+<sup>[Inhoudsopgave](#inhoudsopgave)</sup>
 
 
 ### Ontdoen van marge Hacks met Flexbox
@@ -302,7 +306,7 @@ Bij het werken met kolom dakgoten kunt ontdoen van ne-, eerste- en laatste kind 
 
 Nu kolom dakgoten verschijnen altijd gelijkmatig verdeelde.
 
-<sup>[terug naar inhoudsopgave](#tafel-van-inhoud)</sup>
+<sup>[Inhoudsopgave](#inhoudsopgave)</sup>
 
 
 ###  Gebruik attribuut Selectors met lege Links
@@ -319,7 +323,7 @@ Dat is best handig.
 
 #### [Demo](http://codepen.io/AllThingsSmitty/pen/zBzXRx)
 
-<sup>[terug naar inhoudsopgave](#tafel-van-inhoud)</sup>
+<sup>[Inhoudsopgave](#inhoudsopgave)</sup>
 
 
 #### Stijl "Default" Links
@@ -335,7 +339,7 @@ a[href]:not([class]) {
 
 Nu links die ingevoegd via een CMS `class`, dat meestal niet een klassekenmerk, zal een onderscheid zonder boodschap die de cascade.
 
-<sup>[terug naar inhoudsopgave](#tafel-van-inhoud)</sup>
+<sup>[Inhoudsopgave](#inhoudsopgave)</sup>
 
 
 ### Consistente verticaal ritme
@@ -350,7 +354,7 @@ Gebruik een universele selector (*) binnen een element om een consistent vertica
 
 Consistente verticaal ritme geeft een visuele esthetiek die content wordt veel beter leesbaar zijn.
 
-<sup>[terug naar inhoudsopgave](#tafel-van-inhoud)</sup>
+<sup>[Inhoudsopgave](#inhoudsopgave)</sup>
 
 
 ### Intrinsieke verhouding dozen
@@ -378,7 +382,7 @@ Met 20% voor vulling maakt de hoogte van het vak gelijk aan 20% van de breedte. 
 
 #### [Demo](http://codepen.io/AllThingsSmitty/pen/jALZvE)
 
-<sup>[terug naar inhoudsopgave](#tafel-van-inhoud)</sup>
+<sup>[Inhoudsopgave](#inhoudsopgave)</sup>
 
 
 ### Stijl gebroken beelden
@@ -416,12 +420,11 @@ img::after {
 
 Meer informatie over styling voor dit patroon in [Ire Aderinokun](https://github.com/ireade/)'s [origineel bericht](http://bitsofco.de/styling-broken-images/).
 
+<sup>[Inhoudsopgave](#inhoudsopgave)</sup>
 
-<sup>[terug naar inhoudsopgave](#tafel-van-inhoud)</sup>
 
-
-Gebruik `rem` voor wereldwijde omvang; Gebruik `em` voor lokale Sizing
-na het instellen van de basis de lettergrootte op de hoofdpartitie (`html { font-size: 100%; }`); stel de lettergrootte voor tekstgedeelten `em`:
+### Gebruik `rem` voor wereldwijde omvang; Gebruik `em` voor lokale Sizing
+Na het instellen van de basis de lettergrootte op de hoofdpartitie (`html { font-size: 100%; }`); stel de lettergrootte voor tekstgedeelten `em`:
 
 ```css
 h2 {
@@ -447,7 +450,7 @@ aside .module {
 
 Now each module becomes compartmentalized and easier to style, more maintainable, and flexible.
 
-<sup>[terug naar inhoudsopgave](#tafel-van-inhoud)</sup>
+<sup>[Inhoudsopgave](#inhoudsopgave)</sup>
 
 
 ### Verberg Autoplay filmpjes die niet gedempt
@@ -462,7 +465,7 @@ video[autoplay]:not([muted]) {
 
 Nogmaals, we profiteren van de :niet() [`:not()`](#use-not-to-applyunapply-borders-on-navigation)pseudo-class.
 
-<sup>[terug naar inhoudsopgave](#tafel-van-inhoud)</sup>
+<sup>[Inhoudsopgave](#inhoudsopgave)</sup>
 
 
 ### Gebruik `root` voor flexibele Type
@@ -475,22 +478,23 @@ Het type font size in een responsieve lay-out moet kunnen aanpassen met elk deel
 }
 ```
 
-Nu kunt u gebruik maken van de wortel , de eenheid dat is gebaseerd op de waarde dat is berekend door :wortel 'root':
+Nu kunt u gebruik maken van de wortel , de eenheid dat is gebaseerd op de waarde dat is berekend door `:root`:
 
 ```css
 body {
   font: 1rem/1.6 sans-serif;
 }
 ```
+
 #### [Demo](http://codepen.io/AllThingsSmitty/pen/XKgOkR)
 
-<sup>[terug naar inhoudsopgave](#tafel-van-inhoud)</sup>
+<sup>[Inhoudsopgave](#inhoudsopgave)</sup>
 
 
 ### Set `font-size` op formulier elementen voor een betere mobiele ervaring
 
 
-Te vermijden mobiele browsers (iOS Safari, et al.) vanaf het inzoomen op een HTML formulier elementen als een <select> vervolgkeuzelijst wordt aangetikt, `font-size` op de selectieschakelaar regel:
+Te vermijden mobiele browsers (iOS Safari, et al.) vanaf het inzoomen op een HTML formulier elementen als een `<select>` vervolgkeuzelijst wordt aangetikt, `font-size` op de selectieschakelaar regel:
 
 ```css
 input[type="text"],
@@ -503,10 +507,10 @@ textarea {
 
 :dancer:
 
-<sup>[terug naar inhoudsopgave](#tafel-van-inhoud)</sup>
+<sup>[Inhoudsopgave](#inhoudsopgave)</sup>
 
 ## Support
 
 Huidige versies van Chrome, Firefox, Safari, Opera, Edge, and IE11.
 
-<sup>[terug naar inhoudsopgave](#tafel-van-inhoud)</sup>
+<sup>[Inhoudsopgave](#inhoudsopgave)</sup>
