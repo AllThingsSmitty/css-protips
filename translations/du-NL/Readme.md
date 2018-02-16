@@ -17,10 +17,10 @@ Een verzameling tips om uw CSS skills pro.
 
 ## Protips
 
-1. [Gebruik een CSS Reset](#Gebruik-een-CSS-Reset)
-1. [erven `box-sizing`](#erven-box-sizing)
-1. [gebruik `:not()` to Apply/Unapply grenst aan Navigation](#gebruik :niet()/Unapply grenst aan Navigation)
-1. [Add `line-height` to `body`](#add-line-height-to-body)
+1. [Gebruik een CSS Reset](#gebruik-een-css-reset)
+1. [Erven `box-sizing`](#erven-box-sizing)
+1. [Gebruik `:not()` to Apply/Unapply grenst aan Navigation](#gebruik-not-to-applyunapply-grenst-aan-navigatie-in)
+1. [Voeg `line-height` op `body`](#voeg-line-height-op-body)
 1. [Vertically-Center iets](#Vertically-Center-iets)
 1. [kommagescheiden lijst](#kommagescheiden-lijst)
 1. [Items selecteren met negatieve nth-kind](#Items-selecteren-met-negatieve-nth-kind)
@@ -168,7 +168,7 @@ ul > li:not(:last-child)::after {
 }
 ```
 
-Gebruik de ':niet()' pseudo-class dus geen komma wordt toegevoegd aan het laatste item.
+Gebruik de `:not()` pseudo-class dus geen komma wordt toegevoegd aan het laatste item.
 
 **Opmerking**: Deze tip is misschien niet ideaal voor toegankelijkheid, specifiek screenreaders. En kopiëren/plakken vanuit de browser werkt niet met CSS gegenereerd content. Ga voorzichtig te werk.
 
