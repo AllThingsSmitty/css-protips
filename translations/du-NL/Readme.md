@@ -57,7 +57,7 @@ Nu elementen worden ontdaan van marges en paddings en `box-sizing` helpt u bij h
 
 #### [Demo](http://codepen.io/AllThingsSmitty/pen/kkrkLL)
 
-""Opmerking:"" Als u de [erven `box-sizing`](#erven-box-sizing)tip hieronder ziet u soms niet de `box-sizing` eigendom in uw CSS gereset.
+**Opmerking:** Als u de [erven `box-sizing`](#erven-box-sizing)tip hieronder ziet u soms niet de `box-sizing` eigendom in uw CSS gereset.
 
 <sup>[Inhoudsopgave](#inhoudsopgave)</sup>
 
@@ -155,7 +155,7 @@ body {
 
 Wilt centrum iets anders? Verticaal, horizontaal...alles, altijd en overal? CSS-Tricks heeft een mooie write-up om op te doen[a nice write-up](https://css-tricks.com/centering-css-complete-guide/).
 
-**Opmerking**:Laat bij sommige buggy gedrag een  [buggy behavior](https://github.com/philipwalton/flexbugs#3-min-height-on-a-flex-container-wont-apply-to-its-flex-items) flexbox in IE11.
+**Opmerking**: Laat bij sommige buggy gedrag een [buggy behavior](https://github.com/philipwalton/flexbugs#3-min-height-on-a-flex-container-wont-apply-to-its-flex-items) flexbox in IE11.
 
 #### [Demo](http://codepen.io/AllThingsSmitty/pen/GqmGqZ)
 
@@ -229,7 +229,7 @@ SVG weegschaal is goed voor alle soorten resolutie en wordt hierbij ondersteund 
 ```
 
 <sup>[Inhoudsopgave](#inhoudsopgave)</sup>
-v
+
 
 ### Gebruik de "Lobotomized Owl" Selector
 
@@ -250,7 +250,7 @@ Voor meer informatie over de "lobotomized owl" selector, lees Heydon Pickering's
 <sup>[Inhoudsopgave](#inhoudsopgave)</sup>
 
 
-###  Gebruik `max-height` voor pure CSS Sliders
+### Gebruik `max-height` voor pure CSS Sliders
 
 Werktuig CSS-only sliders met max hoogte met overloop verborgen:
 
@@ -309,7 +309,7 @@ Nu kolom dakgoten verschijnen altijd gelijkmatig verdeelde.
 <sup>[Inhoudsopgave](#inhoudsopgave)</sup>
 
 
-###  Gebruik attribuut Selectors met lege Links
+### Gebruik attribuut Selectors met lege Links
 
 Links tonen wanneer de `<a>` element heeft geen tekst, maar het `href` attribuut heeft een link:
 
