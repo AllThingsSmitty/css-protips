@@ -18,7 +18,7 @@ Zbiór porad, które pomogą zdobyć umiejętności CSS.
 
 ## Wskazowki
 
-1. [Reset CSS](#użyj-resetowania-css)
+1. [Użyj resetowania CSS](#użyj-resetowania-css)
 1. [Odziedzicz `box-sizing`](#odziedzicz-box-sizing)
 1. [Użyj `:not()` aby zastosować / anulować ograniczenia w nawigacji](#use-not-to-applyunapply-borders-on-navigation)
 1. [Dodaj `line-height` do `body`](#dodaj-wysokość-linii-do-treści)
@@ -38,7 +38,7 @@ Zbiór porad, które pomogą zdobyć umiejętności CSS.
 1. [Użyj `rem` for Global Sizing; Użyj `em` for Local Sizing](#użyj-rem-dla-global-sizing-użyj-em-dla-local-sizing)
 1. [Ukryj filmy z autoodtwarzaniem, które nie są wyciszone](#ukryj-filmy-z-autoodtwarzaniem-które-nie-są-wyciszone)
 1. [Użyj `:root` for Flexible Type](#użyj-root-tryp-elastyczny)
-1. [Ustaw `font-size` w elementach formularza, aby uzyskać lepsze wrażenia z urządzenia mobilnego](#Ustaw-font-size-w-elementach-formularza-aby-uzyskać-lepsze-wrażenia-z-urządzenia-mobilnego)
+1. [Ustaw `font-size` w elementach formularza, aby uzyskać lepsze wrażenia z urządzenia mobilnego](#ustaw-font-size-w-elementach-formularza-aby-uzyskać-lepsze-wrażenia-z-urządzenia-mobilnego)
 
 
 ### Użyj resetowania CSS
