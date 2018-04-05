@@ -13,32 +13,32 @@ Zbiór porad, które pomogą zdobyć umiejętności CSS.
 
 * [Wskazowki](#Wskazowki)
 * [Wsparcie](#Wsparcie)
-* [Wskazówki dotyczące wkładu](CONTRIBUTING.md)
+* [Wskazówki dotyczące wkładu](../../CONTRIBUTING.md)
 
 
 ## Wskazowki
 
-1. [Reset CSS](#Użyj-resetowania-CSS)
-1. [Odziedzicz `box-sizing`](#Odziedzicz-box-sizing)
-1. [Użyj `:not()` aby zastosować / anulować ograniczenia w nawigacji](#Użyj-not-to-aby-zastosować / anulować-ograniczenia-w-nawigacji)
-1. [Dodaj `line-height` do `body`](#Dodaj-line-height-do-body)
-1. [Przesuń cokoliweg pionowo](#Przesuń-cokoliweg-pionowo)
-1. [Listy rozdziele przecinkami](#Listy-rozdziele-przecinkami)
-1. [Wybierz przedmioty za pomocą negatywnego `nth-child`](#Wybierz-przedmioty-za-pomocą-negatywnego-nth-child)
-1. [Użyj SVG dla ikon ](#Użyj-SVG-dla-ikon)
-1. [Użyj selektora "Lobotomized Owl"](#Użyj-selektora-Lobotomized-Owl)
-1. [Użyj `max-height` dla suwaków Pure CSS](#Użyj-max-height-dla-suwaków-Pure-CSS)
-1. [Równoważne komórki tabeli](#Równoważne-komórki-tabeli)
-1. [Pozbądź się margin za pomocą Flexbox](#Pozbądź-się-margin-za-pomocą-Flexbox)
-1. [Użyj selektorów atrybutów z pustymi linkami](#Użyj-selektorów-atrybutów-z-pustymi-linkami)
-1. [Linki w stylu "Default" ](#Linki-w-stylu-"Default")
-1. [Spójny pionowy rytm](#Spójny-pionowy-rytm)
-1. [Indywidualne pola wyników](#Indywidualne-pola-wyników)
-1. [Wystylizuj Uszkodzone Obrazy](#Wystylizuj-Uszkodzone-Obrazy)
-1. [Użyj `rem` for Global Sizing; Użyj `em` for Local Sizing](#Użyj-rem-for-Global-Sizing-Użyj-em-for-Local-Sizing)
-1. [Ukryj filmy z autoodtwarzaniem, które nie są wyciszone](#Ukryj-filmy-z-autoodtwarzaniem-które-nie-są-wyciszone)
-1. [Użyj `:root` for Flexible Type](#Użyj-root-for-flexible-type)
-1. [Ustaw `font-size` w elementach formularza, aby uzyskać lepsze wrażenia z urządzenia mobilnego](#Ustaw-rozmiar-czcionki-w-elementach-formularza-aby-uzyskać-lepsze-wrażenia-z-urządzenia-mobilnego)
+1. [Reset CSS](#użyj-resetowania-css)
+1. [Odziedzicz `box-sizing`](#odziedzicz-box-sizing)
+1. [Użyj `:not()` aby zastosować / anulować ograniczenia w nawigacji](#use-not-to-applyunapply-borders-on-navigation)
+1. [Dodaj `line-height` do `body`](#dodaj-wysokość-linii-do-treści)
+1. [Przesuń cokoliweg pionowo](#przesuwanie-w-pionie)
+1. [Listy rozdziele przecinkami](#listy-podzielone-przecinkami)
+1. [Wybierz przedmioty za pomocą negatywnego `nth-child`](#wybierz-przedmioty-za-pomocą-nth-child)
+1. [Użyj SVG dla ikon ](#użyj-svg-dla-ikon)
+1. [Użyj selektora "Lobotomized Owl"](#użyj-selektora-lobotomized-owl)
+1. [Użyj `max-height` dla suwaków Pure CSS](#użyjmax-height-dla-suwaków-pure-csss)
+1. [Równoważne komórki tabeli](#równoważne-komórki-tabeli)
+1. [Pozbądź się margin za pomocą Flexbox](#pozbądź-się-marginesów-za-pomocą-flexbox)
+1. [Użyj selektorów atrybutów z pustymi linkami](#użyj-selektorów-atrybutów-z-pustymi-linkami)
+1. [Linki w stylu "Default" ](#stylizuj-domyślne-linki)
+1. [Spójny pionowy rytm](#spójny-pionowy-rytm)
+1. [Indywidualne pola wyników](#indywidualne-pola-wyników)
+1. [Wystylizuj Uszkodzone Obrazy](#wystylizuj-uszkodzone-obrazy)
+1. [Użyj `rem` for Global Sizing; Użyj `em` for Local Sizing](#użyj-rem-dla-global-sizing-użyj-em-dla-local-sizing)
+1. [Ukryj filmy z autoodtwarzaniem, które nie są wyciszone](#ukryj-filmy-z-autoodtwarzaniem-które-nie-są-wyciszone)
+1. [Użyj `:root` for Flexible Type](#użyj-root-tryp-elastyczny)
+1. [Ustaw `font-size` w elementach formularza, aby uzyskać lepsze wrażenia z urządzenia mobilnego](#Ustaw-font-size-w-elementach-formularza-aby-uzyskać-lepsze-wrażenia-z-urządzenia-mobilnego)
 
 
 ### Użyj resetowania CSS
@@ -497,7 +497,7 @@ body {
 <sup>[Powrót do spisu treści](#Powrót-do-spisu-treści)</sup>
 
 
-### Set `font-size` on Form Elements for a Better Mobile Experience
+### Ustaw `font-size` w elementach formularza, aby uzyskać lepsze wrażenia z urządzenia mobilnego
 
 Aby uniknąć korzystania z przeglądarek komurkowych  (iOS Safari, _et al_.) podczas powiększania elementów formularzy HTML po dotknięciu menu rozwijanego  `<select>` dnależy dodać  `font-size` do reguły selektora:
 
