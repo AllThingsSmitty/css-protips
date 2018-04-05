@@ -20,18 +20,18 @@ Een verzameling tips om uw CSS skills pro.
 
 1. [Gebruik een CSS Reset](#gebruik-een-css-reset)
 1. [Erven `box-sizing`](#erven-box-sizing)
-1. [Gebruik `:not()` to Apply/Unapply grenst aan Navigation](#gebruik-not-to-applyunapply-grenst-aan-navigatie-in)
+1. [Gebruik `:not()` to Apply/Unapply Grenst aan Navigation](#gebruik-not-to-applyunapply-grenst-aan-navigatie-in)
 1. [Voeg `line-height` op `body`](#voeg-line-height-op-body)
 1. [Niets Vertically-Center](#niets-vertically-center)
-1. [Kommagescheiden lijst](#kommagescheiden-lijsten)
-1. [Items selecteren met negatieve `nth-child`](#items-selecteren-met-negatieve-nth-child)
-1. [Gebruik SVG voor pictogrammen](#gebruik-svg-voor-pictogrammen)
+1. [Kommagescheiden Lijst](#kommagescheiden-lijsten)
+1. [Items Selecteren met Negatieve `nth-child`](#items-selecteren-met-negatieve-nth-child)
+1. [Gebruik SVG voor Pictogrammen](#gebruik-svg-voor-pictogrammen)
 1. [Gebruiken de "Lobotomized Owl" Selector](#gebruiken-de-"Lobotomized-Owl"-Selector)
-1. [Gebruik `max-height` voor pure CSS Sliders](#gebruik-max-height-voor-pure-css-sliders)
+1. [Gebruik `max-height` voor Pure CSS Sliders](#gebruik-max-height-voor-pure-css-sliders)
 1. [Equal-Width Tabelcellen](#equal-width-tabelcellen)
 1. [Ontdoen van marge Hacks met Flexbox](#ontdoen-van-marge-hacks-met-flexbox)
 1. [Gebruik Attribute Selectors met lege banden](#gebruik-max-height-voor-pure-css-sliders)
-1. [Stijl "Default" Links](#stijl-"Default"-inks)
+1. [Stijl "Default" Links](#stijl-default-inks)
 1. [Consistente verticaal ritme](#consistente-verticaal-ritme)
 1. [Intrinsieke verhouding dozen](#intrinsieke-verhouding-dozen)
 1. [Stijl gebroken beelden](#stijl-gebroken-beelden)
@@ -81,7 +81,7 @@ Dit maakt het gemakkelijker om `box-sizing` in plugins of andere onderdelen die 
 <sup>[Inhoudsopgave](#inhoudsopgave)</sup>
 
 
-### Gebruik `:not()` to Apply/Unapply grenst aan navigatie in
+### Gebruik `:not()` to Apply/Unapply Grenst aan Navigatie in
 
 plaats van over de grens...
 
@@ -162,7 +162,7 @@ Wilt centrum iets anders? Verticaal, horizontaal...alles, altijd en overal? CSS-
 <sup>[Inhoudsopgave](#inhoudsopgave)</sup>
 
 
-### Kommagescheiden lijsten
+### Kommagescheiden Lijsten
 
 Maken lijstitems die eruit ziet als een echte, door komma's gescheiden lijst:
 
@@ -179,7 +179,7 @@ Gebruik de `:not()` pseudo-class dus geen komma wordt toegevoegd aan het laatste
 <sup>[Inhoudsopgave](#inhoudsopgave)</sup>
 
 
-### Items selecteren met negatieve `nth-child`
+### Items Selecteren met Negatieve `nth-child`
 
 Gebruik negatieve `nth-kind` in CSS om items te kunnen selecteren van 1 tot n.
 
@@ -209,7 +209,7 @@ Nou dat was vrij eenvoudig.
 <sup>[Inhoudsopgave](#inhoudsopgave)</sup>
 
 
-### Gebruik SVG voor pictogrammen
+### Gebruik SVG voor Pictogrammen
 Er is geen enkele reden om geen gebruik te maken van SVG voor pictogrammen:
 
 ```css
