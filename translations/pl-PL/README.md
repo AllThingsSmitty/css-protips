@@ -6,7 +6,7 @@
 
 Zbiór porad, które pomogą zdobyć umiejętności CSS.
 
-> W potrzebue innych wspaniałych list sprawdź zobacz [@sindresorhus](https://github.com/sindresorhus/)'s curated list of [awesome lists](https://github.com/sindresorhus/awesome/).
+> W potrzebue innych wspaniałych list sprawdź zobacz [@sindresorhus](https://github.com/sindresorhus/)'s lista [zaufanych list](https://github.com/sindresorhus/awesome/).
 
 
 ## Powrót do spisu treści
@@ -121,8 +121,8 @@ Można też użyć `.nav li + li` lub nawet  `.nav li:first-child ~ li`, ale z `
 Nie musisz dodawać  `wysokości linii` do każdego  `<p>`, `<h*>`, _et al_. osobno. Zamiast tego dodaj go do `treści`:
 
 ```css
-treści {
-wysokości linii: 1.5;
+body {
+  line-height: 1.5;
 }
 ```
 
@@ -510,7 +510,7 @@ textarea {
 }
 ```
 
-:tancerz:
+:dancer:
 
 <sup>[Powrót do spisu treści](#Powrót-do-spisu-treści)</sup>
 
