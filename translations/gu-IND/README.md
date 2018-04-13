@@ -13,8 +13,7 @@
 અરજી / અનપ્પેલી કરવા માટે
 * [પ્રોપ્સ](#પ્રોપ્સ)
 * [આધાર](#આધાર)
-* [ભાષાંતરો](#ભાષાંતરો)
-* [ફાળો માર્ગદર્શિકા](CONTRIBUTING.md)
+* [ફાળો માર્ગદર્શિકા](../../CONTRIBUTING.md)
 
 
 ## પ્રોપ્સ
@@ -515,19 +514,5 @@ textarea {
 ## આધાર
 
 વર્તમાન આવૃત્તિઓ of Chrome, Firefox, Safari, Opera, Edge, અને IE11.
-
-<sup>[સામગ્રીઓના કોષ્ટકમાં પાછ](#કોષ્ટક-સામગ્રીઓ)</sup>
-
-
-## ભાષાંતરો
-
-* [Español](https://github.com/AllThingsSmitty/css-protips/tree/master/translations/es-ES)
-* [Français](https://github.com/AllThingsSmitty/css-protips/tree/master/translations/fr-FR)
-* [Italiano](https://github.com/AllThingsSmitty/css-protips/tree/master/translations/it-IT)
-* [日本語](https://github.com/AllThingsSmitty/css-protips/tree/master/translations/ja-JP)
-* [Polskie](https://github.com/AllThingsSmitty/css-protips/tree/master/translations/pl-PL)
-* [Português do Brasil](https://github.com/AllThingsSmitty/css-protips/tree/master/translations/pt-BR)
-* [Русский](https://github.com/AllThingsSmitty/css-protips/tree/master/translations/ru-RU)
-* [简体中文](https://github.com/AllThingsSmitty/css-protips/tree/master/translations/zh-CN)
 
 <sup>[સામગ્રીઓના કોષ્ટકમાં પાછ](#કોષ્ટક-સામગ્રીઓ)</sup>
