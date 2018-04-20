@@ -1,4 +1,4 @@
-<p align="center">
+﻿<p align="center">
   <img src="https://rawgit.com/AllThingsSmitty/css-protips/master/media/logo.svg" width="200" alt="light bulb icon">
 </p>
 
@@ -400,8 +400,7 @@ img {
   text-align: center;
   width: 100%;
 }
-```
-
+``` 
 Voeg nu pseudo-elementen regels om een gebruiker bericht en URL referentie van het gebroken beeld:
 
 ```css
