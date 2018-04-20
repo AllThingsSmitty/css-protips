@@ -1,515 +1,535 @@
 ﻿<p align="center">
-  <img src="https://rawgit.com/AllThingsSmitty/css-protips/master/media/logo.svg" width="200" alt="light bulb icon">
+<img src="https://rawgit.com/AllThingsSmitty/css-protips/master/media/logo.svg" width="200" alt="lampensymbol">
 </p>
 
-# CSS Protips [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome)
-
-Een verzameling tips om uw CSS skills pro.
-
->Voor andere grote lijsten check out  [@sindresorhus](https://github.com/sindresorhus/)'s curated list of [awesome lists](https://github.com/sindresorhus/awesome/).
+# CSS PRO Tips [! [Super] (https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome)
 
 
-## Inhoudsopgave
+Eine Sammlung von Tipps, mit denen Your CSS-Kenntnisse verbessern können.
 
-* [Protips](#protips)
-* [Ondersteuning](#Ondersteuning)
-* [Bijdrage Richtsnoeren](../../CONTRIBUTING.md)
+> Für andere tolle prüfen Hören Sie heraus [@] (sindresorhus Https://github.com/sindresorhus/)'s kuratiert Liste der Listen [Super] (https://github.com/sindresorhus/awesome/).
 
 
-## Protips
+## Inhaltsverzeichnis
 
-1. [Gebruik een CSS Reset](#gebruik-een-css-reset)
-1. [Erven `box-sizing`](#erven-box-sizing)
-1. [Gebruik `:not()` to Apply/Unapply Grenst aan Navigation](#gebruik-not-to-applyunapply-grenst-aan-navigatie-in)
-1. [Voeg `line-height` op `body`](#voeg-line-height-op-body)
-1. [Niets Vertically-Center](#niets-vertically-center)
-1. [Kommagescheiden Lijst](#kommagescheiden-lijsten)
-1. [Items Selecteren met Negatieve `nth-child`](#items-selecteren-met-negatieve-nth-child)
-1. [Gebruik SVG voor Pictogrammen](#gebruik-svg-voor-pictogrammen)
-1. [Gebruiken de "Lobotomized Owl" Selector](#gebruiken-de-"Lobotomized-Owl"-Selector)
-1. [Gebruik `max-height` voor Pure CSS Sliders](#gebruik-max-height-voor-pure-css-sliders)
-1. [Equal-Width Tabelcellen](#equal-width-tabelcellen)
-1. [Ontdoen van marge Hacks met Flexbox](#ontdoen-van-marge-hacks-met-flexbox)
-1. [Gebruik Attribute Selectors met lege banden](#gebruik-max-height-voor-pure-css-sliders)
-1. [Stijl "Default" Links](#stijl-default-inks)
-1. [Consistente verticaal ritme](#consistente-verticaal-ritme)
-1. [Intrinsieke verhouding dozen](#intrinsieke-verhouding-dozen)
-1. [Stijl gebroken beelden](#stijl-gebroken-beelden)
-1. [Gebruik `rem` voor wereldwijde omvang; Gebruik `em` voor lokale Sizing](#gebruik-rem-voor-wereldwijde-omvang-gebruik-em-voor-lokale-sizing)
-1. [Verberg Autoplay filmpjes die niet gedempt](#verberg-autoplay-filmpjes-die-niet-gedempt)
-1. [Gebruik `:root` voor een flexibele](#gebruik-root-voor-flexibele-type)
-1. [Set `font-size` op formulier elementen voor een betere mobiele ervaring](#set-font-size-op-formulier-elementen-voor-een-betere-mobiele-ervaring)
+* [Pro Tips] (#Pro Tips)
+* [Support] (#Support)
+* [Übersetzungen] (#Übersetzungen)
+* [Beitrag Leitlinien] (beitragen. md)
 
 
-### Gebruik een CSS Reset
+## Pro Tips
 
-CSS resets gebruiksbeleid stijl consistentie tussen verschillende browsers met een schone lei voor styling elementen. U kunt een CSS reset bibliotheek zoals normaliseert, et al., of u kunt een eenvoudigere reset aanpak:
+1. [Verwenden Sie einen CSS-Reset] (#use-a-css-Reset)
+1. [Erben' Box-sizing"] (#Erben-box-Sizing)
+1. [Benutzen': nicht bewerben () '/Entfernen Sie sterben Rahmen für sterben Navigation] (# verwenden-nicht-anwenden-anwenden-Grenzen-bei-Navigation)
+1. [Füge 'line-height' zu 'Körper' hinzu] (#hinzufügen - Linie-Höhe-zu-Karosserie)
+1. [Vertikal-Center Etwas] (#vertikal-Zentrum-etwas)
+1. [Kommagetrennte Listen] (#comma-separated-Listen)
+1. [Wählen Sie Elemente mit negativen "nth-child'] (#wählen - Einzelteile - Verwendung - negative - n-Kind)
+1. [ SVG für Icons] (#verwenden - SVG-Icons)
+1. [Verwenden Sie die "Lobotomisiert Eule "Selector] (#verwenden - Der-Lobotomisiert - Owl-Selector)
+1. [Verwenden Sie die 'Max-height' für reine CSS-Regler] (#-max-height-für-rein-css-Schieberegler)
+1. [Equal-Width Tabellenzellen] (#Höhe - Breite - Tabelle-Zellen)
+1. [Loswerden Marge Hacks mit Flexbox] (#get-rid-of-margin-Hacks-mit-Flexbox)
+1. [Verwenden Sie die Attribut Selektoren mit leeren Links] (#-Attribut-Selektoren-mit-leer-links)
+1. [Style "Default"-Links] (#Style-default-links)
+1. [Konsistente vertikale Rhythmus] (#konsequent - Vertikal - Rhythmus)
+1. [Inneren Verhältnis Boxen] (#Intrinsic-Ratio-Boxen)
+1. [Style gebrochen Bilder] (#Style - gebrochen - Bilder)
+1. [Verwenden Sie 'rem' für globale Größe; verwenden Sie 'em' für Lokale Sizing] (#verwenden - Rem-für-global-sizing-verwenden-em-für-local-Sizing)
+1. [Ausblenden Automatische Wiedergabe von Videos, die nicht stummgeschaltet sind.] (#verstecken - autoplay - Videos -, dass arent Stummgeschalteten)
+1. [Verwendung": root' für Flexible Type] (#use-root-für-flexible-Typ)
+1. [Set 'font-size' auf dem Formular Elemente für eine bessere mobile Erfahrung] (#set-font-size-auf-form-Elemente-für-ein-besser-mobile-Erfahrung)
 
-```css
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+
+### Verwenden eines CSS-Reset
+
+CSS setzt Hilfe erzwingen Stil Konsistenz über verschiedene Browser mit einem sauberen Schiefer für Stilelemente. Sie können ein CSS-reset Bibliothek wie [Normalisieren] (Http://necolas.github.io/normalize.css/),_et al_, oder Sie können eine vereinfachte reset Ansatz verwenden:
+
+'''css
+*{
+box-sizing: border-box;
+margin: 0;
+padding: 0;
 }
-```
+'''
 
-Nu elementen worden ontdaan van marges en paddings en `box-sizing` helpt u bij het beheren van lay-outs met het CSS box model.
+Jetzt Elemente wird entfernt der Seitenränder und Textabstand und 'box-sizing" können Sie Layouts mit Css Box Model zu verwalten.
 
-#### [Demo](http://codepen.io/AllThingsSmitty/pen/kkrkLL)
+#### [Demo] (http://codepen.io/AllThingsSmitty/pen/kkrkLL)
 
-**Opmerking:** Als u de [erven `box-sizing`](#erven-box-sizing)tip hieronder ziet u soms niet de `box-sizing` eigendom in uw CSS gereset.
+** Hinweis: ** Wenn Sie die [Erben" folgen - grössensortierung"] (#Erben-box-Sizing) Tipp unten entscheiden Sie sich möglicherweise nicht die "box-sizing" Eigenschaft in Ihrem CSS-Reset.
 
-<sup>[Inhoudsopgave](#inhoudsopgave)</sup>
+<sup> [Zurück zum Inhaltsverzeichnis] (#Table-of-Contents)</sup>
 
 
-### Erven `box-sizing`
+### Erben' Box-sizing '
 
-laat `box-sizing` overgeërfd worden van `html`:
+Lassen' Box-sizing" von "vererbt werden html':
 
-```css
-html {
-  box-sizing: border-box;
+'''css
+html-
+box-sizing: border-box;
 }
 
-*, *::before, *::after {
-  box-sizing: inherit;
+*,*::*:: Nach {
+box-sizing: erben;
 }
-```
+'''
 
-Dit maakt het gemakkelijker om `box-sizing` in plugins of andere onderdelen die hefboomwerking ander gedrag.
+Das macht es leichter zu ändern' Box-sizing" in Plugins oder andere Komponenten, nutzen andere Verhalten.
 
-<sup>[Inhoudsopgave](#inhoudsopgave)</sup>
+<sup> [Zurück zum Inhaltsverzeichnis] (#Table-of-Contents)</sup>
 
 
-### Gebruik `:not()` to Apply/Unapply Grenst aan Navigatie in
+### Verwenden': (Nicht) Anwenden/Unapply grenzt an Navigation
 
-plaats van over de grens...
+anstatt an der Grenze...
 
-```css
-/* add border */
-.nav li {
-  border-right: 1px solid #666;
+'''Css
+/* Grenze */
+. nav Li {
+border-right:1px Solid #666;
 }
-```
+'''
 
-...En vervolgens uit het laatste element...
+... und dann nehmen Sie das letzte Element...
 
-```css
-/* remove border */
-.nav li:last-child {
-  border-right: none;
+'''Css
+/* entfernen Sie Grenze */
+. nav Li: Letztes - Kind {
+border-right:none;
 }
-```
+'''
 
-...De `:not()` pseudo-klasse gelden alleen voor de elementen die u wilt:
+... Die": (Nicht) 'Pseudo-Klasse nur für die Elemente, die Sie anwenden möchten:
 
-```css
-.nav li:not(:last-child) {
-  border-right: 1px solid #666;
+'''css
+. nav Li: (Nicht: Letztes - Kind) {
+border-right:1px Solid #666;
 }
-```
+'''
 
-Zeker, kunt u `.nav li + li` of zelfs `.nav li:first-child ~ li,` maar met `:not()` De intentie is zeer duidelijk en de CSS selector bepaalt de grenzen aan de manier waarop een mens zou beschrijven.
+Sicher, können Sie mit der Option '. nav Li + li' oder sogar '. nav Li:first-child~li', aber mit ': (Nicht) "Die Absicht ist klar und die CSS-Selektor definiert die Grenze die Art und Weise, wie ein Mensch es beschreiben würde.
 
-#### [Demo](http://codepen.io/AllThingsSmitty/pen/LkymvO)
+#### [Demo] (http://codepen.io/AllThingsSmitty/pen/LkymvO)
 
-<sup>[Inhoudsopgave](#inhoudsopgave)</sup>
+<sup> [Zurück zum Inhaltsverzeichnis] (#Table-of-Contents)</sup>
 
 
-### Voeg `line-height` op `body`
+###Add 'line-height', 'Körper', die
 
-je niet hoeft toe te voegen `line-height` op elk `<p>`, `<h*>` et al. afzonderlijk. In plaats daarvan, toevoegen aan berichttekst `body`:
+Sie nicht hinzufügen müssen, 'line-height', '<p>','<h*>', _et al_. getrennt. Stattdessen fügen Sie sie zu 'Körper':
 
-```css
-body {
-  line-height: 1.5;
+'''css
+Body {
+line-height: 1.5;
 }
-```
+''' auf
 
-Deze manier tekstgedeelten kan overnemen van `body` lichaam.
+diese Weise textuelle Elemente erben können von 'Körper'.
 
-#### [Demo](http://codepen.io/AllThingsSmitty/pen/VjbdYd)
+#### [Demo] (http://codepen.io/AllThingsSmitty/pen/VjbdYd)
 
-<sup>[Inhoudsopgave](#inhoudsopgave)</sup>
-
-
-### Niets Vertically-Center
+<sup> [Zurück zum Inhaltsverzeichnis] (#Table-of-Contents)</sup>
 
 
-Nee, het is geen zwart magie, kunt u echt centrum elementen verticaal:
+### Vertically-Center Alles,
 
-```css
+nein, es ist keine schwarze Magie, Sie können wirklich Zentrum Elemente vertikal:
+
+'''css
 html, body {
-  height: 100%;
-  margin: 0;
+Height: 100%;
+margin: 0;
 }
 
-body {
-  -webkit-align-items: center;
-  -ms-flex-align: center;
-  align-items: center;
-  display: -webkit-flex;
-  display: flex;
+Body{
+- webkit-Ausrichten-Reihen: Zentrum;
+- ms-flex-align: center;
+Ausrichten - Produkte: center;
+Display: - webkit-Flex;
+Anzeige: Flex;
 }
-```
+'''
 
-Wilt centrum iets anders? Verticaal, horizontaal...alles, altijd en overal? CSS-Tricks heeft een mooie write-up om op te doen[a nice write-up](https://css-tricks.com/centering-css-complete-guide/).
+Wollen in die Mitte etwas anderes? Vertikal, Horizontal... alles, jederzeit, überall? CSS-Tricks hat [ein nettes Schreiben] (Https://css-tricks.com/centering-css-complete-guide/) auf all das tun.
 
-**Opmerking**: Laat bij sommige buggy gedrag een [buggy behavior](https://github.com/philipwalton/flexbugs#3-min-height-on-a-flex-container-wont-apply-to-its-flex-items) flexbox in IE11.
+** Hinweis: ** Achten Sie auf einige [buggy Verhalten] (Https://github.com/philipwalton/flexbugs#3-min-height-on-a-flex-container-wont-apply-to-its-flex-items) mit der Flex-box in IE 11.
 
-#### [Demo](http://codepen.io/AllThingsSmitty/pen/GqmGqZ)
+#### [Demo] (http://codepen.io/AllThingsSmitty/pen/GqmGqZ)
 
-<sup>[Inhoudsopgave](#inhoudsopgave)</sup>
+<sup> [Zurück zum Inhaltsverzeichnis] (#Table-of-Contents)</sup>
 
 
-### Kommagescheiden Lijsten
+### kommagetrennte Listen
 
-Maken lijstitems die eruit ziet als een echte, door komma's gescheiden lijst:
+Liste Elemente wie ein echter, Komma-getrennte Liste Aussehen:
 
-```css
-ul > li:not(:last-child)::after {
-  content: ",";
+'''Css
+Ul > li: (Nicht: Letztes - Kind):: Nach {
+content:", ";
 }
-```
+'''
 
-Gebruik de `:not()` pseudo-class dus geen komma wordt toegevoegd aan het laatste item.
+verwenden, um die': (Nicht) 'Pseudo-Klasse so kein Komma auf das letzte Element hinzugefügt wird.
 
-**Opmerking**: Deze tip is misschien niet ideaal voor toegankelijkheid, specifiek screenreaders. En kopiëren/plakken vanuit de browser werkt niet met CSS gegenereerd content. Ga voorzichtig te werk.
+**Hinweis**: Dieser Tipp ist vielleicht nicht ideal für Zugänglichkeit, speziell Screen Reader. Und copy/paste aus dem Browser nicht mit CSS-generierten Inhalten. Mit Vorsicht vorgehen.
 
-<sup>[Inhoudsopgave](#inhoudsopgave)</sup>
+<sup> [Zurück zum Inhaltsverzeichnis] (#Table-of-Contents)</sup>
 
 
-### Items Selecteren met Negatieve `nth-child`
+### wählen Sie Elemente mit negativen "nth-child '
 
-Gebruik negatieve `nth-kind` in CSS om items te kunnen selecteren van 1 tot n.
+negative' nth-child" in CSS zu wählen Sie die Elemente 1 bis n.
 
-```css
+'''Css
 li {
-  display: none;
+display:none;
 }
 
-/* select items 1 through 3 and display them */
-li:nth-child(-n+3) {
-  display: block;
+/* wählen Sie die Optionen 1 bis 3 und Anzeige*/
+li: nth-child (-n+3) {
+Display: Block;
 }
-```
+'''
 
-Of omdat u al hebt geleerd over het gebruik `:not()`, probeer dan[using `:not()`](#use-not-to-applyunapply-borders-on-navigation:
+oder, da Sie bereits gelernt haben, ein wenig über [Verwendung': (Nicht)'] (#-nicht-zu-applyunapply-Grenzen-auf-navigation), versuchen Sie:
 
-```css
-/* select all items except the first 3 and display them */
-li:not(:nth-child(-n+3)) {
-  display: none;
+'''css
+/* Alle Elemente außer den ersten 3 und angezeigt werden */
+li: (Nicht: nth-child (-n+3)) {
+display:none;
 }
-```
-Nou dat was vrij eenvoudig.
+'''
 
-#### [Demo](http://codepen.io/AllThingsSmitty/pen/WxjKZp)
+Gut, die recht einfach war.
 
-<sup>[Inhoudsopgave](#inhoudsopgave)</sup>
+#### [Demo] (http://codepen.io/AllThingsSmitty/pen/WxjKZp)
+
+<sup> [Zurück zum Inhaltsverzeichnis] (#Table-of-Contents)</sup>
 
 
-### Gebruik SVG voor Pictogrammen
-Er is geen enkele reden om geen gebruik te maken van SVG voor pictogrammen:
+### SVG für Icons verwenden,
 
-```css
-.logo {
-  background: url("logo.svg");
+es gibt keinen Grund, nicht SVG für Symbole zu verwenden:
+
+'''css
+. Logo {
+Background: url("logo.svg");
 }
-```
+'''
 
-SVG weegschaal is goed voor alle soorten resolutie en wordt hierbij ondersteund door alle browsers die terug leid naar IE9(http://caniuse.com/#search=svg). Zo sloot het .png-, .jpg- of .gif-jif-whatev bestanden.
+SVG-Skalen sowie für alle Auflösung und ist in allen Browsern [zurück zu IE 9] (Http://caniuse.com/#search=svg). unterstützt. So graben Sie Ihre .png, .jpg oder .gif - jif-whatev Dateien.
 
-**Opmerking**: Als u SVG icon-alleen knoppen voor slechtzienden gebruikers en de SVG niet wordt geladen, dit zal bijdragen tot het behoud van toegankelijkheid:
+**Hinweis**: Wenn Sie SVG-Symbol - nur Tasten für sehende Benutzer und der SVG nicht geladen wird, wird diese Hilfe Zugänglichkeit:
 
-```css
-.no-svg .icon-only::after {
-  content: attr(aria-label);
+'''css
+. Nein - svg. Symbol - nur: Nach {
+Inhalt: Attr (aria-Label);
 }
-```
+'''
 
-<sup>[Inhoudsopgave](#inhoudsopgave)</sup>
+<sup> [Zurück zum Inhaltsverzeichnis] (#Table-of-Contents)</sup>
 
 
-### Gebruik de "Lobotomized Owl" Selector
+### Die "Lobotomisiert Eule "Selector
 
-Misschien een vreemde naam maar met behulp van de universele selector (*) met het aangrenzende broertje selector ( ) een krachtige CSS-functionaliteit:
+es eine seltsame Namen haben kann, aber mit dem universellen Selektor ("*") mit den dazugehörigen gleichgeordneten Selektor ("+") kann ein leistungsfähiges CSS-Funktionen:
 
-```css
-* + * {
-  margin-top: 1.5em;
+'''css
+*+*{
+margin-top: 1.5Em;
 }
-```
+'''
 
-In dit voorbeeld worden alle elementen in de flow van het document , die hierbij andere elementen volgen en ontvangt `margin-top: 1.5em`.
+In diesem Beispiel werden alle Elemente in der Strömung der Dokument, folgen die anderen Elemente erhalten bin 'margin-top:1.5em' bieten.
 
-Voor meer informatie over de "lobotomized owl" selector, lees Heydon Pickering's post [Heydon Pickering's post](http://alistapart.com/article/axiomatic-css-and-lobotomized-owls)op een lijst *A List Apart*.
+Für weitere Informationen über die "Lobotomisiert Eule "Selector, lesen [ Heydon Pickering's Post] (Http://alistapart.com/article/axiomatic-css-and-lobotomized-owls) auf * eine Liste abgesehen*.
 
-#### [Demo](http://codepen.io/AllThingsSmitty/pen/grRvWq)
+#### [Demo] (http://codepen.io/AllThingsSmitty/pen/grRvWq)
 
-<sup>[Inhoudsopgave](#inhoudsopgave)</sup>
-
-
-### Gebruik `max-height` voor pure CSS Sliders
-
-Werktuig CSS-only sliders met max hoogte met overloop verborgen:
-
-```css
-.slider {
-  max-height: 200px;
-  overflow-y: hidden;
-  width: 300px;
-}
-
-.slider:hover {
-  max-height: 600px;
-  overflow-y: scroll;
-}
-```
-
-Het element vormt de `max-height` max-hoogtewaarde op hangen en de schuifbalk geeft als gevolg van de overloop.
-
-<sup>[Inhoudsopgave](#inhoudsopgave)</sup>
+<sup> [Zurück zum Inhaltsverzeichnis] (#Table-of-Contents)</sup>
 
 
-### Equal-Width Tabelcellen
+### Verwenden Sie 'max-height' für reine CSS-Schieberegler
 
-Tabellen kan moeizaam zijn om mee te werken, dus probeer met behulp van het `tabel-layout`: vast om cellen op gelijke breedte te stellen:
+implementieren CSS-Slider mit 'max-height' mit Überlauf versteckt:
 
-```css
-.calendar {
-  table-layout: fixed;
-}
-```
-
-Pijn-vrij table layouts.
-
-#### [Demo](http://codepen.io/AllThingsSmitty/pen/jALALm)
-
-<sup>[Inhoudsopgave](#inhoudsopgave)</sup>
-
-
-### Ontdoen van marge Hacks met Flexbox
-
-Bij het werken met kolom dakgoten kunt ontdoen van ne-, eerste- en laatste kind hacks via flexbox's space-tussen eigendom:
-
-```css
-.list {
-  display: flex;
-  justify-content: space-between;
+'''css
+. Schieberegler {
+max-height: 200px;
+overflow-y:hidden;
+width: 300px;
 }
 
-.list .person {
-  flex-basis: 23%;
+. Regler:hover {
+max-height: 600px;
+overflow-y: scroll;
 }
-```
+'''
 
-Nu kolom dakgoten verschijnen altijd gelijkmatig verdeelde.
+das Element auf die 'Max-height' Wert auf schweben und der Schieberegler zeigt als Ergebnis der Überlauf wird erweitert.
 
-<sup>[Inhoudsopgave](#inhoudsopgave)</sup>
+<sup> [Zurück zum Inhaltsverzeichnis] (#Table-of-Contents)</sup>
 
 
-### Gebruik attribuut Selectors met lege Links
+### Equal-Width Zellen der Tabelle
 
-Links tonen wanneer de `<a>` element heeft geen tekst, maar het `href` attribuut heeft een link:
+Tabellen ein Schmerz sein können, so versuchen Sie es mit 'table-layout: Fixed' Zellen bei gleicher Breite zu halten:
 
-```css
-a[href^="http"]:empty::before {
-  content: attr(href);
+'''css
+. Kalender {
+table-layout:fixed;
 }
-```
+'''
 
-Dat is best handig.
+Schmerz- tabelle Layouts.
 
-#### [Demo](http://codepen.io/AllThingsSmitty/pen/zBzXRx)
+#### [Demo] (http://codepen.io/AllThingsSmitty/pen/jALALm)
 
-<sup>[Inhoudsopgave](#inhoudsopgave)</sup>
-
-
-#### Stijl "Default" Links
-
-Voeg een stijl voor "default" links:
-
-```css
-a[href]:not([class]) {
-  color: #008000;
-  text-decoration: underline;
-}
-```
-
-Nu links die ingevoegd via een CMS `class`, dat meestal niet een klassekenmerk, zal een onderscheid zonder boodschap die de cascade.
-
-<sup>[Inhoudsopgave](#inhoudsopgave)</sup>
+<sup> [Zurück zum Inhaltsverzeichnis] (#Table-of-Contents)</sup>
 
 
-### Consistente verticaal ritme
+### Loswerden Marge Hacks mit Flexbox
 
-Gebruik een universele selector (*) binnen een element om een consistent verticaal ritme:
+beim Arbeiten mit Spalte Dachrinnen erhalten Sie loszuwerden' n-te-', '-', und 'last-child" Hacks mit Hilfe der Flex-box Tempo - zwischen "Eigentum:
 
-```css
-.intro > * {
-  margin-bottom: 1.25rem;
-}
-```
-
-Consistente verticaal ritme geeft een visuele esthetiek die content wordt veel beter leesbaar zijn.
-
-<sup>[Inhoudsopgave](#inhoudsopgave)</sup>
-
-
-### Intrinsieke verhouding dozen
-
-Een vak te maken met een intrinsieke verhouding, alles wat je hoeft te doen is van toepassing Top of Bottom padding aan een div:
-
-```css
-.container {
-  height: 0;
-  padding-bottom: 20%;
-  position: relative;
+'''css
+. Liste {
+Display: Flex;
+rechtfertigen - Inhalt: Raum - Zwischen;
 }
 
-.container div {
-  border: 2px dashed #ddd;
-  height: 100%;
-  left: 0;
-  position: absolute;
-  top: 0;
-  width: 100%;
+. Liste. Person{
+flex-Basis: 23%;
 }
-```
+'''
 
-Met 20% voor vulling maakt de hoogte van het vak gelijk aan 20% van de breedte. Ongeacht de breedte van het weergave venster kind div houdt zijn beeldverhouding (100%/20% = 5:1).
+Jetzt Spalte Dachrinnen erscheinen immer gleichmäßig verteilte.
 
-#### [Demo](http://codepen.io/AllThingsSmitty/pen/jALZvE)
-
-<sup>[Inhoudsopgave](#inhoudsopgave)</sup>
+<sup> [Zurück zum Inhaltsverzeichnis] (#Table-of-Contents)</sup>
 
 
-### Stijl gebroken beelden
+### Verwenden Sie das Attribut Selektoren mit leeren Links
 
-Gebroken beelden meer esthetisch aangenaam met een beetje CSS:
+Anzeigen links Wenn die '<a>-Element hat kein Text wert aber das 'href' Attribut hat einen Link:
 
-```css
+'''css-
+a[href^="http"]: Leer:: Vor dem {
+content: attr(href);
+}
+'''
+
+Das ist ziemlich praktisch.
+
+#### [Demo] (http://codepen.io/AllThingsSmitty/pen/zBzXRx)
+
+<sup> [Zurück zum Inhaltsverzeichnis] (#Table-of-Contents)</sup>
+
+
+### Style "Default" Links
+
+ein Stil für "default" links hinzufügen:
+
+'''css-
+a[href]: Nicht ([Klasse]){
+color:#008000;
+text-decoration: underline;
+}
+'''
+
+Jetzt links, die über ein CMS, das nicht normalerweise ein "class"-Attribut eingefügt sind, wird eine Unterscheidung ohne generisch, die die Kaskade.
+
+<sup> [Zurück zum Inhaltsverzeichnis] (#Table-of-Contents)</sup>
+
+
+### konsistente vertikale Rhythmus
+
+mit einem universellen Selektor ('*') innerhalb eines Elements eine konsistente vertikale Rhythmus zu erstellen:
+
+''' css
+. intro > * {
+margin-bottom: 1,25 rem;
+}
+'''
+
+konsistente vertikale Rhythmus bietet eine visuelle Ästhetik, die Macht Inhalt weit mehr lesbar.
+
+<sup> [Zurück zum Inhaltsverzeichnis] (#Table-of-Contents)</sup>
+
+
+### intrinsische Verhältnis Boxen
+
+eine Box mit einem inneren Verhältnis zu erstellen, müssen Sie nur die obere oder untere Polsterung um ein div gelten:
+
+'''css-
+Container {
+height:0;
+padding-bottom:20%;
+position:relative;
+}
+
+. div-Container {
+border: 2px gestrichelte #ddd;
+Height: 100%;
+Left: 0;
+Position: absolute;
+top: 0;
+width: 100%;
+}
+'''
+
+mit 20 % für die Polsterung macht die Höhe des Feldes in Höhe von 20 % der Breite. Egal, die Breite des Bildbereichs, dem Kind div wird das Seitenverhältnis (100% / 20% = 5:1) halten.
+
+#### [Demo] (http://codepen.io/AllThingsSmitty/pen/jALZvE)
+
+<sup> [Zurück zum Inhaltsverzeichnis] (#Table-of-Contents)</sup>
+
+
+### Stil gebrochen Bilder
+
+machen kaputt Bilder mehr ästhetisch ansprechend mit ein wenig CSS:
+
+'''css
 img {
-  display: block;
-  font-family: Helvetica, Arial, sans-serif;
-  font-weight: 300;
-  height: auto;
-  line-height: 2;
-  position: relative;
-  text-align: center;
-  width: 100%;
+Display: Block;
+font-family:Helvetica, Arial, sans-serif;
+font-weight:300;
+height: auto;
+line-height: 2;
+Position: relative;
+text-align: center;
+width: 100%;
 }
-``` 
-Voeg nu pseudo-elementen regels om een gebruiker bericht en URL referentie van het gebroken beeld:
+'''
 
-```css
-img::before {
-  content: "We're sorry, the image below is broken :(";
-  display: block;
-  margin-bottom: 10px;
+Jetzt pseudo-elemente Regeln hinzufügen eine Meldung für den Benutzer und URL-Referenz des gebrochenen Bild anzuzeigen:
+
+'''css
+img::Vor dem {
+content: "Es tut uns Leid, das Bild unten gebrochen ist: (";
+Display: Block;
+margin-bottom: 10px;
 }
 
-img::after {
-  content: "(url: " attr(src) ")";
-  display: block;
-  font-size: 12px;
+img:: Nach {
+content: "url: " attr (Src)")";
+Display: Block;
+font-size: 12px;
 }
-```
+'''
 
-Meer informatie over styling voor dit patroon in [Ire Aderinokun](https://github.com/ireade/)'s [origineel bericht](http://bitsofco.de/styling-broken-images/).
+erfahren Sie mehr über Styling für dieses Muster in [Ire (https://github.com/ireade/)'s Aderinokun] [Original post] (http://bitsofco.de/styling-broken-images/).
 
-<sup>[Inhoudsopgave](#inhoudsopgave)</sup>
+<sup> [Zurück zum Inhaltsverzeichnis] (#Table-of-Contents)</sup>
 
 
-### Gebruik `rem` voor wereldwijde omvang; Gebruik `em` voor lokale Sizing
-Na het instellen van de basis de lettergrootte op de hoofdpartitie (`html { font-size: 100%; }`); stel de lettergrootte voor tekstgedeelten `em`:
+### Verwenden Sie m'für Globale Größe; verwenden Sie 'em' für Lokale Dimensionierung
 
-```css
+nach Einstellung der Schriftgröße an der Wurzel ('html {font-size: 100%; }"), stellen Sie die Schriftgröße für textuelle Elemente zu 'em':
+
+'''css
 h2 {
-  font-size: 2em;
+font-size: 2em;
 }
 
 p {
-  font-size: 1em;
+font-size:1em;
 }
-```
+''',
 
-Then set the font-size for modules to `rem`:
+dann die font-size für Module zu 'rem':
 
-```css
-article {
-  font-size: 1.25rem;
+''' css-
+Artikel {
+font-size: 1,25 rem;
 }
 
-aside .module {
-  font-size: .9rem;
+beiseite. Modul {
+font-size: 9 rem;
 }
-```
+'''
 
-Now each module becomes compartmentalized and easier to style, more maintainable, and flexible.
+jetzt jedes Modul wird abgeschottet und leichter Stil, wartungsfreundlicher und flexibel.
 
-<sup>[Inhoudsopgave](#inhoudsopgave)</sup>
+<sup> [Zurück zum Inhaltsverzeichnis] (#Table-of-Contents)</sup>
 
 
-### Verberg Autoplay filmpjes die niet gedempt
+### ausblenden Automatische Wiedergabe von Videos, die nicht
 
-Is dit een geweldige truc voor een aangepaste user stylesheet. Voorkom overbelasting van een gebruiker met het geluid van een video die screen modus die afgespeeld word wanneer de pagina geladen is. Als het geluid niet gedempt wordt. Video moet niet gewezen worden (don't show video ) :
+Dies ist ein toller Trick für ein benutzerdefiniertes Stylesheet stummgeschaltet sind. Vermeiden Sie die Überlastung einer Benutzer mit Klang aus einem Video, das Vollbildmodus wiedergegeben, wenn die Seite geladen wird. Wenn der Ton nicht stumm geschaltet ist, nicht das Video:
 
-```css
-video[autoplay]:not([muted]) {
-  display: none;
+'''css
+Video [Wiedergabe]: Nicht ([Stumm]) {
+display:none;
 }
-```
+'''
 
-Nogmaals, we profiteren van de :niet() [`:not()`](#use-not-to-applyunapply-borders-on-navigation)pseudo-class.
+noch einmal, wir Vorteil der Verwendung der [': (Nicht)'] (#-nicht-zu-applyunapply-Grenzen-auf-navigation) pseudo-Klasse zeigen.
 
-<sup>[Inhoudsopgave](#inhoudsopgave)</sup>
+<sup> [Zurück zum Inhaltsverzeichnis] (#Table-of-Contents)</sup>
 
 
-### Gebruik `root` voor flexibele Type
+### Verwenden': root' für Flexible type
 
-Het type font size in een responsieve lay-out moet kunnen aanpassen met elk deelvenster. U berekent de tekengrootte op basis van het deelvenster hoogte en breedte met `root`:
+Der Typ Schriftgröße in einem reaktionsschnellen Layout sollte in der Lage sein, mit jedem Bildfenster einzustellen. Sie können die Schriftgröße auf dem Bildfenster, um Höhe und Breite Verwendung': root' berechnet werden:
 
-```css
-:root {
-  font-size: calc(1vw + 1vh + .5vmin);
+'''css
+: root {
+font-size: Calc (1 vw + 1 vh +. 5 Vmin);
 }
-```
+'''
 
-Nu kunt u gebruik maken van de wortel , de eenheid dat is gebaseerd op de waarde dat is berekend door `:root`:
+können Sie die 'root em' auf den Wert von "Berechnet benutzen: root':
 
-```css
-body {
-  font: 1rem/1.6 sans-serif;
-}
-```
-
-#### [Demo](http://codepen.io/AllThingsSmitty/pen/XKgOkR)
-
-<sup>[Inhoudsopgave](#inhoudsopgave)</sup>
+'''css
+Body{
+font:
 
 
-### Set `font-size` op formulier elementen voor een betere mobiele ervaring
 
 
-Te vermijden mobiele browsers (iOS Safari, et al.) vanaf het inzoomen op een HTML formulier elementen als een `<select>` vervolgkeuzelijst wordt aangetikt, `font-size` op de selectieschakelaar regel:
 
-```css
+
+
+
+
+
+
+
+css1 rem/1.6 sans-serif;}'''#### [Demo] (http://codepen.io/AllThingsSmitty/pen/XKgOkR)<sup> [Zurück zum Inhaltsverzeichnis] (#Table-of-Contents)</sup> ### Stellen Sie 'font-size' auf dem Formular Elemente für eine bessere mobile Erfahrung mit mobilen Browsern (iOS-Safari,_et al_.) von Zoom auf HTML-Formular elemente Wenn ein '<select>' tippen, Hinzufügen "font-size" auf den Selektor Regel vermeiden: '''
 input[type="text"],
-input[type="number"],
-select,
+Input[Type="Number"],
+Select,
 textarea {
-  font-size: 16px;
+font-size: 16px;
 }
-```
+'''
 
-:dancer:
+: Tänzer:
 
-<sup>[Inhoudsopgave](#inhoudsopgave)</sup>
+<sup> [Zurück zum Inhaltsverzeichnis] (#Table-of-Contents)</sup>
 
-## Ondersteuning
 
-Huidige versies van Chrome, Firefox, Safari, Opera, Edge, and IE11.
+## Support
 
-<sup>[Inhoudsopgave](#inhoudsopgave)</sup>
+Aktuelle Versionen von Chrome, Firefox, Safari, Opera, Edge, Und IE 11.
+
+<sup> [Zurück zum Inhaltsverzeichnis] (#Table-of-Contents)</sup>
+
+
+## Übersetzungen
+
+* [ESPAÑOL] (https://github.com/AllThingsSmitty/css-protips/tree/master/translations/es-ES)
+* [Français] (https://github.com/AllThingsSmitty/css-protips/tree/master/translations/fr-FR)
+* [ગુજરાતી] (https://github.com/AllThingsSmitty/css-protips/tree/master/translations/gu-IND)
+* [Italiano] (https://github.com/AllThingsSmitty/css-protips/tree/master/translations/it-IT)
+* [日本語] (https://github.com/AllThingsSmitty/css-protips/tree/master/translations/ja-JP)
+* [Polskie] (https://github.com/AllThingsSmitty/css-protips/tree/master/translations/pl-PL)
+* [Português do Brasil] (https://github.com/AllThingsSmitty/css-protips/tree/master/translations/pt-BR)
+* [Русский] (https://github.com/AllThingsSmitty/css-protips/tree/master/translations/ru-RU)
+* [简体中文] (https://github.com/AllThingsSmitty/css-protips/tree/master/translations/zh-CN)
+
+<sup> [Zurück zum Inhaltsverzeichnis] (#Table-of-Contents)</sup>
