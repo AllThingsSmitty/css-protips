@@ -97,7 +97,7 @@ button {
 }
 ```
 
-Puede especificar todas las propiedades de un elemento usando la taquigrafía `all`. Establecer el valor a `unset` cambia las propiedades de un elemento a sus valores iniciales.
+Puede especificar todas las propiedades de un elemento usando la taquigrafía `all`. Establecer el valor a `unset` cambia las propiedades de un elemento a sus valores iniciales:
 
 ```css
 button {

@@ -98,7 +98,7 @@ button {
 }
 ```
 
-You can specify all of an element's properties using the `all` shorthand. Setting the value to `unset` changes an element's properties to their initial values.
+You can specify all of an element's properties using the `all` shorthand. Setting the value to `unset` changes an element's properties to their initial values:
 
 ```css
 button {
