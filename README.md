@@ -21,6 +21,7 @@ A collection of tips to help take your CSS skills pro.
 
 1. [Use a CSS Reset](#use-a-css-reset)
 1. [Inherit `box-sizing`](#inherit-box-sizing)
+1. [Use `unset` Instead of Resetting All Properties](#use-unset-instead-of-resetting-all-properties)
 1. [Use `:not()` to Apply/Unapply Borders on Navigation](#use-not-to-applyunapply-borders-on-navigation)
 1. [Add `line-height` to `body`](#add-line-height-to-body)
 1. [Vertically-Center Anything](#vertically-center-anything)
@@ -78,6 +79,36 @@ html {
 ```
 
 This makes it easier to change `box-sizing` in plugins or other components that leverage other behavior.
+
+<sup>[back to table of contents](#table-of-contents)</sup>
+
+
+### Use `unset` Instead of Resetting All Properties
+
+When resetting an element's properties, it's not necessary to reset each individual property:
+
+It's not necessary to
+
+```css
+button {
+  background: none;
+  border: none;
+  color: inherit;
+  font: inherit;
+  outline: none;
+  padding: 0;
+}
+```
+
+You can specify all of an element's properties using the `all` shorthand. Setting the value to `unset` changes an element's properties to their initial values.
+
+```css
+button {
+  all: unset;
+}
+```
+
+**Note:** the `all` shorthand isn't supported in IE11 and is currently under consideration for support in Edge. `unset` isn't supported in IE11.
 
 <sup>[back to table of contents](#table-of-contents)</sup>
 
