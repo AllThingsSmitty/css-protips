@@ -521,6 +521,7 @@ Current versions of Chrome, Firefox, Safari, Opera, Edge, and IE11.
 
 ## Translations
 
+* [Deutsche](https://github.com/AllThingsSmitty/css-protips/tree/master/translations/de-DE)
 * [Español](https://github.com/AllThingsSmitty/css-protips/tree/master/translations/es-ES)
 * [Français](https://github.com/AllThingsSmitty/css-protips/tree/master/translations/fr-FR)
 * [ગુજરાતી](https://github.com/AllThingsSmitty/css-protips/tree/master/translations/gu-IND)
