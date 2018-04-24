@@ -2,26 +2,25 @@
 <img src="https://rawgit.com/AllThingsSmitty/css-protips/master/media/logo.svg" width="200" alt="lampensymbol">
 </p>
 
-# CSS PRO Tips [! [Super] (https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome)
+# CSS Pro Tips [![Super](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome)
 
 
 Eine Sammlung von Tipps, mit denen Your CSS-Kenntnisse verbessern können.
 
-> Für andere tolle prüfen Hören Sie heraus [@] (sindresorhus Https://github.com/sindresorhus/)'s kuratiert Liste der Listen [Super] (https://github.com/sindresorhus/awesome/).
+> Für andere tolle prüfen Hören Sie heraus [@sindresorhus](https://github.com/sindresorhus/)'s kuratiert Liste der Listen [Super](https://github.com/sindresorhus/awesome/).
 
 
 ## Inhaltsverzeichnis
 
-* [Pro Tips] (#Pro Tips)
-* [Support] (#Support)
-* [Übersetzungen] (#Übersetzungen)
-* [Beitrag Leitlinien] (beitragen. md)
+* [Pro Tips](#Pro Tips)
+* [Support](#Support)
+* [Beitrag Leitlinien](../../CONTRIBUTING.md)
 
 
 ## Pro Tips
 
-1. [Verwenden Sie einen CSS-Reset] (#use-a-css-Reset)
-1. [Erben' Box-sizing"] (#Erben-box-Sizing)
+1. [Verwenden Sie einen CSS-Reset](#use-a-css-Reset)
+1. [Erben' Box-sizing"](#Erben-box-Sizing)
 1. [Benutzen': nicht bewerben () '/Entfernen Sie sterben Rahmen für sterben Navigation] (# verwenden-nicht-anwenden-anwenden-Grenzen-bei-Navigation)
 1. [Füge 'line-height' zu 'Körper' hinzu] (#hinzufügen - Linie-Höhe-zu-Karosserie)
 1. [Vertikal-Center Etwas] (#vertikal-Zentrum-etwas)
@@ -47,13 +46,13 @@ Eine Sammlung von Tipps, mit denen Your CSS-Kenntnisse verbessern können.
 
 CSS setzt Hilfe erzwingen Stil Konsistenz über verschiedene Browser mit einem sauberen Schiefer für Stilelemente. Sie können ein CSS-reset Bibliothek wie [Normalisieren] (Http://necolas.github.io/normalize.css/),_et al_, oder Sie können eine vereinfachte reset Ansatz verwenden:
 
-'''css
+```css
 *{
-box-sizing: border-box;
-margin: 0;
-padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
-'''
+```
 
 Jetzt Elemente wird entfernt der Seitenränder und Textabstand und 'box-sizing" können Sie Layouts mit Css Box Model zu verwalten.
 
@@ -516,20 +515,5 @@ font-size: 16px;
 ## Support
 
 Aktuelle Versionen von Chrome, Firefox, Safari, Opera, Edge, Und IE 11.
-
-<sup> [Zurück zum Inhaltsverzeichnis] (#Table-of-Contents)</sup>
-
-
-## Übersetzungen
-
-* [ESPAÑOL] (https://github.com/AllThingsSmitty/css-protips/tree/master/translations/es-ES)
-* [Français] (https://github.com/AllThingsSmitty/css-protips/tree/master/translations/fr-FR)
-* [ગુજરાતી] (https://github.com/AllThingsSmitty/css-protips/tree/master/translations/gu-IND)
-* [Italiano] (https://github.com/AllThingsSmitty/css-protips/tree/master/translations/it-IT)
-* [日本語] (https://github.com/AllThingsSmitty/css-protips/tree/master/translations/ja-JP)
-* [Polskie] (https://github.com/AllThingsSmitty/css-protips/tree/master/translations/pl-PL)
-* [Português do Brasil] (https://github.com/AllThingsSmitty/css-protips/tree/master/translations/pt-BR)
-* [Русский] (https://github.com/AllThingsSmitty/css-protips/tree/master/translations/ru-RU)
-* [简体中文] (https://github.com/AllThingsSmitty/css-protips/tree/master/translations/zh-CN)
 
 <sup> [Zurück zum Inhaltsverzeichnis] (#Table-of-Contents)</sup>
