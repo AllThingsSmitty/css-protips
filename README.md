@@ -87,8 +87,6 @@ This makes it easier to change `box-sizing` in plugins or other components that 
 
 When resetting an element's properties, it's not necessary to reset each individual property:
 
-It's not necessary to
-
 ```css
 button {
   background: none;
