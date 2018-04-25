@@ -20,6 +20,7 @@ Zbiór porad, które pomogą zdobyć umiejętności CSS.
 
 1. [Użyj resetowania CSS](#użyj-resetowania-css)
 1. [Odziedzicz `box-sizing`](#odziedzicz-box-sizing)
+1. [Użyj `unset` zamiast resetowania wszystkich właściwości](#użyj-unset-zamiast-resetowania-wszystkich-właściwości)
 1. [Użyj `:not()` aby zastosować / anulować ograniczenia w nawigacji](#use-not-to-applyunapply-borders-on-navigation)
 1. [Dodaj `line-height` do `body`](#dodaj-wysokość-linii-do-treści)
 1. [Przesuń cokoliweg pionowo](#przesuwanie-w-pionie)
@@ -77,6 +78,34 @@ html {
 ```
 
 Ułatwia to zmianę rozmiaru skrzynek w wtyczkach lub innych komponentach, które wykorzystują inne zachowanie.
+
+<sup>[powrót do spisu treści](#powrót-do-spisu-treści)</sup>
+
+
+### Użyj `unset` zamiast resetowania wszystkich właściwości
+
+Podczas resetowania właściwości elementu nie jest konieczne resetowanie każdej pojedynczej właściwości:
+
+```css
+button {
+  background: none;
+  border: none;
+  color: inherit;
+  font: inherit;
+  outline: none;
+  padding: 0;
+}
+```
+
+Możesz określić wszystkie właściwości elementu, używając skrótu `all`. Ustawienie wartości na "unset" zmienia właściwości elementu na wartości początkowe:
+
+```css
+button {
+  all: unset;
+}
+```
+
+**Uwaga:** skrót "all" nie jest obsługiwany w IE11 i jest obecnie rozważany pod kątem obsługi w Edge. `unset` nie jest obsługiwane w IE11:
 
 <sup>[powrót do spisu treści](#powrót-do-spisu-treści)</sup>
 

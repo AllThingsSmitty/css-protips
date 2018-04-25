@@ -22,6 +22,7 @@
 
 1. [使用CSS复位](#使用css复位)
 1. [继承 `box-sizing`](#继承-box-sizing)
+1. [使用`unset`而不是重置所有屬性](#使用-unset-而不是重置所有屬性)
 1. [使用 `:not()` 选择器来决定表单是否显示边框](#使用-not-选择器来决定表单是否显示边框)
 1. [为 body 元素添加行高](#为-body-元素添加行高)
 1. [垂直居中任何元素](#垂直居中任何元素)
@@ -79,6 +80,34 @@ html {
 ```
 
 如此在插件或其它组件里改变 `box-sizing` 变得简单。
+
+<sup>[回目录](#目录)</sup>
+
+
+### 使用`unset`而不是重置所有屬性
+
+重置元素的屬性時，不需要重置每個單獨的屬性：
+
+```css
+button {
+  background: none;
+  border: none;
+  color: inherit;
+  font: inherit;
+  outline: none;
+  padding: 0;
+}
+```
+
+你可以用`all`簡寫來指定所有元素的屬性。 將該值設置為`unset`會將元素的屬性更改為其初始值：
+
+```css
+button {
+  all: unset;
+}
+```
+
+**注意：** 所有速記在IE11中不被支持，目前正在考慮Edge的支持。 IE11不支持`unset`。
 
 <sup>[回目录](#目录)</sup>
 

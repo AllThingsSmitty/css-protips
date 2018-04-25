@@ -25,6 +25,7 @@ CSSのプロのスキルになるようにアドバイスのリストを紹介�
 
 1. [CSSのリセットを使用します](#use-a-css-reset)
 1. [box-sizingをコンポーネントごとに変更](#inherit-box-sizing)
+1. [すべてのプロパティをリセットする代わりに `unset`を使う](#use-unset-instead-of-resetting-all-properties)
 1. [`:not()` を使用 / ボーダーを削除](#use-not-to-applyunapply-borders-on-navigation)
 1. [`body`に`line-height`を加える](#add-line-height-to-body)
 1. [天地の中央に配置](#vertically-center-anything)
@@ -89,6 +90,36 @@ html {
 ```
 
 これでプラグインかその他のコンポーネントに `box-sizing` を変更しやすくなります。
+
+<sup>[目次へ戻る](#table-of-contents)</sup>
+
+
+<div id="use-unset-instead-of-resetting-all-properties"></div>
+
+### すべてのプロパティをリセットする代わりに `unset`を使う
+
+要素のプロパティをリセットするときは、個々のプロパティをリセットする必要はありません。
+
+```css
+button {
+  background: none;
+  border: none;
+  color: inherit;
+  font: inherit;
+  outline: none;
+  padding: 0;
+}
+```
+
+要素のプロパティのすべてを `all`省略形で指定することができます。 値を `unset`に設定すると、要素のプロパティが初期値に変更されます：
+
+```css
+button {
+  all: unset;
+}
+```
+
+**備考:** `all`省略形はIE11ではサポートされていません。現在Edgeでのサポートが検討されています。 `unset`はIE11ではサポートされていません。
 
 <sup>[目次へ戻る](#table-of-contents)</sup>
 
