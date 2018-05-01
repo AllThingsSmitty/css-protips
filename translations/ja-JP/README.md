@@ -596,9 +596,3 @@ textarea {
 ## サポート
 
 現在のChrome, Firefox, Safari, Opera と EdgeのバージョンとIE11.
-
-<div id="references"></div>
-
-## 参考：
-
-[Coliss CSSの便利な小技・テクニックのまとめ -CSS Protips](http://coliss.com/articles/build-websites/operation/css/css-protips-v3.html)

@@ -17,7 +17,6 @@
 
 * [專家密技](#專家密技)
 * [瀏覽器支援度](#瀏覽器支援度)
-* [其他翻譯版本](#其他翻譯版本)
 * [貢獻準則](../../CONTRIBUTING.md)
 
 ## 專家密技
@@ -527,19 +526,3 @@ textarea {
 ## 瀏覽器支援度
 
 以上技巧支援 Chrome, Firefox, Safari, Opera, Edge 最新版本與 IE11 瀏覽器。
-
-## 其他翻譯版本
-
-* [Deutsche](https://github.com/AllThingsSmitty/css-protips/tree/master/translations/de-DE)
-* [Español](https://github.com/AllThingsSmitty/css-protips/tree/master/translations/es-ES)
-* [Français](https://github.com/AllThingsSmitty/css-protips/tree/master/translations/fr-FR)
-* [ગુજરાતી](https://github.com/AllThingsSmitty/css-protips/tree/master/translations/gu-IND)
-* [Italiano](https://github.com/AllThingsSmitty/css-protips/tree/master/translations/it-IT)
-* [日本語](https://github.com/AllThingsSmitty/css-protips/tree/master/translations/ja-JP)
-* [Polskie](https://github.com/AllThingsSmitty/css-protips/tree/master/translations/pl-PL)
-* [Português do Brasil](https://github.com/AllThingsSmitty/css-protips/tree/master/translations/pt-BR)
-* [Русский](https://github.com/AllThingsSmitty/css-protips/tree/master/translations/ru-RU)
-* [简体中文](https://github.com/AllThingsSmitty/css-protips/tree/master/translations/zh-CN)
-* [正體中文](https://github.com/AllThingsSmitty/css-protips/tree/master/translations/zh-TW)
-
-<sup>[回到目錄](#table-of-contents)</sup>
