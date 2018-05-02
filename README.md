@@ -122,11 +122,11 @@ Instead of putting on the border...
 }
 ```
 
-...and then taking it off the last element...
+...and then taking it off the first element...
 
 ```css
 /* remove border */
-.nav li:last-child {
+.nav li:first-child {
   border-right: none;
 }
 ```
@@ -134,7 +134,7 @@ Instead of putting on the border...
 ...use the `:not()` pseudo-class to only apply to the elements you want:
 
 ```css
-.nav li:not(:last-child) {
+.nav li:not(:first-child) {
   border-right: 1px solid #666;
 }
 ```

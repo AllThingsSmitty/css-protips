@@ -123,11 +123,11 @@ button {
 }
 ```
 
-为最后一个元素去除边框
+为第一个元素去除边框
 
 ```css
 /* 去掉边框 */
-.nav li:last-child {
+.nav li:first-child {
   border-right: none;
 }
 ```
@@ -135,7 +135,7 @@ button {
 不过不要这么做，使用 `:not()` 伪类来达到同样的效果：
 
 ```css
-.nav li:not(:last-child) {
+.nav li:not(:first-child) {
   border-right: 1px solid #666;
 }
 ```
