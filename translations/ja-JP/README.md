@@ -154,7 +154,7 @@ button {
 }
 ```
 
-もちろん `.nav li + li` また `.nav li:first-child ~ li`,を使用できますが `:not()` が一番わかりやすいコードになります。
+もちろん `.nav li + li`,を使用できますが `:not()` が一番わかりやすいコードになります。
 
 #### [デモ](http://codepen.io/AllThingsSmitty/pen/LkymvO)
 

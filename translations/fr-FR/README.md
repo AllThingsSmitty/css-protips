@@ -139,7 +139,7 @@ Au lieu de mettre à la frontière...
 }
 ```
 
-Bien sûr, vous pouvez utiliser `.nav li + li` ou même `.nav li:first-child ~ li`, mais avec `:not()` l'intention est très claire et le sélecteur CSS définit la frontière comme un être humain serait le décrire.
+Bien sûr, vous pouvez utiliser `.nav li + li`, mais avec `:not()` l'intention est très claire et le sélecteur CSS définit la frontière comme un être humain serait le décrire.
 
 #### [Demo](http://codepen.io/AllThingsSmitty/pen/LkymvO)
 

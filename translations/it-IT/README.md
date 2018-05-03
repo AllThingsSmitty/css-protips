@@ -146,7 +146,7 @@ Invece di impostare il bordo...
 }
 ```
 
-Certo, puoi usare `.nav li + li` o anche `.nav li:first-child ~ li`, ma con `:not()` l'intento è molto chiaro e il selettore CSS definisce il bordo nel modo in cui un essere umano lo descriverebbe.
+Certo, puoi usare `.nav li + li`, ma con `:not()` l'intento è molto chiaro e il selettore CSS definisce il bordo nel modo in cui un essere umano lo descriverebbe.
 
 #### [Dimostrazione](http://codepen.io/AllThingsSmitty/pen/LkymvO)
 

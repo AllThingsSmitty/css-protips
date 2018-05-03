@@ -140,7 +140,7 @@ button {
 }
 ```
 
-当然，你也可以使用 `.nav li + li` 或者 `.nav li:first-child ~ li` ，但是 `:not()` 更加清晰，具有可读性。
+当然，你也可以使用 `.nav li + li`，但是 `:not()` 更加清晰，具有可读性。
 
 #### [演示](http://codepen.io/AllThingsSmitty/pen/LkymvO)
 

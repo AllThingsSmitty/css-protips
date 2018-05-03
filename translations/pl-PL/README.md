@@ -138,7 +138,7 @@ Zamiast zakładać granicę...
 }
 ```
 
-Można też użyć `.nav li + li` lub nawet  `.nav li:first-child ~ li`, ale z `:not()` intencja jest bardzo jasna, a selektor CSS definiuje granicę w sposób opisany przez człowieka.
+Można też użyć `.nav li + li`, ale z `:not()` intencja jest bardzo jasna, a selektor CSS definiuje granicę w sposób opisany przez człowieka.
 
 #### [Demo](http://codepen.io/AllThingsSmitty/pen/LkymvO)
 

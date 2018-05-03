@@ -138,7 +138,7 @@ Ao invés de colocar a borda…
 }
 ```
 
-Claro, você poderia usar `.nav li + li` ou ainda `.nav li:first-child ~ li`, mas usando `:not()` a intenção fica mais clara e o seletor CSS passa a definir a borda de uma maneira que nós humanos entendemos mais claramente.
+Claro, você poderia usar `.nav li + li`, mas usando `:not()` a intenção fica mais clara e o seletor CSS passa a definir a borda de uma maneira que nós humanos entendemos mais claramente.
 
 #### [Passeata](http://codepen.io/AllThingsSmitty/pen/LkymvO)
 
