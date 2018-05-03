@@ -26,20 +26,20 @@ Uma coleção de dicas para aumentar suas habilidades no CSS.
 1. [Alinhe Elementos Verticalmente](#alinhe-elementos-verticalmente)
 1. [Listas Separadas por Vírgula](#listas-separadas-por-vírgula)
 1. [Selecione Itens Usando `nth-child` Negativo](#selecione-itens-usando-nth-child-negativo)
-1. [Ícones SVG](#icones-svg)
+1. [Ícones SVG](#Ícones-svg)
 1. [Use o Seletor "Lobotomized Owl"](#use-o-seletor-lobotomized-owl)
 1. [Sliders em CSS com `max-height`](#sliders-em-css-com-max-height)
-1. [Tabelas com Células de Tamanho Igual](#tabelas-com-celulas-de-tamanho-igual)
+1. [Tabelas com Células de Tamanho Igual](#tabelas-com-células-de-tamanho-igual)
 1. [Esqueça as "Margin Hacks", use Flexbox](#esqueça-as-margin-hacks-use-flexbox)
 1. [Use Seletores de Atributo em Links Vazios](#use-seletores-de-atributo-em-links-vazios)
 1. [Estilize Links "Default"](#estilize-links-default)
 1. [Espaçamento Vertical Consistente](#espacamento-vertical-consistente)
-1. [Div com Proporção de Tela Fixa](#div-com-proporcao-de-tela-fixa)
+1. [Div com Proporção de Tela Fixa](#div-com-proporção-de-tela-fixa)
 1. [Estilize Imagens Quebradas](#estilize-imagens-quebradas)
 1. [Use `rem` para Definir Tamanhos Globais; Use `em` para Definir Tamanhos Locais](#use-rem-para-definir-tamanhos-globais-use-em-para-definir-tamanhos-locais)
-1. [Esconda Vídeos em Autoplay Que Não Estejam no Mudo](#esconda-videos-em-autoplay-que-nao-estejam-no-mudo)
-1. [Use `:root` para uma Tipografia Flexível](#use-root-para-uma-tipografia-flexivel)
-1. [Defina `font-size` em Elementos de Formulário para uma Melhor Experiência Mobile](#defina-font-size-em-elementos-de-formulario-para-uma-melhor-experiencia-mobile)
+1. [Esconda Vídeos em Autoplay Que Não Estejam no Mudo](#esconda-vídeos-em-autoplay-que-não-estejam-no-mudo)
+1. [Use `:root` para uma Tipografia Flexível](#use-root-para-uma-tipografia-flexível)
+1. [Defina `font-size` em Elementos de Formulário para uma Melhor Experiência Mobile](#defina-font-size-em-elementos-de-formulário-para-uma-melhor-experiência-mobile)
 
 
 ### Use um Reset CSS
@@ -60,7 +60,7 @@ Agora os elementos estarão sem margens, preenchimento e `box-sizing`. Te permit
 
 **Nota:** Se você seguir a dica [Herde o box-sizing](#herde-o-box-sizing) abaixo você pode optar por não incluir a propriedade `box-sizing` em sua redefinição de CSS.
 
-<sup>[voltar ao índice](#indice)</sup>
+<sup>[voltar ao índice](#Índice)</sup>
 
 
 ### Herde o `box-sizing`
@@ -79,7 +79,7 @@ html {
 
 Assim fica fácil de alterar o `box-sizing` em plugins ou outros componentes que tenham um comportamento diferente.
 
-<sup>[voltar ao índice](#indice)</sup>
+<sup>[voltar ao índice](#Índice)</sup>
 
 
 ### Use `unset` em vez de redefinir todas as propriedades
@@ -107,7 +107,7 @@ button {
 
 **Nota:** A abreviação `all` não é suportada no IE11 e atualmente está sendo considerada para suporte no Edge. `unset` não é suportado no IE11:
 
-<sup>[voltar ao índice](#indice)</sup>
+<sup>[voltar ao índice](#Índice)</sup>
 
 
 ### Use `:not()` para Aplicar/Remover Bordas
@@ -142,7 +142,7 @@ Claro, você poderia usar `.nav li + li` ou ainda `.nav li:first-child ~ li`, ma
 
 #### [Exemplo](http://codepen.io/AllThingsSmitty/pen/LkymvO)
 
-<sup>[voltar ao índice](#indice)</sup>
+<sup>[voltar ao índice](#Índice)</sup>
 
 
 ### Defina o `line-height` no `body`
@@ -159,7 +159,7 @@ Dessa maneira elementos de texto vão herdar o `line-height` do `body`.
 
 #### [Exemplo](http://codepen.io/AllThingsSmitty/pen/VjbdYd)
 
-<sup>[voltar ao índice](#indice)</sup>
+<sup>[voltar ao índice](#Índice)</sup>
 
 
 ### Alinhe Elementos Verticalmente
@@ -187,7 +187,7 @@ Isso não resolveu seu problema? O site CSS-Tricks tem [um guia completo](https:
 
 #### [Exemplo](http://codepen.io/AllThingsSmitty/pen/GqmGqZ)
 
-<sup>[voltar ao índice](#indice)</sup>
+<sup>[voltar ao índice](#Índice)</sup>
 
 
 ### Listas Separadas por Vírgula
@@ -204,7 +204,7 @@ Utilize a _pseudo-classe_ `:not()` para evitar que a vírgula seja adicionada de
 
 **Aviso:** Se considerarmos acessibilidade essa dica pode não ser ideal, especialmente para usuários de leitores de tela. Além disso, copiar e/ou colar não funcionam em conteúdo criado com CSS. Proceda com cautela.
 
-<sup>[voltar ao índice](#indice)</sup>
+<sup>[voltar ao índice](#Índice)</sup>
 
 
 ### Selecione Itens Usando `nth-child` Negativo
@@ -235,7 +235,7 @@ Mais fácil que isso só dois disso.
 
 #### [Exemplo](http://codepen.io/AllThingsSmitty/pen/WxjKZp)
 
-<sup>[voltar ao índice](#indice)</sup>
+<sup>[voltar ao índice](#Índice)</sup>
 
 
 ### Ícones SVG
@@ -258,7 +258,7 @@ A vantagem do SVG é que o ícone fica bom em qualquer resolução, além de ter
 }
 ```
 
-<sup>[voltar ao índice](#indice)</sup>
+<sup>[voltar ao índice](#Índice)</sup>
 
 
 ### Use o Seletor "Lobotomized Owl"
@@ -277,7 +277,7 @@ Para mais exemplos utilizando o seletor "lobotomized owl", leia [o artigo escrit
 
 #### [Exemplo](http://codepen.io/AllThingsSmitty/pen/grRvWq)
 
-<sup>[voltar ao índice](#indice)</sup>
+<sup>[voltar ao índice](#Índice)</sup>
 
 
 ### Sliders em CSS com `max-height`
@@ -299,7 +299,7 @@ Crie _sliders_ usando apenas CSS com `max-height` e `overflow-y: hidden`:
 
 O elemento se expandirá ao valor definido no `max-height` no _hover_ e você terá um _slider_ devido ao uso do overflow.
 
-<sup>[voltar ao índice](#indice)</sup>
+<sup>[voltar ao índice](#Índice)</sup>
 
 
 ### Tabelas com Células de Tamanho Igual
@@ -316,7 +316,7 @@ Tabelas sem dor de cabeça.
 
 #### [Exemplo](http://codepen.io/AllThingsSmitty/pen/jALALm)
 
-<sup>[voltar ao índice](#indice)</sup>
+<sup>[voltar ao índice](#Índice)</sup>
 
 
 ### Esqueça as "Margin Hacks", use Flexbox
@@ -336,7 +336,7 @@ Quando definir o espaçamento entre as colunas, você pode deixar os seletores `
 
 Assim as colunas ficam espaçadas uniformemente.
 
-<sup>[voltar ao índice](#indice)</sup>
+<sup>[voltar ao índice](#Índice)</sup>
 
 
 ### Use Seletores de Atributo em Links Vazios
@@ -353,7 +353,7 @@ Mão na roda.
 
 #### [Exemplo](http://codepen.io/AllThingsSmitty/pen/zBzXRx)
 
-<sup>[voltar ao índice](#indice)</sup>
+<sup>[voltar ao índice](#Índice)</sup>
 
 
 ### Estilize Links "Default"
@@ -369,7 +369,7 @@ a[href]:not([class]) {
 
 Dessa forma, links que são inseridos por CMS – que normalmente não possuem o atributo `class` – vão ser estilizados sem comprometer outros links.
 
-<sup>[voltar ao índice](#indice)</sup>
+<sup>[voltar ao índice](#Índice)</sup>
 
 
 ### Espaçamento Vertical Consistente
@@ -384,7 +384,7 @@ Use o seletor universal dentro de um elemento para criar um espaçamento vertica
 
 Com um espaçamento vertical consistente o seu conteúdo fica visualmente mais agradável de ler.
 
-<sup>[voltar ao índice](#indice)</sup>
+<sup>[voltar ao índice](#Índice)</sup>
 
 
 ### Div com Proporção de Tela Fixa
@@ -412,7 +412,7 @@ Se você usar 20% no `padding` a altura da div vai ser igual a 20% de sua largur
 
 #### [Exemplo](http://codepen.io/AllThingsSmitty/pen/jALZvE)
 
-<sup>[voltar ao índice](#indice)</sup>
+<sup>[voltar ao índice](#Índice)</sup>
 
 
 ### Estilize Imagens Quebradas
@@ -450,7 +450,7 @@ img::after {
 
 Leia mais sobre como estilizar imagens quebradas no [artigo original](http://bitsofco.de/styling-broken-images/) por [Ire Aderinokun](https://github.com/ireade/).
 
-<sup>[voltar ao índice](#indice)</sup>
+<sup>[voltar ao índice](#Índice)</sup>
 
 
 ### Use `rem` para Definir Tamanhos Globais; Use `em` para Definir Tamanhos Locais
@@ -481,7 +481,7 @@ aside .module {
 
 Assim fica mais fácil de estilizar e manter cada módulo, além de ser flexível.
 
-<sup>[voltar ao índice](#indice)</sup>
+<sup>[voltar ao índice](#Índice)</sup>
 
 
 ### Esconda Vídeos em Autoplay Que Não Estejam no Mudo
@@ -496,7 +496,7 @@ video[autoplay]:not([muted]) {
 
 E aqui mais uma entre as muitas vantagens de usar a _pseudo-classe_ [`:not()`](#use-not-to-applyunapply-borders-on-navigation).
 
-<sup>[voltar ao índice](#indice)</sup>
+<sup>[voltar ao índice](#Índice)</sup>
 
 
 ### Use `:root` para uma Tipografia Flexível
@@ -519,7 +519,7 @@ body {
 
 #### [Exemplo](http://codepen.io/AllThingsSmitty/pen/XKgOkR)
 
-<sup>[voltar ao índice](#indice)</sup>
+<sup>[voltar ao índice](#Índice)</sup>
 
 
 ### Defina `font-size` em Elementos de Formulário para uma Melhor Experiência Mobile
@@ -537,7 +537,7 @@ textarea {
 
 :dancer:
 
-<sup>[voltar ao índice](#indice)</sup>
+<sup>[voltar ao índice](#Índice)</sup>
 
 
 ## Suporte
