@@ -33,13 +33,13 @@ Uma coleção de dicas para aumentar suas habilidades no CSS.
 1. [Esqueça as "Margin Hacks", use Flexbox](#esqueça-as-margin-hacks-use-flexbox)
 1. [Use Seletores de Atributo em Links Vazios](#use-seletores-de-atributo-em-links-vazios)
 1. [Estilize Links "Default"](#estilize-links-default)
-1. [Espaçamento Vertical Consistente](#espaçamento-vertical-consistente)
+1. [Espaçamento Vertical Consistente](#espacamento-vertical-consistente)
 1. [Div com Proporção de Tela Fixa](#div-com-proporção-de-tela-fixa)
 1. [Estilize Imagens Quebradas](#estilize-imagens-quebradas)
 1. [Use `rem` para Definir Tamanhos Globais; Use `em` para Definir Tamanhos Locais](#use-rem-para-definir-tamanhos-globais-use-em-para-definir-tamanhos-locais)
 1. [Esconda Vídeos em Autoplay Que Não Estejam no Mudo](#esconda-vídeos-em-autoplay-que-não-estejam-no-mudo)
-1. [Use `:root` para uma Typografia Flexível](#use-root-para-uma-typografia-flexível)
-1. [Defina `font-size` em Elementos de Formulário para uma Melhor Experiência Mobile](#set-font-size-on-form-elements-for-a-better-mobile-experience)
+1. [Use `:root` para uma Tipografia Flexível](#use-root-para-uma-tipografia-flexível)
+1. [Defina `font-size` em Elementos de Formulário para uma Melhor Experiência Mobile](#defina-font-size-em-elementos-de-formulário-para-uma-melhor-experiência-mobile)
 
 
 ### Use um Reset CSS
@@ -56,11 +56,11 @@ Resetar o CSS vai te ajudar a manter a consistência de estilo em diferentes nav
 
 Agora os elementos estarão sem margens, preenchimento e `box-sizing`. Te permitindo gerenciar o layout com o seu CSS.
 
-#### [Passeata](http://codepen.io/AllThingsSmitty/pen/kkrkLL)
+#### [Exemplo](http://codepen.io/AllThingsSmitty/pen/kkrkLL)
 
-**Nota:** Se você seguir a ponta [Herde o box-sizing](#herde-o-box-sizing) abaixo você pode optar por não incluir o `box-sizing` propriedade em sua redefinição de CSS.
+**Nota:** Se você seguir a dica [Herde o box-sizing](#herde-o-box-sizing) abaixo você pode optar por não incluir a propriedade `box-sizing` em sua redefinição de CSS.
 
-<sup>[voltar ao índice](#índice)</sup>
+<sup>[voltar ao índice](#Índice)</sup>
 
 
 ### Herde o `box-sizing`
@@ -79,7 +79,7 @@ html {
 
 Assim fica fácil de alterar o `box-sizing` em plugins ou outros componentes que tenham um comportamento diferente.
 
-<sup>[voltar ao índice](#índice)</sup>
+<sup>[voltar ao índice](#Índice)</sup>
 
 
 ### Use `unset` em vez de redefinir todas as propriedades
@@ -107,7 +107,7 @@ button {
 
 **Nota:** A abreviação `all` não é suportada no IE11 e atualmente está sendo considerada para suporte no Edge. `unset` não é suportado no IE11:
 
-<sup>[voltar ao índice](#índice)</sup>
+<sup>[voltar ao índice](#Índice)</sup>
 
 
 ### Use `:not()` para Aplicar/Remover Bordas
@@ -130,7 +130,7 @@ Ao invés de colocar a borda…
 }
 ```
 
-…utilize a _pseudo-class_ `:not()` para aplicar a borda apenas nos elementos corretos:
+…utilize a _pseudo-classe_ `:not()` para aplicar a borda apenas nos elementos corretos:
 
 ```css
 .nav li:not(:last-child) {
@@ -140,9 +140,9 @@ Ao invés de colocar a borda…
 
 Claro, você poderia usar `.nav li + li`, mas usando `:not()` a intenção fica mais clara e o seletor CSS passa a definir a borda de uma maneira que nós humanos entendemos mais claramente.
 
-#### [Passeata](http://codepen.io/AllThingsSmitty/pen/LkymvO)
+#### [Exemplo](http://codepen.io/AllThingsSmitty/pen/LkymvO)
 
-<sup>[voltar ao índice](#índice)</sup>
+<sup>[voltar ao índice](#Índice)</sup>
 
 
 ### Defina o `line-height` no `body`
@@ -157,9 +157,9 @@ body {
 
 Dessa maneira elementos de texto vão herdar o `line-height` do `body`.
 
-#### [Passeata](http://codepen.io/AllThingsSmitty/pen/VjbdYd)
+#### [Exemplo](http://codepen.io/AllThingsSmitty/pen/VjbdYd)
 
-<sup>[voltar ao índice](#índice)</sup>
+<sup>[voltar ao índice](#Índice)</sup>
 
 
 ### Alinhe Elementos Verticalmente
@@ -185,9 +185,9 @@ Isso não resolveu seu problema? O site CSS-Tricks tem [um guia completo](https:
 
 **Aviso:** Fique atento com os [bugs](https://github.com/philipwalton/flexbugs#3-min-height-on-a-flex-container-wont-apply-to-its-flex-items) quando utilizar flexbox no IE11.
 
-#### [Passeata](http://codepen.io/AllThingsSmitty/pen/GqmGqZ)
+#### [Exemplo](http://codepen.io/AllThingsSmitty/pen/GqmGqZ)
 
-<sup>[voltar ao índice](#índice)</sup>
+<sup>[voltar ao índice](#Índice)</sup>
 
 
 ### Listas Separadas por Vírgula
@@ -200,11 +200,11 @@ ul > li:not(:last-child)::after {
 }
 ```
 
-Utilize a _pseudo-class_ `:not()` para evitar que a vírgula seja adicionada depois do último item.
+Utilize a _pseudo-classe_ `:not()` para evitar que a vírgula seja adicionada depois do último item.
 
 **Aviso:** Se considerarmos acessibilidade essa dica pode não ser ideal, especialmente para usuários de leitores de tela. Além disso, copiar e/ou colar não funcionam em conteúdo criado com CSS. Proceda com cautela.
 
-<sup>[voltar ao índice](#índice)</sup>
+<sup>[voltar ao índice](#Índice)</sup>
 
 
 ### Selecione Itens Usando `nth-child` Negativo
@@ -222,10 +222,10 @@ li:nth-child(-n+3) {
 }
 ```
 
-Já que você aprendeu um pouquinho sobre como usar a _pseudo-class_ [using `:not()`](#use-not-to-applyunapply-borders-on-navigation), você pode tentar:
+Já que você aprendeu um pouquinho sobre como usar a _pseudo-classe_ [using `:not()`](#use-not-to-applyunapply-borders-on-navigation), você pode tentar:
 
 ```css
-/* selecione todos os itens, exceto o primeiro 3 e exiba-os */
+/* selecione todos os itens, exceto os primeiros 3 e exiba-os */
 li:not(:nth-child(-n+3)) {
   display: none;
 }
@@ -233,9 +233,9 @@ li:not(:nth-child(-n+3)) {
 
 Mais fácil que isso só dois disso.
 
-#### [Passeata](http://codepen.io/AllThingsSmitty/pen/WxjKZp)
+#### [Exemplo](http://codepen.io/AllThingsSmitty/pen/WxjKZp)
 
-<sup>[voltar ao índice](#índice)</sup>
+<sup>[voltar ao índice](#Índice)</sup>
 
 
 ### Ícones SVG
@@ -258,7 +258,7 @@ A vantagem do SVG é que o ícone fica bom em qualquer resolução, além de ter
 }
 ```
 
-<sup>[voltar ao índice](#índice)</sup>
+<sup>[voltar ao índice](#Índice)</sup>
 
 
 ### Use o Seletor "Lobotomized Owl"
@@ -275,9 +275,9 @@ Nesse exemplo, todos os elementos acompanhados de outros elementos recebem `marg
 
 Para mais exemplos utilizando o seletor "lobotomized owl", leia [o artigo escrito por Heydon Pickering](http://alistapart.com/article/axiomatic-css-and-lobotomized-owls) no site *A List Apart*.
 
-#### [Passeata](http://codepen.io/AllThingsSmitty/pen/grRvWq)
+#### [Exemplo](http://codepen.io/AllThingsSmitty/pen/grRvWq)
 
-<sup>[voltar ao índice](#índice)</sup>
+<sup>[voltar ao índice](#Índice)</sup>
 
 
 ### Sliders em CSS com `max-height`
@@ -299,7 +299,7 @@ Crie _sliders_ usando apenas CSS com `max-height` e `overflow-y: hidden`:
 
 O elemento se expandirá ao valor definido no `max-height` no _hover_ e você terá um _slider_ devido ao uso do overflow.
 
-<sup>[voltar ao índice](#índice)</sup>
+<sup>[voltar ao índice](#Índice)</sup>
 
 
 ### Tabelas com Células de Tamanho Igual
@@ -314,9 +314,9 @@ Não tem nada mais chato do que trabalhar com tabelas, mas você pode usar `tabl
 
 Tabelas sem dor de cabeça.
 
-#### [Passeata](http://codepen.io/AllThingsSmitty/pen/jALALm)
+#### [Exemplo](http://codepen.io/AllThingsSmitty/pen/jALALm)
 
-<sup>[voltar ao índice](#índice)</sup>
+<sup>[voltar ao índice](#Índice)</sup>
 
 
 ### Esqueça as "Margin Hacks", use Flexbox
@@ -336,12 +336,12 @@ Quando definir o espaçamento entre as colunas, você pode deixar os seletores `
 
 Assim as colunas ficam espaçadas uniformemente.
 
-<sup>[voltar ao índice](#índice)</sup>
+<sup>[voltar ao índice](#Índice)</sup>
 
 
 ### Use Seletores de Atributo em Links Vazios
 
-Mostre links para `<a>` tags vazias que possuem o atributo `href`:
+Mostre links para tags `<a>` vazias que possuem o atributo `href`:
 
 ```css
 a[href^="http"]:empty::before {
@@ -351,9 +351,9 @@ a[href^="http"]:empty::before {
 
 Mão na roda.
 
-#### [Passeata](http://codepen.io/AllThingsSmitty/pen/zBzXRx)
+#### [Exemplo](http://codepen.io/AllThingsSmitty/pen/zBzXRx)
 
-<sup>[voltar ao índice](#índice)</sup>
+<sup>[voltar ao índice](#Índice)</sup>
 
 
 ### Estilize Links "Default"
@@ -369,7 +369,7 @@ a[href]:not([class]) {
 
 Dessa forma, links que são inseridos por CMS – que normalmente não possuem o atributo `class` – vão ser estilizados sem comprometer outros links.
 
-<sup>[voltar ao índice](#índice)</sup>
+<sup>[voltar ao índice](#Índice)</sup>
 
 
 ### Espaçamento Vertical Consistente
@@ -384,7 +384,7 @@ Use o seletor universal dentro de um elemento para criar um espaçamento vertica
 
 Com um espaçamento vertical consistente o seu conteúdo fica visualmente mais agradável de ler.
 
-<sup>[voltar ao índice](#índice)</sup>
+<sup>[voltar ao índice](#Índice)</sup>
 
 
 ### Div com Proporção de Tela Fixa
@@ -410,9 +410,9 @@ Para criar uma div com proporção de tela fixa, tudo que você precisa fazer é
 
 Se você usar 20% no `padding` a altura da div vai ser igual a 20% de sua largura. Independente da largura do _viewport_, a div filho vai sempre manter a proporção de tela (100% / 20% = 5:1).
 
-#### [Passeata](http://codepen.io/AllThingsSmitty/pen/jALZvE)
+#### [Exemplo](http://codepen.io/AllThingsSmitty/pen/jALZvE)
 
-<sup>[voltar ao índice](#índice)</sup>
+<sup>[voltar ao índice](#Índice)</sup>
 
 
 ### Estilize Imagens Quebradas
@@ -432,7 +432,7 @@ img {
 }
 ```
 
-Agora adicione regras com _pseudo-elements_ para mostrar uma mensagem e a URL da imagem quebrada:
+Agora adicione regras com _pseudo-elementos_ para mostrar uma mensagem e a URL da imagem quebrada:
 
 ```css
 img::before {
@@ -450,7 +450,7 @@ img::after {
 
 Leia mais sobre como estilizar imagens quebradas no [artigo original](http://bitsofco.de/styling-broken-images/) por [Ire Aderinokun](https://github.com/ireade/).
 
-<sup>[voltar ao índice](#índice)</sup>
+<sup>[voltar ao índice](#Índice)</sup>
 
 
 ### Use `rem` para Definir Tamanhos Globais; Use `em` para Definir Tamanhos Locais
@@ -481,7 +481,7 @@ aside .module {
 
 Assim fica mais fácil de estilizar e manter cada módulo, além de ser flexível.
 
-<sup>[voltar ao índice](#índice)</sup>
+<sup>[voltar ao índice](#Índice)</sup>
 
 
 ### Esconda Vídeos em Autoplay Que Não Estejam no Mudo
@@ -494,14 +494,14 @@ video[autoplay]:not([muted]) {
 }
 ```
 
-E aqui mais uma entre as muitas vantagens de usar a _pseudo-class_ [`:not()`](#use-not-to-applyunapply-borders-on-navigation).
+E aqui mais uma entre as muitas vantagens de usar a _pseudo-classe_ [`:not()`](#use-not-to-applyunapply-borders-on-navigation).
 
-<sup>[voltar ao índice](#índice)</sup>
+<sup>[voltar ao índice](#Índice)</sup>
 
 
-### Use `:root` para uma Typografia Flexível
+### Use `:root` para uma Tipografia Flexível
 
-O tamanho de fonte de um site _responsive_ deveria ser ajustável de acordo com cada _viewport_. Você pode calcular o tamanho da fonte baseado na largura e na altura do _viewport_ usando `:root`:
+O tamanho de fonte de um site _responsivo_ deveria ser ajustável de acordo com cada _viewport_. Você pode calcular o tamanho da fonte baseado na largura e na altura do _viewport_ usando `:root`:
 
 ```css
 :root {
@@ -517,12 +517,11 @@ body {
 }
 ```
 
-#### [Passeata](http://codepen.io/AllThingsSmitty/pen/XKgOkR)
+#### [Exemplo](http://codepen.io/AllThingsSmitty/pen/XKgOkR)
 
-<sup>[voltar ao índice](#índice)</sup>
+<sup>[voltar ao índice](#Índice)</sup>
 
 
-<div id="set-font-size-on-form-elements-for-a-better-mobile-experience"></div>
 ### Defina `font-size` em Elementos de Formulário para uma Melhor Experiência Mobile
 
 Para evitar zoom indesejado em elementos de formulários de navegadores mobile (iOS Safari, _et al_) quando um `<select>` é selecionado, adicione `font-size` no seletor:
@@ -538,7 +537,7 @@ textarea {
 
 :dancer:
 
-<sup>[voltar ao índice](#índice)</sup>
+<sup>[voltar ao índice](#Índice)</sup>
 
 
 ## Suporte
