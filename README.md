@@ -139,7 +139,7 @@ Instead of putting on the border...
 }
 ```
 
-Sure, you can use `.nav li + li` or even `.nav li:first-child ~ li`, but with `:not()` the intent is very clear and the CSS selector defines the border the way a human would describe it.
+Sure, you can use `.nav li + li`, but with `:not()` the intent is very clear and the CSS selector defines the border the way a human would describe it.
 
 #### [Demo](http://codepen.io/AllThingsSmitty/pen/LkymvO)
 
