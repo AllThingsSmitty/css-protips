@@ -494,7 +494,7 @@ video[autoplay]:not([muted]) {
 }
 ```
 
-現在，你可以利用 `:root` 的值來計算出 `root em` 的單位。
+現在你便能使用依 `:root` 字級為基準的 `rem` 單位了。
 
 ```css
 body {
