@@ -565,7 +565,7 @@ Current versions of Chrome, Firefox, Safari, Opera, Edge, and IE11.
 <sup>[back to table of contents](#table-of-contents)</sup>
 
 ### Optimize base font size setting while using `rem` for Global Sizing
-For better calculation from px to rem, setting the base font size at the root( html {font-size: 62.5%}) is even better.
-Since the default size of html is 16px, and 10/16 equals to 62.5%。Then 14px can be converted to 1.4rem while at the same time allowing user to change the default size.
+For better calculation from `px` to `rem`, setting the base font size at the root(`html { font-size: 62.5%; }`) is even better.
+Since the default size of html is `16px`, and 10/16 equals to 62.5%。Then `14px` can be converted to `1.4rem` while at the same time allowing user to change the default size.
 
 <sup>[back to table of contents](#table-of-contents)</sup>
