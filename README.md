@@ -41,7 +41,7 @@ A collection of tips to help take your CSS skills pro.
 1. [Hide Autoplay Videos That Aren't Muted](#hide-autoplay-videos-that-arent-muted)
 1. [Use `:root` for Flexible Type](#use-root-for-flexible-type)
 1. [Set `font-size` on Form Elements for a Better Mobile Experience](#set-font-size-on-form-elements-for-a-better-mobile-experience)
-
+1. [Optimize base font size setting while using `rem` for Global Sizing](#optimize-base-font-size-setting-while-using-rem-for-global-sizing)
 
 ### Use a CSS Reset
 
@@ -561,5 +561,11 @@ Current versions of Chrome, Firefox, Safari, Opera, Edge, and IE11.
 * [Polskie](https://github.com/AllThingsSmitty/css-protips/tree/master/translations/pl-PL)
 * [Português do Brasil](https://github.com/AllThingsSmitty/css-protips/tree/master/translations/pt-BR)
 * [Русский](https://github.com/AllThingsSmitty/css-protips/tree/master/translations/ru-RU)
+
+<sup>[back to table of contents](#table-of-contents)</sup>
+
+### Optimize base font size setting while using `rem` for Global Sizing
+For better calculation from px to rem, setting the base font size at the root( html {font-size: 62.5%}) is even better.
+Since the default size of html is 16px, and 10/16 equals to 62.5%。Then 14px can be converted to 1.4rem while at the same time allowing user to change the default size.
 
 <sup>[back to table of contents](#table-of-contents)</sup>
