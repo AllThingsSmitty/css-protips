@@ -40,6 +40,7 @@ Una collezione di dritte per aiutarti a migliorare le tue capacità con CSS.
 1. [Nascondi i video in riproduzione automatica che non sono silenziati](#hide-autoplay-videos-that-arent-muted)
 1. [Usa `:root` per caratteri flessibili](#use-root-for-flexible-type)
 1. [Imposta il `font-size` sugli elementi dei form per una migliore esperienza da mobile](#set-font-size-on-form-elements-for-a-better-mobile-experience)
+1. [Utilizzare gli eventi puntatore per controllare gli eventi del mouse](#utilizzare-gli-eventi-puntatore-per-controllare-gli-eventi-del-mouse)
 
 
 <div id="use-a-css-reset"></div>
@@ -580,6 +581,22 @@ textarea {
 ```
 
 :dancer:
+
+<sup>[torna al sommario](#sommario)</sup>
+
+
+### Utilizzare gli eventi puntatore per controllare gli eventi del mouse
+
+[Eventi puntatore](https://developer.mozilla.org/en-US/docs/Web/CSS/pointer-events) consentono di specificare come il mouse interagisce con l'elemento che sta toccando. Per disabilitare l'evento puntatore predefinito su un pulsante, ad esempio:
+
+```css
+.button-disabled {
+  opacity: .5;
+  pointer-events: none;
+}
+```
+
+È così semplice.
 
 <sup>[torna al sommario](#sommario)</sup>
 

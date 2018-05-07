@@ -40,6 +40,7 @@ Una colección de consejos para ayudarte a mejorar tus conocimientos profesional
 1. [Esconder videos con reproducción automática que no estén silenciados](#esconder-videos-con-reproducción-automática-que-no-estén-silenciados)
 1. [Utilizar `:root` para una tipografía flexible](#utilizar-root-para-una-tipografía-flexible)
 1. [Definir `font-size` en los elementos de formulario para una mejor experiencia móvil](#definir-font-size-en-los-elementos-de-formulario-para-una-mejor-experiencia-móvil)
+1. [Usar eventos de puntero para controlar eventos de mouse](#usar-eventos-de-puntero-para-controlar-eventos-de-mouse)
 
 
 ### Utilizar un CSS Reset
@@ -534,6 +535,22 @@ textarea {
 ```
 
 :dancer:
+
+<sup>[volver al índice de contenidos](#tabla-de-contenido)</sup>
+
+
+### Usar eventos de puntero para controlar eventos de mouse
+
+[Eventos del puntero](https://developer.mozilla.org/en-US/docs/Web/CSS/pointer-events) le permiten especificar cómo el mouse interactúa con el elemento que está tocando. Para deshabilitar el evento de puntero predeterminado en un botón, por ejemplo:
+
+```css
+.button-disabled {
+  opacity: .5;
+  pointer-events: none;
+}
+```
+
+Es así de simple.
 
 <sup>[volver al índice de contenidos](#tabla-de-contenido)</sup>
 

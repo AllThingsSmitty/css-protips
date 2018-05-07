@@ -41,6 +41,7 @@ A collection of tips to help take your CSS skills pro.
 1. [Hide Autoplay Videos That Aren't Muted](#hide-autoplay-videos-that-arent-muted)
 1. [Use `:root` for Flexible Type](#use-root-for-flexible-type)
 1. [Set `font-size` on Form Elements for a Better Mobile Experience](#set-font-size-on-form-elements-for-a-better-mobile-experience)
+1. [Use Pointer Events to Control Mouse Events](#use-pointer-events-to-control-mouse-events)
 
 
 ### Use a CSS Reset
@@ -537,6 +538,22 @@ textarea {
 ```
 
 :dancer:
+
+<sup>[back to table of contents](#table-of-contents)</sup>
+
+
+### Use Pointer Events to Control Mouse Events
+
+[Pointer events](https://developer.mozilla.org/en-US/docs/Web/CSS/pointer-events) allow you to specifiy how the mouse interacts with the element it's touching. To disable the default pointer event on a button, for instance:
+
+```css
+.button-disabled {
+  opacity: .5;
+  pointer-events: none;
+}
+```
+
+It's that simple.
 
 <sup>[back to table of contents](#table-of-contents)</sup>
 

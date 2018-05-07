@@ -45,7 +45,7 @@ CSSのプロのスキルになるようにアドバイスのリストを紹介�
 1. [動画の自動再生を隠す](#hide-autoplay-videos-that-arent-muted)
 1. [フレクシブルタイプの`:root`を使用](#use-root-for-flexible-type)
 1. [スマホ向け、フォーム要素のフォントサイズの設定](#set-font-size-on-form-elements-for-a-better-mobile-experience)
-
+1. [Use Pointer Events to Control Mouse Events](#use-ointer-events-to-control-mouse-events)
 
 
 <div id="use-a-css-reset"></div>
@@ -587,6 +587,24 @@ textarea {
 ```
 
 :dancer:
+
+<sup>[目次へ戻る](#table-of-contents)</sup>
+
+
+<div id="use-ointer-events-to-control-mouse-events"></div>
+
+### ポインターイベントを使用してマウスイベントを制御する
+
+[Pointer events](https://developer.mozilla.org/en-US/docs/Web/CSS/pointer-events)では、マウスがタッチしている要素とどのように対話するかを指定することができます。 ボタン上のデフォルトポインタイベントを無効にするには、次のようにします。
+
+```css
+.button-disabled {
+  opacity: .5;
+  pointer-events: none;
+}
+```
+
+それは簡単です。
 
 <sup>[目次へ戻る](#table-of-contents)</sup>
 

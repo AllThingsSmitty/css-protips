@@ -43,6 +43,8 @@
 1.  [隱藏沒有靜音並設定自動播放的影片](#隱藏沒有靜音並設定自動播放的影片)
 1.  [使用 `:root` 選擇器來設定彈性的字體大小](#使用-root-選擇器來設定彈性的字體大小)
 1.  [為了更好的行動體驗來設定表單元素的 `font-size`](#為了更好的行動體驗來設定表單元素的-font-size)
+1. [使用指针事件来控制鼠标事件](#使用指针事件来控制鼠标事件)
+
 
 ### 使用 CSS Reset
 
@@ -522,6 +524,23 @@ textarea {
 :dancer:
 
 <sup>[回到目錄](#table-of-contents)</sup>
+
+
+### 使用指针事件来控制鼠标事件
+
+[指针事件](https://developer.mozilla.org/en-US/docs/Web/CSS/pointer-events)允许您指定鼠标如何与其触摸的元素进行交互。 要禁用按钮上的默认指针事件，例如：
+
+```css
+.button-disabled {
+  opacity: .5;
+  pointer-events: none;
+}
+```
+
+就这么简单。
+
+<sup>[回目录](#目录)</sup>
+
 
 ## 瀏覽器支援度
 

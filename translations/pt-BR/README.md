@@ -40,6 +40,7 @@ Uma coleção de dicas para aumentar suas habilidades no CSS.
 1. [Esconda Vídeos em Autoplay Que Não Estejam no Mudo](#esconda-vídeos-em-autoplay-que-não-estejam-no-mudo)
 1. [Use `:root` para uma Tipografia Flexível](#use-root-para-uma-tipografia-flexível)
 1. [Defina `font-size` em Elementos de Formulário para uma Melhor Experiência Mobile](#defina-font-size-em-elementos-de-formulário-para-uma-melhor-experiência-mobile)
+1. [Use eventos de ponteiro para controlar eventos do mouse](#use-eventos-de-ponteiro-para-controlar-eventos-do-mouse)
 
 
 ### Use um Reset CSS
@@ -536,6 +537,22 @@ textarea {
 ```
 
 :dancer:
+
+<sup>[voltar ao índice](#Índice)</sup>
+
+
+### Use eventos de ponteiro para controlar eventos do mouse
+
+[Eventos de ponteiro](https://developer.mozilla.org/en-US/docs/Web/CSS/pointer-events) permitem que você especifique como o mouse interage com o elemento que está tocando. Para desativar o evento de ponteiro padrão em um botão, por exemplo:
+
+```css
+.button-disabled {
+  opacity: .5;
+  pointer-events: none;
+}
+```
+
+É simples assim.
 
 <sup>[voltar ao índice](#Índice)</sup>
 

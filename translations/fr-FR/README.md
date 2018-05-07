@@ -40,6 +40,7 @@ Une collection de conseils pour aider à prendre vos compétences CSS pro.
 1. [Masquer les vidéos Autoplay qui ne sont pas Muted](#masquer-les-vidéos-autoplay-qui-ne-sont-pas-muted)
 1. [Utiliser `:root` de type flexible](#utiliser-root-de-type-flexible)
 1. [Réglez `font-size` sur le formulaire éléments pour une expérience mobile mieux](#réglez-font-size-sur-le-formulaire-éléments-pour-une-expérience-mobile-mieux)
+1. [Utiliser les événements de pointeur pour contrôler les événements de la souris](#utiliser-les-événements-de-pointeur-pour-contrôler-les-événements-de-lasouris)
 
 
 ### Utilisez un Reset CSS
@@ -538,6 +539,23 @@ textarea {
 ```
 
 :dancer:
+
+<sup>[retour à la table des matières](#table-des-matières)</sup>
+
+
+
+### Utiliser les événements de pointeur pour contrôler les événements de la souris
+
+[Événements de pointeur](https://developer.mozilla.org/en-US/docs/Web/CSS/pointer-events) vous permet de spécifier comment la souris interagit avec l'élément qu'elle touche. Pour désactiver l'événement de pointeur par défaut sur un bouton, par exemple:
+
+```css
+.button-disabled {
+  opacity: .5;
+  pointer-events: none;
+}
+```
+
+C'est si simple.
 
 <sup>[retour à la table des matières](#table-des-matières)</sup>
 

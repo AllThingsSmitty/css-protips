@@ -40,6 +40,7 @@ Zbiór porad, które pomogą zdobyć umiejętności CSS.
 1. [Ukryj filmy z autoodtwarzaniem, które nie są wyciszone](#ukryj-filmy-z-autoodtwarzaniem-które-nie-są-wyciszone)
 1. [Użyj `:root` for Flexible Type](#użyj-root-tryp-elastyczny)
 1. [Ustaw `font-size` w elementach formularza, aby uzyskać lepsze wrażenia z urządzenia mobilnego](#ustaw-font-size-w-elementach-formularza-aby-uzyskać-lepsze-wrażenia-z-urządzenia-mobilnego)
+1. [Użyj zdarzeń wskaźnika do sterowania zdarzeniami myszy](#użyj-zdarzeń-wskaźnika-do-sterowania-zdarzeniami-myszy)
 
 
 ### Użyj resetowania CSS
@@ -540,6 +541,22 @@ textarea {
 ```
 
 :dancer:
+
+<sup>[Powrót do spisu treści](#Powrót-do-spisu-treści)</sup>
+
+
+### Użyj zdarzeń wskaźnika do sterowania zdarzeniami myszy
+
+[Pointer events](https://developer.mozilla.org/en-US/docs/Web/CSS/pointer-events) umożliwiają określenie sposobu interakcji myszy z elementem, który dotyka. Aby wyłączyć domyślne zdarzenie wskaźnika na przycisku, na przykład:
+
+```css
+.button-disabled {
+  opacity: .5;
+  pointer-events: none;
+}
+```
+
+To takie proste.
 
 <sup>[Powrót do spisu treści](#Powrót-do-spisu-treści)</sup>
 
