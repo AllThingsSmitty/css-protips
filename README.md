@@ -81,6 +81,8 @@ html {
 
 This makes it easier to change `box-sizing` in plugins or other components that leverage other behavior.
 
+#### [Demo](https://codepen.io/anon/pen/MGQKxp)
+
 <sup>[back to table of contents](#table-of-contents)</sup>
 
 
