@@ -202,7 +202,7 @@ ul > li:not(:last-child)::after {
 }
 ```
 
-Use the `:not()` pseudo-class so no comma is added to the last item.
+Use the `:not()` pseudo-class and no comma will be added to the last item.
 
 **Note:** This tip may not be ideal for accessibility, specifically screen readers. And copy/paste from the browser doesn't work with CSS-generated content. Proceed with caution.
 
@@ -233,8 +233,6 @@ li:not(:nth-child(-n+3)) {
 }
 ```
 
-Well that was pretty easy.
-
 #### [Demo](http://codepen.io/AllThingsSmitty/pen/WxjKZp)
 
 <sup>[back to table of contents](#table-of-contents)</sup>
@@ -250,7 +248,7 @@ There's no reason not to use SVG for icons:
 }
 ```
 
-SVG scales well for all resolution types and is supported in all browsers [back to IE9](http://caniuse.com/#search=svg). So ditch your .png, .jpg, or .gif-jif-whatev files.
+SVG scales well for all resolution types and is supported in all browsers [back to IE9](http://caniuse.com/#search=svg). Ditch your .png, .jpg, or .gif-jif-whatev files.
 
 **Note:** If you have SVG icon-only buttons for sighted users and the SVG fails to load, this will help maintain accessibility:
 
@@ -306,7 +304,7 @@ The element expands to the `max-height` value on hover and the slider displays a
 
 ### Equal-Width Table Cells
 
-Tables can be a pain to work with so try using `table-layout: fixed` to keep cells at equal width:
+Tables can be a pain to work with. Try using `table-layout: fixed` to keep cells at equal width:
 
 ```css
 .calendar {
