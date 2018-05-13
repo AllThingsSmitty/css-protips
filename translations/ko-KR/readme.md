@@ -45,6 +45,7 @@ CSS스킬을 프로처럼 만들어주는 팁 모음
 
 
 <div id="use-a-css-reset"></div>
+
 ### CSS Reset을 사용
 
 CSS resets help enforce style consistency across different browsers with a clean slate for styling elements. You can use a CSS reset library like [Normalize](http://necolas.github.io/normalize.css/), _et al._, or you can use a more simplified reset approach:
