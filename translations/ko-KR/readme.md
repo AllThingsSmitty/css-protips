@@ -19,7 +19,7 @@ CSS스킬을 프로처럼 만들어주는 팁 모음
 
 ## 프로팁
 
-1. [CSS Reset을 사용합니다.](#use-a-css-reset)
+1. [CSS Reset을 사용](#CSS-Reset을-사용)
 2. [`box-sizing`을 컴포넌트마다 변경](#inherit-box-sizing)
 3. [모든 프로퍼티를 리셋하는 대신에 `unset`를 쓴다](#use-unset-instead-of-resetting-all-properties)
 4. [`:not()` 를 사용하여 Border를 삭제](#use-not-to-applyunapply-borders-on-navigation)
@@ -44,7 +44,7 @@ CSS스킬을 프로처럼 만들어주는 팁 모음
 23. [포인터 이벤트를 사용한 마우스 이벤트 제어](#use-pointer-events-to-control-mouse-events)
 
 
-### Use a CSS Reset
+### CSS Reset을 사용
 
 CSS resets help enforce style consistency across different browsers with a clean slate for styling elements. You can use a CSS reset library like [Normalize](http://necolas.github.io/normalize.css/), _et al._, or you can use a more simplified reset approach:
 
