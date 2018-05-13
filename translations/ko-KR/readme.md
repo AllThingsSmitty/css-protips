@@ -8,6 +8,7 @@ CSS스킬을 프로처럼 만들어주는 팁 모음
 
 > 또 다른  꼭 확인해 볼 만한 [@sindresorhus](https://github.com/sindresorhus/)의 큐레이트 리스트  [awesome lists](https://github.com/sindresorhus/awesome/).
 
+<div id="table-of-contents"></div>
 
 ## 목차
 
@@ -17,9 +18,11 @@ CSS스킬을 프로처럼 만들어주는 팁 모음
 * [컨트리뷰션 가이드라인](CONTRIBUTING.md)
 
 
+<div id="protips"></div>
+
 ## 프로팁
 
-1. [CSS Reset을 사용](#use-a-css-rese)
+1. [CSS Reset을 사용](#use-a-css-reset)
 2. [`box-sizing`을 컴포넌트마다 변경](#inherit-box-sizing)
 3. [모든 프로퍼티를 리셋하는 대신에 `unset`를 쓴다](#use-unset-instead-of-resetting-all-properties)
 4. [`:not()` 를 사용하여 Border를 삭제](#use-not-to-applyunapply-borders-on-navigation)
