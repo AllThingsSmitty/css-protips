@@ -2,46 +2,46 @@
   <img src="https://rawgit.com/AllThingsSmitty/css-protips/master/media/logo.svg" width="200" alt="light bulb icon">
 </p>
 
-# CSS Protips [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome)
+# CSS 프로팁 [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome)
 
-A collection of tips to help take your CSS skills pro.
+CSS스킬을 프로처럼 만들어주는 팁 모음
 
-> For other great lists check out [@sindresorhus](https://github.com/sindresorhus/)'s curated list of [awesome lists](https://github.com/sindresorhus/awesome/).
-
-
-## Table of Contents
-
-* [Protips](#protips)
-* [Support](#support)
-* [Translations](#translations)
-* [Contribution Guidelines](CONTRIBUTING.md)
+> 또 다른  꼭 확인해 볼 만한 [@sindresorhus](https://github.com/sindresorhus/)의 큐레이트 리스트  [awesome lists](https://github.com/sindresorhus/awesome/).
 
 
-## Protips
+## 목차
 
-1. [Use a CSS Reset](#use-a-css-reset)
-1. [Inherit `box-sizing`](#inherit-box-sizing)
-1. [Use `unset` Instead of Resetting All Properties](#use-unset-instead-of-resetting-all-properties)
-1. [Use `:not()` to Apply/Unapply Borders on Navigation](#use-not-to-applyunapply-borders-on-navigation)
-1. [Add `line-height` to `body`](#add-line-height-to-body)
-1. [Vertically-Center Anything](#vertically-center-anything)
-1. [Comma-Separated Lists](#comma-separated-lists)
-1. [Select Items Using Negative `nth-child`](#select-items-using-negative-nth-child)
-1. [Use SVG for Icons](#use-svg-for-icons)
-1. [Use the "Lobotomized Owl" Selector](#use-the-lobotomized-owl-selector)
-1. [Use `max-height` for Pure CSS Sliders](#use-max-height-for-pure-css-sliders)
-1. [Equal-Width Table Cells](#equal-width-table-cells)
-1. [Get Rid of Margin Hacks With Flexbox](#get-rid-of-margin-hacks-with-flexbox)
-1. [Use Attribute Selectors with Empty Links](#use-attribute-selectors-with-empty-links)
-1. [Style "Default" Links](#style-default-links)
-1. [Consistent Vertical Rhythm](#consistent-vertical-rhythm)
-1. [Intrinsic Ratio Boxes](#intrinsic-ratio-boxes)
-1. [Style Broken Images](#style-broken-images)
-1. [Use `rem` for Global Sizing; Use `em` for Local Sizing](#use-rem-for-global-sizing-use-em-for-local-sizing)
-1. [Hide Autoplay Videos That Aren't Muted](#hide-autoplay-videos-that-arent-muted)
-1. [Use `:root` for Flexible Type](#use-root-for-flexible-type)
-1. [Set `font-size` on Form Elements for a Better Mobile Experience](#set-font-size-on-form-elements-for-a-better-mobile-experience)
-1. [Use Pointer Events to Control Mouse Events](#use-pointer-events-to-control-mouse-events)
+* [프로팁](#protips)
+* [서포트](#support)
+* [번역](#translations)
+* [컨트리뷰션 가이드라인](CONTRIBUTING.md)
+
+
+## 프로팁
+
+1. [CSS Reset을 사용합니다.](#use-a-css-reset)
+2. [`box-sizing`을 컴포넌트마다 변경](#inherit-box-sizing)
+3. [모든 프로퍼티를 리셋하는 대신에 `unset`를 쓴다](#use-unset-instead-of-resetting-all-properties)
+4. [`:not()` 를 사용하여 Border를 삭제](#use-not-to-applyunapply-borders-on-navigation)
+5. [`body`에 `line-height` 넣기](#add-line-height-to-body)
+6. [전부 Vertically-Center로 만들기](#vertically-center-anything)
+7. [리스트를 콤마로 나누기](#comma-separated-lists)
+8. [Negative `nth-child`를 사용하여 아이템 나누기](#select-items-using-negative-nth-child)
+9. [SVG를 아이콘으로 사용하기](#use-svg-for-icons)
+10. ["Lobotomized Owl" Selector 사용하기](#use-the-lobotomized-owl-selector)
+11. [CSS로 구현된 슬라이더에 `max-height` 사용하기](#use-max-height-for-pure-css-sliders)
+12. [테이블 셀의 넓이 균등하게 하기](#equal-width-table-cells)
+13. [Flexbox의 Margin Hack 제거](#get-rid-of-margin-hacks-with-flexbox)
+14. [링크에 텍스트가 없을 때의 url 표시](#use-attribute-selectors-with-empty-links)
+15. ["Default" 링크 스타일링](#style-default-links)
+16. [일관된 Vertical Rhythm 정의하기](#consistent-vertical-rhythm)
+17. [내재 비율의 박스](#intrinsic-ratio-boxes)
+18. [링크가 사라진 이미지 스타일링](#style-broken-images)
+19. [글로벌 사이즈 지정에 `rem`; 로컬  사이즈 지정에 `em`](#use-rem-for-global-sizing-use-em-for-local-sizing)
+20. [동영상 자동재생 감추기](#hide-autoplay-videos-that-arent-muted)
+21. [Flexible Type의 `:root` 사용하기](#use-root-for-flexible-type)
+22. [모바일 환경을 위한 `font-size` 요소 설정](#set-font-size-on-form-elements-for-a-better-mobile-experience)
+23. [포인터 이벤트를 사용한 마우스 이벤트 제어](#use-pointer-events-to-control-mouse-events)
 
 
 ### Use a CSS Reset
