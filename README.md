@@ -42,7 +42,7 @@ A collection of tips to help take your CSS skills pro.
 1. [Use `:root` for Flexible Type](#use-root-for-flexible-type)
 1. [Set `font-size` on Form Elements for a Better Mobile Experience](#set-font-size-on-form-elements-for-a-better-mobile-experience)
 1. [Use Pointer Events to Control Mouse Events](#use-pointer-events-to-control-mouse-events)
-1. [Aligns the flexible container's items](#align-the-flexible-container-item)
+1. [Aligns the flexible container's items](#aligns-the-flexible-containers-items)
 
 ### Use a CSS Reset
 
@@ -557,10 +557,10 @@ It's that simple.
 
 
 ### Aligns the flexible container's items
-[justify-content](https://developer.mozilla.org/en-US/docs/Web/CSS/justify-content) property defines how the browser distributes space between and around content items along the main axis of their container.
+The [justify-content](https://developer.mozilla.org/en-US/docs/Web/CSS/justify-content) property defines how the browser distributes space between and around content items along the main axis of their container.
 
 ```css
-div{
+div {
   display: flex;
   justify-content: center;
 }
