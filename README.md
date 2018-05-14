@@ -573,8 +573,10 @@ Current versions of Chrome, Firefox, Safari, Opera, Edge, and IE11.
 * [ગુજરાતી](https://github.com/AllThingsSmitty/css-protips/tree/master/translations/gu-IND)
 * [Italiano](https://github.com/AllThingsSmitty/css-protips/tree/master/translations/it-IT)
 * [日本語](https://github.com/AllThingsSmitty/css-protips/tree/master/translations/ja-JP)
+* [한국어](https://github.com/AllThingsSmitty/css-protips/tree/master/translations/ko-KR)
 * [Polskie](https://github.com/AllThingsSmitty/css-protips/tree/master/translations/pl-PL)
 * [Português do Brasil](https://github.com/AllThingsSmitty/css-protips/tree/master/translations/pt-BR)
+* [Português do Europe](https://github.com/AllThingsSmitty/css-protips/tree/master/translations/pt-PT)
 * [Русский](https://github.com/AllThingsSmitty/css-protips/tree/master/translations/ru-RU)
 
 <sup>[back to table of contents](#table-of-contents)</sup>
