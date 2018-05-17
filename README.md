@@ -229,7 +229,7 @@ Or, since you've already learned a little about [using `:not()`](#use-not-to-app
 ```css
 /* select all items except the first 3 and display them */
 li:not(:nth-child(-n+3)) {
-  display: none;
+  display: block;
 }
 ```
 
