@@ -563,7 +563,7 @@ If you do not like the default (blue) focus outline that is displayed when a use
 
 ```css
 input:focus, select:focus, textarea:focus, button:focus {
-  outline : none
+  outline : none;
 }
 ```
 
