@@ -42,6 +42,7 @@ A collection of tips to help take your CSS skills pro.
 1. [Use `:root` for Flexible Type](#use-root-for-flexible-type)
 1. [Set `font-size` on Form Elements for a Better Mobile Experience](#set-font-size-on-form-elements-for-a-better-mobile-experience)
 1. [Use Pointer Events to Control Mouse Events](#use-pointer-events-to-control-mouse-events)
+1. [Remove `outline` from form elements](#remove-outline-from-form-elements)
 
 
 ### Use a CSS Reset
@@ -552,6 +553,21 @@ textarea {
 ```
 
 It's that simple.
+
+<sup>[back to table of contents](#table-of-contents)</sup>
+
+
+### Remove `outline` from form elements
+
+If you do not like the default (blue) focus outline that is displayed when a user clicks on an interactive element, you can disable the default focus from the elements, for instance:
+
+```css
+input:focus, select:focus, textarea:focus, button:focus {
+  outline : none
+}
+```
+
+It's simple. no?
 
 <sup>[back to table of contents](#table-of-contents)</sup>
 
