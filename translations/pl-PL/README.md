@@ -73,7 +73,9 @@ html {
   box-sizing: border-box;
 }
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: inherit;
 }
 ```
@@ -169,7 +171,8 @@ W ten sposób elementy tekstowe mogą łatwo korzystać z
 Nie, to nie jest czarna magia, naprawdę możesz wyśrodkować elementy w pionie:
 
 ```css
-html, body {
+html,
+body {
   height: 100%;
   margin: 0;
 }

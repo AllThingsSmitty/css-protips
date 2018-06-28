@@ -73,7 +73,9 @@ html {
   box-sizing: border-box;
 }
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: inherit;
 }
 ```
@@ -168,7 +170,8 @@ De esta manera los elementos de texto pueden heredarlo fácilmente de `body`.
 No, no es magia negra, realmente puedes centrar elementos verticalmente:
 
 ```css
-html, body {
+html,
+body {
   height: 100%;
   margin: 0;
 }

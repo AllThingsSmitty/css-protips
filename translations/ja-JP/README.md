@@ -83,7 +83,9 @@ html {
   box-sizing: border-box;
 }
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: inherit;
 }
 
@@ -185,7 +187,8 @@ body {
 なんでも天地の中央に配置できます！！
 
 ```css
-html, body {
+html,
+body {
   height: 100%;
   margin: 0;
 }

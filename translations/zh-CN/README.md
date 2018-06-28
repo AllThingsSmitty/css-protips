@@ -74,7 +74,9 @@ html {
   box-sizing: border-box;
 }
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: inherit;
 }
 ```
@@ -169,7 +171,8 @@ body {
 不！这绝不是黑魔法，真的可以垂直居中任何元素：
 
 ```css
-html, body {
+html,
+body {
   height: 100%;
   margin: 0;
 }

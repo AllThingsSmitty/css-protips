@@ -73,7 +73,9 @@ html {
   box-sizing: border-box;
 }
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: inherit;
 }
 ```
@@ -168,7 +170,8 @@ body {
 ના, તે કાળા જાદુ નથી, તમે ખરેખર ઊભી તત્વોને કેન્દ્રિત કરી શકો છો:
 
 ```css
-html, body {
+html,
+body {
   height: 100%;
   margin: 0;
 }

@@ -75,7 +75,9 @@ html {
   box-sizing: border-box;
 }
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: inherit;
 }
 ```
@@ -170,7 +172,8 @@ body {
 Нет, это не черная магия, вы действительно можете расположить элементы по центру по вертикали:
 
 ```css
-html, body {
+html,
+body {
   height: 100%;
   margin: 0;
 }

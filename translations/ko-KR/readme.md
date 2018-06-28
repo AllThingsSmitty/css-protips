@@ -82,7 +82,9 @@ html {
   box-sizing: border-box;
 }
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: inherit;
 }
 ```
@@ -185,7 +187,8 @@ body {
 농담이 아니라, 진짜 전부 중앙으로 배치가 가능합니다.
 
 ```css
-html, body {
+html,
+body {
   height: 100%;
   margin: 0;
 }

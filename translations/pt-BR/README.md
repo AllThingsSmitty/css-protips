@@ -73,7 +73,9 @@ html {
   box-sizing: border-box;
 }
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: inherit;
 }
 ```
@@ -168,7 +170,8 @@ Dessa maneira elementos de texto vão herdar o `line-height` do `body`.
 Que bruxaria é essa? Não é bruxaria! Você realmente pode centralizar elementos verticalmente:
 
 ```css
-html, body {
+html,
+body {
   height: 100%;
   margin: 0;
 }
