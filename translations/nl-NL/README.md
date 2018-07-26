@@ -56,7 +56,7 @@ Element worden nu ontnomen van marges, vulling en `box-sizing` maakt layouts beh
 
 **Attentie**: Als je de hieronder genoemde Overerven van `box-sizing` tip volgt dan kan je kiezen het `box-sizing` attribuut niet in de CSS reset te zetten.
 
-<sup>[Terug naar inhoudsopgaven](#inhoudsopgaven]</sup>
+<sup>[Terug naar inhoudsopgaven](#inhoudsopgaven)</sup>
 
 ### Overerven van `box-sizing`
 
@@ -76,7 +76,7 @@ html {
 
 Dit maakt het makkelijker om de `box-sizing` te veranderen in plugins of andere componenten die gebruik maken van ander gedrag.
 
-<sup>[Terug naar inhoudsopgaven](#inhoudsopgaven]</sup>
+<sup>[Terug naar inhoudsopgaven](#inhoudsopgaven)</sup>
 
 ### Gebruik `unset` in plaats van alle attributen te resetten
 
@@ -104,7 +104,7 @@ button {
 
 **Attentie:** het `all` attribuut wordt niet ondersteund in IE11 en wordt overwogen te ondersteunen in Edge.
 
-<sup>[Terug naar inhoudsopgaven](#inhoudsopgaven]</sup>
+<sup>[Terug naar inhoudsopgaven](#inhoudsopgaven)</sup>
 
 ### Gebruik `:not()` voor het toevoegen/weghalen van randen op navigatie
 
@@ -138,7 +138,7 @@ Het is natuurlijk mogelijk om `.nav li + li` te gebruiken, maar met `:not()` is 
 
 #### [Demo](http://codepen.io/AllThingsSmitty/pen/LkymvO)
 
-<sup>[Terug naar inhoudsopgaven](#inhoudsopgaven]</sup>
+<sup>[Terug naar inhoudsopgaven](#inhoudsopgaven)</sup>
 
 ### Voeg `line-height` toe aan `body`
 
@@ -155,7 +155,7 @@ Deze manier maakt het makkelijker voor tekst elementen om over te erven van `bod
 
 #### [Demo](http://codepen.io/AllThingsSmitty/pen/VjbdYd)
 
-<sup>[Terug naar inhoudsopgaven](#inhoudsopgaven]</sup>
+<sup>[Terug naar inhoudsopgaven](#inhoudsopgaven)</sup>
 
 ### Centreer alles verticaal
 
@@ -194,7 +194,7 @@ Wil je een ander element centreren? Verticaal, horizontaal, elke directie op elk
 
 #### [Demo](http://codepen.io/AllThingsSmitty/pen/GqmGqZ)
 
-<sup>[Terug naar inhoudsopgaven](#inhoudsopgaven]</sup>
+<sup>[Terug naar inhoudsopgaven](#inhoudsopgaven)</sup>
 
 ### Comma gescheiden lijsten
 
@@ -210,7 +210,7 @@ Gebruik de `:not()` psuedo klasse om geen comma aan het laatste item toe te voeg
 
 **Attentie:** Deze tip kan niet ideaal zijn voor toegankelijkheid. Screen readers in het specifiek. Ook werken kopieer/plak operataties vanuit de browsers niet op CSS gengenereerde inhoud. Voeg met beleid toe.
 
-<sup>[Terug naar inhoudsopgaven](#inhoudsopgaven]</sup>
+<sup>[Terug naar inhoudsopgaven](#inhoudsopgaven)</sup>
 
 ### Selecteer items met negatieef `nth-child`
 
@@ -238,7 +238,7 @@ li:not(:nth-child(-n+3)) {
 
 #### [Demo](http://codepen.io/AllThingsSmitty/pen/WxjKZp)
 
-<sup>[Terug naar inhoudsopgaven](#inhoudsopgaven]</sup>
+<sup>[Terug naar inhoudsopgaven](#inhoudsopgaven)</sup>
 
 ### Gebruik SVG voor iconen
 
@@ -261,7 +261,7 @@ SVG schaalt goed op elke resolutie en wordt ondersteund in alle browsers.
 }
 ```
 
-<sup>[Terug naar inhoudsopgaven](#inhoudsopgaven]</sup>
+<sup>[Terug naar inhoudsopgaven](#inhoudsopgaven)</sup>
 
 ### Gebruik de "Lobotomized Owl" Selector
 
@@ -279,7 +279,7 @@ Voor meer informatie over de "lobotomized owl" selector, lees [Heydon Pickering'
 
 #### [Demo](http://codepen.io/AllThingsSmitty/pen/grRvWq)
 
-<sup>[Terug naar inhoudsopgaven](#inhoudsopgaven]</sup>
+<sup>[Terug naar inhoudsopgaven](#inhoudsopgaven)</sup>
 
 ### Gebruik `max-height` voor pure css sliders
 
@@ -300,7 +300,7 @@ Implementeer sliders die alleen gebruik maken van CSS met `max-height` en geen o
 
 Het element vergroot naar de waarden van `max-height` op hover en de slider wordt weergeven als resultaat van de overflow.
 
-<sup>[Terug naar inhoudsopgaven](#inhoudsopgaven]</sup>
+<sup>[Terug naar inhoudsopgaven](#inhoudsopgaven)</sup>
 
 ### Tabel cellen met dezelfde breedte
 
@@ -316,7 +316,7 @@ Pijnloze tabel layouts.
 
 #### [Demo](http://codepen.io/AllThingsSmitty/pen/jALALm)
 
-<sup>[Terug naar inhoudsopgaven](#inhoudsopgaven]</sup>
+<sup>[Terug naar inhoudsopgaven](#inhoudsopgaven)</sup>
 
 ### Geen marge hacks meer met Flexbox
 
@@ -335,7 +335,7 @@ Wanneer er gewerkt wordt met Kolommengoten kan je `nth-`, `first-` en `last-chil
 
 Kolommengoten verschijnen nu altijd op gelijke afstand van elkaar.
 
-<sup>[Terug naar inhoudsopgaven](#inhoudsopgaven]</sup>
+<sup>[Terug naar inhoudsopgaven](#inhoudsopgaven)</sup>
 
 
 ### Gebruik attribuut selectoren met lege links
@@ -350,7 +350,7 @@ a[href^="http"]:empty::before {
 
 #### [Demo](http://codepen.io/AllThingsSmitty/pen/zBzXRx)
 
-<sup>[Terug naar inhoudsopgaven](#inhoudsopgaven]</sup>
+<sup>[Terug naar inhoudsopgaven](#inhoudsopgaven)</sup>
 
 ### Stijl "standaard" links
 
@@ -365,7 +365,7 @@ a[href]:not([class]) {
 
 Links die via een CMS toegevoegd worden die meestal geen `class` attribuut hebben, worden nu ondersheiden zonder de cascade aan te passen.
 
-<sup>[Terug naar inhoudsopgaven](#inhoudsopgaven]</sup>
+<sup>[Terug naar inhoudsopgaven](#inhoudsopgaven)</sup>
 
 ### Consistent verticaal ritme
 
@@ -379,7 +379,7 @@ Gebruik een universele selector (`*`) in een element om een consistent verticaal
 
 Een consistent verticaal ritme zorgt voor een visueel aesthetisch effect waardoor de inhoud meer leesbaar word.
 
-<sup>[Terug naar inhoudsopgaven](#inhoudsopgaven]</sup>
+<sup>[Terug naar inhoudsopgaven](#inhoudsopgaven)</sup>
 
 ### Intrinsieke ratio boxes
 
@@ -407,7 +407,7 @@ Het gebruik van 20% van de opvulling maakt de hoogte van de box gelijk aan 20% v
 
 #### [Demo](http://codepen.io/AllThingsSmitty/pen/jALZvE)
 
-<sup>[Terug naar inhoudsopgaven](#inhoudsopgaven]</sup>
+<sup>[Terug naar inhoudsopgaven](#inhoudsopgaven)</sup>
 
 ### Stijl gebroken afbeeldingen
 
@@ -444,7 +444,7 @@ img::after {
 
 Lees meer over dit patroon op [Ire Aderinokun](https://github.com/ireade/)'s [original post](http://bitsofco.de/styling-broken-images/).
 
-<sup>[Terug naar inhoudsopgaven](#inhoudsopgaven]</sup>
+<sup>[Terug naar inhoudsopgaven](#inhoudsopgaven)</sup>
 
 ### Gebruik `rem` voor globale vergroting, gebruik `em` voor lokale vergroting
 
@@ -474,7 +474,7 @@ aside .module {
 
 Nu wordt elke module gecompartimenteerd en gemakkelijker te stijlen, beter te onderhouden en flexibeler.
 
-<sup>[Terug naar inhoudsopgaven](#inhoudsopgaven]</sup>
+<sup>[Terug naar inhoudsopgaven](#inhoudsopgaven)</sup>
 
 ### Verberg automatisch afspelende video's die niet gemute zijn
 
@@ -488,7 +488,7 @@ video[autoplay]:not([muted]) {
 
 We maken nogmaals gebruik van de  [`:not()`](#use-not-to-applyunapply-borders-on-navigation) psuedo klasse.
 
-<sup>[Terug naar inhoudsopgaven](#inhoudsopgaven]</sup>
+<sup>[Terug naar inhoudsopgaven](#inhoudsopgaven)</sup>
 
 ### Gebruik `:root` voor flexibele type
 
@@ -510,7 +510,7 @@ body {
  
 #### [Demo](http://codepen.io/AllThingsSmitty/pen/XKgOkR)
 
-<sup>[Terug naar inhoudsopgaven](#inhoudsopgaven]</sup>
+<sup>[Terug naar inhoudsopgaven](#inhoudsopgaven)</sup>
 
 ### Zet `font-size` op form elementen voor een betere mobiele ervaring
 
@@ -527,7 +527,7 @@ textarea {
 
 :dancer:
 
-<sup>[Terug naar inhoudsopgaven](#inhoudsopgaven]</sup>
+<sup>[Terug naar inhoudsopgaven](#inhoudsopgaven)</sup>
 
 ### Gebruik pointer events om control te nemen over muis events
 
@@ -542,12 +542,12 @@ textarea {
 
 Het is zo simpel
 
-<sup>[Terug naar inhoudsopgaven](#inhoudsopgaven]</sup>
+<sup>[Terug naar inhoudsopgaven](#inhoudsopgaven)</sup>
 
 ## Ondersteuning
 Huidige versies van Chrome, Firefox, Safari, Opera, Edge en IE11.
 
-<sup>[Terug naar inhoudsopgaven](#inhoudsopgaven]</sup>
+<sup>[Terug naar inhoudsopgaven](#inhoudsopgaven)</sup>
 
 ## Vertalingen
 
@@ -566,6 +566,6 @@ Huidige versies van Chrome, Firefox, Safari, Opera, Edge en IE11.
 * [Русский](https://github.com/AllThingsSmitty/css-protips/tree/master/translations/ru-RU)
 * [Nederlands](https://github.com/AllThingsSmitty/css-protips/tree/master/translations/nl-NL)
 
-<sup>[Terug naar inhoudsopgaven](#inhoudsopgaven]</sup>
+<sup>[Terug naar inhoudsopgaven](#inhoudsopgaven)</sup>
 
 
