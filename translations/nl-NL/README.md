@@ -2,7 +2,7 @@
 
 Een collectie van tips om jouw CSS vaardigheden naar pro level.
 
-> Voor meer awesome lijsten check @sindresorhus's samengestelde lijst van awesome lijsten
+> Voor meer awesome lijsten check [@sindresorhus](https://github.com/sindresorhus/)'s  [samengestelde lijst van awesome lijsten](https://github.com/sindresorhus/awesome/)
 
 ## inhoudsopgaven
 

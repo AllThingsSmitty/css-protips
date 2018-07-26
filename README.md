@@ -593,5 +593,6 @@ Current versions of Chrome, Firefox, Safari, Opera, Edge, and IE11.
 * [Português do Brasil](https://github.com/AllThingsSmitty/css-protips/tree/master/translations/pt-BR)
 * [Português do Europe](https://github.com/AllThingsSmitty/css-protips/tree/master/translations/pt-PT)
 * [Русский](https://github.com/AllThingsSmitty/css-protips/tree/master/translations/ru-RU)
+* [Nederlands](https://github.com/AllThingsSmitty/css-protips/tree/master/translations/nl-NL)
 
 <sup>[back to table of contents](#table-of-contents)</sup>
