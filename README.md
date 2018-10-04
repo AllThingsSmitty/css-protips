@@ -23,6 +23,7 @@ A collection of tips to help take your CSS skills pro.
 1. [Inherit `box-sizing`](#inherit-box-sizing)
 1. [Use `unset` Instead of Resetting All Properties](#use-unset-instead-of-resetting-all-properties)
 1. [Use `:not()` to Apply/Unapply Borders on Navigation](#use-not-to-applyunapply-borders-on-navigation)
+1. [Set `:focus` for Form Elements](#set-focus-for-form-elements)
 1. [Add `line-height` to `body`](#add-line-height-to-body)
 1. [Vertically-Center Anything](#vertically-center-anything)
 1. [Comma-Separated Lists](#comma-separated-lists)
@@ -49,7 +50,9 @@ A collection of tips to help take your CSS skills pro.
 CSS resets help enforce style consistency across different browsers with a clean slate for styling elements. You can use a CSS reset library like [Normalize](http://necolas.github.io/normalize.css/), _et al._, or you can use a more simplified reset approach:
 
 ```css
-* {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -162,6 +165,25 @@ body {
 This way textual elements can inherit from `body` easily.
 
 #### [Demo](http://codepen.io/AllThingsSmitty/pen/VjbdYd)
+
+<sup>[back to table of contents](#table-of-contents)</sup>
+
+
+### Set `:focus` for Form Elements
+
+Sighted keyboard users rely on focus to determine where keyboard events go in the page. Make focus for form elements stand out and consistent then a browser's default implementation:
+
+```css
+a:focus,
+button:focus,
+input:focus,
+select:focus,
+textarea:focus {
+  box-shadow: none;
+  outline: #000 dotted 2px;
+  outline-offset: .05em;
+}
+```
 
 <sup>[back to table of contents](#table-of-contents)</sup>
 
