@@ -185,6 +185,8 @@ textarea:focus {
 }
 ```
 
+#### [Demo](https://codepen.io/AllThingsSmitty/pen/ePzoOP/)
+
 <sup>[back to table of contents](#table-of-contents)</sup>
 
 
