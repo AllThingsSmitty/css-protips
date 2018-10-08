@@ -23,6 +23,7 @@ Uma coleção de dicas para aumentar suas habilidades no CSS.
 1. [Use `unset` em vez de redefinir todas as propriedades](#use-unset-em-vez-de-redefinir-todas-as-propriedades)
 1. [Use `:not()` para Aplicar/Remover Bordas](#use-not-para-aplicarremover-bordas)
 1. [Defina o `line-height` no `body`](#defina-o-line-height-no-body)
+1. [Definir `:focus` para elementos de formulário](#definir-focus-para-elementos-de-formulário)
 1. [Alinhe Elementos Verticalmente](#alinhe-elementos-verticalmente)
 1. [Listas Separadas por Vírgula](#listas-separadas-por-vírgula)
 1. [Selecione Itens Usando `nth-child` Negativo](#selecione-itens-usando-nth-child-negativo)
@@ -48,7 +49,9 @@ Uma coleção de dicas para aumentar suas habilidades no CSS.
 Resetar o CSS vai te ajudar a manter a consistência de estilo em diferentes navegadores com um ponto de partida limpo para elementos de estilo. Você pode usar a biblioteca de reset CSS como [Normalize](http://necolas.github.io/normalize.css/), ou se preferir, usar uma abordagem mais simplificada.:
 
 ```css
-* {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -165,6 +168,27 @@ Dessa maneira elementos de texto vão herdar o `line-height` do `body`.
 <sup>[voltar ao índice](#Índice)</sup>
 
 
+### Definir `:focus` para elementos de formulário
+
+Os usuários de teclado com visão dependem do foco para determinar onde os eventos de teclado vão na página. Faça com que os elementos do formulário se foquem e sejam consistentes com a implementação padrão do navegador:
+
+```css
+a:focus,
+button:focus,
+input:focus,
+select:focus,
+textarea:focus {
+  box-shadow: none;
+  outline: #000 dotted 2px;
+  outline-offset: .05em;
+}
+```
+
+#### [Exemplo](https://codepen.io/AllThingsSmitty/pen/ePzoOP/)
+
+<sup>[voltar ao índice](#Índice)</sup>
+
+
 ### Alinhe Elementos Verticalmente
 
 Que bruxaria é essa? Não é bruxaria! Você realmente pode centralizar elementos verticalmente:
@@ -182,6 +206,17 @@ body {
   align-items: center;
   display: -webkit-flex;
   display: flex;
+}
+```
+
+...e também com CSS Grid:
+
+```css
+body {
+  display: grid;
+  height: 100vh;
+  margin: 0;
+  place-items: center center;
 }
 ```
 

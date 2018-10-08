@@ -22,28 +22,29 @@ CSS스킬을 프로처럼 만들어주는 팁 모음
 ## 프로팁
 
 1. [CSS Reset을 사용](#use-a-css-reset)
-2. [`box-sizing`을 컴포넌트마다 변경](#inherit-box-sizing)
-3. [모든 프로퍼티를 리셋하는 대신에 `unset`를 쓴다](#use-unset-instead-of-resetting-all-properties)
-4. [`:not()` 를 사용하여 Border를 삭제](#use-not-to-applyunapply-borders-on-navigation)
-5. [`body`에 `line-height` 넣기](#add-line-height-to-body)
-6. [전부 Vertically-Center로 만들기](#vertically-center-anything)
-7. [리스트를 콤마로 나누기](#comma-separated-lists)
-8. [Negative `nth-child`를 사용하여 아이템 나누기](#select-items-using-negative-nth-child)
-9. [SVG를 아이콘으로 사용하기](#use-svg-for-icons)
-10. ["Lobotomized Owl" Selector 사용하기](#use-the-lobotomized-owl-selector)
-11. [CSS로 구현된 슬라이더에 `max-height` 사용하기](#use-max-height-for-pure-css-sliders)
-12. [테이블 셀의 너비 균등하게 하기](#equal-width-table-cells)
-13. [Flexbox의 Margin Hack 제거](#get-rid-of-margin-hacks-with-flexbox)
-14. [링크에 텍스트가 없을 때의 url 표시](#use-attribute-selectors-with-empty-links)
-15. ["Default" 링크 스타일](#style-default-links)
-16. [일관된 Vertical Rhythm 정의하기](#consistent-vertical-rhythm)
-17. [내재 비율의 박스](#intrinsic-ratio-boxes)
-18. [깨진 링크의 이미지 스타일](#style-broken-images)
-19. [글로벌 사이즈 지정에 `rem`; 로컬  사이즈 지정에 `em`](#use-rem-for-global-sizing-use-em-for-local-sizing)
-20. [동영상 자동재생 감추기](#hide-autoplay-videos-that-arent-muted)
-21. [Flexible Type의 `:root` 사용하기](#use-root-for-flexible-type)
-22. [모바일 환경을 위한 `font-size` 요소 설정](#set-font-size-on-form-elements-for-a-better-mobile-experience)
-23. [포인터 이벤트를 사용한 마우스 이벤트 제어](#use-pointer-events-to-control-mouse-events)
+1. [`box-sizing`을 컴포넌트마다 변경](#inherit-box-sizing)
+1. [모든 프로퍼티를 리셋하는 대신에 `unset`를 쓴다](#use-unset-instead-of-resetting-all-properties)
+1. [`:not()` 를 사용하여 Border를 삭제](#use-not-to-applyunapply-borders-on-navigation)
+1. [`body`에 `line-height` 넣기](#add-line-height-to-body)
+1. [폼 요소에`: focus`를 설정하십시오.](#set-focus-for-form-elements)
+1. [전부 Vertically-Center로 만들기](#vertically-center-anything)
+1. [리스트를 콤마로 나누기](#comma-separated-lists)
+1. [Negative `nth-child`를 사용하여 아이템 나누기](#select-items-using-negative-nth-child)
+1. [SVG를 아이콘으로 사용하기](#use-svg-for-icons)
+1. ["Lobotomized Owl" Selector 사용하기](#use-the-lobotomized-owl-selector)
+1. [CSS로 구현된 슬라이더에 `max-height` 사용하기](#use-max-height-for-pure-css-sliders)
+1. [테이블 셀의 너비 균등하게 하기](#equal-width-table-cells)
+1. [Flexbox의 Margin Hack 제거](#get-rid-of-margin-hacks-with-flexbox)
+1. [링크에 텍스트가 없을 때의 url 표시](#use-attribute-selectors-with-empty-links)
+1. ["Default" 링크 스타일](#style-default-links)
+1. [일관된 Vertical Rhythm 정의하기](#consistent-vertical-rhythm)
+1. [내재 비율의 박스](#intrinsic-ratio-boxes)
+1. [깨진 링크의 이미지 스타일](#style-broken-images)
+1. [글로벌 사이즈 지정에 `rem`; 로컬  사이즈 지정에 `em`](#use-rem-for-global-sizing-use-em-for-local-sizing)
+1. [동영상 자동재생 감추기](#hide-autoplay-videos-that-arent-muted)
+1. [Flexible Type의 `:root` 사용하기](#use-root-for-flexible-type)
+1. [모바일 환경을 위한 `font-size` 요소 설정](#set-font-size-on-form-elements-for-a-better-mobile-experience)
+1. [포인터 이벤트를 사용한 마우스 이벤트 제어](#use-pointer-events-to-control-mouse-events)
 
 
 <div id="use-a-css-reset"></div>
@@ -53,7 +54,9 @@ CSS스킬을 프로처럼 만들어주는 팁 모음
 CSS reset은 스타일 요소들을 통해 백지 상태에서 다른 브라우저간의 스타일의 일관성을 강화하는데 도움을 줍니다.  You can use a CSS reset library like또한 [Normalize](http://necolas.github.io/normalize.css/), _et al._, 와 같은 CSS 라이브러리를 통해 더 간략화 된 Reset 어프로치를 사용 가능합니다.
 
 ```css
-* {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -176,6 +179,29 @@ body {
 이 방법의 문서 요소는 `body`에서 간단히 계승됩니다.
 
 #### [데모](http://codepen.io/AllThingsSmitty/pen/VjbdYd)
+
+<sup>[목차로 돌아가기](#table-of-contents)</sup>
+
+
+<div id="set-focus-for-form-elements"></div>
+
+### 폼 요소에`: focus`를 설정하십시오.
+
+키보드 사용자는 포커스를 사용하여 키보드 이벤트의 위치를 결정합니다. 양식 요소에 대한 집중도를 높이고 브라우저의 기본 구현을 일관성있게 만듭니다.
+
+```css
+a:focus,
+button:focus,
+input:focus,
+select:focus,
+textarea:focus {
+  box-shadow: none;
+  outline: #000 dotted 2px;
+  outline-offset: .05em;
+}
+```
+
+#### [데모](https://codepen.io/AllThingsSmitty/pen/ePzoOP/)
 
 <sup>[목차로 돌아가기](#table-of-contents)</sup>
 

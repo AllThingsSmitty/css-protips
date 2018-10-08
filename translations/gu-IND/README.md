@@ -22,7 +22,8 @@
 1. [વારસો `box-sizing`](#વારસો-box-sizing)
 1. [બધા ગુણધર્મોને ફરીથી સેટ કરવાને બદલે 'અનસેટ' નો ઉપયોગ કરો](#બધા-ગુણધર્મોને-ફરીથી-સેટ-કરવાને-બદલે-અનસેટ-નો-ઉપયોગ-કરો)
 1. [વાપરવ `:not()` અરજી / અનપ્પેલી કરવા માટે નેવિગેશન પર બોર્ડર્સ](#વાપરવ-not-અરજી--અનપ્પેલી-કરવા-માટે-નેવિગેશન-પર-બોર્ડર્સ)
-1. [ઉમેરો `line-height` તરફ `body`](#ઍડ-line-height-થી-body)
+1. [ઉમેરો `line-height` તરફ `body`](#ઉમેર-line-height-તરફ-body)
+1. [ફોર્મ તત્વો માટે 'ધ્યાન કેન્દ્રિત કરો' સેટ કરો](#ફોર્મ-તત્વો-માટે-ધ્યાન-કેન્દ્રિત-કરો-સેટ-કરો)
 1. [વર્ટિકલ-કેન્દ્ર કંઈપણ](#ઊભું-કેન્દ્ર-કંઈપણ)
 1. [કોમા-વિભાજિત સૂચિ](#કોમા-વિભાજિત-સૂચિ)
 1. [નકારાત્મક મદદથી વસ્તુઓ પસંદ કરો `nth-child`](#નકારાત્મક-મદદથી-વસ્તુઓ-પસંદ-કરો-nth-child)
@@ -48,7 +49,9 @@
 સીએસએસ રીસેટ્સ સ્ટાઇલ ઘટકો માટે સ્વચ્છ સ્લેટ સાથે વિવિધ બ્રાઉઝર્સમાં સ્ટાઇલ સુસંગતતાને અમલમાં મૂકવા માટે મદદ કરે છે. તમે જેમ કે CSS રીસેટ લાઇબ્રેરીનો ઉપયોગ કરી શકો છો [Normalize](http://necolas.github.io/normalize.css/), _et al._, અથવા તમે વધુ સરળ રીસેટ અભિગમનો ઉપયોગ કરી શકો છો:
 
 ```css
-* {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -57,7 +60,7 @@
 
 હવે તત્વો માર્જિન અને પેડિંગની છીનવી લેવામાં આવશે, અને `box-sizing` તમે સીએસએસ બોક્સ મોડેલ સાથે લેઆઉટ મેનેજ કરી શકો છો.
 
-#### [Demo](http://codepen.io/AllThingsSmitty/pen/kkrkLL)
+#### [પ્રદર્શન](http://codepen.io/AllThingsSmitty/pen/kkrkLL)
 
 **નોટ:** જો તમે અનુસરશો તો [Inherit `box-sizing`](#inherit-box-sizing) નીચે ટીપ તમે નીચેની શામેલ ન કરવાનું પસંદ કરી શકો છો `box-sizing` મિલકત માં  તમારા CSS રીસેટ .
 
@@ -143,7 +146,7 @@ button {
 
 ખાતરી કરો, તમે ઉપયોગ કરી શકો `.nav li + li`, પરંતુ સાથે `:not()` ઉદ્દેશ ખૂબ જ સ્પષ્ટ છે અને CSS પસંદગીકાર સરહદને તે રીતે વ્યાખ્યાયિત કરે છે.
 
-#### [Demo](http://codepen.io/AllThingsSmitty/pen/LkymvO)
+#### [પ્રદર્શન](http://codepen.io/AllThingsSmitty/pen/LkymvO)
 
 <sup>[સામગ્રીઓના કોષ્ટકમાં પાછા](#પ્રોપ્સ)</sup>
 
@@ -160,7 +163,28 @@ body {
 
 આ માર્ગ textual તત્વો શકવું બોલાવે થી `body` સરળતાથી.
 
-#### [Demo](http://codepen.io/AllThingsSmitty/pen/VjbdYd)
+#### [પ્રદર્શન](http://codepen.io/AllThingsSmitty/pen/VjbdYd)
+
+<sup>[સામગ્રીઓના કોષ્ટકમાં પાછા](#પ્રોપ્સ)</sup>
+
+
+### ફોર્મ તત્વો માટે 'ધ્યાન કેન્દ્રિત કરો' સેટ કરો
+
+દૃશ્યમાન કીબોર્ડ વપરાશકર્તાઓ પૃષ્ઠમાં કીબોર્ડ ઇવેન્ટ્સ ક્યાં જાય છે તે નિર્ધારિત કરવા પર ધ્યાન કેન્દ્રિત કરે છે. ફોર્મ ઘટકો માટે ધ્યાન કેન્દ્રિત કરો અને બ્રાઉઝરનું ડિફૉલ્ટ અમલીકરણ પછી સુસંગત રહો:
+
+```css
+a:focus,
+button:focus,
+input:focus,
+select:focus,
+textarea:focus {
+  box-shadow: none;
+  outline: #000 dotted 2px;
+  outline-offset: .05em;
+}
+```
+
+#### [Demo](https://codepen.io/AllThingsSmitty/pen/ePzoOP/)
 
 <sup>[સામગ્રીઓના કોષ્ટકમાં પાછા](#પ્રોપ્સ)</sup>
 
@@ -183,13 +207,23 @@ body {
   display: -webkit-flex;
   display: flex;
 }
-```
+``
+...અને CSS ગ્રીડ સાથે પણ:
+
+```css
+body {
+  display: grid;
+  height: 100vh;
+  margin: 0;
+  place-items: center center;
+}
+````
 
 કેન્દ્ર માંગો છો કંઈક બીજું? વર્ટિકલ, આડા...કંઈપણ, કોઈપણ સમયે, ગમે ત્યાં? CSS-Tricks has [a nice write-up](https://css-tricks.com/centering-css-complete-guide/) on કરવાનું બધા કે.
 
 **નોટ:** જુઓ કેટલાક માટે [buggy behavior](https://github.com/philipwalton/flexbugs#3-min-height-on-a-flex-container-wont-apply-to-its-flex-items) સાથે flexbox માં IE11.
 
-#### [Demo](http://codepen.io/AllThingsSmitty/pen/GqmGqZ)
+#### [પ્રદર્શન](http://codepen.io/AllThingsSmitty/pen/GqmGqZ)
 
 <sup>[સામગ્રીઓના કોષ્ટકમાં પાછા](#પ્રોપ્સ)</sup>
 
@@ -237,7 +271,7 @@ li:not(:nth-child(-n+3)) {
 
 વેલ તે ખૂબ સરળ હતું.
 
-#### [Demo](http://codepen.io/AllThingsSmitty/pen/WxjKZp)
+#### [પ્રદર્શન](http://codepen.io/AllThingsSmitty/pen/WxjKZp)
 
 <sup>[સામગ્રીઓના કોષ્ટકમાં પાછા](#પ્રોપ્સ)</sup>
 
@@ -279,7 +313,7 @@ The SVG scale is good for all resolution types and it is supported in all browse
 
 વધુ માટે "lobotomized owl" પસંદગીકાર, વાંચવું [Heydon Pickering's post](http://alistapart.com/article/axiomatic-css-and-lobotomized-owls) on *A List Apart*.
 
-#### [Demo](http://codepen.io/AllThingsSmitty/pen/grRvWq)
+#### [પ્રદર્શન](http://codepen.io/AllThingsSmitty/pen/grRvWq)
 
 <sup>[સામગ્રીઓના કોષ્ટકમાં પાછા](#પ્રોપ્સ)</sup>
 
@@ -318,7 +352,7 @@ The SVG scale is good for all resolution types and it is supported in all browse
 
 પેઇન-મુક્ત કોષ્ટક લેઆઉટ.
 
-#### [Demo](http://codepen.io/AllThingsSmitty/pen/jALALm)
+#### [પ્રદર્શન](http://codepen.io/AllThingsSmitty/pen/jALALm)
 
 <sup>[સામગ્રીઓના કોષ્ટકમાં પાછા](#પ્રોપ્સ)</sup>
 
@@ -355,7 +389,7 @@ a[href^="http"]:empty::before {
 
 તે ખૂબ અનુકૂળ છે
 
-#### [Demo](http://codepen.io/AllThingsSmitty/pen/zBzXRx)
+#### [પ્રદર્શન](http://codepen.io/AllThingsSmitty/pen/zBzXRx)
 
 <sup>[સામગ્રીઓના કોષ્ટકમાં પાછા](#પ્રોપ્સ)</sup>
 
@@ -414,7 +448,7 @@ a[href]:not([class]) {
 
 પેડિંગ માટે 20% નો ઉપયોગ કરીને તેના પહોળાઈના 20% જેટલા બૉક્સની ઊંચાઇને બનાવે છે. કોઈ  વ્યૂપોર્ટની પહોળાઇ, બાળક ડિવ તેના પાસા રેશિયો રાખશે (100% / 20% = 5:1).
 
-#### [Demo](http://codepen.io/AllThingsSmitty/pen/jALZvE)
+#### [પ્રદર્શન](http://codepen.io/AllThingsSmitty/pen/jALZvE)
 
 <sup>[સામગ્રીઓના કોષ્ટકમાં પાછા](#પ્રોપ્સ)</sup>
 
@@ -521,7 +555,7 @@ body {
 }
 ```
 
-#### [Demo](http://codepen.io/AllThingsSmitty/pen/XKgOkR)
+#### [પ્રદર્શન](http://codepen.io/AllThingsSmitty/pen/XKgOkR)
 
 <sup>[સામગ્રીઓના કોષ્ટકમાં પાછા](#પ્રોપ્સ)</sup>
 

@@ -23,6 +23,7 @@ Une collection de conseils pour aider à prendre vos compétences CSS pro.
 1. [Utilisez `unset` au lieu de Réinitialiser Toutes les Propriétés](#utilisez-unset-au-lieu-de-réinitialiser-toutes-les-propriétés)
 1. [Utiliser `:not()` postuler / unapply Borders Navigation](#utiliser-not-postuler--unapply-frontières-sur-la-navigation)
 1. [Ajouter `line-height` à `body`](#ajouter-line-height-à-body)
+1. [Définissez `: focus` pour les éléments de formulaire](#définissez-focus-pour-les-éléments-de-formulaire)
 1. [Verticalement-Center Tout](#verticalement-center-tout)
 1. [Listes Comma-Separated Values](#listes-séparées-par-des-virgules)
 1. [Sélectionner éléments à l'aide négative `nth-child`](#sélectionnez-éléments-à-laide-négative-nth-child)
@@ -48,7 +49,9 @@ Une collection de conseils pour aider à prendre vos compétences CSS pro.
 Réinitialise CSS aider à faire respecter la cohérence de style entre les différents navigateurs avec une ardoise propre pour les éléments de style. Vous pouvez utiliser la bibliothèque de réinitialisation CSS comme [Normalize](http://necolas.github.io/normalize.css/), et al, ou vous pouvez utiliser une approche de réinitialisation plus simplifiée:
 
 ```css
-* {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -144,7 +147,7 @@ Au lieu de mettre à la frontière...
 
 Bien sûr, vous pouvez utiliser `.nav li + li`, mais avec `:not()` l'intention est très claire et le sélecteur CSS définit la frontière comme un être humain serait le décrire.
 
-#### [Demo](http://codepen.io/AllThingsSmitty/pen/LkymvO)
+#### [Démo](http://codepen.io/AllThingsSmitty/pen/LkymvO)
 
 <sup>[retour à la table des matières](#table-des-matières)</sup>
 
@@ -161,7 +164,28 @@ body {
 
 De cette façon, les éléments textuels peuvent hériter de `body` facilement.
 
-#### [Demo](http://codepen.io/AllThingsSmitty/pen/VjbdYd)
+#### [Démo](http://codepen.io/AllThingsSmitty/pen/VjbdYd)
+
+<sup>[retour à la table des matières](#table-des-matières)</sup>
+
+
+### Définissez `:focus` pour les éléments de formulaire
+
+Les utilisateurs de clavier visionnés se fient au focus pour déterminer où vont les événements de clavier dans la page. Mettez en évidence les éléments de formulaire et mettez en cohérence la mise en œuvre par défaut du navigateur:
+
+```css
+a:focus,
+button:focus,
+input:focus,
+select:focus,
+textarea:focus {
+  box-shadow: none;
+  outline: #000 dotted 2px;
+  outline-offset: .05em;
+}
+```
+
+#### [Démo](https://codepen.io/AllThingsSmitty/pen/ePzoOP/)
 
 <sup>[retour à la table des matières](#table-des-matières)</sup>
 
@@ -186,11 +210,22 @@ body {
 }
 ```
 
+...et aussi avec CSS Grid:
+
+```css
+body {
+  display: grid;
+  height: 100vh;
+  margin: 0;
+  place-items: center center;
+}
+```
+
 Vous voulez centrer autre chose? Verticalement, horizontalement...quoi que ce soit, à tout moment, en tout lieu? CSS-Tricks a [une belle écriture-up](https://css-tricks.com/centering-css-complete-guide/) à faire tout cela.
 
 **Remarque:** Surveillez certains [poussette behavior](https://github.com/philipwalton/flexbugs#3-min-height-on-a-flex-container-wont-apply-to-its-flex-items) avec flexBox dans IE11.
 
-#### [Demo](http://codepen.io/AllThingsSmitty/pen/GqmGqZ)
+#### [Démo](http://codepen.io/AllThingsSmitty/pen/GqmGqZ)
 
 <sup>[retour à la table des matières](#table-des-matières)</sup>
 
@@ -238,7 +273,7 @@ li:not(:nth-child(-n+3)) {
 
 Eh bien, ce fut assez facile.
 
-#### [Demo](http://codepen.io/AllThingsSmitty/pen/WxjKZp)
+#### [Démo](http://codepen.io/AllThingsSmitty/pen/WxjKZp)
 
 <sup>[retour à la table des matières](#table-des-matières)</sup>
 
@@ -280,7 +315,7 @@ Dans cet exemple, tous les éléments dans le flux du document qui suivent d'aut
 
 Pour en savoir plus sur la "chouette lobotomisé" sélecteur, lire [le poste de Heydon Pickering](http://alistapart.com/article/axiomatic-css-and-lobotomized-owls) sur *A List Apart*.
 
-#### [Demo](http://codepen.io/AllThingsSmitty/pen/XKgOkR)
+#### [Démo](http://codepen.io/AllThingsSmitty/pen/XKgOkR)
 
 <sup>[retour à la table des matières](#table-des-matières)</sup>
 
@@ -319,7 +354,7 @@ Les tableaux peuvent être une douleur à travailler avec donc essayer d'utilise
 
 dispositions de table sans douleur.
 
-#### [Demo](http://codepen.io/AllThingsSmitty/pen/jALALm)
+#### [Démo](http://codepen.io/AllThingsSmitty/pen/jALALm)
 
 <sup>[retour à la table des matières](#table-des-matières)</sup>
 
@@ -357,7 +392,7 @@ a[href^="http"]:empty::before {
 
 C'est assez pratique.
 
-#### [Demo](http://codepen.io/AllThingsSmitty/pen/zBzXRx)
+#### [Démo](http://codepen.io/AllThingsSmitty/pen/zBzXRx)
 
 <sup>[retour à la table des matières](#table-des-matières)</sup>
 
@@ -416,7 +451,7 @@ Pour créer une boîte avec un rapport intrinsèque, tout ce que vous devez fair
 
 En utilisant 20% pour le rembourrage rend la hauteur de la caisse égale à 20% de sa largeur. Peu importe la largeur de la fenêtre, la div enfant gardera son ratio d'aspect (100% / 20% = 5: 1).
 
-#### [Demo](http://codepen.io/AllThingsSmitty/pen/jALZvE)
+#### [Démo](http://codepen.io/AllThingsSmitty/pen/jALZvE)
 
 <sup>[retour à la table des matières](#table-des-matières)</sup>
 
@@ -515,7 +550,7 @@ La taille type de police dans une disposition sensible devrait être en mesure d
 }
 ```
 
-#### [Demo](http://codepen.io/AllThingsSmitty/pen/XKgOkR)
+#### [Démo](http://codepen.io/AllThingsSmitty/pen/XKgOkR)
 
 Maintenant, vous pouvez utiliser l'appareil de `root em` sur la base de la valeur calculée par`: root`:
 

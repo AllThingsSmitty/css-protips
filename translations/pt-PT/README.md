@@ -23,6 +23,7 @@ Uma coleção de dicas para aumentar as tuas habilidades no CSS.
 1. [Usa `:not()` para Aplicar/Remover Bordas](#usa-not-para-aplicarremover-bordas)
 1. [Define o `line-height` no `body`](#define-o-line-height-no-body)
 1. [Alinha Elementos Verticalmente](#alinha-elementos-verticalmente)
+1. [Definir `:focus` para elementos de formulário](#definir-focus-para-elementos-de-formulário)
 1. [Listas Separadas por Vírgula](#listas-separadas-por-vírgula)
 1. [Seleciona Itens Usando `nth-child` Negativo](#seleciona-itens-usando-nth-child-negativo)
 1. [Ícones SVG](#Ícones-svg)
@@ -47,7 +48,9 @@ Uma coleção de dicas para aumentar as tuas habilidades no CSS.
 Reiniciar o CSS vai ajudar te a manter a consistência de estilo em diferentes navegadores com um ponto de partida limpo para elementos de estilo. Tu podes usar a biblioteca de reset CSS como [Normalize](http://necolas.github.io/normalize.css/), ou se preferires,adota uma abordagem mais simplificada.:
 
 ```css
-* {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -136,6 +139,27 @@ Desta forma elementos de texto vão herdar o `line-height` do `body`.
 <sup>[Regressar ao índice](#Índice)</sup>
 
 
+### Definir `:focus` para elementos de formulário
+
+Os usuários de teclado com visão dependem do foco para determinar onde os eventos de teclado vão na página. Faça com que os elementos do formulário se foquem e sejam consistentes com a implementação padrão do navegador:
+
+```css
+a:focus,
+button:focus,
+input:focus,
+select:focus,
+textarea:focus {
+  box-shadow: none;
+  outline: #000 dotted 2px;
+  outline-offset: .05em;
+}
+```
+
+#### [Passeata](https://codepen.io/AllThingsSmitty/pen/ePzoOP/)
+
+<sup>[Regressar ao índice](#Índice)</sup>
+
+
 ### Alinha Elementos Verticalmente
 
 Que bruxaria é essa? Não é bruxaria!Tu realmente podes centralizar elementos verticalmente:
@@ -153,6 +177,17 @@ body {
   align-items: center;
   display: -webkit-flex;
   display: flex;
+}
+```
+
+...e também com CSS Grid:
+
+```css
+body {
+  display: grid;
+  height: 100vh;
+  margin: 0;
+  place-items: center center;
 }
 ```
 

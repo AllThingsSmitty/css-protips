@@ -23,6 +23,7 @@ Una collezione di dritte per aiutarti a migliorare le tue capacità con CSS.
 1. [Usa `unset` invece di Reimposta tutte le proprietà](#use-unset-instead-of-resetting-all-properties)
 1. [Usa `:not()` per applicare/rimuovere i bordi su elementi di navigazione](#use-not-to-applyunapply-borders-on-navigation)
 1. [Aggiungi `line-height` al `body`](#add-line-height-to-body)
+1. [Imposta `:focus` per gli elementi del modulo](#imposta-focus-per-gli-elementi-del-modulo)
 1. [Centra verticalmente qualsiasi cosa](#vertically-center-anything)
 1. [Liste separate da virgola](#comma-separated-lists)
 1. [Seleziona un elemento usando gli `nth-child` negativi](#select-items-using-negative-nth-child)
@@ -50,7 +51,9 @@ Una collezione di dritte per aiutarti a migliorare le tue capacità con CSS.
 reset CSS aiutare a far rispettare lo stile coerenza tra diversi browser da zero per gli elementi stilistici. È possibile utilizzare libreria di reset CSS come [Normalize](http://necolas.github.io/normalize.css/), et al, oppure è possibile utilizzare un approccio più semplificato di ripristino.:
 
 ```css
-* {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -160,7 +163,8 @@ Certo, puoi usare `.nav li + li`, ma con `:not()` l'intento è molto chiaro e il
 
 ### Aggiungi `line-height` al `body`
 
-You don't need to add `line-height` to each `<p>`, `<h*>`, _et al_. separately. Instead, add it to `body`:
+Non è necessario aggiungere `line-height` a ogni `<p> `,`<h *>`, _et al_. separatamente. Invece, aggiungilo a `body`:
+
 
 ```css
 body {
@@ -171,6 +175,27 @@ body {
 In questo modo gli elementi di testo possono ereditare facilmente da `body`.
 
 #### [Dimostrazione](http://codepen.io/AllThingsSmitty/pen/VjbdYd)
+
+<sup>[torna al sommario](#sommario)</sup>
+
+
+### Imposta `:focus` per gli elementi del modulo
+
+Gli utenti con tastiera a vista si affidano alla messa a fuoco per determinare dove vanno gli eventi della tastiera nella pagina. Fai attenzione agli elementi del modulo che si distinguono e coerenti rispetto all'implementazione predefinita del browser:
+
+```css
+a:focus,
+button:focus,
+input:focus,
+select:focus,
+textarea:focus {
+  box-shadow: none;
+  outline: #000 dotted 2px;
+  outline-offset: .05em;
+}
+```
+
+#### [Dimostrazione](https://codepen.io/AllThingsSmitty/pen/ePzoOP/)
 
 <sup>[torna al sommario](#sommario)</sup>
 
@@ -194,6 +219,17 @@ body {
   align-items: center;
   display: -webkit-flex;
   display: flex;
+}
+```
+
+...e anche con CSS Grid:
+
+```css
+body {
+  display: grid;
+  height: 100vh;
+  margin: 0;
+  place-items: center center;
 }
 ```
 

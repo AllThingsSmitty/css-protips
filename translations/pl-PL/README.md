@@ -23,6 +23,7 @@ Zbiór porad, które pomogą zdobyć umiejętności CSS.
 1. [Użyj `unset` zamiast resetowania wszystkich właściwości](#użyj-unset-zamiast-resetowania-wszystkich-właściwości)
 1. [Użyj `:not()` aby zastosować / anulować ograniczenia w nawigacji](#use-not-to-applyunapply-borders-on-navigation)
 1. [Dodaj `line-height` do `body`](#dodaj-wysokość-linii-do-treści)
+1. [Ustaw `:focus` dla Form Elements](#ustaw-focus-dla-form-elements)
 1. [Przesuń cokoliweg pionowo](#przesuwanie-w-pionie)
 1. [Listy rozdziele przecinkami](#listy-podzielone-przecinkami)
 1. [Wybierz przedmioty za pomocą negatywnego `nth-child`](#wybierz-przedmioty-za-pomocą-nth-child)
@@ -57,7 +58,7 @@ Resetowanie CSS wspomaga wymuszać spójność stylu w różnych przeglądarkach
 
 Elementy zostaną pozbawione marginesów i dopełnienia, a `box-sizing` pozwala zarządzać układami za pomocą modelu pudełkowego CSS
 
-#### [Demo](http://codepen.io/AllThingsSmitty/pen/kkrkLL)
+#### [Próbny](http://codepen.io/AllThingsSmitty/pen/kkrkLL)
 
 **Uwaga:** Używanie poniższej wskazówki dotyczącej  [Inherit `box-sizing`](#inherit-box-sizing) może nie uwzględniać właściwości  `box-sizing` w resetowaniu CSS.
 
@@ -143,7 +144,7 @@ Zamiast zakładać granicę...
 
 Można też użyć `.nav li + li`, ale z `:not()` intencja jest bardzo jasna, a selektor CSS definiuje granicę w sposób opisany przez człowieka.
 
-#### [Demo](http://codepen.io/AllThingsSmitty/pen/LkymvO)
+#### [Próbny](http://codepen.io/AllThingsSmitty/pen/LkymvO)
 
 <sup>[Powrót do spisu treści](#powrót-do-spisu-treści)</sup>
 
@@ -161,9 +162,32 @@ body {
 W ten sposób elementy tekstowe mogą łatwo korzystać z 
  `treści`.
 
-#### [Demo](http://codepen.io/AllThingsSmitty/pen/VjbdYd)
+#### [Próbny
+](http://codepen.io/AllThingsSmitty/pen/VjbdYd)
 
 <sup>[Powrót do spisu treścis](#Powrót-do-spisu-treści)</sup>
+
+
+### Ustaw `:focus` dla Form Elements
+
+Obserwowani użytkownicy klawiatury polegają na fokucie, aby określić, gdzie na stronie pojawiają się zdarzenia na klawiaturze. Skoncentruj się na elementach formy, które będą spójne, a następnie domyślna implementacja przeglądarki:
+
+```css
+a:focus,
+button:focus,
+input:focus,
+select:focus,
+textarea:focus {
+  box-shadow: none;
+  outline: #000 dotted 2px;
+  outline-offset: .05em;
+}
+```
+
+#### [Próbny](https://codepen.io/AllThingsSmitty/pen/ePzoOP/)
+
+<sup>[Powrót do spisu treścis](#Powrót-do-spisu-treści)</sup>
+
 
 
 ### Przesuwanie w pionie
@@ -186,11 +210,22 @@ body {
 }
 ```
 
+...e também com CSS Grid:
+
+```css
+body {
+  display: grid;
+  height: 100vh;
+  margin: 0;
+  place-items: center center;
+}
+```
+
 Chcesz coś przeniesc? Wertykalnie, poziomo ... cokolwiek, zawsze i wszędzie CSS-Tricks ma [a nice write-up](https://css-tricks.com/centering-css-complete-guide/) dobre instrukcje na ten temat. 
 
 **Uwaga:** Uważaj na pewne [błędne zachowanie](https://github.com/philipwalton/flexbugs#3-min-height-on-a-flex-container-wont-apply-to-its-flex-items) z Flexbox w IE11.
 
-#### [Demo](http://codepen.io/AllThingsSmitty/pen/GqmGqZ)
+#### [Próbny](http://codepen.io/AllThingsSmitty/pen/GqmGqZ)
 
 <sup>[Powrót do spisu treści](#Powrót-do-spisu-treści)</sup>
 
@@ -238,7 +273,7 @@ li:not(:nth-child(-n+3)) {
 
 To było całkiem łatwe.
 
-#### [Demo](http://codepen.io/AllThingsSmitty/pen/WxjKZp)
+#### [Próbny](http://codepen.io/AllThingsSmitty/pen/WxjKZp)
 
 <sup>[Powrót do spisu treści](#Powrót-do-spisu-treści)</sup>
 
@@ -280,7 +315,7 @@ W tym przykładzie wszystkie elementy w przepływie dokumentu, które śledzą i
 
 Aby uzyskać więcej informacji na temat selektora  "lobotomized owl", przeczytaj [wpis Heydon'a Pickering](http://alistapart.com/article/axiomatic-css-and-lobotomized-owls) na *A List Apart*.
 
-#### [Demo](http://codepen.io/AllThingsSmitty/pen/grRvWq)
+#### [Próbny](http://codepen.io/AllThingsSmitty/pen/grRvWq)
 
 <sup>[Powrót do spisu treści](#Powrót-do-spisu-treści)</sup>
 
@@ -319,7 +354,7 @@ Tabele mogą być uciążliwe, więc spróbuj `table-layout: fixed` aby utrzyma�
 
 Bezbolesne układy stołów.
 
-#### [Demo](http://codepen.io/AllThingsSmitty/pen/jALALm)
+#### [Próbny](http://codepen.io/AllThingsSmitty/pen/jALALm)
 
 <sup>[Powrót do spisu treści](#Powrót-do-spisu-treści)</sup>
 
@@ -356,7 +391,7 @@ a[href^="http"]:empty::before {
 a
 To całkiem wygodne.
 
-#### [Demo](http://codepen.io/AllThingsSmitty/pen/zBzXRx)
+#### [Próbny](http://codepen.io/AllThingsSmitty/pen/zBzXRx)
 
 <sup>[Powrót do spisu treści](#Powrót-do-spisu-treści)</sup>
 
@@ -415,7 +450,7 @@ Aby utworzyć pole o wewnętrznym współczynniku, wystarczy zastosować górny 
 
 Użycie 20% do wypełnienia sprawia, że wysokość pudełka jest równa 20% jego szerokości. Bez względu na szerokość rzutni, element div zachowa swój współczynnik proporcji  (100% / 20% = 5:1).
 
-#### [Demo](http://codepen.io/AllThingsSmitty/pen/jALZvE)
+#### [Próbny](http://codepen.io/AllThingsSmitty/pen/jALZvE)
 
 <sup>[Powrót do spisu treści](#Powrót-do-spisu-treści</sup>
 
@@ -525,7 +560,7 @@ body {
 }
 ```
 
-#### [Demo](http://codepen.io/AllThingsSmitty/pen/XKgOkR)
+#### [Próbny](http://codepen.io/AllThingsSmitty/pen/XKgOkR)
 
 <sup>[Powrót do spisu treści](#Powrót-do-spisu-treści)</sup>
 

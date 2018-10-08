@@ -28,6 +28,7 @@ CSSのプロのスキルになるようにアドバイスのリストを紹介�
 1. [すべてのプロパティをリセットする代わりに `unset`を使う](#use-unset-instead-of-resetting-all-properties)
 1. [`:not()` を使用 / ボーダーを削除](#use-not-to-applyunapply-borders-on-navigation)
 1. [`body`に`line-height`を加える](#add-line-height-to-body)
+1. [フォーム要素に `：focus`を設定する](#set-focus-for-form-elements)
 1. [天地の中央に配置](#vertically-center-anything)
 1. [リストをカンマ区切りにする](#comma-separated-lists)
 1. [ネガティブな「:nth-child」を使用してアイテムを選択](#select-items-using-negative-nth-child)
@@ -55,7 +56,9 @@ CSSのプロのスキルになるようにアドバイスのリストを紹介�
 CSSのリセットはスタイリング要素のための白紙の状態で異なるブラウザ間でスタイルの一貫性を強化するのに役立ちます。あなたは[Normalize](http://necolas.github.io/normalize.css/)、_et al._のようにCSSのリセットライブラリを使用するか、より簡略化リセットアプローチを使用することができます。
 
 ```css
-* {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -180,6 +183,29 @@ body {
 <sup>[目次へ戻る](#table-of-contents)</sup>
 
 
+<div id="set-focus-for-form-elements"></div>
+
+### フォーム要素に `：focus`を設定する
+
+視認されたキーボードユーザーは、キーボードイベントがページ内のどこに移動するかを決定するためにフォーカスを当てています。 フォーム要素のフォーカスを目立たせ、ブラウザのデフォルトの実装と一貫性を持たせる：
+
+```css
+a:focus,
+button:focus,
+input:focus,
+select:focus,
+textarea:focus {
+  box-shadow: none;
+  outline: #000 dotted 2px;
+  outline-offset: .05em;
+}
+```
+
+#### [デモ](https://codepen.io/AllThingsSmitty/pen/ePzoOP/)
+
+<sup>[目次へ戻る](#table-of-contents)</sup>
+
+
 <div id="vertically-center-anything"></div>
 
 ### 天地の中央に配置
@@ -199,6 +225,17 @@ body {
   align-items: center;
   display: -webkit-flex;
   display: flex;
+}
+```
+
+...CSSグリッド:
+
+```css
+body {
+  display: grid;
+  height: 100vh;
+  margin: 0;
+  place-items: center center;
 }
 ```
 

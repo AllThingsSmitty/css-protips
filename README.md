@@ -23,8 +23,8 @@ A collection of tips to help take your CSS skills pro.
 1. [Inherit `box-sizing`](#inherit-box-sizing)
 1. [Use `unset` Instead of Resetting All Properties](#use-unset-instead-of-resetting-all-properties)
 1. [Use `:not()` to Apply/Unapply Borders on Navigation](#use-not-to-applyunapply-borders-on-navigation)
-1. [Set `:focus` for Form Elements](#set-focus-for-form-elements)
 1. [Add `line-height` to `body`](#add-line-height-to-body)
+1. [Set `:focus` for Form Elements](#set-focus-for-form-elements)
 1. [Vertically-Center Anything](#vertically-center-anything)
 1. [Comma-Separated Lists](#comma-separated-lists)
 1. [Select Items Using Negative `nth-child`](#select-items-using-negative-nth-child)
@@ -184,6 +184,8 @@ textarea:focus {
   outline-offset: .05em;
 }
 ```
+
+#### [Demo](https://codepen.io/AllThingsSmitty/pen/ePzoOP/)
 
 <sup>[back to table of contents](#table-of-contents)</sup>
 

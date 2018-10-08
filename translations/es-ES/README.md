@@ -23,6 +23,7 @@ Una colección de consejos para ayudarte a mejorar tus conocimientos profesional
 1. [Utilice `unset` en lugar de restablecer todas las propiedades](#utilice-unset-en-lugar-de-restablecer-todas-las-propiedades)
 1. [Usar `:not()` para Aplicar o Cancelar la aplicación de bordes en la navegación](#usar-not-para-aplicar-o-cancelar-la-aplicación-de-bordes-en-la-navegación)
 1. [Añadir `line-height` al `body`](#añadir-line-height-al-body)
+1. [Establecer `:focus` para elementos de formulario](#establecer-focus-para-elementos-de-formulario)
 1. [Centrar cualquier cosa verticalmente](#centrar-cualquier-cosa-verticalmente)
 1. [Listas separadas por comas](#listas-separadas-por-comas)
 1. [Seleccionar elementos usando `nth-child` negativo](#seleccionar-elementos-usando-nth-child-negativo)
@@ -48,7 +49,9 @@ Una colección de consejos para ayudarte a mejorar tus conocimientos profesional
 Los CSS Resets ayudan a hacer cumplir la coherencia de estilo en los diferentes navegadores, como una hoja en blanco para los elementos de estilo. Puedes utilizar una biblioteca CSS Reset como [Normalize](http://necolas.github.io/normalize.css/), y otros, o puedes utilizar un enfoque más simplificado para el reset:
 
 ```css
-* {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -165,6 +168,27 @@ De esta manera los elementos de texto pueden heredarlo fácilmente de `body`.
 <sup>[volver al índice de contenidos](#tabla-de-contenido)</sup>
 
 
+### Establecer `:focus` para elementos de formulario
+
+Los usuarios de teclado videntes confían en el enfoque para determinar dónde van los eventos del teclado en la página. Haga que el enfoque de los elementos de formulario se destaque y sea coherente con la implementación predeterminada de un navegador:
+
+```css
+a:focus,
+button:focus,
+input:focus,
+select:focus,
+textarea:focus {
+  box-shadow: none;
+  outline: #000 dotted 2px;
+  outline-offset: .05em;
+}
+```
+
+#### [Demo](https://codepen.io/AllThingsSmitty/pen/ePzoOP/)
+
+<sup>[volver al índice de contenidos](#tabla-de-contenido)</sup>
+
+
 ### Centrar cualquier cosa verticalmente
 
 No, no es magia negra, realmente puedes centrar elementos verticalmente:
@@ -182,6 +206,17 @@ body {
   align-items: center;
   display: -webkit-flex;
   display: flex;
+}
+```
+
+...y también con CSS Grid:
+
+```css
+body {
+  display: grid;
+  height: 100vh;
+  margin: 0;
+  place-items: center center;
 }
 ```
 

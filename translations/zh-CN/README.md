@@ -25,6 +25,7 @@
 1. [使用`unset`而不是重置所有属性](#使用unset而不是重置所有属性)
 1. [使用 `:not()` 选择器来决定表单是否显示边框](#使用-not-选择器来决定表单是否显示边框)
 1. [为 body 元素添加行高](#为-body-元素添加行高)
+1. [為表單元素設置`:focus`](#為表單元素設置focus)
 1. [垂直居中任何元素](#垂直居中任何元素)
 1. [逗号分隔的列表](#逗号分隔列表)
 1. [使用负的 `nth-child` 来选择元素](#使用负的-nth-child-来选择元素)
@@ -49,7 +50,9 @@
 CSS复位可以在不同的浏览器上保持一致的样式风格。您可以使用CSS reset 库[Normalize](http://necolas.github.io/normalize.css/)等，也可以使用一个更简化的复位方法：
 
 ```css
-* {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -166,6 +169,27 @@ body {
 <sup>[回目录](#目录)</sup>
 
 
+### 為表單元素設置`:focus`
+
+有視力的鍵盤用戶依靠焦點來確定鍵盤事件在頁面中的位置。 使表單元素的焦點脫穎而出，然後與瀏覽器的默認實現保持一致：
+
+```css
+a:focus,
+button:focus,
+input:focus,
+select:focus,
+textarea:focus {
+  box-shadow: none;
+  outline: #000 dotted 2px;
+  outline-offset: .05em;
+}
+```
+
+#### [演示](https://codepen.io/AllThingsSmitty/pen/ePzoOP/)
+
+<sup>[回目录](#目录)</sup>
+
+
 ### 垂直居中任何元素
 
 不！这绝不是黑魔法，真的可以垂直居中任何元素：
@@ -183,6 +207,17 @@ body {
   align-items: center;
   display: -webkit-flex;
   display: flex;
+}
+```
+
+...還有CSS Grid:
+
+```css
+body {
+  display: grid;
+  height: 100vh;
+  margin: 0;
+  place-items: center center;
 }
 ```
 
