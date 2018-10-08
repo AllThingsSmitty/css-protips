@@ -16,7 +16,7 @@ Please ensure your pull request adheres to the following guidelines:
 * Search open and closed PR's to avoid duplicate suggestions.
 * Only submit CSS tips that you think would be useful to others. This implies each tip has enough succinct content to describe why it's useful.
 * Add your tip at the bottom of the [README](https://github.com/AllThingsSmitty/css-protips/blob/master/README.md) document. Add a link to your tip at the bottom of the table of contents.
-* Use [title-casing](http://titlecapitalization.com).
+* Use [title-case](https://titlecaseconverter.com/).
 * Code formatting should follow standard [CSSLint](http://www.csslint.net) default settings, including:
   * Indent with two spaces
   * Use shorthand, e.g., `margin: 10px 10px 5px;`
