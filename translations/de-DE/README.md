@@ -13,7 +13,6 @@ Eine Sammlung an Tipps, um deine CSS-Fähigkeiten zu professionalisieren.
 
 * [Profi-Tipps](#profi-tipps)
 * [Unterstützung](#unterstützung)
-* [Übersetzungen](#Übersetzungen)
 * [Mitarbeitsrichtlinien](../../CONTRIBUTING.md)
 
 
@@ -598,25 +597,3 @@ So einfach ist das.
 ## Unterstützung
 
 Aktuelle Versionen von Chrome, Firefox, Safari, Opera, Edge und IE11.
-
-
-<sup>[zurück zum Inhaltsverzeichnis](#inhaltsverzeichnis)</sup>
-
-
-## Übersetzungen
-
-* [简体中文](https://github.com/AllThingsSmitty/css-protips/tree/master/translations/zh-CN)
-* [正體中文](https://github.com/AllThingsSmitty/css-protips/tree/master/translations/zh-TW)
-* [Deutsch](https://github.com/AllThingsSmitty/css-protips/tree/master/translations/de-DE)
-* [Español](https://github.com/AllThingsSmitty/css-protips/tree/master/translations/es-ES)
-* [Français](https://github.com/AllThingsSmitty/css-protips/tree/master/translations/fr-FR)
-* [ગુજરાતી](https://github.com/AllThingsSmitty/css-protips/tree/master/translations/gu-IND)
-* [Italiano](https://github.com/AllThingsSmitty/css-protips/tree/master/translations/it-IT)
-* [日本語](https://github.com/AllThingsSmitty/css-protips/tree/master/translations/ja-JP)
-* [한국어](https://github.com/AllThingsSmitty/css-protips/tree/master/translations/ko-KR)
-* [Polskie](https://github.com/AllThingsSmitty/css-protips/tree/master/translations/pl-PL)
-* [Português do Brasil](https://github.com/AllThingsSmitty/css-protips/tree/master/translations/pt-BR)
-* [Português do Europe](https://github.com/AllThingsSmitty/css-protips/tree/master/translations/pt-PT)
-* [Русский](https://github.com/AllThingsSmitty/css-protips/tree/master/translations/ru-RU)
-
-<sup>[zurück zum Inhaltsverzeichnis](#inhaltsverzeichnis)</sup>
