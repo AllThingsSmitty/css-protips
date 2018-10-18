@@ -492,7 +492,7 @@ CSS를 통해 링크가 깨진 이미지를 사용자 친화적으로 만듭니�
 ```css
 img {
   display: block;
-  font-family: Helvetica, Arial, sans-serif;
+  font-family: sans-serif;
   font-weight: 300;
   height: auto;
   line-height: 2;

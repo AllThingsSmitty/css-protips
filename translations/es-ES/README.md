@@ -461,7 +461,7 @@ Haz que las imágenes rotas sean estéticamente más agradables con un poco de C
 ```css
 img {  
   display: block;
-  font-family: Helvetica, Arial, sans-serif;
+  font-family: sans-serif;
   font-weight: 300;
   height: auto;
   line-height: 2;

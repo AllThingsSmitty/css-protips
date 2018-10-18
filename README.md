@@ -461,7 +461,7 @@ Make broken images more aesthetically-pleasing with a little bit of CSS:
 ```css
 img {
   display: block;
-  font-family: Helvetica, Arial, sans-serif;
+  font-family: sans-serif;
   font-weight: 300;
   height: auto;
   line-height: 2;

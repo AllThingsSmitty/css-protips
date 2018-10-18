@@ -463,7 +463,7 @@ a[href]:not([class]) {
 ```css
 img {  
   display: block;
-  font-family: Helvetica, Arial, sans-serif;
+  font-family: sans-serif;
   font-weight: 300;
   height: auto;
   line-height: 2;
