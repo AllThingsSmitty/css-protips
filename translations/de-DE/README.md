@@ -46,7 +46,7 @@ Eine Sammlung an Tipps, um deine CSS-Fähigkeiten zu professionalisieren.
 
 ### Benutze ein CSS-Reset
 
-CSS-Resets helfen dabei eine Gestaltungskonsistenz zwischen verschiedenen Browsern herzustellen indem sie für einen sauberen Zustand zwischen den einzelnen Elementen sorgen. Du kannst eine CSS-Reset-Sammlung wie [Normalize](http://necolas.github.io/normalize.css/), usw. benutzen, oder einen etwas einfacheren Ansatz wählen:
+CSS Resets helfen dabei eine Gestaltungskonsistenz zwischen verschiedenen Browsern herzustellen, indem sie für einen sauberen Zustand zwischen den einzelnen Elementen sorgen. Du kannst eine CSS Resetsammlung wie [Normalize](http://necolas.github.io/normalize.css/), usw. benutzen, oder einen etwas einfacheren Ansatz wählen:
 
 ```css
 *,
@@ -58,11 +58,11 @@ CSS-Resets helfen dabei eine Gestaltungskonsistenz zwischen verschiedenen Browse
 }
 ```
 
-Nun werden Elemente von ihren Margins und Paddings befreit und `box-sizing` lässt dich das CSS-Boxen-Modell handhaben.
+Nun werden Elemente von ihren Margins und Paddings befreit und `box-sizing` lässt dich das CSS Box-Modell handhaben.
 
 #### [Demo](http://codepen.io/AllThingsSmitty/pen/kkrkLL)
 
-**Hinweis:** Wenn du den [Inherit `box-sizing`](#inherit-box-sizing)-Tipp im unten folgenden Punkt befolgst kannst dud ich dafür entscheiden keine `box-sizing`-Eigenschaft in dein CSS-Reset aufzunehmen.
+**Hinweis:** Wenn du den [Inherit `box-sizing`](#inherit-box-sizing)-Tipp im unten folgenden Punkt befolgst, kannst du dich dafür entscheiden keine `box-sizing`-Eigenschaft in dein CSS Reset aufzunehmen.
 
 <sup>[zurück zum Inhaltsverzeichnis](#inhaltsverzeichnis)</sup>
 
@@ -111,7 +111,7 @@ button {
 }
 ```
 
-**Hinweis:** Das `all`-Kürzel wird nicht von IE11 unterstützt und in Edge steht es noch zur Diskussion.
+**Hinweis:** Das `all`-Kürzel wird nicht von IE11 unterstützt und in Edge steht es zur Zeit noch zur Diskussion.
 
 <sup>[zurück zum Inhaltsverzeichnis](#inhaltsverzeichnis)</sup>
 
@@ -144,7 +144,7 @@ Anstatt den Rahmen zu ergänzen&hellip;
 }
 ```
 
-Sicher, du kannst `.nav li + li` verwenden, aber mit `:not()` ist die Absicht sehr klar und der CSS-Selektor definiert den Rahmen auf die Weise wie ihn auch ein Mensch beschreiben würde.
+Sicher, du kannst `.nav li + li` verwenden, aber mit `:not()` ist die Absicht sehr klar und der CSS Selektor definiert den Rahmen auf die Weise wie ihn auch ein Mensch beschreiben würde.
 
 #### [Demo](http://codepen.io/AllThingsSmitty/pen/LkymvO)
 
@@ -161,7 +161,7 @@ body {
 }
 ```
 
-Auf diese Weise können Text-Elemente dies einfach von `body` übernehmen.
+Auf diese Weise können Textelemente dies einfach von `body` übernehmen.
 
 #### [Demo](http://codepen.io/AllThingsSmitty/pen/VjbdYd)
 
@@ -170,7 +170,7 @@ Auf diese Weise können Text-Elemente dies einfach von `body` übernehmen.
 
 ### Setze `:focus` für Form-Elemente
 
-Sehende Tastaturbenutzer sind auf die Fokussierung angewiesen, um unterscheiden zu können wohin Tastaturevents auf der Seite gehen. Gestalte den Fokus für Formular-Elemente klar ersichtlich und konsistenter als die voreingestellte Browserimplementation:
+Sehende Tastaturbenutzer_innen sind auf die Fokussierung angewiesen, um unterscheiden zu können wohin Tastaturevents auf der Seite gehen. Gestalte den Fokus für Formular-Elemente klar ersichtlich und konsistenter als die voreingestellte Browserimplementation:
 
 ```css
 a:focus,
@@ -191,7 +191,7 @@ textarea:focus {
 
 ### Zentriere alles vertikal
 
-Nein, das ist keine Hexerei, du kannst wirklich alle Elemente vertikal zentrieren. 
+Nein, das ist keine Hexerei &ndash; du kannst wirklich alle Elemente vertikal zentrieren. 
 Das machst du mit Flexbox&hellip;
 
 ```css
@@ -286,7 +286,7 @@ Es gibt keinen Grund SVG für Symbole nicht zu verwenden:
 }
 ```
 
-SVG skaliert sehr gut für alle verschiedenen Auflösungen und wird von allen Browsern unterstützt [zurück bis zu IE9](http://caniuse.com/#search=svg). Gebe deinen .png, .jpg, or .gif-jif-wasauchimmer-Dateien den Laufpass.
+SVG skaliert für alle verschiedenen Auflösungen sehr gut und wird von allen Browsern [zurück bis zu IE9](http://caniuse.com/#search=svg) unterstützt. Gebe deinen .png, .jpg, or .gif-jif-wasauchimmer-Dateien den Laufpass.
 
 **Hinweis:** Wenn du nur SVG-Symbole in Button-Schaltflächen für sehende Benutzer_innen verwendest und das SVG nicht geladen wird, kannst du die Zugänglichkeit wie folgt erhalten:
 
@@ -320,7 +320,7 @@ Für mehr bezüglich des "lobotomisierte Eule"-Selektors lese [Heydon Pickerings
 
 ### Benutze `max-height` für reine CSS-Galerien
 
-Implementiere reine CSS-Galerien über `max-height` in Verbindung mit `overflow: hidden`:
+Implementiere reine CSS Galerien über `max-height` in Verbindung mit `overflow: hidden`:
 
 ```css
 .slider {
@@ -445,7 +445,8 @@ Um eine Box mit zugehörigem Größenverhältnis zu erstellen, brauchst du nur e
   width: 100%;
 }
 ```
-Das Anwenden von 20% auf die Padding-Eigenschaft erzeugt eine Box mit der gleichen Höhe in Bezug auf 20% ihrer Breite. Ungeachtet der Weite des Ansichtsfensters, wird das Kind-Div sein Seitenverhältnis beibehalten (100% / 20% = 5:1).
+
+Das Anwenden eines Wertes von 20% auf die Padding-Eigenschaft erzeugt eine Box mit der gleichen Höhe in Bezug auf 20% ihrer Breite. Ungeachtet der Weite des Ansichtsfensters, wird das Kind-Div sein Seitenverhältnis beibehalten (100% / 20% = 5:1).
 
 #### [Demo](http://codepen.io/AllThingsSmitty/pen/jALZvE)
 
@@ -470,7 +471,6 @@ img {
 ```
 
 Nun ergänze Regeln für Pseudo-Elemente, die eine Nachricht für die Benutzer_innen darstellen, sowie eine URL-Referenz des defekten Bildes:
-Now add pseudo-elements rules to display a user message and URL reference of the broken image:
 
 ```css
 img::before {
@@ -524,7 +524,7 @@ Nun sollte jedes Modul gegliedert, einfacher zu gestalten, wartbarer und flexibl
 
 ### Verstecke automatisch abspielende Videos, die nicht auf stumm gesetzt sind
 
-Das ist ein großartiger Trick für ein speziell angefertigtes Stylesheet. Vermeide es die Benutzer_in mit den Geräuschen eines automatisch startenden Videos zu überfordern. Zeige das Video nicht, wenn die Töne nicht auf Stumm geschaltet sind:
+Das ist ein großartiger Trick für ein speziell angefertigtes Stylesheet. Vermeide es die Benutzer_innen mit den Geräuschen eines automatisch startenden Videos zu überfordern. Zeige das Video nicht, wenn die Töne nicht auf stumm geschaltet sind:
 
 ```css
 video[autoplay]:not([muted]) {
@@ -580,7 +580,7 @@ textarea {
 
 ### Benutze `Pointer`-Events um Mausereignisse zu kontrollieren
 
-[Pointer-Events](https://developer.mozilla.org/en-US/docs/Web/CSS/pointer-events) erlauben es dir zu spezifizieren wie die Maus mit dem Element interagiert, sobald sie es berührt. Um das standardgemäß eingestellte Pointer-Event &ndash; beispielsweise bei einer Button-Schaltfläche &ndash; abzuschalten:
+[Pointer-Events](https://developer.mozilla.org/en-US/docs/Web/CSS/pointer-events) erlauben es dir zu spezifizieren wie die Maus mit dem Element interagiert sobald sie es berührt. Um beispielsweise das standardgemäß eingestellte Pointer-Event &ndash; beispielsweise bei einer Button-Schaltfläche &ndash; abzuschalten:
 
 ```css
 .button-disabled {
