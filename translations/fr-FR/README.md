@@ -2,51 +2,51 @@
   <img src="https://rawgit.com/AllThingsSmitty/css-protips/master/media/logo.svg" alt="light bulb icon">
 </p>
 
-# CSS Conseils Professionnels [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome)
+# Conseils d’expert en CSS [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome)
 
-Une collection de conseils pour aider à prendre vos compétences CSS pro.
+Une collection de conseils pour vous aider à mener vos compétences CSS au niveau pro.
 
-> Pour les autres grandes listes vérifier [@sindresorhus](https://github.com/sindresorhus/) de la liste curated des [listes impressionnantes](https://github.com/sindresorhus/awesome/).
+> Pour d'autres listes géniales, consultez la liste organisée par [@sindresorhus](https://github.com/sindresorhus/) des [listes impressionnantes](https://github.com/sindresorhus/awesome/).
 
 
 ## Table des matières
 
-* [Conseils Professionnels](#conseils-professionnels)
-* [Soutien](#soutien)
-* [Lignes directrices des contributions](../../CONTRIBUTING.md)
+* [Conseils d’expert](#conseils-dexpert)
+* [Prise en charge par les navigateurs](#prise-en-charge-par-les-navigateurs)
+* [Directives pour les contributions](../../CONTRIBUTING.md)
 
 
-##  Conseils Professionnels
+##  Conseils d’expert
 
 1. [Utilisez un Reset CSS](#utilisez-un-reset-css)
-1. [Hériter `box-sizing`](#hériter-box-sizing)
-1. [Utilisez `unset` au lieu de Réinitialiser Toutes les Propriétés](#utilisez-unset-au-lieu-de-réinitialiser-toutes-les-propriétés)
-1. [Utiliser `:not()` postuler / unapply Borders Navigation](#utiliser-not-postuler--unapply-frontières-sur-la-navigation)
+1. [Hériter de `box-sizing`](#hériter-de-box-sizing)
+1. [Utilisez `unset` au Lieu de Réinitialiser Toutes les Propriétés](#utilisez-unset-au-lieu-de-réinitialiser-toutes-les-propriétés)
+1. [Utiliser `:not()` pour Appliquer / ne pas Appliquer des Bordures à la Barre de Navigation](#utiliser-not-pour-appliquer--ne-pas-appliquer-des-bordures-à-la-barre-de-navigation)
 1. [Ajouter `line-height` à `body`](#ajouter-line-height-à-body)
-1. [Définissez `: focus` pour les éléments de formulaire](#définissez-focus-pour-les-éléments-de-formulaire)
-1. [Verticalement-Center Tout](#verticalement-center-tout)
-1. [Listes Comma-Separated Values](#listes-séparées-par-des-virgules)
-1. [Sélectionner éléments à l'aide négative `nth-child`](#sélectionnez-éléments-à-laide-négative-nth-child)
-1. [Utiliser SVG pour Icons](#utiliser-svg-pour-icons)
-1. [Utilisez le sélecteur "lobotomisé Owl"](#utilisez-le-sélecteur-lobotomisé-owl)
-1. [Utilisez `max-height` pour Sliders CSS pur](#utilisez-max-height-pour-sliders-css-pur)
-1. [Cellules Equal Largeur de table](#cellules-equal-largeur-de-table)
-1. [Se débarrasser de la marge Hacks Avec Flexbox](#se-débarrasser-de-la-marge-hacks-avec-flexbox)
-1. [Utilisation des attributs sélecteurs avec des liens vides](#utilisation-des-attributs-sélecteurs-avec-des-liens-vides)
-1. [Style "par défaut" Liens](#style-par-défaut-liens)
-1. [Conformément Vertical Rhythm](#conformément-vertical-rhythm)
-1. [Boîtes Ratio Intrinsic](#boîtes-ratio-intrinsic)
-1. [Style de Broken Images](#style-de-broken-images)
-1. [Utilisez `rem` for Global Dimensionnement; Utilisez `em` pour Local Sizing](#utilisez-rem-for-global-dimensionnement-utilisez-em-pour-local-sizing)
-1. [Masquer les vidéos Autoplay qui ne sont pas Muted](#masquer-les-vidéos-autoplay-qui-ne-sont-pas-muted)
-1. [Utiliser `:root` de type flexible](#utiliser-root-de-type-flexible)
-1. [Réglez `font-size` sur le formulaire éléments pour une expérience mobile mieux](#réglez-font-size-sur-le-formulaire-éléments-pour-une-expérience-mobile-mieux)
-1. [Utiliser les événements de pointeur pour contrôler les événements de la souris](#utiliser-les-événements-de-pointeur-pour-contrôler-les-événements-de-lasouris)
+1. [Définissez `: focus` pour les Éléments de Formulaire](#définissez-focus-pour-les-éléments-de-formulaire)
+1. [Tout Centrer Verticalement](#tout-centrer-verticalement)
+1. [Listes Séparées par des Virgules](#listes-séparées-par-des-virgules)
+1. [Sélectionner des Éléments en Utilisant un `nth-child` Négatif](#sélectionner-des-éléments-en-utilisant-un-nth-child-négatif)
+1. [Utiliser SVG pour les Icônes](#utiliser-svg-pour-les-icônes)
+1. [Utilisez le Sélecteur "chouette lobotomisée"](#utilisez-le-sélecteur-chouette-lobotomisée)
+1. [Utilisez `max-height` pour des Sliders en CSS Pur](#utilisez-max-height-pour-des-sliders-en-css-pur)
+1. [Cellules de Tableau à Largeur Égale](#cellules-de-tableau-à-largeur-égale)
+1. [Se Débarrasser des Hacks de Marge Avec Flexbox](#se-débarrasser-des-hacks-de-marge-avec-flexbox)
+1. [Utiliser des Sélecteurs d'Attribut avec des Liens Vides](#utiliser-des-sélecteurs-dattribut-avec-des-liens-vides)
+1. [Style "Par Défaut" des Liens](#style-par-défaut-des-liens)
+1. [Rythme Vertical Consistent](#rythme-vertical-consistent)
+1. [Ratio de Boîtes Intrinsèque](#ratio-de-boîtes-intrinsèque)
+1. [Styliser des Images Cassées](#styliser-des-images-cassées)
+1. [Utilisez `rem` pour le Dimensionnement Global; Utilisez `em` pour le Dimensionnement Local](#utilisez-rem-pour-le-dimensionnement-global-utilisez-em-pour-le-dimensionnement-local)
+1. [Masquer les Vidéos Lancées Automatiquement qui ne sont pas Mises en Sourdine](#masquer-les-vidéos-lancées-automatiquement-qui-ne-sont-pas-mises-en-sourdine)
+1. [Utilisez `:root` pour le Type Flexible](#utilisez-root-pour-le-type-flexible)
+1. [Réglez `font-size` sur les Éléments de Formulaire pour une Meilleure Expérience Mobile](#réglez-font-size-sur-les-éléments-de-formulaire-pour-une-meilleure-expérience-mobile)
+1. [Utiliser les Événements de Pointeur pour Contrôler les Événements de la Souris](#utiliser-les-événements-de-pointeur-pour-contrôler-les-événements-de-la-souris)
 
 
 ### Utilisez un Reset CSS
 
-Réinitialise CSS aider à faire respecter la cohérence de style entre les différents navigateurs avec une ardoise propre pour les éléments de style. Vous pouvez utiliser la bibliothèque de réinitialisation CSS comme [Normalize](http://necolas.github.io/normalize.css/), et al, ou vous pouvez utiliser une approche de réinitialisation plus simplifiée:
+La réinitialisation CSS aide à faire respecter une cohérence de style entre les différents navigateurs en faisant table rase pour les éléments de style. Vous pouvez utiliser la bibliothèque de réinitialisation CSS comme [Normalize](http://necolas.github.io/normalize.css/), et al, ou vous pouvez utiliser une approche de réinitialisation plus simplifiée :
 
 ```css
 *,
@@ -58,18 +58,18 @@ Réinitialise CSS aider à faire respecter la cohérence de style entre les diff
 }
 ```
 
-Maintenant, les éléments seront dépouillés des marges et le rembourrage, et `box-sizing` vous permet de gérer les présentations avec le modèle de boîte CSS.
+Maintenant, les éléments seront dépouillés des marges et de zones de remplissage, et `box-sizing` vous permet de gérer la mise en page avec le modèle de boîte CSS.
 
 #### [Démo](http://codepen.io/AllThingsSmitty/pen/kkrkLL)
 
-**Remarque:** Si vous suivez la pointe [Hériter `box-sizing`](#inherit-box-sizing) ci-dessous vous pouvez choisir de ne pas inclure la propriété box-sizing dans votre reset CSS.
+**Remarque:** Si vous suivez le conseil [Hériter `box-sizing`](#inherit-box-sizing) ci-dessous vous pouvez choisir de ne pas inclure la propriété box-sizing dans votre reset CSS.
 
 <sup>[retour à la table des matières](#table-des-matières)</sup>
 
 
-### Hériter `box-sizing`
+### Hériter de `box-sizing`
 
-Soit `box-sizing` être héritée de `html`:
+Laisser `box-sizing` être héritée de `html`:
 
 ```css
 html {
@@ -84,14 +84,14 @@ html {
 
 ```
 
-Cela rend plus facile de changer `box-sizing` dans les plugins ou autres composants qui exploitent d'autres comportements.
+Cela rend plus facile le fait de changer `box-sizing` dans des plugins ou autres composants qui exploitent d'autres comportements.
 
 <sup>[retour à la table des matières](#table-des-matières)</sup>
 
 
-### Utilisez `unset` au lieu de Réinitialiser Toutes les Propriétés
+### Utilisez `unset` au Lieu de Réinitialiser Toutes les Propriétés
 
-Lors de la réinitialisation des propriétés d'un élément, il n'est pas nécessaire de réinitialiser chaque propriété individuelle:
+Lors de la réinitialisation des propriétés d'un élément, il n'est pas nécessaire de réinitialiser chaque propriété individuelle :
 
 ```css
 button {
@@ -104,7 +104,7 @@ button {
 }
 ```
 
-Vous pouvez spécifier toutes les propriétés d'un élément en utilisant le raccourci `all`. Définir la valeur sur `unset` change les propriétés d'un élément à leurs valeurs initiales:
+Vous pouvez spécifier toutes les propriétés d'un élément en utilisant le raccourci `all`. Définir la valeur sur `unset` change les propriétés d'un élément à leurs valeurs initiales :
 
 ```css
 button {
@@ -117,9 +117,9 @@ button {
 <sup>[retour à la table des matières](#table-des-matières)</sup>
 
 
-### Utiliser `:not()` postuler / unapply frontières sur la navigation
+### Utiliser `:not()` pour Appliquer / ne pas Appliquer des Bordures à la Barre de Navigation
 
-Au lieu de mettre à la frontière...
+Au lieu de mettre à l'encadrement...
 
 ```css
 /* add border */
@@ -128,7 +128,7 @@ Au lieu de mettre à la frontière...
 }
 ```
 
-...and then taking it off the last element...
+... puis l'enlever du dernier élément...
 
 ```css
 /* remove border */
@@ -137,7 +137,7 @@ Au lieu de mettre à la frontière...
 }
 ```
 
-...Utiliser la `:not()` pseudo-classe à appliquer uniquement aux éléments que vous voulez:
+...Utiliser la pseudo-classe `:not()` pour appliquer uniquement aux éléments que vous voulez :
 
 ```css
 .nav li:not(:last-child) {
@@ -145,7 +145,7 @@ Au lieu de mettre à la frontière...
 }
 ```
 
-Bien sûr, vous pouvez utiliser `.nav li + li`, mais avec `:not()` l'intention est très claire et le sélecteur CSS définit la frontière comme un être humain serait le décrire.
+Bien sûr, vous pouvez utiliser `.nav li + li`, mais avec `:not()` l'intention est très claire et le sélecteur CSS définit l'encadrement de la façon dont un être humain le décrirait.
 
 #### [Démo](http://codepen.io/AllThingsSmitty/pen/LkymvO)
 
@@ -154,7 +154,7 @@ Bien sûr, vous pouvez utiliser `.nav li + li`, mais avec `:not()` l'intention e
 
 ### Ajouter `line-height` à `body`
 
-Vous ne devez pas ajouter `line-height` à chaque `<p>`, `<h*>`, _et al_. séparément. Au lieu de cela, ajoutez-le à `body`:
+Vous n'avez pas besoin d'ajouter `line-height` à chaque `<p>`, `<h*>`, _et al_. séparément. Au lieu de cela, ajoutez-le à `body`:
 
 ```css
 body {
@@ -171,7 +171,7 @@ De cette façon, les éléments textuels peuvent hériter de `body` facilement.
 
 ### Définissez `:focus` pour les éléments de formulaire
 
-Les utilisateurs de clavier visionnés se fient au focus pour déterminer où vont les événements de clavier dans la page. Mettez en évidence les éléments de formulaire et mettez en cohérence la mise en œuvre par défaut du navigateur:
+Les personnes voyantes utilisant le clavier se fient au focus pour déterminer où vont les événements de clavier sur la page. Mettez en évidence les éléments de formulaire, de façon cohérente par rapport à la mise en œuvre par défaut du navigateur :
 
 ```css
 a:focus,
@@ -190,9 +190,9 @@ textarea:focus {
 <sup>[retour à la table des matières](#table-des-matières)</sup>
 
 
-### Verticalement-Center Tout
+### Tout Centrer Verticalement
 
-Non, ce n'est pas de la magie noire, vous ne pouvez vraiment centrer des éléments verticalement:
+Non, ce n'est pas de la magie noire, vous pouvez vraiment centrer des éléments verticalement. Vous pouvez le faire avec flexbox...
 
 ```css
 html,
@@ -210,7 +210,7 @@ body {
 }
 ```
 
-...et aussi avec CSS Grid:
+...et aussi avec CSS Grid :
 
 ```css
 body {
@@ -221,18 +221,18 @@ body {
 }
 ```
 
-Vous voulez centrer autre chose? Verticalement, horizontalement...quoi que ce soit, à tout moment, en tout lieu? CSS-Tricks a [une belle écriture-up](https://css-tricks.com/centering-css-complete-guide/) à faire tout cela.
+Vous voulez centrer autre chose ? Verticalement, horizontalement... quoi que ce soit, à tout moment, en tout lieu ? CSS-Tricks a [un article sympa](https://css-tricks.com/centering-css-complete-guide/) sur comment faire tout cela.
 
-**Remarque:** Surveillez certains [poussette behavior](https://github.com/philipwalton/flexbugs#3-min-height-on-a-flex-container-wont-apply-to-its-flex-items) avec flexBox dans IE11.
+**Remarque:** Surveillez certains [comportement bogués](https://github.com/philipwalton/flexbugs#3-min-height-on-a-flex-container-wont-apply-to-its-flex-items) avec flexBox dans IE11.
 
 #### [Démo](http://codepen.io/AllThingsSmitty/pen/GqmGqZ)
 
 <sup>[retour à la table des matières](#table-des-matières)</sup>
 
 
-### Listes séparées par des virgules
+### Listes Séparées par des Virgules
 
-Faire la liste des articles ressemblent à une vraie liste, séparées par des virgules:
+Faites que les liste d'éléments ressemblent de vraies listes, séparées par des virgules :
 
 ```css
 ul > li:not(:last-child)::after {
@@ -240,16 +240,16 @@ ul > li:not(:last-child)::after {
 }
 ```
 
-Utilisez le `:not()` pseudo-classe donc pas une virgule est ajoutée au dernier point.
+Utilisez la pseudo-classe `:not()` and aucune virgule ne sera ajoutée au dernier élément.
 
-**Remarque:** Cette astuce peut ne pas être idéal pour l'accessibilité, l'écran spécifiquement lecteurs. Et copier / coller à partir du navigateur ne fonctionne pas avec le contenu généré par CSS. Procéder avec prudence.
+**Remarque:** Il est possible que cette astuce ne soit pas idéale pour l'accessibilité, en particulier pour les lecteurs d'écran. Et copier / coller à partir du navigateur ne fonctionne pas avec le contenu généré par CSS. Procéder avec prudence.
 
 <sup>[retour à la table des matières](#table-des-matières)</sup>
 
 
-### Sélectionnez éléments à l'aide négative `nth-child`
+### Sélectionner des Éléments en Utilisant un `nth-child` Négatif
 
-Utilisez négative `nth-child` en CSS pour sélectionner des éléments de 1 à n.
+Utilisez un `nth-child` négatif en CSS pour sélectionner des éléments de 1 à n.
 
 ```css
 li {
@@ -262,7 +262,7 @@ li:nth-child(-n+3) {
 }
 ```
 
-Ou, puisque vous avez déjà appris un peu [en utilisant `:not()`](#use-not-to-applyunapply-borders-on-navigation), essayez:
+Ou, puisque vous avez déjà appris un peu [en utilisant `:not()`](#use-not-to-applyunapply-borders-on-navigation), essayez :
 
 ```css
 /* select all items except the first 3 and display them */
@@ -271,16 +271,14 @@ li:not(:nth-child(-n+3)) {
 }
 ```
 
-Eh bien, ce fut assez facile.
-
 #### [Démo](http://codepen.io/AllThingsSmitty/pen/WxjKZp)
 
 <sup>[retour à la table des matières](#table-des-matières)</sup>
 
 
-### Utiliser SVG pour Icons
+### Utiliser SVG pour les Icônes
 
-Il n'y a aucune raison de ne pas utiliser SVG pour les icônes:
+Il n'y a aucune raison de ne pas utiliser SVG pour les icônes :
 
 ```css
 .logo {
@@ -288,9 +286,9 @@ Il n'y a aucune raison de ne pas utiliser SVG pour les icônes:
 }
 ```
 
-SVG échelles bien pour tous les types de résolution et est pris en charge dans tous les navigateurs [retour au IE9](http://caniuse.com/#search=svg). Donc fossé vos fichiers .png, .jpg ou .gif-JIF-whatev.
+Le SVG permet de bien mettre à l'échelle et ce pour tous types de résolution, de plus il est pris en charge dans tous les navigateurs depuis [retour au IE9](http://caniuse.com/#search=svg). Donc laissez tombé vos fichiers .png, .jpg ou .gif-JIF-etc.
 
-**Remarque:** Si vous avez SVG icon-seulement des boutons pour les utilisateurs voyants et le SVG ne parvient pas à charger, cela vous aidera à maintenir l'accessibilité:
+**Remarque:** Si vous avez seulement des boutons sous forme d'icônes SVG pour les utilisateurs voyants et que le SVG ne parvient pas à charger, cela vous aidera à maintenir l'accessibilité :
 
 ```css
 .no-svg .icon-only::after {
@@ -301,9 +299,9 @@ SVG échelles bien pour tous les types de résolution et est pris en charge dans
 <sup>[retour à la table des matières](#table-des-matières)</sup>
 
 
-### Utilisez le sélecteur "lobotomisé Owl"
+### Utilisez le Sélecteur "Chouette Lobotomisée"
 
-Il peut avoir un nom étrange, mais en utilisant le sélecteur universel (`*`) avec le sélecteur de frère adjacent (`+`) peut fournir une capacité de CSS puissante:
+Il a peut être un nom étrange, mais utiliser le sélecteur universel (`*`) avec le sélecteur de frère adjacent (`+`) peut fournir une capacité de CSS puissante :
 
 ```css
 * + * {
@@ -313,16 +311,16 @@ Il peut avoir un nom étrange, mais en utilisant le sélecteur universel (`*`) a
 
 Dans cet exemple, tous les éléments dans le flux du document qui suivent d'autres éléments recevront `margin-top: 1.5em`.
 
-Pour en savoir plus sur la "chouette lobotomisé" sélecteur, lire [le poste de Heydon Pickering](http://alistapart.com/article/axiomatic-css-and-lobotomized-owls) sur *A List Apart*.
+Pour en savoir plus sur le sélecteur "chouette lobotomisée", lire [la publication de Heydon Pickering](http://alistapart.com/article/axiomatic-css-and-lobotomized-owls) sur *A List Apart*.
 
 #### [Démo](http://codepen.io/AllThingsSmitty/pen/XKgOkR)
 
 <sup>[retour à la table des matières](#table-des-matières)</sup>
 
 
-### Utilisez `max-height` pour Sliders CSS pur
+### Utilisez `max-height` pour des Sliders en CSS Pur
 
-Mettre en œuvre des curseurs CSS uniquement en utilisant `max-height` avec trop-plein caché:
+Mettre en œuvre des sliders en CSS uniquement en utilisant `max-height` avec débordement caché :
 
 ```css
 .slider {
@@ -337,14 +335,14 @@ Mettre en œuvre des curseurs CSS uniquement en utilisant `max-height` avec trop
 }
 ```
 
-L'élément se dilate à la valeur `max-height` sur le vol stationnaire et le curseur se affiche à la suite du débordement.
+L'élément s'étends jusqu'à la valeur `max-height` au survol et le slider s'affiche à la suite du débordement.
 
 <sup>[retour à la table des matières](#table-des-matières)</sup>
 
 
-### Cellules Equal Largeur de table
+### Cellules de Tableau à Largeur Égale
 
-Les tableaux peuvent être une douleur à travailler avec donc essayer d'utiliser `table-layout: fixed` pour maintenir les cellules à largeur égale:
+Il peut être pénible de travailler avec des tableaux. Essayez d'utiliser `table-layout: fixed` pour maintenir les cellules à largeur égale :
 
 ```css
 .calendar {
@@ -352,16 +350,16 @@ Les tableaux peuvent être une douleur à travailler avec donc essayer d'utilise
 }
 ```
 
-dispositions de table sans douleur.
+Des tableaux sans douleurs.
 
 #### [Démo](http://codepen.io/AllThingsSmitty/pen/jALALm)
 
 <sup>[retour à la table des matières](#table-des-matières)</sup>
 
 
-### Se débarrasser de la marge Hacks Avec Flexbox
+### Se Débarrasser des Hacks de Marge Avec Flexbox
 
-Lorsque vous travaillez avec des gouttières de colonne, vous pouvez vous débarrasser de `nth`, `first-` et `last-child` en utilisant la propriété `space-between` flexBox:
+Lorsque vous travaillez sur les gouttières des colonnes, vous pouvez vous débarrasser de `nth`, `first-` et `last-child` en utilisant la propriété flexbox `space-between` :
 
 
 ```css
@@ -375,14 +373,14 @@ Lorsque vous travaillez avec des gouttières de colonne, vous pouvez vous débar
 }
 ```
 
-Maintenant gouttières colonnes apparaissent toujours uniformément espacés.
+Maintenant les gouttières de vos colonnes apparaissent toujours uniformément espacées.
 
 <sup>[retour à la table des matières](#table-des-matières)</sup>
 
 
-### Utilisation des attributs sélecteurs avec des liens vides
+### Utiliser des Sélecteurs d'Attribut avec des Liens Vides
 
-Liens d'affichage lorsque le `<a>` élément n'a pas de valeur de texte, mais l'attribut `href` a un lien:
+Affichez des liens lorsque l'élément `<a>` n'a pas de valeur de texte mais que l'attribut `href` a un lien :
 
 ```css
 a[href^="http"]:empty::before {
@@ -397,9 +395,9 @@ C'est assez pratique.
 <sup>[retour à la table des matières](#table-des-matières)</sup>
 
 
-### Style "par défaut" Liens
+### Style "Par Défaut" des Liens
 
-Ajouter un style pour "défaut" liens:
+Ajouter un style pour les liens " par défaut" :
 
 ```css
 a[href]:not([class]) {
@@ -408,14 +406,14 @@ a[href]:not([class]) {
 }
 ```
 
-Maintenant, les liens qui sont insérés via un CMS, qui ne disposent généralement pas un attribut `class`, auront une distinction sans affecter de manière générique la cascade.
+Maintenant, les liens qui sont insérés via un CMS, qui ne disposent généralement pas d'un attribut `class`, auront une distinction sans affecter de manière générique la cascade.
 
 <sup>[retour à la table des matières](#table-des-matières)</sup>
 
 
-### Conformément Vertical Rhythm
+### Rythme Vertical Consistent
 
-Utilisez un sélecteur universel (de `*`) dans un élément pour créer un rythme vertical cohérente:
+Utilisez un sélecteur universel (`*`) à l'intérieur d'un élément pour créer un rythme vertical cohérent :
 
 ```css
 .intro > * {
@@ -423,14 +421,14 @@ Utilisez un sélecteur universel (de `*`) dans un élément pour créer un rythm
 }
 ```
 
-Rythme vertical conformément offre une esthétique visuelle qui rend le contenu beaucoup plus lisible.
+Le rythme vertical cohérent offre une esthétique visuelle qui rend le contenu beaucoup plus lisible.
 
 <sup>[retour à la table des matières](#table-des-matières)</sup>
 
 
-### Boîtes Ratio Intrinsic
+### Ratio de Boîtes Intrinsèque
 
-Pour créer une boîte avec un rapport intrinsèque, tout ce que vous devez faire est d'appliquer en haut ou en bas de rembourrage à un div:
+Pour créer une boîte avec une proportion intrinsèque, tout ce que vous devez faire est d'appliquer une zone de remplissage en haut ou en bas de à un div :
 
 ```css
 .container {
@@ -449,16 +447,16 @@ Pour créer une boîte avec un rapport intrinsèque, tout ce que vous devez fair
 }
 ```
 
-En utilisant 20% pour le rembourrage rend la hauteur de la caisse égale à 20% de sa largeur. Peu importe la largeur de la fenêtre, la div enfant gardera son ratio d'aspect (100% / 20% = 5: 1).
+En utilisant 20% pour le rembourrage, cela rend la hauteur de la boîte égale à 20% de sa largeur. Peu importe la largeur de la fenêtre d'affichage, la div enfant gardera son ratio d'aspect (100% / 20% = 5: 1).
 
 #### [Démo](http://codepen.io/AllThingsSmitty/pen/jALZvE)
 
 <sup>[retour à la table des matières](#table-des-matières)</sup>
 
 
-### Style de Broken Images
+### Styliser des Images Cassées
 
-Faire des images brouillées esthétiquement plus agréables avec un peu de CSS:
+Faire des images cassées esthétiquement plus agréables avec un peu de CSS :
 
 ```css
 img {  
@@ -473,7 +471,7 @@ img {
 }
 ```
 
-Maintenant, ajoutez les règles pseudo-éléments pour afficher un message d'utilisateur et référence URL de l'image brisée:
+Maintenant, ajoutez les règles pseudo-éléments pour afficher un message d'utilisateur et une référence URL de l'image brisée :
 
 ```css
 img::before {  
@@ -489,14 +487,14 @@ img::after {
 }
 ```
 
-En savoir plus sur le style de ce modèle dans [Ire Aderinokun](https://github.com/ireade/)' [message original](http://bitsofco.de/styling-broken-images/).
+En savoir plus sur la styliser de ce patron dans [Ire Aderinokun](https://github.com/ireade/)' [message original](http://bitsofco.de/styling-broken-images/).
 
 <sup>[retour à la table des matières](#table-des-matières)</sup>
 
 
-### Utilisez `rem` for Global Dimensionnement; Utilisez `em` pour Local Sizing
+### Utilisez `rem` pour le Dimensionnement Global; Utilisez `em` pour le Dimensionnement Local
 
-Après avoir défini la taille de la police de base à la racine (`html { font-size: 100%; }`), définir la taille de la police pour les éléments textuels à `em`:
+Après avoir défini la taille de la police de base à la racine (`html { font-size: 100%; }`), définir la taille de la police pour les éléments textuels à `em` :
 
 ```css
 h2 {
@@ -520,14 +518,14 @@ aside .module {
 }
 ```
 
-Maintenant, chaque module devient compartimentée et plus faciles à coiffer, plus maintenable, et flexible.
+Maintenant, chaque module devient compartimentée et plus faciles à styliser, plus maintenable, et flexible.
 
 <sup>[retour à la table des matières](#table-des-matières)</sup>
 
 
-### Masquer les vidéos Autoplay qui ne sont pas Muted
+### Masquer les Vidéos Lancées Automatiquement qui ne sont pas Mises en Sourdine
 
-Ceci est un grand tour pour une feuille de style utilisateur personnalisé. Évitez de surcharger un utilisateur avec le son d'une vidéo lorsque la page lectures automatiques est chargé. Si le son est pas coupé, ne pas montrer la vidéo:
+Ceci est une super astuce pour une feuille de style personnalisée par l'utilisateur. Évitez de surcharger un utilisateur avec le son d'une vidéo lue Automatiquement lorsque la page est chargée. Si le son n'est pas coupé, ne pas montrer la vidéo :
 
 ```css
 video[autoplay]:not([muted]) {
@@ -535,14 +533,14 @@ video[autoplay]:not([muted]) {
 }
 ```
 
-Encore une fois, nous prenons avantage d'utiliser le [`:not()`](#use-not-to-applyunapply-borders-on-navigation) pseudo-classe.
+Encore une fois, nous trions parti de l'utilisation de la pseudo-classe [`:not()`](#use-not-to-applyunapply-borders-on-navigation).
 
 <sup>[retour à la table des matières](#table-des-matières)</sup>
 
 
-### Utiliser `:root` de type flexible
+### Utilisez `:root` pour le Type Flexible
 
-La taille type de police dans une disposition sensible devrait être en mesure d'ajuster à chaque fenêtre. Vous pouvez calculer la taille de la police basée sur la hauteur de la fenêtre et la largeur en utilisant `: root`:
+La taille type de police dans une mise en page responsive devrait être en mesure de s'ajuster à chaque fenêtre d'affichage. Vous pouvez calculer la taille de la police basée sur la hauteur de la fenêtre et la largeur en utilisant `: root`:
 
 ```css
 :root {
@@ -552,7 +550,7 @@ La taille type de police dans une disposition sensible devrait être en mesure d
 
 #### [Démo](http://codepen.io/AllThingsSmitty/pen/XKgOkR)
 
-Maintenant, vous pouvez utiliser l'appareil de `root em` sur la base de la valeur calculée par`: root`:
+Maintenant, vous pouvez utiliser l'unitée de `root em` basée sur la valeur calculée par`: root`:
 
 ```css
 body {
@@ -563,9 +561,9 @@ body {
 <sup>[retour à la table des matières](#table-des-matières)</sup>
 
 
-### Réglez `font-size` sur le formulaire éléments pour une expérience mobile mieux
+### Réglez `font-size` sur les Éléments de Formulaire pour une Meilleure Expérience Mobile
 
-Pour éviter les navigateurs mobiles (iOS Safari, _et al_.) De zoom sur des éléments de formulaire HTML quand un `<select>` déroulante est taraudé, ajoutez `font-size` à la règle de sélection:
+Pour éviter aux navigateurs mobiles (iOS Safari, _et al_.) de zoomer sur des éléments de formulaire HTML quand un menu déroulant `<select>` est touché, ajoutez `font-size` à la règle de sélection :
 
 ```css
 input[type="text"],
@@ -582,9 +580,9 @@ textarea {
 
 
 
-### Utiliser les événements de pointeur pour contrôler les événements de la souris
+### Utiliser les Événements de Pointeur pour Contrôler les Événements de la Souris
 
-[Événements de pointeur](https://developer.mozilla.org/en-US/docs/Web/CSS/pointer-events) vous permet de spécifier comment la souris interagit avec l'élément qu'elle touche. Pour désactiver l'événement de pointeur par défaut sur un bouton, par exemple:
+[Les événements de pointeur](https://developer.mozilla.org/en-US/docs/Web/CSS/pointer-events) vous permettent de spécifier comment la souris interagit avec l'élément qu'elle touche. Pour désactiver l'événement de pointeur par défaut sur un bouton, par exemple :
 
 ```css
 .button-disabled {
@@ -593,11 +591,11 @@ textarea {
 }
 ```
 
-C'est si simple.
+C'est aussi simple que cela.
 
 <sup>[retour à la table des matières](#table-des-matières)</sup>
 
 
-## Soutien
+## Prise en charge par les navigateurs
 
 Les versions actuelles de Chrome, Firefox, Safari, Opera, Edge, et IE11.
