@@ -2,51 +2,50 @@
   <img src="https://rawgit.com/AllThingsSmitty/css-protips/master/media/logo.svg" width="200" alt="light bulb icon">
 </p>
 
-#  wskazówki CSS [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome)
+# Wskazówki CSS [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome)
 
-Zbiór porad, które pomogą zdobyć umiejętności CSS.
+Zbiór porad, które pomogą Ci rozwinąć zawansowane umiejętności CSS.
 
-> W potrzebue innych wspaniałych list sprawdź zobacz [@sindresorhus](https://github.com/sindresorhus/)'s lista [zaufanych list](https://github.com/sindresorhus/awesome/).
-
+> Sprawdż takze inne wspaniałe listy [@sindresorhus](https://github.com/sindresorhus/) z [zaufanych list](https://github.com/sindresorhus/awesome/).
 
 ## Powrót do spisu treści
 
-* [Wskazowki](#Wskazowki)
+* [Wskazówki](#Wskazowki)
 * [Wsparcie](#Wsparcie)
-* [Wskazówki dotyczące wkładu](../../CONTRIBUTING.md)
+* [Wskazówki dotyczące kontrybucji do tego projektu](../../CONTRIBUTING.md)
 
 
-## Wskazowki
+## Wskazówki
 
 1. [Użyj resetowania CSS](#użyj-resetowania-css)
-1. [Odziedzicz `box-sizing`](#odziedzicz-box-sizing)
-1. [Użyj `unset` zamiast resetowania wszystkich właściwości](#użyj-unset-zamiast-resetowania-wszystkich-właściwości)
-1. [Użyj `:not()` aby zastosować / anulować ograniczenia w nawigacji](#use-not-to-applyunapply-borders-on-navigation)
+1. [Dziedziczenie `box-sizing`](#dziedziczenie-box-sizing)
+1. [Użyj `unset` zamiast resetowania wszystkich ustawień](#użyj-unset-zamiast-resetowania-wszystkich-ustawień)
+1. [Użyj `:not()`, aby dodać/usunąć obramownie do nawigacji](#use-not-to-applyunapply-borders-on-navigation)
 1. [Dodaj `line-height` do `body`](#dodaj-wysokość-linii-do-treści)
-1. [Ustaw `:focus` dla Form Elements](#ustaw-focus-dla-form-elements)
-1. [Przesuń cokoliweg pionowo](#przesuwanie-w-pionie)
+1. [Ustaw `:focus` dla elementów formularza](#ustaw-focus-dla-form-elements)
+1. [Przesuń cokolwiek pionowo](#przesuwanie-w-pionie)
 1. [Listy rozdziele przecinkami](#listy-podzielone-przecinkami)
-1. [Wybierz przedmioty za pomocą negatywnego `nth-child`](#wybierz-przedmioty-za-pomocą-nth-child)
+1. [Wybierz elementy za pomocą negatywnego `nth-child`](#wybierz-przedmioty-za-pomocą-nth-child)
 1. [Użyj SVG dla ikon ](#użyj-svg-dla-ikon)
 1. [Użyj selektora "Lobotomized Owl"](#użyj-selektora-lobotomized-owl)
 1. [Użyj `max-height` dla suwaków Pure CSS](#użyjmax-height-dla-suwaków-pure-csss)
-1. [Równoważne komórki tabeli](#równoważne-komórki-tabeli)
-1. [Pozbądź się margin za pomocą Flexbox](#pozbądź-się-marginesów-za-pomocą-flexbox)
+1. [Komórki tabeli o równej-szerokości](#równoważne-komórki-tabeli)
+1. [Pozbądź się marginesów za pomocą Flexbox](#pozbądź-się-marginesów-za-pomocą-flexbox)
 1. [Użyj selektorów atrybutów z pustymi linkami](#użyj-selektorów-atrybutów-z-pustymi-linkami)
-1. [Linki w stylu "Default" ](#stylizuj-domyślne-linki)
+1. [Stylizuj domyślne linki](#stylizuj-domyślne-linki)
 1. [Spójny pionowy rytm](#spójny-pionowy-rytm)
-1. [Indywidualne pola wyników](#indywidualne-pola-wyników)
-1. [Wystylizuj Uszkodzone Obrazy](#wystylizuj-uszkodzone-obrazy)
-1. [Użyj `rem` for Global Sizing; Użyj `em` for Local Sizing](#użyj-rem-dla-global-sizing-użyj-em-dla-local-sizing)
+1. [Wewnętrzne proporcje bloków](#indywidualne-pola-wyników)
+1. [Wystylizuj uszkodzone Obrazy](#wystylizuj-uszkodzone-obrazy)
+1. [Użyj `rem` dla ustawień globalnych rozmiarow i `em` do ustawień localnych](#użyj-rem-dla-global-sizing-użyj-em-dla-local-sizing)
 1. [Ukryj filmy z autoodtwarzaniem, które nie są wyciszone](#ukryj-filmy-z-autoodtwarzaniem-które-nie-są-wyciszone)
-1. [Użyj `:root` for Flexible Type](#użyj-root-tryp-elastyczny)
-1. [Ustaw `font-size` w elementach formularza, aby uzyskać lepsze wrażenia z urządzenia mobilnego](#ustaw-font-size-w-elementach-formularza-aby-uzyskać-lepsze-wrażenia-z-urządzenia-mobilnego)
+1. [Użyj `:root` dla elastycznych typów](#użyj-root-tryp-elastyczny)
+1. [Ustaw `font-size` w elementach formularza, aby uzyskać lepsze doświadczenia na urządzeniach komórkowych](#ustaw-font-size-w-elementach-formularza-aby-uzyskać-lepsze-wrażenia-z-urządzenia-mobilnego)
 1. [Użyj zdarzeń wskaźnika do sterowania zdarzeniami myszy](#użyj-zdarzeń-wskaźnika-do-sterowania-zdarzeniami-myszy)
 
 
 ### Użyj resetowania CSS
 
-Resetowanie CSS wspomaga wymuszać spójność stylu w różnych przeglądarkach z czystym konturem dla elementów stylizacyjnych. Kożystanie z biblioteki resetującej CSS, takiej jak Normalize i innie, lub użycie bardzije uproszczonego sposobu resetowania:
+Reset ustawień CSS umośliwia wymuszenie spójność stylu w różnych przeglądarkach z czystym konturem dla elementów stylizacyjnych. Możesz wykorzystać jedną bibliotek resetującej ustawienia CSS np. [Normalize](http://necolas.github.io/normalize.css/) lub użyć  uproszczonego sposobu resetowania:
 
 ```css
 * {
@@ -56,16 +55,16 @@ Resetowanie CSS wspomaga wymuszać spójność stylu w różnych przeglądarkach
 }
 ```
 
-Elementy zostaną pozbawione marginesów i dopełnienia, a `box-sizing` pozwala zarządzać układami za pomocą modelu pudełkowego CSS
+Elementy zostaną pozbawione marginesów i dopełnienia, a `box-sizing` pozwala zarządzać układami za pomocą modelu pudełkowego CSS (CSS box model).
 
-#### [Próbny](http://codepen.io/AllThingsSmitty/pen/kkrkLL)
+#### [Demonstracja](http://codepen.io/AllThingsSmitty/pen/kkrkLL)
 
-**Uwaga:** Używanie poniższej wskazówki dotyczącej  [Inherit `box-sizing`](#inherit-box-sizing) może nie uwzględniać właściwości  `box-sizing` w resetowaniu CSS.
+**Uwaga:** Jeżeli zdecydujesz sie na wykorzystanie powyżej opisanej wskazówki dotyczącej  [Dziedziczenia `box-sizing`](#inherit-box-sizing) możesz zrezygnować z dodania `box-sizing` w zresetowanych ustawieniach CSS.
 
 <sup>[powrót do spisu treści](#powrót-do-spisu-treści )</sup>
 
 
-### Odziedzicz `box-sizing`
+### Dziedziczenie `box-sizing`
 
 Niech `box-sizing` zostanie odziedziczony z `html`:
 
@@ -81,14 +80,14 @@ html {
 }
 ```
 
-Ułatwia to zmianę rozmiaru skrzynek w wtyczkach lub innych komponentach, które wykorzystują inne zachowanie.
+Ułatwia to łatwiejszą zmianę `box-sizing` w wtyczkach lub innych komponentach, które wpływaja na inne zachowania.
 
 <sup>[powrót do spisu treści](#powrót-do-spisu-treści)</sup>
 
 
-### Użyj `unset` zamiast resetowania wszystkich właściwości
+### Użyj `unset` zamiast resetowania wszystkich ustawień
 
-Podczas resetowania właściwości elementu nie jest konieczne resetowanie każdej pojedynczej właściwości:
+Podczas resetowania ustawień elementu nie jest konieczne resetowanie pojedyńczych ustawień:
 
 ```css
 button {
@@ -101,7 +100,7 @@ button {
 }
 ```
 
-Możesz określić wszystkie właściwości elementu, używając skrótu `all`. Ustawienie wartości na "unset" zmienia właściwości elementu na wartości początkowe:
+Możesz sprecyzować wszystkie właściwości elementu, używając skrótu `all`. Używając `unset` możemy zresetować ustawienia elementu do wartości początkowych:
 
 ```css
 button {
@@ -109,7 +108,7 @@ button {
 }
 ```
 
-**Uwaga:** skrót "all" nie jest obsługiwany w IE11 i jest obecnie rozważany pod kątem obsługi w Edge. `unset` nie jest obsługiwane w IE11:
+**Uwaga:** skrót `all` nie jest obsługiwany w IE11 i jest obecnie rozważany pod kątem obsługi w Edge. `unset` nie jest obsługiwany w IE11.
 
 <sup>[powrót do spisu treści](#powrót-do-spisu-treści)</sup>
 
@@ -165,7 +164,7 @@ W ten sposób elementy tekstowe mogą łatwo korzystać z
 #### [Próbny
 ](http://codepen.io/AllThingsSmitty/pen/VjbdYd)
 
-<sup>[Powrót do spisu treścis](#Powrót-do-spisu-treści)</sup>
+<sup>[Powrót do spisu treści](#Powrót-do-spisu-treści)</sup>
 
 
 ### Ustaw `:focus` dla Form Elements
@@ -186,7 +185,7 @@ textarea:focus {
 
 #### [Próbny](https://codepen.io/AllThingsSmitty/pen/ePzoOP/)
 
-<sup>[Powrót do spisu treścis](#Powrót-do-spisu-treści)</sup>
+<sup>[Powrót do spisu treści](#Powrót-do-spisu-treści)</sup>
 
 
 
@@ -210,7 +209,7 @@ body {
 }
 ```
 
-...e também com CSS Grid:
+a także używając CSS Grid:
 
 ```css
 body {
@@ -221,7 +220,7 @@ body {
 }
 ```
 
-Chcesz coś przeniesc? Wertykalnie, poziomo ... cokolwiek, zawsze i wszędzie CSS-Tricks ma [a nice write-up](https://css-tricks.com/centering-css-complete-guide/) dobre instrukcje na ten temat. 
+Chcesz coś przenieść? Pionowo, poziomo... zawsze i wszędzie CSS-Tricks ma [ciekawy artykół](https://css-tricks.com/centering-css-complete-guide/) dobre instrukcje na ten temat. 
 
 **Uwaga:** Uważaj na pewne [błędne zachowanie](https://github.com/philipwalton/flexbugs#3-min-height-on-a-flex-container-wont-apply-to-its-flex-items) z Flexbox w IE11.
 
