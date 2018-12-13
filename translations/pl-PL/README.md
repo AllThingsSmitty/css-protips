@@ -20,7 +20,7 @@ Zbiór porad, które pomogą Ci rozwinąć zawansowane umiejętności CSS.
 1. [Użyj resetowania CSS](#użyj-resetowania-css)
 1. [Dziedziczenie `box-sizing`](#dziedziczenie-box-sizing)
 1. [Użyj `unset` zamiast resetowania wszystkich ustawień](#użyj-unset-zamiast-resetowania-wszystkich-ustawień)
-1. [Użyj `:not()`, aby dodać/usunąć obramownie do nawigacji](#use-not-to-applyunapply-borders-on-navigation)
+1. [Użyj `:not()`, aby dodać/usunąć obramownie nawigacji](#użyj-not-aby-dodać/usunąć-obramowanie-nawigacji)
 1. [Dodaj `line-height` do `body`](#dodaj-wysokość-linii-do-treści)
 1. [Ustaw `:focus` dla elementów formularza](#ustaw-focus-dla-form-elements)
 1. [Przesuń cokolwiek pionowo](#przesuwanie-w-pionie)
@@ -113,9 +113,9 @@ button {
 <sup>[powrót do spisu treści](#powrót-do-spisu-treści)</sup>
 
 
-### Use `:not()` to Apply/Unapply Borders on Navigation
+### Użyj `:not()`, aby dodać/usunąć obramownie nawigacji
 
-Zamiast zakładać granicę...
+Zamiast dodać obramowanie...
 
 ```css
 /* add border */
@@ -124,16 +124,16 @@ Zamiast zakładać granicę...
 }
 ```
 
-...a następnie zdejmując go z ostatniego elementu ...
+...a później usunąć ja z ostatniego elementu...
 
 ```css
-/* remove border */
+/* usuń obramowanie */
 .nav li:last-child {
   border-right: none;
 }
 ```
 
-...użyj `:not()` pseudo-klasy aby zastosować tylko do potrzebnych elementów:
+...użyj `:not()` pseudo-klasy, aby dodać obramowanie do wybranych elementów:
 
 ```css
 .nav li:not(:last-child) {
@@ -141,16 +141,16 @@ Zamiast zakładać granicę...
 }
 ```
 
-Można też użyć `.nav li + li`, ale z `:not()` intencja jest bardzo jasna, a selektor CSS definiuje granicę w sposób opisany przez człowieka.
+Oczywiście możesz także użyć `.nav li + li`, ale z `:not()` intencja jest bardzo jasna, a selektor CSS definiuje obramowanie w sposób czytelny dla człowieka.
 
-#### [Próbny](http://codepen.io/AllThingsSmitty/pen/LkymvO)
+#### [Demonstracja](http://codepen.io/AllThingsSmitty/pen/LkymvO)
 
-<sup>[Powrót do spisu treści](#powrót-do-spisu-treści)</sup>
+<sup>[powrót do spisu treści](#powrót-do-spisu-treści)</sup>
 
 
-### Dodaj `wysokość linii` do `treści`
+### Dodaj `wysokość linii` do `body`
 
-Nie musisz dodawać  `wysokości linii` do każdego  `<p>`, `<h*>`, _et al_. osobno. Zamiast tego dodaj go do `treści`:
+Nie musisz dodawać  `wysokości linii` do każdego  `<p>`, `<h*>`, _et al_. osobno. Zamiast tego dodaj go do `body`:
 
 ```css
 body {
@@ -158,16 +158,14 @@ body {
 }
 ```
 
-W ten sposób elementy tekstowe mogą łatwo korzystać z 
- `treści`.
+W ten sposób elementy tekstowe mogą łatwo odziedziczyć ustawienia z `body`.
 
-#### [Próbny
-](http://codepen.io/AllThingsSmitty/pen/VjbdYd)
+#### [Demonstracja](http://codepen.io/AllThingsSmitty/pen/VjbdYd)
 
-<sup>[Powrót do spisu treści](#Powrót-do-spisu-treści)</sup>
+<sup>[powrót do spisu treści](#Powrót-do-spisu-treści)</sup>
 
 
-### Ustaw `:focus` dla Form Elements
+### Ustaw `:focus` dla elementów formularza
 
 Obserwowani użytkownicy klawiatury polegają na fokucie, aby określić, gdzie na stronie pojawiają się zdarzenia na klawiaturze. Skoncentruj się na elementach formy, które będą spójne, a następnie domyślna implementacja przeglądarki:
 
@@ -183,7 +181,7 @@ textarea:focus {
 }
 ```
 
-#### [Próbny](https://codepen.io/AllThingsSmitty/pen/ePzoOP/)
+#### [Demonstracja](https://codepen.io/AllThingsSmitty/pen/ePzoOP/)
 
 <sup>[Powrót do spisu treści](#Powrót-do-spisu-treści)</sup>
 
@@ -220,18 +218,18 @@ body {
 }
 ```
 
-Chcesz coś przenieść? Pionowo, poziomo... zawsze i wszędzie CSS-Tricks ma [ciekawy artykół](https://css-tricks.com/centering-css-complete-guide/) dobre instrukcje na ten temat. 
+Chcesz coś przenieść? Pionowo, poziomo... zawsze i wszędzie? Na CSS-Tricks znajdziesz [ciekawy artykuł](https://css-tricks.com/centering-css-complete-guide/) z dobrymi instrukcje na ten temat. 
 
-**Uwaga:** Uważaj na pewne [błędne zachowanie](https://github.com/philipwalton/flexbugs#3-min-height-on-a-flex-container-wont-apply-to-its-flex-items) z Flexbox w IE11.
+**Uwaga:** Uważaj na pewne [nieprawidłowe zachowanie](https://github.com/philipwalton/flexbugs#3-min-height-on-a-flex-container-wont-apply-to-its-flex-items) z Flexbox w IE11.
 
-#### [Próbny](http://codepen.io/AllThingsSmitty/pen/GqmGqZ)
+#### [Demonstracja](http://codepen.io/AllThingsSmitty/pen/GqmGqZ)
 
 <sup>[Powrót do spisu treści](#Powrót-do-spisu-treści)</sup>
 
 
 ### Listy podzielone przecinkami
 
-Elementy listy wyglądają jak prawdziwa, oddzielona przecinkami lista:
+Elementy listy mogą wyglądać jak prawdziwa, oddzielona przecinkami lista:
 
 ```css
 ul > li:not(:last-child)::after {
@@ -239,16 +237,16 @@ ul > li:not(:last-child)::after {
 }
 ```
 
-Użyj `:not()` pseudo-klasy aby do ostatniego elementu nie dodano przecinka.
+Użyj `:not()` pseudo-klasy, aby przecinek nie zostal dodany do ostatniego elementu.
 
-**Uwaga:** ta wskazówka może nie być idealna dla ułatwień dostępu, w szczególności czytników ekranu.Kopiowanie / wklejanie z przeglądarki nie działa z treścią generowaną przez CSS. Postępuj ostrożnie.
+**Uwaga:** Ta wskazówka może nie być idealna dla ułatwień dostępu, w szczególności na ekranach czytników. Kopiowanie / wklejanie z przeglądarki nie działa z treścią generowaną przez CSS. Postępuj ostrożnie.
 
 <sup>[Powrót do spisu treści](#Powrót-do-spisu-treści)</sup>
 
 
 ### Wybierz przedmioty za pomocą `nth-child`
 
-Wybierz przedmioty za pomocą negatywnego  `nth-child` w CSS, aby wybrać elementy od 1 do n.
+Wybierz przedmioty nieparzyste za pomocą negatywnego  `nth-child` w CSS, aby wybrać elementy od 1 do n.
 
 ```css
 li {
@@ -261,7 +259,7 @@ li:nth-child(-n+3) {
 }
 ```
 
-Lub, skoro już nauczyłeś się trochę o użyciu [using `:not()`](#use-not-to-applyunapply-borders-on-navigation),wypróbuj:
+Lub, skoro już nauczyłeś się trochę o użyciu [`:not()`](#use-not-to-applyunapply-borders-on-navigation),wypróbuj:
 
 ```css
 /* select all items except the first 3 and display them */
@@ -272,14 +270,14 @@ li:not(:nth-child(-n+3)) {
 
 To było całkiem łatwe.
 
-#### [Próbny](http://codepen.io/AllThingsSmitty/pen/WxjKZp)
+#### [Demonstracja](http://codepen.io/AllThingsSmitty/pen/WxjKZp)
 
 <sup>[Powrót do spisu treści](#Powrót-do-spisu-treści)</sup>
 
 
 ### Użyj SVG dla ikon
 
-Nie ma powodu, aby nie używać SVG do ikon:
+Nie ma powodu, aby nie używać SVG jako ikon:
 
 ```css
 .logo {
