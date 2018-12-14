@@ -20,9 +20,9 @@ Zbiór porad, które pomogą Ci rozwinąć zawansowane umiejętności CSS.
 1. [Użyj resetowania CSS](#użyj-resetowania-css)
 1. [Dziedziczenie `box-sizing`](#dziedziczenie-box-sizing)
 1. [Użyj `unset` zamiast resetowania wszystkich ustawień](#użyj-unset-zamiast-resetowania-wszystkich-ustawień)
-1. [Użyj `:not()`, aby dodać/usunąć obramownie nawigacji](#użyj-not-aby-dodać/usunąć-obramowanie-nawigacji)
-1. [Dodaj `line-height` do `body`](#dodaj-wysokość-linii-do-treści)
-1. [Ustaw `:focus` dla elementów formularza](#ustaw-focus-dla-form-elements)
+1. [Użyj `:not()` aby dodać/usunąć obramownie nawigacji](#użyj-not-aby-dodaćusunąć-obramownie-nawigacji)
+1. [Dodaj `line-height` do `body`](#dodaj-line-height-do-body)
+1. [Ustaw `:focus` dla elementów formularza](#ustaw-:focus-dla-form-elements)
 1. [Przesuń cokolwiek pionowo](#przesuwanie-w-pionie)
 1. [Listy rozdziele przecinkami](#listy-podzielone-przecinkami)
 1. [Wybierz elementy za pomocą negatywnego `nth-child`](#wybierz-przedmioty-za-pomocą-nth-child)
@@ -33,13 +33,13 @@ Zbiór porad, które pomogą Ci rozwinąć zawansowane umiejętności CSS.
 1. [Pozbądź się marginesów za pomocą Flexbox](#pozbądź-się-marginesów-za-pomocą-flexbox)
 1. [Użyj selektorów atrybutów z pustymi linkami](#użyj-selektorów-atrybutów-z-pustymi-linkami)
 1. [Stylizuj domyślne linki](#stylizuj-domyślne-linki)
-1. [Spójny pionowy rytm](#spójny-pionowy-rytm)
+1. [Spójny pionowy rytm](#spójny-rytm-pionowy)
 1. [Wewnętrzne proporcje bloków](#wewnętrzne-proporcje-bloków)
 1. [Wystylizuj uszkodzone obrazy](#wystylizuj-uszkodzone-obrazy)
-1. [Użyj `rem` dla ustawień globalnych rozmiarow i `em` do ustawień localnych](#użyj-rem-dla-global-sizing-użyj-em-dla-local-sizing)
+1. [Użyj `rem` dla ustawień globalnych rozmiarow i `em` do ustawień localnych](#użyj-rem-dla-ustawień-globalnych-rozmiarow-i-em-do-ustawień-localnych)
 1. [Ukryj filmy z autoodtwarzaniem, które nie są wyciszone](#ukryj-filmy-z-autoodtwarzaniem-które-nie-są-wyciszone)
-1. [Użyj `:root` dla elastycznych typów](#użyj-root-tryp-elastyczny)
-1. [Ustaw `font-size` w elementach formularza, aby uzyskać lepsze doświadczenia na urządzeniach komórkowych](#ustaw-font-size-w-elementach-formularza-aby-uzyskać-lepsze-wrażenia-z-urządzenia-mobilnego)
+1. [Użyj `:root` dla elastycznych typów](#użyj-`:root`-dla-elastycznych-typów)
+1. [Ustaw rozmiar czcionki w elementach formularza](#ustaw-rozmiar-czcionki-w-elementach-formularza)
 1. [Użyj zdarzeń wskaźnika do sterowania zdarzeniami myszy](#użyj-zdarzeń-wskaźnika-do-sterowania-zdarzeniami-myszy)
 
 
@@ -148,7 +148,7 @@ Oczywiście możesz także użyć `.nav li + li`, ale z `:not()` intencja jest b
 <sup>[powrót do spisu treści](#powrót-do-spisu-treści)</sup>
 
 
-### Dodaj `wysokość linii` do `body`
+### Dodaj `line-height` do `body`
 
 Nie musisz dodawać  `wysokości linii` do każdego  `<p>`, `<h*>`, _et al_. osobno. Zamiast tego dodaj go do `body`:
 
@@ -449,7 +449,7 @@ Użycie 20% wypełnienia (padding) sprawia, że wysokość bloku jest równa 20%
 
 #### [Demonstracja](http://codepen.io/AllThingsSmitty/pen/jALZvE)
 
-<sup>[Powrót do spisu treści](#Powrót-do-spisu-treści</sup>
+<sup>[powrót do spisu treści](#powrót-do-spisu-treści )</sup>
 
 
 ### Wystylizuj uszkodzone obrazy
@@ -487,7 +487,7 @@ img::after {
 
 Dowiedz się więcej o stylizacji używając tego wzoru w oryginalnym [originalny artykule](http://bitsofco.de/styling-broken-images/) [Ire Aderinokun](https://github.com/ireade/).
 
-<sup>[Powrót do spisu treści](#Powrót-do-spisu-treści</sup>
+<sup>[powrót do spisu treści](#powrót-do-spisu-treści )</sup>
 
 
 ### Użyj `rem` dla ustawień globalnych rozmiarow i `em` do ustawień localnych
@@ -518,7 +518,7 @@ aside .module {
 
 Teraz każdy moduł jest podzielony na sekcje. Sprawia to żę stylizacja i utrzymanie kodu jest łątwiejsze.
 
-<sup>[Powrót do spisu treści](#Powrót-do-spisu-treści</sup>
+<sup>[powrót do spisu treści](#powrót-do-spisu-treści )</sup>
 
 
 ### Ukryj filmy z autoodtwarzaniem, które nie są wyciszone
@@ -557,10 +557,10 @@ body {
 
 #### [Demonstracja](http://codepen.io/AllThingsSmitty/pen/XKgOkR)
 
-<sup>[Powrót do spisu treści](#Powrót-do-spisu-treści)</sup>
+<sup>[powrót do spisu treści](#powrót-do-spisu-treści )</sup>
 
 
-### Ustaw `font-size` w elementach formularza, aby uzyskać lepsze doświadczenia na urządzeniach komórkowych
+### Ustaw rozmiar czcionki w elementach formularza
 
 Aby uniknąć korzystania z przeglądarek komórkowych  (iOS Safari etc.) podczas powiększania elementów formularzy HTML, po dotknięciu menu rozwijanego `<select>` dnależy dodać `font-size` do reguły selektora:
 
