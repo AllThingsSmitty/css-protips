@@ -388,12 +388,12 @@ a[href^="http"]:empty::before {
 
 To całkiem wygodne.
 
-#### [Próbny](http://codepen.io/AllThingsSmitty/pen/zBzXRx)
+#### [Demonstracja](http://codepen.io/AllThingsSmitty/pen/zBzXRx)
 
 <sup>[Powrót do spisu treści](#Powrót-do-spisu-treści)</sup>
 
 
-### Stylizuj "Domyślne" linki
+### Stylizuj "domyślne" linki
 
 Dodaj styl dla "domyślnych" linków:
 
@@ -490,8 +490,7 @@ Dowiedz się więcej o stylizacji używając tego wzoru w oryginalnym [originaln
 <sup>[Powrót do spisu treści](#Powrót-do-spisu-treści</sup>
 
 
-### Użyj rem dla Global Sizing; Użyj em dla Local Sizing
-
+### Użyj `rem` dla ustawień globalnych rozmiarow i `em` do ustawień localnych
 Po ustawieniu podstawowego rozmiaru czcionki w katalogu głównym (`html { font-size: 100%; }`), ustaw rozmiar czcionki dla elementów tekstowych na `em`:
 
 ```css
@@ -504,7 +503,7 @@ p {
 }
 ```
 
-Następnie ustaw rozmiar czcionki dla modułów na  `rem`:
+Następnie ustaw rozmiar czcionki dla modułów na rem`:
 
 ```css
 article {
@@ -517,15 +516,14 @@ aside .module {
 ```
 
 
-Teraz każdy moduł jest podzielony na sekcje i łatwiejszy do ułożenia, łatwiejszy w utrzymaniu i bardziej elastyczny.
-.
+Teraz każdy moduł jest podzielony na sekcje. Sprawia to żę stylizacja i utrzymanie kodu jest łątwiejsze.
 
 <sup>[Powrót do spisu treści](#Powrót-do-spisu-treści</sup>
 
 
 ### Ukryj filmy z autoodtwarzaniem, które nie są wyciszone
 
-To świetna sztuczka dla niestandardowego arkusza stylów użytkownika. Unikaj przeciążania użytkownika dźwiękiem z filmu, który odtwarza się automatycznie po wczytaniu strony. Jeśli dźwięk nie jest wyciszony, nie pokazuj wideo:
+To świetna sztuczka dla niestandardowego arkusza stylów użytkownika. Unikaj przeciążania użytkownika dźwiękiem z filmu, który odtwarza się automatycznie po wczytaniu strony. Jeśli dźwięk nie jest wyciszony, nie pokazuj widea:
 
 ```css
 video[autoplay]:not([muted]) {
@@ -539,9 +537,9 @@ Po raz kolejny wykorzystujemy pseudo-klasę [`:not()`](#use-not-to-applyunapply-
 <sup>[Powrót do spisu treści](#Powrót-do-spisu-treści</sup>
 
 
-### Użyj `:root` Tryp Elastyczny
+### Użyj `:root` dla elastycznych typów
 
-Rozmiar czcionki typowej w responsywnym układzie powinien być dostosowywany dla każdej rzutni. Możesz obliczyć rozmiar czcionki na podstawie wysokości i szerokości widoku, używając `:root`:
+Rozmiar czcionki typowej w elastyczny układzie (responsive layout) powinien być dostosowywany dla każdego ekranu. Możesz obliczyć rozmiar czcionki na podstawie wysokości i szerokości okna roboczego używając `:root`:
 
 ```css
 :root {
@@ -549,7 +547,7 @@ Rozmiar czcionki typowej w responsywnym układzie powinien być dostosowywany dl
 }
 ```
 
-Now you can utilize the `root em` unit based on the value calculated by `:root`:
+Następnie możesz użyć jednostki`root em` na podstawie wartości obliczonej przez `:root`:
 
 ```css
 body {
@@ -557,14 +555,14 @@ body {
 }
 ```
 
-#### [Próbny](http://codepen.io/AllThingsSmitty/pen/XKgOkR)
+#### [Demonstracja](http://codepen.io/AllThingsSmitty/pen/XKgOkR)
 
 <sup>[Powrót do spisu treści](#Powrót-do-spisu-treści)</sup>
 
 
-### Ustaw `font-size` w elementach formularza, aby uzyskać lepsze wrażenia z urządzenia mobilnego
+### Ustaw `font-size` w elementach formularza, aby uzyskać lepsze doświadczenia na urządzeniach komórkowych
 
-Aby uniknąć korzystania z przeglądarek komurkowych  (iOS Safari, _et al_.) podczas powiększania elementów formularzy HTML po dotknięciu menu rozwijanego  `<select>` dnależy dodać  `font-size` do reguły selektora:
+Aby uniknąć korzystania z przeglądarek komórkowych  (iOS Safari etc.) podczas powiększania elementów formularzy HTML, po dotknięciu menu rozwijanego `<select>` dnależy dodać `font-size` do reguły selektora:
 
 ```css
 input[type="text"],
@@ -582,7 +580,7 @@ textarea {
 
 ### Użyj zdarzeń wskaźnika do sterowania zdarzeniami myszy
 
-[Pointer events](https://developer.mozilla.org/en-US/docs/Web/CSS/pointer-events) umożliwiają określenie sposobu interakcji myszy z elementem, który dotyka. Aby wyłączyć domyślne zdarzenie wskaźnika na przycisku, na przykład:
+[Pointer events](https://developer.mozilla.org/en-US/docs/Web/CSS/pointer-events) umożliwiają określenie sposobu interakcji myszy z elementem, na które kilka. Aby wyłączyć domyślne zdarzenie wskaźnika na przycisku, na przykład:
 
 ```css
 .button-disabled {
