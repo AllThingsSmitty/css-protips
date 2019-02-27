@@ -145,7 +145,7 @@ Instead of putting on the border...
 }
 ```
 
-Sure, you can use `.nav li + li`, but with `:not()` the intent is very clear and the CSS selector defines the border the way a human would describe it.
+Hier definiert der CSS-Selektor die Grenze so, wie ein Mensch sie beschreiben würde.
 
 #### [Demo](http://codepen.io/AllThingsSmitty/pen/LkymvO)
 

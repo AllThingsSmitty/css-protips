@@ -159,7 +159,7 @@ button {
 }
 ```
 
-もちろん `.nav li + li`,を使用できますが `:not()` が一番わかりやすいコードになります。
+CSSセレクターは、境界線を人間が表現する方法で定義します。
 
 #### [デモ](http://codepen.io/AllThingsSmitty/pen/LkymvO)
 

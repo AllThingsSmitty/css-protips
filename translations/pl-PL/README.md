@@ -141,7 +141,7 @@ Zamiast dodać obramowanie...
 }
 ```
 
-Oczywiście możesz także użyć `.nav li + li`, ale z `:not()` intencja jest bardzo jasna, a selektor CSS definiuje obramowanie w sposób czytelny dla człowieka.
+Selektor CSS definiuje granicę w sposób opisany przez człowieka.
 
 #### [Demonstracja](http://codepen.io/AllThingsSmitty/pen/LkymvO)
 

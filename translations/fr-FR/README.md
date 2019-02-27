@@ -145,7 +145,7 @@ Au lieu de mettre à l'encadrement...
 }
 ```
 
-Bien sûr, vous pouvez utiliser `.nav li + li`, mais avec `:not()` l'intention est très claire et le sélecteur CSS définit l'encadrement de la façon dont un être humain le décrirait.
+Le sélecteur CSS définit la frontière comme un humain la décrirait.
 
 #### [Démo](http://codepen.io/AllThingsSmitty/pen/LkymvO)
 

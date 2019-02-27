@@ -144,7 +144,7 @@ button {
 }
 ```
 
-當然，你也可以用 `.nav li + li`，但是使用 `:not()` 可以使語句更加清晰，更具可讀性。
+CSS選擇器以人類描述它的方式定義邊界。
 
 #### [示範](http://codepen.io/AllThingsSmitty/pen/LkymvO)
 

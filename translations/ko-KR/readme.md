@@ -157,7 +157,7 @@ Border를 넣거나...
 }
 ```
 
-물론 `.nav li + li`을 사용할 수도 있겠지만, but with `:not()` 는 까끔하고, 사용자가 알기 쉬운 코드가 됩니다.
+CSS 선택기는 사람이 설명하는 방식으로 경계를 정의합니다.
 
 #### [데모](http://codepen.io/AllThingsSmitty/pen/LkymvO)
 

@@ -144,7 +144,8 @@ En lugar de poner en el borde...
 }
 
 ```
-Claro, se puede usar `.nav li + li`, pero con `:not()` la intención es muy clara y el selector CSS define los bordes de la forma en que un ser humano lo describiría.
+
+El selector CSS define los bordes de la forma en que un ser humano lo describiría.
 
 #### [Demo](http://codepen.io/AllThingsSmitty/pen/LkymvO)
 
