@@ -145,7 +145,7 @@ Instead of putting on the border...
 }
 ```
 
-Hier definiert der CSS-Selektor die Grenze so, wie ein Mensch sie beschreiben würde.
+Here, the CSS selector is read as a human would describe it.
 
 #### [Demo](http://codepen.io/AllThingsSmitty/pen/LkymvO)
 
