@@ -41,6 +41,7 @@ Zbiór porad, które pomogą Ci rozwinąć zawansowane umiejętności CSS.
 1. [Użyj `:root` dla elastycznych typów](#użyj-`:root`-dla-elastycznych-typów)
 1. [Ustaw rozmiar czcionki w elementach formularza](#ustaw-rozmiar-czcionki-w-elementach-formularza)
 1. [Użyj zdarzeń wskaźnika do sterowania zdarzeniami myszy](#użyj-zdarzeń-wskaźnika-do-sterowania-zdarzeniami-myszy)
+1. [Ustaw `display: none` na Podziały linii używane jako odstępy](#ustaw-display-none-na-podziały-linii-używane-jako-odstępy)
 
 
 ### Użyj resetowania CSS
@@ -590,6 +591,19 @@ textarea {
 ```
 
 To takie proste.
+
+<sup>[Powrót do spisu treści](#Powrót-do-spisu-treści)</sup>
+
+
+### Ustaw `display: none` na Podziały linii używane jako odstępy
+
+Jak zauważył [Harry Roberts](https://twitter.com/csswizardry/status/1170835532584235008), może to pomóc zapobiec korzystaniu przez użytkowników CMS z dodatkowych podziałów linii dla odstępów:
+
+```css
+br + br {
+  display: none;
+}
+```
 
 <sup>[Powrót do spisu treści](#Powrót-do-spisu-treści)</sup>
 

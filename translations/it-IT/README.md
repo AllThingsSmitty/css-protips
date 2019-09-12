@@ -42,6 +42,7 @@ Una collezione di dritte per aiutarti a migliorare le tue capacità con CSS.
 1. [Usa `:root` per caratteri flessibili](#use-root-for-flexible-type)
 1. [Imposta il `font-size` sugli elementi dei form per una migliore esperienza da mobile](#set-font-size-on-form-elements-for-a-better-mobile-experience)
 1. [Utilizzare gli eventi puntatore per controllare gli eventi del mouse](#utilizzare-gli-eventi-puntatore-per-controllare-gli-eventi-del-mouse)
+1. [Imposta `display: none` su Line Breaks usati come Spaziatura](#set-display-none-on-line-breaks-being-used-as-spacing)
 
 
 <div id="use-a-css-reset"></div>
@@ -636,6 +637,21 @@ textarea {
 ```
 
 È così semplice.
+
+<sup>[torna al sommario](#sommario)</sup>
+
+
+<div id="set-display-none-on-line-breaks-being-used-as-spacing"></div>
+
+### Imposta `display: none` su Line Breaks usati come Spaziatura
+
+Come [Harry Roberts ha sottolineato](https://twitter.com/csswizardry/status/1170835532584235008), questo può aiutare a impedire agli utenti CMS di utilizzare interruzioni di riga aggiuntive per la spaziatura:
+
+```css
+br + br {
+  display: none;
+}
+```
 
 <sup>[torna al sommario](#sommario)</sup>
 

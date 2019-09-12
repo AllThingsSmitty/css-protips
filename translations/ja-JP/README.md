@@ -46,7 +46,8 @@ CSSのプロのスキルになるようにアドバイスのリストを紹介�
 1. [動画の自動再生を隠す](#hide-autoplay-videos-that-arent-muted)
 1. [フレクシブルタイプの`:root`を使用](#use-root-for-flexible-type)
 1. [スマホ向け、フォーム要素のフォントサイズの設定](#set-font-size-on-form-elements-for-a-better-mobile-experience)
-1. [Use Pointer Events to Control Mouse Events](#use-ointer-events-to-control-mouse-events)
+1. [ポインターイベントを使用してマウスイベントを制御する](#use-pointer-events-to-control-mouse-events)
+1. [間隔として使用される改行に「display：none」を設定します](#set-display-none-on-line-breaks-being-used-as-spacing)
 
 
 <div id="use-a-css-reset"></div>
@@ -631,7 +632,7 @@ textarea {
 <sup>[目次へ戻る](#table-of-contents)</sup>
 
 
-<div id="use-ointer-events-to-control-mouse-events"></div>
+<div id="use-pointer-events-to-control-mouse-events"></div>
 
 ### ポインターイベントを使用してマウスイベントを制御する
 
@@ -645,6 +646,21 @@ textarea {
 ```
 
 それは簡単です。
+
+<sup>[目次へ戻る](#table-of-contents)</sup>
+
+
+<div id="set-display-none-on-line-breaks-being-used-as-spacing"></div>
+
+### 間隔として使用される改行に `display：none` を設定します
+
+[ハリー・ロバーツが指摘したように](https://twitter.com/csswizardry/status/1170835532584235008)、これはCMSユーザーがスペースのために余分な改行を使用するのを防ぐのに役立ちます：
+
+```css
+br + br {
+  display: none;
+}
+```
 
 <sup>[目次へ戻る](#table-of-contents)</sup>
 

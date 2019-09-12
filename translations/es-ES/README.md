@@ -42,6 +42,7 @@ Una colección de consejos para ayudarte a mejorar tus conocimientos profesional
 1. [Utilizar `:root` para una tipografía flexible](#utilizar-root-para-una-tipografía-flexible)
 1. [Definir `font-size` en los elementos de formulario para una mejor experiencia móvil](#definir-font-size-en-los-elementos-de-formulario-para-una-mejor-experiencia-móvil)
 1. [Usar eventos de puntero para controlar eventos de mouse](#usar-eventos-de-puntero-para-controlar-eventos-de-mouse)
+1. [Establezca `display: none` en Saltos de línea utilizados como espaciado](#establezca-display-none-en-saltos-de-línea-utilizados-como-espaciado)
 
 
 ### Utilizar un CSS Reset
@@ -590,6 +591,19 @@ textarea {
 ```
 
 Es así de simple.
+
+<sup>[volver al índice de contenidos](#tabla-de-contenido)</sup>
+
+
+### Establezca `display: none` en Saltos de línea utilizados como espaciado
+
+Como señaló [Harry Roberts] (https://twitter.com/csswizardry/status/1170835532584235008), esto puede ayudar a evitar que los usuarios de CMS usen saltos de línea adicionales para el espaciado:
+
+```css
+br + br {
+  display: none;
+}
+```
 
 <sup>[volver al índice de contenidos](#tabla-de-contenido)</sup>
 

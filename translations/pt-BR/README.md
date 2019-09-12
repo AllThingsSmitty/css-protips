@@ -42,7 +42,7 @@ Uma coleção de dicas para aumentar suas habilidades no CSS.
 1. [Use `:root` para uma Tipografia Flexível](#use-root-para-uma-tipografia-flexível)
 1. [Defina `font-size` em Elementos de Formulário para uma Melhor Experiência Mobile](#defina-font-size-em-elementos-de-formulário-para-uma-melhor-experiência-mobile)
 1. [Use eventos de ponteiro para controlar eventos do mouse](#use-eventos-de-ponteiro-para-controlar-eventos-do-mouse)
-
+1. [Definir `display: none` em quebras de linha usadas como espaçamento](#definir-display-none-em-quebras-de-linha-usadas-como-espaçamento)
 
 ### Use um Reset CSS
 
@@ -591,6 +591,18 @@ textarea {
 ```
 
 É simples assim.
+
+<sup>[voltar ao índice](#Índice)</sup>
+
+### Definir `display: none` em quebras de linha usadas como espaçamento
+
+Como [Harry Roberts apontou](https://twitter.com/csswizardry/status/1170835532584235008), isso pode ajudar a impedir que os usuários do CMS usem quebras de linha extras para espaçamento:
+
+```css
+br + br {
+  display: none;
+}
+```
 
 <sup>[voltar ao índice](#Índice)</sup>
 

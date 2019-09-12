@@ -45,6 +45,7 @@
 1. [使用 `:root` 選擇器來設定彈性的字體大小](#使用-root-選擇器來設定彈性的字體大小)
 1. [為了更好的行動體驗來設定表單元素的 `font-size`](#為了更好的行動體驗來設定表單元素的-font-size)
 1. [使用指標事件來控制滑鼠事件](#使用指標事件來控制滑鼠事件)
+1. [在用作間距的換行符上設置`display: none`](#在用作間距的換行符上設置display-none)
 
 
 ### 使用 CSS Reset
@@ -574,6 +575,19 @@ textarea {
 ```
 
 就這麼簡單。
+
+<sup>[回目錄](#目錄)</sup>
+
+
+### 在用作間距的換行符上設置`display: none`
+
+正如[Harry Roberts指出](https://twitter.com/csswizardry/status/1170835532584235008)，這有助於防止CMS用戶使用額外的換行符
+
+```css
+br + br {
+  display: none;
+}
+```
 
 <sup>[回目錄](#目錄)</sup>
 

@@ -43,6 +43,7 @@ A collection of tips to help take your CSS skills pro.
 1. [Use `:root` for Flexible Type](#use-root-for-flexible-type)
 1. [Set `font-size` on Form Elements for a Better Mobile Experience](#set-font-size-on-form-elements-for-a-better-mobile-experience)
 1. [Use Pointer Events to Control Mouse Events](#use-pointer-events-to-control-mouse-events)
+1. [Set `display: none` on Line Breaks Used as Spacing](#set-display-none-on-line-breaks-used-as-spacing)
 
 
 ### Use a CSS Reset
@@ -591,6 +592,19 @@ textarea {
 ```
 
 It's that simple.
+
+<sup>[back to table of contents](#table-of-contents)</sup>
+
+
+### Set `display: none` on Line Breaks Used as Spacing
+
+As [Harry Roberts pointed out](https://twitter.com/csswizardry/status/1170835532584235008), this can help prevent CMS users from using extra line breaks for spacing:
+
+```css
+br + br {
+  display: none;
+}
+```
 
 <sup>[back to table of contents](#table-of-contents)</sup>
 

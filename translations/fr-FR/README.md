@@ -42,6 +42,7 @@ Une collection de conseils pour vous aider à mener vos compétences CSS au nive
 1. [Utilisez `:root` pour le Type Flexible](#utilisez-root-pour-le-type-flexible)
 1. [Réglez `font-size` sur les Éléments de Formulaire pour une Meilleure Expérience Mobile](#réglez-font-size-sur-les-éléments-de-formulaire-pour-une-meilleure-expérience-mobile)
 1. [Utiliser les Événements de Pointeur pour Contrôler les Événements de la Souris](#utiliser-les-événements-de-pointeur-pour-contrôler-les-événements-de-la-souris)
+1. [Définit `display: none` sur les sauts de ligne utilisés comme espacement](#définit-display-none-sur-les-sauts-de-ligne-utilisés-comme-espacement)
 
 
 ### Utilisez un Reset CSS
@@ -592,6 +593,19 @@ textarea {
 ```
 
 C'est aussi simple que cela.
+
+<sup>[retour à la table des matières](#table-des-matières)</sup>
+
+
+### Définit `display: none` sur les sauts de ligne utilisés comme espacement
+
+Comme [Harry Roberts l'a souligné](https://twitter.com/csswizardry/status/1170835532584235008), cela peut aider à empêcher les utilisateurs du système de gestion de contenu d'utiliser des sauts de ligne supplémentaires pour l'espacement:
+
+```css
+br + br {
+  display: none;
+}
+```
 
 <sup>[retour à la table des matières](#table-des-matières)</sup>
 

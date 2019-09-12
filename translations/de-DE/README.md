@@ -42,6 +42,7 @@ Eine Sammlung an Tipps, um deine CSS-Fähigkeiten zu professionalisieren.
 1. [Benutze `:root` für flexible Schrift](#benutze-root-für-flexible-schrift)
 1. [Setze `font-size` auf Formular-Elemente für eine bessere mobile Erfahrung](#setze-font-size-auf-formular-elemente-für-eine-bessere-mobile-erfahrung)
 1. [Benutze `Pointer`-Events um Mausereignisse zu kontrollieren](#benutze-pointer-events-um-mausereignisse-zu-kontrollieren)
+1. [Stellen Sie bei Zeilenumbrüchen, die als Abstand verwendet werden, `display: none` ein](#stellen-sie-bei-zeilenumbrüchen,-die-als-abstand-verwendet-werden-display-none-ein)
 
 
 ### Benutze ein CSS-Reset
@@ -590,6 +591,19 @@ textarea {
 ```
 
 So einfach ist das.
+
+<sup>[zurück zum Inhaltsverzeichnis](#inhaltsverzeichnis)</sup>
+
+
+### Stellen Sie bei Zeilenumbrüchen, die als Abstand verwendet werden, `display: none` ein
+
+Wie [Harry Roberts hervorhob](https://twitter.com/csswizardry/status/1170835532584235008), kann dies dazu beitragen, dass CMS-Benutzer keine zusätzlichen Zeilenumbrüche als Abstand verwenden:
+
+```css
+br + br {
+  display: none;
+}
+```
 
 <sup>[zurück zum Inhaltsverzeichnis](#inhaltsverzeichnis)</sup>
 

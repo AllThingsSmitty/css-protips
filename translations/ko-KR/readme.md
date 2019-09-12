@@ -45,6 +45,7 @@ CSS스킬을 프로처럼 만들어주는 팁 모음
 1. [Flexible Type의 `:root` 사용하기](#use-root-for-flexible-type)
 1. [모바일 환경을 위한 `font-size` 요소 설정](#set-font-size-on-form-elements-for-a-better-mobile-experience)
 1. [포인터 이벤트를 사용한 마우스 이벤트 제어](#use-pointer-events-to-control-mouse-events)
+1. [간격으로 사용되는 줄 바꿈에서 `display: none` 을 설정하십시오.](#set-display-none-on-line-breaks-being-used-as-spacing)
 
 
 <div id="use-a-css-reset"></div>
@@ -619,7 +620,7 @@ textarea {
 <sup>[목차로 돌아가기](#table-of-contents)</sup>
 
 
-<div id="use-ointer-events-to-control-mouse-events"></div>
+<div id="use-pointer-events-to-control-mouse-events"></div>
 
 ### 포인터 이벤트를 사용한 마우스 이벤트 제어
 
@@ -633,6 +634,21 @@ textarea {
 ```
 
 아주 간단한 방법이죠?
+
+<sup>[목차로 돌아가기](#table-of-contents)</sup>
+
+
+<div id="set-display-none-on-line-breaks-being-used-as-spacing"></div>
+
+### 간격으로 사용되는 줄 바꿈에서 `display: none` 을 설정하십시오.
+
+[Harry Roberts가 지적했듯이](https://twitter.com/csswizardry/status/1170835532584235008) CMS 사용자가 추가 줄 바꿈을 사용하여 간격을 두지 못하게 할 수 있습니다.
+
+```css
+br + br {
+  display: none;
+}
+```
 
 <sup>[목차로 돌아가기](#table-of-contents)</sup>
 
