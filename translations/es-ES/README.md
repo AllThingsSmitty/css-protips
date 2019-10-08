@@ -104,7 +104,7 @@ button {
 }
 ```
 
-Puede especificar todas las propiedades de un elemento usando la taquigrafía `all`. Establecer el valor a `unset` cambia las propiedades de un elemento a sus valores iniciales:
+Puede especificar todas las propiedades de un elemento usando la declaraciones cortas `all`. Establecer el valor a `unset` cambia las propiedades de un elemento a sus valores iniciales:
 
 ```css
 button {
@@ -112,7 +112,7 @@ button {
 }
 ```
 
-**Nota:** la taquigrafía `all` no es compatible con IE11 y actualmente está bajo consideración para soporte en Edge. `unset` no es compatible con IE11.
+**Nota:** la declaraciones cortas `all` no es compatible con IE11 y actualmente está bajo consideración para soporte en Edge. `unset` no es compatible con IE11.
 
 <sup>[volver al índice de contenidos](#tabla-de-contenido)</sup>
 
