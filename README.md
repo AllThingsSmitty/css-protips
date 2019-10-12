@@ -19,31 +19,48 @@ A collection of tips to help take your CSS skills pro.
 
 ## Protips
 
-1. [Use a CSS Reset](#use-a-css-reset)
-1. [Inherit `box-sizing`](#inherit-box-sizing)
-1. [Use `unset` Instead of Resetting All Properties](#use-unset-instead-of-resetting-all-properties)
-1. [Use `:not()` to Apply/Unapply Borders on Navigation](#use-not-to-applyunapply-borders-on-navigation)
-1. [Add `line-height` to `body`](#add-line-height-to-body)
-1. [Set `:focus` for Form Elements](#set-focus-for-form-elements)
-1. [Vertically-Center Anything](#vertically-center-anything)
-1. [Comma-Separated Lists](#comma-separated-lists)
-1. [Select Items Using Negative `nth-child`](#select-items-using-negative-nth-child)
-1. [Use SVG for Icons](#use-svg-for-icons)
-1. [Use the "Lobotomized Owl" Selector](#use-the-lobotomized-owl-selector)
-1. [Use `max-height` for Pure CSS Sliders](#use-max-height-for-pure-css-sliders)
-1. [Equal-Width Table Cells](#equal-width-table-cells)
-1. [Get Rid of Margin Hacks With Flexbox](#get-rid-of-margin-hacks-with-flexbox)
-1. [Use Attribute Selectors with Empty Links](#use-attribute-selectors-with-empty-links)
-1. [Style "Default" Links](#style-default-links)
-1. [Consistent Vertical Rhythm](#consistent-vertical-rhythm)
-1. [Intrinsic Ratio Boxes](#intrinsic-ratio-boxes)
-1. [Style Broken Images](#style-broken-images)
-1. [Use `rem` for Global Sizing; Use `em` for Local Sizing](#use-rem-for-global-sizing-use-em-for-local-sizing)
-1. [Hide Autoplay Videos That Aren't Muted](#hide-autoplay-videos-that-arent-muted)
-1. [Use `:root` for Flexible Type](#use-root-for-flexible-type)
-1. [Set `font-size` on Form Elements for a Better Mobile Experience](#set-font-size-on-form-elements-for-a-better-mobile-experience)
-1. [Use Pointer Events to Control Mouse Events](#use-pointer-events-to-control-mouse-events)
-1. [Set `display: none` on Line Breaks Used as Spacing](#set-display-none-on-line-breaks-used-as-spacing)
+- [CSS Protips ![Awesome](https://github.com/sindresorhus/awesome)](#css-protips-awesomehttpsgithubcomsindresorhusawesome)
+  - [Table of Contents](#table-of-contents)
+  - [Protips](#protips)
+    - [Use a CSS Reset](#use-a-css-reset)
+      - [Demo](#demo)
+    - [Inherit `box-sizing`](#inherit-box-sizing)
+    - [Use `unset` Instead of Resetting All Properties](#use-unset-instead-of-resetting-all-properties)
+    - [Use `:not()` to Apply/Unapply Borders on Navigation](#use-not-to-applyunapply-borders-on-navigation)
+      - [Demo](#demo-1)
+    - [Add `line-height` to `body`](#add-line-height-to-body)
+      - [Demo](#demo-2)
+    - [Set `:focus` for Form Elements](#set-focus-for-form-elements)
+      - [Demo](#demo-3)
+    - [Vertically-Center Anything](#vertically-center-anything)
+      - [Demo](#demo-4)
+    - [Comma-Separated Lists](#comma-separated-lists)
+    - [Select Items Using Negative `nth-child`](#select-items-using-negative-nth-child)
+      - [Demo](#demo-5)
+    - [Use SVG for Icons](#use-svg-for-icons)
+    - [Use the "Lobotomized Owl" Selector](#use-the-%22lobotomized-owl%22-selector)
+      - [Demo](#demo-6)
+    - [Use `max-height` for Pure CSS Sliders](#use-max-height-for-pure-css-sliders)
+    - [Equal-Width Table Cells](#equal-width-table-cells)
+      - [Demo](#demo-7)
+    - [Get Rid of Margin Hacks With Flexbox](#get-rid-of-margin-hacks-with-flexbox)
+    - [Use Attribute Selectors with Empty Links](#use-attribute-selectors-with-empty-links)
+      - [Demo](#demo-8)
+    - [Style "Default" Links](#style-%22default%22-links)
+    - [Consistent Vertical Rhythm](#consistent-vertical-rhythm)
+    - [Intrinsic Ratio Boxes](#intrinsic-ratio-boxes)
+      - [Demo](#demo-9)
+    - [Style Broken Images](#style-broken-images)
+    - [Use `rem` for Global Sizing; Use `em` for Local Sizing](#use-rem-for-global-sizing-use-em-for-local-sizing)
+    - [Hide Autoplay Videos That Aren't Muted](#hide-autoplay-videos-that-arent-muted)
+    - [Use `:root` for Flexible Type](#use-root-for-flexible-type)
+      - [Demo](#demo-10)
+    - [Set `font-size` on Form Elements for a Better Mobile Experience](#set-font-size-on-form-elements-for-a-better-mobile-experience)
+    - [Use Pointer Events to Control Mouse Events](#use-pointer-events-to-control-mouse-events)
+    - [Set `display: none` on Line Breaks Used as Spacing](#set-display-none-on-line-breaks-used-as-spacing)
+    - [Use `calc()` for Consistent Form Input Sizing](#use-calc-for-consistent-form-input-sizing)
+  - [Support](#support)
+  - [Translations](#translations)
 
 
 ### Use a CSS Reset
@@ -603,6 +620,27 @@ As [Harry Roberts pointed out](https://twitter.com/csswizardry/status/1170835532
 ```css
 br + br {
   display: none;
+}
+```
+
+<sup>[back to table of contents](#table-of-contents)</sup>
+
+
+### Use `calc()` for Consistent Form Input Sizing
+
+A common scenario developers can run into is form inputs extending beyond their container. `calc()` can be used so this doesn't happen:
+
+```css
+input {
+  display: block;
+  padding: 2px;
+  width: calc(100% - 1em);
+}
+
+#formContainer {
+  border: 1px solid #cccccc;
+  padding: 5px;
+  width: calc(100% / 5);
 }
 ```
 
