@@ -44,7 +44,7 @@ A collection of tips to help take your CSS skills pro.
 1. [Set `font-size` on Form Elements for a Better Mobile Experience](#set-font-size-on-form-elements-for-a-better-mobile-experience)
 1. [Use Pointer Events to Control Mouse Events](#use-pointer-events-to-control-mouse-events)
 1. [Set `display: none` on Line Breaks Used as Spacing](#set-display-none-on-line-breaks-used-as-spacing)
-1. [Use `display: flex;` and `margin-top: auto;` for Footer Sticky](#use-display-flex-and-margin-top-auto-for-footer-sticky)
+1. [Use `display: flex;` and `margin-top: auto;` for Sticky Footer ](#use-display-flex-and-margin-top-auto-for-sticky-footer)
 
 
 ### Use a CSS Reset
@@ -608,7 +608,7 @@ br + br {
 ```
 
 
-### Use `display: flex;` and `margin-top: auto;` for Footer Sticky
+### Use `display: flex;` and `margin-top: auto;` for Sticky Footer 
 
 Use display: flex; in body with min-height: 100vh; and add margin-top: auto; for what footer every fixed in top without need javascript or libraries.
 
