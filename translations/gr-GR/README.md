@@ -614,4 +614,4 @@ br + br {
 
 Οι τωρινές εκδόσεις των Chrome, Firefox, Safari, Opera, Edge, καθώς και IE11.
 
-<sup>[back to table of contents](#table-of-contents)</sup>
+<sup>[πίσω στον πίνακα περιεχομένων](#πίνακας-περιεχομένων)</sup>
