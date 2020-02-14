@@ -44,7 +44,7 @@ A collection of tips to help take your CSS skills pro.
 1. [Set `font-size` on Form Elements for a Better Mobile Experience](#set-font-size-on-form-elements-for-a-better-mobile-experience)
 1. [Use Pointer Events to Control Mouse Events](#use-pointer-events-to-control-mouse-events)
 1. [Set `display: none` on Line Breaks Used as Spacing](#set-display-none-on-line-breaks-used-as-spacing)
-
+1. [Multiple Borders](#Multiple-Borders)
 
 ### Use a CSS Reset
 
@@ -608,6 +608,40 @@ br + br {
 
 <sup>[back to table of contents](#table-of-contents)</sup>
 
+### Multiple Borders 
+You can use box-shadow to make a border effect, by making the the shadow offset and have 0 blur. Plus, by comma-separating values, you can have as many "borders" as you like:
+
+```css
+div{
+   background-color:yellowgreen;
+   box-shadow:0 0 0 10px #656;
+}
+```
+This is not particularly impressive, as you can create the same kind of border
+by using the border property. However, the good thing about boxshadow is that we can have as many of them as we want, comma
+separated. So, we can pretty easily add a second deeppink “border”
+to the previous example:
+
+```css
+div{
+   background-color:yellowgreen;
+   box-shadow: 0 0 0 10px #655, 0 0 0 15px deeppink;
+}
+```
+#### The shadow solution works quite well in most cases, but has a few caveats :
+- Shadows don’t work exactly like borders, as they don’t affect layout and are
+oblivious to the box-sizing property. However, you can emulate the extra
+space a border would occupy via padding or margins (depending on whether the shadow is inset or not).
+- The method we demonstrated creates fake “borders” on the outside of
+elements. These do not capture mouse events such as hovering or clicking.
+If this is important, you can add the inset keyword to make the shadows
+be drawn on the inside of your element. Note that you will need to add
+extra padding to produce sufficient spacing.
+
+
+#### [Demo](http://dabblet.com/gist/525eb8e9cdade71723c1)
+
+<sup>[back to table of contents](#table-of-contents)</sup>
 
 ## Support
 
