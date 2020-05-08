@@ -23,6 +23,7 @@ A collection of tips to help take your CSS skills pro.
 1. [Inherit `box-sizing`](#inherit-box-sizing)
 1. [Use `unset` Instead of Resetting All Properties](#use-unset-instead-of-resetting-all-properties)
 1. [Use `:not()` to Apply/Unapply Borders on Navigation](#use-not-to-applyunapply-borders-on-navigation)
+1. [Check If Font Is Installed Locally](#check-if-font-is-installed-locally)
 1. [Add `line-height` to `body`](#add-line-height-to-body)
 1. [Set `:focus` for Form Elements](#set-focus-for-form-elements)
 1. [Vertically-Center Anything](#vertically-center-anything)
@@ -151,6 +152,32 @@ Here, the CSS selector is read as a human would describe it.
 #### [Demo](http://codepen.io/AllThingsSmitty/pen/LkymvO)
 
 <sup>[back to table of contents](#table-of-contents)</sup>
+
+
+### Check If Font Is Installed Locally
+
+You can check if a font is installed locally before fetching it remotely, which is a good performance tip, too.
+
+```css
+@font-face {
+  font-family: "Dank Mono";
+  src:
+    /* Full name */
+    local("Dank Mono"),
+    /* Postscript name */
+    local("Dank Mono"),
+    /* Otherwise, download it! */
+    url("//...a.server/fonts/DankMono.woff");
+}
+
+code {
+  font-family: "Dank Mono", system-ui-monospace;
+}
+```
+
+H/T to Adam Argyle for sharing this protip and the demo 
+
+### [Demo](https://codepen.io/argyleink/pen/VwYJpgR)
 
 
 ### Add `line-height` to `body`
