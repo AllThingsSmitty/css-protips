@@ -175,9 +175,9 @@ code {
 }
 ```
 
-H/T to Adam Argyle for sharing this protip and the demo 
+H/T to Adam Argyle for sharing this protip and [demo](https://codepen.io/argyleink/pen/VwYJpgR).
 
-### [Demo](https://codepen.io/argyleink/pen/VwYJpgR)
+<sup>[back to table of contents](#table-of-contents)</sup>
 
 
 ### Add `line-height` to `body`
