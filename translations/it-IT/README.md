@@ -18,34 +18,33 @@ Una collezione di dritte per aiutarti a migliorare le tue capacità con CSS.
 
 ## Suggerimenti per esperti
 
-1. [Utilizzare un reset CSS](#use-a-css-reset)
-1. [Eredita il `box-sizing`](#inherit-box-sizing)
-1. [Usa `unset` invece di Reimposta tutte le proprietà](#use-unset-instead-of-resetting-all-properties)
-1. [Usa `:not()` per applicare/rimuovere i bordi su elementi di navigazione](#use-not-to-applyunapply-borders-on-navigation)
-1. [Aggiungi `line-height` al `body`](#add-line-height-to-body)
+1. [Utilizzare un reset CSS](#utilizzare-un-reset-css)
+1. [Eredita il `box-sizing`](#eredita-il-box-sizing)
+1. [Usa `unset` invece di Reimposta tutte le proprietà](#usa-unset-invece-di-reimposta-tutte-le-proprietà)
+1. [Usa `:not()` per applicare/rimuovere-i-bordi-su-elementi-di-navigazione](#usa-not-per-applicarerimuovere-i-bordi-su-elementi-di-navigazione)
+1. [Controlla se il font è installato localmente](#controlla-se-il-font-è-installato-localmente)
+1. [Aggiungi `line-height` al `body`](#aggiungi-line-height-al-body)
 1. [Imposta `:focus` per gli elementi del modulo](#imposta-focus-per-gli-elementi-del-modulo)
-1. [Centra verticalmente qualsiasi cosa](#vertically-center-anything)
-1. [Liste separate da virgola](#comma-separated-lists)
-1. [Seleziona un elemento usando gli `nth-child` negativi](#select-items-using-negative-nth-child)
-1. [Usa SVG per le icone](#use-svg-for-icons)
-1. [Usa il selettore detto "Lobotomized Owl"](#use-the-lobotomized-owl-selector)
-1. [Usa `max-height` per slider fatti solo con CSS](#use-max-height-for-pure-css-sliders)
-1. [Celle di tabella con larghezza uguale](#equal-width-table-cells)
-1. [Sbarazzati degli hack sui margini grazie a Flexbox](#get-rid-of-margin-hacks-with-flexbox)
-1. [Usa il selettore d'attributo con i link senza testo](#use-attribute-selectors-with-empty-links)
-1. [Styling dei link di "Default"](#style-default-links)
-1. [Mantieni un ritmo verticale coerente](#consistent-vertical-rhythm)
-1. [Box con proporzioni intrinseche](#intrinsic-ratio-boxes)
-1. [Styling delle immagini non scaricate](#style-broken-images)
-1. [Usa `rem` per le grandezze globali; usa `em` per le dimensioni locali](#use-rem-for-global-sizing-use-em-for-local-sizing)
-1. [Nascondi i video in riproduzione automatica che non sono silenziati](#hide-autoplay-videos-that-arent-muted)
-1. [Usa `:root` per caratteri flessibili](#use-root-for-flexible-type)
-1. [Imposta il `font-size` sugli elementi dei form per una migliore esperienza da mobile](#set-font-size-on-form-elements-for-a-better-mobile-experience)
+1. [Centra verticalmente qualsiasi cosa](#centra-verticalmente-qualsiasi-cosa)
+1. [Liste separate da virgola](#liste-separate-da-virgola)
+1. [Seleziona un elemento usando gli `nth-child` negativi](#seleziona-un-elemento-usando-gli-nth-child-negativi)
+1. [Usa SVG per le icone](#usa-svg-per-le-icone)
+1. [Usa il selettore detto "Lobotomized Owl"](#usa-il-selettore-detto-"lobotomized-owl")
+1. [Usa `max-height` per slider fatti solo con CSS](#usa-max-height-per-slider-fatti-solo-con-css)
+1. [Celle di tabella con larghezza uguale](#celle-di-tabella-con-larghezza-uguale)
+1. [Sbarazzati degli hack sui margini grazie a Flexbox](#sbarazzati-degli-hack-sui-margini-grazie-a-flexbox)
+1. [Usa il selettore d'attributo con i link senza testo](#usa-il-selettore-d'attributo-con-i-link-senza-testo)
+1. [Styling dei link di "Default"](#styling-dei-link-di-"default")
+1. [Mantieni un ritmo verticale coerente](#mantieni-un-ritmo-verticale-coerente)
+1. [Box con proporzioni intrinseche](#box-con-proporzioni-intrinseche)
+1. [Styling delle immagini non scaricate](#styling-delle-immagini-non-scaricate)
+1. [Usa `rem` per le grandezze globali; usa `em` per le dimensioni locali](#usa-rem-per-le-grandezze-globali;-usa-em-per-le-dimensioni-locali)
+1. [Nascondi i video in riproduzione automatica che non sono silenziati](#nascondi-i-video-in-riproduzione-automatica-che-non-sono-silenziati)
+1. [Usa `:root` per caratteri flessibili](#usa-:root-per-caratteri-flessibili)
+1. [Imposta il `font-size` sugli elementi dei form per una migliore esperienza da mobile](#imposta-il-font-size-sugli-elementi-dei-form-per-una-migliore-esperienza-da-mobile)
 1. [Utilizzare gli eventi puntatore per controllare gli eventi del mouse](#utilizzare-gli-eventi-puntatore-per-controllare-gli-eventi-del-mouse)
-1. [Imposta `display: none` su Line Breaks usati come Spaziatura](#set-display-none-on-line-breaks-being-used-as-spacing)
+1. [Imposta `display: none` su Line Breaks usati come Spaziatura](#imposta-display:-none-su-line-breaks-usati-come-spaziatura)
 
-
-<div id="use-a-css-reset"></div>
 
 ### Utilizzare un reset CSS
 
@@ -70,8 +69,6 @@ Ora elementi saranno spogliati di margini e padding, e `box-sizing` consente di 
 <sup>[torna al sommario](#sommario)</sup>
 
 
-<div id="inherit-box-sizing"></div>
-
 ### Eredita il `box-sizing`
 
 Eredita il `box-sizing` dall'elemento `html`:
@@ -92,8 +89,6 @@ In questo modo diventa più facile cambiare `box-sizing` in plugin o altri compo
 
 <sup>[torna al sommario](#sommario)</sup>
 
-
-<div id="use-unset-instead-of-resetting-all-properties"></div>
 
 ### Usa `unset` invece di Reimposta tutte le proprietà
 
@@ -122,8 +117,6 @@ button {
 
 <sup>[torna al sommario](#sommario)</sup>
 
-
-<div id="use-not-to-applyunapply-borders-on-navigation"></div>
 
 ### Usa `:not()` per applicare/rimuovere i bordi su elementi di navigazione
 
@@ -160,7 +153,31 @@ Il selettore CSS definisce il confine nel modo in cui un essere umano lo descriv
 <sup>[torna al sommario](#sommario)</sup>
 
 
-<div id="add-line-height-to-body"></div>
+### Controlla se il font è installato localmente
+
+Puoi verificare se un font è installato localmente prima di recuperarlo da remoto, il che è anche un buon suggerimento per le prestazioni.
+
+```css
+@font-face {
+  font-family: "Dank Mono";
+  src:
+    /* Full name */
+    local("Dank Mono"),
+    /* Postscript name */
+    local("Dank Mono"),
+    /* Otherwise, download it! */
+    url("//...a.server/fonts/DankMono.woff");
+}
+
+code {
+  font-family: "Dank Mono", system-ui-monospace;
+}
+```
+
+Punta del cappello ad Adam Argyle per aver condiviso questo prototipo e questa [dimostrazione](https://codepen.io/argyleink/pen/VwYJpgR).
+
+<sup>[torna al sommario](#sommario)</sup>
+
 
 ### Aggiungi `line-height` al `body`
 
@@ -200,8 +217,6 @@ textarea:focus {
 
 <sup>[torna al sommario](#sommario)</sup>
 
-
-<div id="vertically-center-anything"></div>
 
 ### Centra verticalmente qualsiasi cosa
 
@@ -243,8 +258,6 @@ Vuoi centrare qualcos'altro? In verticale, in orizzontale... qualsiasi cosa, in 
 <sup>[torna al sommario](#sommario)</sup>
 
 
-<div id="comma-separated-lists"></div>
-
 ### Liste separate da virgola
 
 Visualizza gli elementi di una lista come fossero una vera lista con le virgole:
@@ -261,8 +274,6 @@ Usa la pseudo classe `:not()` in modo da non aggiungere la virgola all'ultimo el
 
 <sup>[torna al sommario](#sommario)</sup>
 
-
-<div id="select-items-using-negative-nth-child"></div>
 
 ### Seleziona un elemento usando gli `nth-child` negativi
 
@@ -295,8 +306,6 @@ Beh... era abbastanza facile.
 <sup>[torna al sommario](#sommario)</sup>
 
 
-<div id="use-svg-for-icons"></div>
-
 ### Usa SVG per le icone
 
 Non c'è ragione per non usare SVG per le icone:
@@ -320,8 +329,6 @@ SVG scala molto bene a tutti i tipi di risoluzione ed è supportata in tutti i b
 <sup>[torna al sommario](#sommario)</sup>
 
 
-<div id="use-the-lobotomized-owl-selector"></div>
-
 ### Usa il selettore detto "Lobotomized Owl"
 
 Sebbene il suo nome sia un po' strano, l'uso del selettore universale (`*`) insieme al selettore del fratello adiacente (`+`) può fornire una potenzialità CSS molto potente:
@@ -340,8 +347,6 @@ Per saperne di più sul selettore detto "lobotomized owl", leggi [l'articolo di 
 
 <sup>[torna al sommario](#sommario)</sup>
 
-
-<div id="use-max-height-for-pure-css-sliders"></div>
 
 ### Usa `max-height` per slider fatti solo con CSS
 
@@ -365,8 +370,6 @@ L'elemento si espande al valore `max-height` all'hover e lo slider diventa visib
 <sup>[torna al sommario](#sommario)</sup>
 
 
-<div id="equal-width-table-cells"></div>
-
 ### Celle di tabella con larghezza uguale
 
 Lavorare con le tabelle può dare il tormento, perciò prova a usare `table-layout: fixed` per avere celle di larghezza uguale:
@@ -383,8 +386,6 @@ Layout con le tabelle e senza tormento.
 
 <sup>[torna al sommario](#sommario)</sup>
 
-
-<div id="get-rid-of-margin-hacks-with-flexbox"></div>
 
 ### Sbarazzati degli hack sui margini grazie a Flexbox
 
@@ -406,8 +407,6 @@ Ora le colonne avranno sempre una spaziatura uniforme.
 <sup>[torna al sommario](#sommario)</sup>
 
 
-<div id="use-attribute-selectors-with-empty-links"></div>
-
 ### Usa il selettore d'attributo con i link senza testo
 
 Quando l'elemento `<a>` non ha testo al suo interno ma l'attributo `href` ha un link, lo mostra:
@@ -425,8 +424,6 @@ Decisamente comodo.
 <sup>[torna al sommario](#sommario)</sup>
 
 
-<div id="style-default-links"></div>
-
 ### Styling dei link di "Default"
 
 Aggiunge uno stile per i link "default":
@@ -443,8 +440,6 @@ Ora i link inseriti mediante un CMS, che solitamente non hanno un attributo `cla
 <sup>[torna al sommario](#sommario)</sup>
 
 
-<div id="consistent-vertical-rhythm"></div>
-
 ### Mantieni un ritmo verticale coerente
 
 Fai uso di un selettore universale (`*`) all'interno di un elemento per creare un ritmo verticale coerente:
@@ -459,8 +454,6 @@ Un ritmo verticale coerente procura un'estetica visuale che favorisce la leggibi
 
 <sup>[torna al sommario](#sommario)</sup>
 
-
-<div id="intrinsic-ratio-boxes"></div>
 
 ### Box con proporzioni intrinseche
 
@@ -489,8 +482,6 @@ Uare un `padding` del 20% rende l'altezza del contenitore pari al 20% della sua 
 
 <sup>[torna al sommario](#sommario)</sup>
 
-
-<div id="style-broken-images"></div>
 
 ### Styling delle immagini non scaricate
 
@@ -530,8 +521,6 @@ Ulteriori informazioni sullo styling secondo questo pattern nell'[articolo](http
 <sup>[torna al sommario](#sommario)</sup>
 
 
-<div id="use-rem-for-global-sizing-use-em-for-local-sizing"></div>
-
 ### Usa `rem` per le grandezze globali; usa `em` per le dimensioni locali
 
 Dopo avere impostato la dimensione di base del font sull'elemento root (`html { font-size: 100%; }`), imposta la dimensione del font per gli elementi testuali con `em`:
@@ -563,8 +552,6 @@ A questo punto ogni modulo diventa compartimentalizzato, più facile da modellar
 <sup>[torna al sommario](#sommario)</sup>
 
 
-<div id="hide-autoplay-videos-that-arent-muted"></div>
-
 ### Nascondi i video in riproduzione automatica che non sono silenziati
 
 Questo è un fantastico trucchetto per un foglio di stile personalizzato per un utente. Evita di sovraccaricare un utente col suono di un video che parte in riproduzione automatica quando la pagina viene caricata. Se il suono non è disabilitato non mostrare il video:
@@ -579,8 +566,6 @@ Ancora una volta stiamo sfruttando la pseudo classe [`:not()`](#use-not-to-apply
 
 <sup>[torna al sommario](#sommario)</sup>
 
-
-<div id="use-root-for-flexible-type"></div>
 
 ### Usa `:root` per caratteri flessibili
 
@@ -604,8 +589,6 @@ body {
 
 <sup>[torna al sommario](#sommario)</sup>
 
-
-<div id="set-font-size-on-form-elements-for-a-better-mobile-experience"></div>
 
 ### Imposta il `font-size` sugli elementi dei form per una migliore esperienza da mobile
 
@@ -640,8 +623,6 @@ textarea {
 
 <sup>[torna al sommario](#sommario)</sup>
 
-
-<div id="set-display-none-on-line-breaks-being-used-as-spacing"></div>
 
 ### Imposta `display: none` su Line Breaks usati come Spaziatura
 
