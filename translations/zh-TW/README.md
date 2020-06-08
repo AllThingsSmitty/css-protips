@@ -25,6 +25,7 @@
 1. [繼承 `box-sizing`](#繼承-box-sizing)
 1. [使用 `unset` 而不是重置所有屬性](#使用-unset-而不是重置所有屬性)
 1. [使用 `:not()` 選擇器來決定表單是否顯示邊框](#使用-not-選擇器來決定表單是否顯示邊框)
+1. [检查字体是否在本地安装](#检查字体是否在本地安装)
 1. [將 `line-height` 加入到 `body` 元素](#將-line-height-加入到-body-元素)
 1. [為表單元素設定`focus`](#為表單元素設定focus)
 1. [將所有元素設定垂直居中](#將所有元素設定垂直居中)
@@ -150,6 +151,33 @@ CSS選擇器以人類描述它的方式定義邊界。
 #### [示範](http://codepen.io/AllThingsSmitty/pen/LkymvO)
 
 <sup>[回到目錄](#table-of-contents)</sup>
+
+
+### 检查字体是否在本地安装
+
+您可以在远程获取字体之前检查是否在本地安装了字体，这也是一个很好的性能提示。
+
+```css
+@font-face {
+  font-family: "Dank Mono";
+  src:
+    /* Full name */
+    local("Dank Mono"),
+    /* Postscript name */
+    local("Dank Mono"),
+    /* Otherwise, download it! */
+    url("//...a.server/fonts/DankMono.woff");
+}
+
+code {
+  font-family: "Dank Mono", system-ui-monospace;
+}
+```
+
+亚当·阿盖尔（Adam Argyle）的帽子技巧，分享了这个技巧和[例子](https://codepen.io/argyleink/pen/VwYJpgR).
+
+<sup>[回到目錄](#table-of-contents)</sup>
+
 
 ### 將 `line-height` 加入到 `body` 元素
 

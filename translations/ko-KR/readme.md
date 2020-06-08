@@ -25,6 +25,7 @@ CSS스킬을 프로처럼 만들어주는 팁 모음
 1. [`box-sizing`을 컴포넌트마다 변경](#inherit-box-sizing)
 1. [모든 프로퍼티를 리셋하는 대신에 `unset`를 쓴다](#use-unset-instead-of-resetting-all-properties)
 1. [`:not()` 를 사용하여 Border를 삭제](#use-not-to-applyunapply-borders-on-navigation)
+1. [글꼴이 로컬로 설치되어 있는지 확인](#check-if-font-is-installed-locally)
 1. [`body`에 `line-height` 넣기](#add-line-height-to-body)
 1. [폼 요소에`: focus`를 설정하십시오.](#set-focus-for-form-elements)
 1. [전부 Vertically-Center로 만들기](#vertically-center-anything)
@@ -161,6 +162,34 @@ Border를 넣거나...
 CSS 선택기는 사람이 설명하는 방식으로 경계를 정의합니다.
 
 #### [데모](http://codepen.io/AllThingsSmitty/pen/LkymvO)
+
+<sup>[목차로 돌아가기](#table-of-contents)</sup>
+
+
+<div id="check-if-font-is-installed-locally"></div>
+
+### 글꼴이 로컬로 설치되어 있는지 확인
+
+글꼴을 원격으로 가져 오기 전에 글꼴이 로컬에 설치되어 있는지 확인할 수 있으며 이는 좋은 성능 팁입니다.
+
+```css
+@font-face {
+  font-family: "Dank Mono";
+  src:
+    /* Full name */
+    local("Dank Mono"),
+    /* Postscript name */
+    local("Dank Mono"),
+    /* Otherwise, download it! */
+    url("//...a.server/fonts/DankMono.woff");
+}
+
+code {
+  font-family: "Dank Mono", system-ui-monospace;
+}
+```
+
+이 팁과 [데모](https://codepen.io/argyleink/pen/VwYJpgR)를 공유 한 Adam Argyle의 모자 팁.
 
 <sup>[목차로 돌아가기](#table-of-contents)</sup>
 

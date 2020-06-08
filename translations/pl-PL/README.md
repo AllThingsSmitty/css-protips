@@ -21,6 +21,7 @@ Zbiór porad, które pomogą Ci rozwinąć zawansowane umiejętności CSS.
 1. [Dziedziczenie `box-sizing`](#dziedziczenie-box-sizing)
 1. [Użyj `unset` zamiast resetowania wszystkich ustawień](#użyj-unset-zamiast-resetowania-wszystkich-ustawień)
 1. [Użyj `:not()` aby dodać/usunąć obramownie nawigacji](#użyj-not-aby-dodaćusunąć-obramownie-nawigacji)
+1. [Sprawdź, czy czcionka jest zainstalowana lokalnie](#sprawdź,-czy-czcionka-jest-zainstalowana-lokalnie)
 1. [Dodaj `line-height` do `body`](#dodaj-line-height-do-body)
 1. [Ustaw `:focus` dla elementów formularza](#ustaw-:focus-dla-form-elements)
 1. [Przesuń cokolwiek pionowo](#przesuwanie-w-pionie)
@@ -145,6 +146,32 @@ Zamiast dodać obramowanie...
 Selektor CSS definiuje granicę w sposób opisany przez człowieka.
 
 #### [Demonstracja](http://codepen.io/AllThingsSmitty/pen/LkymvO)
+
+<sup>[powrót do spisu treści](#powrót-do-spisu-treści)</sup>
+
+
+### Sprawdź, czy czcionka jest zainstalowana lokalnie
+
+Możesz sprawdzić, czy czcionka jest zainstalowana lokalnie, przed jej zdalnym pobraniem, co również jest dobrą wskazówką dotyczącą wydajności.
+
+```css
+@font-face {
+  font-family: "Dank Mono";
+  src:
+    /* Full name */
+    local("Dank Mono"),
+    /* Postscript name */
+    local("Dank Mono"),
+    /* Otherwise, download it! */
+    url("//...a.server/fonts/DankMono.woff");
+}
+
+code {
+  font-family: "Dank Mono", system-ui-monospace;
+}
+```
+
+Czapka dla Adama Argyle'a za podzielenie się tym prototypem i [demonstracją](https://codepen.io/argyleink/pen/VwYJpgR).
 
 <sup>[powrót do spisu treści](#powrót-do-spisu-treści)</sup>
 

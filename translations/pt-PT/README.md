@@ -20,7 +20,9 @@ Uma coleção de dicas para aumentar as tuas habilidades no CSS.
 
 1. [Usa um Reset CSS](#usa-um-reset-css)
 1. [Herda o `box-sizing`](#herda-o-box-sizing)
-1. [Usa `:not()` para Aplicar/Remover Bordas](#usa-not-para-aplicarremover-bordas)
+1. [Use `unset` Instead of Resetting All Properties](#use-unset-instead-of-resetting-all-properties)1. 
+[Usa `:not()` para Aplicar/Remover Bordas](#usa-not-para-aplicarremover-bordas)
+1. [Verifique se a fonte está instalada localmente](#verifique-se-a-fonte-está-instalada-localmente)
 1. [Define o `line-height` no `body`](#define-o-line-height-no-body)
 1. [Alinha Elementos Verticalmente](#alinha-elementos-verticalmente)
 1. [Definir `:focus` para elementos de formulário](#definir-focus-para-elementos-de-formulário)
@@ -119,6 +121,32 @@ Ao invés de colocar a borda…
 O seletor CSS define a borda da maneira que um humano a descreveria.
 
 #### [Passeata](http://codepen.io/AllThingsSmitty/pen/LkymvO)
+
+<sup>[Regressar ao índice](#Índice)</sup>
+
+
+### Verifique se a fonte está instalada localmente
+
+Você pode verificar se uma fonte está instalada localmente antes de buscá-la remotamente, o que também é uma boa dica de desempenho.
+
+```css
+@font-face {
+  font-family: "Dank Mono";
+  src:
+    /* Full name */
+    local("Dank Mono"),
+    /* Postscript name */
+    local("Dank Mono"),
+    /* Otherwise, download it! */
+    url("//...a.server/fonts/DankMono.woff");
+}
+
+code {
+  font-family: "Dank Mono", system-ui-monospace;
+}
+```
+
+Dica de chapéu para Adam Argyle por compartilhar este protip e [exemplo](https://codepen.io/argyleink/pen/VwYJpgR).
 
 <sup>[Regressar ao índice](#Índice)</sup>
 

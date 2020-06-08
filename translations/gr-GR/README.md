@@ -22,6 +22,7 @@
 1. [Κληρονόμιση του 'box-sizing'](#κληρονόμιση-του-box-sizing)
 1. [Χρήση `unset` Αντί Για Επαναφορά Όλων Των Ιδιοτήτων](#χρήση-unset-αντί-για-επαναφορά-όλων-των-ιδιοτήτων)
 1. [Χρήση `:not()` για Εφαρμόσεις/Βγάλεις τα Πλαίσια κατά την Περιήγηση](#χρήση-not-για-εφαρμόσειςβγάλεις-τα-πλαίσια-κατά-την-περιήγηση)
+1. [Überprüfen Sie, ob die Schriftart lokal installiert ist](#Überprüfen-sie-ob-die-schriftart-lokal-installiert-ist)
 1. [Προσθήκη `line-height` στο `body`](#προσθήκη-line-height-στο-body)
 1. [Θέσε `:focus` για Στοιχεία της Φόρμας](#θέσε-focus-για-στοιχεία-της-φόρμας)
 1. [Κάθετο-Κεντράρισμα Όλων](#κάθετο-κεντράρισμα-όλων)
@@ -148,6 +149,32 @@ button {
 Εδώ, ο CSS επιλέκτης διαβάστηκε όπως αν το περιέγραφε ένας άνθρωπος.
 
 #### [Demo](http://codepen.io/AllThingsSmitty/pen/LkymvO)
+
+<sup>[πίσω στον πίνακα περιεχομένων](#πίνακας-περιεχομένων)</sup>
+
+
+### Überprüfen Sie, ob die Schriftart lokal installiert ist
+
+Sie können überprüfen, ob eine Schriftart lokal installiert ist, bevor Sie sie remote abrufen. Dies ist auch ein guter Leistungstipp.
+
+```css
+@font-face {
+  font-family: "Dank Mono";
+  src:
+    /* Full name */
+    local("Dank Mono"),
+    /* Postscript name */
+    local("Dank Mono"),
+    /* Otherwise, download it! */
+    url("//...a.server/fonts/DankMono.woff");
+}
+
+code {
+  font-family: "Dank Mono", system-ui-monospace;
+}
+```
+
+Hutspitze an Adam Argyle für das Teilen dieses Protips und dieser [Demo](https://codepen.io/argyleink/pen/VwYJpgR).
 
 <sup>[πίσω στον πίνακα περιεχομένων](#πίνακας-περιεχομένων)</sup>
 

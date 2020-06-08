@@ -22,6 +22,7 @@ Uma coleção de dicas para aumentar suas habilidades no CSS.
 1. [Herde o `box-sizing`](#herde-o-box-sizing)
 1. [Use `unset` em vez de redefinir todas as propriedades](#use-unset-em-vez-de-redefinir-todas-as-propriedades)
 1. [Use `:not()` para Aplicar/Remover Bordas](#use-not-para-aplicarremover-bordas)
+1. [Verifique se a fonte está instalada localmente](#verifique-se-a-fonte-está-instalada-localmente)
 1. [Defina o `line-height` no `body`](#defina-o-line-height-no-body)
 1. [Definir `:focus` para elementos de formulário](#definir-focus-para-elementos-de-formulário)
 1. [Alinhe Elementos Verticalmente](#alinhe-elementos-verticalmente)
@@ -147,6 +148,32 @@ Ao invés de colocar a borda…
 O seletor CSS define a borda da maneira que um humano a descreveria.
 
 #### [Exemplo](http://codepen.io/AllThingsSmitty/pen/LkymvO)
+
+<sup>[voltar ao índice](#Índice)</sup>
+
+
+### Verifique se a fonte está instalada localmente
+
+Você pode verificar se uma fonte está instalada localmente antes de buscá-la remotamente, o que também é uma boa dica de desempenho.
+
+```css
+@font-face {
+  font-family: "Dank Mono";
+  src:
+    /* Full name */
+    local("Dank Mono"),
+    /* Postscript name */
+    local("Dank Mono"),
+    /* Otherwise, download it! */
+    url("//...a.server/fonts/DankMono.woff");
+}
+
+code {
+  font-family: "Dank Mono", system-ui-monospace;
+}
+```
+
+Dica de chapéu para Adam Argyle por compartilhar este protip e [exemplo](https://codepen.io/argyleink/pen/VwYJpgR).
 
 <sup>[voltar ao índice](#Índice)</sup>
 

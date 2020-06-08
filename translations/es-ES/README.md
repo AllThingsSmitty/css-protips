@@ -22,6 +22,7 @@ Una colección de consejos para ayudarte a mejorar tus conocimientos profesional
 1. [Heredar `box-sizing`](#heredar-box-sizing)
 1. [Utilice `unset` en lugar de restablecer todas las propiedades](#utilice-unset-en-lugar-de-restablecer-todas-las-propiedades)
 1. [Usar `:not()` para Aplicar o Cancelar la aplicación de bordes en la navegación](#usar-not-para-aplicar-o-cancelar-la-aplicación-de-bordes-en-la-navegación)
+1. [Compruebe si la fuente está instalada localmente](#compruebe-si-la-fuente-está-instalada-localmente)
 1. [Añadir `line-height` al `body`](#añadir-line-height-al-body)
 1. [Establecer `:focus` para elementos de formulario](#establecer-focus-para-elementos-de-formulario)
 1. [Centrar cualquier cosa verticalmente](#centrar-cualquier-cosa-verticalmente)
@@ -149,6 +150,32 @@ En lugar de poner en el borde...
 El selector CSS define los bordes de la forma en que un ser humano lo describiría.
 
 #### [Demo](http://codepen.io/AllThingsSmitty/pen/LkymvO)
+
+<sup>[volver al índice de contenidos](#tabla-de-contenido)</sup>
+
+
+### Compruebe si la fuente está instalada localmente
+
+Puede verificar si una fuente está instalada localmente antes de buscarla de forma remota, lo que también es un buen consejo de rendimiento.
+
+```css
+@font-face {
+  font-family: "Dank Mono";
+  src:
+    /* Full name */
+    local("Dank Mono"),
+    /* Postscript name */
+    local("Dank Mono"),
+    /* Otherwise, download it! */
+    url("//...a.server/fonts/DankMono.woff");
+}
+
+code {
+  font-family: "Dank Mono", system-ui-monospace;
+}
+```
+
+Felicitaciones a Adam Argyle por compartir este protip y [demo](https://codepen.io/argyleink/pen/VwYJpgR).
 
 <sup>[volver al índice de contenidos](#tabla-de-contenido)</sup>
 

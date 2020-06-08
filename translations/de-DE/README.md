@@ -22,6 +22,7 @@ Eine Sammlung an Tipps, um deine CSS-Fähigkeiten zu professionalisieren.
 1. [Übernehme `box-sizing`](#Übernehme-box-sizing)
 1. [Benutze `unset`, anstatt alle Eigenschaften zurückzusetzen](#benutze-unset-anstatt-alle-eigenschaften-zurückzusetzen)
 1. [Benutze `:not()` um Rahmen an die Navigation zu setzen oder zu entfernen](#benutze-not-um-rahmen-an-die-navigation-zu-setzen-oder-zu-entfernen)
+1. [Kontroller, om skrifttypen er installeret lokalt](#Kontroller-om-skrifttypen-er-installeret-lokalt)
 1. [Ergänze `line-height` an `body`](#ergänze-line-height-an-body)
 1. [Setze `:focus` für Form-Elemente](#setze-focus-für-form-elemente)
 1. [Zentriere alles vertikal](#zentriere-alles-vertikal)
@@ -148,6 +149,34 @@ Anstatt den Rahmen zu ergänzen&hellip;
 Sicher, du kannst `.nav li + li` verwenden, aber mit `:not()` ist die Absicht sehr klar und der CSS Selektor definiert den Rahmen auf die Weise wie ihn auch ein Mensch beschreiben würde.
 
 #### [Demo](http://codepen.io/AllThingsSmitty/pen/LkymvO)
+
+<sup>[zurück zum Inhaltsverzeichnis](#inhaltsverzeichnis)</sup>
+
+
+### Check If Font Is Installed Locally](#check-if-font-is-installed-locally)
+
+### Kontroller, om skrifttypen er installeret lokalt
+
+Du kan kontrollere, om en skrifttype er installeret lokalt, før du henter den eksternt, hvilket også er et godt ydelsestip.
+
+```css
+@font-face {
+  font-family: "Dank Mono";
+  src:
+    /* Full name */
+    local("Dank Mono"),
+    /* Postscript name */
+    local("Dank Mono"),
+    /* Otherwise, download it! */
+    url("//...a.server/fonts/DankMono.woff");
+}
+
+code {
+  font-family: "Dank Mono", system-ui-monospace;
+}
+```
+
+Hat tip til Adam Argyle for at dele denne protip og [demoen](https://codepen.io/argyleink/pen/VwYJpgR).
 
 <sup>[zurück zum Inhaltsverzeichnis](#inhaltsverzeichnis)</sup>
 

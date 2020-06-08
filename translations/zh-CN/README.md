@@ -24,6 +24,7 @@
 1. [继承 `box-sizing`](#继承-box-sizing)
 1. [使用`unset`而不是重置所有属性](#使用unset而不是重置所有属性)
 1. [使用 `:not()` 选择器来决定表单是否显示边框](#使用-not-选择器来决定表单是否显示边框)
+1. [檢查字體是否在本地安裝](#檢查字體是否在本地安裝)
 1. [为 body 元素添加行高](#为-body-元素添加行高)
 1. [为表单元素设置`:focus`](#为表单元素设置focus)
 1. [垂直居中任何元素](#垂直居中任何元素)
@@ -150,6 +151,32 @@ button {
 CSS选择器以人类描述它的方式定义边界。
 
 #### [演示](http://codepen.io/AllThingsSmitty/pen/LkymvO)
+
+<sup>[回目录](#目录)</sup>
+
+
+### 檢查字體是否在本地安裝
+
+您可以在遠程獲取字體之前檢查是否在本地安裝了字體，這也是一個很好的性能提示。
+
+```css
+@font-face {
+  font-family: "Dank Mono";
+  src:
+    /* Full name */
+    local("Dank Mono"),
+    /* Postscript name */
+    local("Dank Mono"),
+    /* Otherwise, download it! */
+    url("//...a.server/fonts/DankMono.woff");
+}
+
+code {
+  font-family: "Dank Mono", system-ui-monospace;
+}
+```
+
+H亞當·阿蓋爾（Adam Argyle）的帽子技巧，分享了這個技巧和[例子](https://codepen.io/argyleink/pen/VwYJpgR).
 
 <sup>[回目录](#目录)</sup>
 

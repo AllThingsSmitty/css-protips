@@ -22,6 +22,7 @@ Une collection de conseils pour vous aider à mener vos compétences CSS au nive
 1. [Hériter de `box-sizing`](#hériter-de-box-sizing)
 1. [Utilisez `unset` au Lieu de Réinitialiser Toutes les Propriétés](#utilisez-unset-au-lieu-de-réinitialiser-toutes-les-propriétés)
 1. [Utiliser `:not()` pour Appliquer / ne pas Appliquer des Bordures à la Barre de Navigation](#utiliser-not-pour-appliquer--ne-pas-appliquer-des-bordures-à-la-barre-de-navigation)
+1. [Vérifiez si la police est installée localement](#vérifiez-si-la-police-est-installée-localement)
 1. [Ajouter `line-height` à `body`](#ajouter-line-height-à-body)
 1. [Définissez `: focus` pour les Éléments de Formulaire](#définissez-focus-pour-les-éléments-de-formulaire)
 1. [Tout Centrer Verticalement](#tout-centrer-verticalement)
@@ -149,6 +150,32 @@ Au lieu de mettre à l'encadrement...
 Le sélecteur CSS définit la frontière comme un humain la décrirait.
 
 #### [Démo](http://codepen.io/AllThingsSmitty/pen/LkymvO)
+
+<sup>[retour à la table des matières](#table-des-matières)</sup>
+
+
+### Vérifiez si la police est installée localement
+
+Vous pouvez vérifier si une police est installée localement avant de la récupérer à distance, ce qui est également une bonne astuce de performance.
+
+```css
+@font-face {
+  font-family: "Dank Mono";
+  src:
+    /* Full name */
+    local("Dank Mono"),
+    /* Postscript name */
+    local("Dank Mono"),
+    /* Otherwise, download it! */
+    url("//...a.server/fonts/DankMono.woff");
+}
+
+code {
+  font-family: "Dank Mono", system-ui-monospace;
+}
+```
+
+Pointe du chapeau à Adam Argyle pour avoir partagé ce protip et cette [démo](https://codepen.io/argyleink/pen/VwYJpgR).
 
 <sup>[retour à la table des matières](#table-des-matières)</sup>
 

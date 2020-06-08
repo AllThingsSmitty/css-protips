@@ -27,6 +27,7 @@ CSSのプロのスキルになるようにアドバイスのリストを紹介�
 1. [box-sizingをコンポーネントごとに変更](#inherit-box-sizing)
 1. [すべてのプロパティをリセットする代わりに `unset`を使う](#use-unset-instead-of-resetting-all-properties)
 1. [`:not()` を使用 / ボーダーを削除](#use-not-to-applyunapply-borders-on-navigation)
+1. [フォントがローカルにインストールされているかどうかを確認します](#check-if-font-is-installed-locally)
 1. [`body`に`line-height`を加える](#add-line-height-to-body)
 1. [フォーム要素に `：focus`を設定する](#set-focus-for-form-elements)
 1. [天地の中央に配置](#vertically-center-anything)
@@ -163,6 +164,34 @@ button {
 CSSセレクターは、境界線を人間が表現する方法で定義します。
 
 #### [デモ](http://codepen.io/AllThingsSmitty/pen/LkymvO)
+
+<sup>[目次へ戻る](#table-of-contents)</sup>
+
+
+<div id="check-if-font-is-installed-locally"></div>
+
+### フォントがローカルにインストールされているかどうかを確認します
+
+フォントをリモートでフェッチする前に、フォントがローカルにインストールされているかどうかを確認できます。これもパフォーマンスのヒントになります。
+
+```css
+@font-face {
+  font-family: "Dank Mono";
+  src:
+    /* Full name */
+    local("Dank Mono"),
+    /* Postscript name */
+    local("Dank Mono"),
+    /* Otherwise, download it! */
+    url("//...a.server/fonts/DankMono.woff");
+}
+
+code {
+  font-family: "Dank Mono", system-ui-monospace;
+}
+```
+
+このプロチップと[デモ](https://codepen.io/argyleink/pen/VwYJpgR)を共有してくれたAdam Argyleへの帽子のヒント.
 
 <sup>[目次へ戻る](#table-of-contents)</sup>
 
