@@ -635,6 +635,27 @@ br + br {
 
 <sup>[back to table of contents](#table-of-contents)</sup>
 
+### Add Animation to Slide in Element on Load
+
+This class `.animation-element-onload` can be added to slide in the element upon load of the page. Please view code pen of effect (https://codepen.io/gemmiedodger/pen/gOPbZyg)
+
+
+```css
+    @Keyframes slideInFromLeft {
+    0% {
+    transform: translateX(-100%);
+    }
+    100% {
+    transform: translateX(0);
+    }
+    }
+
+    .animation-element-onload {
+    animation: 1s ease-out 0s 1 slideInFromLeft;
+    }
+```
+
+<sup>[back to table of contents](#table-of-contents)</sup>
 
 ## Support
 
