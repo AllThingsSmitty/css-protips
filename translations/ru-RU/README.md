@@ -89,6 +89,8 @@ html {
 
 Так значительно проще изменять `box-sizing` в плагинах или других компонентах, которые задают иное поведение.
 
+#### [Демо](https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/)
+
 <sup>[вернуться к оглавлению](#table-of-contents)</sup>
 
 

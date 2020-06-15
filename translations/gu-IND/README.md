@@ -87,6 +87,8 @@ html {
 
 આનાથી ફેરફાર કરવાનું સરળ બને છે `box-sizing` પ્લગઇન્સ અથવા અન્ય ઘટકોમાં લીવરેજ કે અન્ય વર્તન.
 
+#### [પ્રદર્શન](https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/)
+
 <sup>[સામગ્રીઓના કોષ્ટકમાં પાછા](#પ્રોપ્સ)</sup>
 
 

@@ -87,6 +87,8 @@ html {
 
 Αυτό κάνει πιο εύκολο να αλλάξει το `box-sizing` σε πρόσθετα η σε άλλα συστατικά που μοχλεύουν άλλη συμπεριφορά.
 
+#### [Démo](https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/)
+
 <sup>[πίσω στον πίνακα περιεχομένων](#πίνακας-περιεχομένων)</sup>
 
 

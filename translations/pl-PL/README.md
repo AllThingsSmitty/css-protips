@@ -84,6 +84,8 @@ html {
 
 Ułatwia to łatwiejszą zmianę `box-sizing` w wtyczkach lub innych komponentach, które wpływaja na inne zachowania.
 
+#### [Demonstracja](https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/)
+
 <sup>[powrót do spisu treści](#powrót-do-spisu-treści)</sup>
 
 

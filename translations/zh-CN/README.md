@@ -89,6 +89,8 @@ html {
 
 如此在插件或其它组件里改变 `box-sizing` 变得简单。
 
+#### [演示](https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/)
+
 <sup>[回目录](#目录)</sup>
 
 

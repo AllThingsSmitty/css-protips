@@ -87,6 +87,8 @@ html {
 
 Assim fica mais fácil de alterar o `box-sizing` em plugins ou outros componentes que tenham um comportamento diferente.
 
+#### [Passeata](https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/)
+
 <sup>[Regressar ao índice](#Índice)</sup>
 
 

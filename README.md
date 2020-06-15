@@ -88,6 +88,8 @@ html {
 
 This makes it easier to change `box-sizing` in plugins or other components that leverage other behavior.
 
+#### [Demo](https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/)
+
 <sup>[back to table of contents](#table-of-contents)</sup>
 
 

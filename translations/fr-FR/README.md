@@ -88,6 +88,8 @@ html {
 
 Cela rend plus facile le fait de changer `box-sizing` dans des plugins ou autres composants qui exploitent d'autres comportements.
 
+#### [Démo](https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/)
+
 <sup>[retour à la table des matières](#table-des-matières)</sup>
 
 

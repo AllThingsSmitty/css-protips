@@ -98,6 +98,8 @@ html {
 
 これでプラグインかその他のコンポーネントに `box-sizing` を変更しやすくなります。
 
+#### [デモ](https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/)
+
 <sup>[目次へ戻る](#table-of-contents)</sup>
 
 

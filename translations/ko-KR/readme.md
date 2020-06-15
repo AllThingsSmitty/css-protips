@@ -96,6 +96,8 @@ html {
 
 이것은 다른 플러그인과 컴포넌트에서 `box-sizing`을 변경하는 것을 용이하게 합니다. 
 
+#### [데모](https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/)
+
 <sup>[목차로 돌아가기](#table-of-contents)</sup>
 
 

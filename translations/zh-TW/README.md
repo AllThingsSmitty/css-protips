@@ -89,6 +89,8 @@ html {
 
 如此一來，你就很容易的在其他外掛或元件裡改變 `box-sizing` 的值。
 
+#### [示範](https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/)
+
 <sup>[回到目錄](#table-of-contents)</sup>
 
 ### 使用 `unset` 而不是重置所有屬性
