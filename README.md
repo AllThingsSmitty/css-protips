@@ -45,6 +45,7 @@ A collection of tips to help take your CSS skills pro.
 1. [Set `font-size` on Form Elements for a Better Mobile Experience](#set-font-size-on-form-elements-for-a-better-mobile-experience)
 1. [Use Pointer Events to Control Mouse Events](#use-pointer-events-to-control-mouse-events)
 1. [Set `display: none` on Line Breaks Used as Spacing](#set-display-none-on-line-breaks-used-as-spacing)
+1. [Use `:not()` to Style Borders on Lists](#use-not()-to-style-borders-on-list)
 
 
 ### Use a CSS Reset
@@ -634,6 +635,29 @@ br + br {
   display: none;
 }
 ```
+
+<sup>[back to table of contents](#table-of-contents)</sup>
+
+
+### Use `:not()` to Style Borders on Lists
+
+A very common practice in web design has been to use  `:last-child` or `:nth-child` selectors to undo a style previously declared on the parent selector. Think of a navigation menu that uses borders to create a separator between each link, and the second rule added to take that border off the end:
+```
+.nav li {    
+    border-right: 1px solid #666;  
+}
+.nav li:last-child {    
+    border-right: none;  
+}
+```
+This is quite messy as it not only forces the browser to render things one way, then undo it for a specific selector. Resetting styles this way is sometimes unavoidable, but for the most part, you can use the `:not()` pseudo-class to only apply a style to the elements you want in one single statement:
+```
+.nav li:not(:last-child) {    
+    border-right: 1px solid #666;  
+}
+```
+This says, put a border on all the `.nav` list items except the last one. Simple!
+Sure, you can also use `.nav li + li` or even `.nav li:first-child ~ li`, but `:not()` will always be more semantic and easy to understand.
 
 <sup>[back to table of contents](#table-of-contents)</sup>
 
