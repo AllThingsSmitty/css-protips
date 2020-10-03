@@ -45,7 +45,7 @@ A collection of tips to help take your CSS skills pro.
 1. [Set `font-size` on Form Elements for a Better Mobile Experience](#set-font-size-on-form-elements-for-a-better-mobile-experience)
 1. [Use Pointer Events to Control Mouse Events](#use-pointer-events-to-control-mouse-events)
 1. [Set `display: none` on Line Breaks Used as Spacing](#set-display-none-on-line-breaks-used-as-spacing)
-1. [Force text to be all caps, all lowercase, or capitalized](#force-text-to-all-caps-all-lowecase-or-capitalized)
+1. [Force text to be all caps, all lowercase, or capitalized](#force-text-to-be-all-caps-all-lowercase-or-capitalized)
 
 
 ### Use a CSS Reset
