@@ -19,10 +19,10 @@ Một bộ gồm những tips để giúp kỹ năng CSS trở nên pro
 
 ## Protips
 
-1. [Dùng CSS Reset](#use-a-css-reset)
-1. [Thừa kế `box-sizing`](#inherit-box-sizing)
-1. [Dùng `unset` thay vì đặt lại tất cả thuộc tính](#use-unset-instead-of-resetting-all-properties)
-1. [Dùng `:not()` để Áp dụng / Không áp dụng các đường viền trên Điều hướng](#use-not-to-applyunapply-borders-on-navigation)
+1. [Dùng CSS Reset](#dùng-css-reset)
+1. [Thừa kế `box-sizing`](#thừa-kế-box-sizing)
+1. [Dùng `unset` thay vì đặt lại tất cả thuộc tính](#dùng-unset-thay-vi-dat-lai-tat-ca-thuoc-tinh)
+1. [Dùng `:not()` để Áp dụng / Không áp dụng các đường viền trên Điều hướng](#dùng-not-de-ap-dung-khong-ap-dung-cac-duong-vien-tren-dieu-huong)
 1. [Kiểm tra xem Phông chữ có được cài đặt cục bộ không](#check-if-font-is-installed-locally)
 1. [Thêm `line-height` cho `body`](#add-line-height-to-body)
 1. [Đặt `:focus` cho Form Elements](#set-focus-for-form-elements)
@@ -47,6 +47,110 @@ Một bộ gồm những tips để giúp kỹ năng CSS trở nên pro
 1. [Đặt `display: none` trên ngắt dòng được sử dụng làm khoảng cách](#set-display-none-on-line-breaks-used-as-spacing)
 
 
+### Dùng CSS Reset
 
-### Use a CSS Reset
+Css resets giúp thực thi tính nhất quán về kiểu dáng trên các trình duyệt khác nhau với một phương tiện chặn rõ ràng cho các yếu tố tạo kiểu.Bạn có thể sử dụng thư viện CSS Reset như [Normalize](http://necolas.github.io/normalize.css/),hoặc bạn có thể sử dụng phương pháp đặt lại đơn giản hơn:
 
+```css
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+```
+
+Bây giờ các phần tử sẽ bị loại bỏ magins và padding, và `box-sizing` cho phép bạn quản lý bố cục bằng CSS box model.
+
+#### [Demo](http://codepen.io/AllThingsSmitty/pen/kkrkLL)
+
+**Note:** Nếu bạn làm theo  [Inherit `box-sizing`](#inherit-box-sizing) mẹo dưới đây, bạn có thể chọn không bao gồm `box-sizing` thuộc tính trong CSS reset của bạn.
+
+<sup>[back to table of contents](#table-of-contents)</sup>
+
+
+### Thừa kế `box-sizing`
+
+`box-sizing` được thừa kế từ `html`:
+
+```css
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+```
+
+Điều này giúp bạn dễ dàng thay đổi `box-sizing` hơn trong các plugin hoặc các thành phần khác thúc đẩy hành vi khác.
+
+#### [Demo](https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/)
+
+<sup>[back to table of contents](#table-of-contents)</sup>
+
+
+### Dùng `unset` thay vì đặt lại tất cả thuộc tính
+
+Khi đặt lại thuộc tính của một phần tử, không cần thiết phải đặt lại từng thuộc tính riêng lẻ:
+
+```css
+button {
+  background: none;
+  border: none;
+  color: inherit;
+  font: inherit;
+  outline: none;
+  padding: 0;
+}
+```
+
+Bạn có thể chỉ định tất cả các thuộc tính của một phần tử bằng cách sử dụng tất cả các viết tắt.  Đặt giá trị thành không đặt sẽ thay đổi thuộc tính của phần tử thành giá trị ban đầu của chúng:
+
+```css
+button {
+  all: unset;
+}
+```
+
+**Note:** `all` thì không được hỗ trợ trên IE11 và hiện đang được xem xét hỗ trợ trong Edge. `unset` thì cũng vậy.
+
+<sup>[back to table of contents](#table-of-contents)</sup>
+
+
+### Dùng `:not()` để Áp dụng / Không áp dụng các đường viền trên Điều hướng
+
+Thay vì đặt trên border...
+
+```css
+/* add border */
+.nav li {
+  border-right: 1px solid #666;
+}
+```
+
+...và sau đó lấy nó ra khỏi phần tử cuối cùng...
+
+```css
+/* remove border */
+.nav li:last-child {
+  border-right: none;
+}
+```
+
+...dùng `:not()` pseudo-class để chỉ áp dụng cho các phần tử bạn muốn:
+
+```css
+.nav li:not(:last-child) {
+  border-right: 1px solid #666;
+}
+```
+
+Ở đây, CSS selector được đọc như một con người sẽ mô tả nó.
+
+#### [Demo](http://codepen.io/AllThingsSmitty/pen/LkymvO)
+
+<sup>[back to table of contents](#table-of-contents)</sup>
