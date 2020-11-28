@@ -21,7 +21,7 @@ Một bộ gồm những tips để giúp kỹ năng CSS trở nên pro
 
 1. [Dùng CSS Reset](#dùng-css-reset)
 1. [Thừa kế `box-sizing`](#thừa-kế-box-sizing)
-1. [Dùng `unset` thay vì đặt lại tất cả thuộc tính](#dùng-unset-thay-vi-dat-lai-tat-ca-thuoc-tinh)
+1. [Dùng `unset` thay vì đặt lại tất cả thuộc tính](#use-unset-instead-of-resetting-all-properties)
 1. [Dùng `:not()` để Áp dụng / Không áp dụng các đường viền trên Điều hướng](#dùng-not-de-ap-dung-khong-ap-dung-cac-duong-vien-tren-dieu-huong)
 1. [Kiểm tra xem Phông chữ có được cài đặt cục bộ không](#check-if-font-is-installed-locally)
 1. [Thêm `line-height` cho `body`](#add-line-height-to-body)
