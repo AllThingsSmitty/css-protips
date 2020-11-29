@@ -21,30 +21,30 @@ Một bộ gồm những tips để giúp kỹ năng CSS trở nên pro
 
 1. [Dùng CSS Reset](#dùng-css-reset)
 1. [Thừa kế `box-sizing`](#thừa-kế-box-sizing)
-1. [Dùng `unset` thay vì đặt lại tất cả thuộc tính](#use-unset-instead-of-resetting-all-properties)
-1. [Dùng `:not()` để Áp dụng / Không áp dụng các đường viền trên Điều hướng](#dùng-not-de-ap-dung-khong-ap-dung-cac-duong-vien-tren-dieu-huong)
-1. [Kiểm tra xem Phông chữ có được cài đặt cục bộ không](#check-if-font-is-installed-locally)
-1. [Thêm `line-height` cho `body`](#add-line-height-to-body)
-1. [Đặt `:focus` cho Form Elements](#set-focus-for-form-elements)
-1. [Mọi thứ ở giữa theo chiều dọc](#vertically-center-anything)
-1. [Danh sách được phân tách bằng dấu phẩy](#comma-separated-lists)
-1. [Chọn nhiều items với Negative `nth-child`](#select-items-using-negative-nth-child)
-1. [Dùng SVG cho Icons](#use-svg-for-icons)
-1. [Sử dụng "Lobotomized Owl" Selector](#use-the-lobotomized-owl-selector)
-1. [Dùng `max-height` cho thanh trượt CSS Sliders](#use-max-height-for-pure-css-sliders)
-1. [Các ô trong bảng có chiều rộng bằng nhau](#equal-width-table-cells)
+1. [Dùng `unset` thay vì đặt lại tất cả thuộc tính](#dùng-unset-thay-vì-đặt-lại-tất-cả-thuộc-tính)
+1. [Dùng `:not()` để Áp dụng / Không áp dụng các đường viền trên Điều hướng](#dùng-not-để-áp-dụng-không-áp-dụng-các-đường-viền-trên-điều-hướng)
+1. [Kiểm tra xem Phông chữ có được cài đặt cục bộ không](#kiểm-tra-xem-phông-chữ-có-được-cài-đặt-cục-bộ-không)
+1. [Thêm `line-height` cho `body`](#thêm-line-height-cho-body)
+1. [Đặt `:focus` cho Form Elements](#đặt-focus-cho-form-elements)
+1. [Mọi thứ ở giữa theo chiều dọc](#mọi-thứ-ở-giữa-theo-chiều-dọc)
+1. [Danh sách được phân tách bằng dấu phẩy](#danh-sách-được-phân-tách-bằng-dấu-phẩy)
+1. [Chọn items sử dụng Negative `nth-child`](#chọn-items-sử-dụng-negative-nth-child)
+1. [Dùng SVG cho Icons](#dùng-svg-cho-icons)
+1. [Sử dụng "Lobotomized Owl" Selector](#sử-dụng-lobotomized-owl-selector)
+1. [Dùng `max-height` cho thanh trượt CSS Sliders](#dùng-max-height-cho-thanh-trượt-css-sliders)
+1. [Các ô trong bảng có chiều rộng bằng nhau](#các-ô-trong-bảng-có-chiều-rộng-bằng-nhau)
 1. [Get Rid of Margin Hacks With Flexbox](#get-rid-of-margin-hacks-with-flexbox)
-1. [Sử dụng Attribute Selectors với các liên kết trống](#use-attribute-selectors-with-empty-links)
-1. [Style "Default" Links](#style-default-links)
+1. [Sử dụng Attribute Selectors với các liên kết trống](#sử-dụng-attribute-selectors-với-liên-kết-trống)
+1. [Style "Default" Links](#style-default-links)  
 1. [Consistent Vertical Rhythm](#consistent-vertical-rhythm)
 1. [Intrinsic Ratio Boxes](#intrinsic-ratio-boxes)
-1. [Hình ảnh bị vỡ](#style-broken-images)
-1. [Dùng `rem` cho toàn cục; dùng `em` cho cục bộ](#use-rem-for-global-sizing-use-em-for-local-sizing)
-1. [Ẩn các video tự động phát không bị tắt tiếng](#hide-autoplay-videos-that-arent-muted)
-1. [Dùng `:root` cho Flexible Type](#use-root-for-flexible-type)
-1. [Để `font-size` trong Form Elements để có một trải nghiệm mobile tốt hơn](#set-font-size-on-form-elements-for-a-better-mobile-experience)
-1. [Dùng Pointer Events để kiểm soát mouse control](#use-pointer-events-to-control-mouse-events)
-1. [Đặt `display: none` trên ngắt dòng được sử dụng làm khoảng cách](#set-display-none-on-line-breaks-used-as-spacing)
+1. [Hình ảnh bị vỡ](#hình-ảnh-bị-vỡ)
+1. [Dùng `rem` cho toàn cục; dùng `em` cho cục bộ](#dùng-rem-cho-toàn-cục-dùng-em-cho-cục-bộ)
+1. [Ẩn các video tự động phát không bị tắt tiếng](#ẩn-các-video-tự-động-phát-không-bị-tắt-tiếng)
+1. [Dùng `:root` cho Flexible Type](#dùng-root-cho-flexible-type)
+1. [Đặt `font-size` trong Form Elements để có một trải nghiệm mobile tốt hơn](#đặt-font-size-trong-form-elements-để-có-một-trải-nghiệm-mobile-tốt-hơn)
+1. [Dùng Pointer Events để kiểm soát mouse events](#dùng-pointer-events-để-kiểm-soát-mouse-events)
+1. [Đặt `display: none` trên ngắt dòng được sử dụng làm khoảng cách](#đặt-display-none-trên-ngắt-dòng-được-sử-dụng-làm-khoảng-cách)
 
 
 ### Dùng CSS Reset
@@ -155,3 +155,217 @@ Thay vì đặt trên border...
 
 <sup>[back to table of contents](#table-of-contents)</sup>
 
+
+### Kiểm tra xem Phông chữ có được cài đặt cục bộ không
+
+Bạn có thể kiểm tra xem phông chữ có được cài đặt cục bộ hay không trước khi tìm nạp từ xa, đây cũng là một mẹo hiệu suất tốt.
+
+```css
+@font-face {
+  font-family: "Dank Mono";
+  src:
+    /* Full name */
+    local("Dank Mono"),
+    /* Postscript name */
+    local("Dank Mono"),
+    /* Otherwise, download it! */
+    url("//...a.server/fonts/DankMono.woff");
+}
+
+code {
+  font-family: "Dank Mono", system-ui-monospace;
+}
+
+
+H / T tới Adam Argyle vì đã chia sẻ chú giải này và [demo](https://codepen.io/argyleink/pen/VwYJpgR).
+
+<sup>[back to table of contents](#table-of-contents)</sup>
+
+
+### Thêm `line-height` cho `body`
+
+Bạn không cần thêm `line-height` cho mỗi `<p>`, `<h*>`... riêng biệt. Thay vào đó, hãy thêm nó vào `body`:
+
+```css
+body {
+  line-height: 1.5;
+}
+```
+
+Bằng cách này, các yếu tố văn bản có thể kế thừa từ `body` dễ dàng.
+
+#### [Demo](http://codepen.io/AllThingsSmitty/pen/VjbdYd)
+
+<sup>[back to table of contents](#table-of-contents)</sup>
+
+
+### Đặt `:focus` cho Form Elements
+
+Người dùng bàn phím bị cận dựa vào tiêu điểm để xác định vị trí của các sự kiện bàn phím trong trang.  Làm cho tiêu điểm cho các phần tử biểu mẫu nổi bật và nhất quán sau đó triển khai mặc định của trình duyệt:
+
+```css
+a:focus,
+button:focus,
+input:focus,
+select:focus,
+textarea:focus {
+  box-shadow: none;
+  outline: #000 dotted 2px;
+  outline-offset: .05em;
+}
+```
+
+#### [Demo](https://codepen.io/AllThingsSmitty/pen/ePzoOP/)
+
+<sup>[back to table of contents](#table-of-contents)</sup>
+
+
+### Mọi thứ ở giữa theo chiều dọc
+
+Không, đó không phải là ảo thuật, bạn thực sự có thể căn giữa các yếu tố theo chiều dọc.Bạn có thể làm điều này với flexbox ...
+
+```css
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-flex;
+  display: flex;
+}
+```
+
+... và với Grid cũng vậy:
+
+```css
+body {
+  display: grid;
+  height: 100vh;
+  margin: 0;
+  place-items: center center;
+}
+```
+
+
+Muốn căn giữa một cái gì đó khác? Theo chiều dọc,chiều ngang ... bất cứ điều gì, mọi lúc, mọi nơi? CSS-Tricks có [a nice write-up](https://css-tricks.com/centering-css-complete-guide/) để làm được tất cả những điều đó.
+
+**Note:** Xem một ít [buggy behavior](https://github.com/philipwalton/flexbugs#3-min-height-on-a-flex-container-wont-apply-to-its-flex-items) với Flexbox trên IE11.
+
+#### [Demo](http://codepen.io/AllThingsSmitty/pen/GqmGqZ)
+
+<sup>[back to table of contents](#table-of-contents)</sup>
+
+
+### Danh sách được phân tách bằng dấu phẩy
+
+Làm cho các mục trong danh sách trông giống như một danh sách thực, được phân tách bằng dấu phẩy:
+
+```css
+ul > li:not(:last-child)::after {
+  content: ",";
+}
+```
+
+Dùng `:not()` pseudo-class và không có dấu phẩy nào sẽ được thêm vào mục cuối cùng.
+
+**Note:** Mẹo này có thể không lý tưởng cho khả năng tiếp cận, đặc biệt là trình đọc màn hình.Và sao chép / dán từ trình duyệt không hoạt động với nội dung do CSS tạo.Khi làm hãy thận trọng.
+
+<sup>[back to table of contents](#table-of-contents)</sup>
+
+
+### Chọn items sử dụng Negative `nth-child`
+
+Sử dụng phủ định `nth-child` trong CSS để chọn các mục từ 1 đến n.
+
+```css
+li {
+  display: none;
+}
+
+/* select items 1 through 3 and display them */
+li:nth-child(-n+3) {
+  display: block;
+}
+```
+
+Hoặc,bạn đã biết một chút về [dùng `:not()`](#use-not-to-applyunapply-borders-on-navigation), thử:
+
+```css
+/* select all items except the first 3 and display them */
+li:not(:nth-child(-n+3)) {
+  display: block;
+}
+```
+
+#### [Demo](http://codepen.io/AllThingsSmitty/pen/WxjKZp)
+
+<sup>[back to table of contents](#table-of-contents)</sup>
+
+
+### Dùng SVG cho Icons
+
+Không có lý do gì để không sử dụng SVG cho các biểu tượng:
+
+```css
+.logo {
+  background: url("logo.svg");
+}
+```
+
+SVG tỉ lệ tốt cho tất cả các loại độ phân giải và được hỗ trợ trong tất cả các trình duyệt [back to IE9](http://caniuse.com/#search=svg). Loại bỏ các tệp .png, .jpg hoặc .gif-jif-whatev của bạn
+
+**Note:** Nếu bạn có các nút chỉ có biểu tượng SVG cho người dùng bị cận và SVG không tải được, điều này sẽ giúp duy trì khả năng truy cập:
+
+```css
+.no-svg .icon-only::after {
+  content: attr(aria-label);
+}
+```
+
+<sup>[back to table of contents](#table-of-contents)</sup>
+
+
+### Sử dụng "Lobotomized Owl" Selector
+
+Nó có thể có một cái tên lạ nhưng việc sử dụng bộ chọn phổ quát (`*`) với bộ chọn anh chị em kế cận (`+`) có thể cung cấp khả năng CSS mạnh mẽ:
+
+```css
+* + * {
+  margin-top: 1.5em;
+}
+```
+
+Trong ví dụ này, tất cả các phần tử trong luồng dữ liệu theo sau các phần tử khác sẽ nhận được `margin-top: 1.5em`.
+
+Để biết thêm về bộ chọn "lobotomized owl", hãy đọc [Heydon Pickering's post](http://alistapart.com/article/axiomatic-css-and-lobotomized-owls).
+
+#### [Demo](http://codepen.io/AllThingsSmitty/pen/grRvWq)
+
+<sup>[back to table of contents](#table-of-contents)</sup>
+
+
+### Dùng `max-height` cho thanh trượt CSS Sliders
+
+Áp dụng  CSS-only sliders dùng `max-height` với overflow hidden:
+
+```css
+.slider {
+  max-height: 200px;
+  overflow-y: hidden;
+  width: 300px;
+}
+
+.slider:hover {
+  max-height: 600px;
+  overflow-y: scroll;
+}
+```
+
+Những thành phần sẽ được mở  rộng bằng `max-height` khi di chuột và thanh trượt hiển thị do overflow.
+
+<sup>[back to table of contents](#table-of-contents)</sup>
