@@ -34,7 +34,7 @@ Một bộ gồm những tips để giúp kỹ năng CSS trở nên pro
 1. [Dùng `max-height` cho thanh trượt CSS Sliders](#dùng-max-height-cho-thanh-trượt-css-sliders)
 1. [Các ô trong bảng có chiều rộng bằng nhau](#các-ô-trong-bảng-có-chiều-rộng-bằng-nhau)
 1. [Get Rid of Margin Hacks With Flexbox](#get-rid-of-margin-hacks-with-flexbox)
-1. [Sử dụng Attribute Selectors với các liên kết trống](#sử-dụng-attribute-selectors-với-liên-kết-trống)
+1. [Sử dụng thuộc tính Selectors với các liên kết trống](#sử-dụng-thuộc-tính-selectors-với-liên-kết-trống)
 1. [Style "Default" Links](#style-default-links)  
 1. [Consistent Vertical Rhythm](#consistent-vertical-rhythm)
 1. [Intrinsic Ratio Boxes](#intrinsic-ratio-boxes)
@@ -369,3 +369,275 @@ Trong ví dụ này, tất cả các phần tử trong luồng dữ liệu theo 
 Những thành phần sẽ được mở  rộng bằng `max-height` khi di chuột và thanh trượt hiển thị do overflow.
 
 <sup>[back to table of contents](#table-of-contents)</sup>
+
+
+### Các ô trong bảng có chiều rộng bằng nhau
+
+Tables có thể gây nhức đầu khi làm việc với nó. Hãy thử dùng `table-layout: fixed` để giữ cho các ô có chiều rộng bằng nhau:
+
+```css
+.calendar {
+  table-layout: fixed;
+}
+```
+
+Bố cục bảng dễ chịu
+
+#### [Demo](http://codepen.io/AllThingsSmitty/pen/jALALm)
+
+<sup>[back to table of contents](#table-of-contents)</sup>
+
+
+### Get Rid of Margin Hacks With Flexbox
+
+Khi làm việc với các rãnh cột bạn có thể loại bỏ `nth-`, `first-`, và `last-child` hack dùng flexbox's bằng `space-between` thuộc tính:
+
+```css
+.list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.list .person {
+  flex-basis: 23%;
+}
+```
+
+Giờ đây, các rãnh cột luôn xuất hiện cách đều nhau
+
+<sup>[back to table of contents](#table-of-contents)</sup>
+
+
+### Sử dụng thuộc tính Selectors với các liên kết trống
+
+Hiển thị các liên kết khi `<a>` phần tử không có giá trị văn bản nhưng `herf` thuộc tính có một liên kết:
+
+```css
+a[href^="http"]:empty::before {
+  content: attr(href);
+}
+```
+
+Điều đó khá tiện lợi
+
+#### [Demo](http://codepen.io/AllThingsSmitty/pen/zBzXRx)
+
+<sup>[back to table of contents](#table-of-contents)</sup>
+
+
+### Style "Default" Links
+
+Thêm kiểu cho các liên kết "default":
+
+```css
+a[href]:not([class]) {
+  color: #008000;
+  text-decoration: underline;
+}
+```
+
+Giờ đây, các liên kết được chèn qua CMS, thường không có thuộc tính `class`, sẽ có sự phân biệt mà không ảnh hưởng chung đến tầng.
+
+<sup>[back to table of contents](#table-of-contents)</sup>
+
+
+### Consistent Vertical Rhythm
+
+Sử dụng bộ chọn đa năng (`*`) trong một phần tử để tạo nhịp điệu dọc nhất quán:
+
+```css
+.intro > * {
+  margin-bottom: 1.25rem;
+}
+```
+
+Nhịp điệu dọc nhất quán mang lại tính thẩm mỹ trực quan giúp nội dung dễ đọc hơn nhiều.
+
+<sup>[back to table of contents](#table-of-contents)</sup>
+
+
+### Intrinsic Ratio Boxes
+
+Để tạo một hộp có tỷ lệ nội tại, tất cả những gì bạn cần làm là áp dụng phần đệm trên cùng hoặc dưới cùng cho div:
+
+```css
+.container {
+  height: 0;
+  padding-bottom: 20%;
+  position: relative;
+}
+
+.container div {
+  border: 2px dashed #ddd;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+```
+
+Sử dụng 20% ​​cho phần đệm làm cho chiều cao của hộp bằng 20% ​​chiều rộng của nó.  Bất kể chiều rộng của khung nhìn, div con sẽ giữ nguyên tỷ lệ co của nó (100% / 20% = 5: 1).
+
+#### [Demo](http://codepen.io/AllThingsSmitty/pen/jALZvE)
+
+<sup>[back to table of contents](#table-of-contents)</sup>
+
+
+### Hình ảnh bị vỡ
+
+Làm cho hình ảnh bị hỏng trở nên đẹp hơn về mặt thẩm mỹ với một chút CSS:
+
+```css
+img {
+  display: block;
+  font-family: sans-serif;
+  font-weight: 300;
+  height: auto;
+  line-height: 2;
+  position: relative;
+  text-align: center;
+  width: 100%;
+}
+```
+
+Bây giờ, hãy thêm các quy tắc phần tử giả để hiển thị thông báo người dùng và tham chiếu URL của hình ảnh bị hỏng:
+
+```css
+img::before {
+  content: "We're sorry, the image below is broken :(";
+  display: block;
+  margin-bottom: 10px;
+}
+
+img::after {
+  content: "(url: " attr(src) ")";
+  display: block;
+  font-size: 12px;
+}
+```
+
+Tìm hiểu thêm về cách tạo kiểu cho mẫu này trong [Ire Aderinokun](https://github.com/ireade/)'s [original post](http://bitsofco.de/styling-broken-images/).
+
+<sup>[back to table of contents](#table-of-contents)</sup>
+
+
+### Dùng `rem` cho toàn cục; dùng `em` cho cục bộ
+
+Sau khi đặt kích thước phông chữ cơ sở ở gốc (`html { font-size: 100%; }`), đặt kích thước phông chữ cho các yếu tố văn bản thành `em`:
+
+```css
+h2 {
+  font-size: 2em;
+}
+
+p {
+  font-size: 1em;
+}
+```
+
+Sau đó, đặt kích thước phông chữ cho mô-đun thành `rem`:
+
+```css
+article {
+  font-size: 1.25rem;
+}
+
+aside .module {
+  font-size: .9rem;
+}
+```
+
+Giờ đây, mỗi mô-đun trở nên được chia nhỏ và dễ tạo kiểu hơn, dễ bảo trì hơn và linh hoạt hơn.
+
+<sup>[back to table of contents](#table-of-contents)</sup>
+
+
+### Ẩn các video tự động phát không bị tắt tiếng
+
+Đây là một thủ thuật tuyệt vời cho một biểu định kiểu người dùng tùy chỉnh. Tránh làm người dùng quá tải với âm thanh từ video tự động phát khi tải trang.  Nếu âm thanh không bị tắt, không hiển thị video:
+
+```css
+video[autoplay]:not([muted]) {
+  display: none;
+}
+```
+
+Một lần nữa, chúng ta đang tận dụng lợi thế của việc sử dụng [`:not()`](#use-not-to-applyunapply-borders-on-navigation) pseudo-class.
+
+<sup>[back to table of contents](#table-of-contents)</sup>
+
+
+### Dùng `:root` cho Flexible Type
+
+Kích thước phông chữ loại trong bố cục đáp ứng có thể điều chỉnh theo từng chế độ xem.  Bạn có thể tính toán kích thước phông chữ dựa trên chiều cao và chiều rộng của khung nhìn bằng cách sử dụng `:root`:
+
+```css
+:root {
+  font-size: calc(1vw + 1vh + .5vmin);
+}
+```
+
+Bây giờ bạn có thể sử dụng `root em` đơn vị dựa trên giá trị được tính bằng `:root`:
+
+```css
+body {
+  font: 1rem/1.6 sans-serif;
+}
+```
+
+#### [Demo](http://codepen.io/AllThingsSmitty/pen/XKgOkR)
+
+<sup>[back to table of contents](#table-of-contents)</sup>
+
+
+### Đặt `font-size` trong Form Elements để có một trải nghiệm mobile tốt hơn
+
+Để tránh các trình duyệt di động (iOS Safari, v.v.) phóng to các phần tử biểu mẫu HTML khi `<select>` thả xuống được nhấn, thêm `font-size` quy tắc bộ chọn:
+
+```css
+input[type="text"],
+input[type="number"],
+select,
+textarea {
+  font-size: 16px;
+}
+```
+
+:dancer:
+
+<sup>[back to table of contents](#table-of-contents)</sup>
+
+
+### Dùng Pointer Events để kiểm soát mouse events
+
+[Pointer events](https://developer.mozilla.org/en-US/docs/Web/CSS/pointer-events) cho phép bạn chỉ định cách con chuột tương tác với phần tử mà nó chạm vào.  Để tắt sự kiện con trỏ mặc định trên một nút, ví dụ:
+
+```css
+.button-disabled {
+  opacity: .5;
+  pointer-events: none;
+}
+```
+
+Nó thật đơn giản:
+
+<sup>[back to table of contents](#table-of-contents)</sup>
+
+
+### Đặt `display: none` trên ngắt dòng được sử dụng làm khoảng cách
+
+Như [Harry Roberts pointed out](https://twitter.com/csswizardry/status/1170835532584235008),điều này có thể giúp ngăn người dùng CMS sử dụng thêm dấu ngắt dòng cho khoảng cách:
+
+```css
+br + br {
+  display: none;
+}
+```
+
+<sup>[back to table of contents](#table-of-contents)</sup>
+
+
+## Support
+
+ versions hiện tại Chrome, Firefox, Safari, Opera, Edge, and IE11.
