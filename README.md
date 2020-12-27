@@ -45,9 +45,12 @@ A collection of tips to help take your CSS skills pro.
 1. [Set `font-size` on Form Elements for a Better Mobile Experience](#set-font-size-on-form-elements-for-a-better-mobile-experience)
 1. [Use Pointer Events to Control Mouse Events](#use-pointer-events-to-control-mouse-events)
 1. [Set `display: none` on Line Breaks Used as Spacing](#set-display-none-on-line-breaks-used-as-spacing)
+1. [Smooth Scrolling](#smooth-scrolling)
+1. [Fixed Navbar](#fixed-navbar)
 
+---
 
-### Use a CSS Reset
+### 1. Use a CSS Reset
 
 CSS resets help enforce style consistency across different browsers with a clean slate for styling elements. You can use a CSS reset library like [Normalize](http://necolas.github.io/normalize.css/), _et al._, or you can use a more simplified reset approach:
 
@@ -69,8 +72,9 @@ Now elements will be stripped of margins and padding, and `box-sizing` lets you 
 
 <sup>[back to table of contents](#table-of-contents)</sup>
 
+---
 
-### Inherit `box-sizing`
+### 2. Inherit `box-sizing`
 
 Let `box-sizing` be inherited from `html`:
 
@@ -92,8 +96,9 @@ This makes it easier to change `box-sizing` in plugins or other components that 
 
 <sup>[back to table of contents](#table-of-contents)</sup>
 
+---
 
-### Use `unset` Instead of Resetting All Properties
+### 3. Use `unset` Instead of Resetting All Properties
 
 When resetting an element's properties, it's not necessary to reset each individual property:
 
@@ -120,8 +125,9 @@ button {
 
 <sup>[back to table of contents](#table-of-contents)</sup>
 
+---
 
-### Use `:not()` to Apply/Unapply Borders on Navigation
+### 4. Use `:not()` to Apply/Unapply Borders on Navigation
 
 Instead of putting on the border...
 
@@ -155,8 +161,9 @@ Here, the CSS selector is read as a human would describe it.
 
 <sup>[back to table of contents](#table-of-contents)</sup>
 
+---
 
-### Check If Font Is Installed Locally
+### 5. Check If Font Is Installed Locally
 
 You can check if a font is installed locally before fetching it remotely, which is a good performance tip, too.
 
@@ -181,8 +188,9 @@ H/T to Adam Argyle for sharing this protip and [demo](https://codepen.io/argylei
 
 <sup>[back to table of contents](#table-of-contents)</sup>
 
+---
 
-### Add `line-height` to `body`
+### 6. Add `line-height` to `body`
 
 You don't need to add `line-height` to each `<p>`, `<h*>`, _et al_. separately. Instead, add it to `body`:
 
@@ -198,8 +206,9 @@ This way textual elements can inherit from `body` easily.
 
 <sup>[back to table of contents](#table-of-contents)</sup>
 
+---
 
-### Set `:focus` for Form Elements
+### 7. Set `:focus` for Form Elements
 
 Sighted keyboard users rely on focus to determine where keyboard events go in the page. Make focus for form elements stand out and consistent then a browser's default implementation:
 
@@ -219,8 +228,9 @@ textarea:focus {
 
 <sup>[back to table of contents](#table-of-contents)</sup>
 
+---
 
-### Vertically-Center Anything
+### 8. Vertically-Center Anything
 
 No, it's not black magic, you really can center elements vertically. You can do this with flexbox...
 
@@ -260,8 +270,9 @@ Want to center something else? Vertically, horizontally...anything, anytime, any
 
 <sup>[back to table of contents](#table-of-contents)</sup>
 
+---
 
-### Comma-Separated Lists
+### 9. Comma-Separated Lists
 
 Make list items look like a real, comma-separated list:
 
@@ -277,8 +288,9 @@ Use the `:not()` pseudo-class and no comma will be added to the last item.
 
 <sup>[back to table of contents](#table-of-contents)</sup>
 
+---
 
-### Select Items Using Negative `nth-child`
+### 10. Select Items Using Negative `nth-child`
 
 Use negative `nth-child` in CSS to select items 1 through n.
 
@@ -306,8 +318,9 @@ li:not(:nth-child(-n+3)) {
 
 <sup>[back to table of contents](#table-of-contents)</sup>
 
+---
 
-### Use SVG for Icons
+### 11. Use SVG for Icons
 
 There's no reason not to use SVG for icons:
 
@@ -329,8 +342,9 @@ SVG scales well for all resolution types and is supported in all browsers [back 
 
 <sup>[back to table of contents](#table-of-contents)</sup>
 
+---
 
-### Use the "Lobotomized Owl" Selector
+### 12. Use the "Lobotomized Owl" Selector
 
 It may have a strange name but using the universal selector (`*`) with the adjacent sibling selector (`+`) can provide a powerful CSS capability:
 
@@ -348,8 +362,9 @@ For more on the "lobotomized owl" selector, read [Heydon Pickering's post](http:
 
 <sup>[back to table of contents](#table-of-contents)</sup>
 
+---
 
-### Use `max-height` for Pure CSS Sliders
+### 13. Use `max-height` for Pure CSS Sliders
 
 Implement CSS-only sliders using `max-height` with overflow hidden:
 
@@ -370,8 +385,9 @@ The element expands to the `max-height` value on hover and the slider displays a
 
 <sup>[back to table of contents](#table-of-contents)</sup>
 
+---
 
-### Equal-Width Table Cells
+### 14. Equal-Width Table Cells
 
 Tables can be a pain to work with. Try using `table-layout: fixed` to keep cells at equal width:
 
@@ -387,8 +403,9 @@ Pain-free table layouts.
 
 <sup>[back to table of contents](#table-of-contents)</sup>
 
+---
 
-### Get Rid of Margin Hacks With Flexbox
+### 15. Get Rid of Margin Hacks With Flexbox
 
 When working with column gutters you can get rid of `nth-`, `first-`, and `last-child` hacks by using flexbox's `space-between` property:
 
@@ -407,8 +424,9 @@ Now column gutters always appear evenly-spaced.
 
 <sup>[back to table of contents](#table-of-contents)</sup>
 
+---
 
-### Use Attribute Selectors with Empty Links
+### 16. Use Attribute Selectors with Empty Links
 
 Display links when the `<a>` element has no text value but the `href` attribute has a link:
 
@@ -424,8 +442,9 @@ That's pretty convenient.
 
 <sup>[back to table of contents](#table-of-contents)</sup>
 
+---
 
-### Style "Default" Links
+### 17. Style "Default" Links
 
 Add a style for "default" links:
 
@@ -440,8 +459,9 @@ Now links that are inserted via a CMS, which don't usually have a `class` attrib
 
 <sup>[back to table of contents](#table-of-contents)</sup>
 
+---
 
-### Consistent Vertical Rhythm
+### 18. Consistent Vertical Rhythm
 
 Use a universal selector (`*`) within an element to create a consistent vertical rhythm:
 
@@ -455,8 +475,9 @@ Consistent vertical rhythm provides a visual aesthetic that makes content far mo
 
 <sup>[back to table of contents](#table-of-contents)</sup>
 
+---
 
-### Intrinsic Ratio Boxes
+### 19. Intrinsic Ratio Boxes
 
 To create a box with an intrinsic ratio, all you need to do is apply top or bottom padding to a div:
 
@@ -483,8 +504,9 @@ Using 20% for padding makes the height of the box equal to 20% of its width. No 
 
 <sup>[back to table of contents](#table-of-contents)</sup>
 
+---
 
-### Style Broken Images
+### 20. Style Broken Images
 
 Make broken images more aesthetically-pleasing with a little bit of CSS:
 
@@ -521,8 +543,9 @@ Learn more about styling for this pattern in [Ire Aderinokun](https://github.com
 
 <sup>[back to table of contents](#table-of-contents)</sup>
 
+---
 
-### Use `rem` for Global Sizing; Use `em` for Local Sizing
+### 21. Use `rem` for Global Sizing; Use `em` for Local Sizing
 
 After setting the base font size at the root (`html { font-size: 100%; }`), set the font size for textual elements to `em`:
 
@@ -552,8 +575,9 @@ Now each module becomes compartmentalized and easier to style, more maintainable
 
 <sup>[back to table of contents](#table-of-contents)</sup>
 
+---
 
-### Hide Autoplay Videos That Aren't Muted
+### 22. Hide Autoplay Videos That Aren't Muted
 
 This is a great trick for a custom user stylesheet. Avoid overloading a user with sound from a video that autoplays when the page is loaded. If the sound isn't muted, don't show the video:
 
@@ -567,8 +591,9 @@ Once again, we're taking advantage of using the [`:not()`](#use-not-to-applyunap
 
 <sup>[back to table of contents](#table-of-contents)</sup>
 
+---
 
-### Use `:root` for Flexible Type
+### 23. Use `:root` for Flexible Type
 
 The type font size in a responsive layout should be able to adjust with each viewport. You can calculate the font size based on the viewport height and width using `:root`:
 
@@ -590,8 +615,9 @@ body {
 
 <sup>[back to table of contents](#table-of-contents)</sup>
 
+---
 
-### Set `font-size` on Form Elements for a Better Mobile Experience
+### 24. Set `font-size` on Form Elements for a Better Mobile Experience
 
 To avoid mobile browsers (iOS Safari, _et al_.) from zooming in on HTML form elements when a `<select>` drop-down is tapped, add `font-size` to the selector rule:
 
@@ -608,8 +634,9 @@ textarea {
 
 <sup>[back to table of contents](#table-of-contents)</sup>
 
+---
 
-### Use Pointer Events to Control Mouse Events
+### 25. Use Pointer Events to Control Mouse Events
 
 [Pointer events](https://developer.mozilla.org/en-US/docs/Web/CSS/pointer-events) allow you to specify how the mouse interacts with the element it's touching. To disable the default pointer event on a button, for instance:
 
@@ -624,8 +651,9 @@ It's that simple.
 
 <sup>[back to table of contents](#table-of-contents)</sup>
 
+---
 
-### Set `display: none` on Line Breaks Used as Spacing
+### 26. Set `display: none` on Line Breaks Used as Spacing
 
 As [Harry Roberts pointed out](https://twitter.com/csswizardry/status/1170835532584235008), this can help prevent CMS users from using extra line breaks for spacing:
 
@@ -637,6 +665,36 @@ br + br {
 
 <sup>[back to table of contents](#table-of-contents)</sup>
 
+---
+
+### 27. Smooth Scrolling
+
+When you click on any link refering to the same page, the page will scroll smoothly instead of directly jumping to that part of the page.
+
+```css
+  html {
+    scroll-behavior: smooth;
+  }
+```
+
+<sup>[back to table of contents](#table-of-contents)</sup>
+
+---
+
+### 28. Fixed Navbar
+
+On scrolling page, navigation bar sticks to top.
+
+```css
+  nav{
+    position: sticky;
+    top: 0;
+  }
+```
+
+<sup>[back to table of contents](#table-of-contents)</sup>
+
+---
 
 ## Support
 
