@@ -45,6 +45,8 @@ A collection of tips to help take your CSS skills pro.
 1. [Set `font-size` on Form Elements for a Better Mobile Experience](#set-font-size-on-form-elements-for-a-better-mobile-experience)
 1. [Use Pointer Events to Control Mouse Events](#use-pointer-events-to-control-mouse-events)
 1. [Set `display: none` on Line Breaks Used as Spacing](#set-display-none-on-line-breaks-used-as-spacing)
+1. [Smooth Scrolling](#smooth-scrolling)
+1. [Fixed Navbar](#fixed-navbar)
 
 ---
 
@@ -669,11 +671,28 @@ br + br {
 
 When you click on any link refering to the same page, the page will scroll smoothly instead of directly jumping to that part of the page.
 
-```
+```css
   html {
     scroll-behavior: smooth;
   }
 ```
+
+<sup>[back to table of contents](#table-of-contents)</sup>
+
+---
+
+### 28. Fixed Navbar
+
+On scrolling page, navigation bar sticks to top.
+
+```css
+  nav{
+    position: sticky;
+    top: 0;
+  }
+```
+
+<sup>[back to table of contents](#table-of-contents)</sup>
 
 ---
 
