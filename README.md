@@ -665,6 +665,18 @@ br + br {
 
 ---
 
+### 27. Smooth Scrolling
+
+When you click on any link refering to the same page, the page will scroll smoothly instead of directly jumping to that part of the page.
+
+```
+  html {
+    scroll-behavior: smooth;
+  }
+```
+
+---
+
 ## Support
 
 Current versions of Chrome, Firefox, Safari, Opera, Edge, and IE11.
