@@ -40,7 +40,6 @@ CSSのプロのスキルになるようにアドバイスのリストを紹介�
 1. [Flexboxのマージンハックを取り除く](#get-rid-of-margin-hacks-with-flexbox)
 1. [リンクにテキストが無い時はURLを表示](#use-attribute-selectors-with-empty-links)
 1. [デフォルトのリンクをスタイル](#style-default-links)
-1. [一貫した縦のリズムを定義](#consistent-vertical-rhythm)
 1. [内在比率のボックス](#intrinsic-ratio-boxes)
 1. [リンク切れの画像要素をスタイル](#style-broken-images)
 1. [グローバルのサイズ指定に「rem」、ローカルに「em」を使用](#use-rem-for-global-sizing-use-em-for-local-sizing)
@@ -477,23 +476,6 @@ a[href]:not([class]) {
 ```
 
 CMSで挿入される通常class属性を持たないリンクに`:not`を使ってスタイルを定義します。
-
-<sup>[目次へ戻る](#table-of-contents)</sup>
-
-
-<div id="consistent-vertical-rhythm"></div>
-
-### 一貫した縦のリズムを定義
-
-指定した要素内の全てに一貫した縦のリズムを定義します。
-
-```css
-.intro > * {
-  margin-bottom: 1.25rem;
-}
-```
-
-コンテンツを読みやすくするポイントは、縦のリズムです。
 
 <sup>[目次へ戻る](#table-of-contents)</sup>
 

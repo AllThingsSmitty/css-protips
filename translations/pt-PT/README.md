@@ -35,7 +35,6 @@ Uma coleção de dicas para aumentar as tuas habilidades no CSS.
 1. [Esquece as "Margin Hacks", use Flexbox](#esquece-as-margin-hacks-usa-a-flexbox)
 1. [Usa Seletores de Atributo em Links Vazios](#usa-seletores-de-atributo-em-links-vazios)
 1. [Estiliza Links "Default"](#estiliza-links-default)
-1. [Espaçamento Vertical Consistente](#espaçamento-vertical-consistente)
 1. [Div com Proporção de Tela Fixa](#div-com-proporção-de-tela-fixa)
 1. [Estiliza Imagens Quebradas](#estiliza-imagens-quebradas)
 1. [Usa `rem` para Definir Tamanhos Globais; Usa `em` para Definir Tamanhos Locais](#usa-rem-para-definir-tamanhos-globais-usa-em-para-definir-tamanhos-locais)
@@ -409,21 +408,6 @@ a[href]:not([class]) {
 ```
 
 Desta forma, links que foram inseridos por CMS – que normalmente não possuem o atributo `class` – vão ser estilizados sem comprometer outros links.
-
-<sup>[Regressar ao índice](#Índice)</sup>
-
-
-### Espaçamento Vertical Consistente
-
-Usa o seletor universal dentro de um elemento para criar um espaçamento vertical consistente:
-
-```css
-.intro > * {
-  margin-bottom: 1.25rem;
-}
-```
-
-Com um espaçamento vertical consistente o seu conteúdo fica visualmente mais agradável de ler.
 
 <sup>[Regressar ao índice](#Índice)</sup>
 

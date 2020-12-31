@@ -35,7 +35,6 @@ Eine Sammlung an Tipps, um deine CSS-Fähigkeiten zu professionalisieren.
 1. [Benutze Flexbox, um von Margin-Hacks wegzukommen](#benutze-flexbox-um-von-margin-hacks-wegzukommen)
 1. [Benutze den Attribut-Selektor mit leeren Verlinkungen](#benutze-den-attribut-selektor-mit-leeren-verlinkungen)
 1. [Gestalte "Standard"-Verlinkungen](#gestalte-standard-verlinkungen)
-1. [Konsistenter, vertikaler Rhythmus](#konsistenter-vertikaler-rhythmus)
 1. [Boxen mit zugehörigem Größenverhältnis](#boxen-mit-zugehörigem-größenverhältnis)
 1. [Gestalte defekte Bilder](#gestalte-defekte-bilder)
 1. [Benutze `rem` für globales Ändern der Größe; Benutze `em` für lokale Größenveränderungen](#benutze-rem-für-globales-Ändern-der-größe-benutze-em-für-lokale-größenveränderungen)
@@ -438,21 +437,6 @@ a[href]:not([class]) {
 ```
 
 Nun werden Verlinkungen, die über ein CMS eingesetzt wurden &ndash; welche überlicherweise kein `class`-Attribut haben &ndash; unterscheidbar sein, ohne die Kaskade im Allgemeinen zu beeinflussen.
-
-<sup>[zurück zum Inhaltsverzeichnis](#inhaltsverzeichnis)</sup>
-
-
-### Konsistenter, vertikaler Rhythmus
-
-Benutze den universellen Selektor (`*`) innerhalb eines Elements um einen einheitlichen, vertikalen Rhythmus zu erstellen:
-
-```css
-.intro > * {
-  margin-bottom: 1.25rem;
-}
-```
-
-Ein übereinstimmender, vertikaler Rhythmus stellt eine visuelle Ästhetik her, die Inhalte weitaus lesbarer macht.
 
 <sup>[zurück zum Inhaltsverzeichnis](#inhaltsverzeichnis)</sup>
 

@@ -34,7 +34,6 @@ Zbiór porad, które pomogą Ci rozwinąć zawansowane umiejętności CSS.
 1. [Pozbądź się marginesów za pomocą Flexbox](#pozbądź-się-marginesów-za-pomocą-flexbox)
 1. [Użyj selektorów atrybutów z pustymi linkami](#użyj-selektorów-atrybutów-z-pustymi-linkami)
 1. [Stylizuj domyślne linki](#stylizuj-domyślne-linki)
-1. [Spójny pionowy rytm](#spójny-rytm-pionowy)
 1. [Wewnętrzne proporcje bloków](#wewnętrzne-proporcje-bloków)
 1. [Wystylizuj uszkodzone obrazy](#wystylizuj-uszkodzone-obrazy)
 1. [Użyj `rem` dla ustawień globalnych rozmiarow i `em` do ustawień localnych](#użyj-rem-dla-ustawień-globalnych-rozmiarow-i-em-do-ustawień-localnych)
@@ -435,21 +434,6 @@ a[href]:not([class]) {
 ```
 
 Linki wstawiane za pośrednictwem CMS, które zwykle nie mają atrybutu class, będą wyróżnione bez  wpływu na kaskadę.
-
-<sup>[Powrót do spisu treści](#Powrót-do-spisu-treści)</sup>
-
-
-### Spójny rytm pionowy
-
-Użyj uniwersalnego selektora (`*`) wewnątrz elementu, aby stworzyć spójny rytm pionowy:
-
-```css
-.intro > * {
-  margin-bottom: 1.25rem;
-}
-```
-
-Consistent vertical rhythm provides a visual aesthetic that makes content far more readable.
 
 <sup>[Powrót do spisu treści](#Powrót-do-spisu-treści)</sup>
 

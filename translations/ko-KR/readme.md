@@ -38,7 +38,6 @@ CSS스킬을 프로처럼 만들어주는 팁 모음
 1. [Flexbox의 Margin Hack 제거](#get-rid-of-margin-hacks-with-flexbox)
 1. [링크에 텍스트가 없을 때의 url 표시](#use-attribute-selectors-with-empty-links)
 1. ["Default" 링크 스타일](#style-default-links)
-1. [일관된 Vertical Rhythm 정의하기](#consistent-vertical-rhythm)
 1. [내재 비율의 박스](#intrinsic-ratio-boxes)
 1. [깨진 링크의 이미지 스타일](#style-broken-images)
 1. [글로벌 사이즈 지정에 `rem`; 로컬  사이즈 지정에 `em`](#use-rem-for-global-sizing-use-em-for-local-sizing)
@@ -464,23 +463,6 @@ a[href]:not([class]) {
 ```
 
 CMS로 삽입되는 보통 class속성이 없는 링크에`:not`를 쓰고 스타일을 정의합니다.
-
-<sup>[목차로 돌아가기](#table-of-contents)</sup>
-
-
-<div id="consistent-vertical-rhythm"></div>
-
-### 일관된 Vertical Rhythm 정의하기
-
-전체 선택자인 (`*`)를 사용하여 요소에 일관된 vertical rhythm을 정의한다.
-
-```css
-.intro > * {
-  margin-bottom: 1.25rem;
-}
-```
-
-Vertical rhythm은 사용자에게 콘텐츠를 읽기 쉽게 합니다..
 
 <sup>[목차로 돌아가기](#table-of-contents)</sup>
 

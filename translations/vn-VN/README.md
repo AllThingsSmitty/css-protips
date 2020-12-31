@@ -36,7 +36,6 @@ Một bộ gồm những tips để giúp kỹ năng CSS trở nên pro
 1. [Get Rid of Margin Hacks With Flexbox](#get-rid-of-margin-hacks-with-flexbox)
 1. [Sử dụng thuộc tính Selectors với các liên kết trống](#sử-dụng-thuộc-tính-selectors-với-liên-kết-trống)
 1. [Style "Default" Links](#style-default-links)  
-1. [Consistent Vertical Rhythm](#consistent-vertical-rhythm)
 1. [Intrinsic Ratio Boxes](#intrinsic-ratio-boxes)
 1. [Hình ảnh bị vỡ](#hình-ảnh-bị-vỡ)
 1. [Dùng `rem` cho toàn cục; dùng `em` cho cục bộ](#dùng-rem-cho-toàn-cục-dùng-em-cho-cục-bộ)
@@ -437,21 +436,6 @@ a[href]:not([class]) {
 ```
 
 Giờ đây, các liên kết được chèn qua CMS, thường không có thuộc tính `class`, sẽ có sự phân biệt mà không ảnh hưởng chung đến tầng.
-
-<sup>[back to table of contents](#table-of-contents)</sup>
-
-
-### Consistent Vertical Rhythm
-
-Sử dụng bộ chọn đa năng (`*`) trong một phần tử để tạo nhịp điệu dọc nhất quán:
-
-```css
-.intro > * {
-  margin-bottom: 1.25rem;
-}
-```
-
-Nhịp điệu dọc nhất quán mang lại tính thẩm mỹ trực quan giúp nội dung dễ đọc hơn nhiều.
 
 <sup>[back to table of contents](#table-of-contents)</sup>
 

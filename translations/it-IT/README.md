@@ -35,7 +35,6 @@ Una collezione di dritte per aiutarti a migliorare le tue capacità con CSS.
 1. [Sbarazzati degli hack sui margini grazie a Flexbox](#sbarazzati-degli-hack-sui-margini-grazie-a-flexbox)
 1. [Usa il selettore d'attributo con i link senza testo](#usa-il-selettore-d'attributo-con-i-link-senza-testo)
 1. [Styling dei link di "Default"](#styling-dei-link-di-"default")
-1. [Mantieni un ritmo verticale coerente](#mantieni-un-ritmo-verticale-coerente)
 1. [Box con proporzioni intrinseche](#box-con-proporzioni-intrinseche)
 1. [Styling delle immagini non scaricate](#styling-delle-immagini-non-scaricate)
 1. [Usa `rem` per le grandezze globali; usa `em` per le dimensioni locali](#usa-rem-per-le-grandezze-globali;-usa-em-per-le-dimensioni-locali)
@@ -438,21 +437,6 @@ a[href]:not([class]) {
 ```
 
 Ora i link inseriti mediante un CMS, che solitamente non hanno un attributo `class`, saranno distinti senza intaccare tutti gli altri in cascata.
-
-<sup>[torna al sommario](#sommario)</sup>
-
-
-### Mantieni un ritmo verticale coerente
-
-Fai uso di un selettore universale (`*`) all'interno di un elemento per creare un ritmo verticale coerente:
-
-```css
-.intro > * {
-  margin-bottom: 1.25rem;
-}
-```
-
-Un ritmo verticale coerente procura un'estetica visuale che favorisce la leggibilità del conenuto.
 
 <sup>[torna al sommario](#sommario)</sup>
 

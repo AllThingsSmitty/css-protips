@@ -35,7 +35,6 @@ Une collection de conseils pour vous aider à mener vos compétences CSS au nive
 1. [Se Débarrasser des Hacks de Marge Avec Flexbox](#se-débarrasser-des-hacks-de-marge-avec-flexbox)
 1. [Utiliser des Sélecteurs d'Attribut avec des Liens Vides](#utiliser-des-sélecteurs-dattribut-avec-des-liens-vides)
 1. [Style "Par Défaut" des Liens](#style-par-défaut-des-liens)
-1. [Rythme Vertical Consistent](#rythme-vertical-consistent)
 1. [Ratio de Boîtes Intrinsèque](#ratio-de-boîtes-intrinsèque)
 1. [Styliser des Images Cassées](#styliser-des-images-cassées)
 1. [Utilisez `rem` pour le Dimensionnement Global; Utilisez `em` pour le Dimensionnement Local](#utilisez-rem-pour-le-dimensionnement-global-utilisez-em-pour-le-dimensionnement-local)
@@ -437,21 +436,6 @@ a[href]:not([class]) {
 ```
 
 Maintenant, les liens qui sont insérés via un CMS, qui ne disposent généralement pas d'un attribut `class`, auront une distinction sans affecter de manière générique la cascade.
-
-<sup>[retour à la table des matières](#table-des-matières)</sup>
-
-
-### Rythme Vertical Consistent
-
-Utilisez un sélecteur universel (`*`) à l'intérieur d'un élément pour créer un rythme vertical cohérent :
-
-```css
-.intro > * {
-  margin-bottom: 1.25rem;
-}
-```
-
-Le rythme vertical cohérent offre une esthétique visuelle qui rend le contenu beaucoup plus lisible.
 
 <sup>[retour à la table des matières](#table-des-matières)</sup>
 

@@ -36,7 +36,6 @@ A collection of tips to help take your CSS skills pro.
 1. [Get Rid of Margin Hacks With Flexbox](#get-rid-of-margin-hacks-with-flexbox)
 1. [Use Attribute Selectors with Empty Links](#use-attribute-selectors-with-empty-links)
 1. [Style "Default" Links](#style-default-links)
-1. [Consistent Vertical Rhythm](#consistent-vertical-rhythm)
 1. [Intrinsic Ratio Boxes](#intrinsic-ratio-boxes)
 1. [Style Broken Images](#style-broken-images)
 1. [Use `rem` for Global Sizing; Use `em` for Local Sizing](#use-rem-for-global-sizing-use-em-for-local-sizing)
@@ -437,21 +436,6 @@ a[href]:not([class]) {
 ```
 
 Now links that are inserted via a CMS, which don't usually have a `class` attribute, will have a distinction without generically affecting the cascade.
-
-<sup>[back to table of contents](#table-of-contents)</sup>
-
-
-### Consistent Vertical Rhythm
-
-Use a universal selector (`*`) within an element to create a consistent vertical rhythm:
-
-```css
-.intro > * {
-  margin-bottom: 1.25rem;
-}
-```
-
-Consistent vertical rhythm provides a visual aesthetic that makes content far more readable.
 
 <sup>[back to table of contents](#table-of-contents)</sup>
 
