@@ -115,7 +115,7 @@ button {
 }
 ```
 
-**Note:** the `all` shorthand isn't supported in IE11 and is currently under consideration for support in Edge. `unset` isn't supported in IE11.
+**Note:** the `all` and `unset` shorthand isn't supported in IE11.
 
 <sup>[back to table of contents](#table-of-contents)</sup>
 
@@ -636,8 +636,8 @@ Current versions of Chrome, Firefox, Safari, Opera, Edge, and IE11.
 * [Deutsch](https://github.com/AllThingsSmitty/css-protips/tree/master/translations/de-DE)
 * [Español](https://github.com/AllThingsSmitty/css-protips/tree/master/translations/es-ES)
 * [Français](https://github.com/AllThingsSmitty/css-protips/tree/master/translations/fr-FR)
+* [λληνικά](https://github.com/AllThingsSmitty/css-protips/tree/master/translations/gr-GR)
 * [ગુજરાતી](https://github.com/AllThingsSmitty/css-protips/tree/master/translations/gu-IND)
-* [हिन्दी](https://github.com/AllThingsSmitty/css-protips/tree/master/translations/hi-IND)
 * [Italiano](https://github.com/AllThingsSmitty/css-protips/tree/master/translations/it-IT)
 * [日本語](https://github.com/AllThingsSmitty/css-protips/tree/master/translations/ja-JP)
 * [한국어](https://github.com/AllThingsSmitty/css-protips/tree/master/translations/ko-KR)

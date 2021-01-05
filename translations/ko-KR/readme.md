@@ -125,7 +125,7 @@ button {
 }
 ```
 
-**Note:**  현재 `all` 생략형은 IE11에서 지원되지 않습니다. 최근 Edge에서 지원이 검토되고 있습니다. `unset`은 IE11에서 지원되지 않습니다.
+**Note:** `all` 및`unset` 속기는 IE11에서 지원되지 않습니다.
 
 <sup>[목차로 돌아가기](#table-of-contents)</sup>
 

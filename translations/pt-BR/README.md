@@ -113,7 +113,7 @@ button {
 }
 ```
 
-**Nota:** A abreviação `all` não é suportada no IE11 e atualmente está sendo considerada para suporte no Edge. `unset` não é suportado no IE11:
+**Nota:** a abreviação `all` e` unset` não é compatível com o IE11.
 
 <sup>[voltar ao índice](#Índice)</sup>
 

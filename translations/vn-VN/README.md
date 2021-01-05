@@ -115,7 +115,7 @@ button {
 }
 ```
 
-**Note:** `all` thì không được hỗ trợ trên IE11 và hiện đang được xem xét hỗ trợ trong Edge. `unset` thì cũng vậy.
+**Note:** tốc độ viết tắt `all` và` unset` không được hỗ trợ trong IE11.
 
 <sup>[back to table of contents](#table-of-contents)</sup>
 

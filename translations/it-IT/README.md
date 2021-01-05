@@ -114,7 +114,7 @@ button {
 }
 ```
 
-**Nota:** la stenografia `all` non è supportata in IE11 ed è attualmente in considerazione per il supporto in Edge. `unset` non è supportato in IE11.
+**Nota:** la stenografia `all` e` unset` non è supportata in IE11.
 
 <sup>[torna al sommario](#sommario)</sup>
 

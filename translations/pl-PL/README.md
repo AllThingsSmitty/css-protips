@@ -111,7 +111,7 @@ button {
 }
 ```
 
-**Uwaga:** skrót `all` nie jest obsługiwany w IE11 i jest obecnie rozważany pod kątem obsługi w Edge. `unset` nie jest obsługiwany w IE11.
+**Uwaga:** skróty `all` i `unset` nie są obsługiwane w IE11.
 
 <sup>[powrót do spisu treści](#powrót-do-spisu-treści)</sup>
 

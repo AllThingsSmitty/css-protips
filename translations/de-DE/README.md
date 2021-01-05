@@ -114,7 +114,7 @@ button {
 }
 ```
 
-**Hinweis:** Das `all`-Kürzel wird nicht von IE11 unterstützt und in Edge steht es zur Zeit noch zur Diskussion.
+**Hinweis:** Die Kurzform `all` und "unset" wird in IE11 nicht unterstützt.
 
 <sup>[zurück zum Inhaltsverzeichnis](#inhaltsverzeichnis)</sup>
 

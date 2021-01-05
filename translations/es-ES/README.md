@@ -115,7 +115,7 @@ button {
 }
 ```
 
-**Nota:** la declaraciones cortas `all` no es compatible con IE11 y actualmente está bajo consideración para soporte en Edge. `unset` no es compatible con IE11.
+**Nota:** la abreviatura `all` y` unset` no es compatible con IE11.
 
 <sup>[volver al índice de contenidos](#tabla-de-contenido)</sup>
 

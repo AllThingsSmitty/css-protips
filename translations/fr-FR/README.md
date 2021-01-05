@@ -115,7 +115,7 @@ button {
 }
 ```
 
-**Remarque:** le raccourci `all` n'est pas supporté dans IE11 et est actuellement à l'étude pour le support dans Edge. `unset` n'est pas supporté dans IE11.
+**Remarque:** les raccourcis `all` et` unset` ne sont pas pris en charge dans IE11.
 
 <sup>[retour à la table des matières](#table-des-matières)</sup>
 

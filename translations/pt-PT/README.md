@@ -20,8 +20,8 @@ Uma coleção de dicas para aumentar as tuas habilidades no CSS.
 
 1. [Usa um Reset CSS](#usa-um-reset-css)
 1. [Herda o `box-sizing`](#herda-o-box-sizing)
-1. [Use `unset` Instead of Resetting All Properties](#use-unset-instead-of-resetting-all-properties)1. 
-[Usa `:not()` para Aplicar/Remover Bordas](#usa-not-para-aplicarremover-bordas)
+1. [Use `unset` em vez de redefinir todas as propriedades](#use-unset-em-vez-de-redefinir-todas-as-propriedades)
+1. [Usa `:not()` para Aplicar/Remover Bordas](#usa-not-para-aplicarremover-bordas)
 1. [Verifique se a fonte está instalada localmente](#verifique-se-a-fonte-está-instalada-localmente)
 1. [Define o `line-height` no `body`](#define-o-line-height-no-body)
 1. [Alinha Elementos Verticalmente](#alinha-elementos-verticalmente)
@@ -89,6 +89,34 @@ Assim fica mais fácil de alterar o `box-sizing` em plugins ou outros componente
 #### [Passeata](https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/)
 
 <sup>[Regressar ao índice](#Índice)</sup>
+
+
+### Use `unset` em vez de redefinir todas as propriedades
+
+Ao redefinir as propriedades de um elemento, não é necessário redefinir cada propriedade individual:
+
+```css
+button {
+  background: none;
+  border: none;
+  color: inherit;
+  font: inherit;
+  outline: none;
+  padding: 0;
+}
+```
+
+Você pode especificar todas as propriedades de um elemento usando a abreviação `all`. Definir o valor como `unset` altera as propriedades de um elemento para seus valores iniciais:
+
+```css
+button {
+  all: unset;
+}
+```
+
+**Nota:** a abreviação `all` e` unset` não é compatível com o IE11.
+
+<sup>[voltar ao índice](#Índice)</sup>
 
 
 ### Usa `:not()` para Aplicar/Retirar Bordas

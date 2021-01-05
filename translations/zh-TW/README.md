@@ -115,7 +115,7 @@ button {
 }
 ```
 
-**注意：** 目前 `all` 屬性在 IE11 並不支援，而目前 Edge 瀏覽器則正在考慮支援。IE11 不支援 `unset` 用法！
+**注意：** IE11不支持`all`和`unset`的简写。
 
 <sup>[回到目錄](#table-of-contents)</sup>
 
