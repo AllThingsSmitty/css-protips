@@ -24,11 +24,11 @@ CSS스킬을 프로처럼 만들어주는 팁 모음
 1. [CSS Reset을 사용](#use-a-css-reset)
 1. [`box-sizing`을 컴포넌트마다 변경](#inherit-box-sizing)
 1. [모든 프로퍼티를 리셋하는 대신에 `unset`를 쓴다](#use-unset-instead-of-resetting-all-properties)
-1. [`:not()` 를 사용하여 Border를 삭제](#use-not-to-applyunapply-borders-on-navigation)
+1. [`:not()` 를 사용하여 보더를 삭제](#use-not-to-applyunapply-borders-on-navigation)
 1. [글꼴이 로컬로 설치되어 있는지 확인](#check-if-font-is-installed-locally)
 1. [`body`에 `line-height` 넣기](#add-line-height-to-body)
-1. [폼 요소에`: focus`를 설정하십시오.](#set-focus-for-form-elements)
-1. [전부 Vertically-Center로 만들기](#vertically-center-anything)
+1. [폼 요소에`: focus`를 설정하기](#set-focus-for-form-elements)
+1. [전부 수직 정렬 만들기](#vertically-center-anything)
 1. [리스트를 콤마로 나누기](#comma-separated-lists)
 1. [Negative `nth-child`를 사용하여 아이템 나누기](#select-items-using-negative-nth-child)
 1. [SVG를 아이콘으로 사용하기](#use-svg-for-icons)
@@ -52,7 +52,7 @@ CSS스킬을 프로처럼 만들어주는 팁 모음
 
 ### CSS Reset을 사용
 
-CSS reset은 스타일 요소들을 통해 백지 상태에서 다른 브라우저간의 스타일의 일관성을 강화하는데 도움을 줍니다.  You can use a CSS reset library like또한 [Normalize](http://necolas.github.io/normalize.css/), _et al._, 와 같은 CSS 라이브러리를 통해 더 간략화 된 Reset 어프로치를 사용 가능합니다.
+CSS reset은 스타일 요소들을 통해 백지 상태에서 다른 브라우저간의 스타일의 일관성을 강화하는데 도움을 줍니다. 또한 [Normalize](http://necolas.github.io/normalize.css/), _et al._, 와 같은 CSS 리셋 라이브러리를 통해 더 쉽게 reset 형태를 취할 수 있습니다.
 
 ```css
 *,
@@ -132,12 +132,12 @@ button {
 
 <div id="use-not-to-applyunapply-borders-on-navigation"></div>
 
-### `:not()` 를 사용하여 Border를 삭제
+### `:not()` 를 사용하여 보더를 삭제
 
 Border를 넣거나...
 
 ```css
-/* add border */
+/* 보더 추가 */
 .nav li {
   border-right: 1px solid #666;
 }
@@ -146,7 +146,7 @@ Border를 넣거나...
 ...마지막 요소를 없애기 보다는...
 
 ```css
-/* remove border */
+/* 보더 삭제 */
 .nav li:last-child {
   border-right: none;
 }
@@ -160,7 +160,7 @@ Border를 넣거나...
 }
 ```
 
-CSS 선택기는 사람이 설명하는 방식으로 경계를 정의합니다.
+CSS 선택자는 사람이 설명하는 방식 그대로 경계를 정의합니다.
 
 #### [데모](http://codepen.io/AllThingsSmitty/pen/LkymvO)
 
@@ -177,11 +177,11 @@ CSS 선택기는 사람이 설명하는 방식으로 경계를 정의합니다.
 @font-face {
   font-family: "Dank Mono";
   src:
-    /* Full name */
+    /* 풀네임 */
     local("Dank Mono"),
-    /* Postscript name */
+    /* 포스트 스크립트명 */
     local("Dank Mono"),
-    /* Otherwise, download it! */
+    /* 아니면 다운로드도 가능! */
     url("//...a.server/fonts/DankMono.woff");
 }
 
@@ -207,7 +207,7 @@ body {
 }
 ```
 
-이 방법의 문서 요소는 `body`에서 간단히 계승됩니다.
+이 방법으로 텍스트 요소가 `body`의 속성을 쉽게 계승할 수 있습니다.
 
 #### [데모](http://codepen.io/AllThingsSmitty/pen/VjbdYd)
 
@@ -216,9 +216,9 @@ body {
 
 <div id="set-focus-for-form-elements"></div>
 
-### 폼 요소에`: focus`를 설정하십시오.
+### 폼 요소에`: focus`를 설정하기
 
-키보드 사용자는 포커스를 사용하여 키보드 이벤트의 위치를 결정합니다. 양식 요소에 대한 집중도를 높이고 브라우저의 기본 구현을 일관성있게 만듭니다.
+키보드 사용자는 포커스를 사용하여 키보드 이벤트의 위치를 결정합니다. 폼 요소에 집중할 수 있게 해주며, 브라우저의 기본 구현을 일관성있게 만듭니다.
 
 ```css
 a:focus,
@@ -284,7 +284,7 @@ ul > li:not(:last-child)::after {
 
 `:not()` 을 사용할 때 리스트의 마지막 아이템에는 콤마를 사용하지 않도록 합니다.
 
-**Note:** 이 팁의 경우 접근성이 떨어질 수 있습니다. 특히, 스크린 사용자에게는요. 또한 브라우저에서의 복사/붙여넣기는 CSS 제너레이터를 통한 콘텐츠에서는 불가능하므로 주의해 주십시오.
+**Note:** 이 팁의 경우 접근성이 떨어질 수 있습니다. 특히, 스크린 사용자에게는요. 또한 브라우저에서의 복사/붙여넣기는 CSS를 통해 생성한 콘텐츠에서는 사용 불가능하므로 주의해 주세요.
 
 <sup>[목차로 돌아가기](#table-of-contents)</sup>
 
@@ -292,14 +292,14 @@ ul > li:not(:last-child)::after {
 <div id="select-items-using-negative-nth-child"></div>
 ### Negative `nth-child`를 사용하여 아이템 나누기
 
-Negative `nth-child`를 사용하여 n분의 1로 아이템을 나눌 수 있다.
+Negative `nth-child`를 사용하여 n분의 1로 아이템을 나눌 수 있습니다.
 
 ```css
 li {
   display: none;
 }
 
-/* select items 1 through 3 and display them */
+/* 1에서 3까지의 선택하고 보여주기 */
 li:nth-child(-n+3) {
   display: block;
 }
@@ -308,7 +308,7 @@ li:nth-child(-n+3) {
 [`:not()`](#use-not-to-applyunapply-borders-on-navigation), 를 사용해 봅시다.
 
 ```css
-/* select all items except the first 3 and display them */
+/* 처음 3개를 제외한 모든 아이템 보여주기 */
 li:not(:nth-child(-n+3)) {
   display: none;
 }
@@ -347,7 +347,7 @@ SVG는 [IE9](http://caniuse.com/#search=svg) 이후부터 지원되고 있습니
 
 ### "Lobotomized Owl" Selector 사용하기
 
-이상한 이름일지도  (`*`)와  (`+`)와 함께 사용하면 강력한 CSS의 가능성을 제공합니다.
+이상한 이름이지만  (`*`)와  (`+`)와 함께 사용하면 강력한 CSS의 가능성을 제공합니다.
 
 ```css
 * + * {
@@ -412,7 +412,7 @@ hover시 `max-height`를 요소를 확장 오버플로우의 결과로 슬라이
 
 ### Flexbox의 Margin Hack 제거
 
-column gutter을 사용할 대 당신은 flexbox의 `space-between` 요소를  사용하여 `nth-`, `first-`, `last-child` 을 지울 수 있습니다.
+column gutter을 사용할 때 flexbox의 `space-between` 요소를 사용하여 `nth-`, `first-`, `last-child`를 사용하지 않게 해줍니다.
 
 ```css
 .list {
@@ -462,7 +462,7 @@ a[href]:not([class]) {
 }
 ```
 
-CMS로 삽입되는 보통 class속성이 없는 링크에`:not`를 쓰고 스타일을 정의합니다.
+이것은 보통 class속성이 없는 링크에`:not`을 사용하여 CMS로 삽입됩니다. 상속(cascade)문제 없이 차별화 할 수 있습니다.
 
 <sup>[목차로 돌아가기](#table-of-contents)</sup>
 
@@ -520,7 +520,7 @@ img {
 
 ```css
 img::before {
-  content: "We're sorry, the image below is broken :(";
+  content: "죄송하지만 이 이미지에 문제가 있습니다 :(";
   display: block;
   margin-bottom: 10px;
 }
@@ -655,7 +655,7 @@ textarea {
 
 ### 간격으로 사용되는 줄 바꿈에서 `display: none` 을 설정하십시오.
 
-[Harry Roberts가 지적했듯이](https://twitter.com/csswizardry/status/1170835532584235008) CMS 사용자가 추가 줄 바꿈을 사용하여 간격을 두지 못하게 할 수 있습니다.
+[Harry Roberts가 지적한대로](https://twitter.com/csswizardry/status/1170835532584235008) CMS 사용자가 추가 줄 바꿈을 사용하여 간격을 두지 못하게 할 수 있습니다.
 
 ```css
 br + br {
