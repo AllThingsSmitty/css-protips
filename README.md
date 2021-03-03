@@ -44,6 +44,7 @@ A collection of tips to help take your CSS skills pro.
 1. [Set `font-size` on Form Elements for a Better Mobile Experience](#set-font-size-on-form-elements-for-a-better-mobile-experience)
 1. [Use Pointer Events to Control Mouse Events](#use-pointer-events-to-control-mouse-events)
 1. [Set `display: none` on Line Breaks Used as Spacing](#set-display-none-on-line-breaks-used-as-spacing)
+1. [Easy Pill Shaped Buttons](#easy-pill-shaped-buttons)
 
 
 ### Use a CSS Reset
@@ -616,6 +617,19 @@ As [Harry Roberts pointed out](https://twitter.com/csswizardry/status/1170835532
 ```css
 br + br {
   display: none;
+}
+```
+
+<sup>[back to table of contents](#table-of-contents)</sup>
+
+
+### Easy Pill Shaped Buttons
+
+Use `border-radius` to make simple pill shaped buttons by setting the value to 9999px (or some other big number).
+
+```css
+button {
+  border-radius: 9999px;
 }
 ```
 
