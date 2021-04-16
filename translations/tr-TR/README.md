@@ -31,7 +31,7 @@ CSS yeteneklerinizi üst seviyeye çıkaracak teknikler listesi
 1. [İkonlar için SVG grafikler kullanın](#use-svg-for-icons)
 1. [ * + * seçicisini kullanın](#use-the-lobotomized-owl-selector)
 1. [Daha etkili scroll için `max-height` özelliğini kullanın](#use-max-height-for-pure-css-sliders)
-1. [Tüm tablo hücrelerinin eşit genişlikte olmasını sağlayın](#equal-width-table-cells)
+1. [Eşit Ölçülü Tablo Hücreleri](#equal-width-table-cells)
 1. [Flexbox kullanarak, nesnelerin margin değerini belirlemenin zorluğundan kurtulun](#get-rid-of-margin-hacks-with-flexbox)
 1. [Metin girilmemiş linkler](#use-attribute-selectors-with-empty-links)
 1. [Standart linkleri stillendirin](#style-default-links)
@@ -41,7 +41,7 @@ CSS yeteneklerinizi üst seviyeye çıkaracak teknikler listesi
 1. [Sesi açık halde otomatik olarak oynayan videoları gizleyin](#hide-autoplay-videos-that-arent-muted)
 1. [Tasarımınıza göre ölçeklenen yazı boyutu için `:root` seçicisini kullanın](#use-root-for-flexible-type)
 1. [Daha etkili bir mobil kullanım deneyimi için form elementlerinin `font-size` değerini belirleyin](#set-font-size-on-form-elements-for-a-better-mobile-experience)
-1. [Mouse aksiyonlarını kontrol etmek için pointer-events değerini kullanın](#use-pointer-events-to-control-mouse-events)
+1. [Mouse aksiyonlarını kontrol etmek için pointer-events özelliğini kullanın](#use-pointer-events-to-control-mouse-events)
 1. [Boşluk vermek için kullanılan <br/> elementlerini gizleyin](#set-display-none-on-line-breaks-used-as-spacing)
 
 
@@ -295,7 +295,7 @@ li:nth-child(-n+3) {
 }
 ```
 
-Ya da daha önceki örneklerde de incelediğimiz `:not()` seçicisini kullanarak tek seferde istediğimize ulaşabilirz. [`:not()` seçicisini kullanmak](#use-not-to-applyunapply-borders-on-navigation), try:
+Ya da daha önceki örneklerde de incelediğimiz `:not()` seçicisini kullanarak tek seferde istediğimize ulaşabilirz. [`:not()` seçicisini kullanmak](#use-not-to-applyunapply-borders-on-navigation)
 
 ```css
 /* ilk üç element dışındaki bütün elementleri seçer ve onların görüntülenmesini engeller */
@@ -309,9 +309,9 @@ li:not(:nth-child(-n+3)) {
 <sup>[Listeye dönün](#table-of-contents)</sup>
 
 
-### Use SVG for Icons
+### İkonlar için SVG kullanın
 
-There's no reason not to use SVG for icons:
+İkonlarınızı tasarımınıza eklerken SVG kullanmak için herhangi bir engeliniz yok.
 
 ```css
 .logo {
@@ -319,8 +319,9 @@ There's no reason not to use SVG for icons:
 }
 ```
 
-SVG scales well for all resolution types and is supported in all browsers [back to IE9](http://caniuse.com/#search=svg). Ditch your .png, .jpg, or .gif-jif-whatev files.
+SVG türündeki grafikler, problemsiz bir şekilde yeniden boyutlandırılabilir ve tüm çözünürlüklere uyum sağlayabilir. Tüm modern tarayıcılar tarafından da desteklenmektedir.
 
+**Not:** 
 **Note:** If you have SVG icon-only buttons for sighted users and the SVG fails to load, this will help maintain accessibility:
 
 ```css
@@ -332,9 +333,9 @@ SVG scales well for all resolution types and is supported in all browsers [back 
 <sup>[Listeye dönün](#table-of-contents)</sup>
 
 
-### Use the "Lobotomized Owl" Selector
+### * + * seçicisini kullanın. (Lobotomized Owl Selector)
 
-It may have a strange name but using the universal selector (`*`) with the adjacent sibling selector (`+`) can provide a powerful CSS capability:
+Anlaşılması zor olabilir ancak en geniş kapsamlı CSS seçicisi (`*`) ile birlikte komşu element seçicisini (`+`) kullanmak CSS kodunuzun etkinliğini oldukça arttıracaktır.
 
 ```css
 * + * {
@@ -342,18 +343,19 @@ It may have a strange name but using the universal selector (`*`) with the adjac
 }
 ```
 
-In this example, all elements in the flow of the document that follow other elements will receive `margin-top: 1.5em`.
+Bu örnekte, HTML dökümanınızda bir diğerini bütün elementler `margin-top: 1.5em` değerini alacaktır.
 
-For more on the "lobotomized owl" selector, read [Heydon Pickering's post](http://alistapart.com/article/axiomatic-css-and-lobotomized-owls) on *A List Apart*.
+Bu örnek hakkında daha fazla bilgi alabilmek için [Heydon Pickering tarafından yazılan makaleyi] okuyabilirsiniz. (http://alistapart.com/article/axiomatic-css-and-lobotomized-owls)
 
 #### [Demo](http://codepen.io/AllThingsSmitty/pen/grRvWq)
 
 <sup>[Listeye dönün](#table-of-contents)</sup>
 
 
-### Use `max-height` for Pure CSS Sliders
+### `max-height` özelliğini kullanarak akordeon efekti yapabilirsiniz
 
-Implement CSS-only sliders using `max-height` with overflow hidden:
+Sadece CSS özelliklerini kullanarak akordeon efekti yapabilirsininiz. Bu efekti slide-up / slide-down terimleri ile de anlatabiliriz.
+Normalde jQuery vb. bir JavaScript kütüphanesi ile yapabileceğimiz bir animasyonu, sadece CSS özelliklerini kullanarak nasıl yapacağımıza bir göz atalım.
 
 ```css
 .slider {
@@ -368,14 +370,18 @@ Implement CSS-only sliders using `max-height` with overflow hidden:
 }
 ```
 
-The element expands to the `max-height` value on hover and the slider displays as a result of the overflow.
+Yukarıdaki CSS class'ını yazdığımız elementin yüksekliği, hover durumunda kendisine atanmış olan `max-height` değerine genişleyecek ve bunun sonucunda görsel olarak slide-up / slide-down animasyonunu elde etmiş olacağız.
+
+Bununla ilgili bir örnek için David Walsh'in yazısına göz atabilirsiniz.
+
+#### [Demo](https://davidwalsh.name/css-slide)
 
 <sup>[Listeye dönün](#table-of-contents)</sup>
 
 
-### Equal-Width Table Cells
+### Eşit Ölçülü Tablo Hücreleri
 
-Tables can be a pain to work with. Try using `table-layout: fixed` to keep cells at equal width:
+CSS'te tablolarla çalışmak çok zor olabilir. Bu zorluğu `table-layout: fixed` ile aşabilirsiniz. Bu özellik, tablonuzdaki hücrelerin her satırda farklı bir boyut almasını engeller ve bütün tablo hücreleriniz birbirleriyle eşit boyutlara sahip olur. Aynı zamanda bu özellik atamasıyla birlikte tarayıcıların algoritmaları gereği tablo hücrelerinin genişliğinin hesaplanmasına gerek kalmayacağı için, tablolarınız daha hızlı render edilir ve kullanıcıya gösterilir.
 
 ```css
 .calendar {
@@ -383,16 +389,17 @@ Tables can be a pain to work with. Try using `table-layout: fixed` to keep cells
 }
 ```
 
-Pain-free table layouts.
+Bu konudaki bir örnek için aşağıdaki bağlantıya tıklayabilirsiniz.
 
 #### [Demo](http://codepen.io/AllThingsSmitty/pen/jALALm)
 
 <sup>[Listeye dönün](#table-of-contents)</sup>
 
 
-### Get Rid of Margin Hacks With Flexbox
+### Flexbox kullanarak, nesnelerin margin değerini belirlemenin zorluğundan kurtulun
 
 When working with column gutters you can get rid of `nth-`, `first-`, and `last-child` hacks by using flexbox's `space-between` property:
+Elementler arası boşluklara çalışırken `nth-`, `first-`, `last-child` vb. seçicilere boğulabilirsiniz. Ancak flexbox ile bunu aşmak çok kolay. Flexbox sahip olduğu spaces-between, space-around, space-evenly modları sizleri hiç margin değerleriyle uğraştırmadan nesneler arası eşit boşluklar ayarlamanıza yarar.
 
 ```css
 .list {
@@ -405,14 +412,15 @@ When working with column gutters you can get rid of `nth-`, `first-`, and `last-
 }
 ```
 
-Now column gutters always appear evenly-spaced.
+Yukarıdaki örnekte .person sınıfının atandığı elementler içinde yer aldıkları container'a eşit boşluklarla dağıtılacakardır.
 
 <sup>[Listeye dönün](#table-of-contents)</sup>
 
 
-### Use Attribute Selectors with Empty Links
+### Metin girilmemiş linkler Use Attribute Selectors with Empty Links
 
-Display links when the `<a>` element has no text value but the `href` attribute has a link:
+Hedef adresi atanmış ancak herhangi bir metinle belirtilmemiş linkleri stillendirin.
+Örneğin elinizde `<a href="https://goole.com"></a>` şeklinde bir bağlantınızın var olduğunu düşünelim. Bu bağlantı HTML dökümanınızda yer alacaktır ancak kullanıcılarınız tarafından görüntülenemeyecektir. Aşağıdaki CSS kodu ile bu türdeki bütün linklerinizi tek seferde stillendirebilir ve görünür hale getirebilirsiniz.
 
 ```css
 a[href^="http"]:empty::before {
@@ -420,15 +428,16 @@ a[href^="http"]:empty::before {
 }
 ```
 
-That's pretty convenient.
+Çok kullanışlı bir yöntem değil mi ?
 
 #### [Demo](http://codepen.io/AllThingsSmitty/pen/zBzXRx)
 
 <sup>[Listeye dönün](#table-of-contents)</sup>
 
 
-### Style "Default" Links
+### Standart linkleri stillendirin 
 
+Standart halde bulunan linklerinizi stillendirin. 
 Add a style for "default" links:
 
 ```css
@@ -438,13 +447,14 @@ a[href]:not([class]) {
 }
 ```
 
-Now links that are inserted via a CMS, which don't usually have a `class` attribute, will have a distinction without generically affecting the cascade.
+Bu linkler genelde CMS ile hazırlanmış içeriklerde bulunurlar ve herhangi bir class ataması, stil ataması yapamadığınız linklerdir. Yukarıdaki örnek sayesinde bu linkler tasarım bütünlüğünü bozmadan tasarımınızın birer parçası olacaklardır.
 
 <sup>[Listeye dönün](#table-of-contents)</sup>
 
 
-### Intrinsic Ratio Boxes
+### Gerçel Oranlı Kutular
 
+Gerçel ölçülü bir kutu oluşturmak için tek yapmanız gereken kapsayıcınıza üst ya da alt taraftan bir padding değeri atamanızdır.
 To create a box with an intrinsic ratio, all you need to do is apply top or bottom padding to a div:
 
 ```css
@@ -464,16 +474,16 @@ To create a box with an intrinsic ratio, all you need to do is apply top or bott
 }
 ```
 
-Using 20% for padding makes the height of the box equal to 20% of its width. No matter the width of the viewport, the child div will keep its aspect ratio (100% / 20% = 5:1).
+Yüzde 20'lik padding değeri, kutunuzun yüksekliğini, kendisine ait genişliğin yüzde 20'sine eşitleyecektir. Ekran çözünürlüğü, tuval boyutu ne olursa olsun kutu, 5'e 1 oranında ölçüye sahip olacaktır. Atayacağınız padding değerini değiştirerek farklı oranlara ulaşabilirsiniz.
 
 #### [Demo](http://codepen.io/AllThingsSmitty/pen/jALZvE)
 
 <sup>[Listeye dönün](#table-of-contents)</sup>
 
 
-### Style Broken Images
+### Kaynağına ulaşılamayan resimleri stillendirin
 
-Make broken images more aesthetically-pleasing with a little bit of CSS:
+Kaynağına ulaşılmayan, görüntülenmeyen resimleri birkaç satır CSS ile estetik açıdan daha hoş bir hale getirebilirsiniz. Bu kullanıcılar için daha kabul edilebilir bir durumdur.
 
 ```css
 img {
@@ -488,7 +498,7 @@ img {
 }
 ```
 
-Now add pseudo-elements rules to display a user message and URL reference of the broken image:
+Şimdi pseudo seçicilerle kullanıcılarımıza bir mesaj gösterelim ve resmin bağlantısını bu mesaja iliştirelim.
 
 ```css
 img::before {
@@ -504,14 +514,14 @@ img::after {
 }
 ```
 
-Learn more about styling for this pattern in [Ire Aderinokun](https://github.com/ireade/)'s [original post](http://bitsofco.de/styling-broken-images/).
+[Ire Aderinokun]'dan bu konuyla ilgili daha fazla şey öğrenebilirsiniz. (https://github.com/ireade/)'s [orijinal kaynak](http://bitsofco.de/styling-broken-images/).
 
 <sup>[Listeye dönün](#table-of-contents)</sup>
 
 
-### Use `rem` for Global Sizing; Use `em` for Local Sizing
+### Global yazı boyutu için `rem` nesnelere özel yazı boyutu için `em` ölçülerini kullanın
 
-After setting the base font size at the root (`html { font-size: 100%; }`), set the font size for textual elements to `em`:
+Yazı tipinizin taban boyutunu belirledikten sonra metinsel elementlerin yazı tipi boyutunu belirlemek için `em` birimini kullanın.
 
 ```css
 h2 {
@@ -523,7 +533,7 @@ p {
 }
 ```
 
-Then set the font-size for modules to `rem`:
+Sonrasında HTML elementleri için yazı tipi boyutunuzu belirlemek için `rem` birimini kullanın.
 
 ```css
 article {
@@ -535,14 +545,14 @@ aside .module {
 }
 ```
 
-Now each module becomes compartmentalized and easier to style, more maintainable, and flexible.
+Artık tasarımınız, stillendirme açısından daha modüler, daha esnek ve daha sürdürülebilir hale geldi.
 
 <sup>[Listeye dönün](#table-of-contents)</sup>
 
 
-### Hide Autoplay Videos That Aren't Muted
+### Sesi açık halde otomatik olarak oynayan videoları gizleyin
 
-This is a great trick for a custom user stylesheet. Avoid overloading a user with sound from a video that autoplays when the page is loaded. If the sound isn't muted, don't show the video:
+Sayfanız yüklendiğinde otomatik oynayan videolarla kullanıcılarınızı boğmayın. Otomatik oynatılan videonun sesi açıksa, o videoyu gizleyin.
 
 ```css
 video[autoplay]:not([muted]) {
@@ -550,14 +560,14 @@ video[autoplay]:not([muted]) {
 }
 ```
 
-Once again, we're taking advantage of using the [`:not()`](#use-not-to-applyunapply-borders-on-navigation) pseudo-class.
+Bir kez daha `:not()` seçicisini kullanarak elde ettiğimiz avantajlara göz atmak için (#use-not-to-applyunapply-borders-on-navigation)
 
 <sup>[Listeye dönün](#table-of-contents)</sup>
 
 
-### Use `:root` for Flexible Type
+### Tasarımınıza göre ölçeklenen yazı boyutu için `:root` seçicisini kullanın
 
-The type font size in a responsive layout should be able to adjust with each viewport. You can calculate the font size based on the viewport height and width using `:root`:
+Yazı tipi boyutunuz, duyarlı olmalıdır ve her ekran çözünürlüğüne göre uyumluluk gösterebilimelidir. Tasarımınızın görüntülendiği ekran boyutunun en-boy ölçüleriyle birlikte belirli bir formül çerçevesinde hesaplayarak yazı tipi boyutunuzu duyarlı hale getirebilirsiniz. Bu hesaplamayı `:root` seçicisinde yaparak duyarlı yazı tipi boyutunuzu tüm tasarımınıza yayabilirsiniz.
 
 ```css
 :root {
@@ -565,7 +575,7 @@ The type font size in a responsive layout should be able to adjust with each vie
 }
 ```
 
-Now you can utilize the `root em` unit based on the value calculated by `:root`:
+Artık `:root` içerisinde belirlenen değere göre `root em - rem` birimini kullanabilirsiniz.
 
 ```css
 body {
@@ -578,9 +588,9 @@ body {
 <sup>[Listeye dönün](#table-of-contents)</sup>
 
 
-### Set `font-size` on Form Elements for a Better Mobile Experience
+### Daha etkili bir mobil kullanım deneyimi için form elementlerinin `font-size` değerini belirleyin
 
-To avoid mobile browsers (iOS Safari, _et al_.) from zooming in on HTML form elements when a `<select>` drop-down is tapped, add `font-size` to the selector rule:
+Mobil tarayıcılar, HTML form elementlerine odaklandığınızda, bu elementleri size yakınlaştırırlar. Bunu engellemek için form elementlerinizin `font-size` boş bırakmayın, tasarımınıza uygun bir font boyutu ayarlayın.
 
 ```css
 input[type="text"],
@@ -596,9 +606,9 @@ textarea {
 <sup>[Listeye dönün](#table-of-contents)</sup>
 
 
-### Use Pointer Events to Control Mouse Events
+### Mouse aksiyonlarını kontrol etmek için pointer-events özelliğini kullanın
 
-[Pointer events](https://developer.mozilla.org/en-US/docs/Web/CSS/pointer-events) allow you to specify how the mouse interacts with the element it's touching. To disable the default pointer event on a button, for instance:
+[pointer-events özelliği](https://developer.mozilla.org/en-US/docs/Web/CSS/pointer-events) dokunmatik ekranlarda mouse aksiyonlarını yönetebilmenize yarar. Örneğin, disabled durumdaki bir butonun dokunmatik ekranlarda da disabled hale getirmek için aşağıdaki örneği kullanabilirsiniz.
 
 ```css
 .button-disabled {
@@ -607,14 +617,14 @@ textarea {
 }
 ```
 
-It's that simple.
+Oldukça basit.
 
 <sup>[Listeye dönün](#table-of-contents)</sup>
 
 
-### Set `display: none` on Line Breaks Used as Spacing
+### Fazla satır boşluklarını gizleyin
 
-As [Harry Roberts pointed out](https://twitter.com/csswizardry/status/1170835532584235008), this can help prevent CMS users from using extra line breaks for spacing:
+[Harry Roberts'ın belirttiği gibi](https://twitter.com/csswizardry/status/1170835532584235008), bu ipucu CMS kullanıcıları için ekstra satır boşluklarından kurtularak daha düzgün bir metin görünümüne ulaşmasını sağlar.
 
 ```css
 br + br {
@@ -625,14 +635,14 @@ br + br {
 <sup>[Listeye dönün](#table-of-contents)</sup>
 
 
-## Support
+## Tarayıcı Desteği
 
-Current versions of Chrome, Firefox, Safari, Opera, Edge, and IE11.
+Bu ipuçları Chrome, Firefox, Safari, Opera, Edge, and IE11 tarayıcılarının güncel versiyonlarında çalışır durumdadır.
 
 <sup>[Listeye dönün](#table-of-contents)</sup>
 
 
-## Translations
+## Çevirilier
 
 * [简体中文](https://github.com/AllThingsSmitty/css-protips/tree/master/translations/zh-CN)
 * [正體中文](https://github.com/AllThingsSmitty/css-protips/tree/master/translations/zh-TW)
@@ -649,5 +659,6 @@ Current versions of Chrome, Firefox, Safari, Opera, Edge, and IE11.
 * [Português do Europe](https://github.com/AllThingsSmitty/css-protips/tree/master/translations/pt-PT)
 * [Русский](https://github.com/AllThingsSmitty/css-protips/tree/master/translations/ru-RU)
 * [Tiếng Việt](https://github.com/AllThingsSmitty/css-protips/tree/master/translations/vn-VN)
+* [Türkçe](https://github.com/AllThingsSmitty/css-protips/tree/master/translations/tr-TR)
 
 <sup>[Listeye dönün](#table-of-contents)</sup>
