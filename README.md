@@ -44,6 +44,7 @@ A collection of tips to help take your CSS skills pro.
 1. [Set `font-size` on Form Elements for a Better Mobile Experience](#set-font-size-on-form-elements-for-a-better-mobile-experience)
 1. [Use Pointer Events to Control Mouse Events](#use-pointer-events-to-control-mouse-events)
 1. [Set `display: none` on Line Breaks Used as Spacing](#set-display-none-on-line-breaks-used-as-spacing)
+1. [Set `text-decoration: none` to Remove Default Underline from Hyperlinks](#set-textDecoration-none-to-remove-underline-from-hyperlinks)
 
 
 ### Use a CSS Reset
@@ -621,6 +622,20 @@ br + br {
 
 <sup>[back to table of contents](#table-of-contents)</sup>
 
+
+### Set `text-decoration: none` to Remove Underline from Hyperlinks
+
+Set `text-decoration: none` and `background-color: transparent` on `<a href=""></a>` tags to remove underline and add customized color to any hyperlink respectively:
+
+```css
+a:link {
+  color: #ffffff;
+  background-color: transparent;
+  text-decoration: none;
+}
+```
+
+<sup>[back to table of contents](#table-of-contents)</sup>
 
 ## Support
 
