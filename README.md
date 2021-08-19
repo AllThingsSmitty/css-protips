@@ -44,7 +44,7 @@ A collection of tips to help take your CSS skills pro.
 1. [Set `font-size` on Form Elements for a Better Mobile Experience](#set-font-size-on-form-elements-for-a-better-mobile-experience)
 1. [Use Pointer Events to Control Mouse Events](#use-pointer-events-to-control-mouse-events)
 1. [Set `display: none` on Line Breaks Used as Spacing](#set-display-none-on-line-breaks-used-as-spacing)
-1. [Avoid the `!important` tag](#Avoid the !important tag)
+1. [Avoid the `!important` tag](#avoid-the-important-tag)
 
 
 ### Use a CSS Reset
