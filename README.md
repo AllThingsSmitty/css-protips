@@ -44,6 +44,7 @@ A collection of tips to help take your CSS skills pro.
 1. [Set `font-size` on Form Elements for a Better Mobile Experience](#set-font-size-on-form-elements-for-a-better-mobile-experience)
 1. [Use Pointer Events to Control Mouse Events](#use-pointer-events-to-control-mouse-events)
 1. [Set `display: none` on Line Breaks Used as Spacing](#set-display-none-on-line-breaks-used-as-spacing)
+1. [Avoid the `!important` tag](#Avoid the !important tag)
 
 
 ### Use a CSS Reset
@@ -618,6 +619,19 @@ br + br {
   display: none;
 }
 ```
+
+### Avoid the `!important` tag
+
+OK, so your CSS wasn't working as was supposed to, and you made it work by applying the important tag:
+```css
+!important
+```
+What happens next? The !important tag has the highest specificity of all CSS selectors.
+
+You're basically saying to the browser to apply that specific rule with the !important tag always and under any circumstances. This is not good because CSS rules can differ from one selector to another, from parent selector to child.
+
+The only way to override an important tag is to use another important tag. And this leads to using more and more important tags. Trust me, in the near future your project code will be full of !important tags, which makes your CSS code much harder to maintain. So try not to use it.
+
 
 <sup>[back to table of contents](#table-of-contents)</sup>
 
