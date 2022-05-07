@@ -44,6 +44,7 @@ A collection of tips to help take your CSS skills pro.
 1. [Set `font-size` on Form Elements for a Better Mobile Experience](#set-font-size-on-form-elements-for-a-better-mobile-experience)
 1. [Use Pointer Events to Control Mouse Events](#use-pointer-events-to-control-mouse-events)
 1. [Set `display: none` on Line Breaks Used as Spacing](#set-display-none-on-line-breaks-used-as-spacing)
+1. [Detect Whether the User Prefers Light Theme or Dark Theme](#detect-whether-the-user-prefers-light-theme-or-dark-theme)
 
 
 ### Use a CSS Reset
@@ -616,6 +617,32 @@ As [Harry Roberts pointed out](https://twitter.com/csswizardry/status/1170835532
 ```css
 br + br {
   display: none;
+}
+```
+
+<sup>[back to table of contents](#table-of-contents)</sup>
+
+
+### Detect Whether the User Prefers Light Theme or Dark Theme
+
+With The `prefers-color-scheme` Media Feature You Can Detect What Color Sheme Does the User Prefer
+
+It Checks if the User Has Their System Settings Set To Light Mode or Dark Mode
+
+```css
+/* These Styles Will Apply if User Has Set Their System Settings to Dark Mode */
+@media (prefers-color-scheme: dark) {
+  .element {
+    color: #fff;
+    background-color: #232323;
+  }
+}
+/* These Styles Will Apply if User Has Set Their System Settings to Light Mode */
+@media (prefers-color-scheme: light) {
+  .element {
+    color: #232323;
+    background-color: #fff;
+  }
 }
 ```
 
