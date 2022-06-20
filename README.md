@@ -44,6 +44,7 @@ A collection of tips to help take your CSS skills pro.
 1. [Set `font-size` on Form Elements for a Better Mobile Experience](#set-font-size-on-form-elements-for-a-better-mobile-experience)
 1. [Use Pointer Events to Control Mouse Events](#use-pointer-events-to-control-mouse-events)
 1. [Set `display: none` on Line Breaks Used as Spacing](#set-display-none-on-line-breaks-used-as-spacing)
+1. [Use `:empty` to Hide Empty HTML Elements](#use-empty-to-hide-empty-html-elements)
 
 
 ### Use a CSS Reset
@@ -622,6 +623,21 @@ br + br {
 <sup>[back to table of contents](#table-of-contents)</sup>
 
 
+### Use `:empty` to Hide Empty HTML Elements
+
+If you have HTML elements that are empty, i.e., the content has yet to be set either by a CMS or dynamically injected (e.g., `<p class="error-message"></p>`) and it's creating unwanted space on your layout, use the `:empty` pseudo-class to hide the element on the layout. 
+
+```css
+:empty {
+  display: none;
+}
+```
+
+**Note:** Keep in mind that elements with whitespace aren't considered empty, e.g., `<p class="error-message"> </p>`.
+
+<sup>[back to table of contents](#table-of-contents)</sup>
+
+
 ## Support
 
 Current versions of Chrome, Firefox, Safari, Opera, Edge, and IE11.
@@ -630,6 +646,8 @@ Current versions of Chrome, Firefox, Safari, Opera, Edge, and IE11.
 
 
 ## Translations
+
+**Note:** I've had less time available to maintain the growing list of translated tips; adding a new tip requires including it with over a dozen translations. For that reason, translated README files may not include all the tips listed on the main README file.
 
 * [简体中文](https://github.com/AllThingsSmitty/css-protips/tree/master/translations/zh-CN)
 * [正體中文](https://github.com/AllThingsSmitty/css-protips/tree/master/translations/zh-TW)
