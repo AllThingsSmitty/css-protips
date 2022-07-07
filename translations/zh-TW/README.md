@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://rawgit.com/AllThingsSmitty/css-protips/master/media/logo.svg" alt="light bulb icon">
+  <img src="https://rawgit.com/AllThingsSmitty/css-protips/master/assets/img/bulb.svg" alt="light bulb icon">
 </p>
 
 # CSS 專家密技 [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome)
