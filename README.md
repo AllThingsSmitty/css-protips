@@ -640,7 +640,7 @@ If you have HTML elements that are empty, i.e., the content has yet to be set ei
 
 
 
-### Apply `gradient color` to a text
+### Apply a `gradient color` to a text
 
 Gradient colors can be used with texts and not just as a background. It is important to note that the gradient effect is seen when a minimum of two colors is used.
 
