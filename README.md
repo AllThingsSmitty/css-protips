@@ -45,7 +45,7 @@ A collection of tips to help take your CSS skills pro.
 1. [Use Pointer Events to Control Mouse Events](#use-pointer-events-to-control-mouse-events)
 1. [Set `display: none` on Line Breaks Used as Spacing](#set-display-none-on-line-breaks-used-as-spacing)
 1. [Use `:empty` to Hide Empty HTML Elements](#use-empty-to-hide-empty-html-elements)
-1. [Apply a `gradient color` to a text](#apply-a-gradient-color-to-a-text)
+1. [Add a `gradient color` to text](#add-a-gradient-color-to-text)
 
 
 ### Use a CSS Reset
@@ -640,7 +640,7 @@ If you have HTML elements that are empty, i.e., the content has yet to be set ei
 
 
 
-### Apply a `gradient color` to a text
+### Add a `gradient color` to text
 
 Multiple colors can be added to a text in form of a gradient with the use of `background`, `-webkit-background-clip` and `-webkit-text-fill-color`.
 
