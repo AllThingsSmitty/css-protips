@@ -642,11 +642,13 @@ If you have HTML elements that are empty, i.e., the content has yet to be set ei
 
 ### Apply a `gradient color` to a text
 
-Gradient colors can be used with texts and not just as a background. It is important to note that the gradient effect is seen when a minimum of two colors is used.
+Multiple colors can be added to a text in form of a gradient with the use of `background`, `-webkit-background-clip` and `-webkit-text-fill-color`.
+
+**Note:** It is important to note that the gradient effect is seen only when a minimum of two colors are used. You can add as many colors as you like.
 
 ```css
-.gradient-text{
-   background: -webkit-linear-gradient(135deg, #118a2b, #ff0000, #112b8a);
+.gradient-text {
+   background: -webkit-linear-gradient(45deg, #112b8a, #ff0000);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
