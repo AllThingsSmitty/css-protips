@@ -607,6 +607,17 @@ textarea {
 
 It's that simple.
 
+It can be extended to use *disabled* flag
+
+```css
+button:disabled,
+button[disabled] {
+  opacity: .5;
+  pointer-events: none;
+}
+```
+
+
 <sup>[back to table of contents](#table-of-contents)</sup>
 
 
