@@ -599,7 +599,7 @@ textarea {
 [Eventi puntatore](https://developer.mozilla.org/en-US/docs/Web/CSS/pointer-events) consentono di specificare come il mouse interagisce con l'elemento che sta toccando. Per disabilitare l'evento puntatore predefinito su un pulsante, ad esempio:
 
 ```css
-.button-disabled {
+button:disabled {
   opacity: .5;
   pointer-events: none;
 }

@@ -583,7 +583,7 @@ textarea {
 [指標事件](https://developer.mozilla.org/en-US/docs/Web/CSS/pointer-events)允許您指定滑鼠如何與其觸控的元素進行互動。 要停用按鈕上的預設指標事件，例如：
 
 ```css
-.button-disabled {
+button:disabled {
   opacity: .5;
   pointer-events: none;
 }

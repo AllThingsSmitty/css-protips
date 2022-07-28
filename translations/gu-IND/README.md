@@ -597,7 +597,7 @@ textarea {
 [પોઇન્ટર ઇવેન્ટ્સ](https://developer.mozilla.org/en-US/docs/Web/CSS/pointer-events) તમને સ્પષ્ટ કરવા માટે પરવાનગી આપે છે કે માઉસ કેવી રીતે તૃપ્તિ સાથે સંપર્ક કરે છે. બટનો પર ડિફૉલ્ટ પોઇન્ટર ઇવેન્ટને અક્ષમ કરવા માટે, ઉદાહરણ તરીકે:
 
 ```css
-.button-disabled {
+button:disabled {
   opacity: .5;
   pointer-events: none;
 }

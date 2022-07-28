@@ -601,7 +601,7 @@ textarea {
 [指针事件](https://developer.mozilla.org/en-US/docs/Web/CSS/pointer-events)允许您指定鼠标如何与其触摸的元素进行交互。 要禁用按钮上的默认指针事件，例如：
 
 ```css
-.button-disabled {
+button:disabled {
   opacity: .5;
   pointer-events: none;
 }

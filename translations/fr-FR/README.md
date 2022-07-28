@@ -599,7 +599,7 @@ textarea {
 [Les événements de pointeur](https://developer.mozilla.org/en-US/docs/Web/CSS/pointer-events) vous permettent de spécifier comment la souris interagit avec l'élément qu'elle touche. Pour désactiver l'événement de pointeur par défaut sur un bouton, par exemple :
 
 ```css
-.button-disabled {
+button:disabled {
   opacity: .5;
   pointer-events: none;
 }

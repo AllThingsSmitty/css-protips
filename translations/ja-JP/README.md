@@ -652,7 +652,7 @@ textarea {
 [Pointer events](https://developer.mozilla.org/en-US/docs/Web/CSS/pointer-events)では、マウスがタッチしている要素とどのように対話するかを指定することができます。 ボタン上のデフォルトポインタイベントを無効にするには、次のようにします。
 
 ```css
-.button-disabled {
+button:disabled {
   opacity: .5;
   pointer-events: none;
 }

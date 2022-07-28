@@ -597,7 +597,7 @@ textarea {
 [Pointer events](https://developer.mozilla.org/en-US/docs/Web/CSS/pointer-events) umożliwiają określenie sposobu interakcji myszy z elementem, na które kilka. Aby wyłączyć domyślne zdarzenie wskaźnika na przycisku, na przykład:
 
 ```css
-.button-disabled {
+button:disabled {
   opacity: .5;
   pointer-events: none;
 }
