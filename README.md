@@ -420,6 +420,8 @@ a[href^="http"]:empty::before {
 
 That's pretty convenient.
 
+**Note:** This tip may not be ideal for accessibility, specifically screen readers. And copy/paste from the browser doesn't work with CSS-generated content. Proceed with caution.
+
 #### [Demo](http://codepen.io/AllThingsSmitty/pen/zBzXRx)
 
 <sup>[back to table of contents](#table-of-contents)</sup>
