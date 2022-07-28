@@ -613,7 +613,7 @@ textarea {
 [Eventos del puntero](https://developer.mozilla.org/en-US/docs/Web/CSS/pointer-events) le permiten especificar cómo el mouse interactúa con el elemento que está tocando. Para deshabilitar el evento de puntero predeterminado en un botón, por ejemplo:
 
 ```css
-.button-disabled {
+button:disabled {
   opacity: .5;
   pointer-events: none;
 }

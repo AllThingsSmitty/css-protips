@@ -598,7 +598,7 @@ textarea {
 [Γεγονότα ποντικού](https://developer.mozilla.org/en-US/docs/Web/CSS/pointer-events) σου επιτρέπουν να καθορίσεις πώς το ποντίκι αλληλεπιδρά με ένα στοιχείο που ακουμπάει. Για να απενεργοποιήσετε το προκαθορισμένο γεγονός ποντικιου πάνω σε ένα κουμπί, για παράδειγμα:
 
 ```css
-.button-disabled {
+button:disabled {
   opacity: .5;
   pointer-events: none;
 }

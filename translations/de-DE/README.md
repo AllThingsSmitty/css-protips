@@ -599,7 +599,7 @@ textarea {
 [Pointer-Events](https://developer.mozilla.org/en-US/docs/Web/CSS/pointer-events) erlauben es dir zu spezifizieren wie die Maus mit dem Element interagiert sobald sie es berührt. Um beispielsweise das standardgemäß eingestellte Pointer-Event &ndash; beispielsweise bei einer Button-Schaltfläche &ndash; abzuschalten:
 
 ```css
-.button-disabled {
+button:disabled {
   opacity: .5;
   pointer-events: none;
 }

@@ -598,7 +598,7 @@ textarea {
 [Pointer events](https://developer.mozilla.org/en-US/docs/Web/CSS/pointer-events) cho phép bạn chỉ định cách con chuột tương tác với phần tử mà nó chạm vào.  Để tắt sự kiện con trỏ mặc định trên một nút, ví dụ:
 
 ```css
-.button-disabled {
+button:disabled {
   opacity: .5;
   pointer-events: none;
 }

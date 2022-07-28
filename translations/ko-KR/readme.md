@@ -640,7 +640,7 @@ textarea {
 [포인터 이벤트](https://developer.mozilla.org/en-US/docs/Web/CSS/pointer-events)는 터치 시 마우스 동작을 특정할 수 있도록 도와줍니다. 버튼의 디폴트 포인터를 무효화 하려면 다음 방법을 따릅니다. 
 
 ```css
-.button-disabled {
+button:disabled {
   opacity: .5;
   pointer-events: none;
 }

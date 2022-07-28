@@ -598,7 +598,7 @@ textarea {
 [События указателя] (https://developer.mozilla.org/en-US/docs/Web/CSS/pointer-events) позволяют указать, как мышь взаимодействует с элементом, который он трогает. Чтобы отключить событие указателя по умолчанию на кнопке, например:
 
 ```css
-.button-disabled {
+button:disabled {
   opacity: .5;
   pointer-events: none;
 }
