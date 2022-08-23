@@ -240,7 +240,7 @@ body {
 }
 ```
 
-...還有CSS Grid:
+...还有CSS Grid:
 
 ```css
 body {
