@@ -201,7 +201,7 @@ This way textual elements can inherit from `body` easily.
 
 ### Set `:focus` for Form Elements
 
-Sighted keyboard users rely on focus to determine where keyboard events go in the page. Make focus for form elements stand out and consistent then a browser's default implementation:
+Sighted keyboard users rely on focus to determine where keyboard events go in the page. Make focus for form elements stand out and consistent than a browser's default implementation:
 
 ```css
 a:focus,
