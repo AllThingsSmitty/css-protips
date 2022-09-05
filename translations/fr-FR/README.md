@@ -269,7 +269,7 @@ ul > li:not(:last-child)::after {
 }
 ```
 
-Utilisez la pseudo-classe `:not()` and aucune virgule ne sera ajoutée au dernier élément.
+Utilisez la pseudo-classe `:not()` et aucune virgule ne sera ajoutée au dernier élément.
 
 **Remarque:** Il est possible que cette astuce ne soit pas idéale pour l'accessibilité, en particulier pour les lecteurs d'écran. Et copier / coller à partir du navigateur ne fonctionne pas avec le contenu généré par CSS. Procéder avec prudence.
 
