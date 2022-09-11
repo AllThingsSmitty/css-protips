@@ -167,7 +167,7 @@ You can check if a font is installed locally before fetching it remotely, which 
     /* Full name */
     local("Dank Mono"),
     /* Postscript name */
-    local("Dank Mono"),
+    local("Dank-Mono"),
     /* Otherwise, download it! */
     url("//...a.server/fonts/DankMono.woff");
 }
