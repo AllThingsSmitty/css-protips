@@ -165,7 +165,7 @@ Puoi verificare se un font è installato localmente prima di recuperarlo da remo
     /* Full name */
     local("Dank Mono"),
     /* Postscript name */
-    local("Dank Mono"),
+    local("Dank-Mono"),
     /* Otherwise, download it! */
     url("//...a.server/fonts/DankMono.woff");
 }

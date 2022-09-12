@@ -167,7 +167,7 @@ Du kan kontrollere, om en skrifttype er installeret lokalt, før du henter den e
     /* Full name */
     local("Dank Mono"),
     /* Postscript name */
-    local("Dank Mono"),
+    local("Dank-Mono"),
     /* Otherwise, download it! */
     url("//...a.server/fonts/DankMono.woff");
 }
