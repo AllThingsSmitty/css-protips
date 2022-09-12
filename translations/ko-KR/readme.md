@@ -180,7 +180,7 @@ CSS 선택자는 사람이 설명하는 방식 그대로 경계를 정의합니�
     /* 풀네임 */
     local("Dank Mono"),
     /* 포스트 스크립트명 */
-    local("Dank Mono"),
+    local("Dank-Mono"),
     /* 아니면 다운로드도 가능! */
     url("//...a.server/fonts/DankMono.woff");
 }

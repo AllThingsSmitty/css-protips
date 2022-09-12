@@ -165,7 +165,7 @@ CSS પસંદગીકાર સીમાને વ્યાખ્યાય�
     /* Full name */
     local("Dank Mono"),
     /* Postscript name */
-    local("Dank Mono"),
+    local("Dank-Mono"),
     /* Otherwise, download it! */
     url("//...a.server/fonts/DankMono.woff");
 }

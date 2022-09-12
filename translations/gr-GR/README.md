@@ -165,7 +165,7 @@ Sie können überprüfen, ob eine Schriftart lokal installiert ist, bevor Sie si
     /* Full name */
     local("Dank Mono"),
     /* Postscript name */
-    local("Dank Mono"),
+    local("Dank-Mono"),
     /* Otherwise, download it! */
     url("//...a.server/fonts/DankMono.woff");
 }

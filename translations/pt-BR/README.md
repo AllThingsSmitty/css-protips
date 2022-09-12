@@ -164,7 +164,7 @@ Você pode verificar se uma fonte está instalada localmente antes de buscá-la 
     /* Full name */
     local("Dank Mono"),
     /* Postscript name */
-    local("Dank Mono"),
+    local("Dank-Mono"),
     /* Otherwise, download it! */
     url("//...a.server/fonts/DankMono.woff");
 }

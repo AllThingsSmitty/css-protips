@@ -182,7 +182,7 @@ CSSセレクターは、境界線を人間が表現する方法で定義しま�
     /* Full name */
     local("Dank Mono"),
     /* Postscript name */
-    local("Dank Mono"),
+    local("Dank-Mono"),
     /* Otherwise, download it! */
     url("//...a.server/fonts/DankMono.woff");
 }
