@@ -636,6 +636,11 @@ If you have HTML elements that are empty, i.e., the content has yet to be set ei
 }
 ```
 
+**Note:** Keep in mind that elements with whitespace aren't considered empty, e.g., `<p class="error-message"> </p>`.
+
+<sup>[back to table of contents](#table-of-contents)</sup>
+
+
 ### Use `padding-inline` To Create Padding Left and Right
 
 In cases where padding top and bottom are not important and and you only want add padding left and right, use `padding-inline`. The same goes with margin. You can use `margin-inline` to create spacing around an element in an inline direction. 
@@ -646,8 +651,6 @@ body {
   margin-inline: auto; 
 }
 ```
-
-**Note:** Keep in mind that elements with whitespace aren't considered empty, e.g., `<p class="error-message"> </p>`.
 
 <sup>[back to table of contents](#table-of-contents)</sup>
 
