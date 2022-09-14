@@ -643,7 +643,7 @@ If you have HTML elements that are empty, i.e., the content has yet to be set ei
 
 ### Use `padding-inline` To Create Padding Left and Right
 
-When padding top and bottom are not important, and you only want to add padding left and right, use `padding-inline`. The same goes with margin. You can use `margin-inline` to create margin left and right. 
+When padding top and bottom are not important, and you only want to add padding left and right, use `padding-inline`. The same goes with margin. You can use `margin-inline` to add margin to the left and right of an element. 
 
 ```css
 body {
