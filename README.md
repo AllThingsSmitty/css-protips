@@ -45,6 +45,7 @@ A collection of tips to help take your CSS skills pro.
 1. [Use Pointer Events to Control Mouse Events](#use-pointer-events-to-control-mouse-events)
 1. [Set `display: none` on Line Breaks Used as Spacing](#set-display-none-on-line-breaks-used-as-spacing)
 1. [Use `:empty` to Hide Empty HTML Elements](#use-empty-to-hide-empty-html-elements)
+1. [Use `padding-inline` To Create Padding Left and Right](#use-padding-inline-to-create-padding-left-and-right)
 
 
 ### Use a CSS Reset
@@ -636,6 +637,20 @@ If you have HTML elements that are empty, i.e., the content has yet to be set ei
 ```
 
 **Note:** Keep in mind that elements with whitespace aren't considered empty, e.g., `<p class="error-message"> </p>`.
+
+<sup>[back to table of contents](#table-of-contents)</sup>
+
+
+### Use `padding-inline` To Create Padding Left and Right
+
+When padding top and bottom are not important, and you only want to add padding left and right, use `padding-inline`. The same goes with margin. You can use `margin-inline` to add margin to the left and right of an element. 
+
+```css
+body {
+  padding-inline: 2rem; 
+  margin-inline: auto; 
+}
+```
 
 <sup>[back to table of contents](#table-of-contents)</sup>
 
