@@ -641,3 +641,5 @@ br + br {
 ## Поддержка
 
 Текущие версии Chrome, Firefox, Safari, Opera, Edge, и IE11.
+
+<sup>[вернуться к оглавлению](#table-of-contents)</sup>
