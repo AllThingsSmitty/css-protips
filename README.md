@@ -41,7 +41,7 @@ A collection of tips to help take your CSS skills pro.
 1. [Use `rem` for Global Sizing; Use `em` for Local Sizing](#use-rem-for-global-sizing-use-em-for-local-sizing)
 1. [Hide Autoplay Videos That Aren't Muted](#hide-autoplay-videos-that-arent-muted)
 1. [Use `:root` for Flexible Type](#use-root-for-flexible-type)
-1. [Set `font-size` on Form Elements for a Better Mobile Experience](#set-font-size-on-form-elements-for-a-better-mobile-experience)
+1. [Inherit `font` on Form Elements for a Better Mobile Experience](#inherit-font-on-form-elements-for-a-better-mobile-experience)
 1. [Use Pointer Events to Control Mouse Events](#use-pointer-events-to-control-mouse-events)
 1. [Set `display: none` on Line Breaks Used as Spacing](#set-display-none-on-line-breaks-used-as-spacing)
 1. [Use `:empty` to Hide Empty HTML Elements](#use-empty-to-hide-empty-html-elements)
@@ -578,20 +578,20 @@ body {
 <sup>[back to table of contents](#table-of-contents)</sup>
 
 
-### Set `font-size` on Form Elements for a Better Mobile Experience
+### Inherit `font` on Form Elements for a Better Mobile Experience
 
-To avoid mobile browsers (iOS Safari, _et al_.) from zooming in on HTML form elements when a `<select>` drop-down is tapped, add `font-size` to the selector rule:
+Some form controls do not inherit typographical styles by default. To avoid mobile browsers (iOS Safari, _et al_.) from zooming in on HTML form elements when a `<select>` drop-down is tapped, and to mitigate styling inconsistencies across browsers, set the `font` rule to `inherit`:
 
 ```css
-input[type="text"],
-input[type="number"],
+input,
+button,
 select,
 textarea {
-  font-size: 16px;
+  font: inherit;
 }
 ```
 
-:dancer:
+Learn more in [MDN's guide to styling web forms](https://developer.mozilla.org/en-US/docs/Learn/Forms/Styling_web_forms).
 
 <sup>[back to table of contents](#table-of-contents)</sup>
 
