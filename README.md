@@ -18,6 +18,9 @@ A collection of tips to help take your CSS skills pro.
 
 
 ## Protips
+1. [Use a CSS Reset](#use-a-css-reset)
+1. [Use a CSS Reset](#use-a-css-reset)
+1. [Use a CSS Reset](#use-a-css-reset)
 
 1. [Use a CSS Reset](#use-a-css-reset)
 1. [Inherit `box-sizing`](#inherit-box-sizing)
