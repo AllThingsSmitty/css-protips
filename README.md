@@ -609,7 +609,7 @@ If you have HTML elements that are empty, i.e., the content has yet to be set ei
 
 ### Use `:valid` or `:invalid` CSS Selector to validate HTML Input Elements
 
-If you want to validate HTML input element without using javascript, you can use `:valid` or `:invalid` css selector. The `:valid` and `:invalid` CSS selectors are used to style HTML input elements based on their validity.
+If you want to validate HTML input element without using javascript, you can use `:valid` or `:invalid` CSS selector. The `:valid` and `:invalid` CSS selectors are used to style HTML input elements based on their validity.
 When an input element is **valid**, the `:valid` selector can be used to apply a specific style to it. Conversely, when it is **invalid**, the `:invalid` selector can be used to apply a different style to it.
 
 **Examples**
