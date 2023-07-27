@@ -45,6 +45,7 @@ A collection of tips to help take your CSS skills pro.
 1. [Use Pointer Events to Control Mouse Events](#use-pointer-events-to-control-mouse-events)
 1. [Set `display: none` on Line Breaks Used as Spacing](#set-display-none-on-line-breaks-used-as-spacing)
 1. [Use `:empty` to Hide Empty HTML Elements](#use-empty-to-hide-empty-html-elements)
+1. [Slay Specificity With `:is` Selector](#slay-specificity-with-is-selector)
 
 
 ### Use a CSS Reset
@@ -627,7 +628,7 @@ br + br {
 
 ### Use `:empty` to Hide Empty HTML Elements
 
-If you have HTML elements that are empty, i.e., the content has yet to be set either by a CMS or dynamically injected (e.g., `<p class="error-message"></p>`) and it's creating unwanted space on your layout, use the `:empty` pseudo-class to hide the element on the layout. 
+If you have HTML elements that are empty, i.e., the content has yet to be set either by a CMS or dynamically injected (e.g., `<p class="error-message"></p>`) and it's creating unwanted space on your layout, use the `:empty` pseudo-class to hide the element on the layout.
 
 ```css
 :empty {
@@ -639,6 +640,35 @@ If you have HTML elements that are empty, i.e., the content has yet to be set ei
 
 <sup>[back to table of contents](#table-of-contents)</sup>
 
+
+### Slay Specificity With `:is` Selector
+
+:is() can be used in CSS rules to target multiple elements at once, reducing redundancy and enhancing code readability.
+
+```css
+:is(h1 , h2 , h2) {
+  color: blue;
+}
+```
+
+It can extremely useful when writing complex selectors.
+
+```css
+:is(section, article, aside, nav) :is(h1, h2, h3, h4, h5, h6) {
+  color: #BADA55;
+}
+
+/* ... which would be the equivalent of: */
+section h1, section h2, section h3, section h4, section h5, section h6,
+article h1, article h2, article h3, article h4, article h5, article h6,
+aside h1, aside h2, aside h3, aside h4, aside h5, aside h6,
+nav h1, nav h2, nav h3, nav h4, nav h5, nav h6 {
+  color: #BADA55;
+}
+```
+Learn more at [CSS Tricks](https://css-tricks.com/almanac/selectors/i/is/)
+
+<sup>[back to table of contents](#table-of-contents)</sup>
 
 ## Support
 
