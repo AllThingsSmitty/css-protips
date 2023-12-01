@@ -601,22 +601,17 @@ If you have HTML elements that are empty, i.e., the content has yet to be set ei
   display: none;
 }
 ```
-
 ### Use `margin-inline` to add margin to both right and left of an html element,moreover when you want to set margin to top and bottom with same value use the shorthand `margin-block`
-
 If you have an HTML element you want to set an equal margin to both right and left, a good use-case is to set a (`margin-inline`) to it, same thing applies to an equal margin on top and bottom in that case you only need to set a (`margin-block`)
-
 ```css
 div {
   margin-inline: auto;
   margin-block: 2em;
 }
 ```
-
 **Note:** Keep in mind that elements with whitespace aren't considered empty, e.g., `<p class="error-message"> </p>`.
 
 <sup>[back to table of contents](#table-of-contents)</sup>
-
 ## Support
 
 Current versions of Chrome, Firefox, Safari, Opera, Edge, and IE11.
