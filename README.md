@@ -251,7 +251,38 @@ body {
 }
 ```
 
+...and Position and transform (for absolute positioning):
 
+```css
+.container {
+  position: relative;
+  height: 100vh; /* Adjust as needed */
+}
+
+.centered-element {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* Your element styles */
+}
+
+```
+...and Table-cell:
+
+```css
+.container {
+  display: table-cell;
+  vertical-align: middle;
+  height: 100vh; /* Adjust as needed */
+}
+
+.centered-element {
+  /* Your element styles */
+}
+
+
+```
 Want to center something else? Vertically, horizontally...anything, anytime, anywhere? CSS-Tricks has [a nice write-up](https://css-tricks.com/centering-css-complete-guide/) on doing all of that.
 
 **Note:** Watch for some [buggy behavior](https://github.com/philipwalton/flexbugs#3-min-height-on-a-flex-container-wont-apply-to-its-flex-items) with flexbox in IE11.
