@@ -35,6 +35,7 @@ A collection of tips to help take your CSS skills pro.
 1. [Equal-Width Table Cells](#equal-width-table-cells)
 1. [Get Rid of Margin Hacks With Flexbox](#get-rid-of-margin-hacks-with-flexbox)
 1. [Use Attribute Selectors with Empty Links](#use-attribute-selectors-with-empty-links)
+1. [Control Specificity Better With `:is()`](#control-specificity-better-with-is)
 1. [Style "Default" Links](#style-default-links)
 1. [Intrinsic Ratio Boxes](#intrinsic-ratio-boxes)
 1. [Style Broken Images](#style-broken-images)
@@ -45,7 +46,6 @@ A collection of tips to help take your CSS skills pro.
 1. [Use Pointer Events to Control Mouse Events](#use-pointer-events-to-control-mouse-events)
 1. [Set `display: none` on Line Breaks Used as Spacing](#set-display-none-on-line-breaks-used-as-spacing)
 1. [Use `:empty` to Hide Empty HTML Elements](#use-empty-to-hide-empty-html-elements)
-1. [Control Specificity Better With `:is()`](#control-specificity-better-with-is)
 
 
 ### Use a CSS Reset
@@ -425,6 +425,34 @@ That's pretty convenient.
 <sup>[back to table of contents](#table-of-contents)</sup>
 
 
+### Control Specificity Better with `:is()`
+
+The `:is()` pseudo-class is used to target multiple selectors at onece, reducing redundancy and enhancing code readability. This is incredibly useful for writing large selectors in a more compact form.
+
+```css
+:is(section, article, aside, nav) :is(h1, h2, h3, h4, h5, h6) {
+  color: green;
+}
+```
+
+The above ruleset is equivalent to the following number selector rules...
+
+```css
+section h1, section h2, section h3, section h4, section h5, section h6,
+article h1, article h2, article h3, article h4, article h5, article h6,
+aside h1, aside h2, aside h3, aside h4, aside h5, aside h6,
+nav h1, nav h2, nav h3, nav h4, nav h5, nav h6 {
+  color: green;
+}
+```
+
+#### [Demo](https://codepen.io/AllThingsSmitty/pen/rNRVxdx)
+
+**Note:** The `:is()` pseudo-class isn't supported in IE11.
+
+<sup>[back to table of contents](#table-of-contents)</sup>
+
+
 ### Style "Default" Links
 
 Add a style for "default" links:
@@ -634,34 +662,6 @@ If you have HTML elements that are empty, i.e., the content has yet to be set ei
 ```
 
 **Note:** Keep in mind that elements with whitespace aren't considered empty, e.g., `<p class="error-message"> </p>`.
-
-<sup>[back to table of contents](#table-of-contents)</sup>
-
-
-### Control Specificity Better with `:is()`
-
-The `:is()` pseudo-class is used to target multiple selectors at onece, reducing redundancy and enhancing code readability. This is incredibly useful for writing large selectors in a more compact form.
-
-```css
-:is(section, article, aside, nav) :is(h1, h2, h3, h4, h5, h6) {
-  color: green;
-}
-```
-
-The above ruleset is equivalent to the following number selector rules...
-
-```css
-section h1, section h2, section h3, section h4, section h5, section h6,
-article h1, article h2, article h3, article h4, article h5, article h6,
-aside h1, aside h2, aside h3, aside h4, aside h5, aside h6,
-nav h1, nav h2, nav h3, nav h4, nav h5, nav h6 {
-  color: green;
-}
-```
-
-#### [Demo](https://codepen.io/AllThingsSmitty/pen/rNRVxdx)
-
-**Note:** The `:is()` pseudo-class isn't supported in IE11.
 
 <sup>[back to table of contents](#table-of-contents)</sup>
 
