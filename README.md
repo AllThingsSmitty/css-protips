@@ -45,6 +45,7 @@ A collection of tips to help take your CSS skills pro.
 1. [Use Pointer Events to Control Mouse Events](#use-pointer-events-to-control-mouse-events)
 1. [Set `display: none` on Line Breaks Used as Spacing](#set-display-none-on-line-breaks-used-as-spacing)
 1. [Use `:empty` to Hide Empty HTML Elements](#use-empty-to-hide-empty-html-elements)
+1. [Control Specificity Better With `:is()`](#control-specificity-better-with-is)
 
 
 ### Use a CSS Reset
@@ -63,7 +64,7 @@ CSS resets help enforce style consistency across different browsers with a clean
 
 Now elements will be stripped of margins and padding, and `box-sizing` lets you manage layouts with the CSS box model.
 
-#### [Demo](http://codepen.io/AllThingsSmitty/pen/kkrkLL)
+#### [Demo](https://codepen.io/AllThingsSmitty/pen/kkrkLL)
 
 **Note:** If you follow the [Inherit `box-sizing`](#inherit-box-sizing) tip below you might opt to not include the `box-sizing` property in  your CSS reset.
 
@@ -151,7 +152,7 @@ Instead of putting on the border...
 
 Here, the CSS selector is read as a human would describe it.
 
-#### [Demo](http://codepen.io/AllThingsSmitty/pen/LkymvO)
+#### [Demo](https://codepen.io/AllThingsSmitty/pen/LkymvO)
 
 <sup>[back to table of contents](#table-of-contents)</sup>
 
@@ -194,7 +195,7 @@ body {
 
 This way textual elements can inherit from `body` easily.
 
-#### [Demo](http://codepen.io/AllThingsSmitty/pen/VjbdYd)
+#### [Demo](https://codepen.io/AllThingsSmitty/pen/VjbdYd)
 
 <sup>[back to table of contents](#table-of-contents)</sup>
 
@@ -232,10 +233,7 @@ body {
 }
 
 body {
-  -webkit-align-items: center;
-  -ms-flex-align: center;
   align-items: center;
-  display: -webkit-flex;
   display: flex;
 }
 ```
@@ -256,7 +254,7 @@ Want to center something else? Vertically, horizontally...anything, anytime, any
 
 **Note:** Watch for some [buggy behavior](https://github.com/philipwalton/flexbugs#3-min-height-on-a-flex-container-wont-apply-to-its-flex-items) with flexbox in IE11.
 
-#### [Demo](http://codepen.io/AllThingsSmitty/pen/GqmGqZ)
+#### [Demo](https://codepen.io/AllThingsSmitty/pen/GqmGqZ)
 
 <sup>[back to table of contents](#table-of-contents)</sup>
 
@@ -302,7 +300,7 @@ li:not(:nth-child(-n+3)) {
 }
 ```
 
-#### [Demo](http://codepen.io/AllThingsSmitty/pen/WxjKZp)
+#### [Demo](https://codepen.io/AllThingsSmitty/pen/WxjKZp)
 
 <sup>[back to table of contents](#table-of-contents)</sup>
 
@@ -344,7 +342,7 @@ In this example, all elements in the flow of the document that follow other elem
 
 For more on the "lobotomized owl" selector, read [Heydon Pickering's post](http://alistapart.com/article/axiomatic-css-and-lobotomized-owls) on *A List Apart*.
 
-#### [Demo](http://codepen.io/AllThingsSmitty/pen/grRvWq)
+#### [Demo](https://codepen.io/AllThingsSmitty/pen/grRvWq)
 
 <sup>[back to table of contents](#table-of-contents)</sup>
 
@@ -383,7 +381,7 @@ Tables can be a pain to work with. Try using `table-layout: fixed` to keep cells
 
 Pain-free table layouts.
 
-#### [Demo](http://codepen.io/AllThingsSmitty/pen/jALALm)
+#### [Demo](https://codepen.io/AllThingsSmitty/pen/jALALm)
 
 <sup>[back to table of contents](#table-of-contents)</sup>
 
@@ -422,7 +420,7 @@ That's pretty convenient.
 
 **Note:** This tip may not be ideal for accessibility, specifically screen readers. And copy/paste from the browser doesn't work with CSS-generated content. Proceed with caution.
 
-#### [Demo](http://codepen.io/AllThingsSmitty/pen/zBzXRx)
+#### [Demo](https://codepen.io/AllThingsSmitty/pen/zBzXRx)
 
 <sup>[back to table of contents](#table-of-contents)</sup>
 
@@ -466,7 +464,7 @@ To create a box with an intrinsic ratio, all you need to do is apply top or bott
 
 Using 20% for padding makes the height of the box equal to 20% of its width. No matter the width of the viewport, the child div will keep its aspect ratio (100% / 20% = 5:1).
 
-#### [Demo](http://codepen.io/AllThingsSmitty/pen/jALZvE)
+#### [Demo](https://codepen.io/AllThingsSmitty/pen/jALZvE)
 
 <sup>[back to table of contents](#table-of-contents)</sup>
 
@@ -573,7 +571,7 @@ body {
 }
 ```
 
-#### [Demo](http://codepen.io/AllThingsSmitty/pen/XKgOkR)
+#### [Demo](https://codepen.io/AllThingsSmitty/pen/XKgOkR)
 
 <sup>[back to table of contents](#table-of-contents)</sup>
 
@@ -636,6 +634,34 @@ If you have HTML elements that are empty, i.e., the content has yet to be set ei
 ```
 
 **Note:** Keep in mind that elements with whitespace aren't considered empty, e.g., `<p class="error-message"> </p>`.
+
+<sup>[back to table of contents](#table-of-contents)</sup>
+
+
+### Control Specificity Better with `:is()`
+
+The `:is()` pseudo-class is used to target multiple selectors at onece, reducing redundancy and enhancing code readability. This is incredibly useful for writing large selectors in a more compact form.
+
+```css
+:is(section, article, aside, nav) :is(h1, h2, h3, h4, h5, h6) {
+  color: green;
+}
+```
+
+The above ruleset is equivalent to the following number selector rules...
+
+```css
+section h1, section h2, section h3, section h4, section h5, section h6,
+article h1, article h2, article h3, article h4, article h5, article h6,
+aside h1, aside h2, aside h3, aside h4, aside h5, aside h6,
+nav h1, nav h2, nav h3, nav h4, nav h5, nav h6 {
+  color: green;
+}
+```
+
+#### [Demo](https://codepen.io/AllThingsSmitty/pen/rNRVxdx)
+
+**Note:** The `:is()` pseudo-class isn't supported in IE11.
 
 <sup>[back to table of contents](#table-of-contents)</sup>
 
