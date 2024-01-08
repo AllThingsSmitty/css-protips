@@ -260,7 +260,7 @@ Want to center something else? Vertically, horizontally...anything, anytime, any
 
 ### Use `aspect-ratio` Instead of Height/Width
 
-The `aspect-radio` property allows you to easily size elements and maintain consistent width-to-height ratio. This is incredibly useful in responsive web design to prevent layout shift. Use `object-fit` with it to prevent disrupting the layout if the height/width values of images changes.
+The `aspect-ratio` property allows you to easily size elements and maintain consistent width-to-height ratio. This is incredibly useful in responsive web design to prevent layout shift. Use `object-fit` with it to prevent disrupting the layout if the height/width values of images changes.
 
 ```css
 img {
