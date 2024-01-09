@@ -67,7 +67,8 @@ Now elements will be stripped of margins and padding, and `box-sizing` lets you 
 
 #### [Demo](https://codepen.io/AllThingsSmitty/pen/kkrkLL)
 
-⚠️ **Note:** If you follow the [Inherit `box-sizing`](#inherit-box-sizing) tip below you might opt to not include the `box-sizing` property in  your CSS reset.
+> [!NOTE]
+> If you follow the [Inherit `box-sizing`](#inherit-box-sizing) tip below you might opt to not include the `box-sizing` property in  your CSS reset.
 
 <sup>[back to table of contents](#table-of-contents)</sup>
 
@@ -118,7 +119,8 @@ button {
 }
 ```
 
-⚠️ **Note:** the `all` and `unset` keywords aren't supported in IE11.
+> [!NOTE]
+> The `all` and `unset` keywords aren't supported in IE11.
 
 <sup>[back to table of contents](#table-of-contents)</sup>
 
@@ -253,14 +255,15 @@ Want to center something else? Vertically, horizontally...anything, anytime, any
 
 #### [Demo](https://codepen.io/AllThingsSmitty/pen/GqmGqZ)
 
-⚠️ **Note:** Watch for some [buggy behavior](https://github.com/philipwalton/flexbugs#3-min-height-on-a-flex-container-wont-apply-to-its-flex-items) with flexbox in IE11.
+> [!NOTE]
+> Watch for some [buggy behavior](https://github.com/philipwalton/flexbugs#3-min-height-on-a-flex-container-wont-apply-to-its-flex-items) with flexbox in IE11.
 
 <sup>[back to table of contents](#table-of-contents)</sup>
 
 
 ### Use `aspect-ratio` Instead of Height/Width
 
-The `aspect-radio` property allows you to easily size elements and maintain consistent width-to-height ratio. This is incredibly useful in responsive web design to prevent layout shift. Use `object-fit` with it to prevent disrupting the layout if the height/width values of images changes.
+The `aspect-ratio` property allows you to easily size elements and maintain consistent width-to-height ratio. This is incredibly useful in responsive web design to prevent layout shift. Use `object-fit` with it to prevent disrupting the layout if the height/width values of images changes.
 
 ```css
 img {
@@ -273,7 +276,8 @@ Learn more about the `aspect-ratio` property in this [web.dev post](https://web.
 
 #### [Demo](https://codepen.io/AllThingsSmitty/pen/MWxwoNx/)
 
-⚠️ **Note:** `aspect-ratio` and `object-fit` aren't supported in IE11.
+> [!NOTE]
+> `aspect-ratio` and `object-fit` aren't supported in IE11.
 
 <sup>[back to table of contents](#table-of-contents)</sup>
 
@@ -290,7 +294,8 @@ ul > li:not(:last-child)::after {
 
 Use the `:not()` pseudo-class and no comma will be added to the last item.
 
-⚠️ **Note:** This tip may not be ideal for accessibility, specifically screen readers. And copy/paste from the browser doesn't work with CSS-generated content. Proceed with caution.
+> [!NOTE]
+> This tip may not be ideal for accessibility, specifically screen readers. And copy/paste from the browser doesn't work with CSS-generated content. Proceed with caution.
 
 <sup>[back to table of contents](#table-of-contents)</sup>
 
@@ -336,7 +341,8 @@ There's no reason not to use SVG for icons:
 
 SVG scales well for all resolution types and is supported in all browsers [back to IE9](http://caniuse.com/#search=svg). Ditch your .png, .jpg, or .gif-jif-whatev files.
 
-**Note:** If you have SVG icon-only buttons for sighted users and the SVG fails to load, this will help maintain accessibility:
+> [!NOTE]
+> If you have SVG icon-only buttons for sighted users and the SVG fails to load, this will help maintain accessibility:
 
 ```css
 .no-svg .icon-only::after {
@@ -439,7 +445,8 @@ That's pretty convenient.
 
 #### [Demo](https://codepen.io/AllThingsSmitty/pen/zBzXRx)
 
-⚠️ **Note:** This tip may not be ideal for accessibility, specifically screen readers. And copy/paste from the browser doesn't work with CSS-generated content. Proceed with caution.
+> [!NOTE]
+> This tip may not be ideal for accessibility, specifically screen readers. And copy/paste from the browser doesn't work with CSS-generated content. Proceed with caution.
 
 <sup>[back to table of contents](#table-of-contents)</sup>
 
@@ -467,7 +474,8 @@ nav h1, nav h2, nav h3, nav h4, nav h5, nav h6 {
 
 #### [Demo](https://codepen.io/AllThingsSmitty/pen/rNRVxdx)
 
-⚠️ **Note:** The `:is()` pseudo-class isn't supported in IE11.
+> [!NOTE]
+> The `:is()` pseudo-class isn't supported in IE11.
 
 <sup>[back to table of contents](#table-of-contents)</sup>
 
@@ -680,7 +688,8 @@ If you have HTML elements that are empty, i.e., the content has yet to be set ei
 }
 ```
 
-⚠️ **Note:** Keep in mind that elements with whitespace aren't considered empty, e.g., `<p class="error-message"> </p>`.
+> [!NOTE]
+> Keep in mind that elements with whitespace aren't considered empty, e.g., `<p class="error-message"> </p>`.
 
 <sup>[back to table of contents](#table-of-contents)</sup>
 
@@ -694,7 +703,8 @@ Current versions of Chrome, Firefox, Safari, Opera, Edge, and IE11.
 
 ## Translations
 
-⚠️  **Note:** I've had less time available to maintain the growing list of translated tips; adding a new tip requires including it with over a dozen translations. For that reason, translated README files are likely to not include all the tips listed on the main README file.
+> [!NOTE]
+> I've had less time available to maintain the growing list of translated tips; adding a new tip requires including it with over a dozen translations. For that reason, translated README files are likely to not include all the tips listed on the main README file.
 
 * [简体中文](https://github.com/AllThingsSmitty/css-protips/tree/master/translations/zh-CN)
 * [正體中文](https://github.com/AllThingsSmitty/css-protips/tree/master/translations/zh-TW)
