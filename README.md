@@ -67,7 +67,7 @@ Now elements will be stripped of margins and padding, and `box-sizing` lets you 
 
 #### [Demo](https://codepen.io/AllThingsSmitty/pen/kkrkLL)
 
-> [!NOTE]
+> [!TIP]
 > If you follow the [Inherit `box-sizing`](#inherit-box-sizing) tip below you might opt to not include the `box-sizing` property in  your CSS reset.
 
 <sup>[back to table of contents](#table-of-contents)</sup>
@@ -251,7 +251,8 @@ body {
 }
 ```
 
-Want to center something else? Vertically, horizontally...anything, anytime, anywhere? CSS-Tricks has [a nice write-up](https://css-tricks.com/centering-css-complete-guide/) on doing all of that.
+> [!TIP]
+> Want to center something else? Vertically, horizontally...anything, anytime, anywhere? CSS-Tricks has [a nice write-up](https://css-tricks.com/centering-css-complete-guide/) on doing all of that.
 
 #### [Demo](https://codepen.io/AllThingsSmitty/pen/GqmGqZ)
 
@@ -365,7 +366,8 @@ It may have a strange name but using the universal selector (`*`) with the adjac
 
 In this example, all elements in the flow of the document that follow other elements will receive `margin-top: 1.5em`.
 
-For more on the "lobotomized owl" selector, read [Heydon Pickering's post](http://alistapart.com/article/axiomatic-css-and-lobotomized-owls) on *A List Apart*.
+> [!TIP]
+> For more on the "lobotomized owl" selector, read [Heydon Pickering's post](http://alistapart.com/article/axiomatic-css-and-lobotomized-owls) on *A List Apart*.
 
 #### [Demo](https://codepen.io/AllThingsSmitty/pen/grRvWq)
 
@@ -441,7 +443,7 @@ a[href^="http"]:empty::before {
 }
 ```
 
-That's pretty convenient.
+That's really convenient.
 
 #### [Demo](https://codepen.io/AllThingsSmitty/pen/zBzXRx)
 
@@ -557,7 +559,8 @@ img::after {
 }
 ```
 
-Learn more about styling for this pattern in [Ire Aderinokun's post](http://bitsofco.de/styling-broken-images/).
+> [!TIP]
+> Learn more about styling for this pattern in [Ire Aderinokun's post](http://bitsofco.de/styling-broken-images/).
 
 <sup>[back to table of contents](#table-of-contents)</sup>
 
@@ -643,8 +646,6 @@ textarea {
   font-size: 16px;
 }
 ```
-
-:dancer:
 
 <sup>[back to table of contents](#table-of-contents)</sup>
 
