@@ -13,7 +13,7 @@ Please note that this project is released with a [Contributor Code of Conduct](C
 
 Please ensure your pull request adheres to the following guidelines:
 
-* Search open and closed PR's to avoid duplicate suggestions.
+* Search open and closed PRs to avoid duplicate suggestions.
 * Only submit CSS tips that you think would be useful to others. This implies each tip has enough succinct content to describe why it's useful.
 * Add your tip at the bottom of the [README](https://github.com/AllThingsSmitty/css-protips/blob/master/README.md) document. Add a link to your tip at the bottom of the table of contents.
 * Use [title-case](https://titlecaseconverter.com/).
@@ -29,16 +29,6 @@ Please ensure your pull request adheres to the following guidelines:
 Thank you for your suggestions!
 
 
-### Language Translations
-
-If you fluently speak another language and want to contribute by translating this list into that language, please submit a PR using the following guidelines:
-
-* Add a new folder to the [`translations`](https://github.com/AllThingsSmitty/css-protips/tree/master/translations) folder
-* The new folder should be labeled the language culture name, e.g, `es-ES`, `ru-RU`, `zh-CN`, etc.
-
-Additionally, feel free to review already translated content for accuracy.
-
-
 ## Updating Your Pull Request
 
-Sometimes a maintainer will ask you to edit your pull request before it's included. This is normally due to spelling errors or because your PR didn't match the above guidlines guidelines. [This write-up](https://github.com/RichardLitt/knowledge/blob/master/github/amending-a-commit-guide.md) covers the different ways you can change a pull request.
+Sometimes a maintainer will ask you to edit your pull request before it's included. This is normally due to spelling errors or because your PR didn't match the above guidelines guidelines. [This write-up](https://github.com/RichardLitt/knowledge/blob/master/github/amending-a-commit-guide.md) covers the different ways you can change a pull request.
