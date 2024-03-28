@@ -446,7 +446,7 @@ That's really convenient.
 
 ### Control Specificity Better with `:is()`
 
-The `:is()` pseudo-class is used to target multiple selectors at onece, reducing redundancy and enhancing code readability. This is incredibly useful for writing large selectors in a more compact form.
+The `:is()` pseudo-class is used to target multiple selectors at once, reducing redundancy and enhancing code readability. This is incredibly useful for writing large selectors in a more compact form.
 
 ```css
 :is(section, article, aside, nav) :is(h1, h2, h3, h4, h5, h6) {
