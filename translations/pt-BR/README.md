@@ -1,6 +1,6 @@
-<p align="center">
-  <img src="../../assets/img/bulb.svg" alt="light bulb icon">
-</p>
+<div align="center">
+  <img src="../../assets/img/bulb.svg" width="200" alt="light bulb icon">
+</div>
 
 # CSS Protips [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome)
 
@@ -13,7 +13,7 @@ Uma coleção de dicas para aumentar suas habilidades no CSS.
 
 * [Protips](#protips)
 * [Suporte](#suporte)
-* [Contribuições](../../CONTRIBUTING.md)
+* [Guia de Contribuições](../../CONTRIBUTING.md)
 
 
 ## Protips
@@ -26,6 +26,7 @@ Uma coleção de dicas para aumentar suas habilidades no CSS.
 1. [Defina o `line-height` no `body`](#defina-o-line-height-no-body)
 1. [Definir `:focus` para elementos de formulário](#definir-focus-para-elementos-de-formulário)
 1. [Alinhe Elementos Verticalmente](#alinhe-elementos-verticalmente)
+1. [Use `aspect-ratio` ao invés de Height/Width](#use-aspect-ratio-ao-invés-de-heightwidth)
 1. [Listas Separadas por Vírgula](#listas-separadas-por-vírgula)
 1. [Selecione Itens Usando `nth-child` Negativo](#selecione-itens-usando-nth-child-negativo)
 1. [Ícones SVG](#Ícones-svg)
@@ -34,6 +35,7 @@ Uma coleção de dicas para aumentar suas habilidades no CSS.
 1. [Tabelas com Células de Tamanho Igual](#tabelas-com-células-de-tamanho-igual)
 1. [Esqueça as "Margin Hacks", use Flexbox](#esqueça-as-margin-hacks-use-flexbox)
 1. [Use Seletores de Atributo em Links Vazios](#use-seletores-de-atributo-em-links-vazios)
+1. [Controle Melhor a Especificidade Com `:is()`](#controle-melhor-a-especificidade-com-is)
 1. [Estilize Links "Default"](#estilize-links-default)
 1. [Div com Proporção de Tela Fixa](#div-com-proporção-de-tela-fixa)
 1. [Estilize Imagens Quebradas](#estilize-imagens-quebradas)
@@ -43,6 +45,7 @@ Uma coleção de dicas para aumentar suas habilidades no CSS.
 1. [Defina `font-size` em Elementos de Formulário para uma Melhor Experiência Mobile](#defina-font-size-em-elementos-de-formulário-para-uma-melhor-experiência-mobile)
 1. [Use eventos de ponteiro para controlar eventos do mouse](#use-eventos-de-ponteiro-para-controlar-eventos-do-mouse)
 1. [Definir `display: none` em quebras de linha usadas como espaçamento](#definir-display-none-em-quebras-de-linha-usadas-como-espaçamento)
+1. [Use `:empty` para Esconder Eelementos HTML Vazios](#use-empty-para-esconder-elementos-html-vazios)
 
 ### Use um Reset CSS
 
@@ -252,6 +255,25 @@ Isso não resolveu seu problema? O site CSS-Tricks tem [um guia completo](https:
 
 <sup>[voltar ao índice](#Índice)</sup>
 
+### Use `aspect-ratio` ao Invés de Height/Width
+
+A propriedade `aspect-ratio` permite que você dimensione elementos facilmente e mantem a proporção largura-altura (width-to-height) consistênte. Isso é incrivelmente útil em web design responsivo para prevenir alterações no layout. Use `object-fit` com isso para prevenir quebras no layout se os valores de altura/largura das images mudar.
+
+```css
+img {
+  aspect-ratio: 16 / 9; /* width / height */
+  object-fit: cover;
+}
+```
+
+Aprenda mais sobre a propriedade `aspect-ratio` neste [web.dev post](https://web.dev/articles/aspect-ratio).
+
+#### [Demo](https://codepen.io/AllThingsSmitty/pen/MWxwoNx/)
+
+> [!NOTA]
+> `aspect-ratio` e `object-fit` não são suportados em IE11.
+
+<sup>[voltar ao índice](#Índice)</sup>
 
 ### Listas Separadas por Vírgula
 
@@ -418,6 +440,33 @@ Mão na roda.
 
 <sup>[voltar ao índice](#Índice)</sup>
 
+### Controle Melhor a Especificidade Com `:is()`
+
+A pseudoclasse `:is()` é usada para marca vários seletores de uma só vez, reduzindo a redundância e melhorando a legibilidade do código. Isso é extremamente útil para escrever seletores grandes de uma forma mais compacta.
+
+```css
+:is(section, article, aside, nav) :is(h1, h2, h3, h4, h5, h6) {
+  color: green;
+}
+```
+
+O conjunto de regras acima é equivalente às seguintes regras do seletor de números...
+
+```css
+section h1, section h2, section h3, section h4, section h5, section h6,
+article h1, article h2, article h3, article h4, article h5, article h6,
+aside h1, aside h2, aside h3, aside h4, aside h5, aside h6,
+nav h1, nav h2, nav h3, nav h4, nav h5, nav h6 {
+  color: green;
+}
+```
+
+#### [Demo](https://codepen.io/AllThingsSmitty/pen/rNRVxdx)
+
+> [!NOTA]
+> A pseudoclasse `:is()` não é suportada em IE11.
+
+<sup>[voltar ao índice](#Índice)</sup>
 
 ### Estilize Links "Default"
 
@@ -615,7 +664,23 @@ br + br {
 
 <sup>[voltar ao índice](#Índice)</sup>
 
+### Use `:empty` para Esconder Elementos HTML Vazios
+
+Se você tem elementos HTML vazios, ou seja, o conteúdo ainda tem que ser definido ou pela CMS ou injetado dinamicamente (e.g., `<p class="error-message"></p>`) e está criando espaços indesejáveis no seu layout, use a pseudoclasse `:empty` para esconder os elementos no layout.
+
+```css
+:empty {
+  display: none;
+}
+```
+
+> [!NOTA]
+> Lembre-se que os elementos com espaços em branco não são considerados vazios, e.g., `<p class="error-message"> </p>`.
+
+<sup>[voltar ao índice](#Índice)</sup>
 
 ## Suporte
 
 Versões atuais do Chrome, Firefox, Safari, e Edge.
+
+<sup>[voltar ao índice](#Índice)</sup>
