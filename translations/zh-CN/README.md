@@ -117,8 +117,6 @@ button {
 }
 ```
 
-**注意：** IE11不支持`all`和`unset`的简写。
-
 <sup>[回目录](#目录)</sup>
 
 
@@ -253,8 +251,6 @@ body {
 ```
 
 这还不够？垂直方向，水平方向？任何元素，任何时间，任何地点？CSS-Tricks [有篇好文](https://css-tricks.com/centering-css-complete-guide/) 讲到了各种居中的技巧。
-
-**注意：** IE11 对 flexbox 的支持[有点 bug](https://github.com/philipwalton/flexbugs#3-min-height-on-a-flex-container-wont-apply-to-its-flex-items)。
 
 #### [演示](http://codepen.io/AllThingsSmitty/pen/GqmGqZ)
 
@@ -642,4 +638,4 @@ br + br {
 
 ### 支持情况
 
-这些技巧适用于最新版的 Chrome, Firefox, Safari, Opera, Edge, 以及 IE11。
+这些技巧适用于最新版的 Chrome, Firefox, Safari, 以及 Edge。

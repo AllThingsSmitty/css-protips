@@ -125,8 +125,6 @@ button {
 }
 ```
 
-**Note:** `all` 및`unset` 속기는 IE11에서 지원되지 않습니다.
-
 <sup>[목차로 돌아가기](#table-of-contents)</sup>
 
 
@@ -259,10 +257,7 @@ body {
 }
 ```
 
-
 무언가를 중앙으로 배치하고 싶으신가요? 가로로, 세로로 ...뭐든지, 어떤 때라도, 어디서든? CSS-Tricks의 [가이드](https://css-tricks.com/centering-css-complete-guide/)를 통해 그 모든 것을 해보세요!
-
-**Note:** IE11의 Flexbox의 [버그를 주의해 주세요](https://github.com/philipwalton/flexbugs#3-min-height-on-a-flex-container-wont-apply-to-its-flex-items)
 
 #### [데모](http://codepen.io/AllThingsSmitty/pen/GqmGqZ)
 
@@ -670,7 +665,7 @@ br + br {
 
 ## 지원
 
-최신 버전의 Chrome, Firefox, Safari, Opera, Edge, IE11에서 지원됩니다..
+최신 버전의 Chrome, Firefox, Safari, Edge에서 지원됩니다..
 
 <sup>[목차로 돌아가기](#table-of-contents)</sup>
 

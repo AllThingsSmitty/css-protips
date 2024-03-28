@@ -115,8 +115,6 @@ button {
 }
 ```
 
-**注意：** IE11不支持`all`和`unset`的简写。
-
 <sup>[回到目錄](#table-of-contents)</sup>
 
 ### 使用 `:not()` 選擇器來決定表單是否顯示邊框
@@ -250,8 +248,6 @@ body {
 ```
 
 還想居中排版其他的東西？垂直居中、水平居中、... 任何事、任何時間、任何地點？CSS-Tricks [有篇不錯的文章](https://css-tricks.com/centering-css-complete-guide/) 提到了各種居中排版的技巧。
-
-**注意：** IE11 的 flexbox [有些怪怪的行為](https://github.com/philipwalton/flexbugs#3-min-height-on-a-flex-container-wont-apply-to-its-flex-items) 要注意。
 
 #### [示範](http://codepen.io/AllThingsSmitty/pen/GqmGqZ)
 
@@ -609,4 +605,4 @@ br + br {
 
 ## 瀏覽器支援度
 
-以上技巧支援 Chrome, Firefox, Safari, Opera, Edge 最新版本與 IE11 瀏覽器。
+以上技巧支援 Chrome, Firefox, Safari, 最新版本與 Edge 瀏覽器。

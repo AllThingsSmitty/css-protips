@@ -114,8 +114,6 @@ button {
 }
 ```
 
-**Σημείωση:** η στενογραφία «all` και` unset` δεν υποστηρίζεται στο IE11.
-
 <sup>[πίσω στον πίνακα περιεχομένων](#πίνακας-περιεχομένων)</sup>
 
 
@@ -253,8 +251,6 @@ body {
 
 
 Θέλετε να κεντραρίσετε κάτι άλλο? Vertically, Κάθετα, οριζόντια...όπως θέλετε,όποτε θέλετε, παντού? Το CSS-Tricks έχει [a nice write-up](https://css-tricks.com/centering-css-complete-guide/) on doing all of that.
-
-**Σημείωση:** Προσοχή για ενδεχόμενη [buggy συμπεριφορά](https://github.com/philipwalton/flexbugs#3-min-height-on-a-flex-container-wont-apply-to-its-flex-items) with flexbox in IE11.
 
 #### [Demo](http://codepen.io/AllThingsSmitty/pen/GqmGqZ)
 
@@ -624,6 +620,6 @@ br + br {
 
 ## Υποστήριξη
 
-Οι τωρινές εκδόσεις των Chrome, Firefox, Safari, Opera, Edge, καθώς και IE11.
+Οι τωρινές εκδόσεις των Chrome, Firefox, Safari, καθώς και Edge.
 
 <sup>[πίσω στον πίνακα περιεχομένων](#πίνακας-περιεχομένων)</sup>

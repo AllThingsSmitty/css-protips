@@ -250,8 +250,6 @@ body {
 
 કેન્દ્ર માંગો છો કંઈક બીજું? વર્ટિકલ, આડા...કંઈપણ, કોઈપણ સમયે, ગમે ત્યાં? CSS-Tricks has [a nice write-up](https://css-tricks.com/centering-css-complete-guide/) on કરવાનું બધા કે.
 
-**નોટ:** જુઓ કેટલાક માટે [buggy behavior](https://github.com/philipwalton/flexbugs#3-min-height-on-a-flex-container-wont-apply-to-its-flex-items) સાથે flexbox માં IE11.
-
 #### [પ્રદર્શન](http://codepen.io/AllThingsSmitty/pen/GqmGqZ)
 
 <sup>[સામગ્રીઓના કોષ્ટકમાં પાછા](#પ્રોપ્સ)</sup>
@@ -623,6 +621,6 @@ br + br {
 
 ## આધાર
 
-વર્તમાન આવૃત્તિઓ of Chrome, Firefox, Safari, Opera, Edge, અને IE11.
+વર્તમાન આવૃત્તિઓ of Chrome, Firefox, Safari, અને Edge.
 
 <sup>[સામગ્રીઓના કોષ્ટકમાં પાછા](#પ્રોપ્સ)</sup>

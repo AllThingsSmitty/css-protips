@@ -111,8 +111,6 @@ button {
 }
 ```
 
-**Uwaga:** skróty `all` i `unset` nie są obsługiwane w IE11.
-
 <sup>[powrót do spisu treści](#powrót-do-spisu-treści)</sup>
 
 
@@ -248,8 +246,6 @@ body {
 ```
 
 Chcesz coś przenieść? Pionowo, poziomo... zawsze i wszędzie? Na CSS-Tricks znajdziesz [ciekawy artykuł](https://css-tricks.com/centering-css-complete-guide/) z dobrymi instrukcje na ten temat. 
-
-**Uwaga:** Uważaj na pewne [nieprawidłowe zachowanie](https://github.com/philipwalton/flexbugs#3-min-height-on-a-flex-container-wont-apply-to-its-flex-items) z Flexbox w IE11.
 
 #### [Demonstracja](http://codepen.io/AllThingsSmitty/pen/GqmGqZ)
 
@@ -623,6 +619,6 @@ br + br {
 
 ## Wsparcie
 
-Wersje aktualne Chrome, Firefox, Safari, Opera, Edge, and IE11.
+Wersje aktualne Chrome, Firefox, Safari, e Edge.
 
 <sup>[Powrót do spisu treści](#Powrót-do-spisu-treści)</sup>

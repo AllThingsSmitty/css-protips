@@ -115,8 +115,6 @@ button {
 }
 ```
 
-**Remarque:** les raccourcis `all` et` unset` ne sont pas pris en charge dans IE11.
-
 <sup>[retour à la table des matières](#table-des-matières)</sup>
 
 
@@ -251,8 +249,6 @@ body {
 ```
 
 Vous voulez centrer autre chose ? Verticalement, horizontalement... quoi que ce soit, à tout moment, en tout lieu ? CSS-Tricks a [un article sympa](https://css-tricks.com/centering-css-complete-guide/) sur comment faire tout cela.
-
-**Remarque:** Surveillez certains [comportement bogués](https://github.com/philipwalton/flexbugs#3-min-height-on-a-flex-container-wont-apply-to-its-flex-items) avec flexBox dans IE11.
 
 #### [Démo](http://codepen.io/AllThingsSmitty/pen/GqmGqZ)
 
@@ -625,4 +621,4 @@ br + br {
 
 ## Prise en charge par les navigateurs
 
-Les versions actuelles de Chrome, Firefox, Safari, Opera, Edge, et IE11.
+Les versions actuelles de Chrome, Firefox, Safari, et Edge.
