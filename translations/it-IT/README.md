@@ -114,8 +114,6 @@ button {
 }
 ```
 
-**Nota:** la stenografia `all` e` unset` non è supportata in IE11.
-
 <sup>[torna al sommario](#sommario)</sup>
 
 
@@ -251,8 +249,6 @@ body {
 ```
 
 Vuoi centrare qualcos'altro? In verticale, in orizzontale... qualsiasi cosa, in qualsiasi momento ovunque? Su CSS-Tricks trovi [un ottimo articolo](https://css-tricks.com/centering-css-complete-guide/) a riguardo.
-
-**Nota bene:** si verificano dei [comportamenti anomali](https://github.com/philipwalton/flexbugs#3-min-height-on-a-flex-container-wont-apply-to-its-flex-items) con flexbox e IE11.
 
 #### [Dimostrazione](http://codepen.io/AllThingsSmitty/pen/GqmGqZ)
 
@@ -625,4 +621,4 @@ br + br {
 
 ## Supporto
 
-Le attuali versioni di Chrome, Firefox, Safari, Opera, Edge ed IE11.
+Le attuali versioni di Chrome, Firefox, Safari, ed Edge.

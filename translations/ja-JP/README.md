@@ -127,8 +127,6 @@ button {
 }
 ```
 
-**備考:** IE11では `all`および` unset`の省略形はサポートされていません。
-
 <sup>[目次へ戻る](#table-of-contents)</sup>
 
 
@@ -271,8 +269,6 @@ body {
 ```
 
 なんでも中央に揃いたいですか？ CSS-Tricks の[セントリングガイド](https://css-tricks.com/centering-css-complete-guide/) をチェックしてください。
-
-**備考:** IE11のFlexboxの [バグを気をつけてください](https://github.com/philipwalton/flexbugs#3-min-height-on-a-flex-container-wont-apply-to-its-flex-items)
 
 #### [デモ](http://codepen.io/AllThingsSmitty/pen/GqmGqZ)
 
@@ -682,4 +678,4 @@ br + br {
 
 ## サポート
 
-現在のChrome, Firefox, Safari, Opera と EdgeのバージョンとIE11.
+現在のChrome, Firefox, Safari, のバージョンとEdge.

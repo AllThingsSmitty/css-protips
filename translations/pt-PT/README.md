@@ -114,8 +114,6 @@ button {
 }
 ```
 
-**Nota:** a abreviação `all` e` unset` não é compatível com o IE11.
-
 <sup>[voltar ao índice](#Índice)</sup>
 
 
@@ -250,8 +248,6 @@ body {
 ```
 
 Isto não resolveu o teu problema? O site CSS-Tricks tem [um guia completo](https://css-tricks.com/centering-css-complete-guide/) em como centralizar elementos com CSS.
-
- **Aviso:** Fica atento aos [bugs](https://github.com/philipwalton/flexbugs#3-min-height-on-a-flex-container-wont-apply-to-its-flex-items) quando estás a utilizar a flexbox no IE11.
 
 #### [Passeata](http://codepen.io/AllThingsSmitty/pen/GqmGqZ)
 
@@ -624,4 +620,4 @@ br + br {
 
 ## Suporte
 
-Versões atuais do Chrome, Firefox, Safari, Opera, Edge, e IE11.
+Versões atuais do Chrome, Firefox, Safari, e Edge.

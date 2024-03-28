@@ -115,8 +115,6 @@ button {
 }
 ```
 
-**Note:** tốc độ viết tắt `all` và` unset` không được hỗ trợ trong IE11.
-
 <sup>[back to table of contents](#table-of-contents)</sup>
 
 
@@ -252,8 +250,6 @@ body {
 
 
 Muốn căn giữa một cái gì đó khác? Theo chiều dọc,chiều ngang ... bất cứ điều gì, mọi lúc, mọi nơi? CSS-Tricks có [a nice write-up](https://css-tricks.com/centering-css-complete-guide/) để làm được tất cả những điều đó.
-
-**Note:** Xem một ít [buggy behavior](https://github.com/philipwalton/flexbugs#3-min-height-on-a-flex-container-wont-apply-to-its-flex-items) với Flexbox trên IE11.
 
 #### [Demo](http://codepen.io/AllThingsSmitty/pen/GqmGqZ)
 
@@ -624,4 +620,4 @@ br + br {
 
 ## Support
 
- versions hiện tại Chrome, Firefox, Safari, Opera, Edge, and IE11.
+ versions hiện tại Chrome, Firefox, Safari, và Edge.

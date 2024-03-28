@@ -117,8 +117,6 @@ button {
 }
 ```
 
-**Примечание:** сокращенные обозначения `all` и `unset` не поддерживаются в IE11.
-
 <sup>[вернуться к оглавлению](#table-of-contents)</sup>
 
 
@@ -251,8 +249,6 @@ body {
 ```
 
 Хотите разместить по центру что-то еще? Вертикально, горизонтально...что угодно, в любое время и в любом месте? У нас есть [хорошая статья](https://css-tricks.com/centering-css-complete-guide/) которая научит всему этому.
-
-**Примечание:** Будьте осторожны с некоторыми [багами](https://github.com/philipwalton/flexbugs#3-min-height-on-a-flex-container-wont-apply-to-its-flex-items) flexbox в IE11.
 
 #### [Демо](http://codepen.io/AllThingsSmitty/pen/GqmGqZ)
 
@@ -640,6 +636,6 @@ br + br {
 
 ## Поддержка
 
-Текущие версии Chrome, Firefox, Safari, Opera, Edge, и IE11.
+Текущие версии Chrome, Firefox, Safari, и Edge.
 
 <sup>[вернуться к оглавлению](#table-of-contents)</sup>
