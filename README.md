@@ -47,6 +47,7 @@ A collection of tips to help take your CSS skills pro.
 1. [Use Pointer Events to Control Mouse Events](#use-pointer-events-to-control-mouse-events)
 1. [Set `display: none` on Line Breaks Used as Spacing](#set-display-none-on-line-breaks-used-as-spacing)
 1. [Use `:empty` to Hide Empty HTML Elements](#use-empty-to-hide-empty-html-elements)
+1. [Set flex items' `min-width` to 0](#set-flex-items-min-width-to-0)
 
 
 ### Use a CSS Reset
@@ -682,6 +683,42 @@ If you have HTML elements that are empty, i.e., the content has yet to be set ei
 
 <sup>[back to table of contents](#table-of-contents)</sup>
 
+### Set Flex Items' `min-width` To 0
+
+A flex item (a child of an item with `display: flex`) might have its children overflowing from it. This could create unexpected behavior. For example, setting a child of a flex-item to truncate its text with an ellipsis (`white-space: nowrap`, `overflow: hidden`, and `text-overflow: ellipsis`) will not work.
+
+This is due to flex items having a default minimum size, which prevents them from shrinking in the expected way.
+
+This can be solved by setting the `min-width` of flex items to 0:
+
+```html
+<div class="container">
+  <div class="child">
+    <div class="text">
+      Long text that should be truncated
+    </div>
+  </div>
+</div>
+```
+
+```css
+.container {
+  display: flex;
+  width: 100px;
+}
+
+.child {
+  min-width: 0;
+}
+
+.text {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+```
+
+<sup>[back to table of contents](#table-of-contents)</sup>
 
 ## Support
 
