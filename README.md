@@ -47,6 +47,7 @@ A collection of tips to help take your CSS skills pro.
 1. [Use Pointer Events to Control Mouse Events](#use-pointer-events-to-control-mouse-events)
 1. [Set `display: none` on Line Breaks Used as Spacing](#set-display-none-on-line-breaks-used-as-spacing)
 1. [Use `:empty` to Hide Empty HTML Elements](#use-empty-to-hide-empty-html-elements)
+1. [Add a `gradient color` to text](#add-a-gradient-color-to-text)
 
 
 ### Use a CSS Reset
@@ -681,6 +682,27 @@ If you have HTML elements that are empty, i.e., the content has yet to be set ei
 > Keep in mind that elements with whitespace aren't considered empty, e.g., `<p class="error-message"> </p>`.
 
 <sup>[back to table of contents](#table-of-contents)</sup>
+
+
+
+### Add a `gradient color` to text
+
+Multiple colors can be added to a text in form of a gradient with the use of `background`, `-webkit-background-clip` and `-webkit-text-fill-color`.
+
+**Note:** It is important to note that the gradient effect is seen only when a minimum of two colors are used. You can add as many colors as you like.
+
+```css
+.gradient-text {
+   background: -webkit-linear-gradient(45deg, #112b8a, #ff0000);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+```
+
+#### [Demo](https://codepen.io/Toyinn/pen/abJvXdo)
+
+<sup>[back to table of contents](#table-of-contents)</sup>
+
 
 
 ## Support
