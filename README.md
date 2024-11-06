@@ -47,6 +47,8 @@ A collection of tips to help take your CSS skills pro.
 1. [Use Pointer Events to Control Mouse Events](#use-pointer-events-to-control-mouse-events)
 1. [Set `display: none` on Line Breaks Used as Spacing](#set-display-none-on-line-breaks-used-as-spacing)
 1. [Use `:empty` to Hide Empty HTML Elements](#use-empty-to-hide-empty-html-elements)
+1. [Use `word-wrap` to Wrap a Title into a Respective Multiline heading](#use-word-wrap-to-wrap-a-title-into-a-respective-multiline-heading)
+
 
 
 ### Use a CSS Reset
@@ -679,6 +681,16 @@ If you have HTML elements that are empty, i.e., the content has yet to be set ei
 
 > [!NOTE]
 > Keep in mind that elements with whitespace aren't considered empty, e.g., `<p class="error-message"> </p>`.
+
+### Use `word-wrap` to Wrap a Title into a Respective Multiline heading
+
+`word-wrap: break-word;` makes sure the long string will wrap and not bust out of the container. You might as well use word-wrap as well because as the spec says, they are literally just alternate names for each other. Some browsers support one and not the other. Firefox (tested v43) only supports word-wrap. Blink (tested Chrome v45) will take either one.
+
+```css
+.dont_brk {
+  word-wrap: break-word;
+}
+```
 
 <sup>[back to table of contents](#table-of-contents)</sup>
 
