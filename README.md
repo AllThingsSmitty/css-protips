@@ -47,6 +47,7 @@ A collection of tips to help take your CSS skills pro.
 1. [Use Pointer Events to Control Mouse Events](#use-pointer-events-to-control-mouse-events)
 1. [Set `display: none` on Line Breaks Used as Spacing](#set-display-none-on-line-breaks-used-as-spacing)
 1. [Use `:empty` to Hide Empty HTML Elements](#use-empty-to-hide-empty-html-elements)
+1. [Use `::placeholder` to select placeholder in input Elements](#use-::placeholder-to-select-placeholder-input-elements)
 
 
 ### Use a CSS Reset
@@ -379,6 +380,14 @@ Implement CSS-only sliders using `max-height` with overflow hidden:
 .slider:hover {
   max-height: 600px;
   overflow-y: scroll;
+}
+```
+
+### Use `input::placeholder` to beautify input placeholder 
+```
+input::placeholder {
+  color: #f0f0f0;
+  font-weight: italic;
 }
 ```
 
