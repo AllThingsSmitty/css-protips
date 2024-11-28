@@ -47,6 +47,7 @@ A collection of tips to help take your CSS skills pro.
 1. [Use Pointer Events to Control Mouse Events](#use-pointer-events-to-control-mouse-events)
 1. [Set `display: none` on Line Breaks Used as Spacing](#set-display-none-on-line-breaks-used-as-spacing)
 1. [Use `:empty` to Hide Empty HTML Elements](#use-empty-to-hide-empty-html-elements)
+1. [Use `:is` for Selecting Multiple Elements](#use-is-for-selecting-multiple-elements)
 
 
 ### Use a CSS Reset
@@ -679,6 +680,28 @@ If you have HTML elements that are empty, i.e., the content has yet to be set ei
 
 > [!NOTE]
 > Keep in mind that elements with whitespace aren't considered empty, e.g., `<p class="error-message"> </p>`.
+
+<sup>[back to table of contents](#table-of-contents)</sup>
+
+
+### Use `:is` for Selecting Mulitple Elements
+
+If you have multiple selectors, and you want to give same css, you can use this pseudo-class. The `:is()` function takes precedence over other selectors, so you can use it to override styles set by other selectors.
+
+```css
+.highlights {
+  background-color: blue;
+}
+
+:is(.highlights) {
+  background-color: yellow;
+  font-weight: bold;
+}
+```
+
+Morever you can use the `:is()` function to select multiple elements at once, by combining selectors in the parentheses. For example: `:is(h1, p)` will select all elements with either the tags `"h1"` or the `"p"`.
+
+#### [Demo](https://codepen.io/khan_zada22/pen/bGjJXZQ)
 
 <sup>[back to table of contents](#table-of-contents)</sup>
 
