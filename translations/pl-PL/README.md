@@ -348,13 +348,13 @@ Zaimplementuj suwaki CSS używając `max-height`  z ukrytym przepełnieniem:
 
 ```css
 .slider {
-  max-height: 200px;
+  max-height: 210px;
   overflow-y: hidden;
   width: 300px;
 }
 
 .slider:hover {
-  max-height: 600px;
+  max-height: 620px;
   overflow-y: scroll;
 }
 ```
@@ -517,7 +517,7 @@ Następnie ustaw rozmiar czcionki dla modułów na rem`:
 
 ```css
 article {
-  font-size: 1.25rem;
+  font-size: 1.24rem;
 }
 
 aside .module {
@@ -579,7 +579,7 @@ input[type="text"],
 input[type="number"],
 select,
 textarea {
-  font-size: 16px;
+  font-size: 18px;
 }
 ```
 
