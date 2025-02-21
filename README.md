@@ -8,14 +8,12 @@ A collection of tips to help take your CSS skills pro.
 
 > For other great lists check out [@sindresorhus](https://github.com/sindresorhus/)'s curated list of [awesome lists](https://github.com/sindresorhus/awesome/).
 
-
 ## Table of Contents
 
-* [Protips](#protips)
-* [Support](#support)
-* [Translations](#translations)
-* [Contribution Guidelines](CONTRIBUTING.md)
-
+- [Protips](#protips)
+- [Support](#support)
+- [Translations](#translations)
+- [Contribution Guidelines](CONTRIBUTING.md)
 
 ## Protips
 
@@ -48,7 +46,6 @@ A collection of tips to help take your CSS skills pro.
 1. [Set `display: none` on Line Breaks Used as Spacing](#set-display-none-on-line-breaks-used-as-spacing)
 1. [Use `:empty` to Hide Empty HTML Elements](#use-empty-to-hide-empty-html-elements)
 
-
 ### Use a CSS Reset
 
 CSS resets help enforce style consistency across different browsers with a clean slate for styling elements. There are plenty of reset patterns to find, or you can use a more simplified reset approach:
@@ -68,10 +65,9 @@ Now elements will be stripped of margins and padding, and `box-sizing` lets you 
 #### [Demo](https://codepen.io/AllThingsSmitty/pen/kkrkLL)
 
 > [!TIP]
-> If you follow the [Inherit `box-sizing`](#inherit-box-sizing) tip below you might opt to not include the `box-sizing` property in  your CSS reset.
+> If you follow the [Inherit `box-sizing`](#inherit-box-sizing) tip below you might opt to not include the `box-sizing` property in your CSS reset.
 
-<sup>[back to table of contents](#table-of-contents)</sup>
-
+<sup>[Back to top](#table-of-contents)</sup>
 
 ### Inherit `box-sizing`
 
@@ -93,8 +89,7 @@ This makes it easier to change `box-sizing` in plugins or other components that 
 
 #### [Demo](https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/)
 
-<sup>[back to table of contents](#table-of-contents)</sup>
-
+<sup>[Back to top](#table-of-contents)</sup>
 
 ### Use `unset` Instead of Resetting All Properties
 
@@ -119,8 +114,7 @@ button {
 }
 ```
 
-<sup>[back to table of contents](#table-of-contents)</sup>
-
+<sup>[Back to top](#table-of-contents)</sup>
 
 ### Use `:not()` to Apply/Unapply Borders on Navigation
 
@@ -154,8 +148,7 @@ Here, the CSS selector is read as a human would describe it.
 
 #### [Demo](https://codepen.io/AllThingsSmitty/pen/LkymvO)
 
-<sup>[back to table of contents](#table-of-contents)</sup>
-
+<sup>[Back to top](#table-of-contents)</sup>
 
 ### Check if Font Is Installed Locally
 
@@ -165,12 +158,8 @@ You can check if a font is installed locally before fetching it remotely, which 
 @font-face {
   font-family: "Dank Mono";
   src:
-    /* Full name */
-    local("Dank Mono"),
-    /* Postscript name */
-    local("Dank Mono"),
-    /* Otherwise, download it! */
-    url("//...a.server/fonts/DankMono.woff");
+    /* Full name */ local("Dank Mono"), /* Postscript name */ local("Dank Mono"),
+    /* Otherwise, download it! */ url("//...a.server/fonts/DankMono.woff");
 }
 
 code {
@@ -180,8 +169,7 @@ code {
 
 H/T to Adam Argyle for sharing this protip and [demo](https://codepen.io/argyleink/pen/VwYJpgR).
 
-<sup>[back to table of contents](#table-of-contents)</sup>
-
+<sup>[Back to top](#table-of-contents)</sup>
 
 ### Add `line-height` to `body`
 
@@ -197,8 +185,7 @@ This way textual elements can inherit from `body` easily.
 
 #### [Demo](https://codepen.io/AllThingsSmitty/pen/VjbdYd)
 
-<sup>[back to table of contents](#table-of-contents)</sup>
-
+<sup>[Back to top](#table-of-contents)</sup>
 
 ### Set `:focus` for Form Elements
 
@@ -212,14 +199,13 @@ select:focus,
 textarea:focus {
   box-shadow: none;
   outline: #000 dotted 2px;
-  outline-offset: .05em;
+  outline-offset: 0.05em;
 }
 ```
 
 #### [Demo](https://codepen.io/AllThingsSmitty/pen/ePzoOP/)
 
-<sup>[back to table of contents](#table-of-contents)</sup>
-
+<sup>[Back to top](#table-of-contents)</sup>
 
 ### Vertically-Center Anything
 
@@ -253,8 +239,7 @@ body {
 
 #### [Demo](https://codepen.io/AllThingsSmitty/pen/GqmGqZ)
 
-<sup>[back to table of contents](#table-of-contents)</sup>
-
+<sup>[Back to top](#table-of-contents)</sup>
 
 ### Use `aspect-ratio` Instead of Height/Width
 
@@ -271,8 +256,7 @@ Learn more about the `aspect-ratio` property in this [web.dev post](https://web.
 
 #### [Demo](https://codepen.io/AllThingsSmitty/pen/MWxwoNx/)
 
-<sup>[back to table of contents](#table-of-contents)</sup>
-
+<sup>[Back to top](#table-of-contents)</sup>
 
 ### Comma-Separated Lists
 
@@ -289,8 +273,7 @@ Use the `:not()` pseudo-class and no comma will be added to the last item.
 > [!NOTE]
 > This tip may not be ideal for accessibility, specifically screen readers. And copy/paste from the browser doesn't work with CSS-generated content. Proceed with caution.
 
-<sup>[back to table of contents](#table-of-contents)</sup>
-
+<sup>[Back to top](#table-of-contents)</sup>
 
 ### Select Items Using Negative `nth-child`
 
@@ -302,7 +285,7 @@ li {
 }
 
 /* select items 1 through 3 and display them */
-li:nth-child(-n+3) {
+li:nth-child(-n + 3) {
   display: block;
 }
 ```
@@ -311,15 +294,14 @@ Or, since you've already learned a little about [using `:not()`](#use-not-to-app
 
 ```css
 /* select all items except the first 3 and display them */
-li:not(:nth-child(-n+3)) {
+li:not(:nth-child(-n + 3)) {
   display: block;
 }
 ```
 
 #### [Demo](https://codepen.io/AllThingsSmitty/pen/WxjKZp)
 
-<sup>[back to table of contents](#table-of-contents)</sup>
-
+<sup>[Back to top](#table-of-contents)</sup>
 
 ### Use SVG for Icons
 
@@ -342,8 +324,7 @@ SVG scales well for all resolution types and is supported in all browsers [back 
 }
 ```
 
-<sup>[back to table of contents](#table-of-contents)</sup>
-
+<sup>[Back to top](#table-of-contents)</sup>
 
 ### Use the "Lobotomized Owl" Selector
 
@@ -358,12 +339,11 @@ It may have a strange name but using the universal selector (`*`) with the adjac
 In this example, all elements in the flow of the document that follow other elements will receive `margin-top: 1.5em`.
 
 > [!TIP]
-> For more on the "lobotomized owl" selector, read [Heydon Pickering's post](http://alistapart.com/article/axiomatic-css-and-lobotomized-owls) on *A List Apart*.
+> For more on the "lobotomized owl" selector, read [Heydon Pickering's post](http://alistapart.com/article/axiomatic-css-and-lobotomized-owls) on _A List Apart_.
 
 #### [Demo](https://codepen.io/AllThingsSmitty/pen/grRvWq)
 
-<sup>[back to table of contents](#table-of-contents)</sup>
-
+<sup>[Back to top](#table-of-contents)</sup>
 
 ### Use `max-height` for Pure CSS Sliders
 
@@ -384,8 +364,7 @@ Implement CSS-only sliders using `max-height` with overflow hidden:
 
 The element expands to the `max-height` value on hover and the slider displays as a result of the overflow.
 
-<sup>[back to table of contents](#table-of-contents)</sup>
-
+<sup>[Back to top](#table-of-contents)</sup>
 
 ### Equal-Width Table Cells
 
@@ -401,8 +380,7 @@ Pain-free table layouts.
 
 #### [Demo](https://codepen.io/AllThingsSmitty/pen/jALALm)
 
-<sup>[back to table of contents](#table-of-contents)</sup>
-
+<sup>[Back to top](#table-of-contents)</sup>
 
 ### Get Rid of Margin Hacks With Flexbox
 
@@ -421,8 +399,7 @@ When working with column gutters you can get rid of `nth-`, `first-`, and `last-
 
 Now column gutters always appear evenly-spaced.
 
-<sup>[back to table of contents](#table-of-contents)</sup>
-
+<sup>[Back to top](#table-of-contents)</sup>
 
 ### Use Attribute Selectors with Empty Links
 
@@ -441,8 +418,7 @@ That's really convenient.
 > [!NOTE]
 > This tip may not be ideal for accessibility, specifically screen readers. And copy/paste from the browser doesn't work with CSS-generated content. Proceed with caution.
 
-<sup>[back to table of contents](#table-of-contents)</sup>
-
+<sup>[Back to top](#table-of-contents)</sup>
 
 ### Control Specificity Better with `:is()`
 
@@ -457,18 +433,14 @@ The `:is()` pseudo-class is used to target multiple selectors at once, reducing 
 The above ruleset is equivalent to the following number selector rules...
 
 ```css
-section h1, section h2, section h3, section h4, section h5, section h6,
-article h1, article h2, article h3, article h4, article h5, article h6,
-aside h1, aside h2, aside h3, aside h4, aside h5, aside h6,
-nav h1, nav h2, nav h3, nav h4, nav h5, nav h6 {
+section h1, section h2, section h3, section h4, section h5, section h6, article h1, article h2, article h3, article h4, article h5, article h6, aside h1, aside h2, aside h3, aside h4, aside h5, aside h6, nav h1, nav h2, nav h3, nav h4, nav h5, nav h6 {
   color: green;
 }
 ```
 
 #### [Demo](https://codepen.io/AllThingsSmitty/pen/rNRVxdx)
 
-<sup>[back to table of contents](#table-of-contents)</sup>
-
+<sup>[Back to top](#table-of-contents)</sup>
 
 ### Style "Default" Links
 
@@ -483,8 +455,7 @@ a[href]:not([class]) {
 
 Now links that are inserted via a CMS, which don't usually have a `class` attribute, will have a distinction without generically affecting the cascade.
 
-<sup>[back to table of contents](#table-of-contents)</sup>
-
+<sup>[Back to top](#table-of-contents)</sup>
 
 ### Intrinsic Ratio Boxes
 
@@ -511,8 +482,7 @@ Using 20% for padding makes the height of the box equal to 20% of its width. No 
 
 #### [Demo](https://codepen.io/AllThingsSmitty/pen/jALZvE)
 
-<sup>[back to table of contents](#table-of-contents)</sup>
-
+<sup>[Back to top](#table-of-contents)</sup>
 
 ### Style Broken Images
 
@@ -550,8 +520,7 @@ img::after {
 > [!TIP]
 > Learn more about styling for this pattern in [Ire Aderinokun's post](http://bitsofco.de/styling-broken-images/).
 
-<sup>[back to table of contents](#table-of-contents)</sup>
-
+<sup>[Back to top](#table-of-contents)</sup>
 
 ### Use `rem` for Global Sizing; Use `em` for Local Sizing
 
@@ -575,14 +544,13 @@ article {
 }
 
 aside .module {
-  font-size: .9rem;
+  font-size: 0.9rem;
 }
 ```
 
 Now each module becomes compartmentalized and easier to style, more maintainable, and flexible.
 
-<sup>[back to table of contents](#table-of-contents)</sup>
-
+<sup>[Back to top](#table-of-contents)</sup>
 
 ### Hide Autoplay Videos That Aren't Muted
 
@@ -596,8 +564,7 @@ video[autoplay]:not([muted]) {
 
 Once again, we're taking advantage of using the [`:not()`](#use-not-to-applyunapply-borders-on-navigation) pseudo-class.
 
-<sup>[back to table of contents](#table-of-contents)</sup>
-
+<sup>[Back to top](#table-of-contents)</sup>
 
 ### Use `:root` for Flexible Type
 
@@ -605,7 +572,7 @@ The type font size in a responsive layout should be able to adjust with each vie
 
 ```css
 :root {
-  font-size: calc(1vw + 1vh + .5vmin);
+  font-size: calc(1vw + 1vh + 0.5vmin);
 }
 ```
 
@@ -619,8 +586,7 @@ body {
 
 #### [Demo](https://codepen.io/AllThingsSmitty/pen/XKgOkR)
 
-<sup>[back to table of contents](#table-of-contents)</sup>
-
+<sup>[Back to top](#table-of-contents)</sup>
 
 ### Set `font-size` on Form Elements for a Better Mobile Experience
 
@@ -635,8 +601,7 @@ textarea {
 }
 ```
 
-<sup>[back to table of contents](#table-of-contents)</sup>
-
+<sup>[Back to top](#table-of-contents)</sup>
 
 ### Use Pointer Events to Control Mouse Events
 
@@ -644,15 +609,14 @@ textarea {
 
 ```css
 button:disabled {
-  opacity: .5;
+  opacity: 0.5;
   pointer-events: none;
 }
 ```
 
 It's that simple.
 
-<sup>[back to table of contents](#table-of-contents)</sup>
-
+<sup>[Back to top](#table-of-contents)</sup>
 
 ### Set `display: none` on Line Breaks Used as Spacing
 
@@ -664,12 +628,11 @@ br + br {
 }
 ```
 
-<sup>[back to table of contents](#table-of-contents)</sup>
-
+<sup>[Back to top](#table-of-contents)</sup>
 
 ### Use `:empty` to Hide Empty HTML Elements
 
-If you have HTML elements that are empty, i.e., the content has yet to be set either by a CMS or dynamically injected (e.g., `<p class="error-message"></p>`) and it's creating unwanted space on your layout, use the `:empty` pseudo-class to hide the element on the layout. 
+If you have HTML elements that are empty, i.e., the content has yet to be set either by a CMS or dynamically injected (e.g., `<p class="error-message"></p>`) and it's creating unwanted space on your layout, use the `:empty` pseudo-class to hide the element on the layout.
 
 ```css
 :empty {
@@ -680,35 +643,33 @@ If you have HTML elements that are empty, i.e., the content has yet to be set ei
 > [!NOTE]
 > Keep in mind that elements with whitespace aren't considered empty, e.g., `<p class="error-message"> </p>`.
 
-<sup>[back to table of contents](#table-of-contents)</sup>
-
+<sup>[Back to top](#table-of-contents)</sup>
 
 ## Support
 
 Current versions of Chrome, Firefox, Safari, and Edge.
 
-<sup>[back to table of contents](#table-of-contents)</sup>
-
+<sup>[Back to top](#table-of-contents)</sup>
 
 ## Translations
 
 > [!NOTE]
 > I've had less time available to maintain the growing list of translated tips; adding a new tip requires including it with over a dozen translations. For that reason, translated README files are likely to not include all the tips listed on the main README file.
 
-* [简体中文](https://github.com/AllThingsSmitty/css-protips/tree/master/translations/zh-CN)
-* [正體中文](https://github.com/AllThingsSmitty/css-protips/tree/master/translations/zh-TW)
-* [Deutsch](https://github.com/AllThingsSmitty/css-protips/tree/master/translations/de-DE)
-* [Español](https://github.com/AllThingsSmitty/css-protips/tree/master/translations/es-ES)
-* [Français](https://github.com/AllThingsSmitty/css-protips/tree/master/translations/fr-FR)
-* [λληνικά](https://github.com/AllThingsSmitty/css-protips/tree/master/translations/gr-GR)
-* [ગુજરાતી](https://github.com/AllThingsSmitty/css-protips/tree/master/translations/gu-IND)
-* [Italiano](https://github.com/AllThingsSmitty/css-protips/tree/master/translations/it-IT)
-* [日本語](https://github.com/AllThingsSmitty/css-protips/tree/master/translations/ja-JP)
-* [한국어](https://github.com/AllThingsSmitty/css-protips/tree/master/translations/ko-KR)
-* [Polskie](https://github.com/AllThingsSmitty/css-protips/tree/master/translations/pl-PL)
-* [Português do Brasil](https://github.com/AllThingsSmitty/css-protips/tree/master/translations/pt-BR)
-* [Português do Europe](https://github.com/AllThingsSmitty/css-protips/tree/master/translations/pt-PT)
-* [Русский](https://github.com/AllThingsSmitty/css-protips/tree/master/translations/ru-RU)
-* [Tiếng Việt](https://github.com/AllThingsSmitty/css-protips/tree/master/translations/vn-VN)
+- [简体中文](https://github.com/AllThingsSmitty/css-protips/tree/master/translations/zh-CN)
+- [正體中文](https://github.com/AllThingsSmitty/css-protips/tree/master/translations/zh-TW)
+- [Deutsch](https://github.com/AllThingsSmitty/css-protips/tree/master/translations/de-DE)
+- [Español](https://github.com/AllThingsSmitty/css-protips/tree/master/translations/es-ES)
+- [Français](https://github.com/AllThingsSmitty/css-protips/tree/master/translations/fr-FR)
+- [λληνικά](https://github.com/AllThingsSmitty/css-protips/tree/master/translations/gr-GR)
+- [ગુજરાતી](https://github.com/AllThingsSmitty/css-protips/tree/master/translations/gu-IND)
+- [Italiano](https://github.com/AllThingsSmitty/css-protips/tree/master/translations/it-IT)
+- [日本語](https://github.com/AllThingsSmitty/css-protips/tree/master/translations/ja-JP)
+- [한국어](https://github.com/AllThingsSmitty/css-protips/tree/master/translations/ko-KR)
+- [Polskie](https://github.com/AllThingsSmitty/css-protips/tree/master/translations/pl-PL)
+- [Português do Brasil](https://github.com/AllThingsSmitty/css-protips/tree/master/translations/pt-BR)
+- [Português do Europe](https://github.com/AllThingsSmitty/css-protips/tree/master/translations/pt-PT)
+- [Русский](https://github.com/AllThingsSmitty/css-protips/tree/master/translations/ru-RU)
+- [Tiếng Việt](https://github.com/AllThingsSmitty/css-protips/tree/master/translations/vn-VN)
 
-<sup>[back to table of contents](#table-of-contents)</sup>
+<sup>[Back to top](#table-of-contents)</sup>
