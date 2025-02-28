@@ -2,10 +2,11 @@
   <img src="./assets/img/bulb.svg" width="200" alt="light bulb icon">
 </div>
 
-# CSS Protips [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome)
+# CSS Protips [![Awesome](https://awesome.re/badge-flat.svg)](https://awesome.re)
 
 A collection of tips to help take your CSS skills pro.
 
+> [!TIP]
 > For other great lists check out [@sindresorhus](https://github.com/sindresorhus/)'s curated list of [awesome lists](https://github.com/sindresorhus/awesome/).
 
 ## Table of Contents
@@ -433,7 +434,30 @@ The `:is()` pseudo-class is used to target multiple selectors at once, reducing 
 The above ruleset is equivalent to the following number selector rules...
 
 ```css
-section h1, section h2, section h3, section h4, section h5, section h6, article h1, article h2, article h3, article h4, article h5, article h6, aside h1, aside h2, aside h3, aside h4, aside h5, aside h6, nav h1, nav h2, nav h3, nav h4, nav h5, nav h6 {
+section h1,
+section h2,
+section h3,
+section h4,
+section h5,
+section h6,
+article h1,
+article h2,
+article h3,
+article h4,
+article h5,
+article h6,
+aside h1,
+aside h2,
+aside h3,
+aside h4,
+aside h5,
+aside h6,
+nav h1,
+nav h2,
+nav h3,
+nav h4,
+nav h5,
+nav h6 {
   color: green;
 }
 ```
