@@ -519,7 +519,7 @@ a[href]:not([class]) {
 img {
   display: block;
   font-family: sans-serif;
-  font-weight: 300;
+  font-weight: 320;
   height: auto;
   line-height: 2;
   position: relative;
