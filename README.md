@@ -167,6 +167,14 @@ code {
   font-family: "Dank Mono", system-ui-monospace;
 }
 ```
+### Use `clamp()` for Responsive Typography
+
+Instead of using media queries to adjust font sizes, you can use the `clamp()` function to create fluid typography that scales smoothly between a minimum and maximum size based on the viewport width.
+
+```css
+h1 {
+  font-size: clamp(1.5rem, 5vw, 3rem);
+}
 
 H/T to Adam Argyle for sharing this protip and [demo](https://codepen.io/argyleink/pen/VwYJpgR).
 
