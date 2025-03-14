@@ -46,6 +46,7 @@ A collection of tips to help take your CSS skills pro.
 1. [Use Pointer Events to Control Mouse Events](#use-pointer-events-to-control-mouse-events)
 1. [Set `display: none` on Line Breaks Used as Spacing](#set-display-none-on-line-breaks-used-as-spacing)
 1. [Use `:empty` to Hide Empty HTML Elements](#use-empty-to-hide-empty-html-elements)
+1. [Use `margin-inline` instead of `margin`](#use-margin-inline-instead-of-margin)
 
 ### Use a CSS Reset
 
@@ -672,6 +673,28 @@ If you have HTML elements that are empty, i.e., the content has yet to be set ei
 ## Support
 
 Current versions of Chrome, Firefox, Safari, and Edge.
+
+<sup>[Back to top](#table-of-contents)</sup>
+
+### Use `margin-inline` instead of `margin`
+
+`margin-inline` defines the inline start and end margins of an element. So instead of using `margin-left` and `margin-right` we can use the inline property to define both.
+
+```css
+.div {
+  margin-inline: auto;
+}
+```
+
+The same can be done for `margin-block` with defines the block start and end margins, i.e., `margin-top` and `margin-bottom`.
+
+```css
+.div {
+  margin-block: auto;
+}
+```
+
+#### [Demo](https://codepen.io/AllThingsSmitty/pen/PwoOQGB)
 
 <sup>[Back to top](#table-of-contents)</sup>
 
