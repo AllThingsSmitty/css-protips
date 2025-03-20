@@ -30,4 +30,4 @@ Thank you for your suggestions!
 
 ## Updating Your Pull Request
 
-Sometimes a maintainer will ask you to edit your pull request before it's included. This is normally due to spelling errors or because your PR didn't match the above guidelines guidelines. [This write-up](https://github.com/RichardLitt/knowledge/blob/master/github/amending-a-commit-guide.md) covers the different ways you can change a pull request.
+Sometimes a maintainer will ask you to edit your pull request before it's included. This is normally due to spelling errors or because your PR didn't match the above guidelines. [This write-up](https://github.com/RichardLitt/knowledge/blob/master/github/amending-a-commit-guide.md) covers the different ways you can change a pull request.
