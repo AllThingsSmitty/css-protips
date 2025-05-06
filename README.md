@@ -47,6 +47,7 @@ A collection of tips to help take your CSS skills pro.
 1. [Set `display: none` on Line Breaks Used as Spacing](#set-display-none-on-line-breaks-used-as-spacing)
 1. [Use `:empty` to Hide Empty HTML Elements](#use-empty-to-hide-empty-html-elements)
 1. [Use `margin-inline` instead of `margin`](#use-margin-inline-instead-of-margin)
+1. [Use Container Queries for Component Scoped Responsiveness](#use-containerqueries-for-component-scoped-responsiveness)
 
 ### Use a CSS Reset
 
@@ -695,6 +696,62 @@ The same can be done for `margin-block` with defines the block start and end mar
 ```
 
 #### [Demo](https://codepen.io/AllThingsSmitty/pen/PwoOQGB)
+
+<sup>[Back to top](#contents)</sup>
+
+### Use Container Queries for Component Scoped Responsiveness
+
+When you make an element a “query container,” anything inside it (headings, paragraphs, etc.) becomes sensitive to that container’s own size. In plain terms:
+
+- The container is the box you’ve marked with `container-type`.
+
+- Its child elements are simply the content within that box.
+
+- Your `@container` rules watch the container’s width and/or height and then apply new styles to those children (or to the container itself) once the box crosses the breakpoints you’ve defined.
+
+#### 1. Establish a container  
+
+```css
+.card {
+  /* Enable width-based container queries */
+  container-type: inline-size;
+
+  /* Or track both width & height */
+  /* Use 'size' to enable queries based on width, height, or both */
+  /* container-type: size; */
+
+  /* Optional: name the container to target it explicitly in queries */
+  container-name: card;
+}
+```
+
+#### 2. Write your @container rule
+```css
+/* Query a named container by width */
+@container card-width (min-width: 400px) {
+  .card-width__title {
+    font-size: 1.5rem;
+    color: royalblue;
+  }
+}
+
+/* Query a named container by height */
+@container card-height (min-height: 200px) {
+  .card-height__content {
+    padding: 1.5rem;
+    background: lightcoral;
+  }
+}
+
+/* Query for both width and height on the same container */
+@container card-both (min-width: 400px) and (min-height: 200px) {
+  .card-both {
+    border-color: darkgreen;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  }
+}
+```
+#### [Demo](https://codepen.io/mohan-dand/pen/yyyjrdG)
 
 <sup>[Back to top](#contents)</sup>
 
