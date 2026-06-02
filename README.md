@@ -4,7 +4,7 @@
 
 # CSS Protips [![Awesome](https://awesome.re/badge-flat.svg)](https://awesome.re)
 
-A collection of tips to help take your CSS skills pro.
+A collection of tips to help improve your CSS skills.
 
 > [!TIP]
 > For other great lists check out [@sindresorhus](https://github.com/sindresorhus/)'s curated list of [awesome lists](https://github.com/sindresorhus/awesome/).
