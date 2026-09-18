@@ -1,20 +1,14 @@
-<div align="center">
-  <img src="../../assets/img/bulb.svg" width="200" alt="light bulb icon">
-</div>
-
 # CSS Protips [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome)
 
 Uma coleção de dicas para aumentar suas habilidades no CSS.
 
 > Dê uma olhada em mais algumas [listas fantásticas](https://github.com/sindresorhus/awesome/) mantidas por [@sindresorhus](https://github.com/sindresorhus/).
 
-
 ## Índice
 
-* [Protips](#protips)
-* [Suporte](#suporte)
-* [Guia de Contribuições](../../CONTRIBUTING.md)
-
+- [Protips](#protips)
+- [Suporte](#suporte)
+- [Guia de Contribuições](../../CONTRIBUTING.md)
 
 ## Protips
 
@@ -69,7 +63,6 @@ Agora os elementos estarão sem margens, preenchimento e `box-sizing`. Te permit
 
 <sup>[voltar ao índice](#Índice)</sup>
 
-
 ### Herde o `box-sizing`
 
 Faça com que o `box-sizing` seja herdado do `html`:
@@ -91,7 +84,6 @@ Assim fica fácil de alterar o `box-sizing` em plugins ou outros componentes que
 #### [Exemplo](https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/)
 
 <sup>[voltar ao índice](#Índice)</sup>
-
 
 ### Use `unset` em vez de redefinir todas as propriedades
 
@@ -117,7 +109,6 @@ button {
 ```
 
 <sup>[voltar ao índice](#Índice)</sup>
-
 
 ### Use `:not()` para Aplicar/Remover Bordas
 
@@ -153,7 +144,6 @@ O seletor CSS define a borda da maneira que um humano a descreveria.
 
 <sup>[voltar ao índice](#Índice)</sup>
 
-
 ### Verifique se a fonte está instalada localmente
 
 Você pode verificar se uma fonte está instalada localmente antes de buscá-la remotamente, o que também é uma boa dica de desempenho.
@@ -164,10 +154,8 @@ Você pode verificar se uma fonte está instalada localmente antes de buscá-la 
   src:
     /* Full name */
     local("Dank Mono"),
-    /* Postscript name */
-    local("Dank-Mono"),
-    /* Otherwise, download it! */
-    url("//...a.server/fonts/DankMono.woff");
+    /* Postscript name */ local("Dank-Mono"),
+    /* Otherwise, download it! */ url("//...a.server/fonts/DankMono.woff");
 }
 
 code {
@@ -178,7 +166,6 @@ code {
 Dica de chapéu para Adam Argyle por compartilhar este protip e [exemplo](https://codepen.io/argyleink/pen/VwYJpgR).
 
 <sup>[voltar ao índice](#Índice)</sup>
-
 
 ### Defina o `line-height` no `body`
 
@@ -196,7 +183,6 @@ Dessa maneira elementos de texto vão herdar o `line-height` do `body`.
 
 <sup>[voltar ao índice](#Índice)</sup>
 
-
 ### Definir `:focus` para elementos de formulário
 
 Os usuários de teclado com visão dependem do foco para determinar onde os eventos de teclado vão na página. Faça com que os elementos do formulário se foquem e sejam consistentes com a implementação padrão do navegador:
@@ -209,14 +195,13 @@ select:focus,
 textarea:focus {
   box-shadow: none;
   outline: #000 dotted 2px;
-  outline-offset: .05em;
+  outline-offset: 0.05em;
 }
 ```
 
 #### [Exemplo](https://codepen.io/AllThingsSmitty/pen/ePzoOP/)
 
 <sup>[voltar ao índice](#Índice)</sup>
-
 
 ### Alinhe Elementos Verticalmente
 
@@ -291,7 +276,6 @@ Utilize a _pseudo-classe_ `:not()` para evitar que a vírgula seja adicionada de
 
 <sup>[voltar ao índice](#Índice)</sup>
 
-
 ### Selecione Itens Usando `nth-child` Negativo
 
 Utilize `nth-child` negativo no CSS para selecionar itens de 1 a n.
@@ -302,7 +286,7 @@ li {
 }
 
 /* mostrar itens de 1 a 3 */
-li:nth-child(-n+3) {
+li:nth-child(-n + 3) {
   display: block;
 }
 ```
@@ -311,7 +295,7 @@ Já que você aprendeu um pouquinho sobre como usar a _pseudo-classe_ [using `:n
 
 ```css
 /* selecione todos os itens, exceto os primeiros 3 e exiba-os */
-li:not(:nth-child(-n+3)) {
+li:not(:nth-child(-n + 3)) {
   display: none;
 }
 ```
@@ -321,7 +305,6 @@ Mais fácil que isso só dois disso.
 #### [Exemplo](http://codepen.io/AllThingsSmitty/pen/WxjKZp)
 
 <sup>[voltar ao índice](#Índice)</sup>
-
 
 ### Ícones SVG
 
@@ -345,7 +328,6 @@ A vantagem do SVG é que o ícone fica bom em qualquer resolução, além de ter
 
 <sup>[voltar ao índice](#Índice)</sup>
 
-
 ### Use o Seletor "Lobotomized Owl"
 
 O nome é super estranho (coruja lobotomizada), mas o uso do seletor universal (`*`) com o seletor adjacente (`+`) pode ser muito útil:
@@ -358,12 +340,11 @@ O nome é super estranho (coruja lobotomizada), mas o uso do seletor universal (
 
 Nesse exemplo, todos os elementos acompanhados de outros elementos recebem `margin-top: 1.5em`.
 
-Para mais exemplos utilizando o seletor "lobotomized owl", leia [o artigo escrito por Heydon Pickering](http://alistapart.com/article/axiomatic-css-and-lobotomized-owls) no site *A List Apart*.
+Para mais exemplos utilizando o seletor "lobotomized owl", leia [o artigo escrito por Heydon Pickering](http://alistapart.com/article/axiomatic-css-and-lobotomized-owls) no site _A List Apart_.
 
 #### [Exemplo](http://codepen.io/AllThingsSmitty/pen/grRvWq)
 
 <sup>[voltar ao índice](#Índice)</sup>
-
 
 ### Sliders em CSS com `max-height`
 
@@ -386,7 +367,6 @@ O elemento se expandirá ao valor definido no `max-height` no _hover_ e você te
 
 <sup>[voltar ao índice](#Índice)</sup>
 
-
 ### Tabelas com Células de Tamanho Igual
 
 Não tem nada mais chato do que trabalhar com tabelas, mas você pode usar `table-layout: fixed` para manter as células do mesmo tamanho:
@@ -402,7 +382,6 @@ Tabelas sem dor de cabeça.
 #### [Exemplo](http://codepen.io/AllThingsSmitty/pen/jALALm)
 
 <sup>[voltar ao índice](#Índice)</sup>
-
 
 ### Esqueça as "Margin Hacks", use Flexbox
 
@@ -422,7 +401,6 @@ Quando definir o espaçamento entre as colunas, você pode deixar os seletores `
 Assim as colunas ficam espaçadas uniformemente.
 
 <sup>[voltar ao índice](#Índice)</sup>
-
 
 ### Use Seletores de Atributo em Links Vazios
 
@@ -453,10 +431,30 @@ A pseudoclasse `:is()` é usada para marca vários seletores de uma só vez, red
 O conjunto de regras acima é equivalente às seguintes regras do seletor de números...
 
 ```css
-section h1, section h2, section h3, section h4, section h5, section h6,
-article h1, article h2, article h3, article h4, article h5, article h6,
-aside h1, aside h2, aside h3, aside h4, aside h5, aside h6,
-nav h1, nav h2, nav h3, nav h4, nav h5, nav h6 {
+section h1,
+section h2,
+section h3,
+section h4,
+section h5,
+section h6,
+article h1,
+article h2,
+article h3,
+article h4,
+article h5,
+article h6,
+aside h1,
+aside h2,
+aside h3,
+aside h4,
+aside h5,
+aside h6,
+nav h1,
+nav h2,
+nav h3,
+nav h4,
+nav h5,
+nav h6 {
   color: green;
 }
 ```
@@ -482,7 +480,6 @@ a[href]:not([class]) {
 Dessa forma, links que são inseridos por CMS – que normalmente não possuem o atributo `class` – vão ser estilizados sem comprometer outros links.
 
 <sup>[voltar ao índice](#Índice)</sup>
-
 
 ### Div com Proporção de Tela Fixa
 
@@ -510,7 +507,6 @@ Se você usar 20% no `padding` a altura da div vai ser igual a 20% de sua largur
 #### [Exemplo](http://codepen.io/AllThingsSmitty/pen/jALZvE)
 
 <sup>[voltar ao índice](#Índice)</sup>
-
 
 ### Estilize Imagens Quebradas
 
@@ -549,7 +545,6 @@ Leia mais sobre como estilizar imagens quebradas no [artigo original](http://bit
 
 <sup>[voltar ao índice](#Índice)</sup>
 
-
 ### Use `rem` para Definir Tamanhos Globais; Use `em` para Definir Tamanhos Locais
 
 Depois de definir o tamanho de fonte base na raíz (`html { font-size: 100%; }`), defina o tamanho de fonte para elementos de texto utilizando `em`:
@@ -572,14 +567,13 @@ article {
 }
 
 aside .module {
-  font-size: .9rem;
+  font-size: 0.9rem;
 }
 ```
 
 Assim fica mais fácil de estilizar e manter cada módulo, além de ser flexível.
 
 <sup>[voltar ao índice](#Índice)</sup>
-
 
 ### Esconda Vídeos em Autoplay Que Não Estejam no Mudo
 
@@ -595,14 +589,13 @@ E aqui mais uma entre as muitas vantagens de usar a _pseudo-classe_ [`:not()`](#
 
 <sup>[voltar ao índice](#Índice)</sup>
 
-
 ### Use `:root` para uma Tipografia Flexível
 
 O tamanho de fonte de um site _responsivo_ deveria ser ajustável de acordo com cada _viewport_. Você pode calcular o tamanho da fonte baseado na largura e na altura do _viewport_ usando `:root`:
 
 ```css
 :root {
-  font-size: calc(1vw + 1vh + .5vmin);
+  font-size: calc(1vw + 1vh + 0.5vmin);
 }
 ```
 
@@ -617,7 +610,6 @@ body {
 #### [Exemplo](http://codepen.io/AllThingsSmitty/pen/XKgOkR)
 
 <sup>[voltar ao índice](#Índice)</sup>
-
 
 ### Defina `font-size` em Elementos de Formulário para uma Melhor Experiência Mobile
 
@@ -636,14 +628,13 @@ textarea {
 
 <sup>[voltar ao índice](#Índice)</sup>
 
-
 ### Use eventos de ponteiro para controlar eventos do mouse
 
 [Eventos de ponteiro](https://developer.mozilla.org/en-US/docs/Web/CSS/pointer-events) permitem que você especifique como o mouse interage com o elemento que está tocando. Para desativar o evento de ponteiro padrão em um botão, por exemplo:
 
 ```css
 button:disabled {
-  opacity: .5;
+  opacity: 0.5;
   pointer-events: none;
 }
 ```

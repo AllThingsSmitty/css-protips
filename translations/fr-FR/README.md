@@ -1,22 +1,16 @@
-<p align="center">
-  <img src="../../assets/img/bulb.svg" alt="light bulb icon">
-</p>
-
 # Conseils d’expert en CSS [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome)
 
 Une collection de conseils pour vous aider à mener vos compétences CSS au niveau pro.
 
 > Pour d'autres listes géniales, consultez la liste organisée par [@sindresorhus](https://github.com/sindresorhus/) des [listes impressionnantes](https://github.com/sindresorhus/awesome/).
 
-
 ## Table des matières
 
-* [Conseils d’expert](#conseils-dexpert)
-* [Prise en charge par les navigateurs](#prise-en-charge-par-les-navigateurs)
-* [Directives pour les contributions](../../CONTRIBUTING.md)
+- [Conseils d’expert](#conseils-dexpert)
+- [Prise en charge par les navigateurs](#prise-en-charge-par-les-navigateurs)
+- [Directives pour les contributions](../../CONTRIBUTING.md)
 
-
-##  Conseils d’expert
+## Conseils d’expert
 
 1. [Utilisez un Reset CSS](#utilisez-un-reset-css)
 1. [Hériter de `box-sizing`](#hériter-de-box-sizing)
@@ -44,7 +38,6 @@ Une collection de conseils pour vous aider à mener vos compétences CSS au nive
 1. [Utiliser les Événements de Pointeur pour Contrôler les Événements de la Souris](#utiliser-les-événements-de-pointeur-pour-contrôler-les-événements-de-la-souris)
 1. [Définit `display: none` sur les sauts de ligne utilisés comme espacement](#définit-display-none-sur-les-sauts-de-ligne-utilisés-comme-espacement)
 
-
 ### Utilisez un Reset CSS
 
 La réinitialisation CSS aide à faire respecter une cohérence de style entre les différents navigateurs en faisant table rase pour les éléments de style. Vous pouvez utiliser la bibliothèque de réinitialisation CSS comme [Normalize](http://necolas.github.io/normalize.css/), et al, ou vous pouvez utiliser une approche de réinitialisation plus simplifiée :
@@ -67,7 +60,6 @@ Maintenant, les éléments seront dépouillés des marges et de zones de remplis
 
 <sup>[retour à la table des matières](#table-des-matières)</sup>
 
-
 ### Hériter de `box-sizing`
 
 Laisser `box-sizing` être héritée de `html`:
@@ -82,7 +74,6 @@ html {
 *::after {
   box-sizing: inherit;
 }
-
 ```
 
 Cela rend plus facile le fait de changer `box-sizing` dans des plugins ou autres composants qui exploitent d'autres comportements.
@@ -90,7 +81,6 @@ Cela rend plus facile le fait de changer `box-sizing` dans des plugins ou autres
 #### [Démo](https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/)
 
 <sup>[retour à la table des matières](#table-des-matières)</sup>
-
 
 ### Utilisez `unset` au Lieu de Réinitialiser Toutes les Propriétés
 
@@ -116,7 +106,6 @@ button {
 ```
 
 <sup>[retour à la table des matières](#table-des-matières)</sup>
-
 
 ### Utiliser `:not()` pour Appliquer / ne pas Appliquer des Bordures à la Barre de Navigation
 
@@ -152,7 +141,6 @@ Le sélecteur CSS définit la frontière comme un humain la décrirait.
 
 <sup>[retour à la table des matières](#table-des-matières)</sup>
 
-
 ### Vérifiez si la police est installée localement
 
 Vous pouvez vérifier si une police est installée localement avant de la récupérer à distance, ce qui est également une bonne astuce de performance.
@@ -163,10 +151,8 @@ Vous pouvez vérifier si une police est installée localement avant de la récup
   src:
     /* Full name */
     local("Dank Mono"),
-    /* Postscript name */
-    local("Dank-Mono"),
-    /* Otherwise, download it! */
-    url("//...a.server/fonts/DankMono.woff");
+    /* Postscript name */ local("Dank-Mono"),
+    /* Otherwise, download it! */ url("//...a.server/fonts/DankMono.woff");
 }
 
 code {
@@ -178,14 +164,13 @@ Pointe du chapeau à Adam Argyle pour avoir partagé ce protip et cette [démo](
 
 <sup>[retour à la table des matières](#table-des-matières)</sup>
 
-
 ### Ajouter `line-height` à `body`
 
 Vous n'avez pas besoin d'ajouter `line-height` à chaque `<p>`, `<h*>`, _et al_. séparément. Au lieu de cela, ajoutez-le à `body`:
 
 ```css
 body {
-  line-height: 1.5;
+    line-height: 1.5;
 }
 ```
 
@@ -194,7 +179,6 @@ De cette façon, les éléments textuels peuvent hériter de `body` facilement.
 #### [Démo](http://codepen.io/AllThingsSmitty/pen/VjbdYd)
 
 <sup>[retour à la table des matières](#table-des-matières)</sup>
-
 
 ### Définissez `:focus` pour les éléments de formulaire
 
@@ -208,14 +192,13 @@ select:focus,
 textarea:focus {
   box-shadow: none;
   outline: #000 dotted 2px;
-  outline-offset: .05em;
+  outline-offset: 0.05em;
 }
 ```
 
 #### [Démo](https://codepen.io/AllThingsSmitty/pen/ePzoOP/)
 
 <sup>[retour à la table des matières](#table-des-matières)</sup>
-
 
 ### Tout Centrer Verticalement
 
@@ -229,8 +212,8 @@ body {
 }
 
 body {
-  -webkit-align-items: center;  
-  -ms-flex-align: center;  
+  -webkit-align-items: center;
+  -ms-flex-align: center;
   align-items: center;
   display: -webkit-flex;
   display: flex;
@@ -254,7 +237,6 @@ Vous voulez centrer autre chose ? Verticalement, horizontalement... quoi que ce 
 
 <sup>[retour à la table des matières](#table-des-matières)</sup>
 
-
 ### Listes Séparées par des Virgules
 
 Faites que les liste d'éléments ressemblent de vraies listes, séparées par des virgules :
@@ -271,7 +253,6 @@ Utilisez la pseudo-classe `:not()` et aucune virgule ne sera ajoutée au dernier
 
 <sup>[retour à la table des matières](#table-des-matières)</sup>
 
-
 ### Sélectionner des Éléments en Utilisant un `nth-child` Négatif
 
 Utilisez un `nth-child` négatif en CSS pour sélectionner des éléments de 1 à n.
@@ -282,7 +263,7 @@ li {
 }
 
 /* select items 1 through 3 and display them */
-li:nth-child(-n+3) {
+li:nth-child(-n + 3) {
   display: block;
 }
 ```
@@ -291,7 +272,7 @@ Ou, puisque vous avez déjà appris un peu [en utilisant `:not()`](#use-not-to-a
 
 ```css
 /* select all items except the first 3 and display them */
-li:not(:nth-child(-n+3)) {
+li:not(:nth-child(-n + 3)) {
   display: none;
 }
 ```
@@ -300,14 +281,13 @@ li:not(:nth-child(-n+3)) {
 
 <sup>[retour à la table des matières](#table-des-matières)</sup>
 
-
 ### Utiliser SVG pour les Icônes
 
 Il n'y a aucune raison de ne pas utiliser SVG pour les icônes :
 
 ```css
 .logo {
-  background: url("logo.svg");
+    background: url("logo.svg");
 }
 ```
 
@@ -323,25 +303,23 @@ Le SVG permet de bien mettre à l'échelle et ce pour tous types de résolution,
 
 <sup>[retour à la table des matières](#table-des-matières)</sup>
 
-
 ### Utilisez le Sélecteur "Chouette Lobotomisée"
 
 Il a peut être un nom étrange, mais utiliser le sélecteur universel (`*`) avec le sélecteur de frère adjacent (`+`) peut fournir une capacité de CSS puissante :
 
 ```css
 * + * {
-  margin-top: 1.5em;
+    margin-top: 1.5em;
 }
 ```
 
 Dans cet exemple, tous les éléments dans le flux du document qui suivent d'autres éléments recevront `margin-top: 1.5em`.
 
-Pour en savoir plus sur le sélecteur "chouette lobotomisée", lire [la publication de Heydon Pickering](http://alistapart.com/article/axiomatic-css-and-lobotomized-owls) sur *A List Apart*.
+Pour en savoir plus sur le sélecteur "chouette lobotomisée", lire [la publication de Heydon Pickering](http://alistapart.com/article/axiomatic-css-and-lobotomized-owls) sur _A List Apart_.
 
 #### [Démo](http://codepen.io/AllThingsSmitty/pen/XKgOkR)
 
 <sup>[retour à la table des matières](#table-des-matières)</sup>
-
 
 ### Utilisez `max-height` pour des Sliders en CSS Pur
 
@@ -364,14 +342,13 @@ L'élément s'étends jusqu'à la valeur `max-height` au survol et le slider s'a
 
 <sup>[retour à la table des matières](#table-des-matières)</sup>
 
-
 ### Cellules de Tableau à Largeur Égale
 
 Il peut être pénible de travailler avec des tableaux. Essayez d'utiliser `table-layout: fixed` pour maintenir les cellules à largeur égale :
 
 ```css
 .calendar {
-  table-layout: fixed;
+    table-layout: fixed;
 }
 ```
 
@@ -381,11 +358,9 @@ Des tableaux sans douleurs.
 
 <sup>[retour à la table des matières](#table-des-matières)</sup>
 
-
 ### Se Débarrasser des Hacks de Marge Avec Flexbox
 
 Lorsque vous travaillez sur les gouttières des colonnes, vous pouvez vous débarrasser de `nth`, `first-` et `last-child` en utilisant la propriété flexbox `space-between` :
-
 
 ```css
 .list {
@@ -401,7 +376,6 @@ Lorsque vous travaillez sur les gouttières des colonnes, vous pouvez vous déba
 Maintenant les gouttières de vos colonnes apparaissent toujours uniformément espacées.
 
 <sup>[retour à la table des matières](#table-des-matières)</sup>
-
 
 ### Utiliser des Sélecteurs d'Attribut avec des Liens Vides
 
@@ -419,7 +393,6 @@ C'est assez pratique.
 
 <sup>[retour à la table des matières](#table-des-matières)</sup>
 
-
 ### Style "Par Défaut" des Liens
 
 Ajouter un style pour les liens " par défaut" :
@@ -435,7 +408,6 @@ Maintenant, les liens qui sont insérés via un CMS, qui ne disposent générale
 
 <sup>[retour à la table des matières](#table-des-matières)</sup>
 
-
 ### Ratio de Boîtes Intrinsèque
 
 Pour créer une boîte avec une proportion intrinsèque, tout ce que vous devez faire est d'appliquer une zone de remplissage en haut ou en bas de à un div :
@@ -448,7 +420,7 @@ Pour créer une boîte avec une proportion intrinsèque, tout ce que vous devez 
 }
 
 .container div {
-  border: 2px dashed #ddd;	
+  border: 2px dashed #ddd;
   height: 100%;
   left: 0;
   position: absolute;
@@ -463,13 +435,12 @@ En utilisant 20% pour le rembourrage, cela rend la hauteur de la boîte égale �
 
 <sup>[retour à la table des matières](#table-des-matières)</sup>
 
-
 ### Styliser des Images Cassées
 
 Faire des images cassées esthétiquement plus agréables avec un peu de CSS :
 
 ```css
-img {  
+img {
   display: block;
   font-family: sans-serif;
   font-weight: 300;
@@ -484,13 +455,13 @@ img {
 Maintenant, ajoutez les règles pseudo-éléments pour afficher un message d'utilisateur et une référence URL de l'image brisée :
 
 ```css
-img::before {  
+img::before {
   content: "We're sorry, the image below is broken :(";
   display: block;
   margin-bottom: 10px;
 }
 
-img::after {  
+img::after {
   content: "(url: " attr(src) ")";
   display: block;
   font-size: 12px;
@@ -501,18 +472,17 @@ En savoir plus sur la styliser de ce patron dans [Ire Aderinokun](https://github
 
 <sup>[retour à la table des matières](#table-des-matières)</sup>
 
-
 ### Utilisez `rem` pour le Dimensionnement Global; Utilisez `em` pour le Dimensionnement Local
 
 Après avoir défini la taille de la police de base à la racine (`html { font-size: 100%; }`), définir la taille de la police pour les éléments textuels à `em` :
 
 ```css
 h2 {
-  font-size: 2em;
+    font-size: 2em;
 }
 
 p {
-  font-size: 1em;
+    font-size: 1em;
 }
 ```
 
@@ -524,14 +494,13 @@ article {
 }
 
 aside .module {
-  font-size: .9rem;
+  font-size: 0.9rem;
 }
 ```
 
 Maintenant, chaque module devient compartimentée et plus faciles à styliser, plus maintenable, et flexible.
 
 <sup>[retour à la table des matières](#table-des-matières)</sup>
-
 
 ### Masquer les Vidéos Lancées Automatiquement qui ne sont pas Mises en Sourdine
 
@@ -547,14 +516,13 @@ Encore une fois, nous trions parti de l'utilisation de la pseudo-classe [`:not()
 
 <sup>[retour à la table des matières](#table-des-matières)</sup>
 
-
 ### Utilisez `:root` pour le Type Flexible
 
 La taille type de police dans une mise en page responsive devrait être en mesure de s'ajuster à chaque fenêtre d'affichage. Vous pouvez calculer la taille de la police basée sur la hauteur de la fenêtre et la largeur en utilisant `: root`:
 
 ```css
 :root {
-  font-size: calc(1vw + 1vh + .5vmin);
+  font-size: calc(1vw + 1vh + 0.5vmin);
 }
 ```
 
@@ -569,7 +537,6 @@ body {
 ```
 
 <sup>[retour à la table des matières](#table-des-matières)</sup>
-
 
 ### Réglez `font-size` sur les Éléments de Formulaire pour une Meilleure Expérience Mobile
 
@@ -588,15 +555,13 @@ textarea {
 
 <sup>[retour à la table des matières](#table-des-matières)</sup>
 
-
-
 ### Utiliser les Événements de Pointeur pour Contrôler les Événements de la Souris
 
 [Les événements de pointeur](https://developer.mozilla.org/en-US/docs/Web/CSS/pointer-events) vous permettent de spécifier comment la souris interagit avec l'élément qu'elle touche. Pour désactiver l'événement de pointeur par défaut sur un bouton, par exemple :
 
 ```css
 button:disabled {
-  opacity: .5;
+  opacity: 0.5;
   pointer-events: none;
 }
 ```
@@ -604,7 +569,6 @@ button:disabled {
 C'est aussi simple que cela.
 
 <sup>[retour à la table des matières](#table-des-matières)</sup>
-
 
 ### Définit `display: none` sur les sauts de ligne utilisés comme espacement
 
@@ -617,7 +581,6 @@ br + br {
 ```
 
 <sup>[retour à la table des matières](#table-des-matières)</sup>
-
 
 ## Prise en charge par les navigateurs
 

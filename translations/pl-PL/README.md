@@ -1,7 +1,3 @@
-<p align="center">
-  <img src="../../assets/img/bulb.svg" width="200" alt="light bulb icon">
-</p>
-
 # Wskazówki CSS [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome)
 
 Zbiór porad, które pomogą Ci rozwinąć zawansowane umiejętności CSS.
@@ -10,10 +6,9 @@ Zbiór porad, które pomogą Ci rozwinąć zawansowane umiejętności CSS.
 
 ## Powrót do spisu treści
 
-* [Wskazówki](#Wskazowki)
-* [Wsparcie](#Wsparcie)
-* [Wskazówki dotyczące kontrybucji do tego projektu](../../CONTRIBUTING.md)
-
+- [Wskazówki](#Wskazowki)
+- [Wsparcie](#Wsparcie)
+- [Wskazówki dotyczące kontrybucji do tego projektu](../../CONTRIBUTING.md)
 
 ## Wskazówki
 
@@ -43,10 +38,9 @@ Zbiór porad, które pomogą Ci rozwinąć zawansowane umiejętności CSS.
 1. [Użyj zdarzeń wskaźnika do sterowania zdarzeniami myszy](#użyj-zdarzeń-wskaźnika-do-sterowania-zdarzeniami-myszy)
 1. [Ustaw `display: none` na Podziały linii używane jako odstępy](#ustaw-display-none-na-podziały-linii-używane-jako-odstępy)
 
-
 ### Użyj resetowania CSS
 
-Reset ustawień CSS umośliwia wymuszenie spójność stylu w różnych przeglądarkach z czystym konturem dla elementów stylizacyjnych. Możesz wykorzystać jedną bibliotek resetującej ustawienia CSS np. [Normalize](http://necolas.github.io/normalize.css/) lub użyć  uproszczonego sposobu resetowania:
+Reset ustawień CSS umośliwia wymuszenie spójność stylu w różnych przeglądarkach z czystym konturem dla elementów stylizacyjnych. Możesz wykorzystać jedną bibliotek resetującej ustawienia CSS np. [Normalize](http://necolas.github.io/normalize.css/) lub użyć uproszczonego sposobu resetowania:
 
 ```css
 * {
@@ -60,10 +54,9 @@ Elementy zostaną pozbawione marginesów i dopełnienia, a `box-sizing` pozwala 
 
 #### [Demonstracja](http://codepen.io/AllThingsSmitty/pen/kkrkLL)
 
-**Uwaga:** Jeżeli zdecydujesz sie na wykorzystanie powyżej opisanej wskazówki dotyczącej  [Dziedziczenia `box-sizing`](#inherit-box-sizing) możesz zrezygnować z dodania `box-sizing` w zresetowanych ustawieniach CSS.
+**Uwaga:** Jeżeli zdecydujesz sie na wykorzystanie powyżej opisanej wskazówki dotyczącej [Dziedziczenia `box-sizing`](#inherit-box-sizing) możesz zrezygnować z dodania `box-sizing` w zresetowanych ustawieniach CSS.
 
-<sup>[powrót do spisu treści](#powrót-do-spisu-treści )</sup>
-
+<sup>[powrót do spisu treści](#powrót-do-spisu-treści)</sup>
 
 ### Dziedziczenie `box-sizing`
 
@@ -86,7 +79,6 @@ Ułatwia to łatwiejszą zmianę `box-sizing` w wtyczkach lub innych komponentac
 #### [Demonstracja](https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/)
 
 <sup>[powrót do spisu treści](#powrót-do-spisu-treści)</sup>
-
 
 ### Użyj `unset` zamiast resetowania wszystkich ustawień
 
@@ -112,7 +104,6 @@ button {
 ```
 
 <sup>[powrót do spisu treści](#powrót-do-spisu-treści)</sup>
-
 
 ### Użyj `:not()`, aby dodać/usunąć obramownie nawigacji
 
@@ -148,7 +139,6 @@ Selektor CSS definiuje granicę w sposób opisany przez człowieka.
 
 <sup>[powrót do spisu treści](#powrót-do-spisu-treści)</sup>
 
-
 ### Sprawdź, czy czcionka jest zainstalowana lokalnie
 
 Możesz sprawdzić, czy czcionka jest zainstalowana lokalnie, przed jej zdalnym pobraniem, co również jest dobrą wskazówką dotyczącą wydajności.
@@ -159,10 +149,8 @@ Możesz sprawdzić, czy czcionka jest zainstalowana lokalnie, przed jej zdalnym 
   src:
     /* Full name */
     local("Dank Mono"),
-    /* Postscript name */
-    local("Dank-Mono"),
-    /* Otherwise, download it! */
-    url("//...a.server/fonts/DankMono.woff");
+    /* Postscript name */ local("Dank-Mono"),
+    /* Otherwise, download it! */ url("//...a.server/fonts/DankMono.woff");
 }
 
 code {
@@ -174,10 +162,9 @@ Czapka dla Adama Argyle'a za podzielenie się tym prototypem i [demonstracją](h
 
 <sup>[powrót do spisu treści](#powrót-do-spisu-treści)</sup>
 
-
 ### Dodaj `line-height` do `body`
 
-Nie musisz dodawać  `wysokości linii` do każdego  `<p>`, `<h*>`, _et al_. osobno. Zamiast tego dodaj go do `body`:
+Nie musisz dodawać `wysokości linii` do każdego `<p>`, `<h*>`, _et al_. osobno. Zamiast tego dodaj go do `body`:
 
 ```css
 body {
@@ -191,7 +178,6 @@ W ten sposób elementy tekstowe mogą łatwo odziedziczyć ustawienia z `body`.
 
 <sup>[powrót do spisu treści](#Powrót-do-spisu-treści)</sup>
 
-
 ### Ustaw `:focus` dla elementów formularza
 
 Obserwowani użytkownicy klawiatury polegają na fokucie, aby określić, gdzie na stronie pojawiają się zdarzenia na klawiaturze. Skoncentruj się na elementach formy, które będą spójne, a następnie domyślna implementacja przeglądarki:
@@ -204,15 +190,13 @@ select:focus,
 textarea:focus {
   box-shadow: none;
   outline: #000 dotted 2px;
-  outline-offset: .05em;
+  outline-offset: 0.05em;
 }
 ```
 
 #### [Demonstracja](https://codepen.io/AllThingsSmitty/pen/ePzoOP/)
 
 <sup>[Powrót do spisu treści](#Powrót-do-spisu-treści)</sup>
-
-
 
 ### Przesuwanie w pionie
 
@@ -245,12 +229,11 @@ body {
 }
 ```
 
-Chcesz coś przenieść? Pionowo, poziomo... zawsze i wszędzie? Na CSS-Tricks znajdziesz [ciekawy artykuł](https://css-tricks.com/centering-css-complete-guide/) z dobrymi instrukcje na ten temat. 
+Chcesz coś przenieść? Pionowo, poziomo... zawsze i wszędzie? Na CSS-Tricks znajdziesz [ciekawy artykuł](https://css-tricks.com/centering-css-complete-guide/) z dobrymi instrukcje na ten temat.
 
 #### [Demonstracja](http://codepen.io/AllThingsSmitty/pen/GqmGqZ)
 
 <sup>[Powrót do spisu treści](#Powrót-do-spisu-treści)</sup>
-
 
 ### Listy podzielone przecinkami
 
@@ -268,10 +251,9 @@ Użyj `:not()` pseudo-klasy, aby przecinek nie zostal dodany do ostatniego eleme
 
 <sup>[Powrót do spisu treści](#Powrót-do-spisu-treści)</sup>
 
-
 ### Wybierz przedmioty za pomocą `nth-child`
 
-Wybierz przedmioty nieparzyste za pomocą negatywnego  `nth-child` w CSS, aby wybrać elementy od 1 do n.
+Wybierz przedmioty nieparzyste za pomocą negatywnego `nth-child` w CSS, aby wybrać elementy od 1 do n.
 
 ```css
 li {
@@ -279,7 +261,7 @@ li {
 }
 
 /* select items 1 through 3 and display them */
-li:nth-child(-n+3) {
+li:nth-child(-n + 3) {
   display: block;
 }
 ```
@@ -288,7 +270,7 @@ Lub, skoro już nauczyłeś się trochę o użyciu [`:not()`](#use-not-to-applyu
 
 ```css
 /* select all items except the first 3 and display them */
-li:not(:nth-child(-n+3)) {
+li:not(:nth-child(-n + 3)) {
   display: none;
 }
 ```
@@ -298,7 +280,6 @@ To było całkiem łatwe.
 #### [Demonstracja](http://codepen.io/AllThingsSmitty/pen/WxjKZp)
 
 <sup>[Powrót do spisu treści](#Powrót-do-spisu-treści)</sup>
-
 
 ### Użyj SVG dla ikon
 
@@ -322,10 +303,9 @@ SVG skaluje się dobrze dla wszystkich typów rozdzielczości i jest obsługiwan
 
 <sup>[Powrót do spisu treści](#Powrót-do-spisu-treści)</sup>
 
+### Użyj selektora "Lobotomized Owl"
 
-### Użyj selektora "Lobotomized Owl" 
-
-Być może "Lobotomized Owl" to dziwna nazwa dla selektora, ale użycie uniwersalnego (`*`) selektora z sąsiednim selektorem rodzeństwa  (`+`) może udostepnić potężne możliwości CSS:
+Być może "Lobotomized Owl" to dziwna nazwa dla selektora, ale użycie uniwersalnego (`*`) selektora z sąsiednim selektorem rodzeństwa (`+`) może udostepnić potężne możliwości CSS:
 
 ```css
 * + * {
@@ -335,16 +315,15 @@ Być może "Lobotomized Owl" to dziwna nazwa dla selektora, ale użycie uniwersa
 
 W tym przykładzie wszystkie elementy, które śledzą inne elementy, otrzymają `margin-top: 1.5em`.
 
-Dowiedź sie wiecej na temat selektora "lobotomized owl" czytajac [artykul Heydon'a Pickering](http://alistapart.com/article/axiomatic-css-and-lobotomized-owls)  *A List Apart*.
+Dowiedź sie wiecej na temat selektora "lobotomized owl" czytajac [artykul Heydon'a Pickering](http://alistapart.com/article/axiomatic-css-and-lobotomized-owls) _A List Apart_.
 
 #### [Demonstracja](http://codepen.io/AllThingsSmitty/pen/grRvWq)
 
 <sup>[Powrót do spisu treści](#Powrót-do-spisu-treści)</sup>
 
-
 ### Użyj`max-height` (atrybutu maksymalnej wysokości) dla suwaków Pure CSS
 
-Zaimplementuj suwaki CSS używając `max-height`  z ukrytym przepełnieniem:
+Zaimplementuj suwaki CSS używając `max-height` z ukrytym przepełnieniem:
 
 ```css
 .slider {
@@ -363,7 +342,6 @@ Element rozwija się do `max-height` po najechaniu kursorem, a suwak wyświetla 
 
 <sup>[Powrót do spisu treści](#Powrót-do-spisu-treści)</sup>
 
-
 ### Komórki tabeli o równej-szerokości
 
 Tworzenie tabel może być uciążliwe. Spróbuj użyć `table-layout: fixed`, aby upewnić sie, że komórki mają jednakową szerokość:
@@ -380,10 +358,9 @@ Widzisz jakie to proste! :)
 
 <sup>[Powrót do spisu treści](#Powrót-do-spisu-treści)</sup>
 
-
 ### Pozbądź się marginesów za pomocą Flexbox
 
-Podczas pracy z rynnami kolumnowymi (column gutters) możesz pozbyć się  `nth-`, `first-`, i `last-child` za pomocą właściwości`space-between`:
+Podczas pracy z rynnami kolumnowymi (column gutters) możesz pozbyć się `nth-`, `first-`, i `last-child` za pomocą właściwości`space-between`:
 
 ```css
 .list {
@@ -399,7 +376,6 @@ Podczas pracy z rynnami kolumnowymi (column gutters) możesz pozbyć się  `nth-
 Teraz rynny kolumnowe zawsze są rozmieszczone równomiernie.
 
 <sup>[Powrót do spisu treści](#Powrót-do-spisu-treści)</sup>
-
 
 ### Użyj selektorów atrybutów z pustymi linkami
 
@@ -417,7 +393,6 @@ To całkiem wygodne.
 
 <sup>[Powrót do spisu treści](#Powrót-do-spisu-treści)</sup>
 
-
 ### Stylizuj "domyślne" linki
 
 Dodaj styl dla "domyślnych" linków:
@@ -429,10 +404,9 @@ a[href]:not([class]) {
 }
 ```
 
-Linki wstawiane za pośrednictwem CMS, które zwykle nie mają atrybutu class, będą wyróżnione bez  wpływu na kaskadę.
+Linki wstawiane za pośrednictwem CMS, które zwykle nie mają atrybutu class, będą wyróżnione bez wpływu na kaskadę.
 
 <sup>[Powrót do spisu treści](#Powrót-do-spisu-treści)</sup>
-
 
 ### Wewnętrzne proporcje bloków
 
@@ -455,12 +429,11 @@ Aby utworzyć pola, które posiada wewnętrzne proporcje, wystarczy zastosować 
 }
 ```
 
-Użycie 20% wypełnienia (padding) sprawia, że wysokość bloku jest równa 20% jego szerokości. Bez względu na szerokość okna roboczego (viewport), element div zachowa swój współczynnik proporcji  (100% / 20% = 5:1).
+Użycie 20% wypełnienia (padding) sprawia, że wysokość bloku jest równa 20% jego szerokości. Bez względu na szerokość okna roboczego (viewport), element div zachowa swój współczynnik proporcji (100% / 20% = 5:1).
 
 #### [Demonstracja](http://codepen.io/AllThingsSmitty/pen/jALZvE)
 
-<sup>[powrót do spisu treści](#powrót-do-spisu-treści )</sup>
-
+<sup>[powrót do spisu treści](#powrót-do-spisu-treści)</sup>
 
 ### Wystylizuj uszkodzone obrazy
 
@@ -497,10 +470,10 @@ img::after {
 
 Dowiedz się więcej o stylizacji używając tego wzoru w oryginalnym [originalny artykule](http://bitsofco.de/styling-broken-images/) [Ire Aderinokun](https://github.com/ireade/).
 
-<sup>[powrót do spisu treści](#powrót-do-spisu-treści )</sup>
-
+<sup>[powrót do spisu treści](#powrót-do-spisu-treści)</sup>
 
 ### Użyj `rem` dla ustawień globalnych rozmiarow i `em` do ustawień localnych
+
 Po ustawieniu podstawowego rozmiaru czcionki w katalogu głównym (`html { font-size: 100%; }`), ustaw rozmiar czcionki dla elementów tekstowych na `em`:
 
 ```css
@@ -521,15 +494,13 @@ article {
 }
 
 aside .module {
-  font-size: .9rem;
+  font-size: 0.9rem;
 }
 ```
 
-
 Teraz każdy moduł jest podzielony na sekcje. Sprawia to żę stylizacja i utrzymanie kodu jest łątwiejsze.
 
-<sup>[powrót do spisu treści](#powrót-do-spisu-treści )</sup>
-
+<sup>[powrót do spisu treści](#powrót-do-spisu-treści)</sup>
 
 ### Ukryj filmy z autoodtwarzaniem, które nie są wyciszone
 
@@ -541,11 +512,9 @@ video[autoplay]:not([muted]) {
 }
 ```
 
-
-Po raz kolejny wykorzystujemy pseudo-klasę [`:not()`](#use-not-to-applyunapply-borders-on-navigation) 
+Po raz kolejny wykorzystujemy pseudo-klasę [`:not()`](#use-not-to-applyunapply-borders-on-navigation)
 
 <sup>[Powrót do spisu treści](#Powrót-do-spisu-treści</sup>
-
 
 ### Użyj `:root` dla elastycznych typów
 
@@ -553,7 +522,7 @@ Rozmiar czcionki typowej w elastyczny układzie (responsive layout) powinien by�
 
 ```css
 :root {
-  font-size: calc(1vw + 1vh + .5vmin);
+  font-size: calc(1vw + 1vh + 0.5vmin);
 }
 ```
 
@@ -567,12 +536,11 @@ body {
 
 #### [Demonstracja](http://codepen.io/AllThingsSmitty/pen/XKgOkR)
 
-<sup>[powrót do spisu treści](#powrót-do-spisu-treści )</sup>
-
+<sup>[powrót do spisu treści](#powrót-do-spisu-treści)</sup>
 
 ### Ustaw rozmiar czcionki w elementach formularza
 
-Aby uniknąć korzystania z przeglądarek komórkowych  (iOS Safari etc.) podczas powiększania elementów formularzy HTML, po dotknięciu menu rozwijanego `<select>` dnależy dodać `font-size` do reguły selektora:
+Aby uniknąć korzystania z przeglądarek komórkowych (iOS Safari etc.) podczas powiększania elementów formularzy HTML, po dotknięciu menu rozwijanego `<select>` dnależy dodać `font-size` do reguły selektora:
 
 ```css
 input[type="text"],
@@ -587,14 +555,13 @@ textarea {
 
 <sup>[Powrót do spisu treści](#Powrót-do-spisu-treści)</sup>
 
-
 ### Użyj zdarzeń wskaźnika do sterowania zdarzeniami myszy
 
 [Pointer events](https://developer.mozilla.org/en-US/docs/Web/CSS/pointer-events) umożliwiają określenie sposobu interakcji myszy z elementem, na które kilka. Aby wyłączyć domyślne zdarzenie wskaźnika na przycisku, na przykład:
 
 ```css
 button:disabled {
-  opacity: .5;
+  opacity: 0.5;
   pointer-events: none;
 }
 ```
@@ -602,7 +569,6 @@ button:disabled {
 To takie proste.
 
 <sup>[Powrót do spisu treści](#Powrót-do-spisu-treści)</sup>
-
 
 ### Ustaw `display: none` na Podziały linii używane jako odstępy
 
@@ -615,7 +581,6 @@ br + br {
 ```
 
 <sup>[Powrót do spisu treści](#Powrót-do-spisu-treści)</sup>
-
 
 ## Wsparcie
 

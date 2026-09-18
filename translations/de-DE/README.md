@@ -1,20 +1,14 @@
-<p align="center">
-  <img src="../../assets/img/bulb.svg" width="200" alt="light bulb icon">
-</p>
-
 # CSS Profi-Tipps [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome)
 
 Eine Sammlung an Tipps, um deine CSS-Fähigkeiten zu professionalisieren.
 
 > Für andere großartige Listen schaue dir [@sindresorhus](https://github.com/sindresorhus/)s kuratierte Liste von ["awesome" Listen](https://github.com/sindresorhus/awesome/) an.
 
-
 ## Inhaltsverzeichnis
 
-* [Profi-Tipps](#profi-tipps)
-* [Unterstützung](#unterstützung)
-* [Mitarbeitsrichtlinien](../../CONTRIBUTING.md)
-
+- [Profi-Tipps](#profi-tipps)
+- [Unterstützung](#unterstützung)
+- [Mitarbeitsrichtlinien](../../CONTRIBUTING.md)
 
 ## Profi-Tipps
 
@@ -44,7 +38,6 @@ Eine Sammlung an Tipps, um deine CSS-Fähigkeiten zu professionalisieren.
 1. [Benutze `Pointer`-Events um Mausereignisse zu kontrollieren](#benutze-pointer-events-um-mausereignisse-zu-kontrollieren)
 1. [Stellen Sie bei Zeilenumbrüchen, die als Abstand verwendet werden, `display: none` ein](#stellen-sie-bei-zeilenumbrüchen,-die-als-abstand-verwendet-werden-display-none-ein)
 
-
 ### Benutze ein CSS-Reset
 
 CSS Resets helfen dabei eine Gestaltungskonsistenz zwischen verschiedenen Browsern herzustellen, indem sie für einen sauberen Zustand zwischen den einzelnen Elementen sorgen. Du kannst eine CSS Resetsammlung wie [Normalize](http://necolas.github.io/normalize.css/), usw. benutzen, oder einen etwas einfacheren Ansatz wählen:
@@ -67,7 +60,6 @@ Nun werden Elemente von ihren Margins und Paddings befreit und `box-sizing` läs
 
 <sup>[zurück zum Inhaltsverzeichnis](#inhaltsverzeichnis)</sup>
 
-
 ### Übernehme `box-sizing`
 
 Übernehme `box-sizing` von `html`:
@@ -89,7 +81,6 @@ Dies macht es einfacher das `box-sizing` über Plugins oder andere Komponenten z
 #### [Demo](https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/)
 
 <sup>[zurück zum Inhaltsverzeichnis](#inhaltsverzeichnis)</sup>
-
 
 ### Benutze `unset`, anstatt alle Eigenschaften zurückzusetzen
 
@@ -115,7 +106,6 @@ button {
 ```
 
 <sup>[zurück zum Inhaltsverzeichnis](#inhaltsverzeichnis)</sup>
-
 
 ### Benutze `:not()` um Rahmen an die Navigation zu setzen oder zu entfernen
 
@@ -151,7 +141,6 @@ Sicher, du kannst `.nav li + li` verwenden, aber mit `:not()` ist die Absicht se
 
 <sup>[zurück zum Inhaltsverzeichnis](#inhaltsverzeichnis)</sup>
 
-
 ### Check If Font Is Installed Locally](#check-if-font-is-installed-locally)
 
 ### Kontroller, om skrifttypen er installeret lokalt
@@ -164,10 +153,8 @@ Du kan kontrollere, om en skrifttype er installeret lokalt, før du henter den e
   src:
     /* Full name */
     local("Dank Mono"),
-    /* Postscript name */
-    local("Dank-Mono"),
-    /* Otherwise, download it! */
-    url("//...a.server/fonts/DankMono.woff");
+    /* Postscript name */ local("Dank-Mono"),
+    /* Otherwise, download it! */ url("//...a.server/fonts/DankMono.woff");
 }
 
 code {
@@ -178,7 +165,6 @@ code {
 Hat tip til Adam Argyle for at dele denne protip og [demoen](https://codepen.io/argyleink/pen/VwYJpgR).
 
 <sup>[zurück zum Inhaltsverzeichnis](#inhaltsverzeichnis)</sup>
-
 
 ### Ergänze `line-height` an `body`
 
@@ -196,7 +182,6 @@ Auf diese Weise können Textelemente dies einfach von `body` übernehmen.
 
 <sup>[zurück zum Inhaltsverzeichnis](#inhaltsverzeichnis)</sup>
 
-
 ### Setze `:focus` für Form-Elemente
 
 Sehende Tastaturbenutzer_innen sind auf die Fokussierung angewiesen, um unterscheiden zu können wohin Tastaturevents auf der Seite gehen. Gestalte den Fokus für Formular-Elemente klar ersichtlich und konsistenter als die voreingestellte Browserimplementation:
@@ -209,7 +194,7 @@ select:focus,
 textarea:focus {
   box-shadow: none;
   outline: #000 dotted 2px;
-  outline-offset: .05em;
+  outline-offset: 0.05em;
 }
 ```
 
@@ -217,10 +202,9 @@ textarea:focus {
 
 <sup>[zurück zum Inhaltsverzeichnis](#inhaltsverzeichnis)</sup>
 
-
 ### Zentriere alles vertikal
 
-Nein, das ist keine Hexerei &ndash; du kannst wirklich alle Elemente vertikal zentrieren. 
+Nein, das ist keine Hexerei &ndash; du kannst wirklich alle Elemente vertikal zentrieren.
 Das machst du mit Flexbox&hellip;
 
 ```css
@@ -256,7 +240,6 @@ Möchtest du etwas anderes zentrieren? Vertikal, horizontal&hellip; alles, jeder
 
 <sup>[zurück zum Inhaltsverzeichnis](#inhaltsverzeichnis)</sup>
 
-
 ### Kommaseparierte Liste
 
 Lasse Listenpunkte wie eine echte kommaseparierte Liste aussehen:
@@ -273,7 +256,6 @@ Benutze die `:not()`-Pseudoklasse, um nach dem letzten Listenpunkt kein Komma an
 
 <sup>[zurück zum Inhaltsverzeichnis](#inhaltsverzeichnis)</sup>
 
-
 ### Selektiere Items mit einem negativen `nth-child`
 
 Benutze ein negatives `nth-child` im CSS um Items von 1 bis n auszuwählen.
@@ -284,7 +266,7 @@ li {
 }
 
 /* wähle die Listenpunkte 1 bis 3 und zeige sie an */
-li:nth-child(-n+3) {
+li:nth-child(-n + 3) {
   display: block;
 }
 ```
@@ -293,7 +275,7 @@ Anderweitig, da du nun ein bisschen über die [Benutzung von `:not()`](#benutze-
 
 ```css
 /* wähle alle Listenpunkte außer die ersten 3 und zeige sie an */
-li:not(:nth-child(-n+3)) {
+li:not(:nth-child(-n + 3)) {
   display: block;
 }
 ```
@@ -301,7 +283,6 @@ li:not(:nth-child(-n+3)) {
 #### [Demo](http://codepen.io/AllThingsSmitty/pen/WxjKZp)
 
 <sup>[zurück zum Inhaltsverzeichnis](#inhaltsverzeichnis)</sup>
-
 
 ### Benutze SVG für Symbole
 
@@ -325,7 +306,6 @@ SVG skaliert für alle verschiedenen Auflösungen sehr gut und wird von allen Br
 
 <sup>[zurück zum Inhaltsverzeichnis](#inhaltsverzeichnis)</sup>
 
-
 ### Benutze den "lobotomisierte Eule"-Selektor
 
 Er hat zwar einen seltsamen Namen aber der Universal-Selektor (`*`) mit dem angrenzenden Geschwister-Selektor (`+`) kann starke CSS-Möglichkeiten darbieten:
@@ -338,12 +318,11 @@ Er hat zwar einen seltsamen Namen aber der Universal-Selektor (`*`) mit dem angr
 
 In diesem Beispiel bekommen alle Elemente im Fluss des Dokuments, die anderen Elementen folgen, `margin-top: 1.5em`.
 
-Für mehr bezüglich des "lobotomisierte Eule"-Selektors lese [Heydon Pickerings Eintrag](http://alistapart.com/article/axiomatic-css-and-lobotomized-owls) auf *A List Apart*.
+Für mehr bezüglich des "lobotomisierte Eule"-Selektors lese [Heydon Pickerings Eintrag](http://alistapart.com/article/axiomatic-css-and-lobotomized-owls) auf _A List Apart_.
 
 #### [Demo](http://codepen.io/AllThingsSmitty/pen/grRvWq)
 
 <sup>[zurück zum Inhaltsverzeichnis](#inhaltsverzeichnis)</sup>
-
 
 ### Benutze `max-height` für reine CSS-Galerien
 
@@ -366,7 +345,6 @@ Das Element dehnt sich beim Überfahren zum Wert von `max-height` aus und die Ga
 
 <sup>[zurück zum Inhaltsverzeichnis](#inhaltsverzeichnis)</sup>
 
-
 ### Setze Tabellenzellen auf die gleiche Weite
 
 Tabellen können ein ganz schönes Problem sein. Versuche `table-layout: fixed`, um die Tabellenzellen auf die gleiche Größe zu setzen:
@@ -382,7 +360,6 @@ Schmerzfreie Tabellen-Layouts.
 #### [Demo](http://codepen.io/AllThingsSmitty/pen/jALALm)
 
 <sup>[zurück zum Inhaltsverzeichnis](#inhaltsverzeichnis)</sup>
-
 
 ### Benutze Flexbox, um von Margin-Hacks wegzukommen
 
@@ -403,7 +380,6 @@ Nun erscheinen Spaltenabstände immer gleichmäßig.
 
 <sup>[zurück zum Inhaltsverzeichnis](#inhaltsverzeichnis)</sup>
 
-
 ### Benutze den Attribut-Selektor mit leeren Verlinkungen
 
 Zeige Verlinkungen an, wenn das `<a>`-Element keinen Textwert beinhaltet, das `href`-Attribut jedoch eine Verlinkung hat:
@@ -420,7 +396,6 @@ Das ist äußerst praktisch.
 
 <sup>[zurück zum Inhaltsverzeichnis](#inhaltsverzeichnis)</sup>
 
-
 ### Gestalte "Standard"-Verlinkungen
 
 Ergänze eine Darstellung für die von Browsern voreingestellte Verlinkung:
@@ -435,7 +410,6 @@ a[href]:not([class]) {
 Nun werden Verlinkungen, die über ein CMS eingesetzt wurden &ndash; welche überlicherweise kein `class`-Attribut haben &ndash; unterscheidbar sein, ohne die Kaskade im Allgemeinen zu beeinflussen.
 
 <sup>[zurück zum Inhaltsverzeichnis](#inhaltsverzeichnis)</sup>
-
 
 ### Boxen mit zugehörigem Größenverhältnis
 
@@ -463,7 +437,6 @@ Das Anwenden eines Wertes von 20% auf die Padding-Eigenschaft erzeugt eine Box m
 #### [Demo](http://codepen.io/AllThingsSmitty/pen/jALZvE)
 
 <sup>[zurück zum Inhaltsverzeichnis](#inhaltsverzeichnis)</sup>
-
 
 ### Gestalte defekte Bilder
 
@@ -502,7 +475,6 @@ Lerne mehr über das Gestalten dieses Modells in [Ire Aderinokun](https://github
 
 <sup>[zurück zum Inhaltsverzeichnis](#inhaltsverzeichnis)</sup>
 
-
 ### Benutze `rem` für globales Ändern der Größe; Benutze `em` für lokale Größenveränderungen
 
 Nachdem du die grundlegende Schriftgröße (`html { font-size: 100%; }`) festgelegt hast, setze die Schriftgrößen für Textelemente auf `em`:
@@ -525,14 +497,13 @@ article {
 }
 
 aside .module {
-  font-size: .9rem;
+  font-size: 0.9rem;
 }
 ```
 
 Nun sollte jedes Modul gegliedert, einfacher zu gestalten, wartbarer und flexibler sein.
 
 <sup>[zurück zum Inhaltsverzeichnis](#inhaltsverzeichnis)</sup>
-
 
 ### Verstecke automatisch abspielende Videos, die nicht auf stumm gesetzt sind
 
@@ -548,14 +519,13 @@ Erneut nutzen wir die [`:not()`](#benutze-not-um-rahmen-an-die-navigation-zu-set
 
 <sup>[zurück zum Inhaltsverzeichnis](#inhaltsverzeichnis)</sup>
 
-
 ### Benutze `:root` für flexible Schrift
 
-Die Größe der Schriftart innerhalb eines _responsive_ Layouts sollte mit jedem Ansichtsfenster veränderbar sein. Du kannst die Schriftgröße basierend auf der Höhe und Weite des Fensters berechnen, indem du `:root` verwendest: 
+Die Größe der Schriftart innerhalb eines _responsive_ Layouts sollte mit jedem Ansichtsfenster veränderbar sein. Du kannst die Schriftgröße basierend auf der Höhe und Weite des Fensters berechnen, indem du `:root` verwendest:
 
 ```css
 :root {
-  font-size: calc(1vw + 1vh + .5vmin);
+  font-size: calc(1vw + 1vh + 0.5vmin);
 }
 ```
 
@@ -570,7 +540,6 @@ body {
 #### [Demo](http://codepen.io/AllThingsSmitty/pen/XKgOkR)
 
 <sup>[zurück zum Inhaltsverzeichnis](#inhaltsverzeichnis)</sup>
-
 
 ### Setze `font-size` auf Formular-Elemente für eine bessere mobile Erfahrung
 
@@ -589,14 +558,13 @@ textarea {
 
 <sup>[zurück zum Inhaltsverzeichnis](#inhaltsverzeichnis)</sup>
 
-
 ### Benutze `Pointer`-Events um Mausereignisse zu kontrollieren
 
 [Pointer-Events](https://developer.mozilla.org/en-US/docs/Web/CSS/pointer-events) erlauben es dir zu spezifizieren wie die Maus mit dem Element interagiert sobald sie es berührt. Um beispielsweise das standardgemäß eingestellte Pointer-Event &ndash; beispielsweise bei einer Button-Schaltfläche &ndash; abzuschalten:
 
 ```css
 button:disabled {
-  opacity: .5;
+  opacity: 0.5;
   pointer-events: none;
 }
 ```
@@ -604,7 +572,6 @@ button:disabled {
 So einfach ist das.
 
 <sup>[zurück zum Inhaltsverzeichnis](#inhaltsverzeichnis)</sup>
-
 
 ### Stellen Sie bei Zeilenumbrüchen, die als Abstand verwendet werden, `display: none` ein
 
@@ -617,7 +584,6 @@ br + br {
 ```
 
 <sup>[zurück zum Inhaltsverzeichnis](#inhaltsverzeichnis)</sup>
-
 
 ## Unterstützung
 
