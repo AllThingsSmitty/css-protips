@@ -1,22 +1,16 @@
-<p align="center">
-  <img src="../../assets/img/bulb.svg" alt="light bulb icon">
-</p>
-
 # Советы профессионалов CSS [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome)
 
 Коллекция советов, которые помогут вам стать лучше в CSS.
 
 > Вы найдете больше [классных списков](https://github.com/sindresorhus/awesome/) под кураторством [@sindresorhus](https://github.com/sindresorhus/).
 
-
 <div id="table-of-contents"></div>
 
 ## Содержание
 
-* [Профессиональные советы](#Профессиональные-советы)
-* [Поддержка](#Поддержка)
-* [Помощь проекту](../../CONTRIBUTING.md)
-
+- [Профессиональные советы](#Профессиональные-советы)
+- [Поддержка](#Поддержка)
+- [Помощь проекту](../../CONTRIBUTING.md)
 
 ## Профессиональные советы
 
@@ -49,7 +43,6 @@
 1. [Установите `display: none` на разрывы строк, используемые как интервалы](#Установите-display-none-на-разрывы-строк-используемые-как-интервалы)
 1. [Используйте `:empty`, чтобы скрыть пустые HTML элементы](#Используйте-empty-чтобы-скрыть-пустые-HTML-элементы)
 
-
 ### Используйте CSS Reset
 
 Сброс CSS помогает обеспечить согласованность стилей между различными браузерами и с чистого листа начать оформление элементов. Вы можете использовать CSS библиотеки сброса такие как [Normalize](http://necolas.github.io/normalize.css/) и др., или вы можете использовать более простой способ сброса:
@@ -72,7 +65,6 @@
 
 <sup>[вернуться к оглавлению](#table-of-contents)</sup>
 
-
 ### Наследуйте `box-sizing`
 
 Пусть `box-sizing` будет унаследован от `html`:
@@ -94,7 +86,6 @@ html {
 #### [Демо](https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/)
 
 <sup>[вернуться к оглавлению](#table-of-contents)</sup>
-
 
 ### Используйте `unset` вместо сброса всех свойств
 
@@ -120,7 +111,6 @@ button {
 ```
 
 <sup>[вернуться к оглавлению](#table-of-contents)</sup>
-
 
 ### Используйте `:not()` для добавления / удаления границ в меню навигации
 
@@ -156,7 +146,6 @@ button {
 
 <sup>[вернуться к оглавлению](#table-of-contents)</sup>
 
-
 ### Проверьте, установлен ли шрифт локально
 
 Вы можете проверить, установлен ли шрифт локально, прежде чем извлекать его удаленно, что также является хорошим показателем производительности.
@@ -167,10 +156,8 @@ button {
   src:
     /* Full name */
     local("Dank Mono"),
-    /* Postscript name */
-    local("Dank-Mono"),
-    /* Otherwise, download it! */
-    url("//...a.server/fonts/DankMono.woff");
+    /* Postscript name */ local("Dank-Mono"),
+    /* Otherwise, download it! */ url("//...a.server/fonts/DankMono.woff");
 }
 
 code {
@@ -182,14 +169,13 @@ code {
 
 <sup>[вернуться к оглавлению](#table-of-contents)</sup>
 
-
 ### Добавьте `line-height` в `body`
 
 Вам вовсе не требуется добавлять свойство `line-height` к каждому `<р>`, `<h*>`, _и т.д._. по отдельности. Вместо этого добавьте его в `body`:
 
 ```css
 body {
-  line-height: 1.5;
+    line-height: 1.5;
 }
 ```
 
@@ -198,7 +184,6 @@ body {
 #### [Демо](http://codepen.io/AllThingsSmitty/pen/VjbdYd)
 
 <sup>[вернуться к оглавлению](#table-of-contents)</sup>
-
 
 ### Установите `:focus` для элементов формы
 
@@ -212,12 +197,11 @@ select:focus,
 textarea:focus {
   box-shadow: none;
   outline: #000 dotted 2px;
-  outline-offset: .05em;
+  outline-offset: 0.05em;
 }
 ```
 
 <sup>[вернуться к оглавлению](#table-of-contents)</sup>
-
 
 ### Выровнять всё по вертикали
 
@@ -256,7 +240,6 @@ body {
 
 <sup>[вернуться к оглавлению](#table-of-contents)</sup>
 
-
 ### Используйте `aspect-ratio` вместо задания ширины, высотыhttps://onelove-agency.ru/web/october2024
 
 Свойство `aspect-ratio` позволяет легко изменять размеры элементов и поддерживать постоянное соотношение ширины и высоты. Это невероятно полезно в отзывчивом веб-дизайне для предотвращения смещения макета. Используйте `object-fit` вместе с ним, чтобы не нарушить верстку при изменении значений высоты/ширины изображений.
@@ -274,7 +257,6 @@ img {
 
 <sup>[вернуться к оглавлению](#table-of-contents)</sup>
 
-
 ### Списки, разделенные запятыми
 
 Сделайте список похожим на настоящий, разделенный запятыми список:
@@ -291,7 +273,6 @@ ul > li:not(:last-child)::after {
 
 <sup>[вернуться к оглавлению](#table-of-contents)</sup>
 
-
 ### Выбирайте элементы с использованием отрицательных значений в `nth-child`
 
 Используйте отрицательные значения в `nth-child` в CSS для выбора элементов с 1 по n.
@@ -302,7 +283,7 @@ li {
 }
 
 /* выбирает и отображает элементы с 1 по 3 */
-li:nth-child(-n+3) {
+li:nth-child(-n + 3) {
   display: block;
 }
 ```
@@ -311,7 +292,7 @@ li:nth-child(-n+3) {
 
 ```css
 /* выберите все элементы, кроме первых 3, и покажите их */
-li:not(:nth-child(-n+3)) {
+li:not(:nth-child(-n + 3)) {
   display: none;
 }
 ```
@@ -322,14 +303,13 @@ li:not(:nth-child(-n+3)) {
 
 <sup>[вернуться к оглавлению](#table-of-contents)</sup>
 
-
 ### Используйте SVG для значков
 
 Нет ни одной причины, чтобы не использовать SVG для значков:
 
 ```css
 .logo {
-  background: url("logo.svg");
+    background: url("logo.svg");
 }
 ```
 
@@ -345,25 +325,23 @@ SVG хорошо масштабируется для всех разрешени
 
 <sup>[вернуться к оглавлению](#table-of-contents)</sup>
 
-
 ### Используйте селектор "Лоботомированная сова"
 
 Название, безусловно, странное, но используя универсальный селектор (`*`) с соседним селектором (`+`), мы получаем мощное правило CSS:
 
 ```css
 * + * {
-  margin-top: 1.5em;
+    margin-top: 1.5em;
 }
 ```
 
 В этом примере все элементы в потоке документа, которые следуют другие элементы получат `margin-top: 1.5em`.
 
-Более подробную информацию о селекторе "Лоботомированная сова", можно найти в [статье Heydon Pickering](http://alistapart.com/article/axiomatic-css-and-lobotomized-owls) на *A List Apart*.
+Более подробную информацию о селекторе "Лоботомированная сова", можно найти в [статье Heydon Pickering](http://alistapart.com/article/axiomatic-css-and-lobotomized-owls) на _A List Apart_.
 
 #### [Демо](http://codepen.io/AllThingsSmitty/pen/grRvWq)
 
 <sup>[вернуться к оглавлению](#table-of-contents)</sup>
-
 
 ### Используйте `max-height` для ползунков на чистом CSS
 
@@ -386,14 +364,13 @@ SVG хорошо масштабируется для всех разрешени
 
 <sup>[вернуться к оглавлению](#table-of-contents)</sup>
 
-
 ### Ячейки таблицы равной ширины
 
 Иногда работа с таблицами приносит боль, в таких случаях попробуйте задать `table-layout: fixed` чтобы ячейки были одинаковой ширины:
 
 ```css
 .calendar {
-  table-layout: fixed;
+    table-layout: fixed;
 }
 ```
 
@@ -402,7 +379,6 @@ SVG хорошо масштабируется для всех разрешени
 #### [Демо](http://codepen.io/AllThingsSmitty/pen/jALALm)
 
 <sup>[вернуться к оглавлению](#table-of-contents)</sup>
-
 
 ### Используйте Flexbox вместо margin
 
@@ -423,7 +399,6 @@ SVG хорошо масштабируется для всех разрешени
 
 <sup>[вернуться к оглавлению](#table-of-contents)</sup>
 
-
 ### Используйте селектор атрибутов для пустых ссылок
 
 Отображайте ссылки, когда элемент `<a>` пустой, но есть ссылка в атрибуте `href`:
@@ -440,7 +415,6 @@ a[href^="http"]:empty::before {
 
 <sup>[вернуться к оглавлению](#table-of-contents)</sup>
 
-
 ### Управляйте специфичностью лучше, с помощью `:is()
 
 Псевдокласс `:is()` используется для одновременного обращения к нескольким селекторам, что уменьшает избыточность и улучшает читаемость кода. Это невероятно полезно для написания больших селекторов в более компактной форме.
@@ -454,10 +428,30 @@ a[href^="http"]:empty::before {
 Приведённый выше набор правил эквивалентен следующим правилам селектора чисел...
 
 ```css
-section h1, section h2, section h3, section h4, section h5, section h6,
-article h1, article h2, article h3, article h4, article h5, article h6,
-aside h1, aside h2, aside h3, aside h4, aside h5, aside h6,
-nav h1, nav h2, nav h3, nav h4, nav h5, nav h6 {
+section h1,
+section h2,
+section h3,
+section h4,
+section h5,
+section h6,
+article h1,
+article h2,
+article h3,
+article h4,
+article h5,
+article h6,
+aside h1,
+aside h2,
+aside h3,
+aside h4,
+aside h5,
+aside h6,
+nav h1,
+nav h2,
+nav h3,
+nav h4,
+nav h5,
+nav h6 {
   color: green;
 }
 ```
@@ -465,7 +459,6 @@ nav h1, nav h2, nav h3, nav h4, nav h5, nav h6 {
 #### [Демо](https://codepen.io/AllThingsSmitty/pen/rNRVxdx)
 
 <sup>[вернуться к оглавлению](#table-of-contents)</sup>
-
 
 ### Стиль "по умолчанию" для ссылок
 
@@ -481,7 +474,6 @@ a[href]:not([class]) {
 Теперь ссылки, вставленные через CMS, которые, как правило, не имеют атрибута `class`, будут иметь отличительный признак без влияния на каскад.
 
 <sup>[вернуться к оглавлению](#table-of-contents)</sup>
-
 
 ### Блок с собственным отношением сторон
 
@@ -509,7 +501,6 @@ a[href]:not([class]) {
 #### [Демо](http://codepen.io/AllThingsSmitty/pen/jALZvE)
 
 <sup>[вернуться к оглавлению](#table-of-contents)</sup>
-
 
 ### Задайте стили для поломанныx изображений
 
@@ -548,18 +539,17 @@ img::after {
 
 <sup>[вернуться к оглавлению](#table-of-contents)</sup>
 
-
 ### Используйте `rem` для глобальных размеров; Используйте `em` для локальных размеров
 
 После установки базового размера шрифта всего проекта (`html { font-size: 100%; }`), установите размер шрифта для текстовых элементов через `em`:
 
 ```css
 h2 {
-  font-size: 2em;
+    font-size: 2em;
 }
 
 p {
-  font-size: 1em;
+    font-size: 1em;
 }
 ```
 
@@ -571,14 +561,13 @@ article {
 }
 
 aside .module {
-  font-size: .9rem;
+  font-size: 0.9rem;
 }
 ```
 
 Теперь каждый модуль становится разобщенным и проще в настройке, более легким в обслуживании и гибче.
 
 <sup>[вернуться к оглавлению](#table-of-contents)</sup>
-
 
 ### Отключите автовоспроизведение видео с включенным звуком
 
@@ -594,14 +583,13 @@ video[autoplay]:not([muted]) {
 
 <sup>[вернуться к оглавлению](#table-of-contents)</sup>
 
-
 ### Используйте `:root` для шрифтов
 
 Размер шрифта должен подстраиваться под каждый возможный размер экрана. Вы можете рассчитывать размер шрифта, основываясь на высоте и ширине экрана с помощью `:root`:
 
 ```css
 :root {
-  font-size: calc(1vw + 1vh + .5vmin);
+  font-size: calc(1vw + 1vh + 0.5vmin);
 }
 ```
 
@@ -617,10 +605,9 @@ body {
 
 <sup>[вернуться к оглавлению](#table-of-contents)</sup>
 
-
 ### Установите `font-size` для элементов формы, чтобы оптимизировать просмотр на мобильных устройствах
 
-Чтобы избежать масштабирования мобильными браузерами (iOS Safari, _и др_.) элементов HTML формы, когда раскрывающийся список `<select>` нажат, добавьте  `font-size` правило селектору:
+Чтобы избежать масштабирования мобильными браузерами (iOS Safari, _и др_.) элементов HTML формы, когда раскрывающийся список `<select>` нажат, добавьте `font-size` правило селектору:
 
 ```css
 input[type="text"],
@@ -635,14 +622,13 @@ textarea {
 
 <sup>[вернуться к оглавлению](#table-of-contents)</sup>
 
-
 ### Использовать события указателя для управления событиями мыши
 
 [События указателя](https://developer.mozilla.org/en-US/docs/Web/CSS/pointer-events) позволяют указать, как мышь взаимодействует с элементом, который он трогает. Чтобы отключить событие указателя по умолчанию на кнопке, например:
 
 ```css
 button:disabled {
-  opacity: .5;
+  opacity: 0.5;
   pointer-events: none;
 }
 ```
@@ -650,7 +636,6 @@ button:disabled {
 Это так просто.
 
 <sup>[вернуться к оглавлению](#table-of-contents)</sup>
-
 
 ### Установите `display: none` на разрывы строк, используемые как интервалы
 
@@ -663,7 +648,6 @@ br + br {
 ```
 
 <sup>[вернуться к оглавлению](#table-of-contents)</sup>
-
 
 ### Используйте `:empty`, чтобы скрыть пустые HTML элементы
 
@@ -678,7 +662,6 @@ br + br {
 **Примечание**: Имейте в виду, что элементы с пробельными символами не считаются пустыми, например `<p class="error-message"> </p>`.
 
 <sup>[вернуться к оглавлению](#table-of-contents)</sup>
-
 
 ## Поддержка
 

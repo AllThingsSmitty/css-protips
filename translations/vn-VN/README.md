@@ -1,21 +1,15 @@
-<p align="center">
-  <img src="../../assets/img/bulb.svg" width="200" alt="light bulb icon">
-</p>
-
 # CSS Protips [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome)
 
 Một bộ gồm những tips để giúp kỹ năng CSS trở nên pro
 
 > For other great lists check out [@sindresorhus](https://github.com/sindresorhus/)'s curated list of [awesome lists](https://github.com/sindresorhus/awesome/).
 
-
 ## Table of Contents
 
-* [Protips](#protips)
-* [Support](#support)
-* [Translations](#translations)
-* [Contribution Guidelines](CONTRIBUTING.md)
-
+- [Protips](#protips)
+- [Support](#support)
+- [Translations](#translations)
+- [Contribution Guidelines](CONTRIBUTING.md)
 
 ## Protips
 
@@ -35,7 +29,7 @@ Một bộ gồm những tips để giúp kỹ năng CSS trở nên pro
 1. [Các ô trong bảng có chiều rộng bằng nhau](#các-ô-trong-bảng-có-chiều-rộng-bằng-nhau)
 1. [Get Rid of Margin Hacks With Flexbox](#get-rid-of-margin-hacks-with-flexbox)
 1. [Sử dụng thuộc tính Selectors với các liên kết trống](#sử-dụng-thuộc-tính-selectors-với-liên-kết-trống)
-1. [Style "Default" Links](#style-default-links)  
+1. [Style "Default" Links](#style-default-links)
 1. [Intrinsic Ratio Boxes](#intrinsic-ratio-boxes)
 1. [Hình ảnh bị vỡ](#hình-ảnh-bị-vỡ)
 1. [Dùng `rem` cho toàn cục; dùng `em` cho cục bộ](#dùng-rem-cho-toàn-cục-dùng-em-cho-cục-bộ)
@@ -44,7 +38,6 @@ Một bộ gồm những tips để giúp kỹ năng CSS trở nên pro
 1. [Đặt `font-size` trong Form Elements để có một trải nghiệm mobile tốt hơn](#đặt-font-size-trong-form-elements-để-có-một-trải-nghiệm-mobile-tốt-hơn)
 1. [Dùng Pointer Events để kiểm soát mouse events](#dùng-pointer-events-để-kiểm-soát-mouse-events)
 1. [Đặt `display: none` trên ngắt dòng được sử dụng làm khoảng cách](#đặt-display-none-trên-ngắt-dòng-được-sử-dụng-làm-khoảng-cách)
-
 
 ### Dùng CSS Reset
 
@@ -64,10 +57,9 @@ Bây giờ các phần tử sẽ bị loại bỏ magins và padding, và `box-s
 
 #### [Demo](http://codepen.io/AllThingsSmitty/pen/kkrkLL)
 
-**Note:** Nếu bạn làm theo  [Inherit `box-sizing`](#inherit-box-sizing) mẹo dưới đây, bạn có thể chọn không bao gồm `box-sizing` thuộc tính trong CSS reset của bạn.
+**Note:** Nếu bạn làm theo [Inherit `box-sizing`](#inherit-box-sizing) mẹo dưới đây, bạn có thể chọn không bao gồm `box-sizing` thuộc tính trong CSS reset của bạn.
 
 <sup>[back to table of contents](#table-of-contents)</sup>
-
 
 ### Thừa kế `box-sizing`
 
@@ -91,7 +83,6 @@ html {
 
 <sup>[back to table of contents](#table-of-contents)</sup>
 
-
 ### Dùng `unset` thay vì đặt lại tất cả thuộc tính
 
 Khi đặt lại thuộc tính của một phần tử, không cần thiết phải đặt lại từng thuộc tính riêng lẻ:
@@ -107,7 +98,7 @@ button {
 }
 ```
 
-Bạn có thể chỉ định tất cả các thuộc tính của một phần tử bằng cách sử dụng tất cả các viết tắt.  Đặt giá trị thành không đặt sẽ thay đổi thuộc tính của phần tử thành giá trị ban đầu của chúng:
+Bạn có thể chỉ định tất cả các thuộc tính của một phần tử bằng cách sử dụng tất cả các viết tắt. Đặt giá trị thành không đặt sẽ thay đổi thuộc tính của phần tử thành giá trị ban đầu của chúng:
 
 ```css
 button {
@@ -116,7 +107,6 @@ button {
 ```
 
 <sup>[back to table of contents](#table-of-contents)</sup>
-
 
 ### Dùng `:not()` để Áp dụng / Không áp dụng các đường viền trên Điều hướng
 
@@ -152,27 +142,23 @@ Thay vì đặt trên border...
 
 <sup>[back to table of contents](#table-of-contents)</sup>
 
-
 ### Kiểm tra xem Phông chữ có được cài đặt cục bộ không
 
 Bạn có thể kiểm tra xem phông chữ có được cài đặt cục bộ hay không trước khi tìm nạp từ xa, đây cũng là một mẹo hiệu suất tốt.
 
-```css
+````css
 @font-face {
   font-family: "Dank Mono";
   src:
     /* Full name */
     local("Dank Mono"),
-    /* Postscript name */
-    local("Dank-Mono"),
-    /* Otherwise, download it! */
-    url("//...a.server/fonts/DankMono.woff");
+    /* Postscript name */ local("Dank-Mono"),
+    /* Otherwise, download it! */ url("//...a.server/fonts/DankMono.woff");
 }
 
 code {
   font-family: "Dank Mono", system-ui-monospace;
 }
-
 
 H / T tới Adam Argyle vì đã chia sẻ chú giải này và [demo](https://codepen.io/argyleink/pen/VwYJpgR).
 
@@ -187,7 +173,7 @@ Bạn không cần thêm `line-height` cho mỗi `<p>`, `<h*>`... riêng biệt.
 body {
   line-height: 1.5;
 }
-```
+````
 
 Bằng cách này, các yếu tố văn bản có thể kế thừa từ `body` dễ dàng.
 
@@ -195,10 +181,9 @@ Bằng cách này, các yếu tố văn bản có thể kế thừa từ `body` 
 
 <sup>[back to table of contents](#table-of-contents)</sup>
 
-
 ### Đặt `:focus` cho Form Elements
 
-Người dùng bàn phím bị cận dựa vào tiêu điểm để xác định vị trí của các sự kiện bàn phím trong trang.  Làm cho tiêu điểm cho các phần tử biểu mẫu nổi bật và nhất quán sau đó triển khai mặc định của trình duyệt:
+Người dùng bàn phím bị cận dựa vào tiêu điểm để xác định vị trí của các sự kiện bàn phím trong trang. Làm cho tiêu điểm cho các phần tử biểu mẫu nổi bật và nhất quán sau đó triển khai mặc định của trình duyệt:
 
 ```css
 a:focus,
@@ -208,14 +193,13 @@ select:focus,
 textarea:focus {
   box-shadow: none;
   outline: #000 dotted 2px;
-  outline-offset: .05em;
+  outline-offset: 0.05em;
 }
 ```
 
 #### [Demo](https://codepen.io/AllThingsSmitty/pen/ePzoOP/)
 
 <sup>[back to table of contents](#table-of-contents)</sup>
-
 
 ### Mọi thứ ở giữa theo chiều dọc
 
@@ -248,13 +232,11 @@ body {
 }
 ```
 
-
 Muốn căn giữa một cái gì đó khác? Theo chiều dọc,chiều ngang ... bất cứ điều gì, mọi lúc, mọi nơi? CSS-Tricks có [a nice write-up](https://css-tricks.com/centering-css-complete-guide/) để làm được tất cả những điều đó.
 
 #### [Demo](http://codepen.io/AllThingsSmitty/pen/GqmGqZ)
 
 <sup>[back to table of contents](#table-of-contents)</sup>
-
 
 ### Danh sách được phân tách bằng dấu phẩy
 
@@ -272,7 +254,6 @@ Dùng `:not()` pseudo-class và không có dấu phẩy nào sẽ được thêm
 
 <sup>[back to table of contents](#table-of-contents)</sup>
 
-
 ### Chọn items sử dụng Negative `nth-child`
 
 Sử dụng phủ định `nth-child` trong CSS để chọn các mục từ 1 đến n.
@@ -283,7 +264,7 @@ li {
 }
 
 /* select items 1 through 3 and display them */
-li:nth-child(-n+3) {
+li:nth-child(-n + 3) {
   display: block;
 }
 ```
@@ -292,7 +273,7 @@ Hoặc,bạn đã biết một chút về [dùng `:not()`](#use-not-to-applyunap
 
 ```css
 /* select all items except the first 3 and display them */
-li:not(:nth-child(-n+3)) {
+li:not(:nth-child(-n + 3)) {
   display: block;
 }
 ```
@@ -300,7 +281,6 @@ li:not(:nth-child(-n+3)) {
 #### [Demo](http://codepen.io/AllThingsSmitty/pen/WxjKZp)
 
 <sup>[back to table of contents](#table-of-contents)</sup>
-
 
 ### Dùng SVG cho Icons
 
@@ -324,7 +304,6 @@ SVG tỉ lệ tốt cho tất cả các loại độ phân giải và được h
 
 <sup>[back to table of contents](#table-of-contents)</sup>
 
-
 ### Sử dụng "Lobotomized Owl" Selector
 
 Nó có thể có một cái tên lạ nhưng việc sử dụng bộ chọn phổ quát (`*`) với bộ chọn anh chị em kế cận (`+`) có thể cung cấp khả năng CSS mạnh mẽ:
@@ -343,10 +322,9 @@ Trong ví dụ này, tất cả các phần tử trong luồng dữ liệu theo 
 
 <sup>[back to table of contents](#table-of-contents)</sup>
 
-
 ### Dùng `max-height` cho thanh trượt CSS Sliders
 
-Áp dụng  CSS-only sliders dùng `max-height` với overflow hidden:
+Áp dụng CSS-only sliders dùng `max-height` với overflow hidden:
 
 ```css
 .slider {
@@ -361,10 +339,9 @@ Trong ví dụ này, tất cả các phần tử trong luồng dữ liệu theo 
 }
 ```
 
-Những thành phần sẽ được mở  rộng bằng `max-height` khi di chuột và thanh trượt hiển thị do overflow.
+Những thành phần sẽ được mở rộng bằng `max-height` khi di chuột và thanh trượt hiển thị do overflow.
 
 <sup>[back to table of contents](#table-of-contents)</sup>
-
 
 ### Các ô trong bảng có chiều rộng bằng nhau
 
@@ -381,7 +358,6 @@ Bố cục bảng dễ chịu
 #### [Demo](http://codepen.io/AllThingsSmitty/pen/jALALm)
 
 <sup>[back to table of contents](#table-of-contents)</sup>
-
 
 ### Get Rid of Margin Hacks With Flexbox
 
@@ -402,7 +378,6 @@ Giờ đây, các rãnh cột luôn xuất hiện cách đều nhau
 
 <sup>[back to table of contents](#table-of-contents)</sup>
 
-
 ### Sử dụng thuộc tính Selectors với các liên kết trống
 
 Hiển thị các liên kết khi `<a>` phần tử không có giá trị văn bản nhưng `herf` thuộc tính có một liên kết:
@@ -419,7 +394,6 @@ a[href^="http"]:empty::before {
 
 <sup>[back to table of contents](#table-of-contents)</sup>
 
-
 ### Style "Default" Links
 
 Thêm kiểu cho các liên kết "default":
@@ -434,7 +408,6 @@ a[href]:not([class]) {
 Giờ đây, các liên kết được chèn qua CMS, thường không có thuộc tính `class`, sẽ có sự phân biệt mà không ảnh hưởng chung đến tầng.
 
 <sup>[back to table of contents](#table-of-contents)</sup>
-
 
 ### Intrinsic Ratio Boxes
 
@@ -457,12 +430,11 @@ Giờ đây, các liên kết được chèn qua CMS, thường không có thu�
 }
 ```
 
-Sử dụng 20% ​​cho phần đệm làm cho chiều cao của hộp bằng 20% ​​chiều rộng của nó.  Bất kể chiều rộng của khung nhìn, div con sẽ giữ nguyên tỷ lệ co của nó (100% / 20% = 5: 1).
+Sử dụng 20% ​​cho phần đệm làm cho chiều cao của hộp bằng 20% ​​chiều rộng của nó. Bất kể chiều rộng của khung nhìn, div con sẽ giữ nguyên tỷ lệ co của nó (100% / 20% = 5: 1).
 
 #### [Demo](http://codepen.io/AllThingsSmitty/pen/jALZvE)
 
 <sup>[back to table of contents](#table-of-contents)</sup>
-
 
 ### Hình ảnh bị vỡ
 
@@ -501,7 +473,6 @@ Tìm hiểu thêm về cách tạo kiểu cho mẫu này trong [Ire Aderinokun](
 
 <sup>[back to table of contents](#table-of-contents)</sup>
 
-
 ### Dùng `rem` cho toàn cục; dùng `em` cho cục bộ
 
 Sau khi đặt kích thước phông chữ cơ sở ở gốc (`html { font-size: 100%; }`), đặt kích thước phông chữ cho các yếu tố văn bản thành `em`:
@@ -524,7 +495,7 @@ article {
 }
 
 aside .module {
-  font-size: .9rem;
+  font-size: 0.9rem;
 }
 ```
 
@@ -532,10 +503,9 @@ Giờ đây, mỗi mô-đun trở nên được chia nhỏ và dễ tạo kiểu
 
 <sup>[back to table of contents](#table-of-contents)</sup>
 
-
 ### Ẩn các video tự động phát không bị tắt tiếng
 
-Đây là một thủ thuật tuyệt vời cho một biểu định kiểu người dùng tùy chỉnh. Tránh làm người dùng quá tải với âm thanh từ video tự động phát khi tải trang.  Nếu âm thanh không bị tắt, không hiển thị video:
+Đây là một thủ thuật tuyệt vời cho một biểu định kiểu người dùng tùy chỉnh. Tránh làm người dùng quá tải với âm thanh từ video tự động phát khi tải trang. Nếu âm thanh không bị tắt, không hiển thị video:
 
 ```css
 video[autoplay]:not([muted]) {
@@ -547,14 +517,13 @@ Một lần nữa, chúng ta đang tận dụng lợi thế của việc sử d�
 
 <sup>[back to table of contents](#table-of-contents)</sup>
 
-
 ### Dùng `:root` cho Flexible Type
 
-Kích thước phông chữ loại trong bố cục đáp ứng có thể điều chỉnh theo từng chế độ xem.  Bạn có thể tính toán kích thước phông chữ dựa trên chiều cao và chiều rộng của khung nhìn bằng cách sử dụng `:root`:
+Kích thước phông chữ loại trong bố cục đáp ứng có thể điều chỉnh theo từng chế độ xem. Bạn có thể tính toán kích thước phông chữ dựa trên chiều cao và chiều rộng của khung nhìn bằng cách sử dụng `:root`:
 
 ```css
 :root {
-  font-size: calc(1vw + 1vh + .5vmin);
+  font-size: calc(1vw + 1vh + 0.5vmin);
 }
 ```
 
@@ -569,7 +538,6 @@ body {
 #### [Demo](http://codepen.io/AllThingsSmitty/pen/XKgOkR)
 
 <sup>[back to table of contents](#table-of-contents)</sup>
-
 
 ### Đặt `font-size` trong Form Elements để có một trải nghiệm mobile tốt hơn
 
@@ -588,14 +556,13 @@ textarea {
 
 <sup>[back to table of contents](#table-of-contents)</sup>
 
-
 ### Dùng Pointer Events để kiểm soát mouse events
 
-[Pointer events](https://developer.mozilla.org/en-US/docs/Web/CSS/pointer-events) cho phép bạn chỉ định cách con chuột tương tác với phần tử mà nó chạm vào.  Để tắt sự kiện con trỏ mặc định trên một nút, ví dụ:
+[Pointer events](https://developer.mozilla.org/en-US/docs/Web/CSS/pointer-events) cho phép bạn chỉ định cách con chuột tương tác với phần tử mà nó chạm vào. Để tắt sự kiện con trỏ mặc định trên một nút, ví dụ:
 
 ```css
 button:disabled {
-  opacity: .5;
+  opacity: 0.5;
   pointer-events: none;
 }
 ```
@@ -603,7 +570,6 @@ button:disabled {
 Nó thật đơn giản:
 
 <sup>[back to table of contents](#table-of-contents)</sup>
-
 
 ### Đặt `display: none` trên ngắt dòng được sử dụng làm khoảng cách
 
@@ -617,7 +583,6 @@ br + br {
 
 <sup>[back to table of contents](#table-of-contents)</sup>
 
-
 ## Support
 
- versions hiện tại Chrome, Firefox, Safari, và Edge.
+versions hiện tại Chrome, Firefox, Safari, và Edge.

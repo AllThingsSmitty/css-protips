@@ -1,7 +1,3 @@
-<p align="center">
-  <img src="../../assets/img/bulb.svg" alt="light bulb icon">
-</p>
-
 # CSS 專家密技 [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome)
 
 這裡收集了一系列 CSS 專家密技，幫助你提升 CSS 技能點數。
@@ -10,14 +6,13 @@
 
 > 正體中文由 [Will 保哥](http://blog.miniasp.com/) 翻譯，歡迎造訪 [Will 保哥的技術交流中心](https://www.facebook.com/will.fans)
 
-
 <div id="table-of-contents"></div>
 
 ## 目錄
 
-* [專家密技](#專家密技)
-* [瀏覽器支援度](#瀏覽器支援度)
-* [貢獻準則](../../CONTRIBUTING.md)
+- [專家密技](#專家密技)
+- [瀏覽器支援度](#瀏覽器支援度)
+- [貢獻準則](../../CONTRIBUTING.md)
 
 ## 專家密技
 
@@ -46,7 +41,6 @@
 1. [為了更好的行動體驗來設定表單元素的 `font-size`](#為了更好的行動體驗來設定表單元素的-font-size)
 1. [使用指標事件來控制滑鼠事件](#使用指標事件來控制滑鼠事件)
 1. [在用作間距的換行符上設置`display: none`](#在用作間距的換行符上設置display-none)
-
 
 ### 使用 CSS Reset
 
@@ -151,7 +145,6 @@ CSS選擇器以人類描述它的方式定義邊界。
 
 <sup>[回到目錄](#table-of-contents)</sup>
 
-
 ### 检查字体是否在本地安装
 
 您可以在远程获取字体之前检查是否在本地安装了字体，这也是一个很好的性能提示。
@@ -162,10 +155,8 @@ CSS選擇器以人類描述它的方式定義邊界。
   src:
     /* Full name */
     local("Dank Mono"),
-    /* Postscript name */
-    local("Dank-Mono"),
-    /* Otherwise, download it! */
-    url("//...a.server/fonts/DankMono.woff");
+    /* Postscript name */ local("Dank-Mono"),
+    /* Otherwise, download it! */ url("//...a.server/fonts/DankMono.woff");
 }
 
 code {
@@ -176,7 +167,6 @@ code {
 亚当·阿盖尔（Adam Argyle）的帽子技巧，分享了这个技巧和[例子](https://codepen.io/argyleink/pen/VwYJpgR).
 
 <sup>[回到目錄](#table-of-contents)</sup>
-
 
 ### 將 `line-height` 加入到 `body` 元素
 
@@ -194,7 +184,6 @@ body {
 
 <sup>[回到目錄](#table-of-contents)</sup>
 
-
 ### 為表單元素設定`focus`
 
 視力正常的鍵盤使用者依靠焦點來確認鍵盤事件在頁面中的位置。使表單元素的焦點脫穎而出，然後與瀏覽器的預設實作保持一致：
@@ -207,14 +196,13 @@ select:focus,
 textarea:focus {
   box-shadow: none;
   outline: #000 dotted 2px;
-  outline-offset: .05em;
+  outline-offset: 0.05em;
 }
 ```
 
 #### [Demo](https://codepen.io/AllThingsSmitty/pen/ePzoOP/)
 
 <sup>[回到目錄](#table-of-contents)</sup>
-
 
 ### 將所有元素設定垂直居中
 
@@ -259,7 +247,7 @@ body {
 
 ```css
 ul > li:not(:last-child)::after {
-  content: ',';
+  content: ",";
 }
 ```
 
@@ -279,7 +267,7 @@ li {
 }
 
 /* 選擇第 1 至第 3 個元素並顯示出來 */
-li:nth-child(-n+3) {
+li:nth-child(-n + 3) {
   display: block;
 }
 ```
@@ -305,7 +293,7 @@ li:not(:nth-child(-n + 3)) {
 
 ```css
 .logo {
-  background: url('logo.svg');
+  background: url("logo.svg");
 }
 ```
 
@@ -333,7 +321,7 @@ SVG 在所有解析度下都可以良好縮放，並且支援 IE9 之後的所�
 
 在此範例中，在檔案中所有的元素，只要緊接著其他元素，就會套用一個 `margin-top: 1.5em` 樣式。
 
-更多 "貓頭鷹" (Lobotomized Owl) 選擇器，可參考 *A List Apart* 上面關於 [Heydon Pickering 的文章](http://alistapart.com/article/axiomatic-css-and-lobotomized-owls)
+更多 "貓頭鷹" (Lobotomized Owl) 選擇器，可參考 _A List Apart_ 上面關於 [Heydon Pickering 的文章](http://alistapart.com/article/axiomatic-css-and-lobotomized-owls)
 
 #### [示範](http://codepen.io/AllThingsSmitty/pen/grRvWq)
 
@@ -400,7 +388,7 @@ SVG 在所有解析度下都可以良好縮放，並且支援 IE9 之後的所�
 當 `<a>` 元素沒有文字內容，但有 `href` 屬性的時候，可以這樣做：
 
 ```css
-a[href^='http']:empty::before {
+a[href^="http"]:empty::before {
   content: attr(href);
 }
 ```
@@ -480,7 +468,7 @@ img::before {
 }
 
 img::after {
-  content: '(url: ' attr(src) ')';
+  content: "(url: " attr(src) ")";
   display: block;
   font-size: 12px;
 }
@@ -561,8 +549,8 @@ body {
 為了避免使用者在行動瀏覽器 (iOS Safari, 等等）點擊 `<select>` 的下拉選單時在 HTML 表單元素進行縮放，你可以加上`font-size` 到這些選取器樣式規則：
 
 ```css
-input[type='text'],
-input[type='number'],
+input[type="text"],
+input[type="number"],
 select,
 textarea {
   font-size: 16px;
@@ -573,14 +561,13 @@ textarea {
 
 <sup>[回到目錄](#table-of-contents)</sup>
 
-
 ### 使用指標事件來控制滑鼠事件
 
 [指標事件](https://developer.mozilla.org/en-US/docs/Web/CSS/pointer-events)允許您指定滑鼠如何與其觸控的元素進行互動。 要停用按鈕上的預設指標事件，例如：
 
 ```css
 button:disabled {
-  opacity: .5;
+  opacity: 0.5;
   pointer-events: none;
 }
 ```
@@ -588,7 +575,6 @@ button:disabled {
 就這麼簡單。
 
 <sup>[回目錄](#目錄)</sup>
-
 
 ### 在用作間距的換行符上設置`display: none`
 
@@ -601,7 +587,6 @@ br + br {
 ```
 
 <sup>[回目錄](#目錄)</sup>
-
 
 ## 瀏覽器支援度
 

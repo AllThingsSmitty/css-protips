@@ -1,22 +1,16 @@
-<p align="center">
-  <img src="../../assets/img/bulb.svg" alt="light bulb icon">
-</p>
-
 # CSS 专业技巧 [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome)
 
 一个帮你提升 CSS 技巧的收藏集。
 
 > 对于其他收藏集合可以查看 [@sindresorhus](https://github.com/sindresorhus/) 创建的收藏集合 [Awesome Lists](https://github.com/sindresorhus/awesome/).
 
-
 <div id="table-of-contents"></div>
 
 ## 目录
 
-* [专业技巧](#专业技巧)
-* [支持情况](#支持情况)
-* [贡献准则](../../CONTRIBUTING.md)
-
+- [专业技巧](#专业技巧)
+- [支持情况](#支持情况)
+- [贡献准则](../../CONTRIBUTING.md)
 
 ## 专业技巧
 
@@ -47,7 +41,6 @@
 1. [在用作间距的换行符上设置`display-none`](#在用作间距的换行符上设置display-none)
 1. [使用 `:empty` 隐藏空 HTML 元素](#使用-empty-隐藏空-html-元素)
 
-
 ### 使用CSS复位
 
 CSS复位可以在不同的浏览器上保持一致的样式风格。您可以使用CSS reset 库[Normalize](http://necolas.github.io/normalize.css/)等，也可以使用一个更简化的复位方法：
@@ -70,7 +63,6 @@ CSS复位可以在不同的浏览器上保持一致的样式风格。您可以�
 
 <sup>[回目录](#目录)</sup>
 
-
 ### 继承 `box-sizing`
 
 从 `html` 元素继承 `box-sizing` ：
@@ -92,7 +84,6 @@ html {
 #### [演示](https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/)
 
 <sup>[回目录](#目录)</sup>
-
 
 ### 使用`unset`而不是重置所有属性
 
@@ -118,7 +109,6 @@ button {
 ```
 
 <sup>[回目录](#目录)</sup>
-
 
 ### 使用 `:not()` 选择器来决定表单是否显示边框
 
@@ -154,7 +144,6 @@ CSS选择器以人类描述它的方式定义边界。
 
 <sup>[回目录](#目录)</sup>
 
-
 ### 检查字体是否在本地安裝
 
 您可以在远程获取字体之前检查是否在本地安装了字体，这也是一个很好的性能提示。
@@ -165,10 +154,8 @@ CSS选择器以人类描述它的方式定义边界。
   src:
     /* Full name */
     local("Dank Mono"),
-    /* Postscript name */
-    local("Dank-Mono"),
-    /* Otherwise, download it! */
-    url("//...a.server/fonts/DankMono.woff");
+    /* Postscript name */ local("Dank-Mono"),
+    /* Otherwise, download it! */ url("//...a.server/fonts/DankMono.woff");
 }
 
 code {
@@ -179,7 +166,6 @@ code {
 亚当·阿盖尔（Adam Argyle）的帽子技巧，分享了这个技巧和[例子](https://codepen.io/argyleink/pen/VwYJpgR)。
 
 <sup>[回目录](#目录)</sup>
-
 
 ### 为 `body` 元素添加行高
 
@@ -197,7 +183,6 @@ body {
 
 <sup>[回目录](#目录)</sup>
 
-
 ### 为表单元素设置`:focus`
 
 有视力的键盘用戶依靠焦点来确定键盘事件在页面中的位置。 使表单元素的焦点脱颖而出，然后与浏览器的默认实现保持一致：
@@ -210,14 +195,13 @@ select:focus,
 textarea:focus {
   box-shadow: none;
   outline: #000 dotted 2px;
-  outline-offset: .05em;
+  outline-offset: 0.05em;
 }
 ```
 
 #### [演示](https://codepen.io/AllThingsSmitty/pen/ePzoOP/)
 
 <sup>[回目录](#目录)</sup>
-
 
 ### 垂直居中任何元素
 
@@ -231,8 +215,8 @@ body {
 }
 
 body {
-  -webkit-align-items: center;  
-  -ms-flex-align: center;  
+  -webkit-align-items: center;
+  -ms-flex-align: center;
   align-items: center;
   display: -webkit-flex;
   display: flex;
@@ -256,7 +240,6 @@ body {
 
 <sup>[回目录](#目录)</sup>
 
-
 ### 逗号分隔列表
 
 使列表的每项都由逗号分隔：
@@ -273,11 +256,9 @@ ul > li:not(:last-child)::after {
 
 <sup>[回目录](#目录)</sup>
 
-
 ### 使用负的 `nth-child` 来选择元素
 
 使用负的 `nth-child` 可以选择 1 至 n 个元素。
-
 
 ```css
 li {
@@ -285,7 +266,7 @@ li {
 }
 
 /* 选择第 1 至第 3 个元素并显示出来 */
-li:nth-child(-n+3) {
+li:nth-child(-n + 3) {
   display: block;
 }
 ```
@@ -294,7 +275,7 @@ li:nth-child(-n+3) {
 
 ```css
 /* 选择除前3个之外的所有项目，并显示它们 */
-li:not(:nth-child(-n+3)) {
+li:not(:nth-child(-n + 3)) {
   display: none;
 }
 ```
@@ -304,7 +285,6 @@ li:not(:nth-child(-n+3)) {
 #### [演示](http://codepen.io/AllThingsSmitty/pen/WxjKZp)
 
 <sup>[回目录](#目录)</sup>
-
 
 ### 使用 SVG 图标
 
@@ -328,7 +308,6 @@ SVG 在所有分辨率下都可以良好缩放，并且支持所有 [IE9](https:
 
 <sup>[回目录](#目录)</sup>
 
-
 ### 使用 “形似猫头鹰” 的选择器
 
 这个名字可能比较陌生，不过通用选择器 (`*`) 和 相邻兄弟选择器 (`+`) 一起使用，效果非凡：
@@ -341,12 +320,11 @@ SVG 在所有分辨率下都可以良好缩放，并且支持所有 [IE9](https:
 
 在此示例中，文档流中的所有的相邻兄弟元素将都将设置 `margin-top: 1.5em` 的样式。
 
-更多 “形似猫头鹰”  的选择器，可参考 *A List Apart* 上面 [Heydon Pickering 的文章](http://alistapart.com/article/axiomatic-css-and-lobotomized-owls)
+更多 “形似猫头鹰” 的选择器，可参考 _A List Apart_ 上面 [Heydon Pickering 的文章](http://alistapart.com/article/axiomatic-css-and-lobotomized-owls)
 
 #### [演示](http://codepen.io/AllThingsSmitty/pen/grRvWq)
 
 <sup>[回目录](#目录)</sup>
-
 
 ### 使用 `max-height` 来建立纯 CSS 的滑块
 
@@ -369,7 +347,6 @@ SVG 在所有分辨率下都可以良好缩放，并且支持所有 [IE9](https:
 
 <sup>[回目录](#目录)</sup>
 
-
 ### 创造格子等宽的表格
 
 `table-layout: fixed` 可以让每个格子保持等宽：
@@ -385,7 +362,6 @@ SVG 在所有分辨率下都可以良好缩放，并且支持所有 [IE9](https:
 #### [演示](http://codepen.io/AllThingsSmitty/pen/jALALm)
 
 <sup>[回目录](#目录)</sup>
-
 
 ### 利用 Flexbox 去除多余的外边距
 
@@ -406,7 +382,6 @@ SVG 在所有分辨率下都可以良好缩放，并且支持所有 [IE9](https:
 
 <sup>[回目录](#目录)</sup>
 
-
 ### 利用属性选择器来选择空链接
 
 当 `<a>` 元素没有文本内容，但有 `href` 属性的时候，显示它的 `href` 属性：
@@ -423,7 +398,6 @@ a[href^="http"]:empty::before {
 
 <sup>[回目录](#目录)</sup>
 
-
 ### 给 “默认” 链接定义样式
 
 给 “默认” 链接定义样式：
@@ -439,7 +413,6 @@ a[href]:not([class]) {
 
 <sup>[回目录](#目录)</sup>
 
-
 ### 固定比例盒子
 
 要创建具有固定比例的一个盒子，所有你需要做的就是给 div 的顶部或底部设置一个 padding：
@@ -452,7 +425,7 @@ a[href]:not([class]) {
 }
 
 .container div {
-  border: 2px dashed #ddd;	
+  border: 2px dashed #ddd;
   height: 100%;
   left: 0;
   position: absolute;
@@ -467,13 +440,12 @@ a[href]:not([class]) {
 
 <sup>[回目录](#目录)</sup>
 
-
 ### 为图裂定义样式
 
 只要一点CSS就可以美化破损的图片：
 
 ```css
-img {  
+img {
   display: block;
   font-family: sans-serif;
   font-weight: 300;
@@ -488,13 +460,13 @@ img {
 以添加伪元素的法则来显示用户信息和URL的引用：
 
 ```css
-img::before {  
+img::before {
   content: "We're sorry, the image below is broken :(";
   display: block;
   margin-bottom: 10px;
 }
 
-img::after {  
+img::after {
   content: "(url: " attr(src) ")";
   display: block;
   font-size: 12px;
@@ -505,13 +477,12 @@ img::after {
 
 <sup>[回目录](#目录)</sup>
 
-
 ### 用 `rem` 来调整全局大小；用 `em` 来调整局部大小
 
 在根元素设置基本字体大小后 (`html { font-size: 100%; }`), 使用 `em` 设置文本元素的字体大小:
 
 ```css
-h2 { 
+h2 {
   font-size: 2em;
 }
 
@@ -528,14 +499,13 @@ article {
 }
 
 aside .module {
-  font-size: .9rem;
+  font-size: 0.9rem;
 }
 ```
 
 现在，每个模块变得独立，更容易、灵活的样式便于维护。
 
 <sup>[回目录](#目录)</sup>
-
 
 ### 隐藏没有静音、自动播放的影片
 
@@ -551,18 +521,17 @@ video[autoplay]:not([muted]) {
 
 <sup>[回目录](#目录)</sup>
 
-
 ### 使用选择器`:root`灵活控制字体大小
 
 在响应式布局中，字体大小应需要根据不同的视口进行调整。你可以计算字体大小根据视口高度的字体大小和宽度，这时需要用到`:root`:
 
 ```css
 :root {
-  font-size: calc(1vw + 1vh + .5vmin);
+  font-size: calc(1vw + 1vh + 0.5vmin);
 }
 ```
 
-现在，您可以使用 `root em` 
+现在，您可以使用 `root em`
 
 ```css
 body {
@@ -573,7 +542,6 @@ body {
 #### [演示](http://codepen.io/AllThingsSmitty/pen/XKgOkR)
 
 <sup>[回目录](#目录)</sup>
-
 
 ### 为更好的移动体验，为表单元素设置字体大小
 
@@ -592,14 +560,13 @@ textarea {
 
 <sup>[回目录](#目录)</sup>
 
-
 ### 使用指针事件来控制鼠标事件
 
 [指针事件](https://developer.mozilla.org/en-US/docs/Web/CSS/pointer-events)允许您指定鼠标如何与其触摸的元素进行交互。 要禁用按钮上的默认指针事件，例如：
 
 ```css
 button:disabled {
-  opacity: .5;
+  opacity: 0.5;
   pointer-events: none;
 }
 ```
@@ -607,7 +574,6 @@ button:disabled {
 就这么简单。
 
 <sup>[回目录](#目录)</sup>
-
 
 ### 在用作间距的换行符上设置`display: none`
 
@@ -634,7 +600,6 @@ br + br {
 注意：请记住，带有空格的元素不会被视为空元素，例如 `<p class="error-message"> </p>`。
 
 <sup>[回目录](#目录)</sup>
-
 
 ### 支持情况
 

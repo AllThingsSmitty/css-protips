@@ -1,20 +1,14 @@
-<p align="center">
-  <img src="../../assets/img/bulb.svg" alt="light bulb icon">
-</p>
-
 # Consejos Profesionales para CSS [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome)
 
 Una colección de consejos para ayudarte a mejorar tus conocimientos profesionales de CSS.
 
 > Para ver otras listas geniales, echa un vistazo a la lista curada por [@sindresorhus](https://github.com/sindresorhus/) de [listas Awesome](https://github.com/sindresorhus/awesome/).
 
-
 ## Tabla de contenido
 
-* [Consejos Profesionales](#consejos-profesionales)
-* [Soporte](#soporte)
-* [Pautas para contribuir](../../CONTRIBUTING.md)
-
+- [Consejos Profesionales](#consejos-profesionales)
+- [Soporte](#soporte)
+- [Pautas para contribuir](../../CONTRIBUTING.md)
 
 ## Consejos Profesionales
 
@@ -45,7 +39,6 @@ Una colección de consejos para ayudarte a mejorar tus conocimientos profesional
 1. [Usar eventos de puntero para controlar eventos de mouse](#usar-eventos-de-puntero-para-controlar-eventos-de-mouse)
 1. [Establezca `display: none` en Saltos de línea utilizados como espaciado](#establezca-display-none-en-saltos-de-línea-utilizados-como-espaciado)
 
-
 ### Utilizar un CSS Reset
 
 Los CSS Resets ayudan a hacer cumplir la coherencia de estilo en los diferentes navegadores, como una hoja en blanco para los elementos de estilo. Puedes utilizar una biblioteca CSS Reset como [Normalize](http://necolas.github.io/normalize.css/), y otros, o puedes utilizar un enfoque más simplificado para el reset:
@@ -68,7 +61,6 @@ Ahora los elementos están despojados de márgenes y paddings, y `box-sizing` te
 
 <sup>[volver al índice de contenidos](#tabla-de-contenido)</sup>
 
-
 ### Heredar `box-sizing`
 
 Heredar `box-sizing` de `html`:
@@ -90,7 +82,6 @@ Esto hace que sea más fácil cambiar `box-sizing` en plugins u otros componente
 #### [Demo](https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/)
 
 <sup>[volver al índice de contenidos](#tabla-de-contenido)</sup>
-
 
 ### Utilice `unset` en lugar de restablecer todas las propiedades
 
@@ -116,7 +107,6 @@ button {
 ```
 
 <sup>[volver al índice de contenidos](#tabla-de-contenido)</sup>
-
 
 ### Usar `:not()` para Aplicar o Cancelar la aplicación de bordes en la navegación
 
@@ -144,7 +134,6 @@ En lugar de poner en el borde...
 .nav li:not(:last-child) {
   border-right: 1px solid #666;
 }
-
 ```
 
 El selector CSS define los bordes de la forma en que un ser humano lo describiría.
@@ -152,7 +141,6 @@ El selector CSS define los bordes de la forma en que un ser humano lo describir�
 #### [Demo](http://codepen.io/AllThingsSmitty/pen/LkymvO)
 
 <sup>[volver al índice de contenidos](#tabla-de-contenido)</sup>
-
 
 ### Compruebe si la fuente está instalada localmente
 
@@ -164,10 +152,8 @@ Puede verificar si una fuente está instalada localmente antes de buscarla de fo
   src:
     /* Full name */
     local("Dank Mono"),
-    /* Postscript name */
-    local("Dank-Mono"),
-    /* Otherwise, download it! */
-    url("//...a.server/fonts/DankMono.woff");
+    /* Postscript name */ local("Dank-Mono"),
+    /* Otherwise, download it! */ url("//...a.server/fonts/DankMono.woff");
 }
 
 code {
@@ -179,14 +165,13 @@ Felicitaciones a Adam Argyle por compartir este protip y [demo](https://codepen.
 
 <sup>[volver al índice de contenidos](#tabla-de-contenido)</sup>
 
-
 ### Añadir `line-height` al `body`
 
-No es necesario añadir `line-height` a cada` <p> `,` <h *> `, _et al_. por separado. En su lugar, agregalo al `body`:
+No es necesario añadir `line-height` a cada`<p>`,`<h *>`, _et al_. por separado. En su lugar, agregalo al `body`:
 
 ```css
 body {
-  line-height: 1.5;
+    line-height: 1.5;
 }
 ```
 
@@ -195,7 +180,6 @@ De esta manera los elementos de texto pueden heredarlo fácilmente de `body`.
 #### [Demo](http://codepen.io/AllThingsSmitty/pen/VjbdYd)
 
 <sup>[volver al índice de contenidos](#tabla-de-contenido)</sup>
-
 
 ### Establecer `:focus` para elementos de formulario
 
@@ -209,14 +193,13 @@ select:focus,
 textarea:focus {
   box-shadow: none;
   outline: #000 dotted 2px;
-  outline-offset: .05em;
+  outline-offset: 0.05em;
 }
 ```
 
 #### [Demo](https://codepen.io/AllThingsSmitty/pen/ePzoOP/)
 
 <sup>[volver al índice de contenidos](#tabla-de-contenido)</sup>
-
 
 ### Centrar cualquier cosa verticalmente
 
@@ -225,16 +208,16 @@ No, no es magia negra, realmente puedes centrar elementos verticalmente:
 ```css
 html,
 body {
-  height: 100%;
-  margin: 0;
+    height: 100%;
+    margin: 0;
 }
 
 body {
-  -webkit-align-items: center;
-  -ms-flex-align: center;
-  align-items: center;
-  display: -webkit-flex;
-  display: flex;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    display: -webkit-flex;
+    display: flex;
 }
 ```
 
@@ -255,7 +238,6 @@ body {
 
 <sup>[volver al índice de contenidos](#tabla-de-contenido)</sup>
 
-
 ### Listas separadas por comas
 
 Hacer que los elementos de la lista se vean de forma real, separados por comas:
@@ -272,10 +254,9 @@ Utilice la pseudo-clase `:not()` para agregar una coma al último elemento.
 
 <sup>[volver al índice de contenidos](#tabla-de-contenido)</sup>
 
-
 ### Seleccionar elementos usando `nth-child` negativo
 
-Utiliza  `nth-child` negativo en CSS para seleccionar los numerales de 1 a n.
+Utiliza `nth-child` negativo en CSS para seleccionar los numerales de 1 a n.
 
 ```css
 li {
@@ -283,7 +264,7 @@ li {
 }
 
 /* seleccionar los elementos de 1 hasta 3 y muestralos */
-li:nth-child(-n+3) {
+li:nth-child(-n + 3) {
   display: block;
 }
 ```
@@ -292,7 +273,7 @@ O bien, como ya has aprendido un poco sobre [el uso de `:not()`](# uso no-a-appl
 
 ```css
 /* seleccionar todos los elementos excepto los 3 primeros y mostrarlos */
-li:not(:nth-child(-n+3)) {
+li:not(:nth-child(-n + 3)) {
   display: none;
 }
 ```
@@ -303,14 +284,13 @@ Bueno, éso ha sido bastante fácil.
 
 <sup>[volver al índice de contenidos](#tabla-de-contenido)</sup>
 
-
 ### Utilizar SVG para los íconos
 
 No hay ninguna razón para no usar SVG para los íconos:
 
 ```css
 .logo {
-  background: url("logo.svg");
+    background: url("logo.svg");
 }
 ```
 
@@ -326,25 +306,23 @@ SVG funciona bien para todos los tipos de resoluciones y es compatible con todos
 
 <sup>[volver al índice de contenidos](#tabla-de-contenido)</sup>
 
-
 ### Utilizar la herramienta de selección "Búho lobotomizado"
 
 Puede que tenga un nombre extraño, pero utilizando el selector universal (`*`) con el selector de hermanos adyacentes (`+`) puedes proporcionar una potente capacidad de CSS:
 
 ```css
 * + * {
-  margin-top: 1.5em;
+    margin-top: 1.5em;
 }
 ```
 
 En este ejemplo, todos los elementos del flujo del documento que siguen otros elementos recibirán `margin-top: 1.5em`.
 
-Para más información sobre el selector "búho lobotomizado", lee el [post de Heydon Pickering](http://alistapart.com/article/axiomatic-css-and-lobotomized-owls) en *A List Apart*.
+Para más información sobre el selector "búho lobotomizado", lee el [post de Heydon Pickering](http://alistapart.com/article/axiomatic-css-and-lobotomized-owls) en _A List Apart_.
 
 #### [Demo](http://codepen.io/AllThingsSmitty/pen/grRvWq)
 
 <sup>[volver al índice de contenidos](#tabla-de-contenido)</sup>
-
 
 ### Usar `max-height` para Sliders con CSS puro
 
@@ -367,14 +345,13 @@ El elemento se expande hasta el valor de `max-height` en hover y el slider se mu
 
 <sup>[volver al índice de contenidos](#tabla-de-contenido)</sup>
 
-
 ### Celdas de tabla de igual ancho
 
 Las tablas pueden ser dolorosas para trabajar, por lo que se trate de usar `table-layout: fixed` para mantener las celdas con el mismo ancho:
 
 ```css
 .calendar {
-  table-layout: fixed;
+    table-layout: fixed;
 }
 ```
 
@@ -383,7 +360,6 @@ Diseño de tablas sin dolor.
 #### [Demo](http://codepen.io/AllThingsSmitty/pen/jALALm)
 
 <sup>[volver al índice de contenidos](#tabla-de-contenido)</sup>
-
 
 ### Deshacerse de hacks para los márgenes en Flexbox
 
@@ -404,7 +380,6 @@ Ahora las columnas aparecen siempre espaciadas uniformemente.
 
 <sup>[volver al índice de contenidos](#tabla-de-contenido)</sup>
 
-
 ### Utilizar atributos como selectores en enlaces vacíos
 
 Mostrar vínculos cuando el elemento `<a>` no tiene un valor de texto, pero el atributo `href` tiene un enlace:
@@ -421,7 +396,6 @@ Eso es bastante conveniente.
 
 <sup>[volver al índice de contenidos](#tabla-de-contenido)</sup>
 
-
 ### Estilizar enlaces por defecto
 
 Añadir un estilo a los enlaces "por defecto":
@@ -437,7 +411,6 @@ Ahora los enlaces que se insertan a través de un CMS, que por lo general no tie
 
 <sup>[volver al índice de contenidos](#tabla-de-contenido)</sup>
 
-
 ### Ritmo vertical consistente
 
 Utilice un selector universal (`*`) dentro de un elemento para crear un ritmo vertical consistente:
@@ -451,7 +424,6 @@ Utilice un selector universal (`*`) dentro de un elemento para crear un ritmo ve
 Un ritmo vertical consistente proporciona una estética visual que hace que el contenido sea mucho más legible.
 
 <sup>[volver al índice de contenidos](#tabla-de-contenido)</sup>
-
 
 ### Cajas con proporciones intrínsecas
 
@@ -480,13 +452,12 @@ Usando un 20% de padding hace que la altura de la caja sea igual al 20% de su an
 
 <sup>[volver al índice de contenidos](#tabla-de-contenido)</sup>
 
-
 ### Estilizar enlaces rotos a imágenes
 
 Haz que las imágenes rotas sean estéticamente más agradables con un poco de CSS:
 
 ```css
-img {  
+img {
   display: block;
   font-family: sans-serif;
   font-weight: 300;
@@ -501,13 +472,13 @@ img {
 Ahora añade propiedades desde los pseudo-elementos para mostrar un mensaje al usuario y una referencia de dirección URL de la imagen rota:
 
 ```css
-img::before {  
+img::before {
   content: "We're sorry, the image below is broken :(";
   display: block;
   margin-bottom: 10px;
 }
 
-img::after {  
+img::after {
   content: "(url: " attr(src) ")";
   display: block;
   font-size: 12px;
@@ -518,18 +489,17 @@ Aprende más sobre el estilo de este patrón en [post original](http://bitsofco.
 
 <sup>[volver al índice de contenidos](#tabla-de-contenido)</sup>
 
-
 ### Usar `rem` para tamaños globales; Usar `em` para tamaños locales
 
 Después de definir el tamaño de la fuente base en la raíz (`html { font-size: 100%; }`), ajusta el tamaño de fuente para los elementos textuales con `em`:
 
 ```css
 h2 {
-  font-size: 2em;
+    font-size: 2em;
 }
 
 p {
-  font-size: 1 em;
+    font-size: 1 em;
 }
 ```
 
@@ -541,14 +511,13 @@ article {
 }
 
 aside .module {
-  font-size: .9rem;
+  font-size: 0.9rem;
 }
 ```
 
 Ahora cada módulo se vuelve compartimentado y más fácil de estilizar, más fácil de mantener, y más flexible.
 
 <sup>[volver al índice de contenidos](#tabla-de-contenido)</sup>
-
 
 ### Esconder videos con reproducción automática que no estén silenciados
 
@@ -564,14 +533,13 @@ Una vez más, estamos tomando ventaja de usar la pseudo-clase [`:not()`](#use-no
 
 <sup>[volver al índice de contenidos](#tabla-de-contenido)</sup>
 
-
 ### Utilizar `:root` para una tipografía flexible
 
 El tamaño de tipo de letra en un diseño que responde debe ser capaz de ajustar con cada ventana. Se puede calcular el tamaño de la fuente basada en la altura y la anchura de la ventana gráfica usando `:root`:
 
 ```css
 :root {
-  font-size: calc(1vw + 1vh + .5vmin);
+  font-size: calc(1vw + 1vh + 0.5vmin);
 }
 ```
 
@@ -584,7 +552,6 @@ body {
 ```
 
 <sup>[volver al índice de contenidos](#tabla-de-contenido)</sup>
-
 
 ### Definir `font-size` en los elementos de formulario para una mejor experiencia móvil
 
@@ -603,14 +570,13 @@ textarea {
 
 <sup>[volver al índice de contenidos](#tabla-de-contenido)</sup>
 
-
 ### Usar eventos de puntero para controlar eventos de mouse
 
 [Eventos del puntero](https://developer.mozilla.org/en-US/docs/Web/CSS/pointer-events) le permiten especificar cómo el mouse interactúa con el elemento que está tocando. Para deshabilitar el evento de puntero predeterminado en un botón, por ejemplo:
 
 ```css
 button:disabled {
-  opacity: .5;
+  opacity: 0.5;
   pointer-events: none;
 }
 ```
@@ -618,7 +584,6 @@ button:disabled {
 Es así de simple.
 
 <sup>[volver al índice de contenidos](#tabla-de-contenido)</sup>
-
 
 ### Establezca `display: none` en Saltos de línea utilizados como espaciado
 
@@ -631,7 +596,6 @@ br + br {
 ```
 
 <sup>[volver al índice de contenidos](#tabla-de-contenido)</sup>
-
 
 ## Soporte
 
