@@ -47,6 +47,8 @@ A collection of tips to help take your CSS skills pro.
 1. [Set `display: none` on Line Breaks Used as Spacing](#set-display-none-on-line-breaks-used-as-spacing)
 1. [Use `:empty` to Hide Empty HTML Elements](#use-empty-to-hide-empty-html-elements)
 1. [Use `margin-inline` instead of `margin`](#use-margin-inline-instead-of-margin)
+1. [Use `field-sizing` to Auto-Size Form Elements](#use-field-sizing-to-auto-size-form-elements)
+1. [Simplify Color Schemes With `light-dark()`](#simplify-color-schemes-with-light-dark)
 
 ### Use a CSS Reset
 
@@ -697,6 +699,46 @@ The same can be done for `margin-block` with defines the block start and end mar
 ```
 
 #### [Demo](https://codepen.io/AllThingsSmitty/pen/PwoOQGB)
+
+<sup>[Back to top](#contents)</sup>
+
+### Use `field-sizing` to Auto-Size Form Elements
+
+Automatically resize textareas and inputs based on their content without using JavaScript:
+
+```css
+textarea {
+  field-sizing: content;
+  min-height: 3em;
+}
+```
+
+Now, as the user types, the textarea will grow vertically to fit the text.
+
+#### [Demo](https://codepen.io/Varun-B-the-sans/pen/QwGwYyp)
+
+<sup>[Back to top](#contents)</sup>
+
+### Simplify Color Schemes With `light-dark()`
+
+Easily define colors for both light and dark modes in a single property without using media queries:
+
+```css
+body {
+  color: light-dark(#333, #ccc);
+  color-scheme: light dark;
+}
+```
+
+This function automatically selects the first color for light mode and the second for dark mode based on the user's system preference.
+
+#### [Demo](https://codepen.io/Varun-B-the-sans/pen/KwNwJdm)
+
+<sup>[Back to top](#contents)</sup>
+
+## Support
+
+Current versions of Chrome, Firefox, Safari, and Edge.
 
 <sup>[Back to top](#contents)</sup>
 
