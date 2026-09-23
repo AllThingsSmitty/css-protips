@@ -6,9 +6,6 @@
 
 A collection of tips to help take your CSS skills pro.
 
-> [!TIP]
-> For other great lists check out [@sindresorhus](https://github.com/sindresorhus/)'s curated list of [awesome lists](https://github.com/sindresorhus/awesome/).
-
 ## Contents
 
 - [Protips](#protips)
